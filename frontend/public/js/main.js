@@ -1,6 +1,6 @@
-import { APP_CONFIG } from "./config.js?v=20260906-regions";
-import { createRegionDataService } from "./regionDataService.js";
-import { createUI } from "./ui.js";
+import { APP_CONFIG } from "./config.js?v=20260906-content1";
+import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
+import { createUI } from "./ui.js?v=20260906-content1";
 import { getBiomeColor, paletteMapFromIndex } from "./biomePalette.js";
 import { createGlobeExplorer } from "./globe.js?v=20260906-regions";
 
@@ -260,6 +260,7 @@ async function bootstrap() {
         : `${datasetLabel} | Overview ${overviewRetain ?? "?"}% | LOD0 ${lod0Retain ?? "?"}% | LOD1 ${lod1Retain ?? "?"}%`
     );
 
+    let selectionSummaryVersion = 0;
     const globe = createGlobeExplorer({
       containerId: "globe",
       appConfig: APP_CONFIG,
@@ -271,6 +272,7 @@ async function bootstrap() {
         ui.setBodyTags(tags);
       },
       onSelect: async (regionId) => {
+        const summaryVersion = ++selectionSummaryVersion;
         ui.setHoverPreview(null, null);
         if (!regionId) {
           ui.showSidebarEmpty();
@@ -279,8 +281,10 @@ async function bootstrap() {
         ui.showSidebarLoading();
         try {
           const summary = await dataService.getRegionSummary(regionId);
+          if (summaryVersion !== selectionSummaryVersion) return;
           ui.renderRegionSummary(summary, getBiomeColor(summary?.biomeNum, biomePalette));
         } catch (err) {
+          if (summaryVersion !== selectionSummaryVersion) return;
           ui.showError(`Failed to load region summary: ${err.message}`);
           ui.showSidebarEmpty();
         }

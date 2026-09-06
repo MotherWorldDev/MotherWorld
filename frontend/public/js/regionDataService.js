@@ -1,3 +1,10 @@
+const SUMMARY_FIELDS = ["climateSummary", "tertiarySummary", "plotsSummary"];
+const GENERATED_LAKE_PLACEHOLDERS = new Set([
+  "Large inland water body tracked from HydroLAKES. This layer fills major lacustrine gaps that are outside the land and marine ecoregion polygons.",
+  "Lake polygons are routed after land and MEOW marine regions, but before the synthetic open-ocean fallback. They are intended as a pragmatic inland-water coverage layer, not a biome source.",
+  "Lake summaries do not have dedicated plots yet. The geometry is simplified into a startup and overview LOD for fast global rendering."
+]);
+
 function normalizeRegionSummary(raw) {
   if (!raw) return null;
   return {
@@ -14,9 +21,14 @@ function normalizeRegionSummary(raw) {
     center: raw.center || null,
     isMarine: raw.isMarine === true,
     isLake: raw.isLake === true,
+    latZone: raw.latZone || "",
+    contentLevels: raw.contentLevels || {},
     climateSummary: raw.climateSummary || "",
     tertiarySummary: raw.tertiarySummary || "",
     plotsSummary: raw.plotsSummary || "",
+    flagshipSpecies: Array.isArray(raw.flagshipSpecies) ? raw.flagshipSpecies : [],
+    threats: Array.isArray(raw.threats) ? raw.threats : [],
+    contentSources: Array.isArray(raw.contentSources) ? raw.contentSources : [],
   };
 }
 
@@ -73,6 +85,8 @@ export function createRegionDataService(config) {
   let cachedMarineIndex = null;
   let lakesIndexPromise = null;
   let cachedLakesIndex = null;
+  let contentIndexPromise = null;
+  let cachedContentIndex = null;
 
   async function fetchJson(url, label) {
     const res = await fetch(url);
@@ -130,6 +144,69 @@ export function createRegionDataService(config) {
     return lakesIndexPromise;
   }
 
+  async function loadContentIndex() {
+    if (!config.contentUrl) return null;
+    if (cachedContentIndex) return cachedContentIndex;
+    if (!contentIndexPromise) {
+      contentIndexPromise = fetchJson(config.contentUrl, "Region content")
+        .then((json) => {
+          cachedContentIndex = json;
+          return json;
+        })
+        .catch((err) => {
+          console.warn("Region content fetch failed:", err);
+          cachedContentIndex = null;
+          contentIndexPromise = null;
+          return null;
+        });
+    }
+    return contentIndexPromise;
+  }
+
+  function fallbackContentFor(region, contentIndex) {
+    if (!region || !contentIndex) return {};
+    if (region.isLake === true) return contentIndex.lakeFallback || {};
+    if (region.isMarine === true) {
+      const zone = region.latZone || (String(region.biome || "").match(/^(Tropical|Temperate|Polar)/i)?.[1]);
+      if (zone) {
+        const canonical = zone.charAt(0).toUpperCase() + zone.slice(1).toLowerCase();
+        return contentIndex.marineFallbacks?.[canonical] || {};
+      }
+      return contentIndex.marineFallbacks?.Temperate || {};
+    }
+    if (region.biomeNum != null) {
+      return contentIndex.biomeFallbacks?.[String(region.biomeNum)] || {};
+    }
+    return {};
+  }
+
+  function enrichRegion(region, contentIndex) {
+    if (!region) return null;
+    const fallback = fallbackContentFor(region, contentIndex);
+    const override = contentIndex?.regions?.[region.id] || {};
+    const fallbackLevel = region.isLake ? "lake" : region.isMarine ? "marine" : "biome";
+    const enriched = { ...region, contentLevels: {} };
+    const hasText = (value) => typeof value === "string" && value.trim().length > 0;
+    for (const field of SUMMARY_FIELDS) {
+      const metadataText = region[field];
+      if (hasText(override[field])) {
+        enriched[field] = override[field];
+        enriched.contentLevels[field] = "region";
+      } else if (hasText(metadataText) && !(region.isLake && GENERATED_LAKE_PLACEHOLDERS.has(metadataText))) {
+        enriched[field] = metadataText;
+        enriched.contentLevels[field] = "region";
+      } else {
+        enriched[field] = fallback[field] || "";
+        enriched.contentLevels[field] = hasText(fallback[field]) ? fallbackLevel : "none";
+      }
+    }
+    // Editorial content cannot replace geographic IDs, coordinates, or source metadata.
+    for (const field of ["flagshipSpecies", "threats", "contentSources"]) {
+      enriched[field] = override[field] ?? region[field] ?? fallback[field] ?? [];
+    }
+    return enriched;
+  }
+
   async function getRegionSummary(regionId) {
     if (!regionId) return null;
     if (regionId === "moon") return getMoonSummary();
@@ -141,16 +218,22 @@ export function createRegionDataService(config) {
         if (!res.ok) {
           throw new Error(`API request failed (${res.status})`);
         }
-        return normalizeRegionSummary(await res.json());
+        const region = await res.json();
+        return normalizeRegionSummary(enrichRegion(region, await loadContentIndex()));
       } catch (err) {
         console.warn("API summary fetch failed, falling back to local index:", err);
       }
     }
 
-    const [index, marineIndex, lakesIndex] = await Promise.all([loadIndex(), loadMarineIndex(), loadLakesIndex()]);
-    return normalizeRegionSummary(
-      index?.regions?.[regionId] || marineIndex?.regions?.[regionId] || lakesIndex?.regions?.[regionId] || null
-    );
+    const [index, marineIndex, lakesIndex, contentIndex] = await Promise.all([
+      loadIndex(),
+      loadMarineIndex(),
+      loadLakesIndex(),
+      loadContentIndex(),
+    ]);
+    const baseRegion =
+      index?.regions?.[regionId] || marineIndex?.regions?.[regionId] || lakesIndex?.regions?.[regionId] || null;
+    return normalizeRegionSummary(enrichRegion(baseRegion, contentIndex));
   }
 
   async function getIndex() {

@@ -128,6 +128,12 @@ Available endpoints:
 - `GET /api/regions?q=amazon&biomeNum=1&limit=20`
 - `GET /api/biomes`
 
+## Region content
+
+Climate, Species, and Threats tabs use `frontend/public/data/region-content.json`: 13 regional profiles, fallbacks for all 14 land biomes and three marine zones, and a general lake overview. Content loads on selection and is cached. The generated geometry and metadata indexes remain separate.
+
+The sidebar labels broad overviews and links regional references. See [CONTENT_SCHEMA.md](CONTENT_SCHEMA.md) to add or revise profiles. Run `npm test` to validate coverage and merging behavior.
+
 ## Performance Notes
 
 - Startup loads only the land, marine, and lake overview TopoJSON layers (7,105 polygon entities).

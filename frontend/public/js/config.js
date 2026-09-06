@@ -3,6 +3,7 @@ export const APP_CONFIG = {
     overviewGeometryUrl: "./data/lod_overview/ecoregions_overview.topojson",
     startupGeometryUrl: "./data/lod0/ecoregions_lod0.topojson",
     metadataUrl: "./data/regions.index.json",
+    contentUrl: "./data/region-content.json?v=20260906-content1",
     lakesOverviewGeometryUrl: "./data/lakes/lod_overview/lakes_overview.topojson",
     lakesStartupGeometryUrl: "./data/lakes/lod0/lakes_lod0.topojson",
     lakesMetadataUrl: "./data/lakes.index.json",

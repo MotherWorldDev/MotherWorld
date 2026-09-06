@@ -199,8 +199,44 @@ export function createUI(appConfig = null) {
     }
   }
 
+  function setSummaryContext(copy, region, field) {
+    if (!copy) return;
+    const card = copy.parentElement;
+    const label = card.querySelector(".detail-label");
+    const level = region?.contentLevels?.[field];
+    if (label) {
+      label.textContent = level === "biome" ? `Biome overview · ${region.biome}`
+        : level === "marine" ? "Marine zone overview"
+        : level === "lake" ? "General lake overview"
+        : level === "region" ? "Regional summary" : "Summary";
+    }
+    card.querySelector(".content-sources")?.remove();
+    if (level !== "region" || !region?.contentSources?.length) return;
+    const references = document.createElement("p");
+    references.className = "content-sources";
+    references.append("Sources: ");
+    let count = 0;
+    for (const source of region.contentSources) {
+      let url;
+      try { url = new URL(source.url); } catch { continue; }
+      if (url.protocol !== "https:" && url.protocol !== "http:") continue;
+      if (count++) references.append(" · ");
+      const link = document.createElement("a");
+      link.href = url.href;
+      link.textContent = source.publisher || source.name || url.hostname;
+      link.title = source.name || "Editorial reference";
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      references.append(link);
+    }
+    if (count) card.append(references);
+  }
+
   function setSidebarTabLabels(region) {
     const isMoon = region?.id === "moon";
+    setSummaryContext(els.sidebarClimateCopy, region, "climateSummary");
+    setSummaryContext(els.sidebarTertiaryCopy, region, "tertiarySummary");
+    setSummaryContext(els.sidebarQuaternaryCopy, region, "plotsSummary");
     if (els.sidebarTabClimate) {
       els.sidebarTabClimate.hidden = isMoon;
     }
@@ -217,10 +253,11 @@ export function createUI(appConfig = null) {
       els.sidebarTabQuaternary.textContent = isMoon ? "Plots" : "Threats";
     }
     if (els.sidebarClimateCopy) {
-      els.sidebarClimateCopy.textContent = isMoon
-        ? region.climateSummary ||
-          "No atmosphere, no weather. Surface temperatures swing from about -173 C at night to 127 C in daylight. Illumination geometry and local solar angle drive nearly everything."
-        : "Seasonality, rainfall bands, and thermal regime will land here in a later pass.";
+      els.sidebarClimateCopy.textContent =
+        region?.climateSummary ||
+        (isMoon
+          ? "No atmosphere, no weather. Surface temperatures swing from about -173 C at night to 127 C in daylight. Illumination geometry and local solar angle drive nearly everything."
+          : "Climate summary not available yet.");
     }
     if (els.sidebarTertiaryOverline) {
       els.sidebarTertiaryOverline.textContent = isMoon ? "Timers" : "Species";
@@ -229,10 +266,11 @@ export function createUI(appConfig = null) {
       els.sidebarTertiaryTitle.textContent = isMoon ? "Lunar Timers" : "Species Snapshot";
     }
     if (els.sidebarTertiaryCopy) {
-      els.sidebarTertiaryCopy.textContent = isMoon
-        ? region.tertiarySummary ||
-          "Sidereal orbit: 27.32 days. Synodic phase cycle: 29.53 days. Perigee and apogee drift through the 8.85-year apsidal cycle shown in the plots tab."
-        : "Species richness and representative taxa will slot into this panel.";
+      els.sidebarTertiaryCopy.textContent =
+        region?.tertiarySummary ||
+        (isMoon
+          ? "Sidereal orbit: 27.32 days. Synodic phase cycle: 29.53 days. Perigee and apogee drift through the 8.85-year apsidal cycle shown in the plots tab."
+          : "Species summary not available yet.");
     }
     if (els.sidebarQuaternaryOverline) {
       els.sidebarQuaternaryOverline.textContent = isMoon ? "Plots" : "Threats";
@@ -241,10 +279,11 @@ export function createUI(appConfig = null) {
       els.sidebarQuaternaryTitle.textContent = isMoon ? "Lunar Plots" : "Threat Profile";
     }
     if (els.sidebarQuaternaryCopy) {
-      els.sidebarQuaternaryCopy.textContent = isMoon
-        ? region.plotsSummary ||
-          "The plots tab tracks live Earth-Moon distance across one apsidal cycle, with full-moon windows highlighted directly from the Cesium ephemeris."
-        : "Pressures, disturbance, and monitoring plots can live in this slot.";
+      els.sidebarQuaternaryCopy.textContent =
+        region?.plotsSummary ||
+        (isMoon
+          ? "The plots tab tracks live Earth-Moon distance across one apsidal cycle, with full-moon windows highlighted directly from the Cesium ephemeris."
+          : "Threat summary not available yet.");
     }
   }
 
