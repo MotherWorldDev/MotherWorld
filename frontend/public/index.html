@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Biome Summary Explorer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Widgets/widgets.css"
+      rel="stylesheet"
+    />
+    <link href="./styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <main class="globe-stage" aria-label="3D ecoregion globe">
+        <div id="globe" class="globe-canvas"></div>
+
+        <header class="chrome-panel topbar" aria-label="Application controls">
+          <div class="brand">
+            <div class="brand-mark" aria-hidden="true"></div>
+            <div>
+              <div class="brand-title">BiomeSummary</div>
+              <div class="brand-subtitle" id="dataset-summary">Loading dataset...</div>
+            </div>
+          </div>
+          <div class="topbar-actions">
+            <button id="region-dataset-toggle-btn" class="ghost-btn" type="button" aria-pressed="false">
+              Dataset: Land
+            </button>
+            <button id="region-fill-toggle-btn" class="ghost-btn" type="button" aria-pressed="true">
+              Filled Regions
+            </button>
+            <button id="camera-anchor-toggle-btn" class="ghost-btn" type="button" aria-pressed="false">
+              Anchor: Earth
+            </button>
+            <button id="reset-view-btn" class="ghost-btn" type="button">Reset View</button>
+            <button id="sky-controls-toggle-btn" class="ghost-btn" type="button" aria-expanded="false">
+              Sky
+            </button>
+            <button id="night-debug-toggle-btn" class="ghost-btn" type="button" aria-pressed="false">
+              Night Debug
+            </button>
+          </div>
+        </header>
+
+        <section id="sky-controls-panel" class="sky-controls chrome-panel" hidden aria-label="Sky controls">
+          <div class="sky-controls-title">Sky Overlays</div>
+
+          <label class="sky-toggle-row">
+            <input id="sky-figures-toggle" type="checkbox" />
+            <span>Constellation figures</span>
+          </label>
+          <label class="sky-slider-row" for="sky-figures-opacity">
+            <span>Figures opacity</span>
+            <input id="sky-figures-opacity" type="range" min="0" max="1" step="0.01" />
+          </label>
+          <label class="sky-slider-row" for="sky-figures-brightness">
+            <span>Figures brightness</span>
+            <input id="sky-figures-brightness" type="range" min="0" max="3" step="0.05" />
+          </label>
+
+          <label class="sky-toggle-row">
+            <input id="sky-boundaries-toggle" type="checkbox" />
+            <span>Constellation boundaries</span>
+          </label>
+          <label class="sky-slider-row" for="sky-boundaries-opacity">
+            <span>Boundaries opacity</span>
+            <input id="sky-boundaries-opacity" type="range" min="0" max="1" step="0.01" />
+          </label>
+          <label class="sky-slider-row" for="sky-boundaries-brightness">
+            <span>Boundaries brightness</span>
+            <input id="sky-boundaries-brightness" type="range" min="0" max="3" step="0.05" />
+          </label>
+        </section>
+
+        <div id="hover-pill" class="hover-pill" hidden></div>
+        <div id="earth-tag" class="body-tag" hidden>Terra</div>
+        <div id="moon-tag" class="body-tag" hidden>Luna</div>
+        <div id="sun-tag" class="body-tag" hidden>Sol</div>
+
+        <div id="loading-overlay" class="loading-overlay" role="status" aria-live="polite">
+          <div class="loading-card">
+            <div class="loading-spinner" aria-hidden="true"></div>
+            <div id="loading-text">Preparing globe...</div>
+          </div>
+        </div>
+
+        <div id="error-banner" class="error-banner" hidden></div>
+
+        <div id="perf-hud" class="perf-hud" aria-live="polite">
+          <div class="perf-hud-title">Perf</div>
+          <pre id="perf-hud-text">Booting...</pre>
+        </div>
+
+        <section id="debug-panel" class="debug-panel chrome-panel" hidden aria-label="Geometry debug controls">
+          <div class="debug-title">Geometry Debug</div>
+          <label class="debug-field">
+            <span>Region ID</span>
+            <input id="debug-region-id" type="text" placeholder="eco_719" spellcheck="false" />
+          </label>
+          <div class="debug-toggle-grid">
+            <label><input id="debug-fill-only" type="checkbox" /> Fill only</label>
+            <label><input id="debug-outline-only" type="checkbox" /> Outline only</label>
+            <label><input id="debug-lod0-only" type="checkbox" /> LOD0 only</label>
+            <label><input id="debug-lod1-only" type="checkbox" /> LOD1 only</label>
+            <label><input id="debug-disable-lod-swap" type="checkbox" /> Disable LOD swap</label>
+          </div>
+          <div class="debug-actions">
+            <button id="debug-apply-btn" class="ghost-btn" type="button">Apply</button>
+            <button id="debug-clear-btn" class="ghost-btn" type="button">Clear</button>
+          </div>
+          <pre id="debug-status" class="debug-status">Waiting...</pre>
+        </section>
+      </main>
+
+      <aside id="sidebar" class="sidebar" aria-label="Ecoregion summary" hidden>
+        <div
+          id="sidebar-resize-handle"
+          class="sidebar-resize-handle"
+          role="separator"
+          aria-orientation="vertical"
+          aria-label="Resize summary panel"
+          title="Drag to resize"
+        ></div>
+        <div class="sidebar-inner">
+          <div class="sidebar-topbar">
+            <div class="sidebar-kicker">Region Summary</div>
+            <button
+              id="sidebar-close-btn"
+              class="sidebar-close-btn"
+              type="button"
+              aria-label="Close summary panel"
+              title="Close"
+            >
+              ×
+            </button>
+          </div>
+          <div class="sidebar-shell">
+            <nav class="sidebar-tabs" aria-label="Summary sections">
+              <button id="sidebar-tab-overview" class="sidebar-tab is-active" type="button" data-panel="overview" aria-current="page">
+                Overview
+              </button>
+              <button id="sidebar-tab-climate" class="sidebar-tab" type="button" data-panel="climate">Climate</button>
+              <button id="sidebar-tab-tertiary" class="sidebar-tab" type="button" data-panel="tertiary">Species</button>
+              <button id="sidebar-tab-quaternary" class="sidebar-tab" type="button" data-panel="quaternary">Threats</button>
+            </nav>
+
+            <div class="sidebar-panel">
+              <div id="sidebar-empty" class="sidebar-empty">
+                <h2>Select an ecoregion</h2>
+                <p>Hover for preview. Click a region to inspect biome, realm, and derived area metadata.</p>
+              </div>
+
+              <div id="sidebar-loading" class="sidebar-loading" hidden>
+                <div class="mini-spinner" aria-hidden="true"></div>
+                <span>Loading region summary...</span>
+              </div>
+
+              <section id="sidebar-content" class="sidebar-content sidebar-pane" data-panel="overview" hidden>
+                <div class="sidebar-header">
+                  <p class="sidebar-overline" id="region-id-label"></p>
+                  <h2 id="region-name"></h2>
+                  <div class="badge-row">
+                    <span id="biome-badge" class="badge biome-badge"></span>
+                    <span id="realm-badge" class="badge realm-badge"></span>
+                  </div>
+                </div>
+
+                <div class="detail-grid">
+                  <div class="detail-card">
+                    <div class="detail-label">Area (derived)</div>
+                    <div class="detail-value" id="region-area">-</div>
+                  </div>
+                  <div class="detail-card">
+                    <div class="detail-label">Representative Point</div>
+                    <div class="detail-value" id="region-center">-</div>
+                  </div>
+                </div>
+
+                <div id="moon-overview-grid" class="detail-grid" hidden></div>
+
+                <div id="meta-section" class="meta-section">
+                  <div class="meta-section-title">Metadata</div>
+                  <dl id="metadata-list" class="metadata-list"></dl>
+                </div>
+              </section>
+
+              <section id="sidebar-climate-panel" class="sidebar-content sidebar-pane" data-panel="climate" hidden>
+                <div class="sidebar-header">
+                  <p class="sidebar-overline">Climate</p>
+                  <h2>Climate Snapshot</h2>
+                </div>
+                <div class="detail-card">
+                  <div class="detail-label">Placeholder</div>
+                  <div class="detail-value" id="sidebar-climate-copy">
+                    Climate and seasonal patterns will land here in a later pass.
+                  </div>
+                </div>
+              </section>
+
+              <section id="sidebar-tertiary-panel" class="sidebar-content sidebar-pane" data-panel="tertiary" hidden>
+                <div class="sidebar-header">
+                  <p class="sidebar-overline" id="sidebar-tertiary-overline">Species</p>
+                  <h2 id="sidebar-tertiary-title">Species Snapshot</h2>
+                </div>
+                <div id="moon-timer-shell" class="moon-timer-shell" hidden>
+                  <div class="moon-timer-head">
+                    <div class="meta-section-title">Lunar event countdowns</div>
+                    <div class="moon-timer-caption">Live forecast from Cesium ephemeris geometry</div>
+                  </div>
+                  <div id="moon-timer-grid" class="moon-timer-grid"></div>
+                </div>
+                <div class="detail-card">
+                  <div class="detail-label">Placeholder</div>
+                  <div class="detail-value" id="sidebar-tertiary-copy">
+                    Species richness and representative taxa will slot into this panel.
+                  </div>
+                </div>
+              </section>
+
+              <section id="sidebar-quaternary-panel" class="sidebar-content sidebar-pane" data-panel="quaternary" hidden>
+                <div class="sidebar-header">
+                  <p class="sidebar-overline" id="sidebar-quaternary-overline">Threats</p>
+                  <h2 id="sidebar-quaternary-title">Threat Profile</h2>
+                </div>
+                <div id="moon-plot-shell" class="moon-plot-shell" hidden>
+                  <div class="moon-plot-head">
+                    <div class="meta-section-title">Earth-Moon distance over one apsidal cycle</div>
+                    <div class="moon-plot-caption">Live Cesium ephemeris approximation with full-moon highlighting</div>
+                  </div>
+                  <canvas id="moon-plot-canvas" class="moon-plot-canvas" width="320" height="220"></canvas>
+                  <div id="moon-plot-stats" class="moon-plot-stats"></div>
+                </div>
+                <div class="detail-card">
+                  <div class="detail-label">Placeholder</div>
+                  <div class="detail-value" id="sidebar-quaternary-copy">
+                    Pressures, disturbance, and monitoring plots can live in this slot.
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <div id="moon-plot-overlay" class="moon-plot-overlay" hidden>
+        <div class="moon-plot-overlay-backdrop"></div>
+        <section class="moon-plot-modal chrome-panel" aria-label="Expanded lunar apsidal plot">
+          <div class="moon-plot-modal-head">
+            <div>
+              <div class="sidebar-kicker">Lunar Plot</div>
+              <h2 class="moon-plot-modal-title">Earth-Moon Distance Over The Apsidal Cycle</h2>
+            </div>
+            <button id="moon-plot-overlay-close" class="ghost-btn" type="button">Close</button>
+          </div>
+          <canvas id="moon-plot-overlay-canvas" class="moon-plot-overlay-canvas" width="1280" height="420"></canvas>
+          <div id="moon-plot-overlay-stats" class="moon-plot-stats"></div>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Cesium.js"></script>
+    <script type="module" src="./js/main.js"></script>
+  </body>
+</html>

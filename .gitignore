@@ -1,0 +1,43 @@
+# Local dependencies and Python caches
+node_modules/
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+
+# Local configuration, credentials, and editor state
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.codex/
+.agents/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+
+# Large source datasets. Processed frontend/public/data is versioned.
+/Blackmarble/
+/BlackMarbleTiles/
+/Bluemarble/
+/Ecoregions2017/
+/HydroLAKES_polys_v10_shp/
+/Marine Ecoregions of the World/
+/NasaMoonMap/
+/Starmap/
+
+# Original raster files; browser-ready JPG/PNG assets are versioned.
+*.tif
+*.tiff
+*.exr
+/PIA26681.jpg
+
+# Intermediate preprocessing workspaces
+/lakes_preprocess_*/
+/marine_prep_*/
+/ecoregions_preprocess_*/
+
