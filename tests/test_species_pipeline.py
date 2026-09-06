@@ -52,6 +52,12 @@ class PipelineTests(unittest.TestCase):
         wkt = gbif_wkt(unary_union([box(0,0,1,1), box(2,2,3,3)]).wkt)
         self.assertTrue(all(p.exterior.is_ccw for p in from_wkt(wkt).geoms))
 
+    def test_gbif_repairs_invalid_rounded_query_geometry(self):
+        raw = "MULTIPOLYGON (((0 0, 2 2, 2 0, 0 2, 0 0)), ((3 0, 4 0, 4 1, 3 1, 3 0)))"
+        fixed = from_wkt(gbif_wkt(raw))
+        self.assertTrue(fixed.is_valid)
+        self.assertTrue(all(part.exterior.is_ccw for part in fixed.geoms))
+
     def test_query_filters_invalidate_resume(self):
         self.assertEqual(query_fingerprint("geometry", {"year":2026,"basis":"A"}), query_fingerprint("geometry", {"basis":"A","year":2026}))
         self.assertNotEqual(query_fingerprint("geometry", {"year":2025}), query_fingerprint("geometry", {"year":2026}))

@@ -13,6 +13,7 @@ from shapely.geometry import MultiPolygon
 from shapely.geometry.polygon import orient
 
 from species_common import (
+    _repair_polygonal,
     batched,
     geometry_wkt_chunks,
     load_region_geometries,
@@ -142,7 +143,9 @@ def fetch_facet_counts(session, wkt: str, *, facet: str, page_size: int, args: a
 
 
 def gbif_wkt(wkt: str) -> str:
-    geom = from_wkt(wkt)
+    geom = _repair_polygonal(from_wkt(wkt))
+    if geom is None:
+        raise ValueError("GBIF query geometry contains no polygonal area")
     fixed = orient(geom, sign=1.0) if geom.geom_type == "Polygon" else MultiPolygon([orient(p, sign=1.0) for p in geom.geoms])
     return to_wkt(fixed, rounding_precision=6)
 
