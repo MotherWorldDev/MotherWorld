@@ -165,7 +165,7 @@ function polygonHierarchyContainsPoint(hierarchy, pointLon, pointLat) {
   return true;
 }
 
-function pickManagedEntity(viewer, screenPosition, baseDataSource, detailDataSource, marineDataSource, lakesDataSource) {
+function pickManagedEntity(viewer, screenPosition, baseDataSource, detailDataSource, marineDataSource, lakesDataSource, singlePick = false) {
   let detailEntity = null;
   let baseEntity = null;
   let marineEntity = null;
@@ -192,7 +192,9 @@ function pickManagedEntity(viewer, screenPosition, baseDataSource, detailDataSou
     }
   };
 
-  const picks = viewer.scene.drillPick?.(screenPosition, 128) || [];
+  const picks = singlePick
+    ? [viewer.scene.pick(screenPosition)]
+    : viewer.scene.drillPick?.(screenPosition, 128) || [];
   if (picks.length) {
     for (const picked of picks) {
       if (!picked?.id) continue;
@@ -1758,7 +1760,15 @@ export function createGlobeExplorer({
   let startupLakesUrl = null;
   let hoveredEntity = null;
   let hoverRaf = 0;
+  let hoverTimer = 0;
+  let lastHoverAt = -Infinity;
+  let cameraMoving = false;
+  let pointerDown = false;
   let pendingHoverPosition = null;
+  let visibleRegionSources = [];
+  let globalGeometryReady = false;
+  let globalLayerGeneration = 0;
+  const globalLayerLoads = new Map();
   let realmLoadToken = 0;
   let pulseFrame = 0;
   let pulse = null;
@@ -1805,18 +1815,21 @@ export function createGlobeExplorer({
   }
 
   function getActiveLandGlobalDataSource() {
-    if (overviewLodActive && landOverviewDataSource) return landOverviewDataSource;
-    return baseDataSource;
+    return overviewLodActive
+      ? landOverviewDataSource || baseDataSource
+      : baseDataSource || landOverviewDataSource;
   }
 
   function getActiveMarineGlobalDataSource() {
-    if (overviewLodActive && marineOverviewDataSource) return marineOverviewDataSource;
-    return marineDataSource;
+    return overviewLodActive
+      ? marineOverviewDataSource || marineDataSource
+      : marineDataSource || marineOverviewDataSource;
   }
 
   function getActiveLakesGlobalDataSource() {
-    if (overviewLodActive && lakesOverviewDataSource) return lakesOverviewDataSource;
-    return lakesDataSource;
+    return overviewLodActive
+      ? lakesOverviewDataSource || lakesDataSource
+      : lakesDataSource || lakesOverviewDataSource;
   }
   let lastDuplicateVisible = 0;
   let lastFlatViolationCount = 0;
@@ -1885,6 +1898,18 @@ export function createGlobeExplorer({
     if (lakesOverviewDataSource) out.push(lakesOverviewDataSource);
     if (lakesDataSource) out.push(lakesDataSource);
     return out;
+  }
+
+  // Keep inactive LODs cached, but leave them out of camera and visibility scans.
+  function activeDataSources() {
+    const sources = [];
+    if (isLandVisibleDatasetMode()) {
+      sources.push(getActiveLandGlobalDataSource());
+      if (!debugOptions.lod0Only && !debugOptions.disableLodSwap) sources.push(activeRealmDataSource);
+    }
+    if (isMarineVisibleDatasetMode()) sources.push(getActiveMarineGlobalDataSource());
+    sources.push(getActiveLakesGlobalDataSource());
+    return sources.filter(Boolean);
   }
 
   function buildFallbackRegionMeta(entity, sourceTag, explicitRegionId, now = Cesium.JulianDate.now()) {
@@ -2154,7 +2179,7 @@ export function createGlobeExplorer({
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
     if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
-    if (overviewLodActive) return false;
+    if (getActiveLandGlobalDataSource() !== baseDataSource) return false;
     if (activeRealmSlug && !debugOptions.disableLodSwap && !debugOptions.lod0Only) {
       return getEntityRealmSlug(entity) !== activeRealmSlug;
     }
@@ -2165,7 +2190,7 @@ export function createGlobeExplorer({
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
     if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
-    if (!overviewLodActive) return false;
+    if (getActiveLandGlobalDataSource() !== landOverviewDataSource) return false;
     if (activeRealmSlug && !debugOptions.disableLodSwap && !debugOptions.lod0Only) return false;
     return true;
   }
@@ -2183,7 +2208,7 @@ export function createGlobeExplorer({
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
     if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
-    if (overviewLodActive) return false;
+    if (getActiveMarineGlobalDataSource() !== marineDataSource) return false;
     return true;
   }
 
@@ -2191,7 +2216,7 @@ export function createGlobeExplorer({
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
     if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
-    if (!overviewLodActive) return false;
+    if (getActiveMarineGlobalDataSource() !== marineOverviewDataSource) return false;
     return true;
   }
 
@@ -2199,7 +2224,7 @@ export function createGlobeExplorer({
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
     if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
-    if (overviewLodActive) return false;
+    if (getActiveLakesGlobalDataSource() !== lakesDataSource) return false;
     return true;
   }
 
@@ -2207,7 +2232,7 @@ export function createGlobeExplorer({
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
     if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
-    if (!overviewLodActive) return false;
+    if (getActiveLakesGlobalDataSource() !== lakesOverviewDataSource) return false;
     return true;
   }
 
@@ -2244,7 +2269,14 @@ export function createGlobeExplorer({
 
   function applyAllVisibility() {
     syncOverviewLodState();
-    const ecoregionsVisible = shouldRenderEcoregions();
+    const sources = shouldRenderEcoregions() ? activeDataSources() : [];
+    const sourcesChanged = sources.length !== visibleRegionSources.length ||
+      sources.some((ds, index) => ds !== visibleRegionSources[index]);
+    const allSources = [landOverviewDataSource, baseDataSource, activeRealmDataSource,
+      marineOverviewDataSource, marineDataSource, lakesOverviewDataSource, lakesDataSource];
+    for (const ds of allSources) {
+      if (ds) ds.show = sources.includes(ds);
+    }
     let marineTotal = 0;
     let marineVisible = 0;
     let baseTotal = 0;
@@ -2252,54 +2284,10 @@ export function createGlobeExplorer({
     let detailTotal = 0;
     let detailVisible = 0;
 
-    if (!ecoregionsVisible) {
-      if (lakesOverviewDataSource) {
-        lakesOverviewDataSource.show = false;
-      }
-      if (lakesDataSource) {
-        lakesDataSource.show = false;
-      }
-      if (marineOverviewDataSource) {
-        marineOverviewDataSource.show = false;
-        marineTotal += marineOverviewDataSource.entities.values.length;
-      }
-      if (marineDataSource) {
-        marineDataSource.show = false;
-        marineTotal += marineDataSource.entities.values.length;
-      }
-      if (landOverviewDataSource) {
-        landOverviewDataSource.show = false;
-        baseTotal += landOverviewDataSource.entities.values.length;
-      }
-      if (baseDataSource) {
-        baseDataSource.show = false;
-        baseTotal += baseDataSource.entities.values.length;
-      }
-      if (activeRealmDataSource) {
-        activeRealmDataSource.show = false;
-        detailTotal = activeRealmDataSource.entities.values.length;
-      }
-      for (const overlayEntity of selectionOverlayEntities) {
-        overlayEntity.show = false;
-      }
-      viewCullStats = { marineTotal, marineVisible, baseTotal, baseVisible, detailTotal, detailVisible };
-      requestRender();
-      return;
-    }
-
-    if (isMarineOnlyDatasetMode()) {
-      if (landOverviewDataSource) landOverviewDataSource.show = false;
-      if (baseDataSource) baseDataSource.show = false;
-      if (activeRealmDataSource) activeRealmDataSource.show = false;
-    } else if (!isMarineVisibleDatasetMode()) {
-      if (marineOverviewDataSource) marineOverviewDataSource.show = false;
-      if (marineDataSource) marineDataSource.show = false;
-    }
-
-    for (const ds of loadedDataSources()) {
-      ds.show = true;
+    for (const ds of sources) {
       for (const entity of ds.entities.values) {
         applyEntityVisibility(entity);
+        if (sourcesChanged) applyEntityStyle(entity);
         if (entity._sourceTag === "marine" || entity._sourceTag === "marineOverview") {
           marineTotal += 1;
           if (entity.show) marineVisible += 1;
@@ -2312,9 +2300,16 @@ export function createGlobeExplorer({
         }
       }
     }
+    if (sourcesChanged) {
+      visibleRegionSources = sources;
+      clearHover();
+      // Rebuild from the new LOD so a selected region never keeps a stale outline/fill.
+      syncSelectionOverlay();
+      scheduleHover();
+    }
     for (const overlayEntity of selectionOverlayEntities) {
       if (overlayEntity?._sourceEntity) {
-        overlayEntity.show = overlayEntity._sourceEntity.show !== false;
+        overlayEntity.show = sources.length > 0 && overlayEntity._sourceEntity.show !== false;
       }
     }
     viewCullStats = { marineTotal, marineVisible, baseTotal, baseVisible, detailTotal, detailVisible };
@@ -2469,69 +2464,91 @@ export function createGlobeExplorer({
     refreshAllStyles();
   }
 
-  async function ensureMarineOverviewLayerLoaded() {
-    if (marineOverviewDataSource || !startupMarineOverviewUrl) return marineOverviewDataSource;
-    const ds = await Cesium.GeoJsonDataSource.load(startupMarineOverviewUrl, { clampToGround: false });
-    buildEntityIndex(ds, "marineOverview");
-    viewer.dataSources.add(ds);
-    marineOverviewDataSource = ds;
-    return marineOverviewDataSource;
-  }
-
-  async function ensureLakesOverviewLayerLoaded() {
-    if (lakesOverviewDataSource || !startupLakesOverviewUrl) return lakesOverviewDataSource;
-    const ds = await Cesium.GeoJsonDataSource.load(startupLakesOverviewUrl, { clampToGround: false });
-    buildEntityIndex(ds, "lakesOverview");
-    viewer.dataSources.add(ds);
-    lakesOverviewDataSource = ds;
-    return lakesOverviewDataSource;
-  }
-
-  async function ensureMarineLayerLoaded() {
-    if (marineDataSource || !startupMarineUrl) return marineDataSource;
-    const ds = await Cesium.GeoJsonDataSource.load(startupMarineUrl, { clampToGround: false });
-    buildEntityIndex(ds, "marine");
-    viewer.dataSources.add(ds);
-    marineDataSource = ds;
-    for (const [id, entity] of marineDataSource._entityIndex.byId.entries()) {
-      marineEntitiesById.set(id, entity);
+  async function ensureGlobalLayerLoaded(sourceTag, url, getCurrent, attach) {
+    const existing = getCurrent();
+    if (existing || !url) return existing;
+    if (globalLayerLoads.has(sourceTag)) return globalLayerLoads.get(sourceTag);
+    const generation = globalLayerGeneration;
+    const loading = (async () => {
+      const ds = await Cesium.GeoJsonDataSource.load(url, { clampToGround: false });
+      if (generation !== globalLayerGeneration) return null;
+      ds.show = false;
+      buildEntityIndex(ds, sourceTag);
+      await viewer.dataSources.add(ds);
+      if (generation !== globalLayerGeneration) {
+        viewer.dataSources.remove(ds, true);
+        return null;
+      }
+      attach(ds);
+      for (const entity of ds.entities.values) applyEntityStyle(entity);
+      return ds;
+    })();
+    globalLayerLoads.set(sourceTag, loading);
+    try {
+      return await loading;
+    } finally {
+      // Failed requests may be retried on the next zoom or dataset change.
+      if (globalLayerLoads.get(sourceTag) === loading) globalLayerLoads.delete(sourceTag);
     }
-    return marineDataSource;
   }
 
-  async function ensureLakesLayerLoaded() {
-    if (lakesDataSource || !startupLakesUrl) return lakesDataSource;
-    const ds = await Cesium.GeoJsonDataSource.load(startupLakesUrl, { clampToGround: false });
-    buildEntityIndex(ds, "lakes");
-    viewer.dataSources.add(ds);
-    lakesDataSource = ds;
-    return lakesDataSource;
+  function ensureMarineOverviewLayerLoaded() {
+    return ensureGlobalLayerLoaded("marineOverview", startupMarineOverviewUrl,
+      () => marineOverviewDataSource, (ds) => { marineOverviewDataSource = ds; });
   }
 
-  async function ensureLandOverviewLayerLoaded() {
-    if (landOverviewDataSource || !startupLandOverviewUrl) return landOverviewDataSource;
-    const ds = await Cesium.GeoJsonDataSource.load(startupLandOverviewUrl, { clampToGround: false });
-    buildEntityIndex(ds, "landOverview");
-    viewer.dataSources.add(ds);
-    landOverviewDataSource = ds;
-    return landOverviewDataSource;
+  function ensureLakesOverviewLayerLoaded() {
+    return ensureGlobalLayerLoaded("lakesOverview", startupLakesOverviewUrl,
+      () => lakesOverviewDataSource, (ds) => { lakesOverviewDataSource = ds; });
   }
 
-  async function ensureLandLayerLoaded() {
-    if (baseDataSource || !startupLandUrl) return baseDataSource;
-    const ds = await Cesium.GeoJsonDataSource.load(startupLandUrl, { clampToGround: false });
-    buildEntityIndex(ds, "base");
-    viewer.dataSources.add(ds);
-    baseDataSource = ds;
-    baseEntitiesById.clear();
-    baseEntitiesByRealm.clear();
-    for (const [id, entity] of baseDataSource._entityIndex.byId.entries()) {
-      baseEntitiesById.set(id, entity);
+  function ensureMarineLayerLoaded() {
+    return ensureGlobalLayerLoaded("marine", startupMarineUrl, () => marineDataSource, (ds) => {
+      marineDataSource = ds;
+      for (const [id, entity] of ds._entityIndex.byId.entries()) marineEntitiesById.set(id, entity);
+    });
+  }
+
+  function ensureLakesLayerLoaded() {
+    return ensureGlobalLayerLoaded("lakes", startupLakesUrl,
+      () => lakesDataSource, (ds) => { lakesDataSource = ds; });
+  }
+
+  function ensureLandOverviewLayerLoaded() {
+    return ensureGlobalLayerLoaded("landOverview", startupLandOverviewUrl,
+      () => landOverviewDataSource, (ds) => { landOverviewDataSource = ds; });
+  }
+
+  function ensureLandLayerLoaded() {
+    return ensureGlobalLayerLoaded("base", startupLandUrl, () => baseDataSource, (ds) => {
+      baseDataSource = ds;
+      baseEntitiesById.clear();
+      baseEntitiesByRealm.clear();
+      for (const [id, entity] of ds._entityIndex.byId.entries()) baseEntitiesById.set(id, entity);
+      for (const [slug, entities] of ds._entityIndex.byRealm.entries()) baseEntitiesByRealm.set(slug, entities);
+    });
+  }
+
+  async function ensureGlobalLayersForCurrentView() {
+    syncOverviewLodState();
+    if (!shouldRenderEcoregions()) return;
+    const generation = globalLayerGeneration;
+    const loads = [ensureLakesOverviewLayerLoaded()];
+    if (isLandVisibleDatasetMode()) loads.push(ensureLandOverviewLayerLoaded());
+    if (isMarineVisibleDatasetMode()) loads.push(ensureMarineOverviewLayerLoaded());
+    if (!overviewLodActive) {
+      loads.push(ensureLakesLayerLoaded());
+      if (isLandVisibleDatasetMode()) loads.push(ensureLandLayerLoaded());
+      if (isMarineVisibleDatasetMode()) loads.push(ensureMarineLayerLoaded());
     }
-    for (const [slug, entities] of baseDataSource._entityIndex.byRealm.entries()) {
-      baseEntitiesByRealm.set(slug, entities);
+    try {
+      const results = await Promise.allSettled(loads);
+      const failed = results.find((result) => result.status === "rejected");
+      if (failed) throw failed.reason;
+    } finally {
+      // A late response uses the current camera/mode; it cannot switch the user back.
+      if (generation === globalLayerGeneration) updateCameraCulling(true);
     }
-    return baseDataSource;
   }
 
   function getCameraHeightMeters() {
@@ -2673,16 +2690,17 @@ export function createGlobeExplorer({
   }
 
   function updateCameraCulling(force = false) {
-    if (appConfig.globe.cameraCulling === false) return;
     const now = performance.now();
     const minMs = appConfig.globe.cameraCullUpdateMs ?? 120;
     if (!force && now - lastCullRunAt < minMs) return;
     lastCullRunAt = now;
-    const occluder = new Cesium.EllipsoidalOccluder(viewer.scene.globe.ellipsoid, viewer.camera.positionWC);
-
-    for (const ds of loadedDataSources()) {
-      for (const entity of ds.entities.values) {
-        entity._cameraVisible = entityPassesCameraCulling(entity, occluder);
+    syncOverviewLodState();
+    if (appConfig.globe.cameraCulling !== false && shouldRenderEcoregions()) {
+      const occluder = new Cesium.EllipsoidalOccluder(viewer.scene.globe.ellipsoid, viewer.camera.positionWC);
+      for (const ds of activeDataSources()) {
+        for (const entity of ds.entities.values) {
+          entity._cameraVisible = entityPassesCameraCulling(entity, occluder);
+        }
       }
     }
     applyAllVisibility();
@@ -3107,14 +3125,41 @@ export function createGlobeExplorer({
     return setCameraAnchorMode(cameraAnchorMode === "earth" ? "moon" : "earth");
   }
 
+  function clearHover(clearPosition = false) {
+    if (hoverTimer) window.clearTimeout(hoverTimer);
+    if (hoverRaf) cancelAnimationFrame(hoverRaf);
+    hoverTimer = 0;
+    hoverRaf = 0;
+    if (clearPosition) pendingHoverPosition = null;
+    const previous = hoveredEntity;
+    hoveredEntity = null;
+    if (previous && appConfig.styling.hoverHighlightEnabled !== false) refreshChangedStyles(previous);
+    onHover?.(null, null);
+  }
+
+  function scheduleHover() {
+    if (cameraMoving || pointerDown || !pendingHoverPosition || hoverRaf || hoverTimer || !shouldRenderEcoregions()) return;
+    const delay = Math.max(0, (appConfig.styling.hoverUpdateMs ?? 100) - (performance.now() - lastHoverAt));
+    if (delay > 0) {
+      hoverTimer = window.setTimeout(() => {
+        hoverTimer = 0;
+        scheduleHover();
+      }, delay);
+    } else {
+      hoverRaf = requestAnimationFrame(processHover);
+    }
+  }
+
   function processHover() {
     hoverRaf = 0;
+    if (cameraMoving || pointerDown || !shouldRenderEcoregions()) return;
     if (
       (!getActiveLandGlobalDataSource() && !getActiveMarineGlobalDataSource() && !getActiveLakesGlobalDataSource()) ||
       !pendingHoverPosition
     ) {
       return;
     }
+    lastHoverAt = performance.now();
     const previous = hoveredEntity;
     hoveredEntity = pickManagedEntity(
       viewer,
@@ -3122,11 +3167,9 @@ export function createGlobeExplorer({
       isLandVisibleDatasetMode() ? getActiveLandGlobalDataSource() : null,
       isLandVisibleDatasetMode() ? activeRealmDataSource : null,
       isMarineVisibleDatasetMode() ? getActiveMarineGlobalDataSource() : null,
-      getActiveLakesGlobalDataSource()
+      getActiveLakesGlobalDataSource(),
+      true // Hover needs only the top object; clicks keep the complete region lookup.
     );
-    if (!hoveredEntity) {
-      hoveredEntity = findEntityByGlobeHit(pendingHoverPosition);
-    }
     if (appConfig.styling.hoverHighlightEnabled !== false) {
       refreshChangedStyles(previous);
     }
@@ -3247,11 +3290,26 @@ export function createGlobeExplorer({
   }
 
   handler.setInputAction((movement) => {
-    pendingHoverPosition = movement.endPosition;
-    if (!hoverRaf) {
-      hoverRaf = requestAnimationFrame(processHover);
-    }
+    pendingHoverPosition = Cesium.Cartesian2.clone(movement.endPosition, pendingHoverPosition || new Cesium.Cartesian2());
+    scheduleHover();
   }, Cesium.ScreenSpaceEventType.MOUSE_MOVE);
+
+  for (const type of [Cesium.ScreenSpaceEventType.LEFT_DOWN, Cesium.ScreenSpaceEventType.MIDDLE_DOWN, Cesium.ScreenSpaceEventType.RIGHT_DOWN]) {
+    handler.setInputAction(() => {
+      pointerDown = true;
+      clearHover();
+    }, type);
+  }
+  for (const type of [Cesium.ScreenSpaceEventType.LEFT_UP, Cesium.ScreenSpaceEventType.MIDDLE_UP, Cesium.ScreenSpaceEventType.RIGHT_UP]) {
+    handler.setInputAction(() => {
+      pointerDown = false;
+      scheduleHover();
+    }, type);
+  }
+  viewer.scene.canvas.addEventListener("pointerleave", () => {
+    pointerDown = false;
+    clearHover(true);
+  });
 
   handler.setInputAction((click) => {
     if (!getActiveLandGlobalDataSource() && !getActiveMarineGlobalDataSource() && !getActiveLakesGlobalDataSource()) {
@@ -3310,12 +3368,19 @@ export function createGlobeExplorer({
   }, Cesium.ScreenSpaceEventType.LEFT_CLICK);
 
   viewer.camera.moveStart.addEventListener(() => {
+    cameraMoving = true;
+    clearHover();
     setRenderResolutionScale(movingResolutionScale);
   });
 
   viewer.camera.moveEnd.addEventListener(() => {
+    cameraMoving = false;
     setRenderResolutionScale(idleResolutionScale);
     scheduleCameraCulling(true);
+    scheduleHover();
+    if (globalGeometryReady) {
+      ensureGlobalLayersForCurrentView().catch((err) => console.warn("Global detail loading failed; keeping available boundaries:", err));
+    }
     if (appConfig.globe.nightUltraLoadOnIdleOnly !== false) {
       if (nightUltraIdleReady) {
         setNightUltraIdleReady(true);
@@ -3351,6 +3416,10 @@ export function createGlobeExplorer({
     marineRegionIndex,
     lakesRegionIndex,
   }) {
+    globalGeometryReady = false;
+    globalLayerGeneration += 1;
+    globalLayerLoads.clear();
+    clearHover(true);
     regionIndexCache.clear();
     regionNameCache.clear();
     realmFilesLod1.clear();
@@ -3419,12 +3488,17 @@ export function createGlobeExplorer({
       }
     }
 
-    await ensureLandOverviewLayerLoaded();
-    await ensureLandLayerLoaded();
-    await ensureMarineOverviewLayerLoaded();
-    await ensureMarineLayerLoaded();
-    await ensureLakesOverviewLayerLoaded();
-    await ensureLakesLayerLoaded();
+    await Promise.all([
+      ensureLandOverviewLayerLoaded(),
+      ensureMarineOverviewLayerLoaded(),
+      ensureLakesOverviewLayerLoaded(),
+    ]);
+    globalGeometryReady = true;
+    try {
+      await ensureGlobalLayersForCurrentView();
+    } catch (err) {
+      console.warn("Global detail loading failed; keeping available boundaries:", err);
+    }
 
     syncOverviewLodState();
     applyAllVisibility();
@@ -3438,48 +3512,23 @@ export function createGlobeExplorer({
       nextMode === "marine" ? "marine" : nextMode === "combined" ? "combined" : "land";
     if (regionDatasetMode === targetMode) return regionDatasetMode;
 
-    hoveredEntity = null;
-    pendingHoverPosition = null;
+    clearHover(true);
     if (selectionDetailLoadRaf) {
       cancelAnimationFrame(selectionDetailLoadRaf);
       selectionDetailLoadRaf = 0;
     }
+    regionDatasetMode = targetMode;
     await selectTarget(null, null);
-
-    if (targetMode === "marine") {
-      clearActiveRealmLayer();
-      await ensureMarineOverviewLayerLoaded();
-      await ensureMarineLayerLoaded();
-      regionDatasetMode = "marine";
-      applyAllVisibility();
-      updateCameraCulling(true);
-      refreshAllStyles();
-      debugReport("dataset-marine");
-      return regionDatasetMode;
-    }
-
-    if (targetMode === "combined") {
-      await ensureLandOverviewLayerLoaded();
-      await ensureLandLayerLoaded();
-      await ensureMarineOverviewLayerLoaded();
-      await ensureMarineLayerLoaded();
-      regionDatasetMode = "combined";
-      applyAllVisibility();
-      updateCameraCulling(true);
-      refreshAllStyles();
-      syncRealmDetailToCurrentView().catch((err) => console.warn("LOD sync on dataset switch failed:", err));
-      debugReport("dataset-combined");
-      return regionDatasetMode;
-    }
-
-    await ensureLandOverviewLayerLoaded();
-    await ensureLandLayerLoaded();
-    regionDatasetMode = "land";
-    applyAllVisibility();
+    if (targetMode === "marine") clearActiveRealmLayer();
     updateCameraCulling(true);
+    try {
+      await ensureGlobalLayersForCurrentView();
+    } catch (err) {
+      console.warn("Dataset detail loading failed; keeping available boundaries:", err);
+    }
     refreshAllStyles();
     syncRealmDetailToCurrentView().catch((err) => console.warn("LOD sync on dataset switch failed:", err));
-    debugReport("dataset-land");
+    debugReport(`dataset-${regionDatasetMode}`);
     return regionDatasetMode;
   }
 

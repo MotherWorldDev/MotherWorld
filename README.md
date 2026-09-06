@@ -130,9 +130,12 @@ Available endpoints:
 
 ## Performance Notes
 
-- Startup now loads only the LOD0 world layer (TopoJSON) instead of one giant GeoJSON.
-- Realm detail is lazy-loaded on selection and replaces the matching LOD0 realm features visually.
-- Polygon outlines are disabled by default and only shown for hover/selection.
+- Startup loads only the land, marine, and lake overview TopoJSON layers (7,105 polygon entities).
+- Global LOD0 boundaries load after the camera settles below 6,200 km. The overview stays selectable while loading; downloaded layers are reused. Above 7,000 km the overview becomes active again.
+- Camera visibility checks scan only the active detail level. Cached inactive layers are hidden at the data-source level.
+- Hover uses one pick at most every 100 ms and pauses during dragging/camera movement. Click selection retains the complete region lookup.
+- While the camera moves, resolution drops to 75% of the idle scale and returns to full sharpness when movement ends.
+- Region outlines remain enabled. Optional per-realm LOD1 detail is currently disabled in configuration.
 
 ## Notes
 

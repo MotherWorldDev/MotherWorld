@@ -1,8 +1,8 @@
-import { APP_CONFIG } from "./config.js";
+import { APP_CONFIG } from "./config.js?v=20260906-regions";
 import { createRegionDataService } from "./regionDataService.js";
 import { createUI } from "./ui.js";
 import { getBiomeColor, paletteMapFromIndex } from "./biomePalette.js";
-import { createGlobeExplorer } from "./globe.js";
+import { createGlobeExplorer } from "./globe.js?v=20260906-regions";
 
 function toPublicDataUrl(relPath, fallback) {
   if (!relPath) return fallback;

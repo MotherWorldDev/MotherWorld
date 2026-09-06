@@ -14,8 +14,8 @@
      - `frontend/public/data/regions.index.json` (metadata + geometry manifest)
 3. Frontend (`frontend/public/`) loads:
    - metadata index first
-   - LOD0 TopoJSON startup layer only
-   - lazy-loads realm LOD1 TopoJSON on selection
+   - land, marine, and lake overview TopoJSON layers
+   - lazy-loads global LOD0 boundaries after zooming in; optional realm LOD1 is disabled by default
 4. Cesium renders polygons and the sidebar reads summaries via a data service abstraction (`local` JSON now, API later).
 
 ## Why TopoJSON (Now)
@@ -27,15 +27,14 @@
 
 ## LOD Strategy (Current)
 
-- `LOD0` (startup):
-  - aggressively simplified
-  - loads fast for whole-globe interaction
-- `LOD1 by realm`:
-  - medium detail
-  - lazy-loaded on region selection
-  - corresponding LOD0 realm features are hidden while LOD1 is active to avoid duplicate rendering/picking
-
-This keeps startup responsive while preserving detail where the user is actively exploring.
+- Startup loads three overview layers: land, marine, and lakes (7,105 polygon entities).
+- After camera movement ends at or below 6,200 km altitude, global LOD0 is loaded for the visible datasets. The overview remains active for each dataset until its detailed layer is ready. Failed loads can be retried on a subsequent zoom or dataset change.
+- Above 7,000 km, the overview becomes active again. The gap between thresholds prevents repeated switching near the boundary.
+- Concurrent requests share an in-flight promise per layer. Completed layers stay cached; late responses use the current camera and dataset mode. Resetting geometry invalidates earlier requests.
+- Only active sources participate in camera culling and per-entity visibility updates. Inactive cached data sources are hidden as a whole. Selection overlays are rebuilt when the active source changes.
+- Hover uses a single pick with a 100 ms throttle and pauses during pointer dragging or camera movement. Clicks retain the full overlap and geometric fallback lookup.
+- Moving resolution is 75% of the idle scale, restored when the camera settles.
+- Per-realm LOD1 remains available behind configuration flags, but is currently disabled.
 
 ## Extending Region Summaries Later
 
