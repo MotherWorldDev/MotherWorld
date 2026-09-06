@@ -17,6 +17,19 @@ python -m http.server 8080 --directory frontend/public
 Open http://127.0.0.1:8080. Cesium and the web fonts are loaded from external CDNs.
 See `README.md` for the optional API and preprocessing commands.
 
+## GitHub Pages
+
+The static application is published at
+https://motherworlddev.github.io/MotherWorld/ by
+`.github/workflows/pages.yml`. Changes to `frontend/public` or the deployment
+workflow on `main` trigger a deployment. The workflow can also be run manually
+from the repository's Actions tab.
+
+GitHub Pages serves the committed contents of `frontend/public`; it does not run
+the Python preprocessing scripts or the optional FastAPI backend. Keep
+`regionSummaryMode` set to `local` for this deployment. The repository's Pages
+publishing source must be set to **GitHub Actions**.
+
 ## Source assets kept outside Git
 
 The original workspace also contains several gigabytes of source data. These
