@@ -659,6 +659,8 @@ export function createGlobeExplorer({
     viewer.scene.postProcessStages.fxaa.enabled = true;
   }
   viewer.cesiumWidget.screenSpaceEventHandler.removeInputAction(Cesium.ScreenSpaceEventType.LEFT_DOUBLE_CLICK);
+  // Imagery setup reads selection state synchronously.
+  let selectedRegionId = null;
   let baseImageryLayer = null;
   let openOceanBathymetryImageryLayer = null;
   let blueMarbleDetailImageryLayer = null;
@@ -1754,7 +1756,6 @@ export function createGlobeExplorer({
   let startupMarineUrl = null;
   let startupLakesOverviewUrl = null;
   let startupLakesUrl = null;
-  let selectedRegionId = null;
   let hoveredEntity = null;
   let hoverRaf = 0;
   let pendingHoverPosition = null;
