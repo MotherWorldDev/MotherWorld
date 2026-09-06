@@ -155,7 +155,7 @@ See `ARCHITECTURE.md` for data flow, the GeoJSON vs TopoJSON decision, and how t
 
 ## Recorded species
 
-The Species tab loads searchable GBIF land/lake and OBIS marine inventories on demand, with record counts, taxonomy and IUCN categories when supplied. Recorded occurrences do not imply complete range coverage or population abundance. See [SPECIES_PIPELINE.md](SPECIES_PIPELINE.md) for the resumable builders and public taxonomy download, and [DATA_SOURCES.md](DATA_SOURCES.md) for provenance.
+The Species tab loads GBIF land/lake and OBIS marine inventories on demand, with kingdom tabs, local search, class/family/record filters and sorting. An explicit common-name lookup resolves names against the region inventory. Opening a species loads a rich GBIF/WoRMS profile with sourced descriptions, traits, names, distribution reports, references and licensed photos where available. Profiles are fetched only on opening and cached for reuse. Recorded occurrences do not imply complete range coverage or population abundance. See [SPECIES_PIPELINE.md](SPECIES_PIPELINE.md) for the resumable builders and public taxonomy download, and [DATA_SOURCES.md](DATA_SOURCES.md) for provenance.
 
 ## Temperature distributions
 

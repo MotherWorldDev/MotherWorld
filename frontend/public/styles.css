@@ -1006,124 +1006,874 @@ body {
   text-underline-offset: 3px;
 }
 
-/* MotherWorld generated species inventory panel */
+/* Recorded species browser and on-demand profile */
+.species-data-shell, .species-inventory-about {
+  --species-ink: #e8f4ee;
+  --species-soft: #c5d9cf;
+  --species-muted: #8da99b;
+  --species-faint: rgba(214, 239, 225, 0.58);
+  --species-accent: #69d6ae;
+  --species-accent-strong: #a8e789;
+  --species-surface: rgba(10, 27, 25, 0.82);
+  --species-surface-raised: rgba(18, 44, 39, 0.72);
+  --species-line: rgba(151, 224, 192, 0.16);
+  --species-line-strong: rgba(105, 214, 174, 0.42);
+}
+
 .species-data-shell {
   display: grid;
   gap: 12px;
+  min-width: 0;
+  color: var(--species-ink);
 }
 
 .species-data-status,
+.species-lookup-status,
+.species-profile-status,
 .species-empty,
 .species-data-source {
-  color: var(--muted, #9aa7b6);
-  font-size: 0.86rem;
+  margin: 0;
+  color: var(--species-muted);
+  font-size: 0.82rem;
   line-height: 1.5;
 }
 
-.species-data-toolbar {
-  display: flex;
-  align-items: center;
-  gap: 10px;
+.species-data-status:not(:empty),
+.species-lookup-status:not(:empty),
+.species-profile-status:not(:empty) {
+  padding: 9px 11px;
+  border: 1px solid var(--species-line);
+  border-radius: 10px;
+  background: rgba(14, 44, 37, 0.48);
 }
 
-.species-search-input {
+.species-lookup-status:not(:empty),
+.species-profile-status:not(:empty) {
+  color: var(--species-soft);
+}
+
+.species-data-status:not(:empty)::before,
+.species-lookup-status:not(:empty)::before,
+.species-profile-status:not(:empty)::before {
+  content: "•";
+  display: inline-block;
+  margin-right: 7px;
+  color: var(--species-accent);
+}
+
+.species-browser {
+  display: grid;
+  gap: 12px;
   min-width: 0;
-  flex: 1;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 8px;
-  background: rgba(5, 10, 16, 0.56);
-  color: inherit;
+}
+
+.species-data-toolbar {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+  padding: 14px;
+  border: 1px solid var(--species-line);
+  border-radius: 16px;
+  background:
+    linear-gradient(145deg, rgba(17, 48, 41, 0.88), rgba(8, 22, 24, 0.92)),
+    radial-gradient(320px 180px at 10% 0%, rgba(105, 214, 174, 0.14), transparent 76%);
+  box-shadow: inset 0 1px 0 rgba(232, 255, 242, 0.05);
+}
+
+.species-toolbar-heading {
+  display: grid;
+  gap: 4px;
+}
+
+.species-toolbar-kicker {
+  margin: 0;
+  color: var(--species-accent-strong);
+  font: 11px/1.3 "IBM Plex Mono", monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.species-toolbar-helper {
+  max-width: 42rem;
+  margin: 0;
+  color: var(--species-muted);
+  font-size: 0.78rem;
+  line-height: 1.45;
+}
+
+.species-kingdom-tabs {
+  display: flex;
+  align-items: stretch;
+  gap: 7px;
+  min-width: 0;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 1px 1px 5px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(105, 214, 174, 0.46) transparent;
+}
+
+.species-kingdom-tab {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex: 0 0 auto;
+  min-height: 38px;
+  min-width: 104px;
+  padding: 8px 10px;
+  border: 1px solid var(--species-line);
+  border-radius: 11px;
+  background: rgba(3, 18, 19, 0.58);
+  color: var(--species-muted);
+  font: 12px/1.2 "IBM Plex Mono", monospace;
+  text-align: left;
+  cursor: pointer;
+  transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.species-kingdom-tab:hover {
+  color: var(--species-soft);
+  border-color: rgba(151, 224, 192, 0.34);
+  background: rgba(19, 58, 47, 0.62);
+}
+
+.species-kingdom-tab:active {
+  transform: translateY(1px);
+}
+
+.species-kingdom-tab[aria-selected="true"],
+.species-kingdom-tab.is-active {
+  color: var(--species-ink);
+  border-color: var(--species-line-strong);
+  background:
+    linear-gradient(180deg, rgba(35, 91, 69, 0.68), rgba(15, 53, 45, 0.74)),
+    rgba(17, 52, 44, 0.72);
+  box-shadow: 0 7px 18px rgba(2, 16, 14, 0.24), inset 0 1px 0 rgba(218, 255, 232, 0.1);
+}
+
+.species-kingdom-label {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.species-kingdom-count {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  padding: 3px 5px;
+  border: 1px solid rgba(169, 231, 173, 0.22);
+  border-radius: 999px;
+  color: var(--species-accent-strong);
+  background: rgba(8, 28, 23, 0.62);
+  font-size: 10px;
+}
+
+.species-search-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: end;
+  gap: 8px;
+  min-width: 0;
+}
+
+.species-search-field,
+.species-filter-field {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+  color: var(--species-muted);
+  font-size: 10px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.species-search-input,
+.species-filter-field select {
+  width: 100%;
+  min-width: 0;
+  min-height: 38px;
+  border: 1px solid rgba(151, 224, 192, 0.2);
+  border-radius: 10px;
+  outline: 0;
+  background: rgba(3, 14, 16, 0.72);
+  color: var(--species-ink);
   padding: 9px 10px;
-  font: inherit;
+  font: 13px/1.25 "Space Grotesk", system-ui, sans-serif;
+  transition: border-color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+}
+
+.species-search-input::placeholder {
+  color: rgba(141, 169, 155, 0.72);
+}
+
+.species-search-input:hover,
+.species-filter-field select:hover {
+  border-color: rgba(151, 224, 192, 0.34);
+}
+
+.species-search-input:focus,
+.species-filter-field select:focus {
+  border-color: var(--species-accent);
+  background: rgba(7, 28, 26, 0.88);
+  box-shadow: 0 0 0 3px rgba(105, 214, 174, 0.12);
+}
+
+.species-search-input[type="search"]::-webkit-search-cancel-button {
+  filter: invert(0.8) sepia(0.2) saturate(0.7);
+}
+
+.species-action-btn,
+.species-clear-filters,
+.species-profile-back {
+  appearance: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 38px;
+  padding: 8px 11px;
+  border: 1px solid var(--species-line);
+  border-radius: 10px;
+  background: rgba(14, 44, 37, 0.54);
+  color: var(--species-soft);
+  font: 12px/1.2 "Space Grotesk", system-ui, sans-serif;
+  cursor: pointer;
+  transition: color 160ms ease, border-color 160ms ease, background-color 160ms ease, transform 160ms ease;
+}
+
+.species-action-btn:hover,
+.species-clear-filters:hover,
+.species-profile-back:hover {
+  color: var(--species-ink);
+  border-color: var(--species-line-strong);
+  background: rgba(29, 82, 63, 0.62);
+}
+
+.species-action-btn:active,
+.species-clear-filters:active,
+.species-profile-back:active {
+  transform: translateY(1px);
+}
+
+.species-lookup {
+  border-color: rgba(168, 231, 135, 0.38);
+  background: rgba(52, 102, 60, 0.34);
+  color: #d8f5c4;
+}
+
+.species-lookup:hover {
+  border-color: rgba(168, 231, 135, 0.6);
+  background: rgba(66, 125, 69, 0.46);
+}
+
+.species-filters-toggle[aria-expanded="true"] {
+  border-color: var(--species-line-strong);
+  background: rgba(31, 88, 66, 0.68);
+  color: var(--species-ink);
+}
+
+.species-filters {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+  align-items: end;
+  padding: 11px;
+  border: 1px solid rgba(151, 224, 192, 0.12);
+  border-radius: 12px;
+  background: rgba(2, 15, 17, 0.42);
+}
+
+.species-filter-field select {
+  appearance: none;
+  padding-right: 30px;
+  background-image:
+    linear-gradient(45deg, transparent 50%, var(--species-muted) 50%),
+    linear-gradient(135deg, var(--species-muted) 50%, transparent 50%);
+  background-position:
+    calc(100% - 14px) 16px,
+    calc(100% - 10px) 16px;
+  background-repeat: no-repeat;
+  background-size: 4px 4px, 4px 4px;
+  cursor: pointer;
+}
+
+.species-clear-filters {
+  justify-self: start;
+  min-height: 32px;
+  padding: 6px 9px;
+  color: var(--species-muted);
+  background: transparent;
+  font-size: 11px;
+}
+
+.species-lookup-status {
+  min-height: 0;
 }
 
 .species-data-count {
-  white-space: nowrap;
-  color: var(--muted, #9aa7b6);
-  font-size: 0.78rem;
+  margin: -2px 0 0;
+  color: var(--species-muted);
+  font: 11px/1.4 "IBM Plex Mono", monospace;
+}
+
+.species-results-panel {
+  display: grid;
+  gap: 9px;
+  min-width: 0;
 }
 
 .species-list {
   display: grid;
-  gap: 6px;
+  gap: 7px;
+  min-width: 0;
   max-height: min(58vh, 680px);
   overflow: auto;
-  padding-right: 4px;
+  padding: 2px 4px 2px 1px;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(105, 214, 174, 0.42) transparent;
 }
 
 .species-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 14px;
-  padding: 9px 10px;
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.025);
+  gap: 12px;
+  min-width: 0;
+  padding: 0;
+  border: 1px solid rgba(151, 224, 192, 0.14);
+  border-radius: 12px;
+  background: linear-gradient(145deg, rgba(13, 41, 35, 0.7), rgba(7, 20, 23, 0.78));
+  box-shadow: inset 0 1px 0 rgba(224, 255, 235, 0.025);
+  transition: border-color 160ms ease, background-color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+}
+
+.species-row > .species-row-main {
+  padding: 11px 0 11px 12px;
+}
+
+.species-row > .species-row-stats {
+  padding: 11px 12px 11px 0;
+}
+
+.species-row:hover {
+  border-color: rgba(151, 224, 192, 0.34);
+  background: linear-gradient(145deg, rgba(23, 65, 52, 0.8), rgba(7, 25, 25, 0.84));
+  box-shadow: 0 8px 18px rgba(2, 16, 14, 0.2), inset 0 1px 0 rgba(224, 255, 235, 0.04);
+}
+
+.species-row:focus-within {
+  border-color: var(--species-line-strong);
+  box-shadow: 0 0 0 3px rgba(105, 214, 174, 0.1);
+}
+
+.species-row > button {
+  appearance: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  width: 100%;
+  min-width: 0;
+  gap: 12px;
+  padding: 11px 12px;
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
 }
 
 .species-row-main {
+  display: grid;
+  gap: 4px;
   min-width: 0;
 }
 
 .species-name {
-  font-size: 0.9rem;
-  line-height: 1.25;
   overflow-wrap: anywhere;
+  color: var(--species-ink);
+  font-size: 0.91rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.species-common-name {
+  overflow-wrap: anywhere;
+  color: var(--species-accent-strong);
+  font-size: 0.77rem;
+  line-height: 1.3;
 }
 
 .species-taxonomy {
-  margin-top: 3px;
-  color: var(--muted, #9aa7b6);
-  font-size: 0.72rem;
+  overflow-wrap: anywhere;
+  color: var(--species-muted);
+  font: 11px/1.35 "IBM Plex Mono", monospace;
 }
 
 .species-row-stats {
   display: flex;
   align-items: center;
-  gap: 7px;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 6px;
   flex: 0 0 auto;
 }
 
 .species-records,
 .species-iucn {
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  min-height: 23px;
   padding: 3px 7px;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.68rem;
+  border: 1px solid rgba(151, 224, 192, 0.18);
+  border-radius: 999px;
+  color: var(--species-soft);
+  background: rgba(4, 20, 19, 0.48);
+  font: 10px/1.2 "IBM Plex Mono", monospace;
+  white-space: nowrap;
 }
 
-.species-iucn.is-critical,
-.species-iucn.is-endangered,
+.species-records {
+  color: var(--species-accent-strong);
+}
+
+.species-iucn {
+  color: var(--species-muted);
+}
+
+.species-iucn.is-critical {
+  border-color: rgba(255, 120, 130, 0.34);
+  color: #ff9da3;
+}
+
+.species-iucn.is-endangered {
+  border-color: rgba(255, 166, 126, 0.34);
+  color: #ffbd96;
+}
+
 .species-iucn.is-vulnerable {
-  font-weight: 600;
+  border-color: rgba(244, 211, 132, 0.34);
+  color: #f4d98e;
+}
+
+.species-iucn.is-near-threatened {
+  border-color: rgba(212, 222, 135, 0.3);
+  color: #d9df91;
+}
+
+.species-empty {
+  display: grid;
+  justify-items: start;
+  gap: 5px;
+  padding: 18px 14px;
+  border: 1px dashed rgba(151, 224, 192, 0.2);
+  border-radius: 12px;
+  background: rgba(9, 31, 28, 0.42);
+}
+
+.species-empty::before {
+  content: "No matching records";
+  color: var(--species-soft);
+  font-size: 0.84rem;
+  font-weight: 500;
 }
 
 .species-show-more {
   justify-self: start;
+  min-height: 34px;
+  border-color: var(--species-line);
+  color: var(--species-soft);
+  background: rgba(14, 44, 37, 0.44);
 }
 
-@media (max-width: 700px) {
+.species-data-source {
+  padding-top: 2px;
+  border-top: 1px solid rgba(151, 224, 192, 0.1);
+  font-size: 0.73rem;
+}
+
+.species-method-link {
+  width: fit-content;
+  color: #a9e8cf;
+  font-size: 0.76rem;
+  text-underline-offset: 3px;
+}
+
+.species-method-link:hover {
+  color: #d2f7a6;
+}
+
+.species-profile {
+  display: grid;
+  gap: 13px;
+  min-width: 0;
+  animation: fadeInUp 180ms ease;
+}
+
+.species-profile-back {
+  justify-self: start;
+  min-height: 34px;
+  padding-inline: 10px;
+}
+
+.species-profile-heading {
+  display: grid;
+  gap: 5px;
+  padding: 15px;
+  border: 1px solid var(--species-line);
+  border-radius: 15px;
+  background:
+    linear-gradient(145deg, rgba(18, 55, 43, 0.82), rgba(7, 23, 25, 0.9)),
+    radial-gradient(280px 140px at 90% 0%, rgba(168, 231, 135, 0.1), transparent 78%);
+}
+
+.species-profile-subtitle,
+.species-profile-context {
+  margin: 0;
+  color: var(--species-muted);
+  font-size: 0.77rem;
+  line-height: 1.45;
+}
+
+.species-profile-subtitle {
+  color: var(--species-accent-strong);
+  font: 11px/1.35 "IBM Plex Mono", monospace;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.species-profile-title {
+  margin: 0;
+  color: var(--species-ink);
+  font-size: clamp(1.25rem, 4vw, 1.7rem);
+  line-height: 1.08;
+  letter-spacing: -0.025em;
+  overflow-wrap: anywhere;
+}
+
+.species-profile-content {
+  display: grid;
+  gap: 12px;
+  min-width: 0;
+}
+
+.species-profile-gallery {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  min-width: 0;
+}
+
+.species-profile-gallery figure {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid var(--species-line);
+  border-radius: 12px;
+  background: rgba(5, 20, 21, 0.7);
+}
+
+.species-profile-gallery img {
+  display: block;
+  width: 100%;
+  min-height: 130px;
+  max-height: 220px;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  background: rgba(22, 54, 44, 0.5);
+}
+
+.species-profile-gallery figcaption {
+  flex: 1;
+  padding: 8px 9px 9px;
+  color: var(--species-soft);
+  font-size: 11px;
+  line-height: 1.42;
+  overflow-wrap: anywhere;
+}
+
+.species-profile-section {
+  display: grid;
+  gap: 9px;
+  min-width: 0;
+  padding: 13px 14px;
+  border: 1px solid rgba(151, 224, 192, 0.13);
+  border-radius: 14px;
+  background: linear-gradient(145deg, rgba(11, 36, 32, 0.68), rgba(5, 17, 21, 0.7));
+}
+
+.species-profile-section > h4 {
+  margin: 0;
+  color: var(--species-soft);
+  font-size: 0.88rem;
+  line-height: 1.25;
+}
+
+.species-profile-facts {
+  display: grid;
+  gap: 7px;
+  margin: 0;
+}
+
+.species-profile-facts > div {
+  display: grid;
+  grid-template-columns: minmax(84px, 0.7fr) minmax(0, 1.3fr);
+  gap: 10px;
+  align-items: start;
+  padding-top: 7px;
+  border-top: 1px solid rgba(151, 224, 192, 0.1);
+}
+
+.species-profile-facts > div:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.species-profile-facts dt {
+  color: var(--species-muted);
+  font: 10px/1.4 "IBM Plex Mono", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.species-profile-facts dd {
+  margin: 0;
+  color: var(--species-ink);
+  font-size: 0.78rem;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+
+.species-profile-note {
+  margin: 0;
+  padding: 9px 10px;
+  border-left: 2px solid var(--species-accent);
+  border-radius: 0 8px 8px 0;
+  background: rgba(105, 214, 174, 0.07);
+  color: var(--species-soft);
+  font-size: 0.76rem;
+  line-height: 1.5;
+}
+
+.species-profile-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.species-profile-chips span,
+.species-profile-badge {
+  display: inline-flex;
+  align-items: center;
+  min-height: 25px;
+  padding: 4px 8px;
+  border: 1px solid rgba(168, 231, 135, 0.24);
+  border-radius: 999px;
+  color: var(--species-accent-strong);
+  background: rgba(40, 83, 48, 0.28);
+  font: 10px/1.2 "IBM Plex Mono", monospace;
+}
+
+.species-profile-sources {
+  display: grid;
+  gap: 6px;
+  margin: 0;
+  padding-left: 17px;
+  color: var(--species-muted);
+  font-size: 0.74rem;
+  line-height: 1.45;
+}
+
+.species-profile-content a,
+.species-profile-sources a {
+  color: #afe8d0;
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.species-profile-content a:hover,
+.species-profile-content a:focus-visible {
+  color: #d5f5b1;
+  text-decoration-color: #9fe2c0;
+}
+
+.species-profile-trait,
+.species-profile-description {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  margin: 0;
+  padding: 10px 11px;
+  border: 1px solid rgba(151, 224, 192, 0.1);
+  border-radius: 10px;
+  background: rgba(4, 20, 20, 0.44);
+}
+
+.species-profile-trait strong,
+.species-profile-description h5 {
+  margin: 0;
+  color: var(--species-soft);
+  font-size: 0.78rem;
+  line-height: 1.3;
+}
+
+.species-profile-trait p,
+.species-profile-description p {
+  margin: 0;
+  color: var(--species-ink);
+  font-size: 0.76rem;
+  line-height: 1.52;
+}
+
+.species-profile-trait small,
+.species-profile-description small {
+  color: var(--species-muted);
+  font-size: 0.68rem;
+  line-height: 1.4;
+}
+
+.species-profile-description h5 {
+  font-size: 0.8rem;
+}
+
+.species-profile-distribution {
+  display: grid;
+  gap: 5px;
+  margin: 0;
+  padding-left: 17px;
+  color: var(--species-soft);
+  font-size: 0.76rem;
+  line-height: 1.45;
+}
+
+.species-profile-identity {
+  color: var(--species-muted);
+  font: 10px/1.4 "IBM Plex Mono", monospace;
+  overflow-wrap: anywhere;
+}
+
+.species-profile-badge {
+  justify-self: start;
+}
+
+.species-inventory-about {
+  margin-top: 0;
+  padding: 0;
+  overflow: hidden;
+  border-color: rgba(151, 224, 192, 0.12);
+  background: rgba(8, 27, 27, 0.62);
+}
+
+.species-inventory-about summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 9px;
+  padding: 10px 12px;
+  color: var(--species-soft);
+  font-size: 0.78rem;
+  font-weight: 500;
+  cursor: pointer;
+  list-style: none;
+}
+
+.species-inventory-about summary::-webkit-details-marker {
+  display: none;
+}
+
+.species-inventory-about summary::after {
+  content: "+";
+  color: var(--species-accent);
+  font: 16px/1 "IBM Plex Mono", monospace;
+}
+
+.species-inventory-about[open] summary::after {
+  content: "−";
+}
+
+.species-inventory-about #sidebar-tertiary-copy {
+  padding: 0 12px 12px;
+  color: var(--species-muted);
+  font-size: 0.74rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.species-data-shell button:focus-visible,
+.species-data-shell input:focus-visible,
+.species-data-shell select:focus-visible,
+.species-data-shell a:focus-visible,
+.species-inventory-about summary:focus-visible {
+  outline: 2px solid var(--species-accent);
+  outline-offset: 3px;
+}
+
+@media (max-width: 520px) {
   .species-data-toolbar {
-    align-items: stretch;
-    flex-direction: column;
+    padding: 12px;
   }
 
-  .species-data-count {
-    white-space: normal;
+  .species-search-row {
+    grid-template-columns: minmax(0, 1fr) auto;
+  }
+
+  .species-search-field {
+    grid-column: 1 / -1;
+  }
+
+  .species-lookup {
+    min-width: 0;
+  }
+
+  .species-filters {
+    grid-template-columns: 1fr;
+  }
+
+  .species-clear-filters {
+    grid-column: 1 / -1;
+  }
+
+  .species-row > button {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 9px;
+  }
+
+  .species-row-stats {
+    justify-content: flex-start;
+  }
+
+  .species-profile-facts > div {
+    grid-template-columns: 1fr;
+    gap: 3px;
   }
 }
 
-.species-data-toolbar { align-items: stretch; flex-direction: column; }
-.species-data-count { white-space: normal; }
-.species-method-link { color: #9ed7ff; font-size: 0.82rem; }
-.species-search-input:focus-visible, .species-method-link:focus-visible { outline: 2px solid #9ed7ff; outline-offset: 3px; }
-.species-iucn.is-critical { color: #ff8e97; }
-.species-iucn.is-endangered { color: #ffb391; }
-.species-iucn.is-vulnerable { color: #f5d894; }
+@media (prefers-reduced-motion: reduce) {
+  .species-kingdom-tab,
+  .species-action-btn,
+  .species-clear-filters,
+  .species-profile-back,
+  .species-row {
+    transition: none;
+  }
+}
 
-#sidebar-tertiary-copy { font-weight: 400; line-height: 1.5; }
+@media (max-width: 400px) {
+  .species-profile-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .species-profile-gallery img {
+    min-height: 150px;
+  }
+}
 
 /* MotherWorld empirical temperature distribution panel */
 .temperature-data-shell {

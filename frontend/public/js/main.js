@@ -2,7 +2,7 @@ import { APP_CONFIG } from "./config.js?v=20260907-temperature1";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
 import { createUI } from "./ui.js?v=20260906-species1";
 import { createTemperaturePanel } from "./temperaturePanel.js?v=20260907-temperature1";
-import { createSpeciesPanel } from "./speciesPanel.js?v=20260906-species1";
+import { createSpeciesPanel } from "./speciesPanel.js?v=20260907-species2";
 import { getBiomeColor, paletteMapFromIndex } from "./biomePalette.js";
 import { createGlobeExplorer } from "./globe.js?v=20260906-regions";
 

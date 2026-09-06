@@ -191,3 +191,17 @@ python scripts/package_species.py --input-dir .cache/motherworld/gbif-output --i
 ```
 
 The packager validates inventory IDs and totals, compresses individual files as `.json.gz`, and replaces the public manifest only after writing the files. The browser decodes only the selected inventory. Modern browsers supporting `DecompressionStream` are required for compressed inventories. Plain JSON inventories remain supported too. Packaging does not commit or push; deploy the validated `frontend/public` changes through the existing GitHub Pages workflow.
+
+## Kingdom browsing and live species profiles
+
+The Species tab uses `speciesCatalog.js` to index local inventories once per selected region. Kingdom tabs show inventory totals; class/family filters, record thresholds and name/record/taxonomy sorting operate locally. Sixty rows render initially, with additional rows on request. Common-name lookup is explicit: it searches up to 100 GBIF Backbone species records and intersects the returned identifiers or exact marine scientific names with the existing regional inventory. It never creates new regional occurrence records.
+
+`speciesProfileService.js` fetches details only when a row is opened. GBIF supplies taxonomy, common names, descriptions, species profiles, distribution/conservation reports, synonyms and references. WoRMS adds authoritative marine taxonomy, vernaculars, attributes with nested qualifiers, distributions, synonyms and literature. Marine cross-provider matching requires an exact species-level scientific name, matching kingdom and high match confidence; fuzzy and higher-rank matches are rejected. Provider output remains attributed and is never presented as proof of current local presence or current conservation status.
+
+Requests have a 12-second timeout and share a four-request concurrency cap. Twenty-four complete profiles are cached for six hours in memory; no profile is prefetched for unopened rows. Partial source failures show available sections and allow retry without caching the incomplete profile. Closing a profile or changing region cancels its work; selection versions also guard against responses from cancelled requests. Failed photos keep their source captions and do not block other content.
+
+Photographs use their individual media licences, independently of the occurrence dataset's licence. Only CC BY, CC BY-SA, CC0/public-domain media from the exact species are accepted. The GBIF image cache resizes photos to at most 640 pixels wide; the public URL's MD5 is used only as the documented image cache identifier. Images load sequentially and lazily, with credit, licence and observation-source links. Source HTML is reduced to text and escaped; external URLs must be HTTPS without user credentials.
+
+The profile UI keeps regional record counts separate from species-wide descriptions, traits, distribution reports and photos. Existing source omissions are not filled with generated biological facts. Full source links remain available when the profile shows a bounded selection of records.
+
+Run `npm test` for catalog, lookup, profile service, media, rendering and selection-race coverage. Direct browser QA should cover a GBIF land profile, a WoRMS marine profile, common-name lookup, filters, keyboard kingdom navigation, Back/Escape, a missing region and the Moon state.

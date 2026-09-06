@@ -14,7 +14,7 @@
       href="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Widgets/widgets.css"
       rel="stylesheet"
     />
-    <link href="./styles.css?v=20260907-temperature1" rel="stylesheet" />
+    <link href="./styles.css?v=20260907-species2" rel="stylesheet" />
   </head>
   <body>
     <div class="app-shell">
@@ -239,22 +239,82 @@
                   </div>
                   <div id="moon-timer-grid" class="moon-timer-grid"></div>
                 </div>
-                <div class="detail-card">
-                  <div class="detail-label">About this inventory</div>
-                  <div class="detail-value" id="sidebar-tertiary-copy"></div>
-                </div>
                 <div id="species-data-shell" class="species-data-shell" hidden>
                   <p id="species-data-status" class="species-data-status" role="status" aria-live="polite"></p>
                   <button id="species-retry" class="ghost-button" type="button" hidden>Try again</button>
-                  <div id="species-data-toolbar" class="species-data-toolbar" hidden>
-                    <input id="species-search-input" class="species-search-input" type="search" placeholder="Search names or taxonomy" aria-label="Search recorded species" autocomplete="off" />
-                    <div id="species-data-count" class="species-data-count" role="status"></div>
+                  <div id="species-browser" class="species-browser">
+                    <div id="species-data-toolbar" class="species-data-toolbar" hidden>
+                      <div class="species-toolbar-heading">
+                        <p class="species-toolbar-kicker">Recorded life</p>
+                        <p class="species-toolbar-helper">Search names and taxonomy in this inventory. Use lookup for a common name.</p>
+                      </div>
+                      <div id="species-kingdom-tabs" class="species-kingdom-tabs" role="tablist" aria-label="Species kingdoms"></div>
+                      <div class="species-search-row">
+                        <label class="species-search-field" for="species-search-input">
+                          <span>Find a species</span>
+                          <input id="species-search-input" class="species-search-input" type="search" placeholder="Search names or taxonomy" aria-label="Search recorded species" autocomplete="off" />
+                        </label>
+                        <button id="species-lookup" class="species-action-btn species-lookup" type="button" aria-label="Look up a common name on GBIF" title="Look up a common name on GBIF">Look up name</button>
+                        <button id="species-filters-toggle" class="species-action-btn species-filters-toggle" type="button" aria-expanded="false" aria-controls="species-filters">Filters</button>
+                      </div>
+                      <div id="species-filters" class="species-filters" hidden>
+                        <label class="species-filter-field" for="species-class-filter">
+                          <span>Class</span>
+                          <select id="species-class-filter">
+                            <option value="">All classes</option>
+                          </select>
+                        </label>
+                        <label class="species-filter-field" for="species-family-filter">
+                          <span>Family</span>
+                          <select id="species-family-filter">
+                            <option value="">All families</option>
+                          </select>
+                        </label>
+                        <label class="species-filter-field" for="species-record-filter">
+                          <span>Minimum records</span>
+                          <select id="species-record-filter">
+                            <option value="0">Any</option>
+                            <option value="10">10+</option>
+                            <option value="100">100+</option>
+                            <option value="1000">1,000+</option>
+                          </select>
+                        </label>
+                        <label class="species-filter-field" for="species-sort">
+                          <span>Sort by</span>
+                          <select id="species-sort">
+                            <option value="records">Most recorded</option>
+                            <option value="name">Name A–Z</option>
+                            <option value="taxonomy">Taxonomic group</option>
+                          </select>
+                        </label>
+                        <button id="species-clear-filters" class="species-clear-filters" type="button">Clear filters</button>
+                      </div>
+                      <p id="species-lookup-status" class="species-lookup-status" role="status" aria-live="polite"></p>
+                      <div id="species-data-count" class="species-data-count" role="status"></div>
+                    </div>
+                    <div id="species-results-panel" class="species-results-panel" role="tabpanel" aria-label="Species results">
+                      <div id="species-list" class="species-list" aria-label="Recorded species"></div>
+                      <button id="species-show-more" class="ghost-button species-show-more" type="button" hidden>Show more</button>
+                    </div>
+                    <p id="species-data-source" class="species-data-source"></p>
+                    <a class="species-method-link" href="./data-sources.html" target="_blank" rel="noopener">Sources and methods</a>
                   </div>
-                  <div id="species-list" class="species-list" aria-label="Recorded species"></div>
-                  <button id="species-show-more" class="ghost-button species-show-more" type="button" hidden>Show more</button>
-                  <p id="species-data-source" class="species-data-source"></p>
-                  <a class="species-method-link" href="./data-sources.html" target="_blank" rel="noopener">Sources and methods</a>
+                  <section id="species-profile" class="species-profile" hidden aria-label="Species profile">
+                    <button id="species-profile-back" class="species-profile-back" type="button">Back to results</button>
+                    <div class="species-profile-heading">
+                      <p id="species-profile-subtitle" class="species-profile-subtitle"></p>
+                      <h3 id="species-profile-title" class="species-profile-title" tabindex="-1"></h3>
+                      <p id="species-profile-context" class="species-profile-context"></p>
+                    </div>
+                    <p id="species-profile-status" class="species-profile-status" role="status" aria-live="polite"></p>
+                    <button id="species-profile-retry" class="ghost-button species-profile-retry" type="button" hidden>Retry details</button>
+                    <div id="species-profile-content" class="species-profile-content"></div>
+                  </section>
                 </div>
+                <details id="species-inventory-about" class="detail-card species-inventory-about">
+                  <summary>About this inventory</summary>
+                  <div class="detail-value" id="sidebar-tertiary-copy"></div>
+                </details>
               </section>
 
               <section id="sidebar-quaternary-panel" class="sidebar-content sidebar-pane" data-panel="quaternary" hidden>
@@ -299,6 +359,6 @@
     </div>
 
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Cesium.js"></script>
-    <script type="module" src="./js/main.js?v=20260907-temperature1"></script>
+    <script type="module" src="./js/main.js?v=20260907-species2"></script>
   </body>
 </html>
