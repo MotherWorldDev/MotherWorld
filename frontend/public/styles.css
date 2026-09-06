@@ -1005,3 +1005,122 @@ body {
   color: #7dd3fc;
   text-underline-offset: 3px;
 }
+
+/* MotherWorld generated species inventory panel */
+.species-data-shell {
+  display: grid;
+  gap: 12px;
+}
+
+.species-data-status,
+.species-empty,
+.species-data-source {
+  color: var(--muted, #9aa7b6);
+  font-size: 0.86rem;
+  line-height: 1.5;
+}
+
+.species-data-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.species-search-input {
+  min-width: 0;
+  flex: 1;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 8px;
+  background: rgba(5, 10, 16, 0.56);
+  color: inherit;
+  padding: 9px 10px;
+  font: inherit;
+}
+
+.species-data-count {
+  white-space: nowrap;
+  color: var(--muted, #9aa7b6);
+  font-size: 0.78rem;
+}
+
+.species-list {
+  display: grid;
+  gap: 6px;
+  max-height: min(58vh, 680px);
+  overflow: auto;
+  padding-right: 4px;
+}
+
+.species-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 9px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.species-row-main {
+  min-width: 0;
+}
+
+.species-name {
+  font-size: 0.9rem;
+  line-height: 1.25;
+  overflow-wrap: anywhere;
+}
+
+.species-taxonomy {
+  margin-top: 3px;
+  color: var(--muted, #9aa7b6);
+  font-size: 0.72rem;
+}
+
+.species-row-stats {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex: 0 0 auto;
+}
+
+.species-records,
+.species-iucn {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 999px;
+  padding: 3px 7px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.68rem;
+}
+
+.species-iucn.is-critical,
+.species-iucn.is-endangered,
+.species-iucn.is-vulnerable {
+  font-weight: 600;
+}
+
+.species-show-more {
+  justify-self: start;
+}
+
+@media (max-width: 700px) {
+  .species-data-toolbar {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .species-data-count {
+    white-space: normal;
+  }
+}
+
+.species-data-toolbar { align-items: stretch; flex-direction: column; }
+.species-data-count { white-space: normal; }
+.species-method-link { color: #9ed7ff; font-size: 0.82rem; }
+.species-search-input:focus-visible, .species-method-link:focus-visible { outline: 2px solid #9ed7ff; outline-offset: 3px; }
+.species-iucn.is-critical { color: #ff8e97; }
+.species-iucn.is-endangered { color: #ffb391; }
+.species-iucn.is-vulnerable { color: #f5d894; }
+
+#sidebar-tertiary-copy { font-weight: 400; line-height: 1.5; }

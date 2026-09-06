@@ -235,7 +235,6 @@ export function createUI(appConfig = null) {
   function setSidebarTabLabels(region) {
     const isMoon = region?.id === "moon";
     setSummaryContext(els.sidebarClimateCopy, region, "climateSummary");
-    setSummaryContext(els.sidebarTertiaryCopy, region, "tertiarySummary");
     setSummaryContext(els.sidebarQuaternaryCopy, region, "plotsSummary");
     if (els.sidebarTabClimate) {
       els.sidebarTabClimate.hidden = isMoon;
@@ -260,17 +259,14 @@ export function createUI(appConfig = null) {
           : "Climate summary not available yet.");
     }
     if (els.sidebarTertiaryOverline) {
-      els.sidebarTertiaryOverline.textContent = isMoon ? "Timers" : "Species";
+      els.sidebarTertiaryOverline.textContent = isMoon ? "Timers" : `Species · ${region?.name || "Selected region"}`;
     }
     if (els.sidebarTertiaryTitle) {
-      els.sidebarTertiaryTitle.textContent = isMoon ? "Lunar Timers" : "Species Snapshot";
+      els.sidebarTertiaryTitle.textContent = isMoon ? "Lunar Timers" : "Recorded species";
     }
     if (els.sidebarTertiaryCopy) {
-      els.sidebarTertiaryCopy.textContent =
-        region?.tertiarySummary ||
-        (isMoon
-          ? "Sidereal orbit: 27.32 days. Synodic phase cycle: 29.53 days. Perigee and apogee drift through the 8.85-year apsidal cycle shown in the plots tab."
-          : "Species summary not available yet.");
+      els.sidebarTertiaryCopy.textContent = isMoon ? region?.tertiarySummary || "" :
+        "Recorded occurrences from public biodiversity datasets. Sampling is uneven; this is not a complete species list. Counts represent records, not population sizes.";
     }
     if (els.sidebarQuaternaryOverline) {
       els.sidebarQuaternaryOverline.textContent = isMoon ? "Plots" : "Threats";

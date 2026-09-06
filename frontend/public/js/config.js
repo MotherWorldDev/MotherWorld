@@ -1,5 +1,7 @@
 export const APP_CONFIG = {
   data: {
+    speciesIndexUrl: "./data/species/species.index.json?v=20260906-species1",
+    speciesBaseUrl: "./data/species/",
     overviewGeometryUrl: "./data/lod_overview/ecoregions_overview.topojson",
     startupGeometryUrl: "./data/lod0/ecoregions_lod0.topojson",
     metadataUrl: "./data/regions.index.json",

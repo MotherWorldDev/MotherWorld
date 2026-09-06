@@ -152,3 +152,7 @@ The sidebar labels broad overviews and links regional references. See [CONTENT_S
 ## Architecture
 
 See `ARCHITECTURE.md` for data flow, the GeoJSON vs TopoJSON decision, and how to extend the sidebar with real biodiversity summary data later.
+
+## Recorded species
+
+The Species tab loads searchable GBIF land/lake and OBIS marine inventories on demand, with record counts, taxonomy and IUCN categories when supplied. Recorded occurrences do not imply complete range coverage or population abundance. See [SPECIES_PIPELINE.md](SPECIES_PIPELINE.md) for the resumable builders and public taxonomy download, and [DATA_SOURCES.md](DATA_SOURCES.md) for provenance.

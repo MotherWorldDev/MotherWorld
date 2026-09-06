@@ -1,6 +1,7 @@
-import { APP_CONFIG } from "./config.js?v=20260906-content1";
+import { APP_CONFIG } from "./config.js?v=20260906-species1";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
-import { createUI } from "./ui.js?v=20260906-content1";
+import { createUI } from "./ui.js?v=20260906-species1";
+import { createSpeciesPanel } from "./speciesPanel.js?v=20260906-species1";
 import { getBiomeColor, paletteMapFromIndex } from "./biomePalette.js";
 import { createGlobeExplorer } from "./globe.js?v=20260906-regions";
 
@@ -224,6 +225,7 @@ function createDebugPanelController(globe, initialOptions) {
 async function bootstrap() {
   const ui = createUI(APP_CONFIG);
   const dataService = createRegionDataService(APP_CONFIG.data);
+  const speciesPanel = createSpeciesPanel(APP_CONFIG.data);
   let biomePalette = { default: APP_CONFIG.styling.defaultBiomeColor };
   const debugOptions = getDebugBootstrapOptions();
   let debugPanelController = { enabled: false, setStatus: () => {} };
@@ -273,6 +275,7 @@ async function bootstrap() {
       },
       onSelect: async (regionId) => {
         const summaryVersion = ++selectionSummaryVersion;
+        speciesPanel.setRegion(null);
         ui.setHoverPreview(null, null);
         if (!regionId) {
           ui.showSidebarEmpty();
@@ -283,6 +286,7 @@ async function bootstrap() {
           const summary = await dataService.getRegionSummary(regionId);
           if (summaryVersion !== selectionSummaryVersion) return;
           ui.renderRegionSummary(summary, getBiomeColor(summary?.biomeNum, biomePalette));
+          speciesPanel.setRegion(summary?.id);
         } catch (err) {
           if (summaryVersion !== selectionSummaryVersion) return;
           ui.showError(`Failed to load region summary: ${err.message}`);
