@@ -1124,3 +1124,122 @@ body {
 .species-iucn.is-vulnerable { color: #f5d894; }
 
 #sidebar-tertiary-copy { font-weight: 400; line-height: 1.5; }
+
+/* MotherWorld empirical temperature distribution panel */
+.temperature-data-shell {
+  position: relative;
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.temperature-data-status,
+.temperature-definition,
+.temperature-data-source {
+  color: var(--muted, #8b9bab);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.temperature-mode-switch {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7px;
+}
+
+.temperature-mode-btn {
+  border: 1px solid rgba(150, 170, 190, 0.22);
+  background: rgba(255, 255, 255, 0.025);
+  color: inherit;
+  border-radius: 9px;
+  padding: 9px 10px;
+  font: inherit;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.temperature-mode-btn.is-active {
+  border-color: rgba(170, 220, 255, 0.5);
+  background: rgba(120, 185, 230, 0.12);
+}
+
+.temperature-chart-wrap {
+  position: relative;
+  border: 1px solid rgba(150, 170, 190, 0.18);
+  border-radius: 12px;
+  padding: 8px;
+  background: rgba(4, 10, 18, 0.32);
+}
+
+.temperature-distribution-canvas {
+  display: block;
+  width: 100%;
+  height: 280px;
+}
+
+.temperature-tooltip {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+  max-width: 205px;
+  padding: 6px 8px;
+  border-radius: 7px;
+  background: rgba(8, 16, 26, 0.94);
+  border: 1px solid rgba(180, 210, 230, 0.28);
+  font: 11px/1.35 "IBM Plex Mono", monospace;
+  color: #e9f3fb;
+}
+
+.temperature-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.temperature-stat-card {
+  min-width: 0;
+  border: 1px solid rgba(150, 170, 190, 0.16);
+  border-radius: 9px;
+  padding: 8px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.temperature-stat-label {
+  color: var(--muted, #8b9bab);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.temperature-stat-value {
+  margin-top: 4px;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+@media (max-width: 720px) {
+  .temperature-stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .temperature-distribution-canvas {
+    height: 245px;
+  }
+}
+
+#temperature-content { display: grid; gap: 12px; }
+.temperature-heading { font-size: 0.95rem; line-height: 1.45; margin: 0; }
+.temperature-axis-label { margin: 2px 0 -7px; color: var(--muted); font-size: 11px; }
+.temperature-summary { margin: 0; font-size: 13px; line-height: 1.55; }
+.temperature-stats-grid { grid-template-columns: repeat(auto-fit, minmax(82px, 1fr)); }
+.temperature-legend { display: flex; gap: 8px 14px; flex-wrap: wrap; font-size: 10px; color: var(--muted); }
+.temperature-legend span::before { content: ""; display: inline-block; width: 12px; height: 2px; margin: 0 5px 3px 0; background: currentColor; }
+.temperature-legend-hist { color: #78b9e6; }
+.temperature-legend-hist::before { height: 7px !important; opacity: 0.6; }
+.temperature-legend-smooth { color: #cdecff; }
+.temperature-legend-mean { color: #ffd278; }
+.temperature-legend-median { color: #beffb4; }
+.temperature-source-link { color: #9ed7ff; font-size: 12px; }
+.temperature-mode-btn:focus-visible, .temperature-distribution-canvas:focus-visible, .temperature-source-link:focus-visible { outline: 2px solid #9ed7ff; outline-offset: 3px; }
+
+.temperature-coverage-note { margin: 0; padding: 9px 11px; border-left: 2px solid #b8cf7a; background: rgba(184,207,122,.06); font-size: 12px; line-height: 1.5; color: var(--muted); }

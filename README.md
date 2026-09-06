@@ -156,3 +156,9 @@ See `ARCHITECTURE.md` for data flow, the GeoJSON vs TopoJSON decision, and how t
 ## Recorded species
 
 The Species tab loads searchable GBIF land/lake and OBIS marine inventories on demand, with record counts, taxonomy and IUCN categories when supplied. Recorded occurrences do not imply complete range coverage or population abundance. See [SPECIES_PIPELINE.md](SPECIES_PIPELINE.md) for the resumable builders and public taxonomy download, and [DATA_SOURCES.md](DATA_SOURCES.md) for provenance.
+
+## Temperature distributions
+
+The Climate tab loads compact empirical temperature histograms when opened for a region. It offers regional daily means and area-weighted space-time views, with statistics, source attribution, actual coverage dates and keyboard-accessible bin inspection. Land/lakes use ERA5-Land 2 m air temperature; marine regions use NOAA OISST sea-surface temperature. Short releases are marked as previews, and regions awaiting data show an availability message.
+
+See [CLIMATE_PIPELINE.md](CLIMATE_PIPELINE.md) for credential setup, resumable builders and validation, and [CLIMATE_DATA_SOURCES.md](CLIMATE_DATA_SOURCES.md) for dataset references. The planned baseline is 1991–2020. Raw rasters and credentials stay local; only the manifest and per-region summaries are published.

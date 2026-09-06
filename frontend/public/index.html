@@ -14,7 +14,7 @@
       href="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Widgets/widgets.css"
       rel="stylesheet"
     />
-    <link href="./styles.css?v=20260906-species1" rel="stylesheet" />
+    <link href="./styles.css?v=20260907-temperature1" rel="stylesheet" />
   </head>
   <body>
     <div class="app-shell">
@@ -196,6 +196,29 @@
                   <p class="sidebar-overline">Climate</p>
                   <h2>Climate Snapshot</h2>
                 </div>
+                <div id="temperature-data-shell" class="temperature-data-shell" hidden>
+                  <p id="temperature-data-status" class="temperature-data-status" role="status" aria-live="polite"></p>
+                  <button id="temperature-retry" class="ghost-button" type="button" hidden>Try again</button>
+                  <div id="temperature-content" hidden>
+                    <h3 id="temperature-heading" class="temperature-heading">Temperature distribution</h3>
+                    <p id="temperature-coverage-note" class="temperature-coverage-note" hidden></p>
+                    <div class="temperature-mode-switch" role="group" aria-label="Temperature distribution mode">
+                      <button id="temperature-mode-temporal" class="temperature-mode-btn is-active" type="button" aria-pressed="true">Regional mean over time</button>
+                      <button id="temperature-mode-spacetime" class="temperature-mode-btn" type="button" aria-pressed="false">Space × time</button>
+                    </div>
+                    <p id="temperature-axis-label" class="temperature-axis-label">Days (%)</p>
+                    <div class="temperature-chart-wrap">
+                      <canvas id="temperature-distribution-canvas" class="temperature-distribution-canvas" width="640" height="280" tabindex="0" role="img" aria-label="Temperature distribution histogram"></canvas>
+                      <div id="temperature-tooltip" class="temperature-tooltip" role="status" aria-live="polite" hidden></div>
+                    </div>
+                    <div class="temperature-legend" aria-label="Chart legend"><span class="temperature-legend-hist">Histogram</span><span class="temperature-legend-smooth">Smoothed histogram</span><span class="temperature-legend-mean">Mean</span><span class="temperature-legend-median">Median</span></div>
+                    <div id="temperature-stats-grid" class="temperature-stats-grid"></div>
+                    <p id="temperature-summary" class="temperature-summary"></p>
+                    <p id="temperature-definition" class="temperature-definition"></p>
+                    <p id="temperature-data-source" class="temperature-data-source"></p>
+                    <a class="temperature-source-link" href="./climate-sources.html" target="_blank" rel="noopener">Temperature sources and methods</a>
+                  </div>
+                </div>
                 <div class="detail-card">
                   <div class="detail-label">Summary</div>
                   <div class="detail-value" id="sidebar-climate-copy">
@@ -276,6 +299,6 @@
     </div>
 
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Cesium.js"></script>
-    <script type="module" src="./js/main.js?v=20260906-species1"></script>
+    <script type="module" src="./js/main.js?v=20260907-temperature1"></script>
   </body>
 </html>

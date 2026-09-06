@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>MotherWorld | Temperature sources and methods</title>
+<style>body{margin:0;background:#080f17;color:#e1e9ef;font:17px/1.65 system-ui,sans-serif}main{max-width:740px;margin:auto;padding:48px 24px 80px}h1,h2{line-height:1.2}h1{font-size:2.4rem}h2{margin-top:2rem;font-size:1.3rem}a{color:#9ed7ff}p{color:#b9c8d4}</style></head>
+<body><main><a href="./">&larr; MotherWorld</a><h1>Temperature distributions</h1>
+<p>The charts describe daily temperatures within each mapped region. Their dates and valid-day counts appear below each chart. The planned baseline is 1991–2020; shorter releases are marked as previews. Regions without processed data show an availability message.</p>
+<h2>Two ways to read temperature</h2>
+<p><strong>Regional mean over time</strong> first averages temperature across the region for each day, weighting valid cells by their covered surface area. The bars then show the percentage of valid days in each temperature interval. Every valid day has equal weight.</p>
+<p><strong>Space × time</strong> keeps the individual grid-cell temperatures and weights each valid cell-day by its covered surface area. It captures variation within the region as well as through the year. Missing cells contribute to neither the numerator nor the denominator.</p>
+<p>The curve smooths the empirical histogram to aid reading; it is not a fitted normal distribution. Mean and standard deviation use the original weighted temperatures. Space-time percentiles are estimated from bin centres (0.5 °C bins on land, 0.25 °C at sea by default); regional-day percentiles use the daily means directly.</p>
+<h2>Land and lakes: Copernicus</h2>
+<p>Land and lake charts use <a href="https://cds.climate.copernicus.eu/datasets/derived-era5-land-daily-statistics?tab=overview">ERA5-Land daily statistics</a>, with daily means derived from hourly 2 m air temperatures in UTC on a 0.1° grid. Values are converted from kelvin to degrees Celsius. This is air temperature above the surface, including over lakes; it is not lake-water temperature. Standard ERA5 at 0.25° is an optional alternative and is labelled separately when used.</p>
+<p>ERA5-Land is a reanalysis product from the Copernicus Climate Change Service (C3S), implemented by ECMWF. Cite <a href="https://doi.org/10.24381/cds.e9c9c792">ERA5-Land post-processed daily statistics</a> and consult the dataset's current licence and attribution requirements.</p>
+<h2>Marine regions: NOAA</h2>
+<p>Marine charts use <a href="https://www.ncei.noaa.gov/products/optimum-interpolation-sst">NOAA Optimum Interpolation Sea Surface Temperature v2.1</a>, a daily 0.25° analysis combining satellite and in situ observations. This measures sea-surface water temperature, so it describes a different variable from the land and lake charts. Files are sourced from NOAA's Physical Sciences Laboratory archive.</p>
+<p>Credit NOAA and the OISST product, including <a href="https://doi.org/10.1175/JCLI-D-20-0166.1">Huang et al. (2021)</a>. These are analysed gridded temperatures, not a collection of independent station observations.</p>
+<h2>Boundaries and coverage</h2>
+<p>Calculations use MotherWorld's committed detailed map boundaries, merging polygon pieces with the same region ID. Each climate cell is sampled on a 4 × 4 grid to estimate the fraction inside the region, then weighted by its spherical surface area. Boundary fractions are approximate, particularly for small islands and narrow coastal regions. Some regions may cover no valid climate cells at this resolution.</p>
+<p>Open ocean uses the remaining cell fraction outside all mapped marine ecoregions. Cells without valid NOAA sea-surface values contribute nothing. Each output records its source, requested years, generation time, processing fingerprint, bin edges and coverage information.</p>
+<p>Climate context beneath the chart has its own editorial references. Those references describe the context and are separate from the temperature datasets above.</p>
+</main></body></html>
