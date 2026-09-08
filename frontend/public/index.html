@@ -159,6 +159,8 @@
                 Overview
               </button>
               <button id="sidebar-tab-health" class="sidebar-tab" type="button" data-panel="health">Health</button>
+              <button id="sidebar-tab-biodiversity" class="sidebar-tab" type="button" data-panel="biodiversity">Biodiversity</button>
+              <button id="sidebar-tab-contaminants" class="sidebar-tab" type="button" data-panel="contaminants">Contaminants</button>
               <button id="sidebar-tab-geology" class="sidebar-tab" type="button" data-panel="geology">Geology</button>
               <button id="sidebar-tab-selenology" class="sidebar-tab" type="button" data-panel="selenology" hidden>Selenology</button>
               <button id="sidebar-tab-climate" class="sidebar-tab" type="button" data-panel="climate">Climate</button>
@@ -209,6 +211,26 @@
               <section id="sidebar-health-panel" class="sidebar-content sidebar-pane" data-panel="health" hidden>
                 <div class="sidebar-header"><p class="sidebar-overline">Environmental condition</p><h2 id="regional-health-title">Regional health</h2></div>
                 <div class="regional-health-shell"><p id="regional-health-status" class="regional-health-status"></p><div id="regional-health-cards" class="regional-health-cards"></div><p id="regional-health-note" class="regional-health-note"></p><a class="regional-health-sources-link" href="./environment-sources.html" target="_blank" rel="noopener">Sources, licences and methods</a></div>
+              </section>
+
+              <section id="sidebar-biodiversity-panel" class="sidebar-content sidebar-pane" data-panel="biodiversity" hidden>
+                <div class="sidebar-header"><p class="sidebar-overline">Regional biodiversity</p><h2 id="biodiversity-region-title">Biodiversity</h2></div>
+                <div class="regional-diagnostic-shell">
+                  <p id="biodiversity-status" class="regional-diagnostic-status" role="status" aria-live="polite">Open Biodiversity to load regional historical-mammal context.</p>
+                  <button id="biodiversity-retry" class="ghost-button" type="button" hidden>Try again</button>
+                  <div id="biodiversity-content" class="regional-diagnostic-content" hidden></div>
+                  <a class="regional-diagnostic-source" href="./environment-sources.html#biodiversity" target="_blank" rel="noopener">Biodiversity sources and methods</a>
+                </div>
+              </section>
+
+              <section id="sidebar-contaminants-panel" class="sidebar-content sidebar-pane" data-panel="contaminants" hidden>
+                <div class="sidebar-header"><p class="sidebar-overline">Regional contaminants</p><h2 id="contaminants-region-title">Contaminants</h2></div>
+                <div class="regional-diagnostic-shell">
+                  <p id="contaminants-status" class="regional-diagnostic-status" role="status" aria-live="polite">Open Contaminants to load regional observations and incidents.</p>
+                  <button id="contaminants-retry" class="ghost-button" type="button" hidden>Try again</button>
+                  <div id="contaminants-content" class="regional-diagnostic-content" hidden></div>
+                  <a class="regional-diagnostic-source" href="./environment-sources.html#contaminants" target="_blank" rel="noopener">Contaminant sources and methods</a>
+                </div>
               </section>
 
               <section id="sidebar-geology-panel" class="sidebar-content sidebar-pane" data-panel="geology" hidden>

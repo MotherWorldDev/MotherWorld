@@ -53,6 +53,8 @@ export function createUI(appConfig = null) {
     sidebarTabOverview: document.getElementById("sidebar-tab-overview"),
     sidebarTabClimate: document.getElementById("sidebar-tab-climate"),
     sidebarTabHealth: document.getElementById("sidebar-tab-health"),
+    sidebarTabBiodiversity: document.getElementById("sidebar-tab-biodiversity"),
+    sidebarTabContaminants: document.getElementById("sidebar-tab-contaminants"),
     sidebarTabGeology: document.getElementById("sidebar-tab-geology"),
     sidebarTabSelenology: document.getElementById("sidebar-tab-selenology"),
     sidebarTabTertiary: document.getElementById("sidebar-tab-tertiary"),
@@ -64,6 +66,8 @@ export function createUI(appConfig = null) {
     metaSection: document.getElementById("meta-section"),
     sidebarClimatePanel: document.getElementById("sidebar-climate-panel"),
     sidebarHealthPanel: document.getElementById("sidebar-health-panel"),
+    sidebarBiodiversityPanel: document.getElementById("sidebar-biodiversity-panel"),
+    sidebarContaminantsPanel: document.getElementById("sidebar-contaminants-panel"),
     sidebarGeologyPanel: document.getElementById("sidebar-geology-panel"),
     sidebarSelenologyPanel: document.getElementById("sidebar-selenology-panel"),
     sidebarTertiaryPanel: document.getElementById("sidebar-tertiary-panel"),
@@ -96,6 +100,8 @@ export function createUI(appConfig = null) {
     els.sidebarTabOverview,
     els.sidebarTabClimate,
     els.sidebarTabHealth,
+    els.sidebarTabBiodiversity,
+    els.sidebarTabContaminants,
     els.sidebarTabGeology,
     els.sidebarTabSelenology,
     els.sidebarTabTertiary,
@@ -105,6 +111,8 @@ export function createUI(appConfig = null) {
     els.sidebarContent,
     els.sidebarClimatePanel,
     els.sidebarHealthPanel,
+    els.sidebarBiodiversityPanel,
+    els.sidebarContaminantsPanel,
     els.sidebarGeologyPanel,
     els.sidebarSelenologyPanel,
     els.sidebarTertiaryPanel,
@@ -256,15 +264,21 @@ export function createUI(appConfig = null) {
       els.sidebarClimatePanel.hidden = isMoon || activeSidebarPanel !== "climate";
     }
     if (els.sidebarTabHealth) els.sidebarTabHealth.hidden = isMoon;
+    if (els.sidebarTabBiodiversity) els.sidebarTabBiodiversity.hidden = isMoon;
+    if (els.sidebarTabContaminants) els.sidebarTabContaminants.hidden = isMoon;
     if (els.sidebarTabGeology) els.sidebarTabGeology.hidden = isMoon;
     if (els.sidebarTabSelenology) els.sidebarTabSelenology.hidden = !isMoon;
     if (els.sidebarSelenologyPanel) els.sidebarSelenologyPanel.hidden = !isMoon || activeSidebarPanel !== "selenology";
     if (els.sidebarGeologyPanel) els.sidebarGeologyPanel.hidden = isMoon || activeSidebarPanel !== "geology";
     if (els.sidebarHealthPanel) els.sidebarHealthPanel.hidden = isMoon || activeSidebarPanel !== "health";
+    if (els.sidebarBiodiversityPanel) els.sidebarBiodiversityPanel.hidden = isMoon || activeSidebarPanel !== "biodiversity";
+    if (els.sidebarContaminantsPanel) els.sidebarContaminantsPanel.hidden = isMoon || activeSidebarPanel !== "contaminants";
     if (isMoon && activeSidebarPanel === "climate") {
       activeSidebarPanel = "overview";
     }
     if (isMoon && activeSidebarPanel === "health") activeSidebarPanel = "overview";
+    if (isMoon && activeSidebarPanel === "biodiversity") activeSidebarPanel = "overview";
+    if (isMoon && activeSidebarPanel === "contaminants") activeSidebarPanel = "overview";
     if (isMoon && activeSidebarPanel === "geology") activeSidebarPanel = "overview";
     if (!isMoon && activeSidebarPanel === "selenology") activeSidebarPanel = "overview";
     if (els.sidebarTabTertiary) {
@@ -478,6 +492,8 @@ export function createUI(appConfig = null) {
     if (els.sidebarTabClimate) els.sidebarTabClimate.hidden = false;
     if (els.sidebarTabSelenology) els.sidebarTabSelenology.hidden = true;
     if (els.sidebarTabHealth) els.sidebarTabHealth.hidden = false;
+    if (els.sidebarTabBiodiversity) els.sidebarTabBiodiversity.hidden = false;
+    if (els.sidebarTabContaminants) els.sidebarTabContaminants.hidden = false;
     if (els.sidebarTabGeology) els.sidebarTabGeology.hidden = false;
     if (els.metaSection) els.metaSection.hidden = false;
     if (els.moonOverviewGrid) {
@@ -504,6 +520,8 @@ export function createUI(appConfig = null) {
     if (els.sidebarTabClimate) els.sidebarTabClimate.hidden = false;
     if (els.sidebarTabSelenology) els.sidebarTabSelenology.hidden = true;
     if (els.sidebarTabHealth) els.sidebarTabHealth.hidden = false;
+    if (els.sidebarTabBiodiversity) els.sidebarTabBiodiversity.hidden = false;
+    if (els.sidebarTabContaminants) els.sidebarTabContaminants.hidden = false;
     if (els.sidebarTabGeology) els.sidebarTabGeology.hidden = false;
     if (els.metaSection) els.metaSection.hidden = false;
     if (els.moonOverviewGrid) {

@@ -5,6 +5,8 @@ import { createSelenologyPanel } from "./selenologyPanel.js?v=20260908-env8-sele
 import { createGeologyPanel } from "./geologyPanel.js?v=20260908-env8-selenology";
 import { createClimateExtrasPanel } from "./climateExtrasPanel.js?v=20260908-env8-selenology";
 import { createEnvironmentHealthPanel } from "./environmentHealthPanel.js?v=20260908-env8-selenology";
+import { createBiodiversityPanel } from "./biodiversityPanel.js?v=20260908-biodiversity-contaminants";
+import { createContaminantsPanel } from "./contaminantsPanel.js?v=20260908-biodiversity-contaminants";
 import { createEarthHealth } from "./earthHealth.js?v=20260908-env8-selenology";
 import { createTemperaturePanel } from "./temperaturePanel.js?v=20260907-temperature1";
 import { createSpeciesPanel } from "./speciesPanel.js?v=20260908-species-geometry1";
@@ -236,6 +238,8 @@ async function bootstrap() {
   const speciesPanel = createSpeciesPanel(APP_CONFIG.data);
   const temperaturePanel = createTemperaturePanel(APP_CONFIG.data);
   const climateExtrasPanel = createClimateExtrasPanel(APP_CONFIG.data);
+  const biodiversityPanel = createBiodiversityPanel(APP_CONFIG.data);
+  const contaminantsPanel = createContaminantsPanel(APP_CONFIG.data);
   const geologyPanel = createGeologyPanel(APP_CONFIG.data);
   const selenologyPanel = createSelenologyPanel(APP_CONFIG.data);
   let biomePalette = { default: APP_CONFIG.styling.defaultBiomeColor };
@@ -291,6 +295,8 @@ async function bootstrap() {
         temperaturePanel.setRegion(null);
         environmentHealthPanel.setRegion(null);
         climateExtrasPanel.setRegion(null);
+        biodiversityPanel.setRegion(null);
+        contaminantsPanel.setRegion(null);
         geologyPanel.setRegion(null);
         selenologyPanel.setRegion(null);
         ui.setHoverPreview(null, null);
@@ -307,6 +313,8 @@ async function bootstrap() {
           temperaturePanel.setRegion(summary);
           environmentHealthPanel.setRegion(summary);
           climateExtrasPanel.setRegion(summary);
+          biodiversityPanel.setRegion(summary);
+          contaminantsPanel.setRegion(summary);
           geologyPanel.setRegion(summary);
           selenologyPanel.setRegion(summary);
         } catch (err) {
