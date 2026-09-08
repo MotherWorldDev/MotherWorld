@@ -8,6 +8,7 @@ import time
 from collections import Counter
 from datetime import datetime, timezone
 from pathlib import Path
+import requests
 from shapely import from_wkt, to_wkt
 from shapely.geometry import MultiPolygon
 from shapely.geometry.polygon import orient
@@ -37,6 +38,10 @@ DEFAULT_BASIS = [
     "MATERIAL_CITATION",
 ]
 
+
+TRANSIENT_GBIF_STATUS = frozenset({429, 500, 502, 503, 504})
+GBIF_QUERY_RETRIES = 3
+GBIF_MAX_BACKOFF_SECONDS = 30.0
 
 def parse_args() -> argparse.Namespace:
     root = project_root_from(__file__)
@@ -96,6 +101,35 @@ def lookup_taxonomy(conn: sqlite3.Connection, species_keys: list[str]) -> dict[s
     return out
 
 
+def _gbif_backoff_seconds(response, attempt: int) -> float:
+    retry_after = getattr(response, "headers", {}).get("Retry-After") if response is not None else None
+    if retry_after:
+        try:
+            return min(GBIF_MAX_BACKOFF_SECONDS, max(1.0, float(retry_after)))
+        except (TypeError, ValueError):
+            pass
+    return min(GBIF_MAX_BACKOFF_SECONDS, 2.0 ** attempt)
+
+
+def _fetch_gbif_response(session, params: list[tuple[str, str | int]]):
+    for attempt in range(GBIF_QUERY_RETRIES + 1):
+        try:
+            response = session.get(GBIF_OCCURRENCE_SEARCH, params=params, timeout=90)
+        except requests.RequestException as exc:
+            if attempt >= GBIF_QUERY_RETRIES:
+                raise RuntimeError(
+                    f"GBIF occurrence query failed after {GBIF_QUERY_RETRIES + 1} attempts: {exc}"
+                ) from exc
+            time.sleep(_gbif_backoff_seconds(None, attempt))
+            continue
+        if response.ok:
+            return response
+        if response.status_code not in TRANSIENT_GBIF_STATUS or attempt >= GBIF_QUERY_RETRIES:
+            raise RuntimeError(f"GBIF occurrence query failed ({response.status_code}): {response.text[:300]}")
+        time.sleep(_gbif_backoff_seconds(response, attempt))
+    raise RuntimeError("GBIF occurrence query failed without a response")
+
+
 def fetch_facet_counts(session, wkt: str, *, facet: str, page_size: int, args: argparse.Namespace) -> Counter:
     counts: Counter = Counter()
     offset = 0
@@ -116,9 +150,7 @@ def fetch_facet_counts(session, wkt: str, *, facet: str, page_size: int, args: a
         for value in basis:
             params.append(("basisOfRecord", value))
 
-        r = session.get(GBIF_OCCURRENCE_SEARCH, params=params, timeout=90)
-        if not r.ok:
-            raise RuntimeError(f"GBIF occurrence query failed ({r.status_code}): {r.text[:300]}")
+        r = _fetch_gbif_response(session, params)
         payload = r.json()
         facets = payload.get("facets") or []
         facet_obj = None

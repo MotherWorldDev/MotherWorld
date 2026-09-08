@@ -172,13 +172,15 @@ It also does not claim that occurrence coverage equals the complete biological r
 
 The newer species pack owns the Species tab. Earlier editorial `tertiarySummary` content remains in the legacy data schema but is not rendered there. Climate and Threats keep their earlier content and source references. Moon timers and plots remain separate.
 
-The species manifest and selected region inventory load only when the Species tab is opened. Requests are deduplicated, failed requests can be retried, stale responses cannot replace the current selection, and the in-memory cache keeps six regions. Search is debounced; lists start at 100 rows and expand on request.
+The species manifest and selected region inventory load only when the Species tab is opened. Requests are deduplicated, failed requests can be retried, stale responses cannot replace the current selection, and the in-memory cache keeps six regions. Search is debounced; lists start at 60 rows and expand on request.
 
 `npm test` checks summary and species loading. `python -m unittest discover -s tests -p "test_species*.py"` checks geometry mapping, partitioning, API pagination, grouping and taxonomy imports. Refreshes should use `--force` when new observations are wanted with unchanged filters.
 
 Run only one builder against a given output directory at a time. To generate GBIF and OBIS concurrently, give them separate `--output-dir` directories and merge the completed manifests afterward.
 
 ## Release packaging and current build
+
+The complete September 2026 inventory release covers all 1,100 mapped regions: 847 land ecoregions, 21 lakes and 232 marine ecoregions. This is complete region coverage for the chosen occurrence queries, not a claim that every species present has been observed or recorded. Seven land inventories contain zero matching species rows; the interface reports these as empty query results rather than biological absence.
 
 The initial release uses the committed LOD0 polygons for land queries (`--runtime-geometry`). This matches the site's detailed map and avoids processing the much larger original shapefile. GBIF query WKT defaults to 2,500 characters to leave room for encoded URL parameters; exterior rings are oriented counterclockwise.
 

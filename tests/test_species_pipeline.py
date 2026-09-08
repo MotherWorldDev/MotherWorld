@@ -6,6 +6,7 @@ import sys
 import tempfile
 import unittest
 import zipfile
+import requests
 from pathlib import Path
 from contextlib import closing
 from unittest.mock import patch
@@ -86,6 +87,32 @@ class PipelineTests(unittest.TestCase):
         self.assertEqual(dict(result),{"1":2,"2":3})
         self.assertEqual([dict(c)["facetOffset"] for c in calls],[0,2])
         self.assertTrue(all(("hasGeospatialIssue","false") in c and ("year","2020,2026") in c for c in calls))
+
+    def test_gbif_retries_transient_failures_with_bounded_backoff(self):
+        calls = []
+        class HTTPResponse:
+            def __init__(self, status_code, payload=None):
+                self.status_code = status_code
+                self.ok = 200 <= status_code < 400
+                self.text = f"status {status_code}"
+                self.headers = {}
+                self._payload = payload or {}
+            def json(self):
+                return self._payload
+        class Session:
+            def get(self, url, params, timeout):
+                calls.append(params)
+                if len(calls) == 1:
+                    raise requests.Timeout("temporary backend timeout")
+                if len(calls) == 2:
+                    return HTTPResponse(503)
+                return HTTPResponse(200, {"facets": []})
+        args = argparse.Namespace(year=None, basis_of_record=[], request_delay=0)
+        with patch("gbif_build_region_species.time.sleep") as sleeper:
+            result = fetch_facet_counts(Session(), "POLYGON", facet="speciesKey", page_size=2, args=args)
+        self.assertEqual(dict(result), {})
+        self.assertEqual(len(calls), 3)
+        self.assertEqual([call.args[0] for call in sleeper.call_args_list], [1.0, 2.0])
 
     def test_species_list_bom_and_failed_import_preserves_cache(self):
         with tempfile.TemporaryDirectory() as folder:
