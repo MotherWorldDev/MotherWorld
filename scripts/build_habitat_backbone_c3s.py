@@ -8,6 +8,10 @@ from backbone_common import HISTORY_START_YEAR, family_payload, write_family
 # ESA/C3S LCCS classes. Fractions deliberately represent direct conversion only.
 CONVERSION={10:1.0,11:1.0,12:1.0,20:1.0,30:0.70,40:0.30,190:1.0}
 EXCLUDE={0,210,220}
+NETCDF_SUFFIXES={'.nc','.nc4','.cdf','.netcdf'}
+
+def discover_inputs(input_dir, pattern):
+    return sorted(path for path in input_dir.glob(pattern) if path.is_file() and path.suffix.lower() in NETCDF_SUFFIXES)
 
 def year_from(path, ds, ti=None):
     if 'time' in ds.coords:
@@ -47,7 +51,7 @@ def main():
     p=argparse.ArgumentParser(description='Build fixed Earth Health Habitat backbone from annual C3S/ESA land-cover classification NetCDF files.')
     p.add_argument('--repo',type=Path,default=Path(__file__).resolve().parents[1]); p.add_argument('--input-dir',type=Path,required=True); p.add_argument('--glob',default='*.nc*'); p.add_argument('--start-year',type=int,default=HISTORY_START_YEAR); p.add_argument('--chunk-rows',type=int,default=64); a=p.parse_args(); repo=a.repo.resolve()
     series=[]
-    for path in sorted(a.input_dir.glob(a.glob)):
+    for path in discover_inputs(a.input_dir,a.glob):
         ds=xr.open_dataset(path,decode_times=True)
         try:
             vn=variable(ds); da=ds[vn]; lat=next((d for d in da.dims if d.lower() in {'lat','latitude'}),None)
