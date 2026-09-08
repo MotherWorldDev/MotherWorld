@@ -27,9 +27,16 @@ import pandas as pd
 from shapely.geometry import Point
 from shapely.ops import unary_union
 
+from analysis_geometry import (
+    analysis_geometry_cache_identity,
+    analysis_geometry_metadata,
+    apply_land_geometry_overrides,
+)
+
 
 REGION_PREFIXES = ("eco_", "marine_", "lake_")
 KIND_DIR = {"land": "land", "marine": "marine", "lakes": "lakes"}
+_PRODUCER_GEOMETRIES: dict[tuple[str, str], dict[str, dict]] = {}
 
 
 def utc_now_iso() -> str:
@@ -101,6 +108,9 @@ def _first_column(columns: Iterable[str], names: Iterable[str]) -> str | None:
 
 def _source_layers(repo: Path, kind: str) -> list[Path]:
     if kind == "land":
+        # The original ecoregion shapefile is the authoritative analysis
+        # footprint.  Rendered realm layers remain a fallback because their
+        # simplification can omit geometry parts.
         shp = repo / "Ecoregions2017/Ecoregions2017.shp"
         if shp.exists():
             return [shp]
@@ -140,8 +150,22 @@ def _layer_region_id(row: pd.Series, kind: str, index) -> str | None:
     return rid
 
 
+def _analysis_geometry_entry(region_id: str, geometry) -> dict:
+    metadata = analysis_geometry_metadata(region_id, geometry)
+    return {
+        "analysisGeometry": metadata,
+        "analysisGeometryCacheIdentity": analysis_geometry_cache_identity(region_id, geometry),
+    }
+
+
 def load_canonical_regions(repo: Path, kinds: Iterable[str]) -> gpd.GeoDataFrame:
-    """Load and union region fragments into one row per canonical ID."""
+    """Load canonical region geometries and apply maintained land corrections.
+
+    The override registry is applied after source fragments have been unioned,
+    and only to land IDs that were present in the source layers.  Each row
+    carries the provenance and cache identity for the exact geometry returned
+    to downstream point and raster providers.
+    """
 
     repo = Path(repo).resolve()
     metadata = _metadata(repo)
@@ -162,11 +186,26 @@ def load_canonical_regions(repo: Path, kinds: Iterable[str]) -> gpd.GeoDataFrame
                 if rid and geom is not None and not geom.is_empty:
                     grouped[(kind, rid)].append(geom)
 
+    unioned: dict[tuple[str, str], object] = {}
+    for key, geometries in grouped.items():
+        # The authoritative shapefile has one feature per region.  Reusing
+        # that object avoids an expensive copy of every detailed polygon;
+        # split rendered/topology layers still receive the required union.
+        geom = geometries[0] if len(geometries) == 1 else unary_union(geometries)
+        if geom is not None and not geom.is_empty:
+            unioned[key] = geom
+
+    land_geometries = {
+        region_id: geometry
+        for (kind, region_id), geometry in unioned.items()
+        if kind == "land"
+    }
+    corrected_land = apply_land_geometry_overrides(land_geometries)
+
     rows = []
-    for (kind, rid), geometries in sorted(grouped.items()):
-        geom = unary_union(geometries)
-        if geom is None or geom.is_empty:
-            continue
+    for (kind, rid), base_geometry in sorted(unioned.items()):
+        geometry = corrected_land.get(rid, base_geometry) if kind == "land" else base_geometry
+        geometry_entry = _analysis_geometry_entry(rid, geometry)
         meta = metadata.get(rid, (kind, {}))[1]
         rows.append(
             {
@@ -174,12 +213,31 @@ def load_canonical_regions(repo: Path, kinds: Iterable[str]) -> gpd.GeoDataFrame
                 "kind": kind,
                 "name": meta.get("name") or rid,
                 "areaKm2": meta.get("areaKm2"),
-                "geometry": geom,
+                "geometry": geometry,
+                **geometry_entry,
             }
         )
+    # Record the geometries actually loaded by this producer process. Claims
+    # must not be manufactured later by loading current geometry at write time.
+    for kind in wanted_kinds:
+        _PRODUCER_GEOMETRIES[(str(repo), kind)] = {
+            row["regionId"]: {
+                "analysisGeometry": row["analysisGeometry"],
+                "analysisGeometryCacheIdentity": row["analysisGeometryCacheIdentity"],
+            }
+            for row in rows if row["kind"] == kind
+        }
     if not rows:
         return gpd.GeoDataFrame(
-            columns=["regionId", "kind", "name", "areaKm2", "geometry"],
+            columns=[
+                "regionId",
+                "kind",
+                "name",
+                "areaKm2",
+                "geometry",
+                "analysisGeometry",
+                "analysisGeometryCacheIdentity",
+            ],
             geometry="geometry",
             crs="EPSG:4326",
         )
@@ -189,6 +247,72 @@ def load_canonical_regions(repo: Path, kinds: Iterable[str]) -> gpd.GeoDataFrame
 def canonical_region_gdf(repo: Path, kind: str) -> gpd.GeoDataFrame:
     return load_canonical_regions(repo, (kind,))
 
+
+def _canonical_geometry_entries(repo: Path, kinds: Iterable[str]) -> dict[tuple[str, str], dict]:
+    regions = load_canonical_regions(repo, kinds)
+    entries: dict[tuple[str, str], dict] = {}
+    for _, row in regions.iterrows():
+        entries[(str(row["regionId"]), str(row["kind"]))] = {
+            "geometry": row["geometry"],
+            "analysisGeometry": row.get("analysisGeometry"),
+            "analysisGeometryCacheIdentity": row.get("analysisGeometryCacheIdentity"),
+        }
+    return entries
+
+
+def canonical_region_geometry_metadata(
+    repo: Path,
+    region_id: str,
+    *,
+    kind: str = "land",
+) -> dict | None:
+    """Return provider-ready geometry provenance for an existing region.
+
+    ``None`` means that the region was not present in the canonical source
+    layer.  Base geometries receive an identity too; callers that require a
+    maintained correction should require ``analysisGeometry.overrideApplied``
+    and validate the identity before merging results.
+    """
+
+    rid = canonical_region_id(region_id) or str(region_id)
+    entry = _canonical_geometry_entries(repo, (kind,)).get((rid, kind))
+    if entry is None:
+        return None
+    return {
+        "analysisGeometry": dict(entry["analysisGeometry"]),
+        "analysisGeometryCacheIdentity": entry["analysisGeometryCacheIdentity"],
+    }
+
+
+def attach_analysis_geometry_provenance(
+    repo: Path,
+    updates: Mapping[str, dict],
+) -> Mapping[str, dict]:
+    """Attach producer-side identity for maintained corrected land regions.
+
+    Claims use the producer's loaded geometry context; absent context leaves
+    updates unverified. Never attach claims to cached results before checking
+    their saved geometry identity. The private fields precede the merge. A
+    producer that supplied either field already is left untouched so a stale
+    or incorrect claim is rejected by the merge rather than silently replaced
+    with a newly derived value.
+    """
+
+    entries = _PRODUCER_GEOMETRIES.get((str(Path(repo).resolve()), "land"), {})
+    for region_id, payload in updates.items():
+        if not isinstance(payload, dict) or payload.get("_kind", "land") != "land":
+            continue
+        entry = entries.get(str(region_id))
+        if entry is None:
+            continue
+        metadata = entry["analysisGeometry"]
+        if not isinstance(metadata, dict) or not metadata.get("overrideApplied"):
+            continue
+        if "_analysisGeometry" in payload or "_analysisGeometryCacheIdentity" in payload:
+            continue
+        payload["_analysisGeometry"] = dict(metadata)
+        payload["_analysisGeometryCacheIdentity"] = entry["analysisGeometryCacheIdentity"]
+    return updates
 
 def canonical_point_region_map(
     points: pd.DataFrame,
@@ -251,22 +375,139 @@ def _region_name(repo: Path, region_id: str) -> str:
     return (_metadata(repo).get(region_id, ("", {}))[1].get("name") or region_id)
 
 
+def _corrected_geometry_output(entry: dict | None) -> dict:
+    if not entry:
+        return {}
+    metadata = entry.get("analysisGeometry")
+    identity = entry.get("analysisGeometryCacheIdentity")
+    if not isinstance(metadata, dict) or not metadata.get("overrideApplied"):
+        return {}
+    return {
+        "analysisGeometry": dict(metadata),
+        "analysisGeometryCacheIdentity": identity,
+    }
+
+
+def _requires_corrected_geometry(region_id: str, entry: dict | None) -> tuple[bool, str | None]:
+    """Return whether a registry-listed region needs a corrected-footprint claim."""
+
+    expected = analysis_geometry_metadata(region_id, None)
+    if entry:
+        metadata = entry.get("analysisGeometry") or {}
+        guarded = expected.get("geometryOverride") is not None
+        unavailable = guarded and not metadata.get("overrideApplied")
+        return guarded, "expected_analysis_geometry_unavailable" if unavailable else None
+    # The canonical layer may be missing an ID that is explicitly listed in the
+    # maintained registry.  Treat that as an unavailable expected geometry,
+    # rather than allowing an old provider result through the unaffected path.
+    expected = analysis_geometry_metadata(region_id, None)
+    if expected.get("geometryOverride") is not None:
+        return True, "expected_analysis_geometry_unavailable"
+    return False, None
+
+
+def _valid_producer_geometry_claim(
+    region_id: str,
+    provided_metadata,
+    provided_identity,
+    entry: dict | None,
+) -> bool:
+    """Validate a corrected-footprint claim without deriving one at merge time."""
+
+    requires_claim, unavailable = _requires_corrected_geometry(region_id, entry)
+    if unavailable:
+        return False
+    if not requires_claim or not entry:
+        return not requires_claim
+    expected_metadata = entry.get("analysisGeometry")
+    return (
+        provided_identity == entry.get("analysisGeometryCacheIdentity")
+        and isinstance(provided_metadata, dict)
+        and provided_metadata == expected_metadata
+        and provided_metadata.get("regionId") == str(region_id)
+    )
+
+
+def _withhold_geometry_mismatch(
+    path: Path,
+    index: dict,
+    region_id: str,
+    *,
+    clear_key: str,
+    expected_identity: str | None,
+    reason: str | None = None,
+) -> None:
+    """Keep stale corrected outputs out of the public index until replacement."""
+
+    existing = read_json(path, {}) if path.exists() else {}
+    # A previously validated output remains usable if a later producer sends a
+    # bad replacement.  An unavailable expected geometry has no usable identity
+    # and must always be withheld, even when an old file has no identity either.
+    if expected_identity is not None and path.exists() and existing.get("analysisGeometryCacheIdentity") == expected_identity:
+        return
+    if path.exists():
+        existing[clear_key] = {}
+        if clear_key == "categories":
+            existing["sources"] = {}
+        existing["analysisGeometryStatus"] = "withheld"
+        existing["analysisGeometryReason"] = reason or (
+            "Producer geometry identity/provenance is missing or does not "
+            "match the maintained corrected footprint."
+        )
+        write_json(path, existing, compact=True)
+    index.setdefault("regions", {}).pop(str(region_id), None)
+
+
 def merge_contaminant_categories(
     repo: Path,
     root: Path,
     region_updates: Mapping[str, dict],
     source_entry: dict,
 ) -> None:
-    """Write contaminant provider output and the deployable regional files."""
+    """Write contaminant provider output and deployable regional files.
+
+    Corrected land regions require producer-side geometry provenance.  The
+    merge validates that claim against the geometry used by the canonical
+    mapping and withholds stale or unclaimed corrected-region outputs.
+    """
 
     index_path = deploy_path(root, "contaminants/contaminants.index.json")
     index = read_json(index_path, {"schemaVersion": 1, "generatedAt": None, "regions": {}, "sources": {}})
     provider_id = str(source_entry["id"])
+    land_updates = [
+        region_id
+        for region_id, raw_update in region_updates.items()
+        if isinstance(raw_update, dict) and raw_update.get("_kind", "land") == "land"
+    ]
+    geometry_entries = _canonical_geometry_entries(repo, ("land",)) if land_updates else {}
     for region_id, raw_update in sorted(region_updates.items()):
         update = dict(raw_update)
         kind = update.pop("_kind", "land")
+        provided_metadata = update.pop("_analysisGeometry", None)
+        provided_identity = update.pop("_analysisGeometryCacheIdentity", None)
+        entry = geometry_entries.get((str(region_id), str(kind)))
+        requires_claim, unavailable_reason = (
+            _requires_corrected_geometry(str(region_id), entry) if kind == "land" else (False, None)
+        )
+        corrected = bool(
+            entry
+            and isinstance(entry.get("analysisGeometry"), dict)
+            and entry["analysisGeometry"].get("overrideApplied")
+        )
         rel_kind = KIND_DIR.get(kind, "land")
         path = deploy_path(root, f"contaminants/{rel_kind}/{region_id}.contaminants.json")
+        if requires_claim and not _valid_producer_geometry_claim(
+            str(region_id), provided_metadata, provided_identity, entry
+        ):
+            _withhold_geometry_mismatch(
+                path,
+                index,
+                str(region_id),
+                clear_key="categories",
+                expected_identity=entry.get("analysisGeometryCacheIdentity") if entry else None,
+                reason=unavailable_reason,
+            )
+            continue
         existing = read_json(
             path,
             {
@@ -280,16 +521,24 @@ def merge_contaminant_categories(
                 "coverageWarning": "Observation coverage is incomplete and uneven. No data does not mean no contamination.",
             },
         )
+        geometry_output = _corrected_geometry_output(entry) if corrected else {}
+        if geometry_output and existing.get("analysisGeometryCacheIdentity") != geometry_output["analysisGeometryCacheIdentity"]:
+            existing["categories"] = {}
+            existing["sources"] = {}
         existing["generatedAt"] = utc_now_iso()
+        existing.update(geometry_output)
         existing.setdefault("categories", {}).update(update.get("categories", {}))
         existing.setdefault("sources", {}).update(update.get("sources", {}))
         write_json(path, existing, compact=True)
-        index.setdefault("regions", {})[region_id] = {
+        region_index = {
             "url": f"{rel_kind}/{region_id}.contaminants.json",
             "kind": kind,
             "categoryKeys": sorted(existing.get("categories", {})),
             "generatedAt": existing["generatedAt"],
         }
+        if geometry_output:
+            region_index.update(geometry_output)
+        index.setdefault("regions", {})[region_id] = region_index
         fragment = {
             "schemaVersion": 1,
             "providerId": provider_id,
@@ -298,6 +547,7 @@ def merge_contaminant_categories(
             "generatedAt": existing["generatedAt"],
             "payload": update,
             "source": source_entry,
+            **geometry_output,
         }
         write_json(
             provider_fragment_path(root, f"contaminants/{provider_id}/{rel_kind}/{region_id}.json"),
@@ -308,18 +558,42 @@ def merge_contaminant_categories(
     index["generatedAt"] = utc_now_iso()
     write_json(index_path, index)
 
-
 def merge_land_pollution_provider(
     repo: Path,
     root: Path,
     region_updates: Mapping[str, dict],
     source_entry: dict,
 ) -> None:
+    """Write a land-pollution provider snapshot with geometry provenance."""
+
     index_path = deploy_path(root, "land-pollution/land-pollution.index.json")
     index = read_json(index_path, {"schemaVersion": 1, "generatedAt": None, "regions": {}, "sources": {}})
     provider_id = str(source_entry["id"])
-    for region_id, provider_payload in sorted(region_updates.items()):
+    geometry_entries = _canonical_geometry_entries(repo, ("land",)) if region_updates else {}
+    for region_id, raw_provider_payload in sorted(region_updates.items()):
+        provider_payload = dict(raw_provider_payload)
+        provided_metadata = provider_payload.pop("_analysisGeometry", None)
+        provided_identity = provider_payload.pop("_analysisGeometryCacheIdentity", None)
+        entry = geometry_entries.get((str(region_id), "land"))
+        requires_claim, unavailable_reason = _requires_corrected_geometry(str(region_id), entry)
+        corrected = bool(
+            entry
+            and isinstance(entry.get("analysisGeometry"), dict)
+            and entry["analysisGeometry"].get("overrideApplied")
+        )
         path = deploy_path(root, f"land-pollution/land/{region_id}.land-pollution.json")
+        if requires_claim and not _valid_producer_geometry_claim(
+            str(region_id), provided_metadata, provided_identity, entry
+        ):
+            _withhold_geometry_mismatch(
+                path,
+                index,
+                str(region_id),
+                clear_key="providers",
+                expected_identity=entry.get("analysisGeometryCacheIdentity") if entry else None,
+                reason=unavailable_reason,
+            )
+            continue
         existing = read_json(
             path,
             {
@@ -332,14 +606,21 @@ def merge_land_pollution_provider(
                 "interpretation": "Known/mapped land-pollution pressure. Data coverage differs by provider; absence of mapped sites does not imply clean land.",
             },
         )
+        geometry_output = _corrected_geometry_output(entry) if corrected else {}
+        if geometry_output and existing.get("analysisGeometryCacheIdentity") != geometry_output["analysisGeometryCacheIdentity"]:
+            existing["providers"] = {}
         existing["generatedAt"] = utc_now_iso()
+        existing.update(geometry_output)
         existing.setdefault("providers", {})[provider_id] = provider_payload
         write_json(path, existing, compact=True)
-        index.setdefault("regions", {})[region_id] = {
+        region_index = {
             "url": f"land/{region_id}.land-pollution.json",
             "providerIds": sorted(existing.get("providers", {})),
             "generatedAt": existing["generatedAt"],
         }
+        if geometry_output:
+            region_index.update(geometry_output)
+        index.setdefault("regions", {})[region_id] = region_index
         write_json(
             provider_fragment_path(root, f"land-pollution/{provider_id}/land/{region_id}.json"),
             {
@@ -350,13 +631,13 @@ def merge_land_pollution_provider(
                 "generatedAt": existing["generatedAt"],
                 "payload": provider_payload,
                 "source": source_entry,
+                **geometry_output,
             },
             compact=True,
         )
     index.setdefault("sources", {})[provider_id] = source_entry
     index["generatedAt"] = utc_now_iso()
     write_json(index_path, index)
-
 
 def recompute_land_peer_percentiles(root: Path) -> None:
     """Recompute within-provider metric ranks without creating missing regions."""
