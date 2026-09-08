@@ -4,7 +4,7 @@ import argparse
 from pathlib import Path
 import geopandas as gpd
 import pandas as pd
-from land_pollution_common import merge_region_provider, recompute_peer_percentiles, region_gdf
+from land_pollution_common import attach_analysis_geometry_provenance, merge_region_provider, recompute_peer_percentiles, region_gdf
 
 
 def extract_pbf(path: Path):
@@ -63,6 +63,7 @@ def main():
             'mappedLandfillPctOfRegion':area_by.get(rid,0.0)/area*100 if area>0 else None,
         }
         updates[rid]={'label':'OpenStreetMap waste sites','coverage':'Volunteer-mapped features; completeness varies strongly by country and mapper activity.','metrics':metrics}
+    attach_analysis_geometry_provenance(repo, updates)
     merge_region_provider(repo,updates,{'id':'osm-waste','label':'OpenStreetMap waste-site mapping','license':'ODbL 1.0','url':'https://www.openstreetmap.org/','caveat':'OSM is not an authoritative waste-site registry and mapped absence is not evidence of no site.'})
     recompute_peer_percentiles(repo); print(f'Updated {len(updates)} regions from OSM waste-site mapping.')
 if __name__=='__main__':main()

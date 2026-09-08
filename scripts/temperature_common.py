@@ -22,6 +22,8 @@ from shapely.geometry import MultiPolygon, Polygon, box, mapping
 from shapely.ops import transform, unary_union
 from shapely import make_valid
 
+from analysis_geometry import apply_land_geometry_overrides
+
 EARTH_RADIUS_M = 6_371_008.8
 
 
@@ -310,7 +312,8 @@ def merged_geometries(paths) -> dict[str, object]:
 
 def load_land_geometries(repo: Path) -> dict[str, object]:
     # Match the committed detailed map, merging split features by logical region ID.
-    return merged_geometries([repo / "frontend/public/data/lod0/ecoregions_lod0.topojson"])
+    geometries = merged_geometries([repo / "frontend/public/data/lod0/ecoregions_lod0.topojson"])
+    return apply_land_geometry_overrides(geometries)
 
 
 def load_marine_geometries(repo: Path) -> dict[str, object]:

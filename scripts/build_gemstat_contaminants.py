@@ -11,7 +11,7 @@ from pathlib import Path
 import pandas as pd
 
 from contaminants_common import (
-    SeriesAccumulator, canonical_unit, classify_parameter, convert_mass_per_l, find_column,
+    SeriesAccumulator, attach_analysis_geometry_provenance, canonical_unit, classify_parameter, convert_mass_per_l, find_column,
     merge_region_categories, norm_name, point_region_map, target_unit_for, to_float, year_from,
     CATEGORY_LABELS,
 )
@@ -170,6 +170,7 @@ def main():
             categories[category]['stationCount']=max((s['stationCount'] for s in series_list),default=0)
         kind='lakes' if rid.startswith('lake_') else 'land'
         updates[rid]={'_kind':kind,'categories':categories,'sources':{'gemstat':{'label':'UNEP GEMS/Water GEMStat Global Freshwater Quality Archive','doi':'10.5281/zenodo.18459694','license':'Open subset CC BY 4.0 or equivalent'}}}
+    attach_analysis_geometry_provenance(repo, updates)
     merge_region_categories(repo,updates,{'id':'gemstat','label':'UNEP GEMS/Water GEMStat','doi':'10.5281/zenodo.18459694'})
     print(f'Wrote/updated contaminant observations for {len(updates):,} MotherWorld regions.')
 

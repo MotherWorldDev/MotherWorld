@@ -12,6 +12,8 @@ from shapely import make_valid
 from shapely.geometry import MultiPolygon, Polygon
 from shapely.ops import unary_union
 
+from analysis_geometry import apply_land_geometry_overrides
+
 PRECIP_EDGES_MM = [0.0, 0.1, 1.0, 5.0, 10.0, 25.0, 50.0, 100.0, 200.0, float("inf")]
 HUMIDITY_EDGES_PCT = [float(x) for x in range(0, 101, 10)]
 WIND_EDGES_MS = [0.0, 1.0, 2.0, 3.0, 5.0, 8.0, 12.0, 17.0, 25.0, 40.0, float("inf")]
@@ -99,7 +101,8 @@ def load_geometries(repo: Path, kind: str) -> dict[str, object]:
                 continue
             geom = row.geometry if row.geometry.is_valid else make_valid(row.geometry)
             bucket.setdefault(rid, []).extend(_parts(geom))
-    return {rid: unary_union(parts) for rid, parts in bucket.items() if parts}
+    geometries = {rid: unary_union(parts) for rid, parts in bucket.items() if parts}
+    return apply_land_geometry_overrides(geometries) if kind == "land" else geometries
 
 
 def load_region_names(repo: Path, kind: str) -> dict[str, str]:
@@ -199,12 +202,12 @@ def package_stats(raw: dict) -> dict:
     }
 
 
-def payload_from_raw(*, region_id: str, region_name: str, kind: str, years: tuple[int, int], source: dict, raw: dict, area_km2: float | None, generated_at: str) -> dict:
+def payload_from_raw(*, region_id: str, region_name: str, kind: str, years: tuple[int, int], source: dict, raw: dict, area_km2: float | None, generated_at: str, analysis_geometry: dict | None = None, analysis_geometry_cache_identity: str | None = None) -> dict:
     precip_hist = normalize_percentages(raw.get("precip_hist_pct", []))
     humidity_hist = normalize_percentages(raw.get("humidity_hist_pct", []))
     wind_hist = normalize_percentages(raw.get("wind_hist_pct", []))
     wind_rose = normalize_percentages(raw.get("wind_rose_pct", []))
-    return {
+    payload = {
         "schemaVersion": 1,
         "generatedAt": generated_at,
         "regionId": region_id,
@@ -249,3 +252,9 @@ def payload_from_raw(*, region_id: str, region_name: str, kind: str, years: tupl
             ],
         },
     }
+
+    if analysis_geometry and analysis_geometry.get("overrideApplied"):
+        payload["analysisGeometry"] = analysis_geometry
+        if analysis_geometry_cache_identity:
+            payload["analysisGeometryCacheIdentity"] = analysis_geometry_cache_identity
+    return payload

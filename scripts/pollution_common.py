@@ -11,6 +11,8 @@ import numpy as np
 from shapely.geometry import MultiPolygon, Polygon, box
 from shapely.ops import transform, unary_union
 
+from analysis_geometry import apply_land_geometry_overrides
+
 
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
@@ -125,6 +127,10 @@ def load_region_geometries(repo: Path) -> dict[str, tuple[str, object]]:
             rid = _row_id(row, idx, kind)
             if rid and row.geometry is not None and not row.geometry.is_empty:
                 out[rid] = (kind, row.geometry)
+    land_geometries = {rid: geom for rid, (kind, geom) in out.items() if kind == "land"}
+    corrected_land = apply_land_geometry_overrides(land_geometries)
+    for rid, geom in corrected_land.items():
+        out[rid] = ("land", geom)
     return out
 
 

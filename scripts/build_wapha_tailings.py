@@ -4,7 +4,7 @@ import argparse
 from pathlib import Path
 import geopandas as gpd
 import pandas as pd
-from land_pollution_common import merge_region_provider, recompute_peer_percentiles, region_gdf
+from land_pollution_common import attach_analysis_geometry_provenance, merge_region_provider, recompute_peer_percentiles, region_gdf
 
 
 def points_from_any(path: Path):
@@ -25,6 +25,7 @@ def main():
         j=assign(points_from_any(args.tdf),regions)
         for rid,n in j.groupby('regionId').size().items(): counts.setdefault(rid,{})['tailingsDamFailureCount']=int(n)
     updates={rid:{'label':'WAPHA mine tailings','coverage':'Global compilation of known metal-mine tailings storage facilities/failures from public sources; not a complete inventory of all mining waste.','metrics':m} for rid,m in counts.items()}
+    attach_analysis_geometry_provenance(repo, updates)
     merge_region_provider(repo,updates,{'id':'wapha-tailings','label':'WAPHA global metal mines / tailings database','license':'Dataset terms/citations as published by Dryad; source compilations have mixed provenance','url':'https://doi.org/10.5061/dryad.j3tx95xmg','caveat':'Known tailings counts are incomplete; absence is not evidence that no tailings or mine waste exists.'})
     recompute_peer_percentiles(repo); print(f'Updated {len(updates)} regions from WAPHA tailings data.')
 if __name__=='__main__':main()

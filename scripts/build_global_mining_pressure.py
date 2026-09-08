@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 import geopandas as gpd
-from land_pollution_common import merge_region_provider, recompute_peer_percentiles, region_gdf
+from land_pollution_common import attach_analysis_geometry_provenance, merge_region_provider, recompute_peer_percentiles, region_gdf
 
 
 def main():
@@ -20,6 +20,7 @@ def main():
     for rid,km2 in area_by.items():
         area=float(regions.loc[regions.regionId==rid,'areaKm2'].iloc[0] or 0)
         updates[rid]={'label':'Global mining footprint','coverage':'Satellite-mapped land directly used by mining; includes pits, tailings dams, waste-rock dumps, ponds and processing infrastructure, but is not itself a contamination measurement.','metrics':{'miningFootprintKm2':km2,'miningFootprintPctOfRegion':km2/area*100 if area>0 else None,'intersectingMiningPolygonCount':len(features.get(rid,set()))}}
+    attach_analysis_geometry_provenance(repo, updates)
     merge_region_provider(repo,updates,{'id':'global-mining-polygons-v2','label':'Global-scale mining polygons v2','license':'CC BY-SA 4.0','url':'https://doi.org/10.1594/PANGAEA.942325','caveat':'Mining footprint is an industrial-land/mining-waste pressure proxy, not proof that all mapped pixels are contaminated.'})
     recompute_peer_percentiles(repo); print(f'Updated {len(updates)} regions from global mining polygons.')
 if __name__=='__main__':main()

@@ -16,6 +16,15 @@ import numpy as np
 import pandas as pd
 from shapely.geometry import Point
 
+from analysis_geometry import analysis_geometry_cache_identity, analysis_geometry_metadata, apply_land_geometry_overrides
+
+
+_ANALYSIS_GEOMETRY_CACHE: dict[str, dict[str, tuple[str, object]]] = {}
+
+
+def _repo_cache_key(repo: Path) -> str:
+    return str(Path(repo).resolve())
+
 
 def utc_now_iso() -> str:
     return datetime.now(timezone.utc).isoformat()
@@ -233,6 +242,11 @@ def load_region_geometries(repo: Path) -> dict[str, tuple[str, object]]:
         for idx,row in gdf.iterrows():
             rid=str(idx) if str(idx).startswith(prefix) else str(row.get('id') or '')
             if rid.startswith(prefix) and row.geometry is not None and not row.geometry.is_empty: out[rid]=(kind,row.geometry)
+    land_geometries = {rid: geom for rid, (kind, geom) in out.items() if kind == 'land'}
+    corrected_land = apply_land_geometry_overrides(land_geometries)
+    for rid, geom in corrected_land.items():
+        out[rid] = ('land', geom)
+    _ANALYSIS_GEOMETRY_CACHE[_repo_cache_key(repo)] = dict(out)
     return out
 
 
@@ -261,20 +275,95 @@ def region_metadata(repo: Path) -> dict[str, dict]:
     return out
 
 
+def attach_analysis_geometry_provenance(repo: Path, updates: dict[str, dict]):
+    """Attach producer-side identity for corrected land regions only."""
+    geometries=_ANALYSIS_GEOMETRY_CACHE.get(_repo_cache_key(repo))
+    if geometries is None:
+        return updates
+    for rid,payload in updates.items():
+        raw_kind=payload.get('_kind','land')
+        entry=geometries.get(rid)
+        if raw_kind != 'land' or entry is None or entry[0] != 'land':
+            continue
+        geometry=entry[1]
+        # Preserve any producer-supplied claim so a stale/mismatched claim is
+        # rejected by the merge instead of being relabelled with today's geometry.
+        if '_analysisGeometry' in payload or '_analysisGeometryCacheIdentity' in payload:
+            continue
+        metadata=analysis_geometry_metadata(rid, geometry)
+        if metadata.get('overrideApplied'):
+            payload['_analysisGeometry']=metadata
+            payload['_analysisGeometryCacheIdentity']=analysis_geometry_cache_identity(rid, geometry)
+    return updates
+
+
 def merge_region_categories(repo: Path, region_updates: dict[str, dict], source_entry: dict | None = None) -> None:
     meta=region_metadata(repo)
+    geometries=load_region_geometries(repo)
     index_path=repo/'frontend/public/data/contaminants/contaminants.index.json'
     index=read_json(index_path,{'schemaVersion':1,'generatedAt':None,'regions':{},'sources':{}})
-    for rid, update in region_updates.items():
+    for rid, raw_update in region_updates.items():
+        update=dict(raw_update)
         kind=update.pop('_kind','land')
+        provided_metadata=update.pop('_analysisGeometry',None)
+        provided_identity=update.pop('_analysisGeometryCacheIdentity',None)
         rel_kind='lakes' if kind=='lakes' else 'marine' if kind=='marine' else 'land'
         path=repo/'frontend/public/data/contaminants'/rel_kind/f'{rid}.contaminants.json'
-        existing=read_json(path,{
+        existing=read_json(path,{}) if path.exists() else None
+        geometry_entry=geometries.get(rid)
+        geometry=geometry_entry[1] if geometry_entry and geometry_entry[0] == kind else None
+        expected_metadata=analysis_geometry_metadata(rid, geometry) if kind == 'land' else None
+        guarded=bool(expected_metadata and expected_metadata.get('geometryOverride'))
+        corrected=bool(guarded and expected_metadata.get('overrideApplied'))
+        expected_identity=(analysis_geometry_cache_identity(rid, geometry) if corrected else None)
+        if guarded:
+            if geometry is None:
+                index.setdefault('regions',{}).pop(rid,None)
+                if existing is not None:
+                    existing['categories']={}
+                    existing['sources']={}
+                    existing['analysisGeometryStatus']='withheld'
+                    existing['analysisGeometryReason']='expected_analysis_geometry_unavailable'
+                    write_json(path,existing,compact=True)
+                continue
+            valid=(corrected
+                   and provided_identity == expected_identity
+                   and isinstance(provided_metadata, dict)
+                   and provided_metadata.get('regionId') == str(rid)
+                   and provided_metadata.get('overrideApplied') is True
+                   and provided_metadata.get('geometryFingerprint') == expected_metadata.get('geometryFingerprint'))
+            if not valid:
+                existing_is_current=bool(
+                    existing
+                    and corrected
+                    and existing.get('analysisGeometryCacheIdentity') == expected_identity
+                    and (existing.get('analysisGeometry') or {}).get('geometryFingerprint') == expected_metadata.get('geometryFingerprint')
+                )
+                if existing_is_current:
+                    # A late stale provider must not erase newer verified data.
+                    continue
+                index.setdefault('regions',{}).pop(rid,None)
+                if existing is not None:
+                    existing['categories']={}
+                    existing['sources']={}
+                    existing['analysisGeometryStatus']='withheld'
+                    existing['analysisGeometryReason']='Producer geometry identity/provenance is missing or does not match the maintained corrected footprint.'
+                    write_json(path,existing,compact=True)
+                continue
+        existing=existing or read_json(path,{
             'schemaVersion':1,'regionId':rid,'regionName':meta.get(rid,{}).get('name') or rid,
             'regionKind':kind,'generatedAt':utc_now_iso(),'categories':{},'sources':{},
             'coverageWarning':'Observation coverage is incomplete and uneven. No data does not mean no contamination.'
         })
+        if expected_identity and existing.get('analysisGeometryCacheIdentity') != expected_identity:
+            existing['categories']={}
+            existing['sources']={}
         existing['generatedAt']=utc_now_iso()
+        if corrected:
+            existing['analysisGeometry']=expected_metadata
+            existing['analysisGeometryCacheIdentity']=expected_identity
+            existing.pop('analysisGeometryStatus',None)
+            existing.pop('analysisGeometryReason',None)
         existing.setdefault('categories',{}).update(update.get('categories',{}))
         existing.setdefault('sources',{}).update(update.get('sources',{}))
         write_json(path,existing,compact=True)

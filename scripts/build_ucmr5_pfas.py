@@ -9,7 +9,7 @@ import geopandas as gpd
 import pandas as pd
 import requests
 
-from contaminants_common import SeriesAccumulator, find_column, load_region_geometries, merge_region_categories, to_float, year_from, CATEGORY_LABELS
+from contaminants_common import SeriesAccumulator, attach_analysis_geometry_provenance, find_column, load_region_geometries, merge_region_categories, to_float, year_from, CATEGORY_LABELS
 
 ZCTA_URL='https://www2.census.gov/geo/tiger/TIGER2020/ZCTA520/tl_2020_us_zcta520.zip'
 
@@ -87,6 +87,7 @@ def main():
             'stationCount':max((s['stationCount'] for s in series),default=0),
             'coverageNote':'U.S. EPA UCMR5 drinking-water PFAS results mapped to MotherWorld ecoregions by representative point of ZIP codes served by each public water system. This is a service-area exposure proxy, not exact source-water or sample-point geography.'
         }},'sources':{'epa_ucmr5':{'label':'U.S. EPA UCMR 5 PFAS occurrence data','period':'2023-2025','scope':'U.S. public drinking-water systems'}}}
+    attach_analysis_geometry_provenance(repo, updates)
     merge_region_categories(repo,updates,{'id':'epa_ucmr5','label':'U.S. EPA UCMR 5 PFAS occurrence data'})
     print(f'Wrote/updated PFAS service-area observations for {len(updates):,} land ecoregions.')
 

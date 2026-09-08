@@ -10,6 +10,8 @@ from pathlib import Path
 
 import ee
 
+from analysis_geometry import analysis_geometry_cache_identity, analysis_geometry_metadata
+
 from pollution_common import (
     antimeridian_safe_geometry,
     chunked,
@@ -174,16 +176,41 @@ def reduce_batch(metric_key, year, batch, geometries, args):
     raise RuntimeError(f"Earth Engine reduction failed: {last}")
 
 
-def load_cached(cache_root: Path, metrics: list[str], years: range, region_ids: list[str]):
+def cached_batch_matches_geometry(path: Path, batch: list[str], geometry_cache_identities: dict[str, str]) -> bool:
+    """Return whether a cached reduction was made for the current footprint.
+
+    Legacy cache batches have no identity and therefore cannot be reused for a
+    corrected target.  Batches containing only unaffected IDs retain the
+    historical resume behavior.
+    """
+    expected = {rid: geometry_cache_identities[rid] for rid in batch if rid in geometry_cache_identities}
+    if not expected:
+        return True
+    data = read_json(path, {})
+    stored = data.get("analysisGeometryCacheIdentities") or {}
+    return all(stored.get(rid) == identity for rid, identity in expected.items())
+
+
+def load_cached(
+    cache_root: Path,
+    metrics: list[str],
+    years: range,
+    region_ids: list[str],
+    geometry_cache_identities: dict[str, str] | None = None,
+):
     region_set = set(region_ids)
+    geometry_cache_identities = geometry_cache_identities or {}
     out = {rid: {m: {} for m in metrics} for rid in region_ids}
     for metric in metrics:
         for year in years:
             for path in sorted((cache_root / metric / str(year)).glob("batch_*.json")):
                 data = read_json(path, {})
+                stored = data.get("analysisGeometryCacheIdentities") or {}
                 for row in data.get("rows", []):
                     rid = row.get("region_id")
                     if rid not in region_set:
+                        continue
+                    if rid in geometry_cache_identities and stored.get(rid) != geometry_cache_identities[rid]:
                         continue
                     mean = row.get(f"{metric}_mean")
                     p90 = row.get(f"{metric}_p90")
@@ -204,7 +231,17 @@ def load_cached(cache_root: Path, metrics: list[str], years: range, region_ids: 
     return out
 
 
-def build_payload(rid, kind, meta, data, metrics, start_year, end_year):
+def build_payload(
+    rid,
+    kind,
+    meta,
+    data,
+    metrics,
+    start_year,
+    end_year,
+    analysis_geometry: dict | None = None,
+    analysis_geometry_cache_identity: str | None = None,
+):
     metric_payloads = {}
     for metric in metrics:
         spec = METRICS[metric]
@@ -223,7 +260,7 @@ def build_payload(rid, kind, meta, data, metrics, start_year, end_year):
         }
     if not metric_payloads:
         return None
-    return {
+    payload = {
         "schemaVersion": 1,
         "regionId": rid,
         "name": meta.get("name") or rid,
@@ -242,6 +279,11 @@ def build_payload(rid, kind, meta, data, metrics, start_year, end_year):
         },
         "generatedAt": utc_now_iso(),
     }
+    if analysis_geometry and analysis_geometry.get("overrideApplied"):
+        payload["analysisGeometry"] = analysis_geometry
+        if analysis_geometry_cache_identity:
+            payload["analysisGeometryCacheIdentity"] = analysis_geometry_cache_identity
+    return payload
 
 
 def main():
@@ -250,6 +292,15 @@ def main():
     initialize(args)
     geoms = load_region_geometries(repo)
     meta = load_region_metadata(repo)
+    corrected_geometry_metadata = {}
+    geometry_cache_identities = {}
+    for rid, (kind, geometry) in geoms.items():
+        if kind != "land":
+            continue
+        metadata = analysis_geometry_metadata(rid, geometry)
+        if metadata.get("overrideApplied"):
+            corrected_geometry_metadata[rid] = metadata
+            geometry_cache_identities[rid] = analysis_geometry_cache_identity(rid, geometry)
     region_ids = sorted(set(geoms) & set(meta))
     if args.kind != "all":
         region_ids = [rid for rid in region_ids if geoms[rid][0] == args.kind]
@@ -267,14 +318,33 @@ def main():
         for year in range(metric_start, args.end_year+1):
             for batch_idx, batch in enumerate(chunked(region_ids, max(1,args.batch_size)), 1):
                 cache = cache_root / metric / str(year) / f"batch_{batch_idx:04d}.json"
-                if cache.exists() and not args.no_resume:
+                if cache.exists() and not args.no_resume and cached_batch_matches_geometry(cache, batch, geometry_cache_identities):
                     print(f"{metric} {year} batch {batch_idx}: cached")
                     continue
                 print(f"{metric} {year} batch {batch_idx}: {len(batch)} regions")
                 rows = reduce_batch(metric, year, batch, geoms, args)
-                write_json(cache, {"metric":metric,"year":year,"regionIds":batch,"rows":rows})
+                write_json(
+                    cache,
+                    {
+                        "metric": metric,
+                        "year": year,
+                        "regionIds": batch,
+                        "analysisGeometryCacheIdentities": {
+                            rid: geometry_cache_identities[rid]
+                            for rid in batch
+                            if rid in geometry_cache_identities
+                        },
+                        "rows": rows,
+                    },
+                )
 
-    data = load_cached(cache_root, metrics, range(args.start_year,args.end_year+1), region_ids)
+    data = load_cached(
+        cache_root,
+        metrics,
+        range(args.start_year, args.end_year + 1),
+        region_ids,
+        geometry_cache_identities,
+    )
 
     # Cross-region latest-value percentile ranks are useful but keep the metrics separate.
     latest_maps = {}
@@ -289,13 +359,25 @@ def main():
     entries = {}
     for rid in region_ids:
         kind = geoms[rid][0]
-        payload = build_payload(rid, kind, meta.get(rid,{}), data[rid], metrics, args.start_year,args.end_year)
+        payload = build_payload(
+            rid,
+            kind,
+            meta.get(rid, {}),
+            data[rid],
+            metrics,
+            args.start_year,
+            args.end_year,
+            corrected_geometry_metadata.get(rid),
+            geometry_cache_identities.get(rid),
+        )
         if not payload:
             continue
         for metric, block in payload["metrics"].items():
             block["regionalPercentile"] = percentile_rank(latest_maps.get(metric,{}), block["latest"]["mean"])
         rel = write_region_payload(repo, kind, rid, payload)
-        entries[rid] = {"url":rel,"kind":kind,"metrics":list(payload["metrics"]),"generatedAt":payload["generatedAt"]}
+        entries[rid] = {"url": rel, "kind": kind, "metrics": list(payload["metrics"]), "generatedAt": payload["generatedAt"]}
+        if rid in geometry_cache_identities:
+            entries[rid]["analysisGeometryCacheIdentity"] = geometry_cache_identities[rid]
     update_index(repo, entries)
     print(f"Done. Wrote/updated {len(entries)} region pollution payloads.")
 

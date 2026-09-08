@@ -11,6 +11,8 @@ from pathlib import Path
 import ee
 from shapely.geometry import mapping
 
+from analysis_geometry import analysis_geometry_cache_identity, analysis_geometry_metadata
+
 from climate_extras_common import (
     HUMIDITY_EDGES_PCT,
     PRECIP_EDGES_MM,
@@ -319,22 +321,28 @@ def main():
             rows.append(("open_ocean", "Global Ocean", box(-180, -90, 180, 90)))
         pending = []
         for row in rows:
-            rid = row[0]
+            rid, _name, geometry = row
+            geometry_metadata = analysis_geometry_metadata(rid, geometry)
+            geometry_identity = (analysis_geometry_cache_identity(rid, geometry)
+                                 if geometry_metadata.get("overrideApplied") else None)
             dst = output_path(out_root, kind, rid)
             if not args.force and dst.exists():
-                if rid not in index["regions"]:
-                    try:
-                        payload = json.loads(dst.read_text(encoding="utf-8"))
-                        index["regions"][rid] = {
-                            "url": f"{kind}/{rid}.climate.json",
-                            "kind": kind,
-                            "source": payload.get("source", {}).get("id"),
-                            "baseline": payload.get("baseline"),
-                            "generatedAt": payload.get("generatedAt"),
-                        }
-                    except Exception:
-                        pending.append(row)
-                continue
+                try:
+                    cached_payload = json.loads(dst.read_text(encoding="utf-8"))
+                    cached_identity = cached_payload.get("analysisGeometryCacheIdentity")
+                    identity_matches = (not geometry_identity or cached_identity == geometry_identity)
+                    if identity_matches:
+                        if rid not in index["regions"]:
+                            index["regions"][rid] = {
+                                "url": f"{kind}/{rid}.climate.json",
+                                "kind": kind,
+                                "source": cached_payload.get("source", {}).get("id"),
+                                "baseline": cached_payload.get("baseline"),
+                                "generatedAt": cached_payload.get("generatedAt"),
+                            }
+                        continue
+                except Exception:
+                    pass
             pending.append(row)
         rows = pending
         if not rows:
@@ -359,7 +367,15 @@ def main():
                 source["aggregationAsset"] = source.pop("collection")
                 if kind == "marine":
                     source["mask"] = "ERA5-Land static land_sea_mask + lake_cover; open_ocean selection is whole-ocean aggregate"
-                payload = payload_from_raw(region_id=rid, region_name=name, kind=kind, years=years, source=source, raw=raw, area_km2=area_km2, generated_at=now)
+                geometry_metadata = analysis_geometry_metadata(rid, _geom)
+                geometry_identity = (analysis_geometry_cache_identity(rid, _geom)
+                                     if geometry_metadata.get("overrideApplied") else None)
+                payload = payload_from_raw(
+                    region_id=rid, region_name=name, kind=kind, years=years, source=source,
+                    raw=raw, area_km2=area_km2, generated_at=now,
+                    analysis_geometry=geometry_metadata,
+                    analysis_geometry_cache_identity=geometry_identity,
+                )
                 dst = output_path(out_root, kind, rid)
                 atomic_json(dst, payload)
                 index["regions"][rid] = {

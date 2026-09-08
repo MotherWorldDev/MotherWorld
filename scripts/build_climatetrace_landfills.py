@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse, zipfile, io, re
 from pathlib import Path
 import pandas as pd
-from land_pollution_common import assign_points, find_column, merge_region_provider, recompute_peer_percentiles, to_float, year_from
+from land_pollution_common import assign_points, attach_analysis_geometry_provenance, find_column, merge_region_provider, recompute_peer_percentiles, to_float, year_from
 
 
 def read_tables(path: Path):
@@ -39,6 +39,7 @@ def main():
         cols=[sid]+([name] if name else [])
         for _,r in g.drop_duplicates(subset=[sid]).head(20).iterrows(): sample.append({'id':str(r[sid]),'name':str(r[name]) if name and pd.notna(r[name]) else None,'lat':float(r['lat']),'lon':float(r['lon'])})
         updates[rid]={'label':'Climate TRACE solid-waste disposal','coverage':'Global emissions inventory of modeled/reported landfills and dumpsites; source completeness and methods vary by country.','metrics':metrics,'sampleSites':sample}
+    attach_analysis_geometry_provenance(repo, updates)
     merge_region_provider(repo,updates,{'id':'climate-trace-solid-waste','label':'Climate TRACE solid waste disposal','license':'CC BY 4.0 (Climate TRACE outputs; review upstream-source terms)','url':'https://climatetrace.org/data','caveat':'Methane/CO2e are waste-activity/emissions proxies, not direct measurements of soil contamination.'})
     recompute_peer_percentiles(repo); print(f'Updated {len(updates)} regions from Climate TRACE solid-waste disposal sources.')
 if __name__=='__main__':main()

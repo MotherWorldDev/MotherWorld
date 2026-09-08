@@ -3,7 +3,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 import pandas as pd
-from land_pollution_common import assign_points, find_column, merge_region_provider, recompute_peer_percentiles
+from land_pollution_common import assign_points, attach_analysis_geometry_provenance, find_column, merge_region_provider, recompute_peer_percentiles
 
 
 def main():
@@ -25,6 +25,7 @@ def main():
             hazardous=float(gg.loc[hazmask,'quantityTonnes'].sum(skipna=True)); nonhaz=float(gg.loc[nonmask,'quantityTonnes'].sum(skipna=True))
         else: nonhaz=float(gg.quantityTonnes.sum(skipna=True))
         out[rid]={'label':'European Industrial Emissions Portal · waste transfers','coverage':'Largest regulated industrial facilities in reporting European countries; thresholds and coverage are regulation-specific.','metrics':{'industrialFacilityCount':int(gg[facility].astype(str).nunique()) if facility else int(len(gg)),'hazardousWasteTransferTonnes':hazardous,'nonHazardousWasteTransferTonnes':nonhaz,'totalWasteTransferTonnes':float(gg.quantityTonnes.sum(skipna=True)),'latestYear':latest}}
+    attach_analysis_geometry_provenance(repo, out)
     merge_region_provider(repo,out,{'id':'eea-industrial-waste','label':'EEA Industrial Emissions Portal / E-PRTR waste transfers','license':'EEA reuse policy / EU open data; cite dataset release','url':'https://industry.eea.europa.eu/industrial-emissions/dataset','caveat':'Facility waste transfers are regulated reporting flows, not a map of all contaminated land or illegal dumping.'})
     recompute_peer_percentiles(repo); print(f'Updated {len(out)} regions from European industrial waste-transfer reporting.')
 if __name__=='__main__':main()

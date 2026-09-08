@@ -4,7 +4,7 @@ import argparse, zipfile, io, math
 from pathlib import Path
 import geopandas as gpd
 import pandas as pd
-from land_pollution_common import assign_points, find_column, merge_region_provider, recompute_peer_percentiles, convert_mass_to_kg, norm
+from land_pollution_common import assign_points, attach_analysis_geometry_provenance, find_column, merge_region_provider, recompute_peer_percentiles, convert_mass_to_kg, norm
 
 
 def read_table(path: Path):
@@ -74,8 +74,12 @@ def main():
     ap.add_argument('--repo',type=Path,default=Path(__file__).resolve().parents[1]); ap.add_argument('--superfund',type=Path); ap.add_argument('--tri',type=Path)
     args=ap.parse_args(); repo=args.repo.resolve()
     a=superfund_updates(repo,args.superfund)
-    if a: merge_region_provider(repo,a,{'id':'epa-superfund','label':'US EPA Superfund Site Location Information','license':'U.S. government public data','url':'https://www.epa.gov/superfund/superfund-data-and-reports','caveat':'U.S.-only registry; site footprints and status evolve as remediation proceeds.'})
+    if a:
+        attach_analysis_geometry_provenance(repo,a)
+        merge_region_provider(repo,a,{'id':'epa-superfund','label':'US EPA Superfund Site Location Information','license':'U.S. government public data','url':'https://www.epa.gov/superfund/superfund-data-and-reports','caveat':'U.S.-only registry; site footprints and status evolve as remediation proceeds.'})
     b=tri_updates(repo,args.tri)
-    if b: merge_region_provider(repo,b,{'id':'epa-tri-land','label':'US EPA Toxics Release Inventory · land disposal','license':'U.S. government public data','url':'https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present','caveat':'Reported chemical mass should not be read as a toxicity score; TRI has facility/chemical reporting thresholds.'})
+    if b:
+        attach_analysis_geometry_provenance(repo,b)
+        merge_region_provider(repo,b,{'id':'epa-tri-land','label':'US EPA Toxics Release Inventory · land disposal','license':'U.S. government public data','url':'https://www.epa.gov/toxics-release-inventory-tri-program/tri-basic-data-files-calendar-years-1987-present','caveat':'Reported chemical mass should not be read as a toxicity score; TRI has facility/chemical reporting thresholds.'})
     recompute_peer_percentiles(repo); print(f'Superfund regions: {len(a)}; TRI regions: {len(b)}')
 if __name__=='__main__':main()

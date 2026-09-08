@@ -10,6 +10,8 @@ from pathlib import Path
 import cdsapi
 import numpy as np
 
+from analysis_geometry import analysis_geometry_metadata
+
 from temperature_common import (
     antimeridian_safe_parts,
     accumulate_window,
@@ -130,8 +132,17 @@ def main() -> None:
     for idx, (rid, kind, meta, geom) in enumerate(regions, 1):
         out = repo / "frontend/public/data/climate" / kind / f"{rid}.temperature.json"
         signature = processing_fingerprint({"version": 3, "source": args.source, "years": [start_year, end_year], "bins": edges.tolist(), "supersample": args.supersample}, {rid: geom})
+        geometry_metadata = analysis_geometry_metadata(rid, geom)
         previous = json.loads(out.read_text(encoding="utf-8")) if out.exists() else {}
-        if previous.get("queryFingerprint") == signature and not args.force:
+        previous_geometry = previous.get("analysisGeometry") or {}
+        geometry_provenance_ok = (
+            not geometry_metadata.get("overrideApplied")
+            or (
+                previous_geometry.get("overrideApplied") is True
+                and previous_geometry.get("geometryFingerprint") == geometry_metadata.get("geometryFingerprint")
+            )
+        )
+        if previous.get("queryFingerprint") == signature and geometry_provenance_ok and not args.force:
             print(f"[{idx}/{len(regions)}] {rid}: exists, skipping")
             entries[rid] = {"url": f"{kind}/{rid}.temperature.json", "kind": kind, "source": args.source, "generatedAt": previous["generatedAt"], "queryFingerprint": signature}
             update_climate_index(repo, {rid: entries[rid]}, {})
@@ -232,6 +243,7 @@ def main() -> None:
                 "regionId": rid,
                 "regionName": meta.get("name"),
                 "regionKind": kind,
+                **({"analysisGeometry": geometry_metadata} if geometry_metadata.get("overrideApplied") else {}),
                 "generatedAt": utc_now_iso(),
                 "variable": "2m_air_temperature",
                 "unit": "degC",
