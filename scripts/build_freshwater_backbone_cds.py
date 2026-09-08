@@ -184,8 +184,23 @@ def compute_envelopes(directory: Path, baseline_years: list[int], cache_path: Pa
                 raise ValueError(f"baseline grid changed in {year} month {month + 1}")
             stack.append(values)
         array = np.stack(stack, axis=0)
-        p10.append(np.nanpercentile(array, 10.0, axis=0).astype(np.float32))
-        p90.append(np.nanpercentile(array, 90.0, axis=0).astype(np.float32))
+        # ERA5-Land uses NaN over ocean/ice.  Selecting the columns that have
+        # at least one finite baseline observation avoids an expensive
+        # all-NaN percentile pass over the global 0.1° grid and keeps the
+        # resulting all-NaN columns explicit for the downstream valid mask.
+        finite_columns = np.any(np.isfinite(array), axis=0)
+        low = np.full(finite_columns.shape, np.nan, dtype=np.float32)
+        high = np.full(finite_columns.shape, np.nan, dtype=np.float32)
+        if np.any(finite_columns):
+            selected = array[:, finite_columns]
+            if np.all(np.isfinite(selected)):
+                percentiles = np.percentile(selected, [10.0, 90.0], axis=0)
+            else:
+                percentiles = np.nanpercentile(selected, [10.0, 90.0], axis=0)
+            low[finite_columns] = percentiles[0].astype(np.float32)
+            high[finite_columns] = percentiles[1].astype(np.float32)
+        p10.append(low)
+        p90.append(high)
         del array, stack
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     temporary = cache_path.with_suffix(cache_path.suffix + ".part")
