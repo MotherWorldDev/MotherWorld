@@ -6,11 +6,11 @@ from __future__ import annotations
 import argparse
 import json
 import os
-import tempfile
 from datetime import datetime, timezone
 from pathlib import Path
 
 import numpy as np
+import pandas as pd
 import xarray as xr
 
 
@@ -19,6 +19,18 @@ VARIABLES = [
     "volumetric_soil_water_layer_2",
     "volumetric_soil_water_layer_3",
 ]
+VARIABLE_ALIASES = {
+    "volumetric_soil_water_layer_1": ("volumetric_soil_water_layer_1", "swvl1", "swvl_1"),
+    "volumetric_soil_water_layer_2": ("volumetric_soil_water_layer_2", "swvl2", "swvl_2"),
+    "volumetric_soil_water_layer_3": ("volumetric_soil_water_layer_3", "swvl3", "swvl_3"),
+}
+TIME_COORDINATES = ("valid_time", "time", "date")
+VERSION_DIMENSIONS = ("expver",)
+ICE_EXCLUSION = {
+    "southernLatitude": -60.0,
+    "greenlandBox": [-75.0, 58.0, -10.0, 85.0],
+    "description": "Matches the package geometry: all land south of 60°S and the broad rectangle lon -75..-10, lat 58..85 are excluded. This intentionally also removes Iceland, Baffin and nearby Canadian land; it is not a pixel-level glacier mask.",
+}
 HISTORY_START_YEAR = 1993
 
 
@@ -33,21 +45,71 @@ def coord_name(dataset: xr.Dataset, candidates: tuple[str, ...]) -> str:
     raise KeyError(f"missing coordinate; tried {candidates}")
 
 
+def time_name(dataset: xr.Dataset) -> str:
+    for name in TIME_COORDINATES:
+        if name not in dataset.variables:
+            continue
+        values = dataset[name]
+        if values.ndim == 1:
+            try:
+                pd.to_datetime(values.values)
+                return name
+            except Exception:
+                continue
+    raise KeyError(f"missing decoded monthly coordinate; tried {TIME_COORDINATES}")
+
+
+def variable_name(dataset: xr.Dataset, requested: str) -> str:
+    for name in VARIABLE_ALIASES[requested]:
+        if name in dataset.data_vars or name in dataset.variables:
+            return name
+    raise KeyError(f"missing ERA5-Land variable {requested}; available={list(dataset.data_vars)}")
+
+
+def same_grid(left: np.ndarray, right: np.ndarray) -> bool:
+    return left.shape == right.shape and np.array_equal(left, right)
+
+
+def monthly_field(dataset: xr.Dataset, requested: str, month: int, temporal_name: str, lat_name: str, lon_name: str) -> np.ndarray:
+    name = variable_name(dataset, requested)
+    field = dataset[name]
+    if temporal_name not in field.dims:
+        raise ValueError(f"{name} has no {temporal_name} dimension")
+    months = np.asarray(pd.to_datetime(dataset[temporal_name].values).month, dtype=int)
+    matches = np.flatnonzero(months == month + 1)
+    if len(matches) != 1:
+        raise ValueError(f"{dataset.encoding.get('source', 'NetCDF')}: expected exactly one record for month {month + 1}, found {len(matches)}")
+    field = field.isel({temporal_name: int(matches[0])})
+    unknown = [dim for dim in field.dims if dim not in (lat_name, lon_name)]
+    for dim in unknown:
+        if dim not in VERSION_DIMENSIONS:
+            raise ValueError(f"{name} contains unsupported extra dimension {dim}; refusing to average it")
+        if field.sizes[dim] == 1:
+            field = field.isel({dim: 0})
+        else:
+            # ERA5 can expose two product versions in expver.  Merge them
+            # explicitly by taking the non-NaN maximum; no unknown dimension
+            # is averaged or silently collapsed.
+            field = field.max(dim=dim, skipna=True)
+    field = field.transpose(lat_name, lon_name)
+    values = np.asarray(field.values, dtype=np.float32)
+    if values.ndim != 2:
+        raise ValueError(f"{name} month {month + 1} is not a 2-D lat/lon field: {values.shape}")
+    return values
+
+
 def root_zone(path: Path, month: int) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     with xr.open_dataset(path, engine="netcdf4", mask_and_scale=True) as dataset:
         lat_name = coord_name(dataset, ("latitude", "lat"))
         lon_name = coord_name(dataset, ("longitude", "lon"))
+        temporal_name = time_name(dataset)
         lat = np.asarray(dataset[lat_name].values, dtype=np.float64)
         lon = np.asarray(dataset[lon_name].values, dtype=np.float64)
-        values = []
-        for name in VARIABLES:
-            field = dataset[name]
-            extra = [dim for dim in field.dims if dim not in ("time", lat_name, lon_name)]
-            if extra:
-                field = field.mean(dim=extra, skipna=True)
-            if "time" in field.dims:
-                field = field.isel(time=month)
-            values.append(np.asarray(field.values, dtype=np.float32))
+        if lat.ndim != 1 or lon.ndim != 1:
+            raise ValueError(f"only regular 1-D lat/lon grids are supported: {lat.shape}, {lon.shape}")
+        values = [monthly_field(dataset, name, month, temporal_name, lat_name, lon_name) for name in VARIABLES]
+        if any(value.shape != (len(lat), len(lon)) for value in values):
+            raise ValueError(f"soil-water fields do not match grid in {path.name}")
         result = values[0] * 0.07 + values[1] * 0.21 + values[2] * 0.72
     return result, lat, lon
 
@@ -62,17 +124,35 @@ def spatial_mask(lat: np.ndarray, lon: np.ndarray) -> np.ndarray:
 
 def compute_envelopes(directory: Path, baseline_years: list[int], cache_path: Path) -> tuple[list[np.ndarray], list[np.ndarray], np.ndarray, np.ndarray]:
     if cache_path.exists():
-        data = np.load(cache_path, allow_pickle=False)
-        p10 = [data[f"p10_{month:02d}"] for month in range(1, 13)]
-        p90 = [data[f"p90_{month:02d}"] for month in range(1, 13)]
-        return p10, p90, data["lat"], data["lon"]
+        try:
+            with np.load(cache_path, allow_pickle=False) as data:
+                required = {"lat", "lon", "baseline_start", "baseline_end", "variables"}
+                required.update({f"p10_{month:02d}" for month in range(1, 13)})
+                required.update({f"p90_{month:02d}" for month in range(1, 13)})
+                cached_variables = tuple(str(value) for value in data["variables"].tolist())
+                if not required.issubset(set(data.files)) or int(data["baseline_start"]) != baseline_years[0] or int(data["baseline_end"]) != baseline_years[-1] or cached_variables != tuple(VARIABLES):
+                    raise ValueError("envelope cache metadata does not match this request")
+                lat = np.asarray(data["lat"], dtype=np.float64)
+                lon = np.asarray(data["lon"], dtype=np.float64)
+                p10 = [np.asarray(data[f"p10_{month:02d}"], dtype=np.float32) for month in range(1, 13)]
+                p90 = [np.asarray(data[f"p90_{month:02d}"], dtype=np.float32) for month in range(1, 13)]
+            if any(item.shape != (len(lat), len(lon)) for item in p10 + p90):
+                raise ValueError("envelope cache grid shape is invalid")
+            return p10, p90, lat, lon
+        except Exception:
+            # A stale or interrupted cache is rebuilt atomically below.
+            pass
     p10 = []
     p90 = []
     lat = lon = None
     for month in range(12):
         stack = []
         for year in baseline_years:
-            values, lat, lon = root_zone(root_file(directory, year), month)
+            values, current_lat, current_lon = root_zone(root_file(directory, year), month)
+            if lat is None:
+                lat, lon = current_lat, current_lon
+            elif not (same_grid(lat, current_lat) and same_grid(lon, current_lon)):
+                raise ValueError(f"baseline grid changed in {year} month {month + 1}")
             stack.append(values)
         array = np.stack(stack, axis=0)
         p10.append(np.nanpercentile(array, 10.0, axis=0).astype(np.float32))
@@ -81,7 +161,7 @@ def compute_envelopes(directory: Path, baseline_years: list[int], cache_path: Pa
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     temporary = cache_path.with_suffix(cache_path.suffix + ".part")
     with temporary.open("wb") as handle:
-        np.savez_compressed(handle, lat=lat, lon=lon, **{f"p10_{month + 1:02d}": p10[month] for month in range(12)}, **{f"p90_{month + 1:02d}": p90[month] for month in range(12)})
+        np.savez_compressed(handle, lat=lat, lon=lon, baseline_start=baseline_years[0], baseline_end=baseline_years[-1], variables=np.asarray(VARIABLES), **{f"p10_{month + 1:02d}": p10[month] for month in range(12)}, **{f"p90_{month + 1:02d}": p90[month] for month in range(12)})
     os.replace(temporary, cache_path)
     return p10, p90, lat, lon
 
@@ -92,15 +172,17 @@ def build(args) -> dict:
     missing = [year for year in baseline_years if not root_file(directory, year).exists()]
     if missing:
         raise FileNotFoundError(f"missing baseline years: {missing}")
-    cache = args.envelope_cache or directory / "era5_land_soil_moisture_p10_p90_1991_2020.npz"
+    cache = args.envelope_cache or directory / f"era5_land_soil_moisture_p10_p90_{args.baseline_start}_{args.baseline_end}.npz"
     p10, p90, lat, lon = compute_envelopes(directory, baseline_years, cache)
     mask = spatial_mask(lat, lon)
     weights = np.cos(np.deg2rad(lat))[:, None] * np.ones((1, len(lon)), dtype=np.float64)
     weights[~mask] = 0.0
     series = []
+    missing_years = []
     for year in range(args.start_year, args.end_year + 1):
         source = root_file(directory, year)
         if not source.exists():
+            missing_years.append(year)
             continue
         annual_valid = 0.0
         annual_normal = 0.0
@@ -136,8 +218,8 @@ def build(args) -> dict:
         "components": [{"id": "root_zone_soil_moisture_stability", "label": "Root-zone soil-moisture stability", "score": latest["score"], "weight": 1.0, "raw": latest["raw"], "unit": latest["unit"], "source": "Copernicus CDS ERA5-Land monthly means"}],
         "series": series,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
-        "method": {"backbone": "depth-weighted ERA5-Land volumetric soil water layers 1–3", "layerWeights": {"0–7 cm": 0.07, "7–28 cm": 0.21, "28–100 cm": 0.72}, "baseline": f"{args.baseline_start}–{args.baseline_end} calendar-month per-grid-cell P10–P90 envelope", "normalization": "80% of valid ice-sheet-excluded land-area-months inside the local envelope = 100", "yearDefinition": f"Calendar years {args.start_year}–{args.end_year}; missing source years are omitted and monthly coverage is explicit", "scope": "global ice-sheet-excluded land; Antarctica below 60°S and a broad Greenland box excluded", "scoreDirection": "100 = root-zone soil moisture remains within historical local regimes", "diagnosticPolicy": "GRACE terrestrial water storage and JRC surface-water retention remain diagnostics only"},
-        "sources": [{"id": "reanalysis-era5-land-monthly-means", "label": "Copernicus CDS ERA5-Land monthly averaged data", "variables": VARIABLES, "area": [90.0, -180.0, -60.0, 180.0], "retrievalDirectory": str(directory)}],
+        "method": {"backbone": "depth-weighted ERA5-Land volumetric soil water layers 1–3", "layerWeights": {"0–7 cm": 0.07, "7–28 cm": 0.21, "28–100 cm": 0.72}, "baseline": f"{args.baseline_start}–{args.baseline_end} calendar-month per-grid-cell P10–P90 envelope", "normalization": "80% of valid ice-sheet-excluded land-area-months inside the local envelope = 100", "yearDefinition": f"Calendar years {args.start_year}–{args.end_year}; missing source years are omitted and monthly coverage is explicit", "missingYears": missing_years, "scope": "global ice-sheet-excluded land", "iceExclusion": ICE_EXCLUSION, "scoreDirection": "100 = root-zone soil moisture remains within historical local regimes", "diagnosticPolicy": "GRACE terrestrial water storage and JRC surface-water retention remain diagnostics only"},
+        "sources": [{"id": "reanalysis-era5-land-monthly-means", "label": "Copernicus CDS ERA5-Land monthly averaged data", "variables": VARIABLES, "acceptedAliases": VARIABLE_ALIASES, "area": [90.0, -180.0, -60.0, 180.0], "retrievalDirectory": str(directory)}],
     }
 
 
