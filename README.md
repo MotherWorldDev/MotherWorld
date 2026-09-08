@@ -1,5 +1,7 @@
 # BiomeSummary MVP (Cesium + WWF/RESOLVE Ecoregions2017)
 
+> **Known regional data issue:** the seven-region boundary correction is published for species but still needs propagation to other regional builders. See [the issue, verified impact, and remaining fix](docs/REGION_BOUNDARY_CORRECTIONS.md).
+
 Fast, minimal biodiversity explorer MVP:
 
 - 3D globe (CesiumJS)

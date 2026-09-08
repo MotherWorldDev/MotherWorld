@@ -1,5 +1,7 @@
 # MotherWorld temperature-distribution pipeline
 
+> **Regional geometry:** seven land regions need the maintained analysis-boundary corrections before temperature/climate generation. See [the issue and required propagation](docs/REGION_BOUNDARY_CORRECTIONS.md).
+
 ## What gets computed
 
 The Climate tab gets two empirical distributions, not a fitted Gaussian.

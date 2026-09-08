@@ -1,5 +1,7 @@
 # Species pipeline
 
+> **Geometry corrections:** seven attributed query footprints fixed missing inventories without loosening quality filters. See [the shared boundary issue and cross-dataset status](docs/REGION_BOUNDARY_CORRECTIONS.md).
+
 ## 1. GBIF for terrestrial ecoregions and lakes
 
 The land/lake builder uses the GBIF Occurrence Search API with MotherWorld region geometry, requests a `speciesKey` facet, and pages through the facet values. It applies these defaults:

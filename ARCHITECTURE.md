@@ -1,5 +1,7 @@
 # BiomeSummary MVP Architecture
 
+> **Analysis geometry:** offline regional reducers must preserve authoritative footprints and maintained corrections. Current exceptions and the seven-region fix are tracked in [Region boundary corrections](docs/REGION_BOUNDARY_CORRECTIONS.md).
+
 ## Data Flow
 
 1. `./Ecoregions2017/Ecoregions2017.shp` is the source dataset.
