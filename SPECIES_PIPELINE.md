@@ -180,7 +180,7 @@ Run only one builder against a given output directory at a time. To generate GBI
 
 ## Release packaging and current build
 
-The complete September 2026 inventory release covers all 1,100 mapped regions: 847 land ecoregions, 21 lakes and 232 marine ecoregions. This is complete region coverage for the chosen occurrence queries, not a claim that every species present has been observed or recorded. Seven land inventories contain zero matching species rows; the interface reports these as empty query results rather than biological absence.
+The complete September 2026 inventory release covers all 1,100 mapped regions: 847 land ecoregions, 21 lakes and 232 marine ecoregions. This is complete region coverage for the chosen occurrence queries, not a claim that every species present has been observed or recorded. The seven initially empty land inventories were rebuilt with corrected query footprints; all 1,100 inventories now contain at least one recorded species. An empty result from any future query still means no matching records, not biological absence.
 
 The initial release uses the committed LOD0 polygons for land queries (`--runtime-geometry`). This matches the site's detailed map and avoids processing the much larger original shapefile. GBIF query WKT defaults to 2,500 characters to leave room for encoded URL parameters; exterior rings are oriented counterclockwise.
 
@@ -207,3 +207,9 @@ Photographs use their individual media licences, independently of the occurrence
 The profile UI keeps regional record counts separate from species-wide descriptions, traits, distribution reports and photos. Existing source omissions are not filled with generated biological facts. Full source links remain available when the profile shows a bounded selection of records.
 
 Run `npm test` for catalog, lookup, profile service, media, rendering and selection-race coverage. Direct browser QA should cover a GBIF land profile, a WoRMS marine profile, common-name lookup, filters, keyboard kingdom navigation, Back/Escape, a missing region and the Moon state.
+
+## Remote-region query geometry corrections
+
+The seven formerly empty regions have maintained query footprints in `scripts/data/species-query-geometries.geojson`. `species_query_geometry.py` validates the geometry and attribution; the GBIF builder applies these before WKT partitioning, even with `--runtime-geometry`. Five use original RESOLVE multipart geometry. Trindade–Martin Vaz and St. Peter and St. Paul use official Brazilian island-group baseline envelopes, including small inter-islet waters. Query-only corrections preserve the globe rendering assets; affected inventories expose this distinction in `query.geometryNotes`.
+
+Geometry fingerprints and source metadata participate in resume fingerprints. Unrelated regions retain their existing fingerprints. `--query-geometry-file` permits an explicitly supplied, validated replacement FeatureCollection. Records still require the same species facets, coordinates, PRESENT status, accepted record types and no geospatial issues; filter relaxation is not used.

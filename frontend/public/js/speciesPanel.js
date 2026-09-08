@@ -137,7 +137,7 @@ export function createSpeciesPanel(dataConfig = {}) {
     data=inventory;catalog=createSpeciesCatalog(inventory.species);hidden(els.status,true);hidden(els.toolbar,false);
     renderKingdoms();syncChoices();renderList();
     const date=inventory.generatedAt?new Date(inventory.generatedAt).toLocaleDateString():null;
-    text(els.source,[`${inventory.source||"Public biodiversity data"} · regional occurrence inventory`,`${formatNumber(inventory.stats?.occurrenceCount)} records`,date?`generated ${date}`:null].filter(Boolean).join(" · "));
+    text(els.source,[`${inventory.source||"Public biodiversity data"} · regional occurrence inventory`,`${formatNumber(inventory.stats?.occurrenceCount)} records`,date?`generated ${date}`:null,inventory.query?.geometryNotes].filter(Boolean).join(" · "));
   }
   async function ensureLoaded() {
     if(!regionId||regionId==="moon"||!isActive()||data)return;

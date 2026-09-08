@@ -13,6 +13,8 @@ from shapely import from_wkt, to_wkt
 from shapely.geometry import MultiPolygon
 from shapely.geometry.polygon import orient
 
+from species_query_geometry import load_query_geometry_overrides, apply_query_geometry
+
 from species_common import (
     _repair_polygonal,
     batched,
@@ -52,6 +54,7 @@ def parse_args() -> argparse.Namespace:
         )
     )
     p.add_argument("--runtime-geometry", action="store_true", help="Use the committed LOD0 polygons instead of the large original land shapefile")
+    p.add_argument("--query-geometry-file", type=Path, default=None, help="Attributed GeoJSON query footprints; defaults to the maintained species query corrections")
     p.add_argument("--kind", choices=["land", "lakes", "both"], default="both")
     p.add_argument("--taxonomy-db", type=Path, default=root / ".cache/motherworld/gbif-species-taxonomy.sqlite")
     p.add_argument("--output-dir", type=Path, default=root / "frontend/public/data/species")
@@ -231,6 +234,7 @@ def output_subdir(kind: str) -> str:
 def build_kind(kind: str, args: argparse.Namespace, conn: sqlite3.Connection, source_meta: dict[str, str]) -> None:
     root = project_root_from(__file__)
     regions = load_region_geometries(root, kind, args.region, runtime_geometry=args.runtime_geometry)
+    geometry_overrides = load_query_geometry_overrides(getattr(args, "query_geometry_file", None)) if kind == "land" else {}
     if args.region:
         wanted = set(args.region)
         regions = [r for r in regions if r.region_id in wanted]
@@ -246,11 +250,15 @@ def build_kind(kind: str, args: argparse.Namespace, conn: sqlite3.Connection, so
         regions.sort(key=lambda r: (r.region_id not in priority, r.region_id))
 
     for position, region in enumerate(regions, start=1):
+        region, geometry_provenance = apply_query_geometry(region, geometry_overrides)
         rel_url = f"{output_subdir(kind)}/{region.region_id}.json"
         target = out_root / rel_url
         wkts = [gbif_wkt(wkt) for wkt in geometry_wkt_chunks(region.geometry, max_chars=args.max_wkt_chars)]
         fingerprint = sha256_text("\n".join(wkts))
-        query_key = query_fingerprint(fingerprint, {"version": 2, "year": args.year, "basis": sorted(args.basis_of_record or DEFAULT_BASIS), "datasets": args.include_dataset_facets, "taxonomy": source_meta})
+        query_settings = {"version": 2, "year": args.year, "basis": sorted(args.basis_of_record or DEFAULT_BASIS), "datasets": args.include_dataset_facets, "taxonomy": source_meta}
+        if geometry_provenance:
+            query_settings["geometryOverride"] = geometry_provenance
+        query_key = query_fingerprint(fingerprint, query_settings)
         old = index.get("regions", {}).get(region.region_id)
         if (
             not args.force
@@ -345,6 +353,8 @@ def build_kind(kind: str, args: argparse.Namespace, conn: sqlite3.Connection, so
             },
             "species": species_rows,
         }
+        if geometry_provenance:
+            data["query"].update({"geometrySource": geometry_provenance["source"], "geometryReference": geometry_provenance["sourceUrl"], "geometryNotes": geometry_provenance["notes"]})
         if args.include_dataset_facets:
             data["datasets"] = [
                 {"datasetKey": key, "occurrenceCount": count}

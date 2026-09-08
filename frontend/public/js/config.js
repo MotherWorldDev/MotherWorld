@@ -2,7 +2,7 @@ export const APP_CONFIG = {
   data: {
     climateIndexUrl: "./data/climate/climate.index.json?v=20260907-temperature1",
     climateBaseUrl: "./data/climate/",
-    speciesIndexUrl: "./data/species/species.index.json?v=20260908-species-complete",
+    speciesIndexUrl: "./data/species/species.index.json?v=20260908-species-geometry1",
     speciesBaseUrl: "./data/species/",
     overviewGeometryUrl: "./data/lod_overview/ecoregions_overview.topojson",
     startupGeometryUrl: "./data/lod0/ecoregions_lod0.topojson",
