@@ -1,0 +1,459 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Controls publication granularity independently from provider ingestion.",
+  "modes": [
+    "full",
+    "aggregate",
+    "component_only",
+    "index_only"
+  ],
+  "providers": {
+    "mod44b": {
+      "label": "NASA MOD44B.061",
+      "licenseClass": "open_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "dynamic_world": {
+      "label": "Google Dynamic World",
+      "licenseClass": "open_attribution",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "hansen_gfc": {
+      "label": "Hansen / UMD Global Forest Change",
+      "licenseClass": "open_attribution",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "wri_sdpt": {
+      "label": "WRI Spatial Database of Planted Trees",
+      "licenseClass": "provider_terms",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "cams": {
+      "label": "CAMS",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "sentinel5p": {
+      "label": "Copernicus Sentinel-5P",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "cmems": {
+      "label": "Copernicus Marine",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "clms_lakes": {
+      "label": "Copernicus Land Monitoring Service Lake Water Quality",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "gemstat": {
+      "label": "UNEP GEMS/Water GEMStat open subset",
+      "licenseClass": "open_attribution",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "noaa_microplastics": {
+      "label": "NOAA Marine Microplastics",
+      "licenseClass": "public_source_specific",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "epa_ucmr5": {
+      "label": "US EPA UCMR5",
+      "licenseClass": "us_federal_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "noaa_incidents": {
+      "label": "NOAA IncidentNews",
+      "licenseClass": "us_federal_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "osm_waste": {
+      "label": "OpenStreetMap waste sites",
+      "licenseClass": "odbl",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "climate_trace_waste": {
+      "label": "Climate TRACE waste sector",
+      "licenseClass": "cc_by_with_upstream",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "global_mining_polygons": {
+      "label": "Global mining polygons",
+      "licenseClass": "sharealike",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "wapha_tailings": {
+      "label": "WAPHA tailings compilation",
+      "licenseClass": "mixed_upstream",
+      "publicationMode": "component_only",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "epa_superfund": {
+      "label": "US EPA Superfund",
+      "licenseClass": "us_federal_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "epa_tri": {
+      "label": "US EPA TRI",
+      "licenseClass": "us_federal_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "eea_industrial_waste": {
+      "label": "EEA Industrial Emissions / E-PRTR",
+      "licenseClass": "eu_public_reuse",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "nhm_bii": {
+      "label": "NHM Biodiversity Intactness Index",
+      "licenseClass": "restricted_noncommercial",
+      "publicationMode": "component_only",
+      "removable": true,
+      "attributionRequired": true,
+      "rawPublic": false,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "iucn_rasters": {
+      "label": "IUCN richness / rarity rasters",
+      "licenseClass": "restricted_noncommercial",
+      "publicationMode": "component_only",
+      "removable": true,
+      "attributionRequired": true,
+      "rawPublic": false,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "iucn_ranges": {
+      "label": "IUCN range polygons",
+      "licenseClass": "restricted_noncommercial",
+      "publicationMode": "component_only",
+      "removable": true,
+      "attributionRequired": true,
+      "rawPublic": false,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "phylacine": {
+      "label": "PHYLACINE 1.2.1",
+      "licenseClass": "cc0",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "gbif_obis_recorded": {
+      "label": "GBIF / OBIS recorded-species inventories",
+      "licenseClass": "mixed_contributor",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "noaa_aggi": {
+      "label": "NOAA Annual Greenhouse Gas Index",
+      "licenseClass": "public_scientific",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "backbone"
+    },
+    "nsidc_sea_ice": {
+      "label": "NOAA/NSIDC Sea Ice Index",
+      "licenseClass": "public_scientific",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "backbone"
+    },
+    "noaa_ohc": {
+      "label": "NOAA Global Ocean Heat Content",
+      "licenseClass": "public_scientific",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "backbone"
+    },
+    "global_ocean_ph": {
+      "label": "Copernicus global ocean pH",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "global_mean_sea_level": {
+      "label": "Satellite global mean sea level",
+      "licenseClass": "public_scientific",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "grace_tws": {
+      "label": "JPL GRACE/GRACE-FO Mascon terrestrial water storage",
+      "licenseClass": "nasa_public_scientific",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "era5land_soil_moisture": {
+      "label": "ERA5-Land root-zone soil moisture",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "backbone"
+    },
+    "jrc_surface_water": {
+      "label": "JRC Global Surface Water",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "iucn_birdlife_rli": {
+      "label": "BirdLife International / IUCN Red List Index",
+      "licenseClass": "public_scientific",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "backbone"
+    },
+    "c3s_land_cover_backbone": {
+      "label": "Copernicus C3S annual land cover",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "backbone"
+    },
+    "noaa_ndvi_cdr": {
+      "label": "NOAA AVHRR/VIIRS NDVI Climate Data Record",
+      "licenseClass": "us_federal_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "backbone"
+    },
+    "nasa_merra2_aerosol": {
+      "label": "NASA MERRA-2 aerosol reanalysis",
+      "licenseClass": "nasa_public_scientific",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "backbone"
+    },
+    "noaa_odgi": {
+      "label": "NOAA Ozone Depleting Gas Index",
+      "licenseClass": "us_federal_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "backbone"
+    },
+    "era5_land_climate_normals": {
+      "label": "ECMWF ERA5-Land Daily Aggregated",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "era5_climate_normals": {
+      "label": "ECMWF ERA5 Daily",
+      "licenseClass": "copernicus",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "glim": {
+      "label": "Global Lithological Map (GLiM)",
+      "licenseClass": "cc_by_3",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "macrostrat": {
+      "label": "Macrostrat geologic maps",
+      "licenseClass": "cc_by_4",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "usgs_mrds": {
+      "label": "USGS Mineral Resources Data System",
+      "licenseClass": "us_federal_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "gem_active_faults": {
+      "label": "GEM Global Active Faults Database",
+      "licenseClass": "cc_by_sa_4",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "smithsonian_gvp": {
+      "label": "Smithsonian Global Volcanism Program",
+      "licenseClass": "restricted_noncommercial",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "rawPublic": false,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "ihfc_heat_flow": {
+      "label": "IHFC Global Heat Flow Database",
+      "licenseClass": "cc_by_4",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "impact_confirmed_staged": {
+      "label": "Staged confirmed impact-structure catalog",
+      "licenseClass": "review_required",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "rawPublic": false,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "usgs_comcat": {
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "licenseClass": "us_federal_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "gebco_2026": {
+      "label": "GEBCO_2026 bathymetric grid",
+      "licenseClass": "public_domain_attribution",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "earthbyte_seafloor_age": {
+      "label": "Seton et al. present-day oceanic crust age / spreading parameters",
+      "licenseClass": "cc_by_4",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "globsed": {
+      "label": "GlobSed total ocean sediment thickness",
+      "licenseClass": "cc_by_4",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "earthbyte_seafloor_tectonics": {
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "licenseClass": "cc_by_3",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "interridge_vents": {
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "licenseClass": "restricted_noncommercial",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "rawPublic": false,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "crust1_0": {
+      "label": "CRUST1.0 via EarthScope EMC",
+      "licenseClass": "provider_terms",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "moon_robbins_craters": {
+      "label": "Robbins global lunar impact-crater database (USGS Astrogeology / NASA PDS)",
+      "licenseClass": "us_federal_public_archive",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only"
+    },
+    "usgs_moon_geology": {
+      "label": "USGS Unified Geologic Map of the Moon, 1:5M v2",
+      "licenseClass": "open_public",
+      "publicationMode": "aggregate",
+      "removable": true,
+      "attributionRequired": true,
+      "earthHealthRole": "diagnostic_only",
+      "rawPublic": false
+    }
+  }
+}

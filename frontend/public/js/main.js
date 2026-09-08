@@ -1,6 +1,11 @@
 import { APP_CONFIG } from "./config.js?v=20260908-species-geometry1";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
 import { createUI } from "./ui.js?v=20260906-species1";
+import { createSelenologyPanel } from "./selenologyPanel.js?v=20260907-env8-selenology";
+import { createGeologyPanel } from "./geologyPanel.js?v=20260907-env8-selenology";
+import { createClimateExtrasPanel } from "./climateExtrasPanel.js?v=20260907-env8-selenology";
+import { createEnvironmentHealthPanel } from "./environmentHealthPanel.js?v=20260907-env8-selenology";
+import { createEarthHealth } from "./earthHealth.js?v=20260907-env8-selenology";
 import { createTemperaturePanel } from "./temperaturePanel.js?v=20260907-temperature1";
 import { createSpeciesPanel } from "./speciesPanel.js?v=20260908-species-geometry1";
 import { getBiomeColor, paletteMapFromIndex } from "./biomePalette.js";
@@ -225,9 +230,14 @@ function createDebugPanelController(globe, initialOptions) {
 
 async function bootstrap() {
   const ui = createUI(APP_CONFIG);
+  const earthHealth = createEarthHealth(APP_CONFIG.data);
+  const environmentHealthPanel = createEnvironmentHealthPanel(APP_CONFIG.data);
   const dataService = createRegionDataService(APP_CONFIG.data);
   const speciesPanel = createSpeciesPanel(APP_CONFIG.data);
   const temperaturePanel = createTemperaturePanel(APP_CONFIG.data);
+  const climateExtrasPanel = createClimateExtrasPanel(APP_CONFIG.data);
+  const geologyPanel = createGeologyPanel(APP_CONFIG.data);
+  const selenologyPanel = createSelenologyPanel(APP_CONFIG.data);
   let biomePalette = { default: APP_CONFIG.styling.defaultBiomeColor };
   const debugOptions = getDebugBootstrapOptions();
   let debugPanelController = { enabled: false, setStatus: () => {} };
@@ -279,6 +289,10 @@ async function bootstrap() {
         const summaryVersion = ++selectionSummaryVersion;
         speciesPanel.setRegion(null);
         temperaturePanel.setRegion(null);
+        environmentHealthPanel.setRegion(null);
+        climateExtrasPanel.setRegion(null);
+        geologyPanel.setRegion(null);
+        selenologyPanel.setRegion(null);
         ui.setHoverPreview(null, null);
         if (!regionId) {
           ui.showSidebarEmpty();
@@ -291,6 +305,10 @@ async function bootstrap() {
           ui.renderRegionSummary(summary, getBiomeColor(summary?.biomeNum, biomePalette));
           speciesPanel.setRegion(summary?.id);
           temperaturePanel.setRegion(summary);
+          environmentHealthPanel.setRegion(summary);
+          climateExtrasPanel.setRegion(summary);
+          geologyPanel.setRegion(summary);
+          selenologyPanel.setRegion(summary);
         } catch (err) {
           if (summaryVersion !== selectionSummaryVersion) return;
           ui.showError(`Failed to load region summary: ${err.message}`);

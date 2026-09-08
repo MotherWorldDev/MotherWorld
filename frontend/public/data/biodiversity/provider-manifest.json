@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "providers": {
+    "nhm_bii": {
+      "label": "Natural History Museum Biodiversity Intactness Index v2.1.1",
+      "role": "ecological condition / intactness",
+      "license": "CC BY-NC-SA 4.0 (limited release; non-commercial)",
+      "licenseClass": "restricted_noncommercial",
+      "removable": true,
+      "sourceUrl": "https://data.nhm.ac.uk/dataset/bii-developed-by-nhm-v2-1-1-limited-release",
+      "doi": "10.5519/k33reyb6"
+    },
+    "iucn_rasters": {
+      "label": "IUCN Red List richness and rarity-weighted richness spatial data",
+      "role": "potential richness and geographic uniqueness",
+      "license": "IUCN Red List spatial-data terms; non-commercial use",
+      "licenseClass": "restricted_noncommercial",
+      "removable": true,
+      "sourceUrl": "https://nrl.iucnredlist.org/resources/other-spatial-downloads"
+    },
+    "iucn_ranges": {
+      "label": "IUCN Red List spatial range polygons",
+      "role": "threat counts, range responsibility, mapped extinction evidence",
+      "license": "IUCN Red List spatial-data terms; non-commercial use",
+      "licenseClass": "restricted_noncommercial",
+      "removable": true,
+      "sourceUrl": "https://nrl.iucnredlist.org/resources/spatial-data-download"
+    },
+    "phylacine": {
+      "label": "PHYLACINE 1.2.1",
+      "role": "historical/counterfactual mammal faunal loss",
+      "license": "CC0",
+      "licenseClass": "open",
+      "removable": false,
+      "sourceUrl": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+      "doi": "10.1002/ecy.2443"
+    },
+    "recorded_species": {
+      "label": "MotherWorld GBIF/OBIS recorded-species inventory",
+      "role": "observational richness and data coverage",
+      "license": "Underlying contributing dataset licenses vary; preserve GBIF/OBIS attribution and download provenance",
+      "licenseClass": "mixed_open",
+      "removable": false
+    }
+  }
+}

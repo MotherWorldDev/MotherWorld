@@ -14,7 +14,7 @@
       href="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Widgets/widgets.css"
       rel="stylesheet"
     />
-    <link href="./styles.css?v=20260907-species2" rel="stylesheet" />
+    <link href="./styles.css?v=20260907-env8-selenology" rel="stylesheet" />
   </head>
   <body>
     <div class="app-shell">
@@ -48,6 +48,18 @@
             </button>
           </div>
         </header>
+
+        <div id="earth-health-root" class="earth-health-root">
+          <button id="earth-health-button" class="earth-health-button" type="button" aria-expanded="false" aria-controls="earth-health-panel">
+            <span class="earth-health-score-wrap"><span id="earth-health-score" class="earth-health-score">—</span></span>
+            <span class="earth-health-label">Earth Health</span>
+            <span class="earth-health-subline"><span id="earth-health-status">Earth Health</span><span id="earth-health-coverage">Loading index…</span></span>
+          </button>
+          <section id="earth-health-panel" class="earth-health-panel" hidden aria-label="Earth Health index breakdown">
+            <div class="earth-health-panel-head"><div><div class="earth-health-panel-kicker">Global condition index</div><div id="earth-health-panel-score" class="earth-health-panel-score">— / 100</div><div id="earth-health-panel-status" class="earth-health-panel-status">Loading…</div></div><button id="earth-health-close" class="earth-health-close" type="button" aria-label="Close">×</button></div>
+            <div id="earth-health-families" class="earth-health-families"></div><p id="earth-health-trend" class="earth-health-trend"></p><p id="earth-health-method" class="earth-health-method"></p>
+          </section>
+        </div>
 
         <section id="sky-controls-panel" class="sky-controls chrome-panel" hidden aria-label="Sky controls">
           <div class="sky-controls-title">Sky Overlays</div>
@@ -146,6 +158,9 @@
               <button id="sidebar-tab-overview" class="sidebar-tab is-active" type="button" data-panel="overview" aria-current="page">
                 Overview
               </button>
+              <button id="sidebar-tab-health" class="sidebar-tab" type="button" data-panel="health">Health</button>
+              <button id="sidebar-tab-geology" class="sidebar-tab" type="button" data-panel="geology">Geology</button>
+              <button id="sidebar-tab-selenology" class="sidebar-tab" type="button" data-panel="selenology" hidden>Selenology</button>
               <button id="sidebar-tab-climate" class="sidebar-tab" type="button" data-panel="climate">Climate</button>
               <button id="sidebar-tab-tertiary" class="sidebar-tab" type="button" data-panel="tertiary">Species</button>
               <button id="sidebar-tab-quaternary" class="sidebar-tab" type="button" data-panel="quaternary">Threats</button>
@@ -188,6 +203,33 @@
                 <div id="meta-section" class="meta-section">
                   <div class="meta-section-title">Metadata</div>
                   <dl id="metadata-list" class="metadata-list"></dl>
+                </div>
+              </section>
+
+              <section id="sidebar-health-panel" class="sidebar-content sidebar-pane" data-panel="health" hidden>
+                <div class="sidebar-header"><p class="sidebar-overline">Environmental condition</p><h2 id="regional-health-title">Regional health</h2></div>
+                <div class="regional-health-shell"><p id="regional-health-status" class="regional-health-status"></p><div id="regional-health-cards" class="regional-health-cards"></div><p id="regional-health-note" class="regional-health-note"></p><a class="regional-health-sources-link" href="./environment-sources.html" target="_blank" rel="noopener">Sources, licences and methods</a></div>
+              </section>
+
+              <section id="sidebar-geology-panel" class="sidebar-content sidebar-pane" data-panel="geology" hidden>
+                <div class="sidebar-header">
+                  <p class="sidebar-overline">Physical Earth</p>
+                  <h2 id="geology-region-title">Geology</h2>
+                </div>
+                <div class="geology-shell">
+                  <p id="geology-status" class="geology-status" role="status" aria-live="polite">Open Geology to load mapped geology and geophysics.</p>
+                  <button id="geology-retry" class="ghost-button" type="button" hidden>Try again</button>
+                  <div id="geology-content" class="geology-content" hidden></div>
+                  <a class="geology-sources-link" href="./environment-sources.html#geology" target="_blank" rel="noopener">Geology sources, licences and caveats</a>
+                </div>
+              </section>
+
+              <section id="sidebar-selenology-panel" class="sidebar-content sidebar-pane" data-panel="selenology" hidden>
+                <div class="sidebar-header"><p class="sidebar-overline">Moon science</p><h2>Selenology</h2></div>
+                <div class="selenology-shell">
+                  <p id="selenology-status" class="selenology-status" role="status" aria-live="polite">Open Selenology to load lunar geology.</p>
+                  <button id="selenology-retry" class="ghost-button" type="button" hidden>Try again</button>
+                  <div id="selenology-content" hidden></div>
                 </div>
               </section>
 
@@ -359,6 +401,6 @@
     </div>
 
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Cesium.js"></script>
-    <script type="module" src="./js/main.js?v=20260908-species-geometry1"></script>
+    <script type="module" src="./js/main.js?v=20260907-env8-selenology"></script>
   </body>
 </html>

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "id": "global_ocean",
+  "displaySelection": "open_ocean",
+  "selectionGeometry": "residual ocean outside mapped marine/coastal ecoregions",
+  "speciesScope": "open_ocean residual",
+  "metricScope": {
+    "type": "aggregate_union",
+    "members": ["open_ocean", "marine_*"] ,
+    "meaning": "entire ocean surface; coastal/marine ecoregions plus the visual residual"
+  },
+  "speciesTabs": ["All", "Pacific", "Atlantic", "Indian", "Southern", "Arctic"],
+  "speciesTabsRole": "organizational filters inside the open-ocean species inventory, not overlapping selectable scoring regions"
+}

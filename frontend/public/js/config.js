@@ -1,5 +1,12 @@
 export const APP_CONFIG = {
   data: {
+    moonSelenologyUrl: "./data/moon/selenology.json?v=20260907-env8-selenology",
+    geologyBaseUrl: "./data/geology/",
+    geologyIndexUrl: "./data/geology/geology.index.json?v=20260907-env8-selenology",
+    climateExtrasBaseUrl: "./data/climate-extras/",
+    climateExtrasIndexUrl: "./data/climate-extras/climate-extras.index.json?v=20260907-env8-selenology",
+    regionalHealthBaseUrl: "./data/indices/regions/",
+    earthHealthUrl: "./data/indices/earth-health.json?v=20260907-env8-selenology",
     climateIndexUrl: "./data/climate/climate.index.json?v=20260907-temperature1",
     climateBaseUrl: "./data/climate/",
     speciesIndexUrl: "./data/species/species.index.json?v=20260908-species-geometry1",
@@ -18,6 +25,8 @@ export const APP_CONFIG = {
     apiBaseUrl: "http://127.0.0.1:8000/api",
   },
   globe: {
+    moonGeologyTextureUrl: "./assets/moon/selenology/moon-geology-4k.webp",
+    moonGeologyTextureHiResUrl: "./assets/moon/selenology/moon-geology-8k.webp",
     requestRenderMode: true,
     targetFrameRate: 30,
     overviewLodEnterHeight: 7_000_000,

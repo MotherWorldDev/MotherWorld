@@ -1585,13 +1585,40 @@ export function createGlobeExplorer({
   }
   attachMoonDebugMarker();
 
+  let moonSurfaceMode = "natural";
+  let moonGeologyTextureUrl = appConfig.globe.moonGeologyTextureUrl || null;
+  let moonGeologyTextureHiResUrl = appConfig.globe.moonGeologyTextureHiResUrl || moonGeologyTextureUrl;
+  function setMoonSurfaceMode(mode = "natural") {
+    moonSurfaceMode = mode === "geology" ? "geology" : "natural";
+    requestRender();
+    return moonSurfaceMode;
+  }
+  function setMoonGeologyTextureUrls(next = {}) {
+    if (typeof next.base === "string" && next.base) moonGeologyTextureUrl = next.base;
+    if (typeof next.hiRes === "string" && next.hiRes) moonGeologyTextureHiResUrl = next.hiRes;
+    else if (next.base) moonGeologyTextureHiResUrl = next.base;
+    requestRender();
+    return { base: moonGeologyTextureUrl, hiRes: moonGeologyTextureHiResUrl };
+  }
+  document.addEventListener("motherworld:moon-surface", (event) => {
+    const detail = event?.detail || {};
+    if (detail.base || detail.hiRes) setMoonGeologyTextureUrls(detail);
+    setMoonSurfaceMode(detail.mode);
+  });
+
   viewer.scene.preRender.addEventListener((scene, time) => {
     const eclipseActive = getCurrentLunarEclipseTintFactor(time, appConfig) > 0.001;
-    const targetMoonTextureUrl = eclipseActive
+    const naturalMoonTextureUrl = eclipseActive
       ? (appConfig.globe.moonEclipseTextureHiResUrl || appConfig.globe.moonTextureHiResUrl || appConfig.globe.moonTextureUrl)
       : (cameraAnchorMode === "moon"
           ? (appConfig.globe.moonTextureHiResUrl || appConfig.globe.moonTextureUrl)
           : appConfig.globe.moonTextureUrl);
+    const geologyTextureUrl = cameraAnchorMode === "moon"
+      ? (moonGeologyTextureHiResUrl || moonGeologyTextureUrl)
+      : moonGeologyTextureUrl;
+    const targetMoonTextureUrl = moonSurfaceMode === "geology" && geologyTextureUrl
+      ? geologyTextureUrl
+      : naturalMoonTextureUrl;
     const moonDisplayScale =
       cameraAnchorMode === "moon"
         ? (appConfig.globe.moonMoonViewScale ?? 1.0)
@@ -3640,6 +3667,9 @@ export function createGlobeExplorer({
     setCameraAnchorMode,
     getCameraAnchorMode: () => cameraAnchorMode,
     toggleCameraAnchor,
+    setMoonSurfaceMode,
+    getMoonSurfaceMode: () => moonSurfaceMode,
+    setMoonGeologyTextureUrls,
     setRegionDatasetMode,
     getRegionDatasetMode: () => regionDatasetMode,
     toggleRegionDatasetMode,

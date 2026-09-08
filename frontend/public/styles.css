@@ -1993,3 +1993,296 @@ body {
 .temperature-mode-btn:focus-visible, .temperature-distribution-canvas:focus-visible, .temperature-source-link:focus-visible { outline: 2px solid #9ed7ff; outline-offset: 3px; }
 
 .temperature-coverage-note { margin: 0; padding: 9px 11px; border-left: 2px solid #b8cf7a; background: rgba(184,207,122,.06); font-size: 12px; line-height: 1.5; color: var(--muted); }
+
+/* MotherWorld global Earth Health overlay */
+.earth-health-root {
+  --earth-health-hue: 205;
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  z-index: 12;
+  transform: translateX(-50%);
+  display: grid;
+  justify-items: center;
+  pointer-events: none;
+}
+
+.earth-health-button,
+.earth-health-panel {
+  pointer-events: auto;
+}
+
+.earth-health-button {
+  min-width: 190px;
+  height: 52px;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 10px;
+  align-items: center;
+  padding: 7px 13px 7px 12px;
+  color: var(--text);
+  border: 1px solid hsla(var(--earth-health-hue), 70%, 72%, 0.36);
+  border-radius: 15px;
+  background:
+    linear-gradient(180deg, rgba(14, 21, 32, 0.94), rgba(9, 14, 22, 0.88)),
+    radial-gradient(circle at 20% 50%, hsla(var(--earth-health-hue), 72%, 52%, 0.17), transparent 55%);
+  box-shadow: var(--shadow), 0 0 28px hsla(var(--earth-health-hue), 72%, 52%, 0.12);
+  backdrop-filter: blur(16px);
+  cursor: pointer;
+  font: inherit;
+}
+
+.earth-health-button:hover {
+  border-color: hsla(var(--earth-health-hue), 78%, 72%, 0.65);
+  background:
+    linear-gradient(180deg, rgba(18, 27, 40, 0.96), rgba(10, 16, 25, 0.9)),
+    radial-gradient(circle at 20% 50%, hsla(var(--earth-health-hue), 72%, 52%, 0.24), transparent 55%);
+}
+
+.earth-health-score-wrap {
+  grid-row: 1 / span 2;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: hsla(var(--earth-health-hue), 66%, 50%, 0.16);
+  border: 1px solid hsla(var(--earth-health-hue), 76%, 72%, 0.44);
+}
+
+.earth-health-score {
+  font: 700 19px/1 "IBM Plex Mono", monospace;
+}
+
+.earth-health-label {
+  align-self: end;
+  font: 500 10px/1.1 "IBM Plex Mono", monospace;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--soft);
+}
+
+.earth-health-subline {
+  align-self: start;
+  display: flex;
+  gap: 7px;
+  align-items: center;
+  color: var(--muted);
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.earth-health-status::after {
+  content: "·";
+  margin-left: 7px;
+  opacity: 0.55;
+}
+
+.earth-health-panel {
+  position: absolute;
+  top: 60px;
+  width: min(410px, calc(100vw - 28px));
+  max-height: min(72vh, 650px);
+  overflow: auto;
+  padding: 14px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: linear-gradient(180deg, rgba(12, 18, 28, 0.96), rgba(8, 12, 20, 0.94));
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(18px);
+}
+
+.earth-health-panel-head {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: start;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.earth-health-panel-kicker {
+  font: 500 10px/1.2 "IBM Plex Mono", monospace;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.earth-health-panel-score {
+  margin-top: 4px;
+  font: 700 28px/1 "IBM Plex Mono", monospace;
+}
+
+.earth-health-panel-status {
+  margin-top: 5px;
+  color: var(--soft);
+  font-size: 12px;
+}
+
+.earth-health-close {
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: rgba(255, 255, 255, 0.035);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.earth-health-families {
+  display: grid;
+  gap: 7px;
+  margin-top: 12px;
+}
+
+.earth-health-family-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 38px;
+  grid-template-rows: auto 4px;
+  gap: 7px 10px;
+  padding: 9px 10px;
+  text-align: left;
+  color: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.025);
+  cursor: pointer;
+}
+
+.earth-health-family-row:disabled {
+  opacity: 0.55;
+  cursor: default;
+}
+
+.earth-health-family-label {
+  display: block;
+  font-size: 13px;
+}
+
+.earth-health-family-meta {
+  display: block;
+  margin-top: 2px;
+  color: var(--muted);
+  font-size: 10px;
+}
+
+.earth-health-family-score {
+  justify-self: end;
+  align-self: center;
+  font: 600 14px/1 "IBM Plex Mono", monospace;
+}
+
+.earth-health-family-bar {
+  grid-column: 1 / -1;
+  height: 4px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.07);
+}
+
+.earth-health-family-bar i {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: hsl(var(--family-hue), 66%, 58%);
+}
+
+.earth-health-trend,
+.earth-health-method {
+  margin: 11px 2px 0;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.earth-health-method {
+  padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
+
+@media (max-width: 1180px) {
+  .earth-health-root {
+    top: 82px;
+  }
+}
+
+@media (max-width: 640px) {
+  .earth-health-root {
+    top: 76px;
+    width: calc(100vw - 28px);
+  }
+  .earth-health-button {
+    min-width: 0;
+    width: 190px;
+  }
+}
+
+/* Expandable family decomposition inside the Earth Health flyout. */
+.earth-health-family-row {
+  display: block;
+  padding: 0;
+  cursor: default;
+}
+.earth-health-family-row > summary {
+  list-style: none;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 38px;
+  grid-template-rows: auto 4px;
+  gap: 7px 10px;
+  padding: 9px 10px;
+  cursor: pointer;
+}
+.earth-health-family-row > summary::-webkit-details-marker { display: none; }
+.earth-health-family-row[open] > summary { background: rgba(255,255,255,0.025); }
+.earth-health-family-components { display: grid; padding: 2px 10px 9px; }
+.earth-health-component-row { display: flex; justify-content: space-between; gap: 12px; padding: 7px 0; border-top: 1px solid rgba(255,255,255,0.06); }
+.earth-health-component-row b { display: block; font-size: 11px; font-weight: 500; }
+.earth-health-component-row small { display: block; margin-top: 2px; color: var(--muted); font-size: 9px; line-height: 1.35; }
+.earth-health-component-row > strong { flex: 0 0 auto; align-self: center; font: 500 10px/1 "IBM Plex Mono", monospace; }
+.earth-health-family-empty { margin: 0; padding: 7px 10px 10px; border-top: 1px solid rgba(255,255,255,0.06); color: var(--muted); font-size: 10px; }
+
+
+.earth-health-timeline { padding: 12px 0 13px; border-bottom: 1px solid var(--border); }
+.earth-health-timeline-head,.earth-health-range { display:flex; align-items:center; justify-content:space-between; gap:10px; }
+.earth-health-timeline-head { margin-bottom:8px; color:var(--soft); font:11px "IBM Plex Mono",monospace; text-transform:uppercase; letter-spacing:.06em; }
+.earth-health-timeline-head strong { color:var(--text); font-size:14px; }
+.earth-health-slider-row { display:grid; grid-template-columns:36px minmax(0,1fr) auto; align-items:center; gap:8px; }
+.earth-health-slider-row input[type="range"] { width:100%; accent-color:hsl(var(--earth-health-hue),70%,60%); }
+.earth-health-play,.earth-health-latest { min-height:34px; border:1px solid rgba(255,255,255,.13); border-radius:9px; background:rgba(255,255,255,.035); color:var(--text); cursor:pointer; font:11px "IBM Plex Mono",monospace; }
+.earth-health-play { width:36px; }
+.earth-health-latest { padding:0 9px; white-space:nowrap; }
+.earth-health-play:hover,.earth-health-latest:hover { background:rgba(255,255,255,.08); }
+.earth-health-range { margin-top:5px; color:var(--muted); font-size:9px; }
+.earth-health-detail-heading { margin:8px 0 5px; color:var(--soft); font:10px "IBM Plex Mono",monospace; letter-spacing:.07em; text-transform:uppercase; }
+.earth-health-detail-heading span { color:var(--muted); font-size:9px; }
+.earth-health-diagnostic-block { margin-top:10px; padding-top:8px; border-top:1px dashed rgba(255,255,255,.10); }
+@media (max-width:520px) { .earth-health-slider-row { grid-template-columns:36px minmax(0,1fr); } .earth-health-latest { grid-column:1 / -1; } }
+
+/* MotherWorld unified environment health dashboard */
+.regional-health-shell{display:grid;gap:10px}.regional-health-status,.regional-health-note{color:var(--muted);font-size:12px;line-height:1.55}.regional-health-cards{display:grid;gap:9px}.env-family-card{border:1px solid rgba(255,255,255,.09);border-radius:12px;background:rgba(255,255,255,.025);overflow:hidden}.env-family-card>summary{list-style:none;display:grid;grid-template-columns:1fr auto auto;align-items:center;gap:6px 12px;padding:12px;cursor:pointer}.env-family-card>summary::-webkit-details-marker{display:none}.env-family-name{font-weight:600}.env-family-coverage{color:var(--muted);font:10px "IBM Plex Mono",monospace}.env-family-card>summary strong{font:700 22px "IBM Plex Mono",monospace}.env-family-track{grid-column:1/-1;height:5px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden}.env-family-track i{display:block;height:100%;background:linear-gradient(90deg,#f87171,#facc15,#80ed99)}.env-family-body{display:grid;gap:6px;padding:0 12px 12px}.env-component{display:flex;justify-content:space-between;gap:12px;padding:8px 0;border-top:1px solid rgba(255,255,255,.06)}.env-component b{display:block;font-size:12px}.env-component small{display:block;color:var(--muted);font-size:10px;margin-top:2px}.env-component-score{font:11px "IBM Plex Mono",monospace;white-space:nowrap}.env-context summary{color:var(--muted);font-size:11px;cursor:pointer}.env-context pre{max-height:260px;overflow:auto;white-space:pre-wrap;font:10px/1.45 "IBM Plex Mono",monospace;color:var(--muted);background:rgba(0,0,0,.22);padding:8px;border-radius:8px}
+.regional-health-sources-link{justify-self:start;color:var(--accent);font-size:11px;text-decoration:none}.regional-health-sources-link:hover{text-decoration:underline}
+.regional-health-sources-link{justify-self:start;color:var(--accent);font-size:11px;text-decoration:none}.regional-health-sources-link:hover{text-decoration:underline}
+
+/* MotherWorld regional precipitation, humidity and wind */
+.climate-extras-shell{margin-top:18px;padding-top:18px;border-top:1px solid rgba(255,255,255,.08)}
+.climate-extras-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:12px}
+.climate-extras-head h3{margin:2px 0 0;font-size:18px}.climate-extras-kicker{margin:0;color:var(--muted);font:11px "IBM Plex Mono",monospace;text-transform:uppercase;letter-spacing:.08em}.climate-extras-baseline{font:11px "IBM Plex Mono",monospace;color:var(--soft);white-space:nowrap}
+.climate-extras-tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:12px}.climate-extras-tabs button{border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.025);color:var(--muted);padding:7px 10px;border-radius:9px;font:12px inherit;cursor:pointer}.climate-extras-tabs button.is-active{color:var(--text);background:rgba(125,211,252,.10);border-color:rgba(125,211,252,.32)}
+.climate-extras-status,.climate-extra-definition,.climate-extra-source{color:var(--muted);font-size:12px;line-height:1.5}.climate-extras-retry{margin-top:8px}.climate-extras-content h4{margin:16px 0 8px;font-size:13px;color:var(--soft)}
+.climate-extra-stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.climate-extra-stat{min-width:0;padding:9px 10px;border:1px solid rgba(255,255,255,.07);border-radius:10px;background:rgba(255,255,255,.025)}.climate-extra-stat span{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:.04em}.climate-extra-stat strong{display:block;margin-top:3px;font:500 14px "IBM Plex Mono",monospace;color:var(--text);overflow-wrap:anywhere}
+.climate-extra-months{height:148px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));align-items:end;gap:4px;padding:10px 4px 2px;border-bottom:1px solid rgba(255,255,255,.08)}.climate-extra-month{height:100%;display:flex;flex-direction:column;justify-content:flex-end;align-items:center;min-width:0}.climate-extra-month-bar{width:100%;height:118px;display:flex;align-items:flex-end;border-radius:4px 4px 0 0;background:rgba(255,255,255,.025);overflow:hidden}.climate-extra-month-bar i{display:block;width:100%;background:rgba(125,211,252,.45);border-radius:4px 4px 0 0}.climate-extra-month small{margin-top:5px;color:var(--muted);font:9px "IBM Plex Mono",monospace}
+.climate-extra-dist{display:grid;gap:5px}.climate-extra-dist-row{display:grid;grid-template-columns:minmax(105px,1.2fr) minmax(90px,2fr) 48px;gap:8px;align-items:center}.climate-extra-dist-label{color:var(--muted);font-size:10px;overflow-wrap:anywhere}.climate-extra-dist-track{height:8px;border-radius:99px;background:rgba(255,255,255,.045);overflow:hidden}.climate-extra-dist-track i{display:block;height:100%;border-radius:inherit;background:rgba(125,211,252,.52)}.climate-extra-dist-row strong{text-align:right;color:var(--soft);font:10px "IBM Plex Mono",monospace}
+.climate-wind-grid{display:grid;grid-template-columns:minmax(210px,1fr) minmax(0,1fr);gap:12px;align-items:start}.climate-wind-rose{width:min(100%,240px);height:auto;display:block;margin:auto}.climate-wind-ring{fill:none;stroke:rgba(255,255,255,.08);stroke-width:1}.climate-wind-spoke{stroke:rgba(125,211,252,.62);stroke-width:8;stroke-linecap:round}.climate-wind-center{fill:var(--soft)}.climate-wind-rose text{fill:var(--muted);font:10px "IBM Plex Mono",monospace;text-anchor:middle;dominant-baseline:middle}
+.climate-extra-source{margin-top:16px;padding-top:10px;border-top:1px solid rgba(255,255,255,.06)}
+@media(max-width:560px){.climate-extra-stats{grid-template-columns:1fr}.climate-wind-grid{grid-template-columns:1fr}.climate-extra-months{gap:2px}.climate-extra-month small{font-size:8px}.climate-extra-dist-row{grid-template-columns:100px 1fr 42px}}
+/* End MotherWorld regional precipitation, humidity and wind */
+
+/* MotherWorld regional geology */
+.geology-shell{display:grid;gap:12px}.geology-status,.geology-note,.geology-source{color:var(--muted);font-size:11px;line-height:1.55}.geology-source{margin:10px 0 0}.geology-provider-strip{display:flex;align-items:flex-start;gap:8px;flex-wrap:wrap;color:var(--muted);font:10px "IBM Plex Mono",monospace}.geology-chips{display:flex;gap:5px;flex-wrap:wrap}.geology-chips span{border:1px solid rgba(255,255,255,.1);border-radius:999px;padding:3px 6px;background:rgba(255,255,255,.03);color:var(--soft)}.geology-section{border:1px solid rgba(255,255,255,.09);border-radius:12px;background:rgba(255,255,255,.025);overflow:hidden}.geology-section>summary{cursor:pointer;list-style:none;padding:11px 12px;font-weight:600}.geology-section>summary::-webkit-details-marker{display:none}.geology-section>summary::after{content:"＋";float:right;color:var(--muted)}.geology-section[open]>summary::after{content:"−"}.geology-section-body{display:grid;gap:10px;padding:0 12px 12px;border-top:1px solid rgba(255,255,255,.06)}.geology-section-body h4{margin:8px 0 0;font-size:12px}.geology-kv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:7px;margin-top:10px}.geology-kv>div{padding:8px;border-radius:9px;background:rgba(0,0,0,.16)}.geology-kv span{display:block;color:var(--muted);font-size:9px;text-transform:uppercase;letter-spacing:.05em}.geology-kv strong{display:block;margin-top:3px;font:600 13px "IBM Plex Mono",monospace}.geology-bars{display:grid;gap:6px}.geology-bar-row{display:grid;grid-template-columns:minmax(100px,1.25fr) minmax(70px,1fr) auto;gap:8px;align-items:center;font-size:10px}.geology-bar-row span:first-child{min-width:0}.geology-bar-row b{display:block;overflow:hidden;text-overflow:ellipsis}.geology-bar-row small{display:block;color:var(--muted);font:9px "IBM Plex Mono",monospace}.geology-bar-track{height:6px;border-radius:999px;background:rgba(255,255,255,.07);overflow:hidden}.geology-bar-track i{display:block;height:100%;background:var(--accent);opacity:.72}.geology-bar-row strong{font:10px "IBM Plex Mono",monospace}.geology-list{display:grid;gap:6px}.geology-item{display:flex;justify-content:space-between;gap:10px;padding:8px 0;border-top:1px solid rgba(255,255,255,.055);font-size:10px}.geology-item b{display:block;font-size:11px}.geology-item small{display:block;color:var(--muted);margin-top:2px}.geology-item>span{color:var(--soft);font:9px "IBM Plex Mono",monospace;text-align:right;max-width:45%}@media(max-width:520px){.geology-kv{grid-template-columns:1fr}.geology-bar-row{grid-template-columns:minmax(90px,1.2fr) minmax(60px,1fr) auto}}
+/* End MotherWorld regional geology */
+
+/* MotherWorld Moon Selenology */
+.selenology-shell{display:grid;gap:12px}.selenology-status,.selenology-note,.selenology-source{color:var(--muted);font-size:12px;line-height:1.55}.selenology-section{border:1px solid var(--border);border-radius:12px;background:rgba(255,255,255,.025);overflow:hidden}.selenology-section>summary{cursor:pointer;list-style:none;padding:11px 12px;font-weight:600}.selenology-section>summary::-webkit-details-marker{display:none}.selenology-section>summary:after{content:"+";float:right;color:var(--muted)}.selenology-section[open]>summary:after{content:"−"}.selenology-section-body{padding:0 12px 12px}.selenology-map-status{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px;border-radius:10px;background:rgba(255,255,255,.04)}.selenology-map-status>div{display:grid;gap:2px}.selenology-map-status span{color:var(--muted);font-size:12px}.selenology-map-status>strong{font:11px "IBM Plex Mono",monospace;letter-spacing:.06em}.selenology-map-status.is-ready>strong{color:#80ed99}.selenology-legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px;margin-top:10px}.selenology-legend>div{display:flex;gap:7px;align-items:flex-start;min-width:0}.selenology-legend i{width:14px;height:14px;border-radius:3px;background:var(--selenology-swatch);border:1px solid rgba(255,255,255,.2);flex:0 0 auto}.selenology-legend span{display:grid;font-size:11px;min-width:0}.selenology-legend small{color:var(--muted)}.selenology-kv{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.selenology-kv>div{display:grid;gap:2px;padding:9px;border-radius:9px;background:rgba(255,255,255,.035)}.selenology-kv span{color:var(--muted);font-size:11px}.selenology-kv strong{font:500 13px "IBM Plex Mono",monospace}
+@media(max-width:520px){.selenology-legend,.selenology-kv{grid-template-columns:1fr}}
+/* End MotherWorld Moon Selenology */

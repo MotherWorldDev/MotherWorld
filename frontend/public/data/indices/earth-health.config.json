@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 2,
+  "name": "Earth Health",
+  "historyStartYear": 1993,
+  "requireAllFamiliesForHistory": true,
+  "minimumFamilyCoverage": 0.45,
+  "minimumFamilyWeightCoverage": 1.0,
+  "minimumEffectiveDataCoverage": 0.55,
+  "families": [
+    {
+      "id": "biodiversity",
+      "label": "Biodiversity",
+      "weight": 0.14,
+      "enabled": true
+    },
+    {
+      "id": "habitat",
+      "label": "Habitat",
+      "weight": 0.12,
+      "enabled": true
+    },
+    {
+      "id": "vegetation",
+      "label": "Vegetation condition",
+      "weight": 0.08,
+      "enabled": true
+    },
+    {
+      "id": "pollution",
+      "label": "Pollution",
+      "weight": 0.12,
+      "enabled": true
+    },
+    {
+      "id": "climate_forcing",
+      "label": "Climate forcing",
+      "weight": 0.15,
+      "enabled": true
+    },
+    {
+      "id": "cryosphere",
+      "label": "Cryosphere",
+      "weight": 0.09,
+      "enabled": true
+    },
+    {
+      "id": "ocean",
+      "label": "Global Ocean",
+      "weight": 0.13,
+      "enabled": true
+    },
+    {
+      "id": "freshwater",
+      "label": "Freshwater stability",
+      "weight": 0.11,
+      "enabled": true
+    },
+    {
+      "id": "ozone",
+      "label": "Ozone layer",
+      "weight": 0.06,
+      "enabled": true
+    }
+  ],
+  "statusThresholds": [
+    {
+      "min": 85,
+      "label": "Thriving"
+    },
+    {
+      "min": 70,
+      "label": "Stable"
+    },
+    {
+      "min": 50,
+      "label": "Strained"
+    },
+    {
+      "min": 30,
+      "label": "Degraded"
+    },
+    {
+      "min": 0,
+      "label": "Critical"
+    }
+  ]
+}

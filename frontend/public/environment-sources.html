@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>MotherWorld environmental sources and scoring</title>
+<style>
+:root{color-scheme:dark;font-family:system-ui,sans-serif;background:#060a10;color:#e9eef7}body{max-width:980px;margin:0 auto;padding:32px 20px 72px;line-height:1.55}h1,h2{line-height:1.15}a{color:#7dd3fc}code{font-family:ui-monospace,monospace}.card{padding:16px 18px;margin:12px 0;border:1px solid #263244;border-radius:12px;background:#0d1420}.muted{color:#96a4ba}table{width:100%;border-collapse:collapse;font-size:14px}th,td{text-align:left;vertical-align:top;padding:9px;border-bottom:1px solid #263244}th{color:#c4d0e4}@media(max-width:700px){table{display:block;overflow-x:auto}}
+</style>
+</head>
+<body>
+<h1>MotherWorld environmental sources and scoring</h1>
+<p class="muted">MotherWorld separates source measurements, 0–100 normalization, family indices, data coverage, and the global Earth Health index. A missing measurement is never interpreted as healthy condition.</p>
+<div class="card"><strong>Earth Health history:</strong> the headline and year slider use one fixed set of nine long-running backbones from 1993 to the latest year shared by every backbone. Newer/richer datasets are present-day diagnostics only and have zero Earth Health weight.</div><div class="card"><strong>Score direction:</strong> 100 = best condition / lowest pressure. Missing data never counts as healthy.</div>
+<h2>Earth Health backbones and diagnostics</h2>
+<table><thead><tr><th>Family</th><th>Scored historical backbone</th><th>Present-day diagnostics (not scored)</th></tr></thead><tbody>
+<tr><td>Biodiversity</td><td>BirdLife/IUCN Red List Index</td><td>NHM BII, IUCN spatial metrics, PHYLACINE, GBIF/OBIS context</td></tr>
+<tr><td>Habitat</td><td>Copernicus C3S annual land-cover direct-conversion retention</td><td>Hansen loss, Dynamic World, plantations, mining/waste</td></tr>
+<tr><td>Vegetation</td><td>NOAA AVHRR/VIIRS NDVI Climate Data Record</td><td>MODIS VCF tree/non-tree/bare cover</td></tr>
+<tr><td>Pollution</td><td>NASA MERRA-2 reconstructed surface PM2.5</td><td>CAMS, Sentinel-5P/TROPOMI, land/water pollution and contaminants</td></tr>
+<tr><td>Climate forcing</td><td>NOAA AGGI</td><td>CO₂, CH₄ and N₂O concentrations</td></tr>
+<tr><td>Cryosphere</td><td>NOAA/NSIDC Arctic + Antarctic annual-minimum sea ice</td><td>Land-ice and glacier context</td></tr>
+<tr><td>Global Ocean</td><td>NOAA global 0–700 m ocean heat content</td><td>pH, sea level, water quality and later ocean diagnostics</td></tr>
+<tr><td>Freshwater stability</td><td>ERA5-Land root-zone soil-moisture regime stability</td><td>GRACE terrestrial water storage + JRC surface-water retention</td></tr>
+<tr><td>Ozone layer</td><td>100 − NOAA ODGI-ML</td><td>Antarctic ODGI-A</td></tr>
+</tbody></table>
+
+<h2>Regional Climate tab</h2>
+<p>The existing temperature-distribution module is supplemented by a separate 1991–2020 climatology for <strong>precipitation, relative humidity and wind</strong>. Land/lake regions use ECMWF ERA5-Land Daily Aggregated; marine regions use ECMWF ERA5 Daily. Relative humidity is derived from daily-mean temperature and dew point. Wind uses daily-mean 10 m u/v components and a 16-sector wind rose. These regional climate charts are diagnostics and carry <strong>zero Earth Health weight</strong>.</p>
+<p>The <code>open_ocean</code> visual selection follows the MotherWorld ocean rule: species remain residual-only, while precipitation/humidity/wind describe the complete ocean system using a fractional ocean mask.</p>
+
+<h2 id="geology">Geology tab</h2>
+<p>Geology is descriptive and has <strong>zero Earth Health weight</strong>. Land geology uses GLiM, optional Macrostrat, USGS MRDS, GEM active faults, Smithsonian GVP, IHFC/GFZ heat flow and confirmed-impact context. Impact records preserve source-supplied age uncertainty and impactor estimates. Marine Geology additionally supports GEBCO_2026 bathymetry, EarthByte/Seton seafloor age and spreading, GlobSed sediment thickness, optional CRUST1.0 crystalline-crust thickness, EarthByte/GPlates ridge/trench features and InterRidge hydrothermal vents. The Global Ocean selection aggregates these non-species metrics over the whole ocean.</p>
+<p><strong>Moon crater context:</strong> Robbins (2019), archived by USGS Astrogeology / NASA PDS, catalogs 1,296,879 lunar impact craters ≥1 km and 6,972 ≥20 km; completeness is estimated for craters larger than roughly 1–2 km.</p>
+<h2>Global Ocean scope</h2>
+<p>The selectable <code>open_ocean</code> region is the visual residual outside mapped marine/coastal ecoregions. Species remain scoped to that residual. Every non-species Global Ocean metric represents the complete ocean system: residual + mapped coastal/marine regions. Native whole-ocean provider values are preferred when available.</p>
+<h2>Licensing firewall</h2>
+<p>Raw restricted inputs such as NHM BII and IUCN spatial downloads stay outside the deployed tree. The public site receives only permitted derived regional components/indices. Providers are removable without changing the public family-index schema.</p>
+<p class="muted">This page is a compact runtime summary. The implementation package contains the detailed provider registry, scoring contract, module docs, and internal licence notes.</p>
+</body></html>

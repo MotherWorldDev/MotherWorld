@@ -1,3 +1,4 @@
+import { MOON_IMPACT_STATS } from "./moonImpactStats.js?v=20260907-env8-selenology";
 import { renderMoonApsidalPlot } from "./moonPlot.js";
 import { renderMoonTimers } from "./moonTimers.js";
 
@@ -51,6 +52,9 @@ export function createUI(appConfig = null) {
     sidebarResizeHandle: document.getElementById("sidebar-resize-handle"),
     sidebarTabOverview: document.getElementById("sidebar-tab-overview"),
     sidebarTabClimate: document.getElementById("sidebar-tab-climate"),
+    sidebarTabHealth: document.getElementById("sidebar-tab-health"),
+    sidebarTabGeology: document.getElementById("sidebar-tab-geology"),
+    sidebarTabSelenology: document.getElementById("sidebar-tab-selenology"),
     sidebarTabTertiary: document.getElementById("sidebar-tab-tertiary"),
     sidebarTabQuaternary: document.getElementById("sidebar-tab-quaternary"),
     sidebarEmpty: document.getElementById("sidebar-empty"),
@@ -59,6 +63,9 @@ export function createUI(appConfig = null) {
     moonOverviewGrid: document.getElementById("moon-overview-grid"),
     metaSection: document.getElementById("meta-section"),
     sidebarClimatePanel: document.getElementById("sidebar-climate-panel"),
+    sidebarHealthPanel: document.getElementById("sidebar-health-panel"),
+    sidebarGeologyPanel: document.getElementById("sidebar-geology-panel"),
+    sidebarSelenologyPanel: document.getElementById("sidebar-selenology-panel"),
     sidebarTertiaryPanel: document.getElementById("sidebar-tertiary-panel"),
     sidebarQuaternaryPanel: document.getElementById("sidebar-quaternary-panel"),
     sidebarClimateCopy: document.getElementById("sidebar-climate-copy"),
@@ -88,12 +95,18 @@ export function createUI(appConfig = null) {
   const sidebarTabs = [
     els.sidebarTabOverview,
     els.sidebarTabClimate,
+    els.sidebarTabHealth,
+    els.sidebarTabGeology,
+    els.sidebarTabSelenology,
     els.sidebarTabTertiary,
     els.sidebarTabQuaternary,
   ].filter(Boolean);
   const sidebarPanes = [
     els.sidebarContent,
     els.sidebarClimatePanel,
+    els.sidebarHealthPanel,
+    els.sidebarGeologyPanel,
+    els.sidebarSelenologyPanel,
     els.sidebarTertiaryPanel,
     els.sidebarQuaternaryPanel,
   ].filter(Boolean);
@@ -242,9 +255,18 @@ export function createUI(appConfig = null) {
     if (els.sidebarClimatePanel) {
       els.sidebarClimatePanel.hidden = isMoon || activeSidebarPanel !== "climate";
     }
+    if (els.sidebarTabHealth) els.sidebarTabHealth.hidden = isMoon;
+    if (els.sidebarTabGeology) els.sidebarTabGeology.hidden = isMoon;
+    if (els.sidebarTabSelenology) els.sidebarTabSelenology.hidden = !isMoon;
+    if (els.sidebarSelenologyPanel) els.sidebarSelenologyPanel.hidden = !isMoon || activeSidebarPanel !== "selenology";
+    if (els.sidebarGeologyPanel) els.sidebarGeologyPanel.hidden = isMoon || activeSidebarPanel !== "geology";
+    if (els.sidebarHealthPanel) els.sidebarHealthPanel.hidden = isMoon || activeSidebarPanel !== "health";
     if (isMoon && activeSidebarPanel === "climate") {
       activeSidebarPanel = "overview";
     }
+    if (isMoon && activeSidebarPanel === "health") activeSidebarPanel = "overview";
+    if (isMoon && activeSidebarPanel === "geology") activeSidebarPanel = "overview";
+    if (!isMoon && activeSidebarPanel === "selenology") activeSidebarPanel = "overview";
     if (els.sidebarTabTertiary) {
       els.sidebarTabTertiary.textContent = isMoon ? "Timers" : "Species";
     }
@@ -454,6 +476,9 @@ export function createUI(appConfig = null) {
     setSidebarVisible(false);
     setActiveSidebarPanel("overview");
     if (els.sidebarTabClimate) els.sidebarTabClimate.hidden = false;
+    if (els.sidebarTabSelenology) els.sidebarTabSelenology.hidden = true;
+    if (els.sidebarTabHealth) els.sidebarTabHealth.hidden = false;
+    if (els.sidebarTabGeology) els.sidebarTabGeology.hidden = false;
     if (els.metaSection) els.metaSection.hidden = false;
     if (els.moonOverviewGrid) {
       els.moonOverviewGrid.hidden = true;
@@ -477,6 +502,9 @@ export function createUI(appConfig = null) {
     setSidebarVisible(true);
     setActiveSidebarPanel(activeSidebarPanel || "overview");
     if (els.sidebarTabClimate) els.sidebarTabClimate.hidden = false;
+    if (els.sidebarTabSelenology) els.sidebarTabSelenology.hidden = true;
+    if (els.sidebarTabHealth) els.sidebarTabHealth.hidden = false;
+    if (els.sidebarTabGeology) els.sidebarTabGeology.hidden = false;
     if (els.metaSection) els.metaSection.hidden = false;
     if (els.moonOverviewGrid) {
       els.moonOverviewGrid.hidden = true;
@@ -528,6 +556,9 @@ export function createUI(appConfig = null) {
           ["Surface Gravity", "1.62 m/s^2"],
           ["Sidereal Rotation", "27.32 days"],
           ["Synodic Phase Cycle", "29.53 days"],
+          ["Catalogued Craters ≥1 km", MOON_IMPACT_STATS.cratersGe1Km.toLocaleString()],
+          ["Catalogued Craters ≥20 km", MOON_IMPACT_STATS.cratersGe20Km.toLocaleString()],
+          ["Crater Catalog Completeness", "≈1–2 km and larger"],
           ["Escape Velocity", "2.38 km/s"],
         ];
         els.moonOverviewGrid.innerHTML = cards
