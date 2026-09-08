@@ -102,7 +102,7 @@ def fragments_root(repo:Path,provider_id:str)->Path:
 
 def write_fragment(repo:Path,provider_id:str,region:dict,sections:dict,source:dict):
     payload={'schemaVersion':1,'providerId':provider_id,'regionId':region['regionId'],'regionName':region.get('regionName',region['regionId']),'kind':region.get('kind'),'generatedAt':utc_now_iso(),'sections':sections,'source':source}
-    p=fragments_root(repo,provider_id)/f"{region['regionId']}.json";p.write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n');return p
+    p=fragments_root(repo,provider_id)/f"{region['regionId']}.json";p.write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n',encoding='utf-8');return p
 
 def region_records(regions:gpd.GeoDataFrame):
     return [dict(regionId=r.regionId,regionName=r.regionName,kind=r.kind,geometry=r.geometry) for r in regions.itertuples()]

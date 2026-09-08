@@ -71,8 +71,10 @@ def main():
         outputs=[]
         for name,size in (("moon-geology-4k.webp",parse_size(args.low_size)),("moon-geology-8k.webp",parse_size(args.high_size))):
             dst=outdir/name; image.resize(size,Image.Resampling.LANCZOS).save(dst,"WEBP",quality=max(1,min(100,args.quality)),method=6); outputs.append(dst)
-    idx=repo/'frontend/public/data/moon/selenology.json'; data=json.loads(idx.read_text()) if idx.exists() else {'schemaVersion':1,'sections':{}}
+    idx=repo/'frontend/public/data/moon/selenology.json'; data=json.loads(idx.read_text(encoding='utf-8')) if idx.exists() else {'schemaVersion':1,'sections':{}}
     data['generatedAt']=utcnow(); data['texture']={'available':True,'url4k':'./assets/moon/selenology/moon-geology-4k.webp','url8k':'./assets/moon/selenology/moon-geology-8k.webp','source':'usgs-unified-geologic-map-moon-v2','sourceRaster':raster.name}; data['legend']=parse_sld(args.sld)
-    idx.parent.mkdir(parents=True,exist_ok=True); idx.write_text(json.dumps(data,indent=2)+'\n')
+    sections=data.setdefault('sections',{})
+    sections['surfaceGeology']={'status':'map_ready','legendEntryCount':len(data['legend']),'note':'The official USGS global mapped-unit texture and legend are available. Quantitative unit-area statistics from the vector GIS package remain unbuilt.'}
+    idx.parent.mkdir(parents=True,exist_ok=True); idx.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')
     print('Wrote:'); [print(' ',p) for p in outputs]; print(' ',idx)
 if __name__=='__main__': main()
