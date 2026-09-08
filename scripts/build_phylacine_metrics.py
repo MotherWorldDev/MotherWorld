@@ -10,7 +10,15 @@ import numpy as np
 import rasterio
 from rasterio.features import rasterize
 
-from biodiversity_common import WGS84, load_regions, project_geometry, utc_now_iso, write_provider_region
+from biodiversity_common import Region, WGS84, project_geometry, utc_now_iso
+from regional_diagnostics_adapters import (
+    deploy_path,
+    load_canonical_regions,
+    output_root,
+    provider_fragment_path,
+    read_json,
+    write_json,
+)
 
 PROVIDER = "phylacine"
 
@@ -21,7 +29,13 @@ def parse_args():
     p.add_argument("--phylacine-root", type=Path, required=True, help="PHYLACINE repo/Data/Ranges or equivalent folder containing Current and Present_natural.")
     p.add_argument("--kind", action="append", choices=["land", "marine", "lakes"], default=[])
     p.add_argument("--region", action="append", default=[])
-    p.add_argument("--all-touched", action="store_true", default=True)
+    p.add_argument("--output-root", type=Path, default=None, help="v8 build root for provider fragments")
+    p.add_argument(
+        "--all-touched",
+        action="store_true",
+        default=False,
+        help="Include pixels touched by a region boundary; default uses native raster cell centers to avoid last-shape-wins overlap loss.",
+    )
     p.add_argument("--lost-species-limit", type=int, default=100)
     return p.parse_args()
 
@@ -57,8 +71,26 @@ def cell_area_grid(ds):
 def main():
     args = parse_args()
     repo = args.repo.resolve()
+    root = output_root(repo, args.output_root)
     kinds = args.kind or ["land"]
-    regions = load_regions(repo, kinds)
+    canonical = load_canonical_regions(repo, kinds)
+    def finite_area(value):
+        try:
+            candidate = float(value)
+        except (TypeError, ValueError):
+            return None
+        return candidate if math.isfinite(candidate) else None
+
+    regions = [
+        Region(
+            str(row.regionId),
+            str(row.name),
+            str(row.kind),
+            row.geometry,
+            finite_area(row.areaKm2),
+        )
+        for row in canonical.itertuples(index=False)
+    ]
     if args.region:
         wanted = set(args.region)
         regions = [r for r in regions if r.region_id in wanted]
@@ -80,7 +112,14 @@ def main():
             geom = project_geometry(region.geometry, WGS84, crs)
             shapes.append((geom, label))
             region_by_label[label] = region
-        labels = rasterize(shapes, out_shape=shape, transform=transform, fill=0, dtype="int32", all_touched=args.all_touched)
+        labels = rasterize(
+            shapes,
+            out_shape=shape,
+            transform=transform,
+            fill=0,
+            dtype="int32",
+            all_touched=args.all_touched,
+        )
         area_grid = cell_area_grid(template)
 
     stats = {
@@ -97,6 +136,9 @@ def main():
     max_label = len(regions)
     label_flat = labels.ravel()
     area_flat = area_grid.ravel()
+    raster_cell_counts = np.bincount(label_flat, minlength=max_label + 1)
+    for label in range(1, max_label + 1):
+        stats[region_by_label[label].region_id]["nativeRasterCellCount"] = int(raster_cell_counts[label])
 
     for i, name in enumerate(species, 1):
         with rasterio.open(current_files[name]) as csrc, rasterio.open(natural_files[name]) as nsrc:
@@ -126,6 +168,27 @@ def main():
         if i % 250 == 0 or i == len(species):
             print(f"PHYLACINE species {i:,}/{len(species):,}")
 
+    biodiversity_index_path = deploy_path(root, "biodiversity/biodiversity.index.json")
+    biodiversity_index = read_json(
+        biodiversity_index_path,
+        {
+            "schemaVersion": 1,
+            "generatedAt": None,
+            "regions": {},
+            "providers": {},
+            "excludedProviders": [],
+            "design": {
+                "headline": "Provider-level biodiversity diagnostics",
+                "compositeScore": False,
+                "note": "Condition, richness, historical loss, extinction risk and recorded richness remain separate metrics.",
+            },
+        },
+    )
+    manifest = read_json(repo / "frontend/public/data/biodiversity/provider-manifest.json", {})
+    if manifest.get("providers"):
+        biodiversity_index["providers"] = manifest["providers"]
+    biodiversity_index.setdefault("regions", {})
+
     for region in regions:
         s = stats[region.region_id]
         natural = s["naturalSpecies"]
@@ -144,6 +207,8 @@ def main():
                 "mammalFaunalRetentionPct": retention,
                 "mammalRangeOccupancyRetentionPct": occupancy,
                 "exampleLocallyLostSpecies": s["locallyLost"],
+                "nativeRasterCellCount": s["nativeRasterCellCount"],
+                "coverageStatus": "no_native_grid_cell" if s["nativeRasterCellCount"] == 0 else "covered",
             },
             "source": {
                 "label": "PHYLACINE 1.2.1 — current and present-natural mammal ranges",
@@ -154,7 +219,43 @@ def main():
                 "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map.",
             },
         }
-        write_provider_region(repo, PROVIDER, region.kind, region.region_id, payload)
+        write_json(
+            provider_fragment_path(root, f"biodiversity/{PROVIDER}/{region.kind}/{region.region_id}.json"),
+            payload,
+            compact=True,
+        )
+        historical = {
+            "presentNaturalSpeciesCount": natural,
+            "currentSpeciesCount": current,
+            "locallyLostSpeciesCount": s["locallyLostCount"],
+            "faunalRetentionPct": retention,
+            "rangeOccupancyRetentionPct": occupancy,
+            "exampleLocallyLostSpecies": s["locallyLost"],
+            "nativeRasterCellCount": s["nativeRasterCellCount"],
+            "coverageStatus": "no_native_grid_cell" if s["nativeRasterCellCount"] == 0 else "covered",
+        }
+        deploy_payload = {
+            "schemaVersion": 1,
+            "regionId": region.region_id,
+            "regionName": region.name,
+            "regionKind": region.kind,
+            "generatedAt": payload["generatedAt"],
+            "summary": {"historicalMammals": historical},
+            "providers": {PROVIDER: payload},
+            "providerOrder": [PROVIDER],
+        }
+        relative = f"biodiversity/{region.kind}/{region.region_id}.biodiversity.json"
+        write_json(deploy_path(root, relative), deploy_payload, compact=True)
+        biodiversity_index["regions"][region.region_id] = {
+            "url": relative,
+            "kind": region.kind,
+            "providers": [PROVIDER],
+            "headlineIntactnessPct": None,
+        }
+    biodiversity_index["generatedAt"] = utc_now_iso()
+    write_json(biodiversity_index_path, biodiversity_index)
+    if manifest:
+        write_json(deploy_path(root, "biodiversity/provider-manifest.json"), manifest)
     print(f"Done. Wrote PHYLACINE metrics for {len(regions)} regions.")
 
 
