@@ -1,8 +1,8 @@
 # Seven-region boundary issue and correction
 
-Last audited: **8 September 2026**, against published commit `fc565d78` and staged regional-diagnostics source `a5977a1c`.
+Last audited: **8 September 2026**, against published data at `fc565d78`, implementation commits `0b64991b`, `e1ee7442`, and `7d94246b`.
 
-**Status: species is fixed and published. The shared correction is implemented for geology and biodiversity in commit `0b64991b`; their affected data rebuilds and propagation to the remaining regional builders are still pending.** This document distinguishes reviewed source changes from rebuilt, published data.
+**Status: species is fixed and published. Shared boundary corrections, producer provenance, and stale-result guards are implemented across the audited root pipelines:** geology/biodiversity (`0b64991b`), climate/pollution (`e1ee7442`), and local regional diagnostics (`7d94246b`). **Affected data rebuilds have not yet been published.** Source implementation is complete for these audited paths; the remaining work is rebuilding, checking provider coverage, and publishing the affected outputs.
 
 ## What happened
 
@@ -10,7 +10,7 @@ Seven species inventories initially had no records because their queries used un
 
 The species repair uses the tracked [seven corrected footprints](../scripts/data/species-query-geometries.geojson), validated by [species_query_geometry.py](../scripts/species_query_geometry.py) and applied by [gbif_build_region_species.py](../scripts/gbif_build_region_species.py). Five footprints preserve the full repaired RESOLVE/Ecoregions2017 multipart geometry. Two use attributed official Brazilian island-group baseline envelopes. Species inventories were rebuilt and published in commit `59422766`, retaining the occurrence-quality filters.
 
-Other builders have their own geometry loaders. The shared [analysis geometry helper](../scripts/analysis_geometry.py) now applies the maintained registry in geology and biodiversity. It records the footprint used by each calculation; their mergers withhold affected fragments when producer identity is absent, mismatched, or cannot be verified against the current reference. Correcting species queries, unifying canonical region IDs, or fixing JSON serialization alone does **not** update other analysis footprints.
+Other builders have their own geometry loaders. The shared [analysis geometry helper](../scripts/analysis_geometry.py) now applies the maintained registry in geology, biodiversity, and the reviewed root climate/pollution families. It records the footprint used by each calculation; their mergers and cache readers withhold affected data when producer identity is absent, mismatched, or cannot be verified against the current reference. The [regional-diagnostics adapter](../scripts/regional_diagnostics_adapters.py) now uses the same corrected footprints and producer-identity checks, preserving original-shapefile-first loading. Correcting species queries, unifying canonical region IDs, or fixing JSON serialization alone does **not** update other analysis footprints.
 
 ## Affected regions
 
@@ -34,10 +34,10 @@ For the five unchanged-source regions, LOD0 retains only approximately 1.1–33.
 | --- | --- | --- |
 | Recorded species | Corrected footprints applied; all seven inventories rebuilt and published | Preserve the existing correction and quality filters |
 | Land geology / GLiM | [geology_common.py](../scripts/geology_common.py) now corrects the base LOD0 geometry. All seven published records still contain GLiM summaries from the older footprints | Source correction complete in `0b64991b`; rebuild the seven records and reassess point/line providers |
-| Land temperature | [temperature_common.py](../scripts/temperature_common.py) loads LOD0. None of the seven has a published temperature record | Correct geometry selection before generating these records; invalidate incompatible cached reductions |
-| Regional precipitation, humidity, and wind | [climate_extras_common.py](../scripts/climate_extras_common.py) loads LOD0. None of the seven has a built regional climate-extras record | Apply the same analysis-boundary correction before regional reduction |
+| Land temperature | [temperature_common.py](../scripts/temperature_common.py) now applies the maintained overrides after loading the LOD0 geometry. None of the seven has a rebuilt temperature record | Rebuild only when suitable ERA5 input is available; the existing geometry-hashed `processing_fingerprint` invalidates incompatible reductions |
+| Regional precipitation, humidity, and wind | [climate_extras_common.py](../scripts/climate_extras_common.py) now applies the maintained overrides after loading LOD0. None of the seven has a rebuilt regional climate-extras record | Rebuild the regional reduction when inputs are available; output reuse checks the corrected geometry identity |
 | Regional biodiversity / PHYLACINE | Original and fallback loaders now apply all seven maintained overrides | Source correction complete in `0b64991b`; rebuild affected PHYLACINE fragments with producer provenance and preserve explicit native-grid coverage status |
-| Land air pollution, contaminants, and land-pollution diagnostics | Original-shapefile-first loaders likewise omit the two official replacements; fallback LOD layers can reintroduce multipart loss. No seven-region outputs were built in the inspected manifests/snapshot | Apply corrected analysis geometry regardless of which base geometry source is available |
+| Land air pollution, contaminants, and land-pollution diagnostics | Reviewed root loaders now apply corrected geometry for original and fallback land paths; producer merges require matching identity and withhold missing/mismatched claims. No affected seven-region outputs have been rebuilt | Rebuild with valid source coverage; root and staged-output adapters now require geometry and producer provenance |
 | Regional environmental indices | These consume component summaries rather than choosing geometry themselves; no seven-region outputs were built | Rebuild after corrected components are available |
 | Marine/lake region records | The seven IDs are land regions, so they are not directly selected by marine/lake-only builders | Keep canonical IDs and normal provider coverage checks |
 | Fixed global Earth Health backbones and Moon data | Independent of these seven land-region query footprints | No rebuild needed for this specific issue |
@@ -70,14 +70,14 @@ No land-temperature value comparison was performed: the inspected cache had mari
 - [x] Maintain the seven attributed corrected footprints in one tracked registry.
 - [x] Apply them to species queries, preserve quality filters, rebuild, and publish the inventories.
 - [x] Audit other regional geometry loaders and demonstrate the GLiM numerical impact.
-- [x] Add a shared analysis-geometry step that applies the maintained overrides after loading/repairing/unioning base land geometry. Preserve canonical IDs, WGS84 geometry, and source attribution (`0b64991b`).
-- [ ] Use that step in all regional builders. Geology and biodiversity are complete in `0b64991b`; temperature, regional climate, and land-pollution/contaminant integration is in progress.
-- [ ] Include the analysis-geometry version or fingerprint in derived-cache identity. Reuse raw downloads only when their spatial/temporal coverage satisfies the corrected request.
+- [x] Add a shared analysis-geometry step that applies the maintained overrides after loading/repairing/unioning base land geometry. Preserve canonical IDs, WGS84 geometry, and source attribution (`0b64991b`, `e1ee7442`).
+- [x] Use that step in all audited regional builders, including original and fallback geometry paths and the local regional-diagnostics adapter (`0b64991b`, `e1ee7442`, `7d94246b`).
+- [ ] Replace or validate affected legacy cached results. Current root cache readers and mergers require the corrected identity; temperature retains its geometry-hashed `processing_fingerprint`. Legacy OSM count partials still need targeted recalculation. Reuse raw downloads only when their spatial/temporal coverage satisfies the corrected request.
 - [ ] Rebuild the seven affected geology summaries and any affected cached regional components; review geometry-derived whole-ocean exclusion masks.
 - [ ] Preserve explicit no-data/no-native-cell results where corrected geometry still lacks provider coverage.
-- [ ] Add regression checks for all seven overrides, the two official location replacements, and output/provenance consistency. Record the fixing commit and update this status after publication.
+- [x] Add regression checks for all seven overrides, the two official location replacements, source priority, missing reference geometry, and output/provenance consistency. Source fixing commits are recorded above; data-release status remains separate.
 
-The source correction in `0b64991b` passed 13 focused analysis-geometry, geology, and existing species-geometry tests, including rejection when a required reference footprint is unavailable. The existing OSM processing job saves regional counts rather than individual sites; those counts cannot be assigned corrected provenance without a targeted recalculation. Its affected records remain pending.
+The source correction in `0b64991b` passed 13 focused analysis-geometry, geology, and existing species-geometry tests, including rejection when a required reference footprint is unavailable. The `e1ee7442` climate/pollution changes passed 24 combined focused checks; the `7d94246b` adapter passed 7 checks. Late stale updates cannot erase a current verified result, and missing or uncorrected reference geometry cannot bypass validation. No affected seven-region climate/pollution outputs have been rebuilt. The existing OSM processing job saves regional counts rather than individual sites; those counts cannot be assigned corrected provenance without a targeted recalculation. Its affected records remain pending.
 
 The corrected registry belongs to offline data analysis. Its propagation must not reintroduce large detailed boundary assets into the browser or undo the map performance work.
 
