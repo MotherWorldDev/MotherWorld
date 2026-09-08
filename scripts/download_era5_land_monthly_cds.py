@@ -15,7 +15,7 @@ from pathlib import Path
 
 import cdsapi
 import multiurl
-from netCDF4 import Dataset
+from netCDF4 import Dataset, num2date
 
 
 DATASET = "reanalysis-era5-land-monthly-means"
@@ -24,6 +24,12 @@ VARIABLES = [
     "volumetric_soil_water_layer_2",
     "volumetric_soil_water_layer_3",
 ]
+VARIABLE_ALIASES = {
+    "volumetric_soil_water_layer_1": ("volumetric_soil_water_layer_1", "swvl1", "swvl_1"),
+    "volumetric_soil_water_layer_2": ("volumetric_soil_water_layer_2", "swvl2", "swvl_2"),
+    "volumetric_soil_water_layer_3": ("volumetric_soil_water_layer_3", "swvl3", "swvl_3"),
+}
+TIME_VARIABLES = ("valid_time", "time", "date")
 DEFAULT_CREDENTIALS = Path(r"F:\BiomeSummary\CpernicusToken\.cdsapirc")
 
 
@@ -42,14 +48,30 @@ def sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
-def valid_netcdf(path: Path) -> tuple[bool, str]:
+def valid_netcdf(path: Path, expected_year: int | None = None) -> tuple[bool, str]:
     if not path.exists() or path.stat().st_size <= 0:
         return False, "missing-or-empty"
     try:
         with Dataset(path, "r") as dataset:
-            missing = [name for name in VARIABLES if name not in dataset.variables]
+            missing = [name for name in VARIABLES if not any(alias in dataset.variables for alias in VARIABLE_ALIASES[name])]
             if missing:
                 return False, f"missing-variables:{','.join(missing)}"
+            if expected_year is not None:
+                time_name = next((name for name in TIME_VARIABLES if name in dataset.variables), None)
+                if time_name is None:
+                    return False, "missing-time-variable"
+                time_variable = dataset.variables[time_name]
+                units = getattr(time_variable, "units", None)
+                if not units:
+                    return False, f"missing-time-units:{time_name}"
+                calendar = getattr(time_variable, "calendar", "standard")
+                decoded = num2date(time_variable[:], units=units, calendar=calendar, only_use_cftime_datetimes=False, only_use_python_datetimes=False)
+                years = {int(value.year) for value in decoded}
+                months = [int(value.month) for value in decoded]
+                if years != {expected_year}:
+                    return False, f"wrong-year:{sorted(years)} expected {expected_year}"
+                if len(months) != 12 or sorted(months) != list(range(1, 13)):
+                    return False, f"month-coverage:{months}"
         return True, "netcdf-readable"
     except Exception as exc:
         return False, f"netcdf-invalid:{type(exc).__name__}"
@@ -75,14 +97,8 @@ def extract_if_zip(source: Path, target: Path) -> None:
     source.unlink()
 
 
-def download_one(year: int, output_dir: Path, credentials: Path, area: list[float]) -> dict:
-    target = output_dir / f"era5_land_monthly_soil_moisture_{year}.nc"
-    valid, validation = valid_netcdf(target)
-    if valid:
-        return {"year": year, "status": "exists-valid", "path": str(target), "bytes": target.stat().st_size, "sha256": sha256(target), "validation": validation}
-
-    client = make_client(credentials)
-    request = {
+def request_for(year: int, area: list[float]) -> dict:
+    return {
         "product_type": "monthly_averaged_reanalysis",
         "variable": VARIABLES,
         "year": [str(year)],
@@ -92,18 +108,62 @@ def download_one(year: int, output_dir: Path, credentials: Path, area: list[floa
         "data_format": "netcdf",
         "download_format": "unarchived",
     }
+
+
+def request_fingerprint(request: dict) -> str:
+    encoded = json.dumps(request, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+    return hashlib.sha256(encoded).hexdigest()
+
+
+def metadata_path(target: Path) -> Path:
+    return target.with_suffix(target.suffix + ".request.json")
+
+
+def write_metadata(path: Path, request: dict, fingerprint: str, expected: int | None = None) -> None:
+    payload = {"dataset": DATASET, "request": request, "fingerprint": fingerprint, "expectedTransportBytes": expected}
+    temporary = path.with_suffix(path.suffix + ".part")
+    temporary.write_text(json.dumps(payload, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    os.replace(temporary, path)
+
+
+def metadata_matches(path: Path, fingerprint: str) -> bool:
+    try:
+        return json.loads(path.read_text(encoding="utf-8")).get("fingerprint") == fingerprint
+    except Exception:
+        return False
+
+
+def download_one(year: int, output_dir: Path, credentials: Path, area: list[float]) -> dict:
+    target = output_dir / f"era5_land_monthly_soil_moisture_{year}.nc"
+    request = request_for(year, area)
+    fingerprint = request_fingerprint(request)
+    metadata = metadata_path(target)
+    valid, validation = valid_netcdf(target, expected_year=year)
+    if valid and metadata_matches(metadata, fingerprint):
+        return {"year": year, "status": "exists-valid", "path": str(target), "bytes": target.stat().st_size, "sha256": sha256(target), "validation": validation}
+    client = make_client(credentials)
     print(f"ERA5-Land monthly {year}: submitting", flush=True)
     result = client.retrieve(DATASET, request)
     expected = int(result.content_length)
     part = target.with_suffix(target.suffix + ".part")
+    if part.exists() and (not metadata_matches(metadata, fingerprint) or part.stat().st_size >= expected):
+        part.unlink()
+    write_metadata(metadata, request, fingerprint, expected)
     multiurl.download(result.location, target=str(part), resume_transfers=True, stream=True, maximum_retries=8)
     if part.stat().st_size != expected:
         raise RuntimeError(f"{year} size mismatch: {part.stat().st_size} != {expected}")
     staged = target.with_suffix(target.suffix + ".staged")
-    extract_if_zip(part, staged)
-    valid, validation = valid_netcdf(staged)
+    try:
+        extract_if_zip(part, staged)
+    except Exception:
+        part.unlink(missing_ok=True)
+        staged.unlink(missing_ok=True)
+        metadata.unlink(missing_ok=True)
+        raise
+    valid, validation = valid_netcdf(staged, expected_year=year)
     if not valid:
         staged.unlink(missing_ok=True)
+        metadata.unlink(missing_ok=True)
         raise RuntimeError(f"{year} validation failed: {validation}")
     os.replace(staged, target)
     return {
@@ -113,8 +173,9 @@ def download_one(year: int, output_dir: Path, credentials: Path, area: list[floa
         "bytes": target.stat().st_size,
         "transportBytes": expected,
         "sha256": sha256(target),
-        "checksum": result.asset.get("file:checksum") if getattr(result, "asset", None) else None,
+        "checksum": (getattr(result, "asset", {}) or {}).get("file:checksum"),
         "validation": validation,
+        "requestFingerprint": fingerprint,
     }
 
 
@@ -159,6 +220,7 @@ def main() -> int:
         "variables": VARIABLES,
         "years": years,
         "area": args.area,
+        "requestIdentity": "Each target has a .request.json sidecar; existing files/partials are reused only when the exact dataset request and area match.",
         "workers": workers,
         "outputDir": str(args.output_dir.resolve()),
         "results": results,

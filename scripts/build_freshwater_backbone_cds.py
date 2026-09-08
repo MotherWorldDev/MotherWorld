@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import json
 import os
 from datetime import datetime, timezone
@@ -32,6 +33,7 @@ ICE_EXCLUSION = {
     "description": "Matches the package geometry: all land south of 60°S and the broad rectangle lon -75..-10, lat 58..85 are excluded. This intentionally also removes Iceland, Baffin and nearby Canadian land; it is not a pixel-level glacier mask.",
 }
 HISTORY_START_YEAR = 1993
+DEFAULT_AREA = [90.0, -180.0, -60.0, 180.0]
 
 
 def root_file(directory: Path, year: int) -> Path:
@@ -48,6 +50,8 @@ def coord_name(dataset: xr.Dataset, candidates: tuple[str, ...]) -> str:
 def time_name(dataset: xr.Dataset) -> str:
     for name in TIME_COORDINATES:
         if name not in dataset.variables:
+            continue
+        if not any(name in dataset[variable].dims for variable in dataset.data_vars):
             continue
         values = dataset[name]
         if values.ndim == 1:
@@ -98,7 +102,7 @@ def monthly_field(dataset: xr.Dataset, requested: str, month: int, temporal_name
     return values
 
 
-def root_zone(path: Path, month: int) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+def root_zone(path: Path, month: int, expected_year: int | None = None) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
     with xr.open_dataset(path, engine="netcdf4", mask_and_scale=True) as dataset:
         lat_name = coord_name(dataset, ("latitude", "lat"))
         lon_name = coord_name(dataset, ("longitude", "lon"))
@@ -107,6 +111,9 @@ def root_zone(path: Path, month: int) -> tuple[np.ndarray, np.ndarray, np.ndarra
         lon = np.asarray(dataset[lon_name].values, dtype=np.float64)
         if lat.ndim != 1 or lon.ndim != 1:
             raise ValueError(f"only regular 1-D lat/lon grids are supported: {lat.shape}, {lon.shape}")
+        decoded_years = np.asarray(pd.to_datetime(dataset[temporal_name].values).year, dtype=int)
+        if expected_year is not None and set(decoded_years.tolist()) != {expected_year}:
+            raise ValueError(f"{path.name}: decoded years {sorted(set(decoded_years.tolist()))} do not match filename/request year {expected_year}")
         values = [monthly_field(dataset, name, month, temporal_name, lat_name, lon_name) for name in VARIABLES]
         if any(value.shape != (len(lat), len(lon)) for value in values):
             raise ValueError(f"soil-water fields do not match grid in {path.name}")
@@ -122,15 +129,33 @@ def spatial_mask(lat: np.ndarray, lon: np.ndarray) -> np.ndarray:
     return mask & ~greenland
 
 
-def compute_envelopes(directory: Path, baseline_years: list[int], cache_path: Path) -> tuple[list[np.ndarray], list[np.ndarray], np.ndarray, np.ndarray]:
+def file_sha256(path: Path) -> str:
+    digest = hashlib.sha256()
+    with path.open("rb") as handle:
+        for block in iter(lambda: handle.read(8 * 1024 * 1024), b""):
+            digest.update(block)
+    return digest.hexdigest()
+
+
+def source_fingerprint(directory: Path, years: list[int], area: list[float]) -> str:
+    manifest = []
+    for year in years:
+        path = root_file(directory, year)
+        manifest.append({"year": year, "name": path.name, "bytes": path.stat().st_size, "sha256": file_sha256(path)})
+    payload = {"inputDir": str(directory), "area": area, "variables": VARIABLES, "files": manifest}
+    return hashlib.sha256(json.dumps(payload, sort_keys=True, separators=(",", ":")).encode("utf-8")).hexdigest()
+
+
+def compute_envelopes(directory: Path, baseline_years: list[int], cache_path: Path, source_id: str, area: list[float]) -> tuple[list[np.ndarray], list[np.ndarray], np.ndarray, np.ndarray]:
     if cache_path.exists():
         try:
             with np.load(cache_path, allow_pickle=False) as data:
-                required = {"lat", "lon", "baseline_start", "baseline_end", "variables"}
+                required = {"lat", "lon", "baseline_start", "baseline_end", "variables", "source_id", "input_dir", "area"}
                 required.update({f"p10_{month:02d}" for month in range(1, 13)})
                 required.update({f"p90_{month:02d}" for month in range(1, 13)})
                 cached_variables = tuple(str(value) for value in data["variables"].tolist())
-                if not required.issubset(set(data.files)) or int(data["baseline_start"]) != baseline_years[0] or int(data["baseline_end"]) != baseline_years[-1] or cached_variables != tuple(VARIABLES):
+                cached_area = [float(value) for value in data["area"].tolist()]
+                if not required.issubset(set(data.files)) or int(data["baseline_start"]) != baseline_years[0] or int(data["baseline_end"]) != baseline_years[-1] or cached_variables != tuple(VARIABLES) or str(data["source_id"].item()) != source_id or str(data["input_dir"].item()) != str(directory) or cached_area != [float(value) for value in area]:
                     raise ValueError("envelope cache metadata does not match this request")
                 lat = np.asarray(data["lat"], dtype=np.float64)
                 lon = np.asarray(data["lon"], dtype=np.float64)
@@ -148,7 +173,7 @@ def compute_envelopes(directory: Path, baseline_years: list[int], cache_path: Pa
     for month in range(12):
         stack = []
         for year in baseline_years:
-            values, current_lat, current_lon = root_zone(root_file(directory, year), month)
+            values, current_lat, current_lon = root_zone(root_file(directory, year), month, expected_year=year)
             if lat is None:
                 lat, lon = current_lat, current_lon
             elif not (same_grid(lat, current_lat) and same_grid(lon, current_lon)):
@@ -161,19 +186,29 @@ def compute_envelopes(directory: Path, baseline_years: list[int], cache_path: Pa
     cache_path.parent.mkdir(parents=True, exist_ok=True)
     temporary = cache_path.with_suffix(cache_path.suffix + ".part")
     with temporary.open("wb") as handle:
-        np.savez_compressed(handle, lat=lat, lon=lon, baseline_start=baseline_years[0], baseline_end=baseline_years[-1], variables=np.asarray(VARIABLES), **{f"p10_{month + 1:02d}": p10[month] for month in range(12)}, **{f"p90_{month + 1:02d}": p90[month] for month in range(12)})
+        np.savez_compressed(handle, lat=lat, lon=lon, baseline_start=baseline_years[0], baseline_end=baseline_years[-1], variables=np.asarray(VARIABLES), source_id=np.asarray(source_id), input_dir=np.asarray(str(directory)), area=np.asarray(area, dtype=np.float64), **{f"p10_{month + 1:02d}": p10[month] for month in range(12)}, **{f"p90_{month + 1:02d}": p90[month] for month in range(12)})
     os.replace(temporary, cache_path)
     return p10, p90, lat, lon
 
 
 def build(args) -> dict:
     directory = args.input_dir.resolve()
+    area = [float(value) for value in getattr(args, "area", DEFAULT_AREA)]
+    report_path = directory / "era5_land_monthly_download_report.json"
+    if report_path.exists():
+        report = json.loads(report_path.read_text(encoding="utf-8"))
+        reported_area = [float(value) for value in report.get("area", [])]
+        if reported_area and reported_area != area:
+            raise ValueError(f"download report area {reported_area} does not match requested build area {area}")
+        if report.get("dataset") not in (None, "reanalysis-era5-land-monthly-means"):
+            raise ValueError(f"unexpected downloader dataset: {report.get('dataset')}")
     baseline_years = list(range(args.baseline_start, args.baseline_end + 1))
     missing = [year for year in baseline_years if not root_file(directory, year).exists()]
     if missing:
         raise FileNotFoundError(f"missing baseline years: {missing}")
     cache = args.envelope_cache or directory / f"era5_land_soil_moisture_p10_p90_{args.baseline_start}_{args.baseline_end}.npz"
-    p10, p90, lat, lon = compute_envelopes(directory, baseline_years, cache)
+    source_id = source_fingerprint(directory, baseline_years, area)
+    p10, p90, lat, lon = compute_envelopes(directory, baseline_years, cache, source_id, area)
     mask = spatial_mask(lat, lon)
     weights = np.cos(np.deg2rad(lat))[:, None] * np.ones((1, len(lon)), dtype=np.float64)
     weights[~mask] = 0.0
@@ -188,7 +223,7 @@ def build(args) -> dict:
         annual_normal = 0.0
         valid_months = 0
         for month in range(12):
-            values, current_lat, current_lon = root_zone(source, month)
+            values, current_lat, current_lon = root_zone(source, month, expected_year=year)
             if not (np.array_equal(current_lat, lat) and np.array_equal(current_lon, lon)):
                 raise ValueError(f"grid changed in {source.name}")
             valid = np.isfinite(values) & np.isfinite(p10[month]) & np.isfinite(p90[month]) & (weights > 0)
@@ -219,7 +254,7 @@ def build(args) -> dict:
         "series": series,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "method": {"backbone": "depth-weighted ERA5-Land volumetric soil water layers 1–3", "layerWeights": {"0–7 cm": 0.07, "7–28 cm": 0.21, "28–100 cm": 0.72}, "baseline": f"{args.baseline_start}–{args.baseline_end} calendar-month per-grid-cell P10–P90 envelope", "normalization": "80% of valid ice-sheet-excluded land-area-months inside the local envelope = 100", "yearDefinition": f"Calendar years {args.start_year}–{args.end_year}; missing source years are omitted and monthly coverage is explicit", "missingYears": missing_years, "scope": "global ice-sheet-excluded land", "iceExclusion": ICE_EXCLUSION, "scoreDirection": "100 = root-zone soil moisture remains within historical local regimes", "diagnosticPolicy": "GRACE terrestrial water storage and JRC surface-water retention remain diagnostics only"},
-        "sources": [{"id": "reanalysis-era5-land-monthly-means", "label": "Copernicus CDS ERA5-Land monthly averaged data", "variables": VARIABLES, "acceptedAliases": VARIABLE_ALIASES, "area": [90.0, -180.0, -60.0, 180.0], "retrievalDirectory": str(directory)}],
+        "sources": [{"id": "reanalysis-era5-land-monthly-means", "label": "Copernicus CDS ERA5-Land monthly averaged data", "variables": VARIABLES, "acceptedAliases": VARIABLE_ALIASES, "area": area, "retrievalDirectory": str(directory), "baselineSourceFingerprint": source_id}],
     }
 
 
