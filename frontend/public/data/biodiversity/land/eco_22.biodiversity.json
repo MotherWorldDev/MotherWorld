@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_22",
+  "regionName": "Niger Delta swamp forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.621104+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 108,
+      "currentSpeciesCount": 104,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 96.29629629629629,
+      "rangeOccupancyRetentionPct": 96.29629629629629,
+      "exampleLocallyLostSpecies": [
+        "Caracal aurata",
+        "Choeropsis liberiensis",
+        "Panthera pardus",
+        "Smutsia gigantea",
+        "Syncerus caffer"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_22",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.621104+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 108,
+        "currentMammalSpeciesCount": 104,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 96.29629629629629,
+        "mammalRangeOccupancyRetentionPct": 96.29629629629629,
+        "exampleLocallyLostSpecies": [
+          "Caracal aurata",
+          "Choeropsis liberiensis",
+          "Panthera pardus",
+          "Smutsia gigantea",
+          "Syncerus caffer"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

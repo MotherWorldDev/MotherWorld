@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_24",
+  "regionName": "Northeast Congolian lowland forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.641024+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 363,
+      "currentSpeciesCount": 354,
+      "locallyLostSpeciesCount": 10,
+      "faunalRetentionPct": 97.52066115702479,
+      "rangeOccupancyRetentionPct": 98.10205705193769,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Caracal caracal",
+        "Ceratotherium simum",
+        "Damaliscus lunatus",
+        "Diceros bicornis",
+        "Giraffa camelopardalis",
+        "Glauconycteris gleni",
+        "Lycaon pictus",
+        "Scotoecus albofuscus",
+        "Tragelaphus derbianus"
+      ],
+      "nativeRasterCellCount": 54,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_24",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.641024+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 363,
+        "currentMammalSpeciesCount": 354,
+        "locallyLostMammalSpeciesCount": 10,
+        "mammalFaunalRetentionPct": 97.52066115702479,
+        "mammalRangeOccupancyRetentionPct": 98.10205705193769,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Caracal caracal",
+          "Ceratotherium simum",
+          "Damaliscus lunatus",
+          "Diceros bicornis",
+          "Giraffa camelopardalis",
+          "Glauconycteris gleni",
+          "Lycaon pictus",
+          "Scotoecus albofuscus",
+          "Tragelaphus derbianus"
+        ],
+        "nativeRasterCellCount": 54,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_232",
+  "regionName": "Hainan Island monsoon rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.632741+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 78,
+      "currentSpeciesCount": 78,
+      "locallyLostSpeciesCount": 1,
+      "faunalRetentionPct": 100.0,
+      "rangeOccupancyRetentionPct": 99.99999999999999,
+      "exampleLocallyLostSpecies": [
+        "Viverra zibetha"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_232",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.632741+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 78,
+        "currentMammalSpeciesCount": 78,
+        "locallyLostMammalSpeciesCount": 1,
+        "mammalFaunalRetentionPct": 100.0,
+        "mammalRangeOccupancyRetentionPct": 99.99999999999999,
+        "exampleLocallyLostSpecies": [
+          "Viverra zibetha"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

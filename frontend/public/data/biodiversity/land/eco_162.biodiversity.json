@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_162",
+  "regionName": "Yapen rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.560440+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 86,
+      "currentSpeciesCount": 87,
+      "locallyLostSpeciesCount": 2,
+      "faunalRetentionPct": 101.16279069767442,
+      "rangeOccupancyRetentionPct": 101.16279069767442,
+      "exampleLocallyLostSpecies": [
+        "Thylogale browni",
+        "Zaglossus bartoni"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_162",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.560440+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 86,
+        "currentMammalSpeciesCount": 87,
+        "locallyLostMammalSpeciesCount": 2,
+        "mammalFaunalRetentionPct": 101.16279069767442,
+        "mammalRangeOccupancyRetentionPct": 101.16279069767442,
+        "exampleLocallyLostSpecies": [
+          "Thylogale browni",
+          "Zaglossus bartoni"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

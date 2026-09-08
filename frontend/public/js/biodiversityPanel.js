@@ -11,6 +11,7 @@ function esc(value) {
 }
 
 function numberValue(value) {
+  if ((typeof value !== "number" && typeof value !== "string") || (typeof value === "string" && !value.trim())) return null;
   const number = Number(value);
   return Number.isFinite(number) ? number : null;
 }
@@ -86,7 +87,7 @@ function renderPayload(payload) {
   // Do this gate before formatting any numeric values. A no-native-grid-cell record
   // contains zero placeholders that must not be presented as a biological count.
   if (!covered(metrics)) {
-    return `<div class="regional-diagnostic-unavailable"><strong>Insufficient native spatial resolution</strong><p>Historical-mammal counts are unavailable for this region because PHYLACINE has no native raster cell here. The zero placeholders in the source are not an observed zero-fauna result.</p><p class="regional-diagnostic-note">Coverage status: ${esc(metrics.coverageStatus || "not reported")}</p>${sourceLink(source)}</div>`;
+    return `<div class="regional-diagnostic-unavailable"><strong>Insufficient native spatial resolution</strong><p>PHYLACINE's native grid is too coarse to provide mammal counts for this region. This does not establish the absence of mammals.</p>${sourceLink(source)}</div>`;
   }
 
   const examples = (metrics.exampleLocallyLostSpecies || []).filter(Boolean).slice(0, 8);

@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_274",
+  "regionName": "Sri Lanka lowland rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.677212+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 117,
+      "currentSpeciesCount": 116,
+      "locallyLostSpeciesCount": 3,
+      "faunalRetentionPct": 99.14529914529915,
+      "rangeOccupancyRetentionPct": 98.99497487437186,
+      "exampleLocallyLostSpecies": [
+        "Bos gaurus",
+        "Cuon alpinus",
+        "Panthera tigris"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_274",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.677212+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 117,
+        "currentMammalSpeciesCount": 116,
+        "locallyLostMammalSpeciesCount": 3,
+        "mammalFaunalRetentionPct": 99.14529914529915,
+        "mammalRangeOccupancyRetentionPct": 98.99497487437186,
+        "exampleLocallyLostSpecies": [
+          "Bos gaurus",
+          "Cuon alpinus",
+          "Panthera tigris"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_519",
+  "regionName": "Yucatán moist forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.932370+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 161,
+      "currentSpeciesCount": 150,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 93.16770186335404,
+      "rangeOccupancyRetentionPct": 91.46722164412071,
+      "exampleLocallyLostSpecies": [
+        "Canis dirus",
+        "Cuon alpinus",
+        "Desmodus draculae",
+        "Equus ferus",
+        "Eremotherium laurillardi",
+        "Glyptotherium cylindricum",
+        "Mammut americanum",
+        "Mammuthus columbi",
+        "Mixotoxodon larensis",
+        "Neochoerus aesopi",
+        "Neomonachus tropicalis",
+        "Smilodon populator"
+      ],
+      "nativeRasterCellCount": 8,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_519",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.932370+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 161,
+        "currentMammalSpeciesCount": 150,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 93.16770186335404,
+        "mammalRangeOccupancyRetentionPct": 91.46722164412071,
+        "exampleLocallyLostSpecies": [
+          "Canis dirus",
+          "Cuon alpinus",
+          "Desmodus draculae",
+          "Equus ferus",
+          "Eremotherium laurillardi",
+          "Glyptotherium cylindricum",
+          "Mammut americanum",
+          "Mammuthus columbi",
+          "Mixotoxodon larensis",
+          "Neochoerus aesopi",
+          "Neomonachus tropicalis",
+          "Smilodon populator"
+        ],
+        "nativeRasterCellCount": 8,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

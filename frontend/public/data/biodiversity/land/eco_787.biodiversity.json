@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_787",
+  "regionName": "Canary Islands dry woodlands and forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.230125+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 35,
+      "currentSpeciesCount": 34,
+      "locallyLostSpeciesCount": 2,
+      "faunalRetentionPct": 97.14285714285714,
+      "rangeOccupancyRetentionPct": 97.14285714285714,
+      "exampleLocallyLostSpecies": [
+        "Canariomys tamarani",
+        "Monachus monachus"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_787",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.230125+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 35,
+        "currentMammalSpeciesCount": 34,
+        "locallyLostMammalSpeciesCount": 2,
+        "mammalFaunalRetentionPct": 97.14285714285714,
+        "mammalRangeOccupancyRetentionPct": 97.14285714285714,
+        "exampleLocallyLostSpecies": [
+          "Canariomys tamarani",
+          "Monachus monachus"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -11,13 +11,14 @@ function esc(value) {
 }
 
 function numberValue(value) {
+  if ((typeof value !== "number" && typeof value !== "string") || (typeof value === "string" && !value.trim())) return null;
   const number = Number(value);
   return Number.isFinite(number) ? number : null;
 }
 
 function display(value, suffix = "") {
   const number = numberValue(value);
-  return number == null ? (value == null || value === "" ? "—" : String(value)) : `${number.toLocaleString("en-US")}${suffix}`;
+  return number == null ? "—" : `${number.toLocaleString("en-US")}${suffix}`;
 }
 
 function percent(value) {
@@ -30,7 +31,7 @@ function stat(label, value) {
 }
 
 function protocolValue(key, value) {
-  if (value == null || value === "") return "Not reported";
+  if (value == null || !String(value).trim() || /^not reported$/i.test(String(value).trim())) return "Not reported";
   if (key === "meshSizeMm" || key === "waterSampleDepthM" || key === "sedimentSampleDepthM") {
     const numeric = numberValue(value);
     const formatted = numeric == null ? String(value) : numeric.toLocaleString("en-US", { maximumFractionDigits: 6 });
@@ -55,6 +56,11 @@ function protocolHtml(protocol = {}, reportedFields = null) {
   return `<h4 class="diagnostic-subheading">Protocol descriptors</h4><div class="diagnostic-kv">${fields.map(([label, key]) => stat(label, protocolValue(key, values[key]))).join("")}</div>`;
 }
 
+function concentration(value, unit) {
+  const number = numberValue(value);
+  return number == null ? "\u2014" : `${number.toLocaleString("en-US", { maximumSignificantDigits: 6 })} ${unit || ""}`.trim();
+}
+
 function analyteHtml(analyte) {
   const protocol = analyte?.protocol || {};
   const years = [analyte?.firstYear, analyte?.lastYear].filter((year) => year != null).join("–");
@@ -68,15 +74,20 @@ function analyteHtml(analyte) {
         ${stat("Detection rate", percent(analyte?.detectionRatePct))}
         ${stat("Stations", display(analyte?.stationCount))}
         ${stat("Reported years", years || "—")}
+        ${stat("Median positive-reported concentration", concentration(analyte?.medianDetected, analyte?.unit))}
+        ${stat("90th percentile positive-reported concentration", concentration(analyte?.p90Detected, analyte?.unit))}
+        ${stat("Maximum positive-reported concentration", concentration(analyte?.maxDetected, analyte?.unit))}
       </div>
       ${protocolHtml(protocol)}
+      ${analyte?.quantilesReservoirSampled === true ? '<p class="regional-diagnostic-note">Concentration summaries use a sampled subset of positive reported values.</p>' : ""}
       ${analyte?.detectionBasis ? `<p class="regional-diagnostic-note"><strong>Detection basis:</strong> ${esc(analyte.detectionBasis)}</p>` : ""}
     </div>
   </details>`;
 }
 
 function measurementHtml(category) {
-  const analytes = (category?.analytes || []).filter(Boolean).slice(0, 12);
+  const analytes = (category?.analytes || []).filter(Boolean);
+  const sharedProtocol = category?.protocol || (category?.protocolFields && !Array.isArray(category.protocolFields) && typeof category.protocolFields === "object" ? category.protocolFields : null);
   return `<div class="diagnostic-kv">
     ${stat("Samples", display(category?.sampleCount))}
     ${stat("Quantified values", display(category?.quantifiedCount))}
@@ -84,7 +95,7 @@ function measurementHtml(category) {
     ${stat("Stations", display(category?.stationCount))}
   </div>
   ${category?.detectionBasis ? `<p class="regional-diagnostic-note"><strong>Detection basis:</strong> ${esc(category.detectionBasis)}</p>` : ""}
-  ${protocolHtml(category?.analytes?.[0]?.protocol || category?.protocol || {}, category?.protocolFields)}
+  ${sharedProtocol ? protocolHtml(sharedProtocol) : ""}
   ${analytes.length ? `<h4 class="diagnostic-subheading">Analytes</h4><div class="contaminant-analytes">${analytes.map(analyteHtml).join("")}</div>` : ""}
   ${category?.coverageNote ? `<p class="regional-diagnostic-note">${esc(category.coverageNote)}</p>` : ""}`;
 }
@@ -135,7 +146,8 @@ function renderPayload(payload) {
     return `<details class="contaminant-card" ${index === 0 ? "open" : ""}><summary><span>${esc(categoryTitle(key, category))}</span><small>${esc(category.type || "Regional summary")}</small></summary><div class="contaminant-card-body">${body}</div></details>`;
   }).join("");
   const warning = payload?.coverageWarning ? `<div class="regional-diagnostic-warning"><strong>Coverage caveat</strong><p>${esc(payload.coverageWarning)}</p></div>` : "";
-  const sources = (payload?.sources || []).filter(Boolean).map(renderSource).filter(Boolean).join(" · ");
+  const sourceValues = Array.isArray(payload?.sources) ? payload.sources : Object.values(payload?.sources || {});
+  const sources = sourceValues.filter(Boolean).map(renderSource).filter(Boolean).join(" · ");
   return `${warning}<div class="contaminant-cards">${cards}</div>${sources ? `<p class="regional-diagnostic-source-list">Sources: ${sources}</p>` : ""}`;
 }
 

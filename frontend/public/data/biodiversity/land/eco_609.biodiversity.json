@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_609",
+  "regionName": "St. Peter and St. Paul Rocks",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_609",
+    "geometryFingerprint": "561ff227ca85078ecfb08ae7e8578a73c76a501d4918c98d9b902976e4f350dd",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -29.346555555555558,
+      0.9155833333333333,
+      -29.34436111111111,
+      0.9183055555555556
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_609",
+      "registryGeometryFingerprint": "561ff227ca85078ecfb08ae7e8578a73c76a501d4918c98d9b902976e4f350dd",
+      "source": "brazil_official_island_baselines_2015",
+      "sourceUrl": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8400.htm",
+      "notes": "Records use the official island-group perimeter, including small waters between islets. The older map outline has a location error."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:73f753b1ce6afe39581ebd977b64fc576e37233e5b106aa366f64ce9e174ae58",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 0,
+      "currentSpeciesCount": 0,
+      "locallyLostSpeciesCount": 0,
+      "faunalRetentionPct": null,
+      "rangeOccupancyRetentionPct": null,
+      "exampleLocallyLostSpecies": [],
+      "nativeRasterCellCount": 0,
+      "coverageStatus": "no_native_grid_cell"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_609",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 0,
+        "currentMammalSpeciesCount": 0,
+        "locallyLostMammalSpeciesCount": 0,
+        "mammalFaunalRetentionPct": null,
+        "mammalRangeOccupancyRetentionPct": null,
+        "exampleLocallyLostSpecies": [],
+        "nativeRasterCellCount": 0,
+        "coverageStatus": "no_native_grid_cell"
+      },
+      "analysisGeometry": {
+        "schemaVersion": 1,
+        "regionId": "eco_609",
+        "geometryFingerprint": "561ff227ca85078ecfb08ae7e8578a73c76a501d4918c98d9b902976e4f350dd",
+        "geometryFingerprintAlgorithm": "sha256-wkb",
+        "geometryType": "Polygon",
+        "geometryBounds": [
+          -29.346555555555558,
+          0.9155833333333333,
+          -29.34436111111111,
+          0.9183055555555556
+        ],
+        "geometrySource": "maintained_query_override",
+        "overrideApplied": true,
+        "registryPath": "scripts/data/species-query-geometries.geojson",
+        "geometryOverride": {
+          "regionId": "eco_609",
+          "registryGeometryFingerprint": "561ff227ca85078ecfb08ae7e8578a73c76a501d4918c98d9b902976e4f350dd",
+          "source": "brazil_official_island_baselines_2015",
+          "sourceUrl": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8400.htm",
+          "notes": "Records use the official island-group perimeter, including small waters between islets. The older map outline has a location error."
+        }
+      },
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:73f753b1ce6afe39581ebd977b64fc576e37233e5b106aa366f64ce9e174ae58",
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

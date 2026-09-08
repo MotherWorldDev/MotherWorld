@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_263",
+  "regionName": "Peninsular Malaysian montane rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.666795+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 219,
+      "currentSpeciesCount": 211,
+      "locallyLostSpeciesCount": 10,
+      "faunalRetentionPct": 96.34703196347031,
+      "rangeOccupancyRetentionPct": 94.96753246753255,
+      "exampleLocallyLostSpecies": [
+        "Bos javanicus",
+        "Homo spDenisova",
+        "Manis paleojavanica",
+        "Pongo abelii",
+        "Prionailurus viverrinus",
+        "Pteromyscus pulverulentus",
+        "Rhinoceros sondaicus",
+        "Stegodon orientalis",
+        "Sus barbatus",
+        "Tapirus augustus"
+      ],
+      "nativeRasterCellCount": 3,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_263",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.666795+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 219,
+        "currentMammalSpeciesCount": 211,
+        "locallyLostMammalSpeciesCount": 10,
+        "mammalFaunalRetentionPct": 96.34703196347031,
+        "mammalRangeOccupancyRetentionPct": 94.96753246753255,
+        "exampleLocallyLostSpecies": [
+          "Bos javanicus",
+          "Homo spDenisova",
+          "Manis paleojavanica",
+          "Pongo abelii",
+          "Prionailurus viverrinus",
+          "Pteromyscus pulverulentus",
+          "Rhinoceros sondaicus",
+          "Stegodon orientalis",
+          "Sus barbatus",
+          "Tapirus augustus"
+        ],
+        "nativeRasterCellCount": 3,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

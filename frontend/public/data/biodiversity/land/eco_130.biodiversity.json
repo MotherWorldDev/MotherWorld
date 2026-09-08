@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_130",
+  "regionName": "South Antarctic Peninsula tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_130",
+    "geometryFingerprint": "3dbdd8b10bed5dd1289f2704032303c700544e1c18a0bc5c4954b7501716d2a9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -80.15796255999999,
+      -76.22466157999992,
+      -60.55534622999983,
+      -72.09005922599982
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_130",
+      "registryGeometryFingerprint": "3dbdd8b10bed5dd1289f2704032303c700544e1c18a0bc5c4954b7501716d2a9",
+      "source": "ecoregions2017_original",
+      "sourceUrl": "https://ecoregions.appspot.com/",
+      "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b01b3d112b726246c4347febbac291645750d4ec2fb9842e01a31395774b3d9b",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 0,
+      "currentSpeciesCount": 0,
+      "locallyLostSpeciesCount": 0,
+      "faunalRetentionPct": null,
+      "rangeOccupancyRetentionPct": null,
+      "exampleLocallyLostSpecies": [],
+      "nativeRasterCellCount": 0,
+      "coverageStatus": "no_native_grid_cell"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_130",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 0,
+        "currentMammalSpeciesCount": 0,
+        "locallyLostMammalSpeciesCount": 0,
+        "mammalFaunalRetentionPct": null,
+        "mammalRangeOccupancyRetentionPct": null,
+        "exampleLocallyLostSpecies": [],
+        "nativeRasterCellCount": 0,
+        "coverageStatus": "no_native_grid_cell"
+      },
+      "analysisGeometry": {
+        "schemaVersion": 1,
+        "regionId": "eco_130",
+        "geometryFingerprint": "3dbdd8b10bed5dd1289f2704032303c700544e1c18a0bc5c4954b7501716d2a9",
+        "geometryFingerprintAlgorithm": "sha256-wkb",
+        "geometryType": "MultiPolygon",
+        "geometryBounds": [
+          -80.15796255999999,
+          -76.22466157999992,
+          -60.55534622999983,
+          -72.09005922599982
+        ],
+        "geometrySource": "maintained_query_override",
+        "overrideApplied": true,
+        "registryPath": "scripts/data/species-query-geometries.geojson",
+        "geometryOverride": {
+          "regionId": "eco_130",
+          "registryGeometryFingerprint": "3dbdd8b10bed5dd1289f2704032303c700544e1c18a0bc5c4954b7501716d2a9",
+          "source": "ecoregions2017_original",
+          "sourceUrl": "https://ecoregions.appspot.com/",
+          "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+        }
+      },
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b01b3d112b726246c4347febbac291645750d4ec2fb9842e01a31395774b3d9b",
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

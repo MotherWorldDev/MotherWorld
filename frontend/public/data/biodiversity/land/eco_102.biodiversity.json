@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_102",
+  "regionName": "Namaqualand-Richtersveld steppe",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.502093+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 130,
+      "currentSpeciesCount": 120,
+      "locallyLostSpeciesCount": 10,
+      "faunalRetentionPct": 92.3076923076923,
+      "rangeOccupancyRetentionPct": 90.41095890410956,
+      "exampleLocallyLostSpecies": [
+        "Antidorcas bondi",
+        "CapriniGen spA",
+        "Crocuta crocuta",
+        "Damaliscus niro",
+        "Equus quagga",
+        "Hippopotamus amphibius",
+        "Leptailurus serval",
+        "Loxodonta africana",
+        "Lycaon pictus",
+        "Panthera leo"
+      ],
+      "nativeRasterCellCount": 5,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_102",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.502093+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 130,
+        "currentMammalSpeciesCount": 120,
+        "locallyLostMammalSpeciesCount": 10,
+        "mammalFaunalRetentionPct": 92.3076923076923,
+        "mammalRangeOccupancyRetentionPct": 90.41095890410956,
+        "exampleLocallyLostSpecies": [
+          "Antidorcas bondi",
+          "CapriniGen spA",
+          "Crocuta crocuta",
+          "Damaliscus niro",
+          "Equus quagga",
+          "Hippopotamus amphibius",
+          "Leptailurus serval",
+          "Loxodonta africana",
+          "Lycaon pictus",
+          "Panthera leo"
+        ],
+        "nativeRasterCellCount": 5,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

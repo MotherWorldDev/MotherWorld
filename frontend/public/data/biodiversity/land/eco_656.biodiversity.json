@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_656",
+  "regionName": "Changbai Mountains mixed forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.078076+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 103,
+      "currentSpeciesCount": 93,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 90.29126213592232,
+      "rangeOccupancyRetentionPct": 90.32786885245906,
+      "exampleLocallyLostSpecies": [
+        "Bos primigenius",
+        "Cervus nippon",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Globicephala melas",
+        "Homo spDenisova",
+        "Hydropotes inermis",
+        "Mammuthus primigenius",
+        "Panthera pardus",
+        "Panthera tigris",
+        "Rattus norvegicus",
+        "Zalophus japonicus"
+      ],
+      "nativeRasterCellCount": 9,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_656",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.078076+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 103,
+        "currentMammalSpeciesCount": 93,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 90.29126213592232,
+        "mammalRangeOccupancyRetentionPct": 90.32786885245906,
+        "exampleLocallyLostSpecies": [
+          "Bos primigenius",
+          "Cervus nippon",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Globicephala melas",
+          "Homo spDenisova",
+          "Hydropotes inermis",
+          "Mammuthus primigenius",
+          "Panthera pardus",
+          "Panthera tigris",
+          "Rattus norvegicus",
+          "Zalophus japonicus"
+        ],
+        "nativeRasterCellCount": 9,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

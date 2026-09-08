@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_780",
+  "regionName": "Scandinavian Montane Birch forest and grasslands",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.223796+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 89,
+      "currentSpeciesCount": 75,
+      "locallyLostSpeciesCount": 17,
+      "faunalRetentionPct": 84.26966292134831,
+      "rangeOccupancyRetentionPct": 80.67885117493469,
+      "exampleLocallyLostSpecies": [
+        "Coelodonta antiquitatis",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Elephas antiquus",
+        "Equus ferus",
+        "Equus ovodovi",
+        "Felis silvestris",
+        "Homo neanderthalensis",
+        "Homotherium latidens",
+        "Mammuthus primigenius",
+        "Martes zibellina",
+        "Megaloceros giganteus",
+        "Ovibos moschatus",
+        "Panthera pardus",
+        "Panthera spelaea",
+        "Soergelia minor",
+        "Stephanorhinus kirchbergensis"
+      ],
+      "nativeRasterCellCount": 26,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_780",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.223796+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 89,
+        "currentMammalSpeciesCount": 75,
+        "locallyLostMammalSpeciesCount": 17,
+        "mammalFaunalRetentionPct": 84.26966292134831,
+        "mammalRangeOccupancyRetentionPct": 80.67885117493469,
+        "exampleLocallyLostSpecies": [
+          "Coelodonta antiquitatis",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Elephas antiquus",
+          "Equus ferus",
+          "Equus ovodovi",
+          "Felis silvestris",
+          "Homo neanderthalensis",
+          "Homotherium latidens",
+          "Mammuthus primigenius",
+          "Martes zibellina",
+          "Megaloceros giganteus",
+          "Ovibos moschatus",
+          "Panthera pardus",
+          "Panthera spelaea",
+          "Soergelia minor",
+          "Stephanorhinus kirchbergensis"
+        ],
+        "nativeRasterCellCount": 26,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_285",
+  "regionName": "Tonle Sap freshwater swamp forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.690233+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 153,
+      "currentSpeciesCount": 143,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 93.4640522875817,
+      "rangeOccupancyRetentionPct": 90.51724137931035,
+      "exampleLocallyLostSpecies": [
+        "Bos javanicus",
+        "Bubalus arnee",
+        "Crocuta crocuta",
+        "Homo spDenisova",
+        "Panthera pardus",
+        "Panthera tigris",
+        "Prionailurus viverrinus",
+        "Rhinoceros sondaicus",
+        "Rucervus eldii",
+        "Sus bucculentus",
+        "Tapirus indicus"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_285",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.690233+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 153,
+        "currentMammalSpeciesCount": 143,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 93.4640522875817,
+        "mammalRangeOccupancyRetentionPct": 90.51724137931035,
+        "exampleLocallyLostSpecies": [
+          "Bos javanicus",
+          "Bubalus arnee",
+          "Crocuta crocuta",
+          "Homo spDenisova",
+          "Panthera pardus",
+          "Panthera tigris",
+          "Prionailurus viverrinus",
+          "Rhinoceros sondaicus",
+          "Rucervus eldii",
+          "Sus bucculentus",
+          "Tapirus indicus"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

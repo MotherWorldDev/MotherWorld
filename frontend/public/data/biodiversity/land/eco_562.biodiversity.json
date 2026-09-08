@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_562",
+  "regionName": "San Félix-San Ambrosio Islands temperate forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_562",
+    "geometryFingerprint": "568dce2c5823d8a99dd705b1393d25049b1610d18459cb05651b5b2663401693",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -80.09973152599997,
+      -26.367486896999935,
+      -79.88455952099997,
+      -26.249690310999938
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_562",
+      "registryGeometryFingerprint": "568dce2c5823d8a99dd705b1393d25049b1610d18459cb05651b5b2663401693",
+      "source": "ecoregions2017_original",
+      "sourceUrl": "https://ecoregions.appspot.com/",
+      "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:213c750f56894098ee7ec0616bb64aec0aef8241db6ac90dc42ff817ced74b99",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 0,
+      "currentSpeciesCount": 0,
+      "locallyLostSpeciesCount": 0,
+      "faunalRetentionPct": null,
+      "rangeOccupancyRetentionPct": null,
+      "exampleLocallyLostSpecies": [],
+      "nativeRasterCellCount": 0,
+      "coverageStatus": "no_native_grid_cell"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_562",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 0,
+        "currentMammalSpeciesCount": 0,
+        "locallyLostMammalSpeciesCount": 0,
+        "mammalFaunalRetentionPct": null,
+        "mammalRangeOccupancyRetentionPct": null,
+        "exampleLocallyLostSpecies": [],
+        "nativeRasterCellCount": 0,
+        "coverageStatus": "no_native_grid_cell"
+      },
+      "analysisGeometry": {
+        "schemaVersion": 1,
+        "regionId": "eco_562",
+        "geometryFingerprint": "568dce2c5823d8a99dd705b1393d25049b1610d18459cb05651b5b2663401693",
+        "geometryFingerprintAlgorithm": "sha256-wkb",
+        "geometryType": "MultiPolygon",
+        "geometryBounds": [
+          -80.09973152599997,
+          -26.367486896999935,
+          -79.88455952099997,
+          -26.249690310999938
+        ],
+        "geometrySource": "maintained_query_override",
+        "overrideApplied": true,
+        "registryPath": "scripts/data/species-query-geometries.geojson",
+        "geometryOverride": {
+          "regionId": "eco_562",
+          "registryGeometryFingerprint": "568dce2c5823d8a99dd705b1393d25049b1610d18459cb05651b5b2663401693",
+          "source": "ecoregions2017_original",
+          "sourceUrl": "https://ecoregions.appspot.com/",
+          "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+        }
+      },
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:213c750f56894098ee7ec0616bb64aec0aef8241db6ac90dc42ff817ced74b99",
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

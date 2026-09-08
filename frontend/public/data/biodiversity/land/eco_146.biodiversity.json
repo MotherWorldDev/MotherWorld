@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_146",
+  "regionName": "New Caledonia rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.544780+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 35,
+      "currentSpeciesCount": 36,
+      "locallyLostSpeciesCount": 0,
+      "faunalRetentionPct": 102.85714285714286,
+      "rangeOccupancyRetentionPct": 100.96153846153847,
+      "exampleLocallyLostSpecies": [],
+      "nativeRasterCellCount": 3,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_146",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.544780+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 35,
+        "currentMammalSpeciesCount": 36,
+        "locallyLostMammalSpeciesCount": 0,
+        "mammalFaunalRetentionPct": 102.85714285714286,
+        "mammalRangeOccupancyRetentionPct": 100.96153846153847,
+        "exampleLocallyLostSpecies": [],
+        "nativeRasterCellCount": 3,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

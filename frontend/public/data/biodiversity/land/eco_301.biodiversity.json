@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_301",
+  "regionName": "Sri Lanka dry-zone dry evergreen forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.706906+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 114,
+      "currentSpeciesCount": 112,
+      "locallyLostSpeciesCount": 4,
+      "faunalRetentionPct": 98.24561403508773,
+      "rangeOccupancyRetentionPct": 97.6,
+      "exampleLocallyLostSpecies": [
+        "Bos gaurus",
+        "Crocidura miya",
+        "Cuon alpinus",
+        "Panthera tigris"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_301",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.706906+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 114,
+        "currentMammalSpeciesCount": 112,
+        "locallyLostMammalSpeciesCount": 4,
+        "mammalFaunalRetentionPct": 98.24561403508773,
+        "mammalRangeOccupancyRetentionPct": 97.6,
+        "exampleLocallyLostSpecies": [
+          "Bos gaurus",
+          "Crocidura miya",
+          "Cuon alpinus",
+          "Panthera tigris"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

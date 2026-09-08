@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_779",
+  "regionName": "Russian Bering tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.220757+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 69,
+      "currentSpeciesCount": 66,
+      "locallyLostSpeciesCount": 6,
+      "faunalRetentionPct": 95.65217391304348,
+      "rangeOccupancyRetentionPct": 85.93749999999997,
+      "exampleLocallyLostSpecies": [
+        "Cuon alpinus",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Ovibos moschatus",
+        "Panthera spelaea"
+      ],
+      "nativeRasterCellCount": 48,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_779",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.220757+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 69,
+        "currentMammalSpeciesCount": 66,
+        "locallyLostMammalSpeciesCount": 6,
+        "mammalFaunalRetentionPct": 95.65217391304348,
+        "mammalRangeOccupancyRetentionPct": 85.93749999999997,
+        "exampleLocallyLostSpecies": [
+          "Cuon alpinus",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Ovibos moschatus",
+          "Panthera spelaea"
+        ],
+        "nativeRasterCellCount": 48,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

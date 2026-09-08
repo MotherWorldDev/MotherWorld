@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_351",
+  "regionName": "Central Pacific Northwest coastal forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.760025+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 142,
+      "currentSpeciesCount": 125,
+      "locallyLostSpeciesCount": 19,
+      "faunalRetentionPct": 88.02816901408451,
+      "rangeOccupancyRetentionPct": 85.65683646112603,
+      "exampleLocallyLostSpecies": [
+        "Arctodus simus",
+        "Canis dirus",
+        "Castoroides ohioensis",
+        "Cuon alpinus",
+        "Desmodus stocki",
+        "Equus ferus",
+        "Euceratherium collinum",
+        "Hydrodamalis gigas",
+        "Lynx canadensis",
+        "Mammut americanum",
+        "Mammuthus columbi",
+        "Megalonyx jeffersonii",
+        "Nothrotheriops shastensis",
+        "Oreamnos americanus",
+        "Panthera atrox",
+        "Paramylodon harlani",
+        "Platygonus compressus",
+        "Smilodon fatalis",
+        "Vulpes vulpes"
+      ],
+      "nativeRasterCellCount": 8,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_351",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.760025+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 142,
+        "currentMammalSpeciesCount": 125,
+        "locallyLostMammalSpeciesCount": 19,
+        "mammalFaunalRetentionPct": 88.02816901408451,
+        "mammalRangeOccupancyRetentionPct": 85.65683646112603,
+        "exampleLocallyLostSpecies": [
+          "Arctodus simus",
+          "Canis dirus",
+          "Castoroides ohioensis",
+          "Cuon alpinus",
+          "Desmodus stocki",
+          "Equus ferus",
+          "Euceratherium collinum",
+          "Hydrodamalis gigas",
+          "Lynx canadensis",
+          "Mammut americanum",
+          "Mammuthus columbi",
+          "Megalonyx jeffersonii",
+          "Nothrotheriops shastensis",
+          "Oreamnos americanus",
+          "Panthera atrox",
+          "Paramylodon harlani",
+          "Platygonus compressus",
+          "Smilodon fatalis",
+          "Vulpes vulpes"
+        ],
+        "nativeRasterCellCount": 8,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

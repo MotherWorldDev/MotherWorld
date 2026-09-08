@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_516",
+  "regionName": "Western Ecuador moist forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.930911+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 233,
+      "currentSpeciesCount": 226,
+      "locallyLostSpeciesCount": 8,
+      "faunalRetentionPct": 96.99570815450643,
+      "rangeOccupancyRetentionPct": 97.2543352601156,
+      "exampleLocallyLostSpecies": [
+        "Equus ferus",
+        "Eremotherium laurillardi",
+        "Myotis simus",
+        "Neochoerus aesopi",
+        "Notiomastodon platensis",
+        "Panthera onca",
+        "Platyrrhinus nitelinea",
+        "Tapirus pinchaque"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_516",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.930911+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 233,
+        "currentMammalSpeciesCount": 226,
+        "locallyLostMammalSpeciesCount": 8,
+        "mammalFaunalRetentionPct": 96.99570815450643,
+        "mammalRangeOccupancyRetentionPct": 97.2543352601156,
+        "exampleLocallyLostSpecies": [
+          "Equus ferus",
+          "Eremotherium laurillardi",
+          "Myotis simus",
+          "Neochoerus aesopi",
+          "Notiomastodon platensis",
+          "Panthera onca",
+          "Platyrrhinus nitelinea",
+          "Tapirus pinchaque"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

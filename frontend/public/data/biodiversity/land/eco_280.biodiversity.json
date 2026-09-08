@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_280",
+  "regionName": "Sumatran peat swamp forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.682772+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 234,
+      "currentSpeciesCount": 224,
+      "locallyLostSpeciesCount": 13,
+      "faunalRetentionPct": 95.72649572649573,
+      "rangeOccupancyRetentionPct": 95.06172839506168,
+      "exampleLocallyLostSpecies": [
+        "Bos javanicus",
+        "Chaerephon johorensis",
+        "Dicerorhinus sumatrensis",
+        "Hipposideros orbiculus",
+        "Homo spDenisova",
+        "Manis paleojavanica",
+        "Mustela lutreolina",
+        "Panthera pardus",
+        "Petinomys vordermanni",
+        "Pongo abelii",
+        "Rhinoceros sondaicus",
+        "Tapirus augustus",
+        "Viverra megaspila"
+      ],
+      "nativeRasterCellCount": 11,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_280",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.682772+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 234,
+        "currentMammalSpeciesCount": 224,
+        "locallyLostMammalSpeciesCount": 13,
+        "mammalFaunalRetentionPct": 95.72649572649573,
+        "mammalRangeOccupancyRetentionPct": 95.06172839506168,
+        "exampleLocallyLostSpecies": [
+          "Bos javanicus",
+          "Chaerephon johorensis",
+          "Dicerorhinus sumatrensis",
+          "Hipposideros orbiculus",
+          "Homo spDenisova",
+          "Manis paleojavanica",
+          "Mustela lutreolina",
+          "Panthera pardus",
+          "Petinomys vordermanni",
+          "Pongo abelii",
+          "Rhinoceros sondaicus",
+          "Tapirus augustus",
+          "Viverra megaspila"
+        ],
+        "nativeRasterCellCount": 11,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

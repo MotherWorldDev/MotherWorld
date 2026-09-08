@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_111",
+  "regionName": "Central African mangroves",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.508719+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 257,
+      "currentSpeciesCount": 253,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 98.44357976653697,
+      "rangeOccupancyRetentionPct": 97.58241758241758,
+      "exampleLocallyLostSpecies": [
+        "Choeropsis liberiensis",
+        "Damaliscus lunatus",
+        "Lycaon pictus",
+        "Panthera leo",
+        "Tragelaphus derbianus"
+      ],
+      "nativeRasterCellCount": 3,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_111",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.508719+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 257,
+        "currentMammalSpeciesCount": 253,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 98.44357976653697,
+        "mammalRangeOccupancyRetentionPct": 97.58241758241758,
+        "exampleLocallyLostSpecies": [
+          "Choeropsis liberiensis",
+          "Damaliscus lunatus",
+          "Lycaon pictus",
+          "Panthera leo",
+          "Tragelaphus derbianus"
+        ],
+        "nativeRasterCellCount": 3,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

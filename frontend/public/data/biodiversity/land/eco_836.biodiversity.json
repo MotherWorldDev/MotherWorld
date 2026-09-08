@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_836",
+  "regionName": "Red Sea coastal desert",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.293467+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 78,
+      "currentSpeciesCount": 66,
+      "locallyLostSpeciesCount": 15,
+      "faunalRetentionPct": 84.61538461538461,
+      "rangeOccupancyRetentionPct": 88.0398671096345,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos primigenius",
+        "Camelus dromedarius",
+        "Canis lupus",
+        "Canis mesomelas",
+        "Crocuta crocuta",
+        "Dama mesopotamica",
+        "Elephas iolensis",
+        "Equus africanus",
+        "Equus hemionus",
+        "Gazella gazella",
+        "Hippopotamus amphibius",
+        "Homo neanderthalensis",
+        "Panthera leo",
+        "Ursus arctos"
+      ],
+      "nativeRasterCellCount": 6,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_836",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.293467+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 78,
+        "currentMammalSpeciesCount": 66,
+        "locallyLostMammalSpeciesCount": 15,
+        "mammalFaunalRetentionPct": 84.61538461538461,
+        "mammalRangeOccupancyRetentionPct": 88.0398671096345,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos primigenius",
+          "Camelus dromedarius",
+          "Canis lupus",
+          "Canis mesomelas",
+          "Crocuta crocuta",
+          "Dama mesopotamica",
+          "Elephas iolensis",
+          "Equus africanus",
+          "Equus hemionus",
+          "Gazella gazella",
+          "Hippopotamus amphibius",
+          "Homo neanderthalensis",
+          "Panthera leo",
+          "Ursus arctos"
+        ],
+        "nativeRasterCellCount": 6,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

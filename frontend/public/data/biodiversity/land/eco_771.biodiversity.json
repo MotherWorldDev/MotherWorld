@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_771",
+  "regionName": "Cherskii-Kolyma mountain tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.212191+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 79,
+      "currentSpeciesCount": 74,
+      "locallyLostSpeciesCount": 7,
+      "faunalRetentionPct": 93.67088607594937,
+      "rangeOccupancyRetentionPct": 90.53136236516183,
+      "exampleLocallyLostSpecies": [
+        "Cuon alpinus",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Ovibos moschatus",
+        "Panthera spelaea",
+        "Panthera tigris"
+      ],
+      "nativeRasterCellCount": 70,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_771",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.212191+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 79,
+        "currentMammalSpeciesCount": 74,
+        "locallyLostMammalSpeciesCount": 7,
+        "mammalFaunalRetentionPct": 93.67088607594937,
+        "mammalRangeOccupancyRetentionPct": 90.53136236516183,
+        "exampleLocallyLostSpecies": [
+          "Cuon alpinus",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Ovibos moschatus",
+          "Panthera spelaea",
+          "Panthera tigris"
+        ],
+        "nativeRasterCellCount": 70,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

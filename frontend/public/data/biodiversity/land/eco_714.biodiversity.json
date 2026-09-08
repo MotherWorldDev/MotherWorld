@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_714",
+  "regionName": "Northeast Siberian taiga",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.142379+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 80,
+      "currentSpeciesCount": 75,
+      "locallyLostSpeciesCount": 7,
+      "faunalRetentionPct": 93.75,
+      "rangeOccupancyRetentionPct": 91.24211547792336,
+      "exampleLocallyLostSpecies": [
+        "Cuon alpinus",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Ovibos moschatus",
+        "Panthera spelaea",
+        "Panthera tigris"
+      ],
+      "nativeRasterCellCount": 110,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_714",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.142379+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 80,
+        "currentMammalSpeciesCount": 75,
+        "locallyLostMammalSpeciesCount": 7,
+        "mammalFaunalRetentionPct": 93.75,
+        "mammalRangeOccupancyRetentionPct": 91.24211547792336,
+        "exampleLocallyLostSpecies": [
+          "Cuon alpinus",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Ovibos moschatus",
+          "Panthera spelaea",
+          "Panthera tigris"
+        ],
+        "nativeRasterCellCount": 110,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

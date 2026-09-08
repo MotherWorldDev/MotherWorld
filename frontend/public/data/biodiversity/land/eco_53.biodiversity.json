@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_53",
+  "regionName": "Sahelian Acacia savanna",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.946426+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 291,
+      "currentSpeciesCount": 282,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 96.90721649484536,
+      "rangeOccupancyRetentionPct": 80.98289673089407,
+      "exampleLocallyLostSpecies": [
+        "Camelus dromedarius",
+        "Diceros bicornis",
+        "Elephas iolensis",
+        "Equus africanus",
+        "Eudorcas rufina",
+        "Gerbillus agag",
+        "Gerbillus burtoni",
+        "Monachus monachus",
+        "Oryx beisa",
+        "Oryx dammah",
+        "Plecotus balensis"
+      ],
+      "nativeRasterCellCount": 397,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_53",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.946426+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 291,
+        "currentMammalSpeciesCount": 282,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 96.90721649484536,
+        "mammalRangeOccupancyRetentionPct": 80.98289673089407,
+        "exampleLocallyLostSpecies": [
+          "Camelus dromedarius",
+          "Diceros bicornis",
+          "Elephas iolensis",
+          "Equus africanus",
+          "Eudorcas rufina",
+          "Gerbillus agag",
+          "Gerbillus burtoni",
+          "Monachus monachus",
+          "Oryx beisa",
+          "Oryx dammah",
+          "Plecotus balensis"
+        ],
+        "nativeRasterCellCount": 397,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

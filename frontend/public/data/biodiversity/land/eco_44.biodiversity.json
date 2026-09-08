@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_44",
+  "regionName": "Guinean forest-savanna",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.853009+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 355,
+      "currentSpeciesCount": 351,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 98.87323943661971,
+      "rangeOccupancyRetentionPct": 93.85683207293071,
+      "exampleLocallyLostSpecies": [
+        "Crocidura virgata",
+        "Damaliscus lunatus",
+        "Diceros bicornis",
+        "Eptesicus platyops",
+        "Piliocolobus waldronae"
+      ],
+      "nativeRasterCellCount": 70,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_44",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.853009+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 355,
+        "currentMammalSpeciesCount": 351,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 98.87323943661971,
+        "mammalRangeOccupancyRetentionPct": 93.85683207293071,
+        "exampleLocallyLostSpecies": [
+          "Crocidura virgata",
+          "Damaliscus lunatus",
+          "Diceros bicornis",
+          "Eptesicus platyops",
+          "Piliocolobus waldronae"
+        ],
+        "nativeRasterCellCount": 70,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

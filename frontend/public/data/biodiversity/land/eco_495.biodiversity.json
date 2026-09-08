@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_495",
+  "regionName": "Puerto Rican moist forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.907971+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 44,
+      "currentSpeciesCount": 41,
+      "locallyLostSpeciesCount": 4,
+      "faunalRetentionPct": 93.18181818181819,
+      "rangeOccupancyRetentionPct": 93.18181818181817,
+      "exampleLocallyLostSpecies": [
+        "Acratocnus odontrigonus",
+        "Heteropsomys insulans",
+        "Nesophontes edithae",
+        "Phyllonycteris major"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_495",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.907971+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 44,
+        "currentMammalSpeciesCount": 41,
+        "locallyLostMammalSpeciesCount": 4,
+        "mammalFaunalRetentionPct": 93.18181818181819,
+        "mammalRangeOccupancyRetentionPct": 93.18181818181817,
+        "exampleLocallyLostSpecies": [
+          "Acratocnus odontrigonus",
+          "Heteropsomys insulans",
+          "Nesophontes edithae",
+          "Phyllonycteris major"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

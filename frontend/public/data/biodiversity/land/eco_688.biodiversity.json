@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_688",
+  "regionName": "Zagros Mountains forest steppe",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.115792+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 147,
+      "currentSpeciesCount": 134,
+      "locallyLostSpeciesCount": 15,
+      "faunalRetentionPct": 91.15646258503402,
+      "rangeOccupancyRetentionPct": 79.85386221294364,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos primigenius",
+        "Camelus dromedarius",
+        "Castor fiber",
+        "Cervus elaphus",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Elephas maximus",
+        "Equus ferus",
+        "Homo neanderthalensis",
+        "Homo spDenisova",
+        "Hystrix refossa",
+        "Panthera leo",
+        "Panthera tigris",
+        "Stephanorhinus hemitoechus"
+      ],
+      "nativeRasterCellCount": 41,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_688",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.115792+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 147,
+        "currentMammalSpeciesCount": 134,
+        "locallyLostMammalSpeciesCount": 15,
+        "mammalFaunalRetentionPct": 91.15646258503402,
+        "mammalRangeOccupancyRetentionPct": 79.85386221294364,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos primigenius",
+          "Camelus dromedarius",
+          "Castor fiber",
+          "Cervus elaphus",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Elephas maximus",
+          "Equus ferus",
+          "Homo neanderthalensis",
+          "Homo spDenisova",
+          "Hystrix refossa",
+          "Panthera leo",
+          "Panthera tigris",
+          "Stephanorhinus hemitoechus"
+        ],
+        "nativeRasterCellCount": 41,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

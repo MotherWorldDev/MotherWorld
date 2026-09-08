@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_14",
+  "regionName": "Guinean montane forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.538187+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 184,
+      "currentSpeciesCount": 179,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 97.28260869565217,
+      "rangeOccupancyRetentionPct": 94.64944649446494,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Damaliscus lunatus",
+        "Diceros bicornis",
+        "Lycaon pictus",
+        "Panthera leo"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_14",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.538187+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 184,
+        "currentMammalSpeciesCount": 179,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 97.28260869565217,
+        "mammalRangeOccupancyRetentionPct": 94.64944649446494,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Damaliscus lunatus",
+          "Diceros bicornis",
+          "Lycaon pictus",
+          "Panthera leo"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

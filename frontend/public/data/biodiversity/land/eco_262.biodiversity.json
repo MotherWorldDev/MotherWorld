@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_262",
+  "regionName": "Palawan rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.665796+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 91,
+      "currentSpeciesCount": 92,
+      "locallyLostSpeciesCount": 2,
+      "faunalRetentionPct": 101.0989010989011,
+      "rangeOccupancyRetentionPct": 100.28571428571429,
+      "exampleLocallyLostSpecies": [
+        "Haeromys pusillus",
+        "Panthera tigris"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_262",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.665796+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 91,
+        "currentMammalSpeciesCount": 92,
+        "locallyLostMammalSpeciesCount": 2,
+        "mammalFaunalRetentionPct": 101.0989010989011,
+        "mammalRangeOccupancyRetentionPct": 100.28571428571429,
+        "exampleLocallyLostSpecies": [
+          "Haeromys pusillus",
+          "Panthera tigris"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

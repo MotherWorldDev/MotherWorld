@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_3",
+  "regionName": "Central Congolian lowland forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.704367+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 204,
+      "currentSpeciesCount": 199,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 97.54901960784314,
+      "rangeOccupancyRetentionPct": 97.94406371550286,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Caracal caracal",
+        "Hippopotamus amphibius",
+        "Lycaon pictus",
+        "Panthera leo"
+      ],
+      "nativeRasterCellCount": 48,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_3",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.704367+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 204,
+        "currentMammalSpeciesCount": 199,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 97.54901960784314,
+        "mammalRangeOccupancyRetentionPct": 97.94406371550286,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Caracal caracal",
+          "Hippopotamus amphibius",
+          "Lycaon pictus",
+          "Panthera leo"
+        ],
+        "nativeRasterCellCount": 48,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

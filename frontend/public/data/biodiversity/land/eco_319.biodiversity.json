@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_319",
+  "regionName": "Indochina mangroves",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.723384+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 210,
+      "currentSpeciesCount": 194,
+      "locallyLostSpeciesCount": 17,
+      "faunalRetentionPct": 92.38095238095238,
+      "rangeOccupancyRetentionPct": 91.69435215946844,
+      "exampleLocallyLostSpecies": [
+        "Bos gaurus",
+        "Bos javanicus",
+        "Catopuma temminckii",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Dicerorhinus sumatrensis",
+        "Homo spDenisova",
+        "Manis paleojavanica",
+        "Panthera pardus",
+        "Panthera tigris",
+        "Pardofelis marmorata",
+        "Pongo abelii",
+        "Rhinoceros sondaicus",
+        "Stegodon orientalis",
+        "Sus bucculentus",
+        "Tapirus augustus",
+        "Tapirus indicus"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_319",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.723384+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 210,
+        "currentMammalSpeciesCount": 194,
+        "locallyLostMammalSpeciesCount": 17,
+        "mammalFaunalRetentionPct": 92.38095238095238,
+        "mammalRangeOccupancyRetentionPct": 91.69435215946844,
+        "exampleLocallyLostSpecies": [
+          "Bos gaurus",
+          "Bos javanicus",
+          "Catopuma temminckii",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Dicerorhinus sumatrensis",
+          "Homo spDenisova",
+          "Manis paleojavanica",
+          "Panthera pardus",
+          "Panthera tigris",
+          "Pardofelis marmorata",
+          "Pongo abelii",
+          "Rhinoceros sondaicus",
+          "Stegodon orientalis",
+          "Sus bucculentus",
+          "Tapirus augustus",
+          "Tapirus indicus"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

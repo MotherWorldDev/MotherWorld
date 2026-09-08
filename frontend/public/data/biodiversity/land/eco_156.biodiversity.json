@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_156",
+  "regionName": "Sulawesi lowland rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.555429+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 163,
+      "currentSpeciesCount": 163,
+      "locallyLostSpeciesCount": 3,
+      "faunalRetentionPct": 100.0,
+      "rangeOccupancyRetentionPct": 101.16861435726214,
+      "exampleLocallyLostSpecies": [
+        "Bubalus grovesi",
+        "Homo spDenisova",
+        "Maxomys dollmani"
+      ],
+      "nativeRasterCellCount": 13,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_156",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.555429+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 163,
+        "currentMammalSpeciesCount": 163,
+        "locallyLostMammalSpeciesCount": 3,
+        "mammalFaunalRetentionPct": 100.0,
+        "mammalRangeOccupancyRetentionPct": 101.16861435726214,
+        "exampleLocallyLostSpecies": [
+          "Bubalus grovesi",
+          "Homo spDenisova",
+          "Maxomys dollmani"
+        ],
+        "nativeRasterCellCount": 13,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

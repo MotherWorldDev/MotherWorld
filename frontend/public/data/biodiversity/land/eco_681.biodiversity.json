@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_681",
+  "regionName": "Southern Korea evergreen forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.107302+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 78,
+      "currentSpeciesCount": 70,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 89.74358974358974,
+      "rangeOccupancyRetentionPct": 88.39999999999998,
+      "exampleLocallyLostSpecies": [
+        "Bos primigenius",
+        "Cervus nippon",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Globicephala melas",
+        "Homo spDenisova",
+        "Lynx lynx",
+        "Murina tenebrosa",
+        "Panthera pardus",
+        "Panthera tigris",
+        "Zalophus japonicus"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_681",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.107302+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 78,
+        "currentMammalSpeciesCount": 70,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 89.74358974358974,
+        "mammalRangeOccupancyRetentionPct": 88.39999999999998,
+        "exampleLocallyLostSpecies": [
+          "Bos primigenius",
+          "Cervus nippon",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Globicephala melas",
+          "Homo spDenisova",
+          "Lynx lynx",
+          "Murina tenebrosa",
+          "Panthera pardus",
+          "Panthera tigris",
+          "Zalophus japonicus"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

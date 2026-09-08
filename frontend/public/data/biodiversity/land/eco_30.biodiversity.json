@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_30",
+  "regionName": "Western Guinean lowland forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.705401+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 267,
+      "currentSpeciesCount": 262,
+      "locallyLostSpeciesCount": 6,
+      "faunalRetentionPct": 98.12734082397004,
+      "rangeOccupancyRetentionPct": 98.09600429069455,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Damaliscus lunatus",
+        "Diceros bicornis",
+        "Lycaon pictus",
+        "Panthera leo",
+        "Tragelaphus derbianus"
+      ],
+      "nativeRasterCellCount": 23,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_30",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.705401+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 267,
+        "currentMammalSpeciesCount": 262,
+        "locallyLostMammalSpeciesCount": 6,
+        "mammalFaunalRetentionPct": 98.12734082397004,
+        "mammalRangeOccupancyRetentionPct": 98.09600429069455,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Damaliscus lunatus",
+          "Diceros bicornis",
+          "Lycaon pictus",
+          "Panthera leo",
+          "Tragelaphus derbianus"
+        ],
+        "nativeRasterCellCount": 23,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

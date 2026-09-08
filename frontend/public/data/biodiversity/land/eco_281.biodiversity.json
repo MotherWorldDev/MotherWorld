@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_281",
+  "regionName": "Sundaland heath forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.685698+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 216,
+      "currentSpeciesCount": 212,
+      "locallyLostSpeciesCount": 7,
+      "faunalRetentionPct": 98.14814814814815,
+      "rangeOccupancyRetentionPct": 96.68956901936289,
+      "exampleLocallyLostSpecies": [
+        "Dicerorhinus sumatrensis",
+        "Elephas maximus",
+        "Homo spDenisova",
+        "Hypsugo vordermanni",
+        "Manis paleojavanica",
+        "Melogale everetti",
+        "Panthera tigris"
+      ],
+      "nativeRasterCellCount": 12,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_281",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.685698+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 216,
+        "currentMammalSpeciesCount": 212,
+        "locallyLostMammalSpeciesCount": 7,
+        "mammalFaunalRetentionPct": 98.14814814814815,
+        "mammalRangeOccupancyRetentionPct": 96.68956901936289,
+        "exampleLocallyLostSpecies": [
+          "Dicerorhinus sumatrensis",
+          "Elephas maximus",
+          "Homo spDenisova",
+          "Hypsugo vordermanni",
+          "Manis paleojavanica",
+          "Melogale everetti",
+          "Panthera tigris"
+        ],
+        "nativeRasterCellCount": 12,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

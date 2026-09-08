@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_713",
+  "regionName": "Kamchatka-Kurile meadows and sparse forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.142379+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 66,
+      "currentSpeciesCount": 61,
+      "locallyLostSpeciesCount": 8,
+      "faunalRetentionPct": 92.42424242424242,
+      "rangeOccupancyRetentionPct": 88.19444444444446,
+      "exampleLocallyLostSpecies": [
+        "Cuon alpinus",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Hydrodamalis gigas",
+        "Mammuthus primigenius",
+        "Ovibos moschatus",
+        "Panthera spelaea",
+        "Zalophus japonicus"
+      ],
+      "nativeRasterCellCount": 13,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_713",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.142379+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 66,
+        "currentMammalSpeciesCount": 61,
+        "locallyLostMammalSpeciesCount": 8,
+        "mammalFaunalRetentionPct": 92.42424242424242,
+        "mammalRangeOccupancyRetentionPct": 88.19444444444446,
+        "exampleLocallyLostSpecies": [
+          "Cuon alpinus",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Hydrodamalis gigas",
+          "Mammuthus primigenius",
+          "Ovibos moschatus",
+          "Panthera spelaea",
+          "Zalophus japonicus"
+        ],
+        "nativeRasterCellCount": 13,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

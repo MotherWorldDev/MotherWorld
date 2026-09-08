@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_80",
+  "regionName": "Ethiopian montane moorlands",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.247955+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 84,
+      "currentSpeciesCount": 74,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 88.0952380952381,
+      "rangeOccupancyRetentionPct": 88.09523809523807,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Camelus dromedarius",
+        "Canis simensis",
+        "Elephas iolensis",
+        "Equus africanus",
+        "Hippopotamus amphibius",
+        "Loxodonta africana",
+        "Lycaon pictus",
+        "Oryx beisa",
+        "Panthera leo",
+        "Plecotus balensis",
+        "Rhinopoma macinnesi"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_80",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.247955+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 84,
+        "currentMammalSpeciesCount": 74,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 88.0952380952381,
+        "mammalRangeOccupancyRetentionPct": 88.09523809523807,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Camelus dromedarius",
+          "Canis simensis",
+          "Elephas iolensis",
+          "Equus africanus",
+          "Hippopotamus amphibius",
+          "Loxodonta africana",
+          "Lycaon pictus",
+          "Oryx beisa",
+          "Panthera leo",
+          "Plecotus balensis",
+          "Rhinopoma macinnesi"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

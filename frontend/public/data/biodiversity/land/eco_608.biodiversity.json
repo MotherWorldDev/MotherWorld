@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_608",
+  "regionName": "Sechura desert",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.029039+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 197,
+      "currentSpeciesCount": 186,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 94.41624365482234,
+      "rangeOccupancyRetentionPct": 92.02772963604853,
+      "exampleLocallyLostSpecies": [
+        "Chinchilla chinchilla",
+        "Cuvieronius hyodon",
+        "Diabolotherium nordenskioldi",
+        "Equus ferus",
+        "Hippidion devillei",
+        "Mylodon darwinii",
+        "Myotis simus",
+        "Notiomastodon platensis",
+        "Panthera onca",
+        "Scelidodon chiliensis",
+        "Smilodon populator",
+        "Thomasomys incanus"
+      ],
+      "nativeRasterCellCount": 23,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_608",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.029039+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 197,
+        "currentMammalSpeciesCount": 186,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 94.41624365482234,
+        "mammalRangeOccupancyRetentionPct": 92.02772963604853,
+        "exampleLocallyLostSpecies": [
+          "Chinchilla chinchilla",
+          "Cuvieronius hyodon",
+          "Diabolotherium nordenskioldi",
+          "Equus ferus",
+          "Hippidion devillei",
+          "Mylodon darwinii",
+          "Myotis simus",
+          "Notiomastodon platensis",
+          "Panthera onca",
+          "Scelidodon chiliensis",
+          "Smilodon populator",
+          "Thomasomys incanus"
+        ],
+        "nativeRasterCellCount": 23,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

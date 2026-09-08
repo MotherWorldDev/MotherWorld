@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_261",
+  "regionName": "Orissa semi-evergreen forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.664797+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 104,
+      "currentSpeciesCount": 94,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 90.38461538461539,
+      "rangeOccupancyRetentionPct": 89.6551724137931,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos gaurus",
+        "Bos primigenius",
+        "Bubalus arnee",
+        "Caracal caracal",
+        "Crocuta crocuta",
+        "Homo spDenisova",
+        "Panthera tigris",
+        "Rattus rattus",
+        "Rucervus duvaucelii",
+        "Sivacobus sankaliai"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_261",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.664797+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 104,
+        "currentMammalSpeciesCount": 94,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 90.38461538461539,
+        "mammalRangeOccupancyRetentionPct": 89.6551724137931,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos gaurus",
+          "Bos primigenius",
+          "Bubalus arnee",
+          "Caracal caracal",
+          "Crocuta crocuta",
+          "Homo spDenisova",
+          "Panthera tigris",
+          "Rattus rattus",
+          "Rucervus duvaucelii",
+          "Sivacobus sankaliai"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

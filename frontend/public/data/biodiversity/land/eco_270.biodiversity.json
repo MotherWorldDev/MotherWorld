@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_270",
+  "regionName": "South Western Ghats moist deciduous forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.673458+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 157,
+      "currentSpeciesCount": 148,
+      "locallyLostSpeciesCount": 10,
+      "faunalRetentionPct": 94.26751592356688,
+      "rangeOccupancyRetentionPct": 92.15686274509804,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos primigenius",
+        "Bubalus arnee",
+        "Caracal caracal",
+        "Crocuta crocuta",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Prionailurus viverrinus",
+        "Rattus rattus",
+        "Viverra civettina"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_270",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.673458+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 157,
+        "currentMammalSpeciesCount": 148,
+        "locallyLostMammalSpeciesCount": 10,
+        "mammalFaunalRetentionPct": 94.26751592356688,
+        "mammalRangeOccupancyRetentionPct": 92.15686274509804,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos primigenius",
+          "Bubalus arnee",
+          "Caracal caracal",
+          "Crocuta crocuta",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Prionailurus viverrinus",
+          "Rattus rattus",
+          "Viverra civettina"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

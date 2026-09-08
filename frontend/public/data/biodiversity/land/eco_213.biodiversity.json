@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_213",
+  "regionName": "Pilbara shrublands",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.614813+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 92,
+      "currentSpeciesCount": 76,
+      "locallyLostSpeciesCount": 17,
+      "faunalRetentionPct": 82.6086956521739,
+      "rangeOccupancyRetentionPct": 84.43051201671892,
+      "exampleLocallyLostSpecies": [
+        "Bettongia anhydra",
+        "Bettongia lesueur",
+        "Bettongia penicillata",
+        "Chaeropus ecaudatus",
+        "Dasycercus cristicauda",
+        "Dasyurus geoffroii",
+        "Isoodon auratus",
+        "Lagorchestes asomatus",
+        "Lagorchestes hirsutus",
+        "Leporillus apicalis",
+        "Mesembriomys macrurus",
+        "Onychogalea lunata",
+        "Perameles bougainville",
+        "Perameles eremiana",
+        "Phascogale calura",
+        "Pseudomys fieldi",
+        "Thylacinus cynocephalus"
+      ],
+      "nativeRasterCellCount": 19,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_213",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.614813+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 92,
+        "currentMammalSpeciesCount": 76,
+        "locallyLostMammalSpeciesCount": 17,
+        "mammalFaunalRetentionPct": 82.6086956521739,
+        "mammalRangeOccupancyRetentionPct": 84.43051201671892,
+        "exampleLocallyLostSpecies": [
+          "Bettongia anhydra",
+          "Bettongia lesueur",
+          "Bettongia penicillata",
+          "Chaeropus ecaudatus",
+          "Dasycercus cristicauda",
+          "Dasyurus geoffroii",
+          "Isoodon auratus",
+          "Lagorchestes asomatus",
+          "Lagorchestes hirsutus",
+          "Leporillus apicalis",
+          "Mesembriomys macrurus",
+          "Onychogalea lunata",
+          "Perameles bougainville",
+          "Perameles eremiana",
+          "Phascogale calura",
+          "Pseudomys fieldi",
+          "Thylacinus cynocephalus"
+        ],
+        "nativeRasterCellCount": 19,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

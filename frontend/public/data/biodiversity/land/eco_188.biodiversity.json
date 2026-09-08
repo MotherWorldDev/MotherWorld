@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_188",
+  "regionName": "Trans Fly savanna and grasslands",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.586846+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 98,
+      "currentSpeciesCount": 99,
+      "locallyLostSpeciesCount": 2,
+      "faunalRetentionPct": 101.0204081632653,
+      "rangeOccupancyRetentionPct": 101.32450331125828,
+      "exampleLocallyLostSpecies": [
+        "Dendrolagus spadix",
+        "Thylacinus cynocephalus"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_188",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.586846+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 98,
+        "currentMammalSpeciesCount": 99,
+        "locallyLostMammalSpeciesCount": 2,
+        "mammalFaunalRetentionPct": 101.0204081632653,
+        "mammalRangeOccupancyRetentionPct": 101.32450331125828,
+        "exampleLocallyLostSpecies": [
+          "Dendrolagus spadix",
+          "Thylacinus cynocephalus"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_26",
+  "regionName": "Northwest Congolian lowland forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.662699+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 285,
+      "currentSpeciesCount": 280,
+      "locallyLostSpeciesCount": 6,
+      "faunalRetentionPct": 98.24561403508773,
+      "rangeOccupancyRetentionPct": 97.74484536082473,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Damaliscus lunatus",
+        "Diceros bicornis",
+        "Lycaon pictus",
+        "Panthera leo",
+        "Tragelaphus derbianus"
+      ],
+      "nativeRasterCellCount": 50,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_26",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.662699+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 285,
+        "currentMammalSpeciesCount": 280,
+        "locallyLostMammalSpeciesCount": 6,
+        "mammalFaunalRetentionPct": 98.24561403508773,
+        "mammalRangeOccupancyRetentionPct": 97.74484536082473,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Damaliscus lunatus",
+          "Diceros bicornis",
+          "Lycaon pictus",
+          "Panthera leo",
+          "Tragelaphus derbianus"
+        ],
+        "nativeRasterCellCount": 50,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

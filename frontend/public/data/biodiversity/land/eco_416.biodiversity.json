@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_416",
+  "regionName": "Interior Yukon-Alaska alpine tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.828431+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 62,
+      "currentSpeciesCount": 51,
+      "locallyLostSpeciesCount": 13,
+      "faunalRetentionPct": 82.25806451612904,
+      "rangeOccupancyRetentionPct": 77.51256281407036,
+      "exampleLocallyLostSpecies": [
+        "Arctodus simus",
+        "Brachyprotoma obtusata",
+        "Camelops hesternus",
+        "Castoroides ohioensis",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Equus francisci",
+        "Homotherium serum",
+        "Mammuthus primigenius",
+        "Ochotona whartoni",
+        "Panthera spelaea",
+        "Saiga tatarica",
+        "Vulpes vulpes"
+      ],
+      "nativeRasterCellCount": 16,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_416",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.828431+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 62,
+        "currentMammalSpeciesCount": 51,
+        "locallyLostMammalSpeciesCount": 13,
+        "mammalFaunalRetentionPct": 82.25806451612904,
+        "mammalRangeOccupancyRetentionPct": 77.51256281407036,
+        "exampleLocallyLostSpecies": [
+          "Arctodus simus",
+          "Brachyprotoma obtusata",
+          "Camelops hesternus",
+          "Castoroides ohioensis",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Equus francisci",
+          "Homotherium serum",
+          "Mammuthus primigenius",
+          "Ochotona whartoni",
+          "Panthera spelaea",
+          "Saiga tatarica",
+          "Vulpes vulpes"
+        ],
+        "nativeRasterCellCount": 16,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

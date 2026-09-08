@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_121",
+  "regionName": "Ellsworth Land tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_121",
+    "geometryFingerprint": "07f89f333146c6296e82491bcf181b060421161d2b33b755cc90ec1186a67c4d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -105.25378753199999,
+      -74.93075807599996,
+      -93.30453092299985,
+      -71.81977895199998
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_121",
+      "registryGeometryFingerprint": "07f89f333146c6296e82491bcf181b060421161d2b33b755cc90ec1186a67c4d",
+      "source": "ecoregions2017_original",
+      "sourceUrl": "https://ecoregions.appspot.com/",
+      "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:932cd3bec856b7966d433273a48f627321dc41d6ecda203a33646e6fee6a6669",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 0,
+      "currentSpeciesCount": 0,
+      "locallyLostSpeciesCount": 0,
+      "faunalRetentionPct": null,
+      "rangeOccupancyRetentionPct": null,
+      "exampleLocallyLostSpecies": [],
+      "nativeRasterCellCount": 0,
+      "coverageStatus": "no_native_grid_cell"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_121",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 0,
+        "currentMammalSpeciesCount": 0,
+        "locallyLostMammalSpeciesCount": 0,
+        "mammalFaunalRetentionPct": null,
+        "mammalRangeOccupancyRetentionPct": null,
+        "exampleLocallyLostSpecies": [],
+        "nativeRasterCellCount": 0,
+        "coverageStatus": "no_native_grid_cell"
+      },
+      "analysisGeometry": {
+        "schemaVersion": 1,
+        "regionId": "eco_121",
+        "geometryFingerprint": "07f89f333146c6296e82491bcf181b060421161d2b33b755cc90ec1186a67c4d",
+        "geometryFingerprintAlgorithm": "sha256-wkb",
+        "geometryType": "MultiPolygon",
+        "geometryBounds": [
+          -105.25378753199999,
+          -74.93075807599996,
+          -93.30453092299985,
+          -71.81977895199998
+        ],
+        "geometrySource": "maintained_query_override",
+        "overrideApplied": true,
+        "registryPath": "scripts/data/species-query-geometries.geojson",
+        "geometryOverride": {
+          "regionId": "eco_121",
+          "registryGeometryFingerprint": "07f89f333146c6296e82491bcf181b060421161d2b33b755cc90ec1186a67c4d",
+          "source": "ecoregions2017_original",
+          "sourceUrl": "https://ecoregions.appspot.com/",
+          "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+        }
+      },
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:932cd3bec856b7966d433273a48f627321dc41d6ecda203a33646e6fee6a6669",
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

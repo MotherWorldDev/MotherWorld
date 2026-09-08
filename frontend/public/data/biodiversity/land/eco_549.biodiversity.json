@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_549",
+  "regionName": "Tumbes-Piura dry forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.966719+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 159,
+      "currentSpeciesCount": 156,
+      "locallyLostSpeciesCount": 4,
+      "faunalRetentionPct": 98.11320754716981,
+      "rangeOccupancyRetentionPct": 97.33656174334142,
+      "exampleLocallyLostSpecies": [
+        "Equus ferus",
+        "Eremotherium laurillardi",
+        "Notiomastodon platensis",
+        "Smilodon populator"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_549",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.966719+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 159,
+        "currentMammalSpeciesCount": 156,
+        "locallyLostMammalSpeciesCount": 4,
+        "mammalFaunalRetentionPct": 98.11320754716981,
+        "mammalRangeOccupancyRetentionPct": 97.33656174334142,
+        "exampleLocallyLostSpecies": [
+          "Equus ferus",
+          "Eremotherium laurillardi",
+          "Notiomastodon platensis",
+          "Smilodon populator"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_138",
+  "regionName": "Buru rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.536681+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 57,
+      "currentSpeciesCount": 59,
+      "locallyLostSpeciesCount": 1,
+      "faunalRetentionPct": 103.50877192982456,
+      "rangeOccupancyRetentionPct": 103.50877192982456,
+      "exampleLocallyLostSpecies": [
+        "Miniopterus paululus"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_138",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.536681+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 57,
+        "currentMammalSpeciesCount": 59,
+        "locallyLostMammalSpeciesCount": 1,
+        "mammalFaunalRetentionPct": 103.50877192982456,
+        "mammalRangeOccupancyRetentionPct": 103.50877192982456,
+        "exampleLocallyLostSpecies": [
+          "Miniopterus paululus"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

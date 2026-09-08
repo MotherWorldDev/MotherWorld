@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_770",
+  "regionName": "Yarlung Zanbo arid steppe",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.211184+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 74,
+      "currentSpeciesCount": 71,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 95.94594594594595,
+      "rangeOccupancyRetentionPct": 93.30357142857146,
+      "exampleLocallyLostSpecies": [
+        "Ailurus fulgens",
+        "Castor fiber",
+        "Elephas maximus",
+        "Equus ferus",
+        "Homo spDenisova"
+      ],
+      "nativeRasterCellCount": 5,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_770",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.211184+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 74,
+        "currentMammalSpeciesCount": 71,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 95.94594594594595,
+        "mammalRangeOccupancyRetentionPct": 93.30357142857146,
+        "exampleLocallyLostSpecies": [
+          "Ailurus fulgens",
+          "Castor fiber",
+          "Elephas maximus",
+          "Equus ferus",
+          "Homo spDenisova"
+        ],
+        "nativeRasterCellCount": 5,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

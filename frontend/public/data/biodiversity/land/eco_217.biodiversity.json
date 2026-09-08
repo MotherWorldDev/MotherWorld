@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_217",
+  "regionName": "New Guinea mangroves",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.618386+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 105,
+      "currentSpeciesCount": 105,
+      "locallyLostSpeciesCount": 3,
+      "faunalRetentionPct": 100.0,
+      "rangeOccupancyRetentionPct": 101.9230769230769,
+      "exampleLocallyLostSpecies": [
+        "Dendrolagus spadix",
+        "Dendrolagus ursinus",
+        "Thylacinus cynocephalus"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_217",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.618386+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 105,
+        "currentMammalSpeciesCount": 105,
+        "locallyLostMammalSpeciesCount": 3,
+        "mammalFaunalRetentionPct": 100.0,
+        "mammalRangeOccupancyRetentionPct": 101.9230769230769,
+        "exampleLocallyLostSpecies": [
+          "Dendrolagus spadix",
+          "Dendrolagus ursinus",
+          "Thylacinus cynocephalus"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

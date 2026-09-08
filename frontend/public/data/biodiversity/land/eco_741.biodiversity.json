@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_741",
+  "regionName": "Amur meadow steppe",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.177121+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 81,
+      "currentSpeciesCount": 76,
+      "locallyLostSpeciesCount": 7,
+      "faunalRetentionPct": 93.82716049382717,
+      "rangeOccupancyRetentionPct": 94.61538461538464,
+      "exampleLocallyLostSpecies": [
+        "Bos primigenius",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Panthera pardus",
+        "Rangifer tarandus"
+      ],
+      "nativeRasterCellCount": 12,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_741",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.177121+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 81,
+        "currentMammalSpeciesCount": 76,
+        "locallyLostMammalSpeciesCount": 7,
+        "mammalFaunalRetentionPct": 93.82716049382717,
+        "mammalRangeOccupancyRetentionPct": 94.61538461538464,
+        "exampleLocallyLostSpecies": [
+          "Bos primigenius",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Panthera pardus",
+          "Rangifer tarandus"
+        ],
+        "nativeRasterCellCount": 12,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

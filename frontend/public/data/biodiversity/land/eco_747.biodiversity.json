@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_747",
+  "regionName": "Tigris-Euphrates alluvial salt marsh",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.183483+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 72,
+      "currentSpeciesCount": 61,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 84.72222222222223,
+      "rangeOccupancyRetentionPct": 81.09756097560972,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos primigenius",
+        "Camelus dromedarius",
+        "Crocuta crocuta",
+        "Dama mesopotamica",
+        "Elephas maximus",
+        "Equus hemionus",
+        "Homo neanderthalensis",
+        "Oryx leucoryx",
+        "Panthera leo",
+        "Panthera pardus",
+        "Ursus arctos"
+      ],
+      "nativeRasterCellCount": 3,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_747",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.183483+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 72,
+        "currentMammalSpeciesCount": 61,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 84.72222222222223,
+        "mammalRangeOccupancyRetentionPct": 81.09756097560972,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos primigenius",
+          "Camelus dromedarius",
+          "Crocuta crocuta",
+          "Dama mesopotamica",
+          "Elephas maximus",
+          "Equus hemionus",
+          "Homo neanderthalensis",
+          "Oryx leucoryx",
+          "Panthera leo",
+          "Panthera pardus",
+          "Ursus arctos"
+        ],
+        "nativeRasterCellCount": 3,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

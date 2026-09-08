@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_230",
+  "regionName": "Eastern Java-Bali rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.631220+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 148,
+      "currentSpeciesCount": 141,
+      "locallyLostSpeciesCount": 10,
+      "faunalRetentionPct": 95.27027027027027,
+      "rangeOccupancyRetentionPct": 92.17081850533805,
+      "exampleLocallyLostSpecies": [
+        "Axis kuhlii",
+        "Bubalus palaeokerabau",
+        "Hexaprotodon sivalensis",
+        "Homo spDenisova",
+        "Neofelis diardi",
+        "Panthera tigris",
+        "Prionailurus viverrinus",
+        "Rhinoceros sondaicus",
+        "Stegodon trigonocephalus",
+        "Sus brachgnathus"
+      ],
+      "nativeRasterCellCount": 7,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_230",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.631220+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 148,
+        "currentMammalSpeciesCount": 141,
+        "locallyLostMammalSpeciesCount": 10,
+        "mammalFaunalRetentionPct": 95.27027027027027,
+        "mammalRangeOccupancyRetentionPct": 92.17081850533805,
+        "exampleLocallyLostSpecies": [
+          "Axis kuhlii",
+          "Bubalus palaeokerabau",
+          "Hexaprotodon sivalensis",
+          "Homo spDenisova",
+          "Neofelis diardi",
+          "Panthera tigris",
+          "Prionailurus viverrinus",
+          "Rhinoceros sondaicus",
+          "Stegodon trigonocephalus",
+          "Sus brachgnathus"
+        ],
+        "nativeRasterCellCount": 7,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_220",
+  "regionName": "Borneo montane rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.621104+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 241,
+      "currentSpeciesCount": 239,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 99.1701244813278,
+      "rangeOccupancyRetentionPct": 96.25329815303427,
+      "exampleLocallyLostSpecies": [
+        "Dicerorhinus sumatrensis",
+        "Haeromys margarettae",
+        "Homo spDenisova",
+        "Manis paleojavanica",
+        "Panthera tigris"
+      ],
+      "nativeRasterCellCount": 12,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_220",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.621104+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 241,
+        "currentMammalSpeciesCount": 239,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 99.1701244813278,
+        "mammalRangeOccupancyRetentionPct": 96.25329815303427,
+        "exampleLocallyLostSpecies": [
+          "Dicerorhinus sumatrensis",
+          "Haeromys margarettae",
+          "Homo spDenisova",
+          "Manis paleojavanica",
+          "Panthera tigris"
+        ],
+        "nativeRasterCellCount": 12,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

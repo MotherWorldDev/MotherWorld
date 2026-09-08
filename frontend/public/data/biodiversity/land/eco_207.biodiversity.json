@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_207",
+  "regionName": "Carnarvon xeric shrublands",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.606939+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 85,
+      "currentSpeciesCount": 76,
+      "locallyLostSpeciesCount": 10,
+      "faunalRetentionPct": 89.41176470588235,
+      "rangeOccupancyRetentionPct": 79.37853107344628,
+      "exampleLocallyLostSpecies": [
+        "Dasyurus geoffroii",
+        "Isoodon auratus",
+        "Leporillus apicalis",
+        "Leporillus conditor",
+        "Macroderma gigas",
+        "Macrotis lagotis",
+        "Onychogalea lunata",
+        "Phascogale calura",
+        "Pseudomys chapmani",
+        "Thylacinus cynocephalus"
+      ],
+      "nativeRasterCellCount": 7,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_207",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.606939+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 85,
+        "currentMammalSpeciesCount": 76,
+        "locallyLostMammalSpeciesCount": 10,
+        "mammalFaunalRetentionPct": 89.41176470588235,
+        "mammalRangeOccupancyRetentionPct": 79.37853107344628,
+        "exampleLocallyLostSpecies": [
+          "Dasyurus geoffroii",
+          "Isoodon auratus",
+          "Leporillus apicalis",
+          "Leporillus conditor",
+          "Macroderma gigas",
+          "Macrotis lagotis",
+          "Onychogalea lunata",
+          "Phascogale calura",
+          "Pseudomys chapmani",
+          "Thylacinus cynocephalus"
+        ],
+        "nativeRasterCellCount": 7,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

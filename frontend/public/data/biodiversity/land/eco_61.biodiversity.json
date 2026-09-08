@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_61",
+  "regionName": "Victoria Basin forest-savanna",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.032552+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 374,
+      "currentSpeciesCount": 362,
+      "locallyLostSpeciesCount": 13,
+      "faunalRetentionPct": 96.79144385026738,
+      "rangeOccupancyRetentionPct": 94.01734968591087,
+      "exampleLocallyLostSpecies": [
+        "Antidorcas bondi",
+        "CapriniGen spA",
+        "Chaerephon russatus",
+        "Damaliscus hypsodon",
+        "Damaliscus niro",
+        "Kolpochoerus majus",
+        "Lycaon pictus",
+        "Metridiochoerus compactus",
+        "Oryx beisa",
+        "Pelorovis antiquus",
+        "Piliocolobus tephrosceles",
+        "Rusingoryx atopocranion",
+        "Tragelaphus derbianus"
+      ],
+      "nativeRasterCellCount": 17,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_61",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.032552+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 374,
+        "currentMammalSpeciesCount": 362,
+        "locallyLostMammalSpeciesCount": 13,
+        "mammalFaunalRetentionPct": 96.79144385026738,
+        "mammalRangeOccupancyRetentionPct": 94.01734968591087,
+        "exampleLocallyLostSpecies": [
+          "Antidorcas bondi",
+          "CapriniGen spA",
+          "Chaerephon russatus",
+          "Damaliscus hypsodon",
+          "Damaliscus niro",
+          "Kolpochoerus majus",
+          "Lycaon pictus",
+          "Metridiochoerus compactus",
+          "Oryx beisa",
+          "Pelorovis antiquus",
+          "Piliocolobus tephrosceles",
+          "Rusingoryx atopocranion",
+          "Tragelaphus derbianus"
+        ],
+        "nativeRasterCellCount": 17,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

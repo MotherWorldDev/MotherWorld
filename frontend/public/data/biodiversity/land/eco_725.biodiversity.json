@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_725",
+  "regionName": "Central Anatolian steppe",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.155677+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 68,
+      "currentSpeciesCount": 52,
+      "locallyLostSpeciesCount": 18,
+      "faunalRetentionPct": 76.47058823529412,
+      "rangeOccupancyRetentionPct": 74.21874999999996,
+      "exampleLocallyLostSpecies": [
+        "Bos primigenius",
+        "Castor fiber",
+        "Cervus elaphus",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Dama mesopotamica",
+        "Equus ferus",
+        "Equus hemionus",
+        "Felis chaus",
+        "Homo neanderthalensis",
+        "Hystrix refossa",
+        "Myotis capaccinii",
+        "Ovis orientalis",
+        "Panthera leo",
+        "Panthera pardus",
+        "Stephanorhinus hemitoechus",
+        "Stephanorhinus kirchbergensis",
+        "Ursus arctos"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_725",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.155677+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 68,
+        "currentMammalSpeciesCount": 52,
+        "locallyLostMammalSpeciesCount": 18,
+        "mammalFaunalRetentionPct": 76.47058823529412,
+        "mammalRangeOccupancyRetentionPct": 74.21874999999996,
+        "exampleLocallyLostSpecies": [
+          "Bos primigenius",
+          "Castor fiber",
+          "Cervus elaphus",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Dama mesopotamica",
+          "Equus ferus",
+          "Equus hemionus",
+          "Felis chaus",
+          "Homo neanderthalensis",
+          "Hystrix refossa",
+          "Myotis capaccinii",
+          "Ovis orientalis",
+          "Panthera leo",
+          "Panthera pardus",
+          "Stephanorhinus hemitoechus",
+          "Stephanorhinus kirchbergensis",
+          "Ursus arctos"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

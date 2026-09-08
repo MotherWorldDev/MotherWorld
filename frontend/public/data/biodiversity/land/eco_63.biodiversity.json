@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_63",
+  "regionName": "Western Congolian forest-savanna",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.052458+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 277,
+      "currentSpeciesCount": 273,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 98.55595667870035,
+      "rangeOccupancyRetentionPct": 94.89773950484394,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Epomophorus grandis",
+        "Lycaon pictus",
+        "Panthera leo",
+        "Parahyaena brunnea"
+      ],
+      "nativeRasterCellCount": 40,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_63",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.052458+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 277,
+        "currentMammalSpeciesCount": 273,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 98.55595667870035,
+        "mammalRangeOccupancyRetentionPct": 94.89773950484394,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Epomophorus grandis",
+          "Lycaon pictus",
+          "Panthera leo",
+          "Parahyaena brunnea"
+        ],
+        "nativeRasterCellCount": 40,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_673",
+  "regionName": "Northeast China Plain deciduous forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.099373+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 123,
+      "currentSpeciesCount": 112,
+      "locallyLostSpeciesCount": 13,
+      "faunalRetentionPct": 91.0569105691057,
+      "rangeOccupancyRetentionPct": 88.07669263031758,
+      "exampleLocallyLostSpecies": [
+        "Bos primigenius",
+        "Cervus nippon",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Globicephala melas",
+        "Homo spDenisova",
+        "Hydropotes inermis",
+        "Mammuthus primigenius",
+        "Panthera pardus",
+        "Panthera tigris",
+        "Rattus norvegicus",
+        "Stephanorhinus kirchbergensis"
+      ],
+      "nativeRasterCellCount": 28,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_673",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.099373+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 123,
+        "currentMammalSpeciesCount": 112,
+        "locallyLostMammalSpeciesCount": 13,
+        "mammalFaunalRetentionPct": 91.0569105691057,
+        "mammalRangeOccupancyRetentionPct": 88.07669263031758,
+        "exampleLocallyLostSpecies": [
+          "Bos primigenius",
+          "Cervus nippon",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Globicephala melas",
+          "Homo spDenisova",
+          "Hydropotes inermis",
+          "Mammuthus primigenius",
+          "Panthera pardus",
+          "Panthera tigris",
+          "Rattus norvegicus",
+          "Stephanorhinus kirchbergensis"
+        ],
+        "nativeRasterCellCount": 28,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

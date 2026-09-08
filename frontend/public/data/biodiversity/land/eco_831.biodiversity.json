@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_831",
+  "regionName": "North Arabian desert",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.288405+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 89,
+      "currentSpeciesCount": 72,
+      "locallyLostSpeciesCount": 19,
+      "faunalRetentionPct": 80.89887640449439,
+      "rangeOccupancyRetentionPct": 74.1935483870968,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos primigenius",
+        "Camelus dromedarius",
+        "Castor fiber",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Dama mesopotamica",
+        "Elephas maximus",
+        "Equus ferus",
+        "Equus hemionus",
+        "Gazella dorcas",
+        "Gazella saudiya",
+        "Hippopotamus amphibius",
+        "Homo neanderthalensis",
+        "Hystrix refossa",
+        "Oryx leucoryx",
+        "Panthera leo",
+        "Stephanorhinus hemitoechus",
+        "Ursus arctos"
+      ],
+      "nativeRasterCellCount": 49,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_831",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.288405+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 89,
+        "currentMammalSpeciesCount": 72,
+        "locallyLostMammalSpeciesCount": 19,
+        "mammalFaunalRetentionPct": 80.89887640449439,
+        "mammalRangeOccupancyRetentionPct": 74.1935483870968,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos primigenius",
+          "Camelus dromedarius",
+          "Castor fiber",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Dama mesopotamica",
+          "Elephas maximus",
+          "Equus ferus",
+          "Equus hemionus",
+          "Gazella dorcas",
+          "Gazella saudiya",
+          "Hippopotamus amphibius",
+          "Homo neanderthalensis",
+          "Hystrix refossa",
+          "Oryx leucoryx",
+          "Panthera leo",
+          "Stephanorhinus hemitoechus",
+          "Ursus arctos"
+        ],
+        "nativeRasterCellCount": 49,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

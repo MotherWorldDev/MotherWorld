@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_186",
+  "regionName": "Kimberly tropical savanna",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.584847+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 119,
+      "currentSpeciesCount": 109,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 91.59663865546219,
+      "rangeOccupancyRetentionPct": 91.46455223880598,
+      "exampleLocallyLostSpecies": [
+        "Bettongia anhydra",
+        "Bettongia lesueur",
+        "Bettongia penicillata",
+        "Chaeropus ecaudatus",
+        "Dasyurus geoffroii",
+        "Lagorchestes asomatus",
+        "Lagorchestes hirsutus",
+        "Perameles eremiana",
+        "Pseudomys chapmani",
+        "Sarcophilus harrisii",
+        "Thylacinus cynocephalus"
+      ],
+      "nativeRasterCellCount": 35,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_186",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.584847+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 119,
+        "currentMammalSpeciesCount": 109,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 91.59663865546219,
+        "mammalRangeOccupancyRetentionPct": 91.46455223880598,
+        "exampleLocallyLostSpecies": [
+          "Bettongia anhydra",
+          "Bettongia lesueur",
+          "Bettongia penicillata",
+          "Chaeropus ecaudatus",
+          "Dasyurus geoffroii",
+          "Lagorchestes asomatus",
+          "Lagorchestes hirsutus",
+          "Perameles eremiana",
+          "Pseudomys chapmani",
+          "Sarcophilus harrisii",
+          "Thylacinus cynocephalus"
+        ],
+        "nativeRasterCellCount": 35,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

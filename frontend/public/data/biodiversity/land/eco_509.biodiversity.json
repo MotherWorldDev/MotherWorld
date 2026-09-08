@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_509",
+  "regionName": "Trindade-Martin Vaz Islands tropical forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_509",
+    "geometryFingerprint": "dbf6a0e6779bd228a020c2af5b51878c90b7a9cdb3042a25d193517dcce5bb16",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -29.34525,
+      -20.52713888888889,
+      -28.841972222222225,
+      -20.46775
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_509",
+      "registryGeometryFingerprint": "dbf6a0e6779bd228a020c2af5b51878c90b7a9cdb3042a25d193517dcce5bb16",
+      "source": "brazil_official_island_baselines_2015",
+      "sourceUrl": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8400.htm",
+      "notes": "Records use the official island-group perimeter, including small waters between islets. The older map outline has a location error."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:8e1f5e3b8c16a267f2920cc1cee8e0e636c25a826ca1e97ff4cfc5db642e8eba",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 0,
+      "currentSpeciesCount": 0,
+      "locallyLostSpeciesCount": 0,
+      "faunalRetentionPct": null,
+      "rangeOccupancyRetentionPct": null,
+      "exampleLocallyLostSpecies": [],
+      "nativeRasterCellCount": 0,
+      "coverageStatus": "no_native_grid_cell"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_509",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T14:05:06.942514+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 0,
+        "currentMammalSpeciesCount": 0,
+        "locallyLostMammalSpeciesCount": 0,
+        "mammalFaunalRetentionPct": null,
+        "mammalRangeOccupancyRetentionPct": null,
+        "exampleLocallyLostSpecies": [],
+        "nativeRasterCellCount": 0,
+        "coverageStatus": "no_native_grid_cell"
+      },
+      "analysisGeometry": {
+        "schemaVersion": 1,
+        "regionId": "eco_509",
+        "geometryFingerprint": "dbf6a0e6779bd228a020c2af5b51878c90b7a9cdb3042a25d193517dcce5bb16",
+        "geometryFingerprintAlgorithm": "sha256-wkb",
+        "geometryType": "MultiPolygon",
+        "geometryBounds": [
+          -29.34525,
+          -20.52713888888889,
+          -28.841972222222225,
+          -20.46775
+        ],
+        "geometrySource": "maintained_query_override",
+        "overrideApplied": true,
+        "registryPath": "scripts/data/species-query-geometries.geojson",
+        "geometryOverride": {
+          "regionId": "eco_509",
+          "registryGeometryFingerprint": "dbf6a0e6779bd228a020c2af5b51878c90b7a9cdb3042a25d193517dcce5bb16",
+          "source": "brazil_official_island_baselines_2015",
+          "sourceUrl": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8400.htm",
+          "notes": "Records use the official island-group perimeter, including small waters between islets. The older map outline has a location error."
+        }
+      },
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:8e1f5e3b8c16a267f2920cc1cee8e0e636c25a826ca1e97ff4cfc5db642e8eba",
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

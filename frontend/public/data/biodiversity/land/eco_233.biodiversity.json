@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_233",
+  "regionName": "Himalayan subtropical broadleaf forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.635259+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 185,
+      "currentSpeciesCount": 174,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 94.05405405405405,
+      "rangeOccupancyRetentionPct": 90.49217002237135,
+      "exampleLocallyLostSpecies": [
+        "Bos mutus",
+        "Bos primigenius",
+        "Bubalus arnee",
+        "Castor fiber",
+        "Crocuta crocuta",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Pongo abelii",
+        "Rattus rattus",
+        "Sivacobus sankaliai",
+        "Stegodon orientalis",
+        "Tapirus augustus"
+      ],
+      "nativeRasterCellCount": 7,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_233",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.635259+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 185,
+        "currentMammalSpeciesCount": 174,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 94.05405405405405,
+        "mammalRangeOccupancyRetentionPct": 90.49217002237135,
+        "exampleLocallyLostSpecies": [
+          "Bos mutus",
+          "Bos primigenius",
+          "Bubalus arnee",
+          "Castor fiber",
+          "Crocuta crocuta",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Pongo abelii",
+          "Rattus rattus",
+          "Sivacobus sankaliai",
+          "Stegodon orientalis",
+          "Tapirus augustus"
+        ],
+        "nativeRasterCellCount": 7,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

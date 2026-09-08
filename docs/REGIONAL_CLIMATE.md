@@ -65,3 +65,11 @@ Useful controls:
 - `--force` — rebuild existing payloads.
 
 The builder is resumable at the region JSON level and updates `climate-extras.index.json` after every chunk.
+
+## Direct CDS regional acquisition
+
+The offline [`download_regional_climate_cds.py`](../scripts/download_regional_climate_cds.py) acquires ERA5-Land daily temperature, dew point, and 10 m wind components for canonical land/lake regions, or ERA5 daily data for marine regions. Month and variable selections bound request cost. It uses the maintained seven-region land footprints, records the actual request and analysis geometry, validates daily date coverage and NetCDF dimensions/units, and validates staged downloads before replacing existing files. Matching partial downloads can resume. Source commit: `83b8d26b`.
+
+The January 1991 `eco_689` pilot passed validation for all four variables and 31 daily records. This confirms acquisition only: it is not a complete 1991–2020 regional climatology, does not provide precipitation, and is not included as a scored historical series. Downstream reductions still require the full requested temporal coverage and their own geometry/provenance checks. Google Earth Engine is not required for this acquisition route.
+
+Validation: 26 combined downloader/geometry tests, including six focused regional tests and six invalid-month subtests. The real pilot was checked read-only. Raw inputs, request sidecars, and credentials remain local outside the published data tree.

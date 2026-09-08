@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_820",
+  "regionName": "Central Persian desert basins",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.274970+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 137,
+      "currentSpeciesCount": 121,
+      "locallyLostSpeciesCount": 18,
+      "faunalRetentionPct": 88.32116788321167,
+      "rangeOccupancyRetentionPct": 83.55635615028307,
+      "exampleLocallyLostSpecies": [
+        "Bos primigenius",
+        "Camelus dromedarius",
+        "Castor fiber",
+        "Cervus elaphus",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Dama mesopotamica",
+        "Elephas maximus",
+        "Equus ferus",
+        "Homo neanderthalensis",
+        "Homo spDenisova",
+        "Hystrix refossa",
+        "Myotis capaccinii",
+        "Myotis schaubi",
+        "Panthera leo",
+        "Panthera tigris",
+        "Stephanorhinus hemitoechus",
+        "Ursus thibetanus"
+      ],
+      "nativeRasterCellCount": 67,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_820",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.274970+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 137,
+        "currentMammalSpeciesCount": 121,
+        "locallyLostMammalSpeciesCount": 18,
+        "mammalFaunalRetentionPct": 88.32116788321167,
+        "mammalRangeOccupancyRetentionPct": 83.55635615028307,
+        "exampleLocallyLostSpecies": [
+          "Bos primigenius",
+          "Camelus dromedarius",
+          "Castor fiber",
+          "Cervus elaphus",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Dama mesopotamica",
+          "Elephas maximus",
+          "Equus ferus",
+          "Homo neanderthalensis",
+          "Homo spDenisova",
+          "Hystrix refossa",
+          "Myotis capaccinii",
+          "Myotis schaubi",
+          "Panthera leo",
+          "Panthera tigris",
+          "Stephanorhinus hemitoechus",
+          "Ursus thibetanus"
+        ],
+        "nativeRasterCellCount": 67,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

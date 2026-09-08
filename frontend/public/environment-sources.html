@@ -14,16 +14,23 @@
 <div class="card"><strong>Earth Health history:</strong> the headline and year slider use one fixed set of nine long-running backbones from 1993 to the latest year shared by every backbone. Newer/richer datasets are present-day diagnostics only and have zero Earth Health weight.</div><div class="card"><strong>Score direction:</strong> 100 = best condition / lowest pressure. Missing data never counts as healthy.</div>
 <h2>Earth Health backbones and diagnostics</h2>
 <table><thead><tr><th>Family</th><th>Scored historical backbone</th><th>Present-day diagnostics (not scored)</th></tr></thead><tbody>
-<tr id="biodiversity"><td>Biodiversity</td><td>BirdLife/IUCN Red List Index</td><td>NHM BII, IUCN spatial metrics, PHYLACINE, GBIF/OBIS context</td></tr>
+<tr><td>Biodiversity</td><td>BirdLife/IUCN Red List Index</td><td>NHM BII, IUCN spatial metrics, PHYLACINE, GBIF/OBIS context</td></tr>
 <tr><td>Habitat</td><td>Copernicus C3S annual land-cover direct-conversion retention</td><td>Hansen loss, Dynamic World, plantations, mining/waste</td></tr>
 <tr><td>Vegetation</td><td>NOAA AVHRR/VIIRS NDVI Climate Data Record</td><td>MODIS VCF tree/non-tree/bare cover</td></tr>
-<tr id="contaminants"><td>Pollution</td><td>NASA MERRA-2 reconstructed surface PM2.5</td><td>CAMS, Sentinel-5P/TROPOMI, land/water pollution and contaminants</td></tr>
+<tr><td>Pollution</td><td>NASA MERRA-2 reconstructed surface PM2.5</td><td>CAMS, Sentinel-5P/TROPOMI, land/water pollution and contaminants</td></tr>
 <tr><td>Climate forcing</td><td>NOAA AGGI</td><td>CO₂, CH₄ and N₂O concentrations</td></tr>
 <tr><td>Cryosphere</td><td>NOAA/NSIDC Arctic + Antarctic annual-minimum sea ice</td><td>Land-ice and glacier context</td></tr>
 <tr><td>Global Ocean</td><td>NOAA global 0–700 m ocean heat content</td><td>pH, sea level, water quality and later ocean diagnostics</td></tr>
 <tr><td>Freshwater stability</td><td>ERA5-Land root-zone soil-moisture regime stability</td><td>GRACE terrestrial water storage + JRC surface-water retention</td></tr>
 <tr><td>Ozone layer</td><td>100 − NOAA ODGI-ML</td><td>Antarctic ODGI-A</td></tr>
 </tbody></table>
+
+<h2 id="biodiversity">Regional Biodiversity tab</h2>
+<p>The Biodiversity tab loads historical-mammal context from PHYLACINE only when opened for a land region. Present-natural and current range maps provide species counts, locally lost examples, and retention measures. These are mapped range summaries, not abundance or population estimates, and carry <strong>zero Earth Health weight</strong>.</p>
+<p>The regional build assigns native raster cell centers to regions. Where the provider grid contains no cell center inside the region, the panel reports <strong>insufficient native spatial resolution</strong> and withholds numeric mammal counts. This applies to the seven corrected island/Antarctic footprints as well: better boundaries cannot create finer source coverage.</p>
+<h2 id="contaminants">Regional Contaminants tab</h2>
+<p>Marine contaminant diagnostics load only when the tab is opened. NOAA NCEI microplastics records remain separated by reporting unit, marine setting, sampling method, mesh size, and reported sampling depth. A quantified value includes a finite zero; a positive detection here means a positive reported concentration. The export has no explicit nondetect flag, so this distinction must not be read as a standardized laboratory detection-limit assessment.</p>
+<p>NOAA IncidentNews describes selected coastal incidents. Reported maximum potential releases are not necessarily quantities actually released. Both incident and measurement coverage reflect reporting and sampling effort; missing records do not establish clean water or zero pollution. These regional diagnostics carry <strong>zero Earth Health weight</strong>.</p>
 
 <h2>Regional Climate tab</h2>
 <p>The existing temperature-distribution module is supplemented by a separate 1991–2020 climatology for <strong>precipitation, relative humidity and wind</strong>. Land/lake regions use ECMWF ERA5-Land Daily Aggregated; marine regions use ECMWF ERA5 Daily. Relative humidity is derived from daily-mean temperature and dew point. Wind uses daily-mean 10 m u/v components and a 16-sector wind rose. These regional climate charts are diagnostics and carry <strong>zero Earth Health weight</strong>.</p>

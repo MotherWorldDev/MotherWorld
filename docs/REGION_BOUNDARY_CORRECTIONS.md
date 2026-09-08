@@ -2,7 +2,7 @@
 
 Last audited: **8 September 2026**, against published data at `fc565d78`, implementation commits `0b64991b`, `e1ee7442`, and `7d94246b`.
 
-**Status: species is fixed and published. Shared boundary corrections, producer provenance, and stale-result guards are implemented across the audited root pipelines:** geology/biodiversity (`0b64991b`), climate/pollution (`e1ee7442`), and local regional diagnostics (`7d94246b`). **Affected data rebuilds have not yet been published.** Source implementation is complete for these audited paths; the remaining work is rebuilding, checking provider coverage, and publishing the affected outputs.
+**Status: species is fixed and published. Shared boundary corrections, producer provenance, and stale-result guards are implemented across the audited root pipelines:** geology/biodiversity (`0b64991b`), climate/pollution (`e1ee7442`), and local regional diagnostics (`7d94246b`). **The regional diagnostics release includes rebuilt PHYLACINE records for all seven regions, with verified geometry provenance and explicit no-native-cell results. Affected geology, temperature, climate-extras, and pollution data releases remain pending.** Source implementation is complete for the audited paths; remaining components still require rebuild/release checks.
 
 ## What happened
 
@@ -36,7 +36,7 @@ For the five unchanged-source regions, LOD0 retains only approximately 1.1–33.
 | Land geology / GLiM | [geology_common.py](../scripts/geology_common.py) now corrects the base LOD0 geometry. All seven published records still contain GLiM summaries from the older footprints | Source correction complete in `0b64991b`; rebuild the seven records and reassess point/line providers |
 | Land temperature | [temperature_common.py](../scripts/temperature_common.py) now applies the maintained overrides after loading the LOD0 geometry. None of the seven has a rebuilt temperature record | Rebuild only when suitable ERA5 input is available; the existing geometry-hashed `processing_fingerprint` invalidates incompatible reductions |
 | Regional precipitation, humidity, and wind | [climate_extras_common.py](../scripts/climate_extras_common.py) now applies the maintained overrides after loading LOD0. None of the seven has a rebuilt regional climate-extras record | Rebuild the regional reduction when inputs are available; output reuse checks the corrected geometry identity |
-| Regional biodiversity / PHYLACINE | Original and fallback loaders now apply all seven maintained overrides | Source correction complete in `0b64991b`; rebuild affected PHYLACINE fragments with producer provenance and preserve explicit native-grid coverage status |
+| Regional biodiversity / PHYLACINE | Original and fallback loaders now apply all seven maintained overrides | Corrected seven-region fragments are included in the regional diagnostics release with verified producer provenance, `no_native_grid_cell`, and null retention; the UI withholds numeric mammal counts |
 | Land air pollution, contaminants, and land-pollution diagnostics | Reviewed root loaders now apply corrected geometry for original and fallback land paths; producer merges require matching identity and withhold missing/mismatched claims. No affected seven-region outputs have been rebuilt | Rebuild with valid source coverage; root and staged-output adapters now require geometry and producer provenance |
 | Regional environmental indices | These consume component summaries rather than choosing geometry themselves; no seven-region outputs were built | Rebuild after corrected components are available |
 | Marine/lake region records | The seven IDs are land regions, so they are not directly selected by marine/lake-only builders | Keep canonical IDs and normal provider coverage checks |
@@ -61,6 +61,8 @@ Fixing the boundary cannot create coverage that the provider does not have.
 
 The inspected PHYLACINE grid is native EPSG:6933, 360 × 142 cells. Both the staged and corrected footprints for all seven regions contain **zero native cell centers**. Their status remains `no_native_grid_cell`; retention metrics are null. Numeric count fields in such a payload must not be presented as evidence of zero mammals or complete faunal loss.
 
+The regional diagnostics release includes all 847 land records: 707 with native grid coverage and 140 with no native cell. The seven corrected payloads have matching registry fingerprints and producer cache identities. The lazy Biodiversity panel gates numeric output on native coverage before formatting any counts.
+
 An independent PHYLACINE rasterization bug was also fixed in source `a5977a1c`: rasterizing all regions with `all_touched=True` let later shapes overwrite earlier regions' cells. The corrected cell-center build reported 707 covered land regions and 140 with no native cell. That fix is separate from the seven-region boundary correction.
 
 No land-temperature value comparison was performed: the inspected cache had marine OISST data, not suitable land ERA5 input for these seven regions. Missing temperature/pollution records and insufficient raster resolution must remain explicit availability states. Missing observations do not mean clean land, zero species, or zero environmental pressure.
@@ -80,6 +82,8 @@ No land-temperature value comparison was performed: the inspected cache had mari
 The source correction in `0b64991b` passed 13 focused analysis-geometry, geology, and existing species-geometry tests, including rejection when a required reference footprint is unavailable. The `e1ee7442` climate/pollution changes passed 24 combined focused checks; the `7d94246b` adapter passed 7 checks. Late stale updates cannot erase a current verified result, and missing or uncorrected reference geometry cannot bypass validation. No affected seven-region climate/pollution outputs have been rebuilt. The existing OSM processing job saves regional counts rather than individual sites; those counts cannot be assigned corrected provenance without a targeted recalculation. Its affected records remain pending.
 
 The corrected registry belongs to offline data analysis. Its propagation must not reintroduce large detailed boundary assets into the browser or undo the map performance work.
+
+The direct regional CDS acquisition script added in `83b8d26b` also applies the maintained seven land footprints before constructing request bounds and cache fingerprints. Its validated pilot is an acquisition check, not a completed seven-region climate release.
 
 ## Maintainer references
 

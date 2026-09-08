@@ -6,7 +6,11 @@ function baseDir(url) {
 function resolveUrl(baseUrl, entryUrl) {
   const value = String(entryUrl || "");
   if (/^(?:https?:)?\/\//i.test(value) || value.startsWith("/") || value.startsWith("./")) return value;
-  return `${baseUrl}${value}`;
+  const normalizedBase = String(baseUrl).replace(/\/?$/, "/");
+  const basePath = normalizedBase.split(/[?#]/, 1)[0].replace(/\/+$/, "");
+  const family = basePath.slice(basePath.lastIndexOf("/") + 1);
+  if (family && value.startsWith(`${family}/`)) return `${normalizedBase}${value.slice(family.length + 1)}`;
+  return `${normalizedBase}${value}`;
 }
 
 export function createBiodiversityDataService(config = {}, fetcher = (...args) => fetch(...args)) {

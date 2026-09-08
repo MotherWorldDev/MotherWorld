@@ -1,7 +1,7 @@
 import { createGeologyDataService } from "./geologyDataService.js?v=20260908-env8-selenology";
 
 function esc(value){return String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));}
-function finite(v){const n=Number(v);return Number.isFinite(n)?n:null;}
+function finite(v){if((typeof v!=="number"&&typeof v!=="string")||(typeof v==="string"&&!v.trim()))return null;const n=Number(v);return Number.isFinite(n)?n:null;}
 function fmt(v,d=1,s=""){const n=finite(v);return n==null?"—":`${n.toFixed(d)}${s}`;}
 function count(v){const n=finite(v);return n==null?"—":Math.round(n).toLocaleString();}
 function meter(v){return fmt(v,0," mW/m²");}

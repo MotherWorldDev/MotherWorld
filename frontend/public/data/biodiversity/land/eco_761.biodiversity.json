@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_761",
+  "regionName": "Ordos Plateau steppe",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.198820+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 123,
+      "currentSpeciesCount": 112,
+      "locallyLostSpeciesCount": 13,
+      "faunalRetentionPct": 91.0569105691057,
+      "rangeOccupancyRetentionPct": 81.84357541899443,
+      "exampleLocallyLostSpecies": [
+        "Bos primigenius",
+        "Camelus ferus",
+        "Coelodonta antiquitatis",
+        "Crocuta crocuta",
+        "Equus ferus",
+        "Equus hemionus",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Procapra przewalskii",
+        "Sinomegaceros ordosianus",
+        "Spirocerus kiakhtensis",
+        "Stephanorhinus kirchbergensis",
+        "Ursus arctos"
+      ],
+      "nativeRasterCellCount": 21,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_761",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.198820+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 123,
+        "currentMammalSpeciesCount": 112,
+        "locallyLostMammalSpeciesCount": 13,
+        "mammalFaunalRetentionPct": 91.0569105691057,
+        "mammalRangeOccupancyRetentionPct": 81.84357541899443,
+        "exampleLocallyLostSpecies": [
+          "Bos primigenius",
+          "Camelus ferus",
+          "Coelodonta antiquitatis",
+          "Crocuta crocuta",
+          "Equus ferus",
+          "Equus hemionus",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Procapra przewalskii",
+          "Sinomegaceros ordosianus",
+          "Spirocerus kiakhtensis",
+          "Stephanorhinus kirchbergensis",
+          "Ursus arctos"
+        ],
+        "nativeRasterCellCount": 21,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

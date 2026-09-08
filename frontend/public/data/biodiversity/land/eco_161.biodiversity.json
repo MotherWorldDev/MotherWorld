@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_161",
+  "regionName": "Vogelkop-Aru lowland rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.559936+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 107,
+      "currentSpeciesCount": 106,
+      "locallyLostSpeciesCount": 4,
+      "faunalRetentionPct": 99.06542056074767,
+      "rangeOccupancyRetentionPct": 103.30097087378641,
+      "exampleLocallyLostSpecies": [
+        "Dactylopsila kambuayai",
+        "Dendrolagus mayri",
+        "Peroryctes spA",
+        "Petauroides ayamaruensis"
+      ],
+      "nativeRasterCellCount": 8,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_161",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.559936+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 107,
+        "currentMammalSpeciesCount": 106,
+        "locallyLostMammalSpeciesCount": 4,
+        "mammalFaunalRetentionPct": 99.06542056074767,
+        "mammalRangeOccupancyRetentionPct": 103.30097087378641,
+        "exampleLocallyLostSpecies": [
+          "Dactylopsila kambuayai",
+          "Dendrolagus mayri",
+          "Peroryctes spA",
+          "Petauroides ayamaruensis"
+        ],
+        "nativeRasterCellCount": 8,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

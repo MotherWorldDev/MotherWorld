@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_845",
+  "regionName": "West Sahara desert",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.304229+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 54,
+      "currentSpeciesCount": 41,
+      "locallyLostSpeciesCount": 14,
+      "faunalRetentionPct": 75.92592592592592,
+      "rangeOccupancyRetentionPct": 72.6844583987441,
+      "exampleLocallyLostSpecies": [
+        "Bos primigenius",
+        "Camelus dromedarius",
+        "Caracal caracal",
+        "Crocuta crocuta",
+        "Dama mesopotamica",
+        "Elephas iolensis",
+        "Equus africanus",
+        "Equus ferus",
+        "Loxodonta africana",
+        "Nanger dama",
+        "Oryx dammah",
+        "Panthera leo",
+        "Sus scrofa",
+        "Ursus arctos"
+      ],
+      "nativeRasterCellCount": 79,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_845",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.304229+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 54,
+        "currentMammalSpeciesCount": 41,
+        "locallyLostMammalSpeciesCount": 14,
+        "mammalFaunalRetentionPct": 75.92592592592592,
+        "mammalRangeOccupancyRetentionPct": 72.6844583987441,
+        "exampleLocallyLostSpecies": [
+          "Bos primigenius",
+          "Camelus dromedarius",
+          "Caracal caracal",
+          "Crocuta crocuta",
+          "Dama mesopotamica",
+          "Elephas iolensis",
+          "Equus africanus",
+          "Equus ferus",
+          "Loxodonta africana",
+          "Nanger dama",
+          "Oryx dammah",
+          "Panthera leo",
+          "Sus scrofa",
+          "Ursus arctos"
+        ],
+        "nativeRasterCellCount": 79,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

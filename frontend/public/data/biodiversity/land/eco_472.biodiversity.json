@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_472",
+  "regionName": "Jamaican moist forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.883731+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 53,
+      "currentSpeciesCount": 49,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 92.45283018867924,
+      "rangeOccupancyRetentionPct": 92.45283018867923,
+      "exampleLocallyLostSpecies": [
+        "Neomonachus tropicalis",
+        "Oryzomys antillarum",
+        "Oryzomys couesi",
+        "Xaymaca fulvopulvis",
+        "Xenothrix mcgregori"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_472",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.883731+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 53,
+        "currentMammalSpeciesCount": 49,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 92.45283018867924,
+        "mammalRangeOccupancyRetentionPct": 92.45283018867923,
+        "exampleLocallyLostSpecies": [
+          "Neomonachus tropicalis",
+          "Oryzomys antillarum",
+          "Oryzomys couesi",
+          "Xaymaca fulvopulvis",
+          "Xenothrix mcgregori"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

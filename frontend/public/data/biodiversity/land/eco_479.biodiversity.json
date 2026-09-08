@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_479",
+  "regionName": "Marañón dry forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.890438+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 193,
+      "currentSpeciesCount": 185,
+      "locallyLostSpeciesCount": 9,
+      "faunalRetentionPct": 95.85492227979275,
+      "rangeOccupancyRetentionPct": 96.4179104477612,
+      "exampleLocallyLostSpecies": [
+        "Canis dirus",
+        "Desmodus draculae",
+        "Equus ferus",
+        "Eremotherium laurillardi",
+        "Hippocamelus antisensis",
+        "Myotis simus",
+        "Neochoerus aesopi",
+        "Notiomastodon platensis",
+        "Smilodon populator"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_479",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.890438+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 193,
+        "currentMammalSpeciesCount": 185,
+        "locallyLostMammalSpeciesCount": 9,
+        "mammalFaunalRetentionPct": 95.85492227979275,
+        "mammalRangeOccupancyRetentionPct": 96.4179104477612,
+        "exampleLocallyLostSpecies": [
+          "Canis dirus",
+          "Desmodus draculae",
+          "Equus ferus",
+          "Eremotherium laurillardi",
+          "Hippocamelus antisensis",
+          "Myotis simus",
+          "Neochoerus aesopi",
+          "Notiomastodon platensis",
+          "Smilodon populator"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

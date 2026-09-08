@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_35",
+  "regionName": "Angolan scarp savanna and woodlands",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.757511+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 227,
+      "currentSpeciesCount": 217,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 95.59471365638767,
+      "rangeOccupancyRetentionPct": 93.69034994697775,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Damaliscus hypsodon",
+        "Damaliscus lunatus",
+        "Damaliscus niro",
+        "Hippopotamus amphibius",
+        "Kolpochoerus majus",
+        "Lycaon pictus",
+        "Metridiochoerus compactus",
+        "Panthera leo",
+        "Parahyaena brunnea",
+        "Rusingoryx atopocranion"
+      ],
+      "nativeRasterCellCount": 17,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_35",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.757511+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 227,
+        "currentMammalSpeciesCount": 217,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 95.59471365638767,
+        "mammalRangeOccupancyRetentionPct": 93.69034994697775,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Damaliscus hypsodon",
+          "Damaliscus lunatus",
+          "Damaliscus niro",
+          "Hippopotamus amphibius",
+          "Kolpochoerus majus",
+          "Lycaon pictus",
+          "Metridiochoerus compactus",
+          "Panthera leo",
+          "Parahyaena brunnea",
+          "Rusingoryx atopocranion"
+        ],
+        "nativeRasterCellCount": 17,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

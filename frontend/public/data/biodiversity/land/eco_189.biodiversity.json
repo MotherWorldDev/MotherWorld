@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_189",
+  "regionName": "Victoria Plains tropical savanna",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.587845+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 69,
+      "currentSpeciesCount": 57,
+      "locallyLostSpeciesCount": 13,
+      "faunalRetentionPct": 82.6086956521739,
+      "rangeOccupancyRetentionPct": 86.61825726141079,
+      "exampleLocallyLostSpecies": [
+        "Bettongia anhydra",
+        "Bettongia lesueur",
+        "Chaeropus ecaudatus",
+        "Dasyurus geoffroii",
+        "Dasyurus hallucatus",
+        "Isoodon auratus",
+        "Lagorchestes hirsutus",
+        "Mesembriomys gouldii",
+        "Mesembriomys macrurus",
+        "Perameles eremiana",
+        "Phascogale calura",
+        "Sarcophilus harrisii",
+        "Thylacinus cynocephalus"
+      ],
+      "nativeRasterCellCount": 25,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_189",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.587845+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 69,
+        "currentMammalSpeciesCount": 57,
+        "locallyLostMammalSpeciesCount": 13,
+        "mammalFaunalRetentionPct": 82.6086956521739,
+        "mammalRangeOccupancyRetentionPct": 86.61825726141079,
+        "exampleLocallyLostSpecies": [
+          "Bettongia anhydra",
+          "Bettongia lesueur",
+          "Chaeropus ecaudatus",
+          "Dasyurus geoffroii",
+          "Dasyurus hallucatus",
+          "Isoodon auratus",
+          "Lagorchestes hirsutus",
+          "Mesembriomys gouldii",
+          "Mesembriomys macrurus",
+          "Perameles eremiana",
+          "Phascogale calura",
+          "Sarcophilus harrisii",
+          "Thylacinus cynocephalus"
+        ],
+        "nativeRasterCellCount": 25,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

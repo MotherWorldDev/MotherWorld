@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_273",
+  "regionName": "Southwest Borneo freshwater swamp forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.677212+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 171,
+      "currentSpeciesCount": 166,
+      "locallyLostSpeciesCount": 8,
+      "faunalRetentionPct": 97.07602339181287,
+      "rangeOccupancyRetentionPct": 95.28795811518323,
+      "exampleLocallyLostSpecies": [
+        "Bos javanicus",
+        "Catopuma badia",
+        "Dicerorhinus sumatrensis",
+        "Homo spDenisova",
+        "Manis paleojavanica",
+        "Melogale everetti",
+        "Panthera tigris",
+        "Petinomys genibarbis"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_273",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.677212+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 171,
+        "currentMammalSpeciesCount": 166,
+        "locallyLostMammalSpeciesCount": 8,
+        "mammalFaunalRetentionPct": 97.07602339181287,
+        "mammalRangeOccupancyRetentionPct": 95.28795811518323,
+        "exampleLocallyLostSpecies": [
+          "Bos javanicus",
+          "Catopuma badia",
+          "Dicerorhinus sumatrensis",
+          "Homo spDenisova",
+          "Manis paleojavanica",
+          "Melogale everetti",
+          "Panthera tigris",
+          "Petinomys genibarbis"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_272",
+  "regionName": "Southern Annamites montane rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.675204+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 189,
+      "currentSpeciesCount": 180,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 95.23809523809524,
+      "rangeOccupancyRetentionPct": 92.45585874799359,
+      "exampleLocallyLostSpecies": [
+        "Bubalus arnee",
+        "Cervus nippon",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Panthera tigris",
+        "Pongo abelii",
+        "Prionailurus viverrinus",
+        "Rucervus eldii",
+        "Stegodon orientalis",
+        "Sus bucculentus",
+        "Tapirus augustus"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_272",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.675204+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 189,
+        "currentMammalSpeciesCount": 180,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 95.23809523809524,
+        "mammalRangeOccupancyRetentionPct": 92.45585874799359,
+        "exampleLocallyLostSpecies": [
+          "Bubalus arnee",
+          "Cervus nippon",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Panthera tigris",
+          "Pongo abelii",
+          "Prionailurus viverrinus",
+          "Rucervus eldii",
+          "Stegodon orientalis",
+          "Sus bucculentus",
+          "Tapirus augustus"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_754",
+  "regionName": "Karakoram-West Tibetan Plateau alpine steppe",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.192291+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 132,
+      "currentSpeciesCount": 122,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 92.42424242424242,
+      "rangeOccupancyRetentionPct": 89.97747747747746,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos mutus",
+        "Bos primigenius",
+        "Camelus dromedarius",
+        "Caracal caracal",
+        "Castor fiber",
+        "Crocuta crocuta",
+        "Elephas maximus",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Spirocerus kiakhtensis",
+        "Stephanorhinus kirchbergensis"
+      ],
+      "nativeRasterCellCount": 15,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_754",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.192291+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 132,
+        "currentMammalSpeciesCount": 122,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 92.42424242424242,
+        "mammalRangeOccupancyRetentionPct": 89.97747747747746,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos mutus",
+          "Bos primigenius",
+          "Camelus dromedarius",
+          "Caracal caracal",
+          "Castor fiber",
+          "Crocuta crocuta",
+          "Elephas maximus",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Spirocerus kiakhtensis",
+          "Stephanorhinus kirchbergensis"
+        ],
+        "nativeRasterCellCount": 15,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_813",
+  "regionName": "Badghyz and Karabil semi-desert",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.265120+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 105,
+      "currentSpeciesCount": 93,
+      "locallyLostSpeciesCount": 13,
+      "faunalRetentionPct": 88.57142857142857,
+      "rangeOccupancyRetentionPct": 81.63265306122447,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos primigenius",
+        "Camelus dromedarius",
+        "Capra falconeri",
+        "Castor fiber",
+        "Cervus canadensis",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Myomimus personatus",
+        "Panthera tigris",
+        "Stephanorhinus kirchbergensis"
+      ],
+      "nativeRasterCellCount": 14,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_813",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.265120+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 105,
+        "currentMammalSpeciesCount": 93,
+        "locallyLostMammalSpeciesCount": 13,
+        "mammalFaunalRetentionPct": 88.57142857142857,
+        "mammalRangeOccupancyRetentionPct": 81.63265306122447,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos primigenius",
+          "Camelus dromedarius",
+          "Capra falconeri",
+          "Castor fiber",
+          "Cervus canadensis",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Myomimus personatus",
+          "Panthera tigris",
+          "Stephanorhinus kirchbergensis"
+        ],
+        "nativeRasterCellCount": 14,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

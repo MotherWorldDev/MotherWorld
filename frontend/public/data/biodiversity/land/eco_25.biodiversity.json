@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_25",
+  "regionName": "Northern Swahili coastal forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.653478+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 300,
+      "currentSpeciesCount": 287,
+      "locallyLostSpeciesCount": 14,
+      "faunalRetentionPct": 95.66666666666667,
+      "rangeOccupancyRetentionPct": 92.51485148514844,
+      "exampleLocallyLostSpecies": [
+        "Ammodorcas clarkei",
+        "Antidorcas bondi",
+        "Camelus dromedarius",
+        "CapriniGen spA",
+        "Damaliscus hypsodon",
+        "Damaliscus niro",
+        "Elephas iolensis",
+        "Equus africanus",
+        "Equus grevyi",
+        "Kolpochoerus majus",
+        "Metridiochoerus compactus",
+        "Rhinolophus maendeleo",
+        "Rhinopoma macinnesi",
+        "Rusingoryx atopocranion"
+      ],
+      "nativeRasterCellCount": 18,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_25",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.653478+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 300,
+        "currentMammalSpeciesCount": 287,
+        "locallyLostMammalSpeciesCount": 14,
+        "mammalFaunalRetentionPct": 95.66666666666667,
+        "mammalRangeOccupancyRetentionPct": 92.51485148514844,
+        "exampleLocallyLostSpecies": [
+          "Ammodorcas clarkei",
+          "Antidorcas bondi",
+          "Camelus dromedarius",
+          "CapriniGen spA",
+          "Damaliscus hypsodon",
+          "Damaliscus niro",
+          "Elephas iolensis",
+          "Equus africanus",
+          "Equus grevyi",
+          "Kolpochoerus majus",
+          "Metridiochoerus compactus",
+          "Rhinolophus maendeleo",
+          "Rhinopoma macinnesi",
+          "Rusingoryx atopocranion"
+        ],
+        "nativeRasterCellCount": 18,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

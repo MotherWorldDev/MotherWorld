@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_48",
+  "regionName": "Limpopo lowveld",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.890438+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 206,
+      "currentSpeciesCount": 196,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 95.14563106796116,
+      "rangeOccupancyRetentionPct": 92.66055045871563,
+      "exampleLocallyLostSpecies": [
+        "Antidorcas australis",
+        "Antidorcas bondi",
+        "CapriniGen spA",
+        "Damaliscus hypsodon",
+        "Damaliscus niro",
+        "Kolpochoerus majus",
+        "Megalotragus priscus",
+        "Metridiochoerus compactus",
+        "Mus neavei",
+        "Pelorovis antiquus",
+        "Rusingoryx atopocranion"
+      ],
+      "nativeRasterCellCount": 9,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_48",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.890438+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 206,
+        "currentMammalSpeciesCount": 196,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 95.14563106796116,
+        "mammalRangeOccupancyRetentionPct": 92.66055045871563,
+        "exampleLocallyLostSpecies": [
+          "Antidorcas australis",
+          "Antidorcas bondi",
+          "CapriniGen spA",
+          "Damaliscus hypsodon",
+          "Damaliscus niro",
+          "Kolpochoerus majus",
+          "Megalotragus priscus",
+          "Metridiochoerus compactus",
+          "Mus neavei",
+          "Pelorovis antiquus",
+          "Rusingoryx atopocranion"
+        ],
+        "nativeRasterCellCount": 9,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

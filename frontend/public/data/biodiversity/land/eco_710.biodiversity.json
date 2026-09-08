@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_710",
+  "regionName": "East Siberian taiga",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.140861+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 143,
+      "currentSpeciesCount": 128,
+      "locallyLostSpeciesCount": 18,
+      "faunalRetentionPct": 89.5104895104895,
+      "rangeOccupancyRetentionPct": 88.62814938976483,
+      "exampleLocallyLostSpecies": [
+        "Bison bonasus",
+        "Bos mutus",
+        "Bos primigenius",
+        "Coelodonta antiquitatis",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Equus ovodovi",
+        "Globicephala melas",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Megaloceros giganteus",
+        "Ovibos moschatus",
+        "Panthera spelaea",
+        "Panthera tigris",
+        "Soergelia minor",
+        "Spirocerus kiakhtensis",
+        "Stephanorhinus kirchbergensis",
+        "Ursus spelaeus"
+      ],
+      "nativeRasterCellCount": 428,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_710",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.140861+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 143,
+        "currentMammalSpeciesCount": 128,
+        "locallyLostMammalSpeciesCount": 18,
+        "mammalFaunalRetentionPct": 89.5104895104895,
+        "mammalRangeOccupancyRetentionPct": 88.62814938976483,
+        "exampleLocallyLostSpecies": [
+          "Bison bonasus",
+          "Bos mutus",
+          "Bos primigenius",
+          "Coelodonta antiquitatis",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Equus ovodovi",
+          "Globicephala melas",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Megaloceros giganteus",
+          "Ovibos moschatus",
+          "Panthera spelaea",
+          "Panthera tigris",
+          "Soergelia minor",
+          "Spirocerus kiakhtensis",
+          "Stephanorhinus kirchbergensis",
+          "Ursus spelaeus"
+        ],
+        "nativeRasterCellCount": 428,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

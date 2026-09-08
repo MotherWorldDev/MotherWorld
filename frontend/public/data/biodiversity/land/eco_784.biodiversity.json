@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_784",
+  "regionName": "Yamal-Gydan tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.228836+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 56,
+      "currentSpeciesCount": 47,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 83.92857142857143,
+      "rangeOccupancyRetentionPct": 67.87535410764872,
+      "exampleLocallyLostSpecies": [
+        "Bison bonasus",
+        "Castor fiber",
+        "Coelodonta antiquitatis",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Equus ovodovi",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Megaloceros giganteus",
+        "Ovibos moschatus",
+        "Panthera spelaea",
+        "Soergelia minor"
+      ],
+      "nativeRasterCellCount": 46,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_784",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.228836+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 56,
+        "currentMammalSpeciesCount": 47,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 83.92857142857143,
+        "mammalRangeOccupancyRetentionPct": 67.87535410764872,
+        "exampleLocallyLostSpecies": [
+          "Bison bonasus",
+          "Castor fiber",
+          "Coelodonta antiquitatis",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Equus ovodovi",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Megaloceros giganteus",
+          "Ovibos moschatus",
+          "Panthera spelaea",
+          "Soergelia minor"
+        ],
+        "nativeRasterCellCount": 46,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

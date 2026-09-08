@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_407",
+  "regionName": "Arctic coastal tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.819391+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 49,
+      "currentSpeciesCount": 41,
+      "locallyLostSpeciesCount": 10,
+      "faunalRetentionPct": 83.6734693877551,
+      "rangeOccupancyRetentionPct": 80.08385744234803,
+      "exampleLocallyLostSpecies": [
+        "Arctodus simus",
+        "Brachyprotoma obtusata",
+        "Camelops hesternus",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Mammuthus primigenius",
+        "Ochotona whartoni",
+        "Panthera spelaea",
+        "Saiga tatarica",
+        "Vulpes vulpes"
+      ],
+      "nativeRasterCellCount": 11,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_407",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.819391+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 49,
+        "currentMammalSpeciesCount": 41,
+        "locallyLostMammalSpeciesCount": 10,
+        "mammalFaunalRetentionPct": 83.6734693877551,
+        "mammalRangeOccupancyRetentionPct": 80.08385744234803,
+        "exampleLocallyLostSpecies": [
+          "Arctodus simus",
+          "Brachyprotoma obtusata",
+          "Camelops hesternus",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Mammuthus primigenius",
+          "Ochotona whartoni",
+          "Panthera spelaea",
+          "Saiga tatarica",
+          "Vulpes vulpes"
+        ],
+        "nativeRasterCellCount": 11,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

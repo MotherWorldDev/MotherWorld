@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_774",
+  "regionName": "Kola Peninsula tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.214729+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 58,
+      "currentSpeciesCount": 48,
+      "locallyLostSpeciesCount": 13,
+      "faunalRetentionPct": 82.75862068965517,
+      "rangeOccupancyRetentionPct": 79.27631578947361,
+      "exampleLocallyLostSpecies": [
+        "Coelodonta antiquitatis",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Equus ovodovi",
+        "Felis silvestris",
+        "Homo neanderthalensis",
+        "Mammuthus primigenius",
+        "Martes zibellina",
+        "Megaloceros giganteus",
+        "Panthera spelaea",
+        "Rangifer tarandus",
+        "Soergelia minor"
+      ],
+      "nativeRasterCellCount": 6,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_774",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.214729+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 58,
+        "currentMammalSpeciesCount": 48,
+        "locallyLostMammalSpeciesCount": 13,
+        "mammalFaunalRetentionPct": 82.75862068965517,
+        "mammalRangeOccupancyRetentionPct": 79.27631578947361,
+        "exampleLocallyLostSpecies": [
+          "Coelodonta antiquitatis",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Equus ovodovi",
+          "Felis silvestris",
+          "Homo neanderthalensis",
+          "Mammuthus primigenius",
+          "Martes zibellina",
+          "Megaloceros giganteus",
+          "Panthera spelaea",
+          "Rangifer tarandus",
+          "Soergelia minor"
+        ],
+        "nativeRasterCellCount": 6,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

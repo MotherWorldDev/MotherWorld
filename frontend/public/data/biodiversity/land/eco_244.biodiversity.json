@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_244",
+  "regionName": "Meghalaya subtropical forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.647959+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 170,
+      "currentSpeciesCount": 154,
+      "locallyLostSpeciesCount": 17,
+      "faunalRetentionPct": 90.58823529411765,
+      "rangeOccupancyRetentionPct": 88.63232682060394,
+      "exampleLocallyLostSpecies": [
+        "Antilope cervicapra",
+        "Axis axis",
+        "Belomys pearsonii",
+        "Bos javanicus",
+        "Bos primigenius",
+        "Boselaphus tragocamelus",
+        "Dicerorhinus sumatrensis",
+        "Diomys crumpi",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Lutra sumatrana",
+        "Pongo abelii",
+        "Rhinoceros sondaicus",
+        "Sivacobus sankaliai",
+        "Stegodon orientalis",
+        "Tapirus augustus",
+        "Viverra megaspila"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_244",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.647959+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 170,
+        "currentMammalSpeciesCount": 154,
+        "locallyLostMammalSpeciesCount": 17,
+        "mammalFaunalRetentionPct": 90.58823529411765,
+        "mammalRangeOccupancyRetentionPct": 88.63232682060394,
+        "exampleLocallyLostSpecies": [
+          "Antilope cervicapra",
+          "Axis axis",
+          "Belomys pearsonii",
+          "Bos javanicus",
+          "Bos primigenius",
+          "Boselaphus tragocamelus",
+          "Dicerorhinus sumatrensis",
+          "Diomys crumpi",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Lutra sumatrana",
+          "Pongo abelii",
+          "Rhinoceros sondaicus",
+          "Sivacobus sankaliai",
+          "Stegodon orientalis",
+          "Tapirus augustus",
+          "Viverra megaspila"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

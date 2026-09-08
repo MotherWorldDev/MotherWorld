@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_45",
+  "regionName": "Horn of Africa xeric bushlands",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.863104+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 130,
+      "currentSpeciesCount": 118,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 90.76923076923077,
+      "rangeOccupancyRetentionPct": 83.31288343558282,
+      "exampleLocallyLostSpecies": [
+        "Camelus dromedarius",
+        "Canis simensis",
+        "Diceros bicornis",
+        "Elephas iolensis",
+        "Equus africanus",
+        "Equus grevyi",
+        "Hippopotamus amphibius",
+        "Leptailurus serval",
+        "Loxodonta africana",
+        "Lycaon pictus",
+        "Panthera leo",
+        "Rhinopoma macinnesi"
+      ],
+      "nativeRasterCellCount": 26,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_45",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.863104+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 130,
+        "currentMammalSpeciesCount": 118,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 90.76923076923077,
+        "mammalRangeOccupancyRetentionPct": 83.31288343558282,
+        "exampleLocallyLostSpecies": [
+          "Camelus dromedarius",
+          "Canis simensis",
+          "Diceros bicornis",
+          "Elephas iolensis",
+          "Equus africanus",
+          "Equus grevyi",
+          "Hippopotamus amphibius",
+          "Leptailurus serval",
+          "Loxodonta africana",
+          "Lycaon pictus",
+          "Panthera leo",
+          "Rhinopoma macinnesi"
+        ],
+        "nativeRasterCellCount": 26,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

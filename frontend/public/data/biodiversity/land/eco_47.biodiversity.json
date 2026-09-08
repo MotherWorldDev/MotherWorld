@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_47",
+  "regionName": "Kalahari Acacia woodlands",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.882221+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 130,
+      "currentSpeciesCount": 124,
+      "locallyLostSpeciesCount": 6,
+      "faunalRetentionPct": 95.38461538461539,
+      "rangeOccupancyRetentionPct": 88.63636363636361,
+      "exampleLocallyLostSpecies": [
+        "Antidorcas bondi",
+        "Damaliscus hypsodon",
+        "Damaliscus niro",
+        "Kolpochoerus majus",
+        "Metridiochoerus compactus",
+        "Rusingoryx atopocranion"
+      ],
+      "nativeRasterCellCount": 11,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_47",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.882221+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 130,
+        "currentMammalSpeciesCount": 124,
+        "locallyLostMammalSpeciesCount": 6,
+        "mammalFaunalRetentionPct": 95.38461538461539,
+        "mammalRangeOccupancyRetentionPct": 88.63636363636361,
+        "exampleLocallyLostSpecies": [
+          "Antidorcas bondi",
+          "Damaliscus hypsodon",
+          "Damaliscus niro",
+          "Kolpochoerus majus",
+          "Metridiochoerus compactus",
+          "Rusingoryx atopocranion"
+        ],
+        "nativeRasterCellCount": 11,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_179",
+  "regionName": "Tasmanian temperate rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.576528+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 77,
+      "currentSpeciesCount": 65,
+      "locallyLostSpeciesCount": 13,
+      "faunalRetentionPct": 84.41558441558442,
+      "rangeOccupancyRetentionPct": 84.26573426573424,
+      "exampleLocallyLostSpecies": [
+        "Macropus pearsoni",
+        "Megalibgwilia ramsayi",
+        "Metasthenurus newtonae",
+        "Neophoca cinerea",
+        "Palorchestes azeal",
+        "Procoptodon rapha",
+        "Protemnodon anak",
+        "Simosthenurus maddocki",
+        "Simosthenurus occidentalis",
+        "Simosthenurus pales",
+        "Thylacinus cynocephalus",
+        "Thylacoleo carnifex",
+        "Troposodon minor"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_179",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.576528+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 77,
+        "currentMammalSpeciesCount": 65,
+        "locallyLostMammalSpeciesCount": 13,
+        "mammalFaunalRetentionPct": 84.41558441558442,
+        "mammalRangeOccupancyRetentionPct": 84.26573426573424,
+        "exampleLocallyLostSpecies": [
+          "Macropus pearsoni",
+          "Megalibgwilia ramsayi",
+          "Metasthenurus newtonae",
+          "Neophoca cinerea",
+          "Palorchestes azeal",
+          "Procoptodon rapha",
+          "Protemnodon anak",
+          "Simosthenurus maddocki",
+          "Simosthenurus occidentalis",
+          "Simosthenurus pales",
+          "Thylacinus cynocephalus",
+          "Thylacoleo carnifex",
+          "Troposodon minor"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

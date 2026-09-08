@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_1",
+  "regionName": "Albertine Rift montane forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.498306+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 362,
+      "currentSpeciesCount": 348,
+      "locallyLostSpeciesCount": 15,
+      "faunalRetentionPct": 96.13259668508287,
+      "rangeOccupancyRetentionPct": 96.67381974248923,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Antidorcas bondi",
+        "Caracal caracal",
+        "Chaerephon russatus",
+        "Crocidura stenocephala",
+        "Damaliscus hypsodon",
+        "Glauconycteris gleni",
+        "Kolpochoerus majus",
+        "Lycaon pictus",
+        "Metridiochoerus compactus",
+        "Proteles cristata",
+        "Raphicerus campestris",
+        "Rusingoryx atopocranion",
+        "Thamnomys schoutedeni",
+        "Tragelaphus derbianus"
+      ],
+      "nativeRasterCellCount": 14,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_1",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.498306+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 362,
+        "currentMammalSpeciesCount": 348,
+        "locallyLostMammalSpeciesCount": 15,
+        "mammalFaunalRetentionPct": 96.13259668508287,
+        "mammalRangeOccupancyRetentionPct": 96.67381974248923,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Antidorcas bondi",
+          "Caracal caracal",
+          "Chaerephon russatus",
+          "Crocidura stenocephala",
+          "Damaliscus hypsodon",
+          "Glauconycteris gleni",
+          "Kolpochoerus majus",
+          "Lycaon pictus",
+          "Metridiochoerus compactus",
+          "Proteles cristata",
+          "Raphicerus campestris",
+          "Rusingoryx atopocranion",
+          "Thamnomys schoutedeni",
+          "Tragelaphus derbianus"
+        ],
+        "nativeRasterCellCount": 14,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_431",
+  "regionName": "Gulf of California xeric scrub",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.844923+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 87,
+      "currentSpeciesCount": 81,
+      "locallyLostSpeciesCount": 8,
+      "faunalRetentionPct": 93.10344827586206,
+      "rangeOccupancyRetentionPct": 94.33962264150942,
+      "exampleLocallyLostSpecies": [
+        "Antilocapra americana",
+        "Desmodus stocki",
+        "Equus ferus",
+        "Equus francisci",
+        "Mammuthus columbi",
+        "Megalonyx jeffersonii",
+        "Neotoma bunkeri",
+        "Panthera onca"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_431",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.844923+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 87,
+        "currentMammalSpeciesCount": 81,
+        "locallyLostMammalSpeciesCount": 8,
+        "mammalFaunalRetentionPct": 93.10344827586206,
+        "mammalRangeOccupancyRetentionPct": 94.33962264150942,
+        "exampleLocallyLostSpecies": [
+          "Antilocapra americana",
+          "Desmodus stocki",
+          "Equus ferus",
+          "Equus francisci",
+          "Mammuthus columbi",
+          "Megalonyx jeffersonii",
+          "Neotoma bunkeri",
+          "Panthera onca"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

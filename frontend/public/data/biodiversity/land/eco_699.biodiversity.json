@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_699",
+  "regionName": "Honshu alpine conifer forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.125488+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 105,
+      "currentSpeciesCount": 97,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 92.38095238095238,
+      "rangeOccupancyRetentionPct": 90.73170731707314,
+      "exampleLocallyLostSpecies": [
+        "Canis lupus",
+        "Elephas naumanii",
+        "Equus ferus",
+        "Globicephala melas",
+        "Lutra lutra",
+        "Mammuthus primigenius",
+        "Martes zibellina",
+        "Panthera tigris",
+        "Sinomegaceros yabei",
+        "Tadarida insignis",
+        "Zalophus japonicus"
+      ],
+      "nativeRasterCellCount": 3,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_699",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.125488+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 105,
+        "currentMammalSpeciesCount": 97,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 92.38095238095238,
+        "mammalRangeOccupancyRetentionPct": 90.73170731707314,
+        "exampleLocallyLostSpecies": [
+          "Canis lupus",
+          "Elephas naumanii",
+          "Equus ferus",
+          "Globicephala melas",
+          "Lutra lutra",
+          "Mammuthus primigenius",
+          "Martes zibellina",
+          "Panthera tigris",
+          "Sinomegaceros yabei",
+          "Tadarida insignis",
+          "Zalophus japonicus"
+        ],
+        "nativeRasterCellCount": 3,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

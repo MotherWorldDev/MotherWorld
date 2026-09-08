@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_369",
+  "regionName": "Alaska Peninsula montane taiga",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.777294+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 72,
+      "currentSpeciesCount": 63,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 87.5,
+      "rangeOccupancyRetentionPct": 86.85258964143425,
+      "exampleLocallyLostSpecies": [
+        "Arctodus simus",
+        "Brachyprotoma obtusata",
+        "Castoroides ohioensis",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Hydrodamalis gigas",
+        "Mammuthus primigenius",
+        "Ochotona whartoni",
+        "Panthera spelaea",
+        "Saiga tatarica",
+        "Vulpes vulpes"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_369",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.777294+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 72,
+        "currentMammalSpeciesCount": 63,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 87.5,
+        "mammalRangeOccupancyRetentionPct": 86.85258964143425,
+        "exampleLocallyLostSpecies": [
+          "Arctodus simus",
+          "Brachyprotoma obtusata",
+          "Castoroides ohioensis",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Hydrodamalis gigas",
+          "Mammuthus primigenius",
+          "Ochotona whartoni",
+          "Panthera spelaea",
+          "Saiga tatarica",
+          "Vulpes vulpes"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

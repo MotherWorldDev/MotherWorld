@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_133",
+  "regionName": "Southern Indian Ocean Islands tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.529418+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 25,
+      "currentSpeciesCount": 25,
+      "locallyLostSpeciesCount": 0,
+      "faunalRetentionPct": 100.0,
+      "rangeOccupancyRetentionPct": 100.0,
+      "exampleLocallyLostSpecies": [],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_133",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.529418+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 25,
+        "currentMammalSpeciesCount": 25,
+        "locallyLostMammalSpeciesCount": 0,
+        "mammalFaunalRetentionPct": 100.0,
+        "mammalRangeOccupancyRetentionPct": 100.0,
+        "exampleLocallyLostSpecies": [],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

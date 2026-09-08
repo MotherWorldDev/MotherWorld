@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_711",
+  "regionName": "Iceland boreal birch forests and alpine tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.142379+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 27,
+      "currentSpeciesCount": 28,
+      "locallyLostSpeciesCount": 1,
+      "faunalRetentionPct": 103.70370370370371,
+      "rangeOccupancyRetentionPct": 105.43478260869566,
+      "exampleLocallyLostSpecies": [
+        "Eschrichtius robustus"
+      ],
+      "nativeRasterCellCount": 5,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_711",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.142379+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 27,
+        "currentMammalSpeciesCount": 28,
+        "locallyLostMammalSpeciesCount": 1,
+        "mammalFaunalRetentionPct": 103.70370370370371,
+        "mammalRangeOccupancyRetentionPct": 105.43478260869566,
+        "exampleLocallyLostSpecies": [
+          "Eschrichtius robustus"
+        ],
+        "nativeRasterCellCount": 5,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

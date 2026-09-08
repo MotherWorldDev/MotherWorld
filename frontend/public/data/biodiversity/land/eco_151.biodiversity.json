@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_151",
+  "regionName": "Seram rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.550915+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 79,
+      "currentSpeciesCount": 81,
+      "locallyLostSpeciesCount": 1,
+      "faunalRetentionPct": 102.53164556962025,
+      "rangeOccupancyRetentionPct": 97.56944444444446,
+      "exampleLocallyLostSpecies": [
+        "Miniopterus paululus"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_151",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.550915+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 79,
+        "currentMammalSpeciesCount": 81,
+        "locallyLostMammalSpeciesCount": 1,
+        "mammalFaunalRetentionPct": 102.53164556962025,
+        "mammalRangeOccupancyRetentionPct": 97.56944444444446,
+        "exampleLocallyLostSpecies": [
+          "Miniopterus paululus"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

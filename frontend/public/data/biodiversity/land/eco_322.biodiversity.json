@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_322",
+  "regionName": "Sunda Shelf mangroves",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.726406+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 222,
+      "currentSpeciesCount": 213,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 95.94594594594595,
+      "rangeOccupancyRetentionPct": 95.31722054380664,
+      "exampleLocallyLostSpecies": [
+        "Aeromys tephromelas",
+        "Bos javanicus",
+        "Dicerorhinus sumatrensis",
+        "Elephas maximus",
+        "Hipposideros ridleyi",
+        "Homo spDenisova",
+        "Manis paleojavanica",
+        "Megaerops wetmorei",
+        "Melogale everetti",
+        "Petinomys vordermanni",
+        "Pongo abelii",
+        "Pongo pygmaeus"
+      ],
+      "nativeRasterCellCount": 4,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_322",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.726406+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 222,
+        "currentMammalSpeciesCount": 213,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 95.94594594594595,
+        "mammalRangeOccupancyRetentionPct": 95.31722054380664,
+        "exampleLocallyLostSpecies": [
+          "Aeromys tephromelas",
+          "Bos javanicus",
+          "Dicerorhinus sumatrensis",
+          "Elephas maximus",
+          "Hipposideros ridleyi",
+          "Homo spDenisova",
+          "Manis paleojavanica",
+          "Megaerops wetmorei",
+          "Melogale everetti",
+          "Petinomys vordermanni",
+          "Pongo abelii",
+          "Pongo pygmaeus"
+        ],
+        "nativeRasterCellCount": 4,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

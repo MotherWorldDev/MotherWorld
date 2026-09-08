@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_298",
+  "regionName": "South Deccan Plateau dry deciduous forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.702854+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 129,
+      "currentSpeciesCount": 118,
+      "locallyLostSpeciesCount": 12,
+      "faunalRetentionPct": 91.47286821705427,
+      "rangeOccupancyRetentionPct": 91.27423822714682,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos primigenius",
+        "Bubalus arnee",
+        "Caracal caracal",
+        "Crocuta crocuta",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Prionailurus viverrinus",
+        "Rattus rattus",
+        "Rattus satarae",
+        "Sivacobus sankaliai",
+        "Viverra civettina"
+      ],
+      "nativeRasterCellCount": 8,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_298",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.702854+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 129,
+        "currentMammalSpeciesCount": 118,
+        "locallyLostMammalSpeciesCount": 12,
+        "mammalFaunalRetentionPct": 91.47286821705427,
+        "mammalRangeOccupancyRetentionPct": 91.27423822714682,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos primigenius",
+          "Bubalus arnee",
+          "Caracal caracal",
+          "Crocuta crocuta",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Prionailurus viverrinus",
+          "Rattus rattus",
+          "Rattus satarae",
+          "Sivacobus sankaliai",
+          "Viverra civettina"
+        ],
+        "nativeRasterCellCount": 8,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

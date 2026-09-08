@@ -1,0 +1,60 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_775",
+  "regionName": "Northeast Siberian coastal tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.216736+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 43,
+      "currentSpeciesCount": 40,
+      "locallyLostSpeciesCount": 5,
+      "faunalRetentionPct": 93.02325581395348,
+      "rangeOccupancyRetentionPct": 87.13692946058093,
+      "exampleLocallyLostSpecies": [
+        "Equus ferus",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Ovibos moschatus",
+        "Panthera spelaea"
+      ],
+      "nativeRasterCellCount": 28,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_775",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.216736+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 43,
+        "currentMammalSpeciesCount": 40,
+        "locallyLostMammalSpeciesCount": 5,
+        "mammalFaunalRetentionPct": 93.02325581395348,
+        "mammalRangeOccupancyRetentionPct": 87.13692946058093,
+        "exampleLocallyLostSpecies": [
+          "Equus ferus",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Ovibos moschatus",
+          "Panthera spelaea"
+        ],
+        "nativeRasterCellCount": 28,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

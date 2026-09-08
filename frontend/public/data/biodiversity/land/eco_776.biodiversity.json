@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_776",
+  "regionName": "Northwest Russian-Novaya Zemlya tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.218745+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 71,
+      "currentSpeciesCount": 60,
+      "locallyLostSpeciesCount": 14,
+      "faunalRetentionPct": 84.50704225352112,
+      "rangeOccupancyRetentionPct": 75.05938242280283,
+      "exampleLocallyLostSpecies": [
+        "Bison bonasus",
+        "Castor fiber",
+        "Coelodonta antiquitatis",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Equus ovodovi",
+        "Homo neanderthalensis",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Megaloceros giganteus",
+        "Ovibos moschatus",
+        "Panthera spelaea",
+        "Soergelia minor"
+      ],
+      "nativeRasterCellCount": 29,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_776",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.218745+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 71,
+        "currentMammalSpeciesCount": 60,
+        "locallyLostMammalSpeciesCount": 14,
+        "mammalFaunalRetentionPct": 84.50704225352112,
+        "mammalRangeOccupancyRetentionPct": 75.05938242280283,
+        "exampleLocallyLostSpecies": [
+          "Bison bonasus",
+          "Castor fiber",
+          "Coelodonta antiquitatis",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Equus ovodovi",
+          "Homo neanderthalensis",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Megaloceros giganteus",
+          "Ovibos moschatus",
+          "Panthera spelaea",
+          "Soergelia minor"
+        ],
+        "nativeRasterCellCount": 29,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_309",
+  "regionName": "Eastern Himalayan subalpine conifer forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.714612+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 110,
+      "currentSpeciesCount": 101,
+      "locallyLostSpeciesCount": 11,
+      "faunalRetentionPct": 91.81818181818181,
+      "rangeOccupancyRetentionPct": 91.81818181818181,
+      "exampleLocallyLostSpecies": [
+        "Bos mutus",
+        "Crocuta crocuta",
+        "Elephas maximus",
+        "Equus ferus",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Pongo abelii",
+        "Stegodon orientalis",
+        "Stephanorhinus kirchbergensis",
+        "Tapirus augustus",
+        "Viverra megaspila"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_309",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.714612+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 110,
+        "currentMammalSpeciesCount": 101,
+        "locallyLostMammalSpeciesCount": 11,
+        "mammalFaunalRetentionPct": 91.81818181818181,
+        "mammalRangeOccupancyRetentionPct": 91.81818181818181,
+        "exampleLocallyLostSpecies": [
+          "Bos mutus",
+          "Crocuta crocuta",
+          "Elephas maximus",
+          "Equus ferus",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Pongo abelii",
+          "Stegodon orientalis",
+          "Stephanorhinus kirchbergensis",
+          "Tapirus augustus",
+          "Viverra megaspila"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

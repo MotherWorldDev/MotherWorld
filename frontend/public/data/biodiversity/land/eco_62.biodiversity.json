@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_62",
+  "regionName": "West Sudanian savanna",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.041737+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 311,
+      "currentSpeciesCount": 304,
+      "locallyLostSpeciesCount": 8,
+      "faunalRetentionPct": 97.7491961414791,
+      "rangeOccupancyRetentionPct": 91.64180784600661,
+      "exampleLocallyLostSpecies": [
+        "Camelus dromedarius",
+        "Diceros bicornis",
+        "Elephas iolensis",
+        "Monachus monachus",
+        "Nanger dama",
+        "Oryx dammah",
+        "Phataginus tetradactyla",
+        "Piliocolobus badius"
+      ],
+      "nativeRasterCellCount": 174,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_62",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.041737+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 311,
+        "currentMammalSpeciesCount": 304,
+        "locallyLostMammalSpeciesCount": 8,
+        "mammalFaunalRetentionPct": 97.7491961414791,
+        "mammalRangeOccupancyRetentionPct": 91.64180784600661,
+        "exampleLocallyLostSpecies": [
+          "Camelus dromedarius",
+          "Diceros bicornis",
+          "Elephas iolensis",
+          "Monachus monachus",
+          "Nanger dama",
+          "Oryx dammah",
+          "Phataginus tetradactyla",
+          "Piliocolobus badius"
+        ],
+        "nativeRasterCellCount": 174,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

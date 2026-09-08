@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_419",
+  "regionName": "Ogilvie-MacKenzie alpine tundra",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.832575+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 80,
+      "currentSpeciesCount": 64,
+      "locallyLostSpeciesCount": 18,
+      "faunalRetentionPct": 80.0,
+      "rangeOccupancyRetentionPct": 77.20178372352285,
+      "exampleLocallyLostSpecies": [
+        "Arctodus simus",
+        "Brachyprotoma obtusata",
+        "Camelops hesternus",
+        "Castoroides ohioensis",
+        "Cervus canadensis",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Equus francisci",
+        "Homotherium serum",
+        "Mammuthus primigenius",
+        "Megalonyx jeffersonii",
+        "Ochotona whartoni",
+        "Ovibos moschatus",
+        "Panthera spelaea",
+        "Paramylodon harlani",
+        "Platygonus compressus",
+        "Saiga tatarica",
+        "Vulpes vulpes"
+      ],
+      "nativeRasterCellCount": 34,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_419",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.832575+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 80,
+        "currentMammalSpeciesCount": 64,
+        "locallyLostMammalSpeciesCount": 18,
+        "mammalFaunalRetentionPct": 80.0,
+        "mammalRangeOccupancyRetentionPct": 77.20178372352285,
+        "exampleLocallyLostSpecies": [
+          "Arctodus simus",
+          "Brachyprotoma obtusata",
+          "Camelops hesternus",
+          "Castoroides ohioensis",
+          "Cervus canadensis",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Equus francisci",
+          "Homotherium serum",
+          "Mammuthus primigenius",
+          "Megalonyx jeffersonii",
+          "Ochotona whartoni",
+          "Ovibos moschatus",
+          "Panthera spelaea",
+          "Paramylodon harlani",
+          "Platygonus compressus",
+          "Saiga tatarica",
+          "Vulpes vulpes"
+        ],
+        "nativeRasterCellCount": 34,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

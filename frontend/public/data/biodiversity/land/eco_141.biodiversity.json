@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_141",
+  "regionName": "Huon Peninsula montane rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.540223+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 161,
+      "currentSpeciesCount": 157,
+      "locallyLostSpeciesCount": 7,
+      "faunalRetentionPct": 97.51552795031056,
+      "rangeOccupancyRetentionPct": 97.34939759036145,
+      "exampleLocallyLostSpecies": [
+        "Maokopia ronaldi",
+        "Protemnodon nombe",
+        "Protemnodon tumbuna",
+        "Thylacinus cynocephalus",
+        "Thylogale brunii",
+        "Thylogale calabyi",
+        "Thylogale christenseni"
+      ],
+      "nativeRasterCellCount": 3,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_141",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.540223+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 161,
+        "currentMammalSpeciesCount": 157,
+        "locallyLostMammalSpeciesCount": 7,
+        "mammalFaunalRetentionPct": 97.51552795031056,
+        "mammalRangeOccupancyRetentionPct": 97.34939759036145,
+        "exampleLocallyLostSpecies": [
+          "Maokopia ronaldi",
+          "Protemnodon nombe",
+          "Protemnodon tumbuna",
+          "Thylacinus cynocephalus",
+          "Thylogale brunii",
+          "Thylogale calabyi",
+          "Thylogale christenseni"
+        ],
+        "nativeRasterCellCount": 3,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

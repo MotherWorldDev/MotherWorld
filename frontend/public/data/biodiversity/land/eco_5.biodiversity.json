@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_5",
+  "regionName": "Congolian coastal forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.913188+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 247,
+      "currentSpeciesCount": 242,
+      "locallyLostSpeciesCount": 6,
+      "faunalRetentionPct": 97.97570850202429,
+      "rangeOccupancyRetentionPct": 99.24650161463941,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Damaliscus lunatus",
+        "Epomophorus grandis",
+        "Lycaon pictus",
+        "Mandrillus leucophaeus",
+        "Panthera leo"
+      ],
+      "nativeRasterCellCount": 20,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_5",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.913188+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 247,
+        "currentMammalSpeciesCount": 242,
+        "locallyLostMammalSpeciesCount": 6,
+        "mammalFaunalRetentionPct": 97.97570850202429,
+        "mammalRangeOccupancyRetentionPct": 99.24650161463941,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Damaliscus lunatus",
+          "Epomophorus grandis",
+          "Lycaon pictus",
+          "Mandrillus leucophaeus",
+          "Panthera leo"
+        ],
+        "nativeRasterCellCount": 20,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

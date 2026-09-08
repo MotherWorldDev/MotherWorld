@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_149",
+  "regionName": "Northern New Guinea montane rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.548405+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 114,
+      "currentSpeciesCount": 116,
+      "locallyLostSpeciesCount": 1,
+      "faunalRetentionPct": 101.75438596491227,
+      "rangeOccupancyRetentionPct": 103.16622691292878,
+      "exampleLocallyLostSpecies": [
+        "Dendrolagus goodfellowi"
+      ],
+      "nativeRasterCellCount": 5,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_149",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.548405+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 114,
+        "currentMammalSpeciesCount": 116,
+        "locallyLostMammalSpeciesCount": 1,
+        "mammalFaunalRetentionPct": 101.75438596491227,
+        "mammalRangeOccupancyRetentionPct": 103.16622691292878,
+        "exampleLocallyLostSpecies": [
+          "Dendrolagus goodfellowi"
+        ],
+        "nativeRasterCellCount": 5,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

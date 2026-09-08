@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_530",
+  "regionName": "Cuban dry forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.946426+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 71,
+      "currentSpeciesCount": 57,
+      "locallyLostSpeciesCount": 15,
+      "faunalRetentionPct": 80.28169014084507,
+      "rangeOccupancyRetentionPct": 77.14285714285711,
+      "exampleLocallyLostSpecies": [
+        "Artibeus anthonyi",
+        "Boromys offella",
+        "Boromys torrei",
+        "Desmodus puntajudensis",
+        "Geocapromys columbianus",
+        "Megalocnus rodens",
+        "Mesocapromys angelcabrerai",
+        "Mormoops magna",
+        "Natalus primus",
+        "Neomonachus tropicalis",
+        "Nesophontes major",
+        "Nesophontes micrus",
+        "Parocnus browni",
+        "Phyllops silvai",
+        "Solenodon cubanus"
+      ],
+      "nativeRasterCellCount": 5,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_530",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.946426+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 71,
+        "currentMammalSpeciesCount": 57,
+        "locallyLostMammalSpeciesCount": 15,
+        "mammalFaunalRetentionPct": 80.28169014084507,
+        "mammalRangeOccupancyRetentionPct": 77.14285714285711,
+        "exampleLocallyLostSpecies": [
+          "Artibeus anthonyi",
+          "Boromys offella",
+          "Boromys torrei",
+          "Desmodus puntajudensis",
+          "Geocapromys columbianus",
+          "Megalocnus rodens",
+          "Mesocapromys angelcabrerai",
+          "Mormoops magna",
+          "Natalus primus",
+          "Neomonachus tropicalis",
+          "Nesophontes major",
+          "Nesophontes micrus",
+          "Parocnus browni",
+          "Phyllops silvai",
+          "Solenodon cubanus"
+        ],
+        "nativeRasterCellCount": 5,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_75",
+  "regionName": "Zambezian coastal flooded savanna",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.187271+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 168,
+      "currentSpeciesCount": 160,
+      "locallyLostSpeciesCount": 9,
+      "faunalRetentionPct": 95.23809523809524,
+      "rangeOccupancyRetentionPct": 92.8400954653938,
+      "exampleLocallyLostSpecies": [
+        "Antidorcas bondi",
+        "Damaliscus hypsodon",
+        "Damaliscus lunatus",
+        "Damaliscus niro",
+        "Hippotragus equinus",
+        "Kolpochoerus majus",
+        "Lycaon pictus",
+        "Metridiochoerus compactus",
+        "Rusingoryx atopocranion"
+      ],
+      "nativeRasterCellCount": 3,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_75",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.187271+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 168,
+        "currentMammalSpeciesCount": 160,
+        "locallyLostMammalSpeciesCount": 9,
+        "mammalFaunalRetentionPct": 95.23809523809524,
+        "mammalRangeOccupancyRetentionPct": 92.8400954653938,
+        "exampleLocallyLostSpecies": [
+          "Antidorcas bondi",
+          "Damaliscus hypsodon",
+          "Damaliscus lunatus",
+          "Damaliscus niro",
+          "Hippotragus equinus",
+          "Kolpochoerus majus",
+          "Lycaon pictus",
+          "Metridiochoerus compactus",
+          "Rusingoryx atopocranion"
+        ],
+        "nativeRasterCellCount": 3,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

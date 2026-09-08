@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_194",
+  "regionName": "New Zealand South Island montane grasslands",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.592446+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 36,
+      "currentSpeciesCount": 35,
+      "locallyLostSpeciesCount": 2,
+      "faunalRetentionPct": 97.22222222222223,
+      "rangeOccupancyRetentionPct": 95.1923076923077,
+      "exampleLocallyLostSpecies": [
+        "Mystacina robusta",
+        "Phocarctos hookeri"
+      ],
+      "nativeRasterCellCount": 3,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_194",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.592446+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 36,
+        "currentMammalSpeciesCount": 35,
+        "locallyLostMammalSpeciesCount": 2,
+        "mammalFaunalRetentionPct": 97.22222222222223,
+        "mammalRangeOccupancyRetentionPct": 95.1923076923077,
+        "exampleLocallyLostSpecies": [
+          "Mystacina robusta",
+          "Phocarctos hookeri"
+        ],
+        "nativeRasterCellCount": 3,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

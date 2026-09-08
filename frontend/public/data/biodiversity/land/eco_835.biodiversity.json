@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_835",
+  "regionName": "Qaidam Basin semi-desert",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.292461+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 70,
+      "currentSpeciesCount": 66,
+      "locallyLostSpeciesCount": 6,
+      "faunalRetentionPct": 94.28571428571429,
+      "rangeOccupancyRetentionPct": 92.9988331388565,
+      "exampleLocallyLostSpecies": [
+        "Equus ferus",
+        "Equus hemionus",
+        "Homo spDenisova",
+        "Mammuthus primigenius",
+        "Stephanorhinus kirchbergensis",
+        "Sus scrofa"
+      ],
+      "nativeRasterCellCount": 20,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_835",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.292461+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 70,
+        "currentMammalSpeciesCount": 66,
+        "locallyLostMammalSpeciesCount": 6,
+        "mammalFaunalRetentionPct": 94.28571428571429,
+        "mammalRangeOccupancyRetentionPct": 92.9988331388565,
+        "exampleLocallyLostSpecies": [
+          "Equus ferus",
+          "Equus hemionus",
+          "Homo spDenisova",
+          "Mammuthus primigenius",
+          "Stephanorhinus kirchbergensis",
+          "Sus scrofa"
+        ],
+        "nativeRasterCellCount": 20,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

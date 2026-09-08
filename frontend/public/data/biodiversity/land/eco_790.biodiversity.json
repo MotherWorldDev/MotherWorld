@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_790",
+  "regionName": "Cyprus Mediterranean forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.234216+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 39,
+      "currentSpeciesCount": 40,
+      "locallyLostSpeciesCount": 2,
+      "faunalRetentionPct": 102.56410256410257,
+      "rangeOccupancyRetentionPct": 102.56410256410258,
+      "exampleLocallyLostSpecies": [
+        "Elephas cypriotes",
+        "Phanourios minutes"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_790",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.234216+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 39,
+        "currentMammalSpeciesCount": 40,
+        "locallyLostMammalSpeciesCount": 2,
+        "mammalFaunalRetentionPct": 102.56410256410257,
+        "mammalRangeOccupancyRetentionPct": 102.56410256410258,
+        "exampleLocallyLostSpecies": [
+          "Elephas cypriotes",
+          "Phanourios minutes"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

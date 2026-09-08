@@ -1,0 +1,52 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_140",
+  "regionName": "Halmahera rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.538187+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 61,
+      "currentSpeciesCount": 63,
+      "locallyLostSpeciesCount": 1,
+      "faunalRetentionPct": 103.27868852459017,
+      "rangeOccupancyRetentionPct": 103.35195530726257,
+      "exampleLocallyLostSpecies": [
+        "PeroryctinaeGen spA"
+      ],
+      "nativeRasterCellCount": 3,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_140",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.538187+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 61,
+        "currentMammalSpeciesCount": 63,
+        "locallyLostMammalSpeciesCount": 1,
+        "mammalFaunalRetentionPct": 103.27868852459017,
+        "mammalRangeOccupancyRetentionPct": 103.35195530726257,
+        "exampleLocallyLostSpecies": [
+          "PeroryctinaeGen spA"
+        ],
+        "nativeRasterCellCount": 3,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

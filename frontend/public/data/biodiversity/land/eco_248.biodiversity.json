@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_248",
+  "regionName": "Mindoro rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.651652+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 83,
+      "currentSpeciesCount": 84,
+      "locallyLostSpeciesCount": 2,
+      "faunalRetentionPct": 101.20481927710843,
+      "rangeOccupancyRetentionPct": 100.63694267515926,
+      "exampleLocallyLostSpecies": [
+        "Styloctenium mindorensis",
+        "Sus philippensis"
+      ],
+      "nativeRasterCellCount": 2,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_248",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.651652+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 83,
+        "currentMammalSpeciesCount": 84,
+        "locallyLostMammalSpeciesCount": 2,
+        "mammalFaunalRetentionPct": 101.20481927710843,
+        "mammalRangeOccupancyRetentionPct": 100.63694267515926,
+        "exampleLocallyLostSpecies": [
+          "Styloctenium mindorensis",
+          "Sus philippensis"
+        ],
+        "nativeRasterCellCount": 2,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

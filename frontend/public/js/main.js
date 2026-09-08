@@ -1,8 +1,8 @@
-import { APP_CONFIG } from "./config.js?v=20260908-env8-selenology";
+import { APP_CONFIG } from "./config.js?v=20260908-diagnostics1";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
-import { createUI } from "./ui.js?v=20260908-env8-selenology";
+import { createUI } from "./ui.js?v=20260908-diagnostics1";
 import { createSelenologyPanel } from "./selenologyPanel.js?v=20260908-env8-selenology";
-import { createGeologyPanel } from "./geologyPanel.js?v=20260908-env8-selenology";
+import { createGeologyPanel } from "./geologyPanel.js?v=20260908-diagnostics1";
 import { createClimateExtrasPanel } from "./climateExtrasPanel.js?v=20260908-env8-selenology";
 import { createEnvironmentHealthPanel } from "./environmentHealthPanel.js?v=20260908-env8-selenology";
 import { createBiodiversityPanel } from "./biodiversityPanel.js?v=20260908-biodiversity-contaminants";

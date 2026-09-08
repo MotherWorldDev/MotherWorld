@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_163",
+  "regionName": "Lesser Sundas deciduous forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.561445+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 99,
+      "currentSpeciesCount": 96,
+      "locallyLostSpeciesCount": 6,
+      "faunalRetentionPct": 96.96969696969697,
+      "rangeOccupancyRetentionPct": 96.2406015037594,
+      "exampleLocallyLostSpecies": [
+        "Homo floresiensis",
+        "Komodomys rintjanus",
+        "Nycteris javanica",
+        "Papagomys theodorverhoeveni",
+        "Spelaeomys florensis",
+        "Stegodon florensis"
+      ],
+      "nativeRasterCellCount": 6,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_163",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.561445+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 99,
+        "currentMammalSpeciesCount": 96,
+        "locallyLostMammalSpeciesCount": 6,
+        "mammalFaunalRetentionPct": 96.96969696969697,
+        "mammalRangeOccupancyRetentionPct": 96.2406015037594,
+        "exampleLocallyLostSpecies": [
+          "Homo floresiensis",
+          "Komodomys rintjanus",
+          "Nycteris javanica",
+          "Papagomys theodorverhoeveni",
+          "Spelaeomys florensis",
+          "Stegodon florensis"
+        ],
+        "nativeRasterCellCount": 6,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

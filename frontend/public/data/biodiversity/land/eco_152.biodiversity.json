@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_152",
+  "regionName": "Solomon Islands rain forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.550915+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 53,
+      "currentSpeciesCount": 55,
+      "locallyLostSpeciesCount": 0,
+      "faunalRetentionPct": 103.77358490566037,
+      "rangeOccupancyRetentionPct": 103.77358490566039,
+      "exampleLocallyLostSpecies": [],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_152",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.550915+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 53,
+        "currentMammalSpeciesCount": 55,
+        "locallyLostMammalSpeciesCount": 0,
+        "mammalFaunalRetentionPct": 103.77358490566037,
+        "mammalRangeOccupancyRetentionPct": 103.77358490566039,
+        "exampleLocallyLostSpecies": [],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

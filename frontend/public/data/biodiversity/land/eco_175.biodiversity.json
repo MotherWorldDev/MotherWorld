@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_175",
+  "regionName": "Richmond temperate forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:30.573496+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 36,
+      "currentSpeciesCount": 33,
+      "locallyLostSpeciesCount": 4,
+      "faunalRetentionPct": 91.66666666666667,
+      "rangeOccupancyRetentionPct": 91.66666666666664,
+      "exampleLocallyLostSpecies": [
+        "Chalinolobus tuberculatus",
+        "Mystacina robusta",
+        "Mystacina tuberculata",
+        "Phocarctos hookeri"
+      ],
+      "nativeRasterCellCount": 1,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_175",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:30.573496+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 36,
+        "currentMammalSpeciesCount": 33,
+        "locallyLostMammalSpeciesCount": 4,
+        "mammalFaunalRetentionPct": 91.66666666666667,
+        "mammalRangeOccupancyRetentionPct": 91.66666666666664,
+        "exampleLocallyLostSpecies": [
+          "Chalinolobus tuberculatus",
+          "Mystacina robusta",
+          "Mystacina tuberculata",
+          "Phocarctos hookeri"
+        ],
+        "nativeRasterCellCount": 1,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_727",
+  "regionName": "Eastern Anatolian montane steppe",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.159335+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 127,
+      "currentSpeciesCount": 113,
+      "locallyLostSpeciesCount": 16,
+      "faunalRetentionPct": 88.97637795275591,
+      "rangeOccupancyRetentionPct": 82.49158249158252,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Bos primigenius",
+        "Camelus dromedarius",
+        "Caracal caracal",
+        "Castor fiber",
+        "Cervus elaphus",
+        "Crocuta crocuta",
+        "Cuon alpinus",
+        "Equus ferus",
+        "Equus hemionus",
+        "Homo neanderthalensis",
+        "Hystrix refossa",
+        "Panthera tigris",
+        "Saiga tatarica",
+        "Stephanorhinus hemitoechus",
+        "Stephanorhinus kirchbergensis"
+      ],
+      "nativeRasterCellCount": 18,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_727",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.159335+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 127,
+        "currentMammalSpeciesCount": 113,
+        "locallyLostMammalSpeciesCount": 16,
+        "mammalFaunalRetentionPct": 88.97637795275591,
+        "mammalRangeOccupancyRetentionPct": 82.49158249158252,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Bos primigenius",
+          "Camelus dromedarius",
+          "Caracal caracal",
+          "Castor fiber",
+          "Cervus elaphus",
+          "Crocuta crocuta",
+          "Cuon alpinus",
+          "Equus ferus",
+          "Equus hemionus",
+          "Homo neanderthalensis",
+          "Hystrix refossa",
+          "Panthera tigris",
+          "Saiga tatarica",
+          "Stephanorhinus hemitoechus",
+          "Stephanorhinus kirchbergensis"
+        ],
+        "nativeRasterCellCount": 18,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_840",
+  "regionName": "South Arabian plains and plateau desert",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.298981+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 81,
+      "currentSpeciesCount": 75,
+      "locallyLostSpeciesCount": 8,
+      "faunalRetentionPct": 92.5925925925926,
+      "rangeOccupancyRetentionPct": 82.8282828282828,
+      "exampleLocallyLostSpecies": [
+        "Acinonyx jubatus",
+        "Camelus dromedarius",
+        "Crocuta crocuta",
+        "Equus ferus",
+        "Equus hemionus",
+        "Felis silvestris",
+        "Gazella saudiya",
+        "Homo neanderthalensis"
+      ],
+      "nativeRasterCellCount": 42,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_840",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.298981+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 81,
+        "currentMammalSpeciesCount": 75,
+        "locallyLostMammalSpeciesCount": 8,
+        "mammalFaunalRetentionPct": 92.5925925925926,
+        "mammalRangeOccupancyRetentionPct": 82.8282828282828,
+        "exampleLocallyLostSpecies": [
+          "Acinonyx jubatus",
+          "Camelus dromedarius",
+          "Crocuta crocuta",
+          "Equus ferus",
+          "Equus hemionus",
+          "Felis silvestris",
+          "Gazella saudiya",
+          "Homo neanderthalensis"
+        ],
+        "nativeRasterCellCount": 42,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}

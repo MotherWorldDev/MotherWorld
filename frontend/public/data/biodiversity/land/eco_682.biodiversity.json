@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_682",
+  "regionName": "Taiheiyo evergreen forests",
+  "regionKind": "land",
+  "generatedAt": "2026-09-08T10:03:31.107302+00:00",
+  "summary": {
+    "historicalMammals": {
+      "presentNaturalSpeciesCount": 98,
+      "currentSpeciesCount": 94,
+      "locallyLostSpeciesCount": 7,
+      "faunalRetentionPct": 95.91836734693878,
+      "rangeOccupancyRetentionPct": 93.84309831181729,
+      "exampleLocallyLostSpecies": [
+        "Canis lupus",
+        "Elephas naumanii",
+        "Equus ferus",
+        "Lutra lutra",
+        "Panthera tigris",
+        "Sinomegaceros yabei",
+        "Zalophus japonicus"
+      ],
+      "nativeRasterCellCount": 13,
+      "coverageStatus": "covered"
+    }
+  },
+  "providers": {
+    "phylacine": {
+      "provider": "phylacine",
+      "regionId": "eco_682",
+      "regionKind": "land",
+      "generatedAt": "2026-09-08T10:03:31.107302+00:00",
+      "metrics": {
+        "presentNaturalMammalSpeciesCount": 98,
+        "currentMammalSpeciesCount": 94,
+        "locallyLostMammalSpeciesCount": 7,
+        "mammalFaunalRetentionPct": 95.91836734693878,
+        "mammalRangeOccupancyRetentionPct": 93.84309831181729,
+        "exampleLocallyLostSpecies": [
+          "Canis lupus",
+          "Elephas naumanii",
+          "Equus ferus",
+          "Lutra lutra",
+          "Panthera tigris",
+          "Sinomegaceros yabei",
+          "Zalophus japonicus"
+        ],
+        "nativeRasterCellCount": 13,
+        "coverageStatus": "covered"
+      },
+      "source": {
+        "label": "PHYLACINE 1.2.1 - current and present-natural mammal ranges",
+        "license": "CC0",
+        "licenseClass": "open",
+        "removableProvider": false,
+        "repository": "https://github.com/MegaPast2Future/PHYLACINE_1.2",
+        "methodNote": "Region presence is evaluated on the native PHYLACINE raster grid; present-natural is counterfactual, not a fossil map."
+      }
+    }
+  },
+  "providerOrder": [
+    "phylacine"
+  ]
+}
