@@ -13,8 +13,12 @@ The requested historical floor is **1993**. The right edge is discovered at buil
 | Climate forcing | NOAA AGGI | 1993 → available (record begins 1979) | CO2/CH4/N2O concentrations |
 | Cryosphere | NOAA/NSIDC Arctic + Antarctic annual-minimum sea ice | 1993 → available | Greenland/Antarctic land ice, glaciers |
 | Global Ocean | NOAA global 0–700 m Ocean Heat Content | 1993 → available (record begins 1955) | pH, sea level, water quality, marine heatwaves/oxygen later |
-| Freshwater stability | ERA5-Land root-zone soil-moisture regime stability | 1993 → available (record begins 1950) | GRACE TWS, JRC surface-water retention |
+| Freshwater stability | ERA5-Land root-zone soil-moisture regime stability | 1993–2025 (35 source years; fixed baseline 1991–2020) | GRACE TWS, JRC surface-water retention |
 | Ozone layer | 100 − NOAA ODGI-ML | 1993 → available (ODGI begins 1992) | Antarctic ODGI-A |
+
+Freshwater's published series has one continuous annual row for every year from 1993 through 2025. The 35 source years from 1991 through 2025 support that series; only 1991–2020 define the fixed per-grid-cell monthly P10–P90 envelope. Its annual coverage is the fraction of the 12 calendar months with finite eligible land-area observations after the ice exclusion mask, so 1.0 means all twelve months had eligible observations rather than 100% of global land or complete source sampling. The mask excludes land south of 60°S and the broad rectangle from 75°W to 10°W and 58°N to 85°N; it intentionally also removes Iceland, Baffin, and nearby Canadian land and is not a pixel-level glacier mask.
+
+The combined Earth Health score remains withheld while habitat, vegetation, and pollution are pending; publishing freshwater does not publish a nine-family score.
 
 ## Present-day diagnostics
 
