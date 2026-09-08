@@ -28,6 +28,12 @@ export function createGeologyDataService(config = {}, fetcher = (...args) => fet
       return data;
     }
     const index = await getIndex();
+    if (cache.has(regionId)) {
+      const data = cache.get(regionId);
+      cache.delete(regionId);
+      cache.set(regionId, data);
+      return data;
+    }
     const entry = index?.regions?.[regionId];
     if (!entry?.url) return null;
     const url = entry.url.startsWith("./") || entry.url.startsWith("/") ? entry.url : `${baseUrl}${entry.url}`;

@@ -64,6 +64,52 @@ test("climate and geology services retry failures, deduplicate, and bound region
   assert.equal(geologyCalls.filter((url) => url.includes("eco_1")).length, 3);
 });
 
+test("climate and geology cold-index concurrent loads issue one regional request", async () => {
+  let releaseClimateIndex;
+  const climateIndexGate = new Promise((resolve) => { releaseClimateIndex = resolve; });
+  let climateIndexRequests = 0;
+  let climateRegionRequests = 0;
+  const climate = createClimateExtrasDataService({}, async (url) => {
+    if (url.includes("index")) {
+      climateIndexRequests += 1;
+      await climateIndexGate;
+      return json(climateIndex(["eco_1"]));
+    }
+    climateRegionRequests += 1;
+    return json({ regionId: "eco_1" });
+  });
+  const climateFirst = climate.loadRegion("eco_1");
+  const climateSecond = climate.loadRegion("eco_1");
+  await tick();
+  assert.equal(climateIndexRequests, 1);
+  assert.equal(climateRegionRequests, 0);
+  releaseClimateIndex();
+  assert.deepEqual(await Promise.all([climateFirst, climateSecond]), [{ regionId: "eco_1" }, { regionId: "eco_1" }]);
+  assert.equal(climateRegionRequests, 1);
+
+  let releaseGeologyIndex;
+  const geologyIndexGate = new Promise((resolve) => { releaseGeologyIndex = resolve; });
+  let geologyIndexRequests = 0;
+  let geologyRegionRequests = 0;
+  const geology = createGeologyDataService({}, async (url) => {
+    if (url.includes("index")) {
+      geologyIndexRequests += 1;
+      await geologyIndexGate;
+      return json(geologyIndex(["eco_1"]));
+    }
+    geologyRegionRequests += 1;
+    return json({ regionId: "eco_1" });
+  });
+  const geologyFirst = geology.loadRegion("eco_1");
+  const geologySecond = geology.loadRegion("eco_1");
+  await tick();
+  assert.equal(geologyIndexRequests, 1);
+  assert.equal(geologyRegionRequests, 0);
+  releaseGeologyIndex();
+  assert.deepEqual(await Promise.all([geologyFirst, geologySecond]), [{ regionId: "eco_1" }, { regionId: "eco_1" }]);
+  assert.equal(geologyRegionRequests, 1);
+});
+
 function healthDom() {
   const nodes = new Map();
   const make = () => {

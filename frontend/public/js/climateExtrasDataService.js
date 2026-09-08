@@ -35,6 +35,12 @@ export function createClimateExtrasDataService(dataConfig = {}, fetcher = (...ar
       return data;
     }
     const index = await getIndex();
+    if (cache.has(regionId)) {
+      const data = cache.get(regionId);
+      cache.delete(regionId);
+      cache.set(regionId, data);
+      return data;
+    }
     const entry = index?.regions?.[regionId];
     if (!entry?.url) return null;
     const promise = loadJson(absoluteFromBase(entry.url)).catch((error) => {
