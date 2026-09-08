@@ -1,0 +1,506 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_30",
+  "regionName": "Western Guinean lowland forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.076308+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 96.17547818085464,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 186993.36948798614,
+        "percent": 95.20301989169973
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 186993.36948798614,
+          "percent": 95.20301989169973
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 5898.607191736525,
+          "percent": 3.0031290379218216
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2474.4919687311126,
+          "percent": 1.259825996857577
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1043.2726821914134,
+          "percent": 0.5311563195374011
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 5.634673923295601,
+          "percent": 0.002868753983478637
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 980.0146581116915,
+          "percentOfRegion": 0.47986761670810557
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 6830.655019376216,
+          "percentOfRegion": 3.344654202437199
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 24,
+      "medianMwM2": 38.0,
+      "p10MwM2": 30.0,
+      "p90MwM2": 54.7,
+      "maxMwM2": 58.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 18,
+          "percent": 75.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 6,
+          "percent": 25.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 38,
+      "commodityCount": 12,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 16,
+          "sharePct": 26.229508196721312
+        },
+        {
+          "label": "Platinum",
+          "count": 10,
+          "sharePct": 16.39344262295082
+        },
+        {
+          "label": "Aluminum",
+          "count": 6,
+          "sharePct": 9.836065573770492
+        },
+        {
+          "label": "Titanium",
+          "count": 6,
+          "sharePct": 9.836065573770492
+        },
+        {
+          "label": "Zirconium",
+          "count": 4,
+          "sharePct": 6.557377049180328
+        },
+        {
+          "label": "Iridium",
+          "count": 4,
+          "sharePct": 6.557377049180328
+        },
+        {
+          "label": "Osmium",
+          "count": 4,
+          "sharePct": 6.557377049180328
+        },
+        {
+          "label": "Palladium",
+          "count": 4,
+          "sharePct": 6.557377049180328
+        },
+        {
+          "label": "Metal",
+          "count": 3,
+          "sharePct": 4.918032786885246
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 3.278688524590164
+        },
+        {
+          "label": "Diamond",
+          "count": 1,
+          "sharePct": 1.639344262295082
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 1.639344262295082
+        }
+      ],
+      "sites": [
+        {
+          "name": "Sierra Leone Ore and Metals Gandama Mine",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Diminco Mine",
+          "depositType": null,
+          "commodities": [
+            "Diamond"
+          ]
+        },
+        {
+          "name": "Sierra Rutile Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Mokanji",
+          "depositType": "Residual",
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Port Loko",
+          "depositType": "Residual",
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Rotifunk",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Freetown Layered Basic Complex Placers.",
+          "depositType": "Placer",
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Metal",
+            "Platinum",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Benguema Stream Tributaries",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Stream Near Adonkia",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Orugu River Tributaries",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Babadori Stream",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Glinda Water",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Big Water",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Alako Water",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Guma Water",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Tokadeh Mine",
+          "depositType": "Unknown",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Nimba",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bong Mine",
+          "depositType": "Unknown",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mano River",
+          "depositType": "Unknown",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Gboror's Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Mt Gbahm Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bong Range I",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Port Loko",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bomi Hills",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Ity",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bong Range",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Putu Hills Mt. Jedeh",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bong Range Ii",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Moyamba",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Mt. Klahoyo",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Rotifunk",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Bea Mountain",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mogbwemo/Pejebu/Lanti/Gveni/Sembeh",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Mano River",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Wologisi",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Lamco",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Kambui Hills",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Gbangbama - Mogbwemo District",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

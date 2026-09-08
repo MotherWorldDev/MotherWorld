@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_705",
+  "regionName": "Qilian Mountains conifer forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.867076+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 8,
+        "intersectionLengthKm": 190.83919024950262,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.789613975620924
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.00266556931831
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.25319577659757
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.936748304415595
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.849378463337933
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.656887278536857
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.299690094809195
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.051010786866248
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999997,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 8110.273112812955,
+        "percent": 48.79565510023233
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 8110.273112812955,
+          "percent": 48.79565510023233
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 3445.81056307434,
+          "percent": 20.73180291683115
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1614.0473475442648,
+          "percent": 9.710955055482502
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1128.8017386416261,
+          "percent": 6.791463067782598
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 974.4054168107134,
+          "percent": 5.862533848752555
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 813.4673417104259,
+          "percent": 4.894246012343903
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 487.7493889542883,
+          "percent": 2.9345560411722986
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 46.337045182699974,
+          "percent": 0.27878795740266904
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1,
+      "medianMwM2": 49.0,
+      "p10MwM2": 49.0,
+      "p90MwM2": 49.0,
+      "maxMwM2": 49.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

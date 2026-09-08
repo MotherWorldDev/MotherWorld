@@ -1,0 +1,650 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_438",
+  "regionName": "Wyoming Basin shrub steppe",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.479838+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 92.86425017966559,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Eastern Bear Lake fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 57.405048074114376
+          },
+          {
+            "name": "Rock Creek fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.091844419003753
+          },
+          {
+            "name": "Bear River fault zone",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.367357686547464
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000004,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 93988.99112213722,
+        "percent": 70.8151500360387
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 93988.99112213722,
+          "percent": 70.8151500360387
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 24130.53461318465,
+          "percent": 18.18093170999067
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6976.100880538886,
+          "percent": 5.25607972405981
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3932.5780490623865,
+          "percent": 2.9629651435549187
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 3307.098256902296,
+          "percent": 2.4917030861851517
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 332.70733062013596,
+          "percent": 0.2506753105301245
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 56.4012249078859,
+          "percent": 0.042494989640628054
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 109,
+      "medianMwM2": 59.0,
+      "p10MwM2": 42.0,
+      "p90MwM2": 85.52000000000001,
+      "maxMwM2": 890.4,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 7,
+          "percent": 6.422018348623854
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 49,
+          "percent": 44.95412844036697
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 40,
+          "percent": 36.69724770642202
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3,
+          "percent": 2.7522935779816518
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 2.7522935779816518
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 0.9174311926605505
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 4,
+          "percent": 3.669724770642202
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 2,
+          "percent": 1.834862385321101
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3049,
+      "commodityCount": 86,
+      "commodities": [
+        {
+          "label": "Uranium",
+          "count": 1404,
+          "sharePct": 33.83132530120482
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 688,
+          "sharePct": 16.57831325301205
+        },
+        {
+          "label": "Construction",
+          "count": 687,
+          "sharePct": 16.55421686746988
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 182,
+          "sharePct": 4.385542168674699
+        },
+        {
+          "label": "Bentonite",
+          "count": 133,
+          "sharePct": 3.2048192771084336
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 109,
+          "sharePct": 2.626506024096386
+        },
+        {
+          "label": "Gold",
+          "count": 89,
+          "sharePct": 2.144578313253012
+        },
+        {
+          "label": "Iron",
+          "count": 65,
+          "sharePct": 1.566265060240964
+        },
+        {
+          "label": "Copper",
+          "count": 53,
+          "sharePct": 1.2771084337349397
+        },
+        {
+          "label": "Stone",
+          "count": 51,
+          "sharePct": 1.2289156626506026
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 49,
+          "sharePct": 1.180722891566265
+        },
+        {
+          "label": "Sodium",
+          "count": 40,
+          "sharePct": 0.9638554216867471
+        },
+        {
+          "label": "Thorium",
+          "count": 29,
+          "sharePct": 0.6987951807228916
+        },
+        {
+          "label": "Silver",
+          "count": 29,
+          "sharePct": 0.6987951807228916
+        },
+        {
+          "label": "Tungsten",
+          "count": 26,
+          "sharePct": 0.6265060240963854
+        },
+        {
+          "label": "Sodium Carbonate",
+          "count": 26,
+          "sharePct": 0.6265060240963854
+        },
+        {
+          "label": "Silica",
+          "count": 25,
+          "sharePct": 0.6024096385542169
+        },
+        {
+          "label": "Sodium Sulfate",
+          "count": 25,
+          "sharePct": 0.6024096385542169
+        },
+        {
+          "label": "Titanium",
+          "count": 24,
+          "sharePct": 0.5783132530120482
+        },
+        {
+          "label": "Zirconium",
+          "count": 23,
+          "sharePct": 0.5542168674698795
+        },
+        {
+          "label": "Pumice",
+          "count": 22,
+          "sharePct": 0.5301204819277108
+        },
+        {
+          "label": "Clay",
+          "count": 21,
+          "sharePct": 0.5060240963855421
+        },
+        {
+          "label": "Potassium",
+          "count": 19,
+          "sharePct": 0.45783132530120485
+        },
+        {
+          "label": "Vanadium",
+          "count": 18,
+          "sharePct": 0.43373493975903615
+        },
+        {
+          "label": "Potash",
+          "count": 17,
+          "sharePct": 0.40963855421686746
+        },
+        {
+          "label": "Metal",
+          "count": 16,
+          "sharePct": 0.38554216867469876
+        },
+        {
+          "label": "Manganese",
+          "count": 14,
+          "sharePct": 0.3373493975903614
+        },
+        {
+          "label": "Limestone",
+          "count": 13,
+          "sharePct": 0.3132530120481927
+        },
+        {
+          "label": "Feldspar",
+          "count": 11,
+          "sharePct": 0.2650602409638554
+        },
+        {
+          "label": "Magnesite",
+          "count": 11,
+          "sharePct": 0.2650602409638554
+        }
+      ],
+      "sites": [
+        {
+          "name": "Airborne Anomaly B17-125",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Housel Gulch Placer",
+          "depositType": null,
+          "commodities": [
+            "Thorium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Orr Et Al Claims",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Fannie May, C-Land Pits",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Copper Mountain Deposits",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Whippet No. 8 Prospect",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Feldspar",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Whippet No. 1 Prospect",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Feldspar",
+            "Mica",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Yankee Jack Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Bismuth",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Betty Claim",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Mark Claim - Annie Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Allied Group Dead Horse 29",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "A-B Claims",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Clyde, Marsh, Longport Claims",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Brutch Sulphur Deposit",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Pebble Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Ne Browns Park Gravel Deposit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Kleins Hill Prospect",
+          "depositType": "Replacement",
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Sears Creek Gravel Deposit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Birch Creek Gravel Pit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Sheep Creek Canal Gravel Pit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "East Antelope Gravel Deposits",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Goslin Silica Deposit",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Goslin Mtn Iron Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Antelope Flat Gravel",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Antelope Flat Gravel",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Jesse Ewing Siliceous Tuff",
+          "depositType": null,
+          "commodities": [
+            "Volcanic Materials"
+          ]
+        },
+        {
+          "name": "Red Creek",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Jesse Ewing Canyon Claim",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Woodruff Narrows No. 1 Gravel Pits",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unknown Pit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Ut. Dept. of Hwys, Pit No. 17014",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unknown Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Ut. Dept. of Hwys. Pit. No. 17007",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Pawnee Mine",
+          "depositType": "Bedded - Phosphate",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cherokee Mine",
+          "depositType": "Bedded - Phosphate",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Rex Peak Gravel Pit #3",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Utah Dept. of Highways Pit #17011",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20027",
+  "regionName": "South European Atlantic Shelf",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.845554+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 123.07658280498553,
+        "medianAgeMa": 112.3863525390625,
+        "p10AgeMa": 88.96067810058594,
+        "p90AgeMa": 176.86587524414062,
+        "oldestAgeMa": 191.92579650878906,
+        "coveragePct": 21.76490852545852,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 28.577055745718773,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 44.55167612107169,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 26.871268133209547,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 10.14522790437278,
+          "medianMmYr": 9.161240577697754,
+          "p10MmYr": 7.142338752746582,
+          "p90MmYr": 14.545268058776855,
+          "coveragePct": 21.76490852545852
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 2,
+          "intersectionLengthKm": 620.432300125582
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 19,
+        "intersectionLengthKm": 1191.6887614434875,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 179.73549241134694
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 138.30900636788806
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 125.21062604406583
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 108.19303346836406
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 106.63514762175632
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 86.1180977998556
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 73.00023524410908
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.82015299252949
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 56.52863316497215
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 51.12523094975089
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.03095310670023
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.4910506974794
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.465759870334736
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.643139994787498
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.932720470371725
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.641062426725028
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.918574406888503
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.8425546783533324
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.0472897272085855
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 228,
+      "medianMwM2": 51.55,
+      "p10MwM2": 33.730000000000004,
+      "p90MwM2": 83.0,
+      "maxMwM2": 126.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 43,
+          "percent": 18.859649122807017
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 115,
+          "percent": 50.43859649122807
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 46,
+          "percent": 20.175438596491226
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 18,
+          "percent": 7.894736842105263
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 6,
+          "percent": 2.631578947368421
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 50.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "La Coruna",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

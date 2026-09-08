@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_696",
+  "regionName": "Helanshan montane conifer forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.800620+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 268.0987374971721,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 170.87709768341745
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 49.23718345000132
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.07889906320237
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.90555730055097
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 98.86224751710002,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 11327.938980761315,
+        "percent": 46.3695589327171
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 11327.938980761315,
+          "percent": 46.3695589327171
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6808.542276243906,
+          "percent": 27.869950823390628
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 4824.901798941679,
+          "percent": 19.750156554565308
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1468.3058207541244,
+          "percent": 6.010333689326967
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 238.03159092237,
+          "percentOfRegion": 0.9632680210307384
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 43.1165710302736,
+          "percentOfRegion": 0.17448446186921526
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Yinchuan Phosphate Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "(Facility) Qingtongxia Aluminum Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

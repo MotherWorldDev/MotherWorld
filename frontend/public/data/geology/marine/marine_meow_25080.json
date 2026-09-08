@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25080",
+  "regionName": "Sahelian Upwelling",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.167257+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 177.2331691068856,
+        "medianAgeMa": 177.59051513671875,
+        "p10AgeMa": 163.49949645996094,
+        "p90AgeMa": 190.9013671875,
+        "oldestAgeMa": 193.99380493164062,
+        "coveragePct": 75.98068783886315,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 100.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 25.105988747631343,
+          "medianMmYr": 24.911209106445312,
+          "p10MmYr": 23.49976921081543,
+          "p90MmYr": 26.24744987487793,
+          "coveragePct": 75.98068783886315
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 38,
+      "medianMwM2": 61.0,
+      "p10MwM2": 51.25,
+      "p90MwM2": 73.94000000000001,
+      "maxMwM2": 106.26,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 2.631578947368421
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 15,
+          "percent": 39.473684210526315
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 19,
+          "percent": 50.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 5.263157894736842
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 2.631578947368421
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Taiba Operation",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

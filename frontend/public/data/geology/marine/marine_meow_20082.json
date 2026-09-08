@@ -1,0 +1,170 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20082",
+  "regionName": "Gulf of Guinea Upwelling",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.116242+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 91.24797051770072,
+        "medianAgeMa": 90.31730651855469,
+        "p10AgeMa": 68.18930053710938,
+        "p90AgeMa": 117.99523162841797,
+        "oldestAgeMa": 125.05464172363281,
+        "coveragePct": 83.55267201582194,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 1.11298609006576,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 62.43912299641087,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 36.447890913523366,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 38.483379958906966,
+          "medianMmYr": 34.918094635009766,
+          "p10MmYr": 33.10007858276367,
+          "p90MmYr": 49.3386116027832,
+          "coveragePct": 83.55267201582194
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 20,
+      "medianMwM2": 58.5,
+      "p10MwM2": 35.9,
+      "p90MwM2": 67.439,
+      "maxMwM2": 75.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 15.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 9,
+          "percent": 45.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 8,
+          "percent": 40.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Monogaga Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

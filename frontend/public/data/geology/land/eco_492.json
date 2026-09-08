@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_492",
+  "regionName": "Pernambuco interior forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.128741+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 90.27143054911564,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 6995.394375176003,
+        "percent": 34.33665446539435
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 6995.394375176003,
+          "percent": 34.33665446539435
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 6823.710408860809,
+          "percent": 33.49394957808557
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3226.022586612844,
+          "percent": 15.834821728874433
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2150.8230539285396,
+          "percent": 10.55724153037339
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1177.0139311257033,
+          "percent": 5.777332697272255
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2195.59829116719,
+          "percentOfRegion": 9.728569450884313
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 10,
+      "medianMwM2": 61.5,
+      "p10MwM2": 53.0,
+      "p90MwM2": 74.0,
+      "maxMwM2": 74.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 30.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 7,
+          "percent": 70.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 8,
+      "commodityCount": 13,
+      "commodities": [
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Zirconium",
+          "count": 3,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "General",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Limestone",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Uranium",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Potassium",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Kyanite",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        }
+      ],
+      "sites": [
+        {
+          "name": "Guaju, Fazenda Coelho",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Taioca De Fora",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Serra Do Besouro",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Olinda-Paulista/Igarassu",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Calcium",
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Taquari-Vassouras",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Mataraca",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Mataraca Deposit",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Kyanite",
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,641 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_574",
+  "regionName": "Uruguayan savanna",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.148933+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 94.68619822225179,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 86345.28829418657,
+        "percent": 25.871505537585694
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 86345.28829418657,
+          "percent": 25.871505537585694
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 75523.90988437118,
+          "percent": 22.629112617430273
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 58372.38268606674,
+          "percent": 17.49002698050316
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 56614.14561115387,
+          "percent": 16.963209117957913
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 23801.988475707974,
+          "percent": 7.1317530906465185
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 18350.105129763346,
+          "percent": 5.498213693634925
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 9660.326277457321,
+          "percent": 2.8945086607458657
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 5078.5239645394395,
+          "percent": 1.5216703014956505
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 14727.13251133059,
+          "percentOfRegion": 4.178187566223905
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 4002.774099962707,
+          "percentOfRegion": 1.1356142115242112
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 12,
+      "medianMwM2": 44.2,
+      "p10MwM2": 39.4,
+      "p90MwM2": 103.30000000000003,
+      "maxMwM2": 112.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 25.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 7,
+          "percent": 58.333333333333336
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 316,
+      "commodityCount": 41,
+      "commodities": [
+        {
+          "label": "Dimension",
+          "count": 74,
+          "sharePct": 13.729128014842301
+        },
+        {
+          "label": "Stone",
+          "count": 73,
+          "sharePct": 13.543599257884972
+        },
+        {
+          "label": "Construction",
+          "count": 39,
+          "sharePct": 7.235621521335807
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 39,
+          "sharePct": 7.235621521335807
+        },
+        {
+          "label": "Kaolin",
+          "count": 33,
+          "sharePct": 6.122448979591836
+        },
+        {
+          "label": "Marble",
+          "count": 33,
+          "sharePct": 6.122448979591836
+        },
+        {
+          "label": "Gold",
+          "count": 30,
+          "sharePct": 5.565862708719852
+        },
+        {
+          "label": "Gemstone",
+          "count": 29,
+          "sharePct": 5.380333951762523
+        },
+        {
+          "label": "Limestone",
+          "count": 26,
+          "sharePct": 4.823747680890538
+        },
+        {
+          "label": "Copper",
+          "count": 25,
+          "sharePct": 4.638218923933209
+        },
+        {
+          "label": "General",
+          "count": 16,
+          "sharePct": 2.9684601113172544
+        },
+        {
+          "label": "Quartz",
+          "count": 13,
+          "sharePct": 2.411873840445269
+        },
+        {
+          "label": "Iron",
+          "count": 13,
+          "sharePct": 2.411873840445269
+        },
+        {
+          "label": "High Calcium",
+          "count": 10,
+          "sharePct": 1.855287569573284
+        },
+        {
+          "label": "Dolomite",
+          "count": 10,
+          "sharePct": 1.855287569573284
+        },
+        {
+          "label": "Zinc",
+          "count": 8,
+          "sharePct": 1.4842300556586272
+        },
+        {
+          "label": "Lead",
+          "count": 7,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Silver",
+          "count": 7,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Manganese",
+          "count": 6,
+          "sharePct": 1.1131725417439702
+        },
+        {
+          "label": "Brick Clay",
+          "count": 6,
+          "sharePct": 1.1131725417439702
+        },
+        {
+          "label": "Tin",
+          "count": 5,
+          "sharePct": 0.927643784786642
+        },
+        {
+          "label": "Tungsten",
+          "count": 4,
+          "sharePct": 0.7421150278293136
+        },
+        {
+          "label": "Molybdenum",
+          "count": 4,
+          "sharePct": 0.7421150278293136
+        },
+        {
+          "label": "Clay",
+          "count": 3,
+          "sharePct": 0.5565862708719851
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 3,
+          "sharePct": 0.5565862708719851
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 3,
+          "sharePct": 0.5565862708719851
+        },
+        {
+          "label": "Feldspar",
+          "count": 3,
+          "sharePct": 0.5565862708719851
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 2,
+          "sharePct": 0.3710575139146568
+        },
+        {
+          "label": "Bentonite",
+          "count": 2,
+          "sharePct": 0.3710575139146568
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 0.3710575139146568
+        }
+      ],
+      "sites": [
+        {
+          "name": "Municipal Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Etchepare and Gualeguay Pits",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Colon Pit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Moras Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Puerto Nuevo Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Entrerriana Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Don Antonio Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Peter, Puerto Campichuelo, and Fluvial Colon Pits",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Moras Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Cati",
+          "depositType": null,
+          "commodities": [
+            "Gemstone",
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Rio Ibirapuita",
+          "depositType": null,
+          "commodities": [
+            "Gemstone",
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Sao De Butia",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay",
+            "Coal",
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Campinas, Tabuleiro, Paulista-Santa Barbara",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Cerrito Do Ouro",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Faxinal, Cerro Do Bugio",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Pinheiro",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Colonia Santa Barbara, Pessegueiro",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Salsinho, Bomjardin",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Distrito De Cerro Da Arvovre, Serra Negra, Pinheiro",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Mina Seival",
+          "depositType": "Vein",
+          "commodities": [
+            "Barium-Barite",
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Districto Cerro Dos Martins, Cerro Das Ouelhas",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Bloco Butia Area",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Minas Luis - Uruguai and Cemiterio",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Santa Maria",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Casa De Pedra, Passo Catarina",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Palmas",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Tocas",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Mina Da Palma, Passo Do Ivo",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Santa Luzia",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Vouthier",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Atlantida",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Mina San Gregorio",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mina Zapucay",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mina Valencia",
+          "depositType": "Vein",
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mina Euritinia",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Mina Chape",
+          "depositType": "Vein",
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mina Ramallo",
+          "depositType": "Vein",
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Vulcano",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Mina La Oriental",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mina Apolonia",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

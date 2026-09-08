@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_469",
+  "regionName": "Iquitos várzea",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.646804+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 11,
+        "intersectionLengthKm": 210.8908999378997,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 48.77622682291059
+          },
+          {
+            "name": "EASTERN PERU THRUST FRONT",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.209482965488974
+          },
+          {
+            "name": "EASTERN PERU THRUST FRONT",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.57293788559522
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.225432406512027
+          },
+          {
+            "name": "EASTERN PERU THRUST FRONT",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.55074723852066
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.721329272967537
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.922953257708467
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.240762128103656
+          },
+          {
+            "name": "Falla de Shitari",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.133308408375917
+          },
+          {
+            "name": "Falla de Shitari",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.9691954585672304
+          },
+          {
+            "name": "Falla de Shitari",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.5685240931494537
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999997,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 78705.34192096758,
+        "percent": 70.50478330607064
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 78705.34192096758,
+          "percent": 70.50478330607064
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 18986.034052482857,
+          "percent": 17.007819088774827
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 13939.832903963219,
+          "percent": 12.487397605154545
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 6,
+      "medianMwM2": 55.0,
+      "p10MwM2": 53.0,
+      "p90MwM2": 55.0,
+      "maxMwM2": 55.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 6,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Rio Pukive",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Peru Gold Placer Deposits",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

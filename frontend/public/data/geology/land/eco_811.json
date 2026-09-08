@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_811",
+  "regionName": "Arabian-Persian Gulf coastal plain desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.210348+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 93.11687874271334,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 53599.47409368067,
+        "percent": 47.673808211399184
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 53599.47409368067,
+          "percent": 47.673808211399184
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 48084.20354648347,
+          "percent": 42.768275932453605
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 7497.180333297974,
+          "percent": 6.668332915192927
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 3141.397841879525,
+          "percent": 2.7941020086822945
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 107.3488346695405,
+          "percent": 0.0954809322719875
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 8310.701691935463,
+          "percentOfRegion": 6.883121257286572
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 7,
+      "medianMwM2": 46.4,
+      "p10MwM2": 44.559999999999995,
+      "p90MwM2": 47.9,
+      "maxMwM2": 47.9,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 7,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Alba Knuff",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

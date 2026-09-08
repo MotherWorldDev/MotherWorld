@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_135",
+  "regionName": "Admiralty Islands lowland rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.030474+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 0.0,
+      "dominantClass": null,
+      "classes": [],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2023.3852046157056,
+          "percentOfRegion": 100.00000000000011
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 50.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bauxite Australia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Arie Manus Island",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20083",
+  "regionName": "Gulf of Guinea Central",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.122295+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 110.81092490795558,
+        "medianAgeMa": 112.59175872802734,
+        "p10AgeMa": 96.5784912109375,
+        "p90AgeMa": 122.46469116210938,
+        "oldestAgeMa": 125.33663177490234,
+        "coveragePct": 86.94735929084742,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 15.870651122773547,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 84.12934887722645,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 37.4983319304677,
+          "medianMmYr": 37.29570770263672,
+          "p10MmYr": 35.47780990600586,
+          "p90MmYr": 39.65251541137695,
+          "coveragePct": 86.94735929084742
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 11.46110521664346,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.9124851661873254
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.548620050456136
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 68,
+      "medianMwM2": 61.0,
+      "p10MwM2": 50.35,
+      "p90MwM2": 79.114,
+      "maxMwM2": 85.25,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 1.4705882352941175
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 24,
+          "percent": 35.294117647058826
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 37,
+          "percent": 54.41176470588235
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 6,
+          "percent": 8.823529411764707
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 50.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Dagbati",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Viviezaveyron",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

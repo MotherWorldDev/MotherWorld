@@ -1,0 +1,600 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20043",
+  "regionName": "Northern Gulf of Mexico",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.901340+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 147.53432428675498,
+        "medianAgeMa": 148.33151245117188,
+        "p10AgeMa": 137.83465576171875,
+        "p90AgeMa": 155.7997589111328,
+        "oldestAgeMa": 157.54306030273438,
+        "coveragePct": 31.971600351607712,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 58.223605318896304,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 41.77639468110371,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 18.827635627354333,
+          "medianMmYr": 18.54096221923828,
+          "p10MmYr": 11.53117561340332,
+          "p90MmYr": 25.804798126220703,
+          "coveragePct": 31.971600351607712
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 633.2751154837914
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 708,
+      "medianMwM2": 43.0,
+      "p10MwM2": 30.0,
+      "p90MwM2": 61.0,
+      "maxMwM2": 104.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 224,
+          "percent": 31.63841807909605
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 396,
+          "percent": 55.932203389830505
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 68,
+          "percent": 9.6045197740113
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 18,
+          "percent": 2.5423728813559325
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 0.2824858757062147
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 44,
+      "commodityCount": 23,
+      "commodities": [
+        {
+          "label": "Geothermal",
+          "count": 12,
+          "sharePct": 16.216216216216218
+        },
+        {
+          "label": "Sulfur",
+          "count": 10,
+          "sharePct": 13.513513513513514
+        },
+        {
+          "label": "Halite",
+          "count": 9,
+          "sharePct": 12.162162162162163
+        },
+        {
+          "label": "Limestone",
+          "count": 6,
+          "sharePct": 8.108108108108109
+        },
+        {
+          "label": "Ultra Pure",
+          "count": 5,
+          "sharePct": 6.756756756756757
+        },
+        {
+          "label": "Titanium",
+          "count": 5,
+          "sharePct": 6.756756756756757
+        },
+        {
+          "label": "Zirconium",
+          "count": 3,
+          "sharePct": 4.054054054054054
+        },
+        {
+          "label": "Construction",
+          "count": 3,
+          "sharePct": 4.054054054054054
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 3,
+          "sharePct": 4.054054054054054
+        },
+        {
+          "label": "Calcium",
+          "count": 2,
+          "sharePct": 2.7027027027027026
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 2,
+          "sharePct": 2.7027027027027026
+        },
+        {
+          "label": "Stone",
+          "count": 2,
+          "sharePct": 2.7027027027027026
+        },
+        {
+          "label": "Clay",
+          "count": 2,
+          "sharePct": 2.7027027027027026
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Petroleum (Oil)",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "High Calcium",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Titanium-Heavy Minerals",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Diatomite",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Peat",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        }
+      ],
+      "sites": [
+        {
+          "name": "Main Pass Sulfur Mine",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone",
+            "Petroleum (Oil)",
+            "Sulfur",
+            "Ultra Pure"
+          ]
+        },
+        {
+          "name": "Lake Washington Mine",
+          "depositType": null,
+          "commodities": [
+            "Halite",
+            "Limestone",
+            "Sulfur",
+            "Ultra Pure"
+          ]
+        },
+        {
+          "name": "Caillou Isle Mine",
+          "depositType": null,
+          "commodities": [
+            "Halite",
+            "Limestone",
+            "Sulfur",
+            "Ultra Pure"
+          ]
+        },
+        {
+          "name": "Grand Isle Block 18 Mine",
+          "depositType": null,
+          "commodities": [
+            "Halite",
+            "Limestone",
+            "Sulfur",
+            "Ultra Pure"
+          ]
+        },
+        {
+          "name": "Grand Isle Block 16 Mine",
+          "depositType": null,
+          "commodities": [
+            "Halite",
+            "High Calcium",
+            "Limestone",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Lake Pelto Mine",
+          "depositType": null,
+          "commodities": [
+            "Halite",
+            "Limestone",
+            "Sulfur",
+            "Ultra Pure"
+          ]
+        },
+        {
+          "name": "Red Fish Salt Dome",
+          "depositType": null,
+          "commodities": [
+            "Halite"
+          ]
+        },
+        {
+          "name": "San Luis Pass Salt Dome",
+          "depositType": null,
+          "commodities": [
+            "Halite"
+          ]
+        },
+        {
+          "name": "Cat Island Placer",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Ship Island Placer",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Panama City-Phillips Inlet Placer",
+          "depositType": null,
+          "commodities": [
+            "Titanium-Heavy Minerals",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Dauphine Island Offshore Sands",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Perdido Bay Prospect",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Basic Magnesia",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Unnamed Geothermal Prospect",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Unnamed Geothermal Prospect",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Rockerfeller Refuge Geothermal Pros",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Caillou Island Mine",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Parker Brothers Oyster Shell Dredge",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Grand Isle Mine",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Main Pass Block 299",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Unnamed Geothermal Prospect",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Unnamed Peat Deposit",
+          "depositType": null,
+          "commodities": [
+            "Diatomite",
+            "Peat"
+          ]
+        },
+        {
+          "name": "Hatch Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Geothermal Prospect",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Unnamed Limestone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Geothermal Prospects",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Atchafalaya Bay Geothermal Prospect",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Unnamed Geothermal Prospect",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Padre Island",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Unnamed Geothermal Prospect",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Flamingo Dredge",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Airco Alloys/ Mobile, Ala.",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Piney Point Fcs Phos. Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Bryan Mound",
+          "depositType": null,
+          "commodities": [
+            "Halite"
+          ]
+        },
+        {
+          "name": "Gull Dredge",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Peaden Materials Co Pit",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed Clay Deposit",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed Geothermal Prospect",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Unnamed Sand and Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

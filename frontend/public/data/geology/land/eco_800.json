@@ -1,0 +1,336 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_800",
+  "regionName": "Northwest Iberian montane forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.389179+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 5,
+        "intersectionLengthKm": 315.076266755426,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 136.52769789361312
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.01610264634222
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 58.184751275990024
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 45.411504690667535
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.936210248813087
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 98.3796257916664,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 17157.57377230457,
+        "percent": 30.369306689753493
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 17157.57377230457,
+          "percent": 30.369306689753493
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 12804.896614021067,
+          "percent": 22.664966361940277
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 12599.473929369133,
+          "percent": 22.301363407698734
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 6174.4722806471655,
+          "percent": 10.928960284643374
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 4629.574840837909,
+          "percent": 8.194455699297189
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3130.4374987282745,
+          "percent": 5.540947556666939
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 930.5316580951502,
+          "percentOfRegion": 1.6203742083336379
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 51,
+      "medianMwM2": 65.0,
+      "p10MwM2": 42.0,
+      "p90MwM2": 80.0,
+      "maxMwM2": 113.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 17,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 25,
+          "percent": 49.01960784313725
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 8,
+          "percent": 15.686274509803921
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 1.9607843137254901
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 9,
+      "commodityCount": 12,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 18.75
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Lithium",
+          "count": 1,
+          "sharePct": 6.25
+        }
+      ],
+      "sites": [
+        {
+          "name": "Valderrodero",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Los Santos",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Rio Sil",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Panasqueira Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Tin",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Coto Wagner Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Jalles-Dos Mouros Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Minero Siderurgica",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Coto Wagner",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Guarda Area",
+          "depositType": "GREISEN?",
+          "commodities": [
+            "Lithium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

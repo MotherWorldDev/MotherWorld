@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_504",
+  "regionName": "Southern Andean Yungas",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.848681+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 3.4307656604764887,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.4307656604764887
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.20473457321447,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 40110.82983490926,
+        "percent": 53.810727873525344
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 40110.82983490926,
+          "percent": 53.810727873525344
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 23070.28239911776,
+          "percent": 30.949962722134135
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 6226.97054122212,
+          "percent": 8.353799177162308
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3394.080365396216,
+          "percent": 4.553332246550975
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1553.2056846337362,
+          "percent": 2.0837047942273688
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 185.21335971607505,
+          "percent": 0.248473186399875
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 597.547568260919,
+          "percentOfRegion": 0.7952654267855592
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 5,
+      "medianMwM2": 32.0,
+      "p10MwM2": 27.0,
+      "p90MwM2": 38.6,
+      "maxMwM2": 39.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 5,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 84,
+      "commodityCount": 30,
+      "commodities": [
+        {
+          "label": "Lead",
+          "count": 21,
+          "sharePct": 14.482758620689657
+        },
+        {
+          "label": "Silver",
+          "count": 16,
+          "sharePct": 11.03448275862069
+        },
+        {
+          "label": "Zinc",
+          "count": 16,
+          "sharePct": 11.03448275862069
+        },
+        {
+          "label": "Copper",
+          "count": 13,
+          "sharePct": 8.96551724137931
+        },
+        {
+          "label": "Iron",
+          "count": 9,
+          "sharePct": 6.206896551724138
+        },
+        {
+          "label": "Mica",
+          "count": 9,
+          "sharePct": 6.206896551724138
+        },
+        {
+          "label": "General",
+          "count": 7,
+          "sharePct": 4.827586206896552
+        },
+        {
+          "label": "Limestone",
+          "count": 7,
+          "sharePct": 4.827586206896552
+        },
+        {
+          "label": "Construction",
+          "count": 5,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 5,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Halite",
+          "count": 5,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Gold",
+          "count": 4,
+          "sharePct": 2.7586206896551726
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 4,
+          "sharePct": 2.7586206896551726
+        },
+        {
+          "label": "Manganese",
+          "count": 3,
+          "sharePct": 2.0689655172413794
+        },
+        {
+          "label": "Kaolin",
+          "count": 2,
+          "sharePct": 1.3793103448275863
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 2,
+          "sharePct": 1.3793103448275863
+        },
+        {
+          "label": "Travertine",
+          "count": 2,
+          "sharePct": 1.3793103448275863
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 1.3793103448275863
+        },
+        {
+          "label": "Lithium",
+          "count": 2,
+          "sharePct": 1.3793103448275863
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Tantalum",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Dimension",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Stone",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Boron-Borates",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 0.6896551724137931
+        }
+      ],
+      "sites": [
+        {
+          "name": "Cerro Labrado",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sierra De Santa Barbara",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Zapla",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Chorrillos, Mina",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Adelaida Mine",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Trampasacha Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Chumbicha Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Espinillo Mine",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "La Chilca Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Zapallar Mine",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "San Gerardo Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Perlita Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "El Carmen Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Leon Occurence",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Cerro Labrado Occurence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Santa Maria Occurence",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "El Moro Occurence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Yolanda I-Iv Occurence",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Chorillos Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Elsa Occurence",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "El Toro Mine",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Nilda Occurence",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Claudia Occurence",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Videncia Occurence",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Las Pircas Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Guanacos Quarry",
+          "depositType": null,
+          "commodities": [
+            "Travertine"
+          ]
+        },
+        {
+          "name": "Alicia Occurence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Sol De America Quarry",
+          "depositType": null,
+          "commodities": [
+            "Travertine"
+          ]
+        },
+        {
+          "name": "9 De Febrero Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Santa Barbara I-Iv Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Corral Viejo Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Carapari I Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Lovelia Occurence",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Turo Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Yolanda Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Caldera Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Julia Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Barium-Barite",
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

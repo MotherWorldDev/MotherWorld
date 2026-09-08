@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20186",
+  "regionName": "Malvinas/Falklands",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.717510+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 23.341166611536714,
+        "medianAgeMa": 24.161495208740234,
+        "p10AgeMa": 19.455238342285156,
+        "p90AgeMa": 25.472898483276367,
+        "oldestAgeMa": 25.74643325805664,
+        "coveragePct": 1.7427363273414822,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 14.47932647960769,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 85.52067352039235,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 47.6194386659241,
+          "medianMmYr": 43.340370178222656,
+          "p10MmYr": 43.04743957519531,
+          "p90MmYr": 60.90023422241211,
+          "coveragePct": 1.7427363273414822
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 150.12095156965236,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 83.47457528070764
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.64637628894472
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    }
+  ]
+}

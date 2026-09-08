@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_69",
+  "regionName": "East African halophytics",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.763355+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 170.5058139447824,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 82.76988262224415
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 55.89197063099306
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 20.55246738794485
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.291493303600356
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 77.35654459519786,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 1384.2556590577997,
+        "percent": 48.23653741751943
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1384.2556590577997,
+          "percent": 48.23653741751943
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 753.4105142298281,
+          "percent": 26.253758995022608
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 477.7832625996507,
+          "percent": 16.649099516442902
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 254.27491243429145,
+          "percent": 8.86060407101506
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 840.012640757589,
+          "percentOfRegion": 22.64345540480214
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 28.57142857142857
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Sodium",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        }
+      ],
+      "sites": [
+        {
+          "name": "Lake Magadi",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Halite",
+            "Sodium"
+          ]
+        },
+        {
+          "name": "Hanang Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Niobium (Columbium)",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Minjingu",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

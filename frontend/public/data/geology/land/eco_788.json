@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_788",
+  "regionName": "Corsican montane broadleaf and mixed forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.203804+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 96.98129440245336,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 2585.7355893710146,
+        "percent": 73.38659902820056
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2585.7355893710146,
+          "percent": 73.38659902820056
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 937.7082322692058,
+          "percent": 26.613400971799443
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 109.67310399970462,
+          "percentOfRegion": 3.0187055975465773
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 81.0,
+      "p10MwM2": 77.0,
+      "p90MwM2": 85.0,
+      "maxMwM2": 86.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 50.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 50.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

@@ -1,0 +1,620 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_719",
+  "regionName": "Urals montane forest and taiga",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.187237+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999999,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 112982.23802844221,
+        "percent": 64.35134008435166
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 112982.23802844221,
+          "percent": 64.35134008435166
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 36549.666791812706,
+          "percent": 20.81760884483077
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 13205.509877692559,
+          "percent": 7.521467727632832
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 4084.7939954927874,
+          "percent": 2.32657780696733
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3383.055362768496,
+          "percent": 1.9268882434325667
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3047.495266366171,
+          "percent": 1.7357631404151543
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 2252.2312725426846,
+          "percent": 1.282804298243062
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 65.92662330430491,
+          "percent": 0.037549854126630665
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 30,
+      "medianMwM2": 29.6,
+      "p10MwM2": 22.0,
+      "p90MwM2": 37.0,
+      "maxMwM2": 37.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 30,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 307,
+      "commodityCount": 32,
+      "commodities": [
+        {
+          "label": "Platinum",
+          "count": 245,
+          "sharePct": 50.10224948875256
+        },
+        {
+          "label": "Gold",
+          "count": 69,
+          "sharePct": 14.11042944785276
+        },
+        {
+          "label": "Iron",
+          "count": 26,
+          "sharePct": 5.316973415132924
+        },
+        {
+          "label": "Chromium",
+          "count": 20,
+          "sharePct": 4.08997955010225
+        },
+        {
+          "label": "Osmium",
+          "count": 15,
+          "sharePct": 3.067484662576687
+        },
+        {
+          "label": "Palladium",
+          "count": 14,
+          "sharePct": 2.8629856850715747
+        },
+        {
+          "label": "Titanium",
+          "count": 13,
+          "sharePct": 2.658486707566462
+        },
+        {
+          "label": "Vanadium",
+          "count": 13,
+          "sharePct": 2.658486707566462
+        },
+        {
+          "label": "Copper",
+          "count": 10,
+          "sharePct": 2.044989775051125
+        },
+        {
+          "label": "Nickel",
+          "count": 10,
+          "sharePct": 2.044989775051125
+        },
+        {
+          "label": "Iridium",
+          "count": 9,
+          "sharePct": 1.8404907975460123
+        },
+        {
+          "label": "Metal",
+          "count": 6,
+          "sharePct": 1.2269938650306749
+        },
+        {
+          "label": "Rhodium",
+          "count": 5,
+          "sharePct": 1.0224948875255624
+        },
+        {
+          "label": "Zinc",
+          "count": 5,
+          "sharePct": 1.0224948875255624
+        },
+        {
+          "label": "Ruthenium",
+          "count": 3,
+          "sharePct": 0.6134969325153374
+        },
+        {
+          "label": "Magnesite",
+          "count": 3,
+          "sharePct": 0.6134969325153374
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 0.408997955010225
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 0.408997955010225
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 0.408997955010225
+        },
+        {
+          "label": "REE",
+          "count": 2,
+          "sharePct": 0.408997955010225
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 0.408997955010225
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 2,
+          "sharePct": 0.408997955010225
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 2,
+          "sharePct": 0.408997955010225
+        },
+        {
+          "label": "Refiner",
+          "count": 1,
+          "sharePct": 0.2044989775051125
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 0.2044989775051125
+        },
+        {
+          "label": "Smelter",
+          "count": 1,
+          "sharePct": 0.2044989775051125
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 0.2044989775051125
+        },
+        {
+          "label": "Potassium",
+          "count": 1,
+          "sharePct": 0.2044989775051125
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 0.2044989775051125
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.2044989775051125
+        }
+      ],
+      "sites": [
+        {
+          "name": "Kachkanar Mt. Kachkanar",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Guseva Gora Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Pervoual'Sk Pervouralskoe Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Gusevogorsk Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Kachkanar Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Lazarewka",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sirkov Log",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ploskaya River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kroutoi - Log",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Illinsky - Log",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Log No. 1 -Propretschnoi",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Log No. 3",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Arsen - Witalewsky Priisk",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Pobiedonosny Laverie",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Issowskoi - Priisk",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Pokrowsky - Priisk",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Anna - Josiphowsky Priisk",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Martian River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Malaia Chourpikha",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Solovyevskii Log",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Chaitanka River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Morphine-Log",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Novoi-Log",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Zakharowka",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Krutoi Log Placer",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Aleksandrovskii Log Placer",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Poupkov Log",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bielgorsky Log",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Tsauch Riverpawlowsky Priisk",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Zotikha Lojok",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kossorgskii Log",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Unnamed Lojok",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Unnamed Small Lojok",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Zaetzeff River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Syssim River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Doubnikine River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Phedossiewka River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Soulatky River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Krasnouchka",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bolshoi Sakciam",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

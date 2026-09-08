@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_132",
+  "regionName": "South Victoria Land tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.029463+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 93.59383778710902,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 2618.7210298186455,
+        "percent": 32.7713513065466
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2618.7210298186455,
+          "percent": 32.7713513065466
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2366.671841220983,
+          "percent": 29.617142663468627
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1219.7324825265925,
+          "percent": 15.264047307724631
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1211.5706921248334,
+          "percent": 15.161908554684194
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 531.0596647536544,
+          "percent": 6.645817801976454
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 43.12939320225274,
+          "percent": 0.5397323655995119
+        }
+      ],
+      "excluded": [
+        {
+          "code": "ig",
+          "label": "Ice and glaciers",
+          "areaKm2": 423.32318936413037,
+          "percentOfRegion": 4.9582044295425645
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 123.62421026035483,
+          "percentOfRegion": 1.4479577833482382
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 48,
+      "medianMwM2": 79.42,
+      "p10MwM2": 54.208125,
+      "p90MwM2": 140.45,
+      "maxMwM2": 140.45,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 6,
+          "percent": 12.5
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 33,
+          "percent": 68.75
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 9,
+          "percent": 18.75
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

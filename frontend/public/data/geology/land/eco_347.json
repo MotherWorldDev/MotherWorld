@@ -1,0 +1,577 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_347",
+  "regionName": "Atlantic coastal pine barrens",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.089380+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 78.20089110493662,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 9267.509763879729,
+        "percent": 84.39305852509344
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 9267.509763879729,
+          "percent": 84.39305852509344
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 924.9092505969654,
+          "percent": 8.422534478491109
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 770.4510111557196,
+          "percent": 7.015985839971959
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 18.494941871551216,
+          "percent": 0.1684211564434969
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3061.1412141304986,
+          "percentOfRegion": 21.799108895063334
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 8,
+      "medianMwM2": 47.0,
+      "p10MwM2": 39.3,
+      "p90MwM2": 52.8,
+      "maxMwM2": 57.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 12.5
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 7,
+          "percent": 87.5
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 197,
+      "commodityCount": 22,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 168,
+          "sharePct": 43.63636363636363
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 168,
+          "sharePct": 43.63636363636363
+        },
+        {
+          "label": "Titanium",
+          "count": 12,
+          "sharePct": 3.116883116883117
+        },
+        {
+          "label": "Metal",
+          "count": 7,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Zirconium",
+          "count": 6,
+          "sharePct": 1.5584415584415585
+        },
+        {
+          "label": "Clay",
+          "count": 4,
+          "sharePct": 1.0389610389610389
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 0.7792207792207793
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 0.5194805194805194
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 0.5194805194805194
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Stone",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Kyanite",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Graphite",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Vermiculite",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 0.2597402597402597
+        }
+      ],
+      "sites": [
+        {
+          "name": "Harrison Street Sandstone",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Lakehurst Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Manchester Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Lakehurst",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Lakehurstasarcodeposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Colliers Mills-Keswick Grove",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Lawrence Lynch Corp",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Hyannis Sand and Gravel",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Moniz Crushing Co Pit and Plant",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Campanella Corp",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Hyannis Sand and Gravel Inc",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Lebco Enterprises",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "John F Wood Inc.",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Grant Brothers Inc Pit and Plant",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Nevada Construction Co",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Kelleher Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Cedar Lake Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Delco Construction Co Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Mays Landing Sand and Gravel",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Hollander Dredge and Plant",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Lockhart Sand and Gravel Inc",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Sicklerville Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "George Pettinos Inc- New Freedom",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "George F Pettinos Inc- Williamstown",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Brimfield Co",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Tri-Borough Sand and Stone",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Thomsons Trenching- Pit 3 Upper Twp",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Tuckahoe Sand and Gravel",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Pennsylvania Glass Sand",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Whitehead Bros- Dividing Creek",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Jesse S Morie and Son Inc",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Brunetti Bros",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "South State Inc- Reeves Dredge",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "South State Inc- Five Point",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Grays Ferry Brick Co",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Downer Silica Co",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Anthony M Brida Inc",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Dallenbach Sand Co",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Herbert Sand Co Inc",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Rustic Materials Corp",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,528 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_530",
+  "regionName": "Cuban dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.977403+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 254.2548149314815,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Nipa-Guacanayabo Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 140.93762441405505
+          },
+          {
+            "name": "Pinar del Rio Fault",
+            "kinematics": "Sinistral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 97.73281641703807
+          },
+          {
+            "name": "Cruce Peralejo Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.584374100388365
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 88.22586873092655,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 35838.00231473861,
+        "percent": 61.72612422364806
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 35838.00231473861,
+          "percent": 61.72612422364806
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 12972.285881051894,
+          "percent": 22.343012390207363
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 4621.372216806145,
+          "percent": 7.959690192356987
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2499.7051326283668,
+          "percent": 4.3054048655958015
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 2128.334080316384,
+          "percent": 3.665768328191791
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 7748.322965444219,
+          "percentOfRegion": 11.774131269073555
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 30.0,
+      "p10MwM2": 27.9,
+      "p90MwM2": 38.400000000000006,
+      "maxMwM2": 42.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 75.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 200,
+      "commodityCount": 12,
+      "commodities": [
+        {
+          "label": "Chromium",
+          "count": 132,
+          "sharePct": 58.4070796460177
+        },
+        {
+          "label": "Manganese",
+          "count": 40,
+          "sharePct": 17.699115044247787
+        },
+        {
+          "label": "Gold",
+          "count": 15,
+          "sharePct": 6.637168141592921
+        },
+        {
+          "label": "Copper",
+          "count": 11,
+          "sharePct": 4.867256637168142
+        },
+        {
+          "label": "Nickel",
+          "count": 8,
+          "sharePct": 3.5398230088495577
+        },
+        {
+          "label": "Cobalt",
+          "count": 7,
+          "sharePct": 3.0973451327433628
+        },
+        {
+          "label": "Silver",
+          "count": 4,
+          "sharePct": 1.7699115044247788
+        },
+        {
+          "label": "Zinc",
+          "count": 3,
+          "sharePct": 1.3274336283185841
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 0.8849557522123894
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 0.8849557522123894
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 1,
+          "sharePct": 0.4424778761061947
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 0.4424778761061947
+        }
+      ],
+      "sites": [
+        {
+          "name": "Santa Rosa Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sigle Veinte Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Estrella Del Norte Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Brazo De Felipe Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Victoria Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Raquel Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ponupo De Manacal Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Botsford",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Thiers Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Quinto Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Miron Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Caridad Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Boston Group",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sultana Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ponupo 1 and 2 Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Juanita Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Balkanes Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sabanilla Mine North Area",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Dolores Sabanilla Mine-South Area",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Avispa Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Jutinicu Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Luis Antonio-Doncella Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Cubanita Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tres Josefas Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Esperancita Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Elvira Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Jesus Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Polaris Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Gloria Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Carmita Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Llave",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Abundancia",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Valle De Manganeso Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Labor",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Vencedora",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Garrido",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Casimba",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "El Leon",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Good Luck Denouncement",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Bad Luck Mine",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

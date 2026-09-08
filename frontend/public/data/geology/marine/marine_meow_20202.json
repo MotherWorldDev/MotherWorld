@@ -1,0 +1,241 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20202",
+  "regionName": "Tweed-Moreton",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.819886+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 60.9321182667463,
+        "medianAgeMa": 61.03691482543945,
+        "p10AgeMa": 56.48397445678711,
+        "p90AgeMa": 65.34663391113281,
+        "oldestAgeMa": 67.61054992675781,
+        "coveragePct": 72.27290831521748,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 100.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 29.291429292160732,
+          "medianMmYr": 30.644052505493164,
+          "p10MmYr": 20.25852394104004,
+          "p90MmYr": 33.265621185302734,
+          "coveragePct": 72.27290831521748
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 52.0,
+      "p10MwM2": 47.2,
+      "p90MwM2": 56.8,
+      "maxMwM2": 58.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 2,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 7,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Titanium",
+          "count": 6,
+          "sharePct": 37.5
+        },
+        {
+          "label": "Zirconium",
+          "count": 5,
+          "sharePct": 31.25
+        },
+        {
+          "label": "Metal",
+          "count": 3,
+          "sharePct": 18.75
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 6.25
+        }
+      ],
+      "sites": [
+        {
+          "name": "Byron Bay Beach Sands",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Dunwich, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Fraser Island, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "North Stradbroke Island, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Moreton Island",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Yuraygir National Park",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "North Stradbroke Island",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20139",
+  "regionName": "Arafura Sea",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:34.392680+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 298.22929008942924,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 292.2936795032524
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.935610586176835
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 7,
+      "medianMwM2": 76.1488,
+      "p10MwM2": 46.0144,
+      "p90MwM2": 113.63744,
+      "maxMwM2": 123.428,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 42.857142857142854
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 14.285714285714285
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 14.285714285714285
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 28.57142857142857
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

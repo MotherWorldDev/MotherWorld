@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_36",
+  "regionName": "Angolan wet miombo woodlands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.092917+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000003,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 295825.6258591149,
+        "percent": 66.19387614670018
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 295825.6258591149,
+          "percent": 66.19387614670018
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 96564.46677808091,
+          "percent": 21.607243576405274
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 54517.75304251684,
+          "percent": 12.198880276894558
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 7,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Diamond",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        }
+      ],
+      "sites": [
+        {
+          "name": "Gambos, Chiange, and Chitado Deposits",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Diamang Mine",
+          "depositType": null,
+          "commodities": [
+            "Diamond"
+          ]
+        },
+        {
+          "name": "Cassinga North",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Cassinga Southtchamutete",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Silica"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

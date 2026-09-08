@@ -1,0 +1,644 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_339",
+  "regionName": "Northeast US Coastal forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.086865+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 95.65386151175713,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 34284.09620412095,
+        "percent": 48.71321655344685
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 34284.09620412095,
+          "percent": 48.71321655344685
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 24021.77763514156,
+          "percent": 34.13180411618206
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 5209.68390531115,
+          "percent": 7.402279434273794
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 3056.143743536577,
+          "percent": 4.3423805344317135
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2206.0878773750405,
+          "percent": 3.1345623307866832
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 1338.5108712422593,
+          "percent": 1.901848878901745
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 263.1545186474086,
+          "percent": 0.3739081519771382
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3197.767996603925,
+          "percentOfRegion": 4.346138488242842
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 39,
+      "medianMwM2": 50.0,
+      "p10MwM2": 45.0,
+      "p90MwM2": 69.4,
+      "maxMwM2": 78.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 25,
+          "percent": 64.1025641025641
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 14,
+          "percent": 35.8974358974359
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4242,
+      "commodityCount": 93,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 1148,
+          "sharePct": 15.390803056710014
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 1148,
+          "sharePct": 15.390803056710014
+        },
+        {
+          "label": "Stone",
+          "count": 1138,
+          "sharePct": 15.256736827993029
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 654,
+          "sharePct": 8.767931358090896
+        },
+        {
+          "label": "Iron",
+          "count": 429,
+          "sharePct": 5.751441211958708
+        },
+        {
+          "label": "Dimension",
+          "count": 380,
+          "sharePct": 5.094516691245475
+        },
+        {
+          "label": "Feldspar",
+          "count": 299,
+          "sharePct": 4.008580238637887
+        },
+        {
+          "label": "Copper",
+          "count": 202,
+          "sharePct": 2.7081378200831208
+        },
+        {
+          "label": "Clay",
+          "count": 196,
+          "sharePct": 2.627698082852929
+        },
+        {
+          "label": "Granite",
+          "count": 183,
+          "sharePct": 2.453411985520847
+        },
+        {
+          "label": "Mica",
+          "count": 163,
+          "sharePct": 2.185279528086875
+        },
+        {
+          "label": "Limestone",
+          "count": 132,
+          "sharePct": 1.7696742190642176
+        },
+        {
+          "label": "General",
+          "count": 125,
+          "sharePct": 1.6758278589623274
+        },
+        {
+          "label": "Beryllium",
+          "count": 107,
+          "sharePct": 1.4345086472717523
+        },
+        {
+          "label": "Chromium",
+          "count": 93,
+          "sharePct": 1.2468159270679715
+        },
+        {
+          "label": "Lead",
+          "count": 84,
+          "sharePct": 1.1261563212226842
+        },
+        {
+          "label": "Silver",
+          "count": 73,
+          "sharePct": 0.9786834696339992
+        },
+        {
+          "label": "Gold",
+          "count": 66,
+          "sharePct": 0.8848371095321088
+        },
+        {
+          "label": "Silica",
+          "count": 62,
+          "sharePct": 0.8312106180453144
+        },
+        {
+          "label": "Zinc",
+          "count": 59,
+          "sharePct": 0.7909907494302185
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 45,
+          "sharePct": 0.6032980292264378
+        },
+        {
+          "label": "Sulfur",
+          "count": 45,
+          "sharePct": 0.6032980292264378
+        },
+        {
+          "label": "Flagstone",
+          "count": 40,
+          "sharePct": 0.5362649148679448
+        },
+        {
+          "label": "Quartz",
+          "count": 34,
+          "sharePct": 0.455825177637753
+        },
+        {
+          "label": "Titanium",
+          "count": 33,
+          "sharePct": 0.4424185547660544
+        },
+        {
+          "label": "Nickel",
+          "count": 31,
+          "sharePct": 0.4156053090226572
+        },
+        {
+          "label": "Cobalt",
+          "count": 29,
+          "sharePct": 0.38879206327925997
+        },
+        {
+          "label": "Aluminum",
+          "count": 22,
+          "sharePct": 0.2949457031773696
+        },
+        {
+          "label": "Marble",
+          "count": 21,
+          "sharePct": 0.28153908030567104
+        },
+        {
+          "label": "Tantalum",
+          "count": 20,
+          "sharePct": 0.2681324574339724
+        }
+      ],
+      "sites": [
+        {
+          "name": "Phoenixville Area",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Southampton Area",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Ossining Area",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Iron Mine Hill Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Copper Hill",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Hilton Quarry",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Jones Falls Gneiss Quarries",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Ruby Quarry, Ruby Flint",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Wheatley, Chester, Phoenixville",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Molybdenum",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Leiper's Quarry",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Monroe (Lane's Mine)",
+          "depositType": "Quartz Vein",
+          "commodities": [
+            "Bismuth",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Copper Mine Hill",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Garnet",
+            "Iron",
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Hollister Mica Beryl Prospect",
+          "depositType": "Pegmatite Dike",
+          "commodities": [
+            "Beryllium",
+            "Feldspar",
+            "Mica",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Flatrock Quarry",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "REE"
+          ]
+        },
+        {
+          "name": "Smith Mine",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Welch Mine",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Blake Mine",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Echo Hill Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Toms Point Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "White Hall Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Milford Flagstone",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Scudders Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Nj & Philadelphia Traction Co.",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Mccarthy Sons Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Margerum Brothers",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Crusher Road Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Savage Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Wilburtha Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Hamden Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Lansdowne Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Smith's Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Pennsylvania Railroad Co. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Prallsville Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Wichkecheoke",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Murphy's Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Stockton #11 On Wichkecheoke",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Trap Rock Industries",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Sb Twinnings Co.",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Twinning-2",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Bergers Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

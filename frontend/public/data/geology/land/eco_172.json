@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_172",
+  "regionName": "New Zealand South Island temperate forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.225189+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 9,
+        "intersectionLengthKm": 134.98986934232914,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Moonlight South",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 32.7625706055195
+          },
+          {
+            "name": "Settlement",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.615156889264814
+          },
+          {
+            "name": "Takitimu 2",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.51123091873196
+          },
+          {
+            "name": "Hump Ridge",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.290796588131236
+          },
+          {
+            "name": "Takitimu 1",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.935695863177978
+          },
+          {
+            "name": "Hauroko South",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.618914970196197
+          },
+          {
+            "name": "Hauroko North",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.963434166738947
+          },
+          {
+            "name": "Monowai",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.341017971581204
+          },
+          {
+            "name": "Hokonui",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.9510513689872797
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 88.28168355357035,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 3320.124251301616,
+        "percent": 31.908221368177664
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3320.124251301616,
+          "percent": 31.908221368177664
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3008.419418244352,
+          "percent": 28.912566367970115
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2686.1302110665483,
+          "percent": 25.815189707089957
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1321.6945055868084,
+          "percent": 12.702211626216886
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 68.86295838700374,
+          "percent": 0.6618109305453549
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1381.167516138066,
+          "percentOfRegion": 11.71831644642967
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 76.0,
+      "p10MwM2": 76.0,
+      "p90MwM2": 76.0,
+      "maxMwM2": 76.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 100.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 13,
+      "commodityCount": 8,
+      "commodities": [
+        {
+          "label": "General",
+          "count": 6,
+          "sharePct": 26.08695652173913
+        },
+        {
+          "label": "Limestone",
+          "count": 6,
+          "sharePct": 26.08695652173913
+        },
+        {
+          "label": "Quartz",
+          "count": 3,
+          "sharePct": 13.043478260869565
+        },
+        {
+          "label": "Platinum",
+          "count": 3,
+          "sharePct": 13.043478260869565
+        },
+        {
+          "label": "Kaolin",
+          "count": 2,
+          "sharePct": 8.695652173913043
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 4.3478260869565215
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 4.3478260869565215
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 4.3478260869565215
+        }
+      ],
+      "sites": [
+        {
+          "name": "Elmtree Creek",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Dipton",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Fernhill",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Browns",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Pebbly Hills",
+          "depositType": null,
+          "commodities": [
+            "Kaolin",
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Mabel Bush",
+          "depositType": null,
+          "commodities": [
+            "Kaolin",
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Awarua Bay",
+          "depositType": null,
+          "commodities": [
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Purakanui Bay",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Long Wood",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Colac Bay",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Clifden",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Winton",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "(Facility) Tiwai Point Bluff Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

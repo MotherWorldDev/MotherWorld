@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_151",
+  "regionName": "Seram rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.035092+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 60.73060422443296,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 6449.018437274901,
+        "percent": 55.5117556872132
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 6449.018437274901,
+          "percent": 55.5117556872132
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 2989.1188964832077,
+          "percent": 25.729688869012463
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 2154.69051537555,
+          "percent": 18.547109863997495
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 24.564462528342833,
+          "percent": 0.21144557977683204
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 7511.994691848375,
+          "percentOfRegion": 39.26939577556705
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 79.2868,
+      "p10MwM2": 54.01544,
+      "p90MwM2": 104.55816,
+      "maxMwM2": 110.876,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 50.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 50.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

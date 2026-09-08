@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_345",
+  "regionName": "Alberta-British Columbia foothills forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.088372+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999993,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 100902.88592620331,
+        "percent": 82.937275984713
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 100902.88592620331,
+          "percent": 82.937275984713
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 20726.61132774333,
+          "percent": 17.036268766129716
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 32.18590140768738,
+          "percent": 0.026455249157278225
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 234,
+      "medianMwM2": 61.0,
+      "p10MwM2": 50.0,
+      "p90MwM2": 75.0,
+      "maxMwM2": 110.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 95,
+          "percent": 40.598290598290596
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 127,
+          "percent": 54.27350427350427
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 9,
+          "percent": 3.8461538461538463
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 1.282051282051282
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Natural Gas",
+          "count": 3,
+          "sharePct": 30.0
+        },
+        {
+          "label": "Sulfur",
+          "count": 3,
+          "sharePct": 30.0
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Douglas",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Strathcona",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Banshee-Hanlan Robb",
+          "depositType": null,
+          "commodities": [
+            "Natural Gas",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Burnt Timber Creek - Cremona",
+          "depositType": null,
+          "commodities": [
+            "Natural Gas",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Bigstone Creek",
+          "depositType": null,
+          "commodities": [
+            "Natural Gas",
+            "Sulfur"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

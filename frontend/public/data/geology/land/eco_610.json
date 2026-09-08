@@ -1,0 +1,95 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_610",
+  "regionName": "Tehuacán Valley matorral",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.159201+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.0,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 3619.4484705318337,
+        "percent": 36.710535841890845
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 3619.4484705318337,
+          "percent": 36.710535841890845
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2058.2910646481882,
+          "percent": 20.876376198473192
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1738.628882452622,
+          "percent": 17.634177810423463
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 1359.8940886606094,
+          "percent": 13.792830893822696
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1083.164460723765,
+          "percent": 10.986079255389807
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Perlite",
+          "count": 1,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Oriental",
+          "depositType": null,
+          "commodities": [
+            "Perlite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

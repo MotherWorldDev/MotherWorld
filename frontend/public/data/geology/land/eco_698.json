@@ -1,0 +1,757 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_698",
+  "regionName": "Hokkaido montane conifer forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.814706+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 14,
+        "intersectionLengthKm": 263.56590163997225,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Sarobetsu",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.17567384646114
+          },
+          {
+            "name": "Shihoro",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.950279445441687
+          },
+          {
+            "name": "Furano",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.9904088120738
+          },
+          {
+            "name": "Kotanuka",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.35589241960555
+          },
+          {
+            "name": "Kochien",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.846997428624963
+          },
+          {
+            "name": "Rokugo",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.79611724564197
+          },
+          {
+            "name": "Horonobe",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.523788281316534
+          },
+          {
+            "name": "Kaiyo",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.892801672294407
+          },
+          {
+            "name": "Higashitoikanbetsu",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.690805097224448
+          },
+          {
+            "name": "Rausudake",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.478158803311773
+          },
+          {
+            "name": "Minehama",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.780670047125538
+          },
+          {
+            "name": "Yoroushi",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.861100081209467
+          },
+          {
+            "name": "Otofuke",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.075259155215591
+          },
+          {
+            "name": "Shimokanayama",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.1479493044253712
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 94.60670532627782,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 16711.370830027317,
+        "percent": 38.56239367112854
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 16711.370830027317,
+          "percent": 38.56239367112854
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 7326.309068102595,
+          "percent": 16.905855139836504
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 5946.861922438419,
+          "percent": 13.722706107918961
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 5410.345114373573,
+          "percent": 12.484664502941897
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 4790.509954497156,
+          "percent": 11.054361286678326
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 2246.3409297032695,
+          "percent": 5.18355340994158
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 648.7273175997708,
+          "percent": 1.4969734356889202
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 255.462016916501,
+          "percent": 0.5894924458652867
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2470.4742046832152,
+          "percentOfRegion": 5.393294673722092
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 58,
+      "medianMwM2": 106.426,
+      "p10MwM2": 38.548,
+      "p90MwM2": 214.45000000000007,
+      "maxMwM2": 301.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 9,
+          "percent": 15.517241379310345
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 8,
+          "percent": 13.793103448275861
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 9,
+          "percent": 15.517241379310345
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 13,
+          "percent": 22.413793103448278
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 7,
+          "percent": 12.068965517241379
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 10,
+          "percent": 17.24137931034483
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 2,
+          "percent": 3.4482758620689653
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 77,
+      "commodityCount": 22,
+      "commodities": [
+        {
+          "label": "Mercury",
+          "count": 43,
+          "sharePct": 19.196428571428573
+        },
+        {
+          "label": "Iridium",
+          "count": 22,
+          "sharePct": 9.821428571428571
+        },
+        {
+          "label": "Osmium",
+          "count": 22,
+          "sharePct": 9.821428571428571
+        },
+        {
+          "label": "Platinum",
+          "count": 22,
+          "sharePct": 9.821428571428571
+        },
+        {
+          "label": "Gold",
+          "count": 20,
+          "sharePct": 8.928571428571429
+        },
+        {
+          "label": "Ruthenium",
+          "count": 15,
+          "sharePct": 6.696428571428571
+        },
+        {
+          "label": "PGE",
+          "count": 13,
+          "sharePct": 5.803571428571429
+        },
+        {
+          "label": "Rhodium",
+          "count": 13,
+          "sharePct": 5.803571428571429
+        },
+        {
+          "label": "Chromium",
+          "count": 11,
+          "sharePct": 4.910714285714286
+        },
+        {
+          "label": "Palladium",
+          "count": 11,
+          "sharePct": 4.910714285714286
+        },
+        {
+          "label": "Silver",
+          "count": 5,
+          "sharePct": 2.232142857142857
+        },
+        {
+          "label": "Antimony",
+          "count": 5,
+          "sharePct": 2.232142857142857
+        },
+        {
+          "label": "Copper",
+          "count": 5,
+          "sharePct": 2.232142857142857
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 1.3392857142857142
+        },
+        {
+          "label": "Arsenic",
+          "count": 3,
+          "sharePct": 1.3392857142857142
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 0.8928571428571428
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 0.8928571428571428
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 0.8928571428571428
+        },
+        {
+          "label": "Zinc",
+          "count": 2,
+          "sharePct": 0.8928571428571428
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 0.4464285714285714
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 1,
+          "sharePct": 0.4464285714285714
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 0.4464285714285714
+        }
+      ],
+      "sites": [
+        {
+          "name": "Monomanai",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Hassen Deposit",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Toikambetsu Deposit",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Tombetsu River",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Obirashibe River",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Numaushi",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Kanayama Deposit",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Seiwa",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Horokanai",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Toikambetsu - Hoshin",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Toikambetsu - Jugosen",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Toikambetsu - Nobukanai",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Onnebetsu - Minamisen",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Hamatombetsu",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Kotobuki",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Nakatombetsu - Kakuta",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Matsuneshiri",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Utsunaigawa",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Shirukomanaigawa",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Soeushinai",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Shirogane Onsen",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kitano Sawa",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Iron",
+            "Metal",
+            "Osmium",
+            "Platinum",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Pechan",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Mercury",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Tomarinaikawa",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Sorachigawa",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Hokkai Mine",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Kitami Gold Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Okuto",
+          "depositType": "Replacement",
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Wakumbe",
+          "depositType": "Replacement",
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Oe Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold",
+            "Mercury",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Ikutawara Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Mercury",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Inaushi",
+          "depositType": "Placer",
+          "commodities": [
+            "Barium-Barite",
+            "Gold",
+            "Mercury",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Teshio Mine",
+          "depositType": "Stockwork",
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Hokushin",
+          "depositType": "Vein",
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Aoba",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Tenryu",
+          "depositType": "Vein",
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Shosei",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Tochigi",
+          "depositType": "Replacement",
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Mizuito",
+          "depositType": "Replacement",
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Hoei",
+          "depositType": "Replacement",
+          "commodities": [
+            "Mercury"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

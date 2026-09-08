@@ -1,0 +1,555 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_431",
+  "regionName": "Gulf of California xeric scrub",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.428472+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 115.2927233498521,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "El Carrizal",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.36745780055536
+          },
+          {
+            "name": "Loreto",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.92526554929674
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 86.42571511145161,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 7891.446875719426,
+        "percent": 39.00914762173582
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 7891.446875719426,
+          "percent": 39.00914762173582
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 5938.544434136902,
+          "percent": 29.35552378895852
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2247.7931846805996,
+          "percent": 11.111333263121463
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2178.73050985738,
+          "percent": 10.769941358726832
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1973.219190880261,
+          "percent": 9.754053967457379
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3177.343396373961,
+          "percentOfRegion": 13.57428488854848
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 16,
+      "medianMwM2": 149.10000000000002,
+      "p10MwM2": 39.45,
+      "p90MwM2": 311.9,
+      "maxMwM2": 684.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 12.5
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 18.75
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 6.25
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 12.5
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 3,
+          "percent": 18.75
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2,
+          "percent": 12.5
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 3,
+          "percent": 18.75
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 44,
+      "commodityCount": 16,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 23,
+          "sharePct": 37.096774193548384
+        },
+        {
+          "label": "Gold",
+          "count": 9,
+          "sharePct": 14.516129032258066
+        },
+        {
+          "label": "Copper",
+          "count": 6,
+          "sharePct": 9.67741935483871
+        },
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 4.838709677419355
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 4.838709677419355
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 3,
+          "sharePct": 4.838709677419355
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Zinc",
+          "count": 2,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 2,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 2,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Uranium",
+          "count": 2,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 1.6129032258064515
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 1.6129032258064515
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 1.6129032258064515
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 1.6129032258064515
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 1.6129032258064515
+        }
+      ],
+      "sites": [
+        {
+          "name": "Chapala",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "La Escondida",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Las Chollas",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "San Juan",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "El Boleo",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Lead",
+            "Manganese",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "El Gavilan",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Isla Del Carmen",
+          "depositType": null,
+          "commodities": [
+            "Halite"
+          ]
+        },
+        {
+          "name": "Lucifer",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Santa Isabel San Nicolas",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "San Juan De La Costa",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "El Desengano",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mulege",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Mision De San Juan",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "La Azteca",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Navidad Group",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Palmas",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Santa Rosa",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Santa Teresa",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "San Juanico",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Punta Mangles",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Isla Carmen Mn",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "La Sirena",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iron"
+          ]
+        },
+        {
+          "name": "La Florida",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "El Corsario",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite"
+          ]
+        },
+        {
+          "name": "Lucifer",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Las Delicias",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "El Gavilan",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Santa Rosa",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Punta Mangles",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tambabiche",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "San Juan De La Costa",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Kentucky",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Piedras Verdes 54",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Santa Rosalia",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Guadalupe Trinidad",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Trinidad",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Isla Carmen",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "El Pilar",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "El Pulpo",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,754 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_612",
+  "regionName": "Bahamian-Antillean mangroves",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.422444+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 16,
+        "intersectionLengthKm": 89.50051622522905,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "South Samana Fault",
+            "kinematics": "Normal-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.770885197244592
+          },
+          {
+            "name": "Matheux Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.57178060147942
+          },
+          {
+            "name": "Lamentin Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.886477235101589
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.079376738920044
+          },
+          {
+            "name": "Nipa-Guacanayabo Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.293404196142977
+          },
+          {
+            "name": "Pinar del Rio Fault",
+            "kinematics": "Sinistral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.887152847804184
+          },
+          {
+            "name": "St. Bran's Burg Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.618949851835097
+          },
+          {
+            "name": "Septentrional Mountain Front Fault",
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.513833556873674
+          },
+          {
+            "name": "Enriquillo Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.9493049040805053
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.849808764285221
+          },
+          {
+            "name": "Morne Piton Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.231172912888944
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.9358159668797597
+          },
+          {
+            "name": "Plantain Garden Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.5336041577651234
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.3056338971003432
+          },
+          {
+            "name": "South Coast Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.784149001643273
+          },
+          {
+            "name": "[rename]",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.2891663951842934
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 57.71521102302854,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 5984.24295057945,
+        "percent": 53.204712417581725
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 5984.24295057945,
+          "percent": 53.204712417581725
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4337.707196528289,
+          "percent": 38.56569090675295
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 503.99085566424867,
+          "percent": 4.4808823368561335
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 113.69108382861195,
+          "percent": 1.010804786753981
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 105.79490940214073,
+          "percent": 0.9406014723115443
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 90.44125291861987,
+          "percent": 0.8040951699253807
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 70.43535604813958,
+          "percent": 0.6262267246700562
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 41.27706723037804,
+          "percent": 0.3669861851482484
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 8240.48923663589,
+          "percentOfRegion": 42.28478897697157
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 3,
+      "medianMwM2": 39.0,
+      "p10MwM2": 35.0,
+      "p90MwM2": 43.8,
+      "maxMwM2": 45.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 66.66666666666666
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 50,
+      "commodityCount": 30,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 12,
+          "sharePct": 12.244897959183673
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 10,
+          "sharePct": 10.204081632653061
+        },
+        {
+          "label": "Stone",
+          "count": 10,
+          "sharePct": 10.204081632653061
+        },
+        {
+          "label": "Copper",
+          "count": 7,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Silver",
+          "count": 5,
+          "sharePct": 5.1020408163265305
+        },
+        {
+          "label": "General",
+          "count": 5,
+          "sharePct": 5.1020408163265305
+        },
+        {
+          "label": "Limestone",
+          "count": 5,
+          "sharePct": 5.1020408163265305
+        },
+        {
+          "label": "Mercury",
+          "count": 4,
+          "sharePct": 4.081632653061225
+        },
+        {
+          "label": "Tungsten",
+          "count": 4,
+          "sharePct": 4.081632653061225
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 3.061224489795918
+        },
+        {
+          "label": "Nickel",
+          "count": 3,
+          "sharePct": 3.061224489795918
+        },
+        {
+          "label": "Zinc",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Chromium",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Bromine",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Halite",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Sand",
+          "count": 2,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 1.0204081632653061
+        },
+        {
+          "label": "Construction",
+          "count": 1,
+          "sharePct": 1.0204081632653061
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 1,
+          "sharePct": 1.0204081632653061
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 1.0204081632653061
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 1.0204081632653061
+        },
+        {
+          "label": "Clay",
+          "count": 1,
+          "sharePct": 1.0204081632653061
+        },
+        {
+          "label": "Nitrogen-Nitrates",
+          "count": 1,
+          "sharePct": 1.0204081632653061
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 1.0204081632653061
+        }
+      ],
+      "sites": [
+        {
+          "name": "Cuba",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Morne De Grand Fond",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Mercury",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Limestone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "La Flor",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Don Lavino",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Cadas Bay Hot Springs",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Mercedes, Ancash, Fer-Mi, Guido, San Antonio, Rolando, Colorado Claims",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Genaro Claim",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Aguedita Claim",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Lela Claim",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Farm Estate",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Marie Galante",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "South Saddle Hill",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold",
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Belmont Estates",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Brimstone Hill",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Rainbow Cliff",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed Lead Occurrence",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Unnamed Lead Occurrence",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Morne Du Vitet",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Saline Salt Pond",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Les Coteaux",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Unnamed Locality Between Chardonnieres and Les Anglais",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Great Inagua Island",
+          "depositType": null,
+          "commodities": [
+            "Bromine",
+            "Halite"
+          ]
+        },
+        {
+          "name": "Cockburn Pen",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Portland Ridge Caves",
+          "depositType": "Residual",
+          "commodities": [
+            "Nitrogen-Nitrates",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Great Salt Pond",
+          "depositType": null,
+          "commodities": [
+            "Bromine",
+            "Halite"
+          ]
+        },
+        {
+          "name": "Rio Minho",
+          "depositType": "Placer",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Port Henderson Beach",
+          "depositType": "Placer",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Johnson's Holding",
+          "depositType": "Residual",
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Grand Cayman Island",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "San Miquel De Los Banos, Cuba",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Diorite Quarry",
+          "depositType": "Stock",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "No Name Lake Pit",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Big Pine Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

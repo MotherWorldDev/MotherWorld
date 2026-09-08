@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20126",
+  "regionName": "Palawan/North Borneo",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.401334+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 14.663146368728524,
+        "medianAgeMa": 11.329519271850586,
+        "p10AgeMa": 6.2712721824646,
+        "p90AgeMa": 27.11626434326172,
+        "oldestAgeMa": 49.748802185058594,
+        "coveragePct": 38.456820797726984,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 78.26212587558545,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 21.73787412441454,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 14.339871922632687,
+          "medianMmYr": 7.723139762878418,
+          "p10MmYr": 6.619457721710205,
+          "p90MmYr": 40.26618576049805,
+          "coveragePct": 38.456820797726984
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 226.9811107084981,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 214.73137677330908
+          },
+          {
+            "name": "Tablas Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.249733935189019
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 314,
+      "medianMwM2": 49.98942843,
+      "p10MwM2": 36.867968868,
+      "p90MwM2": 70.81295488399999,
+      "maxMwM2": 109.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 48,
+          "percent": 15.286624203821656
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 186,
+          "percent": 59.23566878980891
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 68,
+          "percent": 21.656050955414013
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 11,
+          "percent": 3.5031847133757963
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 0.3184713375796179
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 10,
+      "commodityCount": 12,
+      "commodities": [
+        {
+          "label": "Nickel",
+          "count": 3,
+          "sharePct": 15.789473684210526
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 15.789473684210526
+        },
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 15.789473684210526
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 10.526315789473683
+        },
+        {
+          "label": "Mercury",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Quartz",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Free",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Water",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        }
+      ],
+      "sites": [
+        {
+          "name": "Tagburos",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Roxas",
+          "depositType": null,
+          "commodities": [
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Long Point Nickel Deposit-Palawan Island, Philippines",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Prospect Near Bacungan",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Infanta",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Tumbagaan Island",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Atlas",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Soriano",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Free",
+            "Nickel",
+            "Sulfur-Pyrite",
+            "Water"
+          ]
+        },
+        {
+          "name": "Napoa Island",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Aya-Aya Project",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

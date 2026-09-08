@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_270",
+  "regionName": "South Western Ghats moist deciduous forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.067413+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.21454794341717,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 15192.028065490935,
+        "percent": 64.68182448861006
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 15192.028065490935,
+          "percent": 64.68182448861006
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 8018.211712208857,
+          "percent": 34.13846791526784
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 277.0817157842492,
+          "percent": 1.179707596122097
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 185.9421360383847,
+          "percentOfRegion": 0.7854520565829396
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 35.0,
+      "p10MwM2": 29.0,
+      "p90MwM2": 41.0,
+      "maxMwM2": 41.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 50.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 2,
+          "percent": 50.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 75.0
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bensibetta",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Hadabanatta",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Wainad-Malabar",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

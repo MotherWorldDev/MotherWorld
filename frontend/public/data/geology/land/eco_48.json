@@ -1,0 +1,484 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_48",
+  "regionName": "Limpopo lowveld",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.125220+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.91543519677586,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 23357.542702167593,
+        "percent": 28.54638283215607
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 23357.542702167593,
+          "percent": 28.54638283215607
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 19939.21665245154,
+          "percent": 24.368681208976735
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 18149.181756361402,
+          "percent": 22.180992971465095
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 6375.0769821149315,
+          "percent": 7.791289967288839
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 5074.355383346875,
+          "percent": 6.201615180435457
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 3003.863177002088,
+          "percent": 3.671166497242905
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 2970.466219746054,
+          "percent": 3.6303504602386605
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 2519.9605593493725,
+          "percent": 3.079765699944355
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 433.46224857617494,
+          "percent": 0.5297551822518725
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 69.25212815009978,
+          "percentOfRegion": 0.08456480322429225
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 13,
+      "medianMwM2": 55.1,
+      "p10MwM2": 49.442,
+      "p90MwM2": 66.6,
+      "maxMwM2": 66.6,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 7,
+          "percent": 53.84615384615385
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 6,
+          "percent": 46.15384615384615
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 24,
+      "commodityCount": 23,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 7,
+          "sharePct": 14.000000000000002
+        },
+        {
+          "label": "Asbestos",
+          "count": 6,
+          "sharePct": 12.0
+        },
+        {
+          "label": "Silver",
+          "count": 5,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Arsenic",
+          "count": 3,
+          "sharePct": 6.0
+        },
+        {
+          "label": "PGE",
+          "count": 3,
+          "sharePct": 6.0
+        },
+        {
+          "label": "Antimony",
+          "count": 3,
+          "sharePct": 6.0
+        },
+        {
+          "label": "Tin",
+          "count": 3,
+          "sharePct": 6.0
+        },
+        {
+          "label": "Magnesite",
+          "count": 3,
+          "sharePct": 6.0
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 4.0
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 2,
+          "sharePct": 4.0
+        },
+        {
+          "label": "Diatomite",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Vermiculite",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Rhodium",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Mercury",
+          "count": 1,
+          "sharePct": 2.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Diana",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Schiel",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Vermiculite"
+          ]
+        },
+        {
+          "name": "Crown",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Barberton Mine Fairview",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Gold",
+            "PGE",
+            "Silver",
+            "Sulfur",
+            "Sulfur-Pyrite",
+            "Sulfuric Acid"
+          ]
+        },
+        {
+          "name": "Havelock",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "E.T. Cons/New Consort Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Silver",
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Murchison",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Gold",
+            "PGE",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Consolidated Murchinson Limited",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Senekal",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Pentouyz Area",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Amianthus Mine",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "African Chrysotilediepgezet",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Kaapmuiden",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Sheba Gold Mining Company, Limite",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Fairviewbarberton",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Nelspruit Work",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Dwaleni",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Strathmore 214 Jualthorpe Mine",
+          "depositType": null,
+          "commodities": [
+            "Asbestos",
+            "Magnesite",
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Stella",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Monarch Kop/Harrington Kop",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Gravelotte Mine",
+          "depositType": null,
+          "commodities": [
+            "Antimony"
+          ]
+        },
+        {
+          "name": "Mccreedys",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Sutherland Range Prospect",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20223",
+  "regionName": "Antarctic Peninsula",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.000571+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 26.458700260139945,
+        "medianAgeMa": 19.17576026916504,
+        "p10AgeMa": 11.90211009979248,
+        "p90AgeMa": 32.142173767089844,
+        "oldestAgeMa": 142.45970153808594,
+        "coveragePct": 24.22989834989933,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 62.858966459214855,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 30.65918645668326,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.1512514173003542,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 6.330595666801534,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 40.5604032986288,
+          "medianMmYr": 40.33726501464844,
+          "p10MmYr": 29.779775619506836,
+          "p90MmYr": 54.09248733520508,
+          "coveragePct": 24.22989834989933
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 15.058243128121473
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 38,
+      "medianMwM2": 85.2,
+      "p10MwM2": 47.5,
+      "p90MwM2": 121.51000000000003,
+      "maxMwM2": 145.5,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 2.631578947368421
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 7,
+          "percent": 18.421052631578945
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 8,
+          "percent": 21.052631578947366
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 6,
+          "percent": 15.789473684210526
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 16,
+          "percent": 42.10526315789473
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

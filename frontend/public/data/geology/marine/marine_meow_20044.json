@@ -1,0 +1,217 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20044",
+  "regionName": "Black Sea",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:33.849592+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 14,
+        "intersectionLengthKm": 1495.783029395107,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 814.1294557225718
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 155.05876815061683
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 112.75010661086294
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 112.5195899840636
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 105.43571175625789
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 90.9114828628945
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 59.47412292905773
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.145605620513503
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.416779287119017
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.121690945204049
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.825515479378823
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.641268373708532
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.334356876170473
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.0185747966870098
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 968,
+      "medianMwM2": 40.0,
+      "p10MwM2": 23.0,
+      "p90MwM2": 66.0,
+      "maxMwM2": 2500.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 462,
+          "percent": 47.72727272727273
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 356,
+          "percent": 36.77685950413223
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 106,
+          "percent": 10.950413223140496
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 22,
+          "percent": 2.272727272727273
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 8,
+          "percent": 0.8264462809917356
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 3,
+          "percent": 0.30991735537190085
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 4,
+          "percent": 0.4132231404958678
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 50.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Mersin Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Kankoy Yomra",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

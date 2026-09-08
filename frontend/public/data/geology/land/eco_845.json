@@ -1,0 +1,251 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_845",
+  "regionName": "West Sahara desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.220506+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999996,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 353397.8436961935,
+        "percent": 47.526866632616375
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 353397.8436961935,
+          "percent": 47.526866632616375
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 132873.88004870206,
+          "percent": 17.86960302299363
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 114319.30219570249,
+          "percent": 15.374282344687218
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 76127.11524203527,
+          "percent": 10.237989047676239
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 65889.89957704111,
+          "percent": 8.861232532948387
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 966.8437955516735,
+          "percent": 0.13002641907815338
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 776,
+      "medianMwM2": 84.0,
+      "p10MwM2": 71.0,
+      "p90MwM2": 107.0,
+      "maxMwM2": 121.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 7,
+          "percent": 0.902061855670103
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 236,
+          "percent": 30.412371134020617
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 348,
+          "percent": 44.84536082474227
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 185,
+          "percent": 23.840206185567013
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 8,
+      "commodityCount": 8,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 23.076923076923077
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 23.076923076923077
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 15.384615384615385
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 7.6923076923076925
+        }
+      ],
+      "sites": [
+        {
+          "name": "Guettara",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Arsenic",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Timezrit Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "San Roque B",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Zouggara",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Copper",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Zaccar Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Ghara Djebilet",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Inki",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper"
+          ]
+        },
+        {
+          "name": "Iferghane",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

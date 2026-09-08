@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_47",
+  "regionName": "Kalahari Acacia woodlands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.122691+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999994,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 89121.73067290569,
+        "percent": 83.74979515970428
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 89121.73067290569,
+          "percent": 83.74979515970428
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 10823.837357006083,
+          "percent": 10.171415598045629
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3654.1051081117894,
+          "percent": 3.4338488714899835
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2235.1715946573954,
+          "percent": 2.100443537013319
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 579.4223147280007,
+          "percent": 0.544496833746795
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 3,
+      "medianMwM2": 60.0,
+      "p10MwM2": 60.0,
+      "p90MwM2": 60.0,
+      "maxMwM2": 60.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 3,
+          "percent": 100.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 50.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Lake Ngami",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

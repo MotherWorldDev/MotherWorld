@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_840",
+  "regionName": "South Arabian plains and plateau desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.219508+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 98.6263122343406,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 122553.89958723306,
+        "percent": 33.44996136535476
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 122553.89958723306,
+          "percent": 33.44996136535476
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 120706.82278078847,
+          "percent": 32.945818714468025
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 49335.26424070121,
+          "percent": 13.465607282666495
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 46846.769639400765,
+          "percent": 12.786395535412836
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 26177.63281854442,
+          "percent": 7.144944464157817
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 759.405064174452,
+          "percent": 0.20727263794008566
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 5103.013885244905,
+          "percentOfRegion": 1.3736877656593776
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 31,
+      "medianMwM2": 46.0,
+      "p10MwM2": 40.0,
+      "p90MwM2": 57.4,
+      "maxMwM2": 73.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 9.67741935483871
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 26,
+          "percent": 83.87096774193549
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 6.451612903225806
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

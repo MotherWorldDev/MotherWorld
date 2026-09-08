@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_537",
+  "regionName": "Lesser Antillean dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.023332+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 6.907454016827052,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.907454016827052
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 4.3189623143800855,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 22.879914537101474,
+        "percent": 100.0
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 22.879914537101474,
+          "percent": 100.0
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 506.8749865631546,
+          "percentOfRegion": 95.68103768562027
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 28.57142857142857
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        }
+      ],
+      "sites": [
+        {
+          "name": "Choc River",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Lead",
+            "Manganese",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Pt. Comerette",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Piton Canarie",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

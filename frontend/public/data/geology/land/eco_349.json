@@ -1,0 +1,556 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_349",
+  "regionName": "British Columbia coastal conifer forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.089380+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.9667171850497,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 51071.906938847176,
+        "percent": 45.94594370944283
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 51071.906938847176,
+          "percent": 45.94594370944283
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 17705.878735229348,
+          "percent": 15.92878269983454
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 17151.252580357566,
+          "percent": 15.429823024762362
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 12381.518666510683,
+          "percent": 11.138815716634303
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 6339.571295579056,
+          "percent": 5.7032839254944365
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 5558.85590001771,
+          "percent": 5.000927037577404
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 907.3931476911703,
+          "percent": 0.8163203018064893
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 40.13148400497863,
+          "percent": 0.036103584447649266
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 37.0083325268429,
+          "percentOfRegion": 0.0332828149504096
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 87,
+      "medianMwM2": 80.0,
+      "p10MwM2": 38.92,
+      "p90MwM2": 296.80000000000007,
+      "maxMwM2": 2530.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 10,
+          "percent": 11.494252873563218
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 13,
+          "percent": 14.942528735632186
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 20,
+          "percent": 22.988505747126435
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 9,
+          "percent": 10.344827586206897
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 16,
+          "percent": 18.39080459770115
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 5,
+          "percent": 5.747126436781609
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 5,
+          "percent": 5.747126436781609
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 9,
+          "percent": 10.344827586206897
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 43,
+      "commodityCount": 16,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 26,
+          "sharePct": 37.142857142857146
+        },
+        {
+          "label": "Copper",
+          "count": 9,
+          "sharePct": 12.857142857142856
+        },
+        {
+          "label": "Gold",
+          "count": 6,
+          "sharePct": 8.571428571428571
+        },
+        {
+          "label": "Iron",
+          "count": 6,
+          "sharePct": 8.571428571428571
+        },
+        {
+          "label": "Nickel",
+          "count": 3,
+          "sharePct": 4.285714285714286
+        },
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 4.285714285714286
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 4.285714285714286
+        },
+        {
+          "label": "Zinc",
+          "count": 3,
+          "sharePct": 4.285714285714286
+        },
+        {
+          "label": "Molybdenum",
+          "count": 3,
+          "sharePct": 4.285714285714286
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 2.857142857142857
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 1,
+          "sharePct": 1.4285714285714286
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 1.4285714285714286
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 1.4285714285714286
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 1.4285714285714286
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 1.4285714285714286
+        },
+        {
+          "label": "Quartz",
+          "count": 1,
+          "sharePct": 1.4285714285714286
+        }
+      ],
+      "sites": [
+        {
+          "name": "Boston Bar",
+          "depositType": null,
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Boston Bar",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Pacific Nickel Mines",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Broken Shovel Claim",
+          "depositType": "Replacement",
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ella Claim",
+          "depositType": "Replacement",
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "F. and L. Claim",
+          "depositType": "Replacement",
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Idaho Claim",
+          "depositType": "Replacement",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Chappie Claim",
+          "depositType": "Replacement",
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Whistler Flats South",
+          "depositType": "Replacement",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Whistler Flats Southwest",
+          "depositType": "Replacement",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Black Tail",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Mount Claywood",
+          "depositType": "Replacement",
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Smith Claim",
+          "depositType": "Replacement",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Giant Nickel Mines-Canada",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Hurricane Hill Lookout",
+          "depositType": "Replacement",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tull City",
+          "depositType": "Replacement",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tubal Cain Property",
+          "depositType": "Replacement",
+          "commodities": [
+            "Copper",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Mount Angeles",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Whistler Flats Southwest",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Black Tail",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Ladner Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Brandywine Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "F & L Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Whistler Flats South",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Broken Shovel Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Cafb",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Tull City",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Mount Claywood",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Britannia",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Tubal Cain Property",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Gem",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Smith",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Giant Nickel Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Brandywine Operations",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hurricane Claim",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "(Facility) Kitimat Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Red Bird",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "J and J and Sunset",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Mount Anderson",
+          "depositType": null,
+          "commodities": [
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Hurricane Hill Lookout",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

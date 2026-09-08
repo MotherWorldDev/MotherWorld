@@ -24,4 +24,12 @@ The official USGS mapped Moon textures (4K and 8K) and 49-rule legend are ready.
 
 Habitat, vegetation, pollution, and freshwater historical backbones are still being acquired or validated. The accepted C3S land-cover pilot is downloading through CDS. NOAA NDVI can be accessed directly; the historical transfer strategy is still being assessed. The direct MERRA-2 route requires NASA Earthdata access. The combined Earth Health score remains unavailable until all nine families satisfy the fixed composition and coverage contract. Regional geology and other diagnostic builds are integrated only after their canonical region IDs and source coverage are checked.
 
-Integration validation: 47 JavaScript tests and 31 Python tests passed. The delivered Moon texture was visually checked for global coverage and orientation. Interactive browser/WebGL validation is still pending because browser automation is unavailable in this session.
+Integration validation: 47 JavaScript tests and 34 Python tests passed. The delivered Moon texture was visually checked for global coverage and orientation. Interactive browser/WebGL validation is still pending because browser automation is unavailable in this session.
+
+### Regional geology release
+
+The validated geology snapshot contains summaries for 1,095 of the 1,100 inventory regions, plus a separate whole-ocean scope. It includes GLiM surface lithology, USGS MRDS mineral sites, GEM active faults, IHFC heat-flow measurements, InterRidge hydrothermal vents, and EarthByte ridge intersections, ocean-crust age, and spreading rates where records are available. Marine map fragments are unioned under canonical region IDs before aggregation. The whole-ocean scope excludes both land and freshwater lakes. Missing measurements remain null and are excluded from numeric summaries; every generated file passes strict JSON parsing.
+
+Five inventory regions currently have no matching geology records from these providers: lake_aral_sea, lake_ladoga, lake_vanern, marine_meow_20019, and marine_meow_25184. This is separate from species coverage. Bathymetry, sediment, and other unbuilt geological providers remain unavailable while their inputs are acquired.
+
+The direct CDS ERA5-Land freshwater adapter passed an actual 1991 NetCDF pilot and regression checks for decoded monthly dates, variable aliases, request provenance, and 0–360° longitude masking. Historical acquisition is running; a single pilot is not promoted as a complete backbone.

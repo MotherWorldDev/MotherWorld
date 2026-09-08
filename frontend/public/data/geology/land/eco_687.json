@@ -1,0 +1,398 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_687",
+  "regionName": "Western Siberian hemiboreal forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.178190+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999997,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 102022.05241908033,
+        "percent": 45.44584861750734
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 102022.05241908033,
+          "percent": 45.44584861750734
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 63913.20630278151,
+          "percent": 28.470216285832173
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 51408.51876757213,
+          "percent": 22.899987857178502
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 3906.8923985988586,
+          "percent": 1.740330019849785
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 2748.5412939105,
+          "percent": 1.224341096853522
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 492.1811428697432,
+          "percent": 0.21924269489668569
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 0.07504274276585499,
+          "percent": 3.342788197958048e-05
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 72,
+      "medianMwM2": 43.5,
+      "p10MwM2": 25.0,
+      "p90MwM2": 63.0,
+      "maxMwM2": 71.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 34,
+          "percent": 47.22222222222222
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 21,
+          "percent": 29.166666666666668
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 17,
+          "percent": 23.61111111111111
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 24,
+      "commodityCount": 13,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 9,
+          "sharePct": 27.27272727272727
+        },
+        {
+          "label": "Platinum",
+          "count": 4,
+          "sharePct": 12.121212121212121
+        },
+        {
+          "label": "Aluminum",
+          "count": 4,
+          "sharePct": 12.121212121212121
+        },
+        {
+          "label": "Mercury",
+          "count": 2,
+          "sharePct": 6.0606060606060606
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 6.0606060606060606
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 6.0606060606060606
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 2,
+          "sharePct": 6.0606060606060606
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 6.0606060606060606
+        },
+        {
+          "label": "Zinc",
+          "count": 2,
+          "sharePct": 6.0606060606060606
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 3.0303030303030303
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 3.0303030303030303
+        },
+        {
+          "label": "Gallium",
+          "count": 1,
+          "sharePct": 3.0303030303030303
+        },
+        {
+          "label": "Sodium",
+          "count": 1,
+          "sharePct": 3.0303030303030303
+        }
+      ],
+      "sites": [
+        {
+          "name": "Tyagunesha River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Talanova River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Fomikha River",
+          "depositType": "Placer",
+          "commodities": [
+            "Mercury",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Viya River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "(Facility) Novokuznetsk Refinery",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Techenskoe Iron Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "West Siberia Bf",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Salair",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Durnov",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kuznetsk Sp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Marinsk",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kuznetsk Bf",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Salair Pb & Zn",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Antonovsk",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sibruda",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "(Facility) Novokuznetsk Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Orlinogorsk",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Achinsk",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Guryevsk",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mazul/Porozhinkritovo",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "(Facility) Salair Concentrator",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sibruda Sp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "West Siberia Sp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "(Facility) Achinsk Refinery",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Gallium",
+            "Sodium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

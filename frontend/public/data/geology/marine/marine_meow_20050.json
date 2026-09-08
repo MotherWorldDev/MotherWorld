@@ -1,0 +1,226 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20050",
+  "regionName": "Yellow Sea",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:40.522556+00:00",
+  "sections": {
+    "geothermal": {
+      "measurementCount": 94,
+      "medianMwM2": 66.0,
+      "p10MwM2": 54.03,
+      "p90MwM2": 75.31,
+      "maxMwM2": 85.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 28,
+          "percent": 29.78723404255319
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 61,
+          "percent": 64.8936170212766
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 5,
+          "percent": 5.319148936170213
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 9,
+      "commodityCount": 12,
+      "commodities": [
+        {
+          "label": "Titanium",
+          "count": 5,
+          "sharePct": 22.727272727272727
+        },
+        {
+          "label": "Metal",
+          "count": 4,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Vanadium",
+          "count": 2,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Pigment",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        }
+      ],
+      "sites": [
+        {
+          "name": "Soyon Pyongdo Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Bu-Duck Project Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Chumun-Do Acha-Do",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Biin Beach",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Porum-Do Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Qingdao Aluminum Fabrication Plt.",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Inchon Factory Plant  Ti",
+          "depositType": null,
+          "commodities": [
+            "Pigment",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Chelsan",
+          "depositType": null,
+          "commodities": [
+            "REE"
+          ]
+        },
+        {
+          "name": "Longkou City Gold Operations-4",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_802",
+  "regionName": "South Apennine mixed montane forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.406826+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 9,
+        "intersectionLengthKm": 198.06855581722812,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.854291845593075
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.710707856002095
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.7209624432426
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.082446609813257
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.76659317898459
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.954028513842262
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.27382823594692
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.361493106166101
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.3442040276372156
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 93.15160886105562,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 7937.087273447366,
+        "percent": 65.22427355524259
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 7937.087273447366,
+          "percent": 65.22427355524259
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1850.1638751735427,
+          "percent": 15.204015095065603
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1330.3778585758116,
+          "percent": 10.932591061443366
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 852.5767734548351,
+          "percent": 7.006184861378167
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 198.71054576017863,
+          "percent": 1.63293542687028
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 894.6436863442643,
+          "percentOfRegion": 6.8483911389443906
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 3,
+      "medianMwM2": 33.496,
+      "p10MwM2": 33.0992,
+      "p90MwM2": 33.496,
+      "maxMwM2": 33.496,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

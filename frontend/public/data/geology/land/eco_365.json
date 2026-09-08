@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_365",
+  "regionName": "Queen Charlotte Islands conifer forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.094439+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 69.81829095672018,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 5115.534130783721,
+        "percent": 71.88859985625706
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 5115.534130783721,
+          "percent": 71.88859985625706
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1615.1663275784306,
+          "percent": 22.697931996164236
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 385.2179779578648,
+          "percent": 5.413468147578706
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3076.1363086623755,
+          "percentOfRegion": 30.181709043279746
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 13,
+      "medianMwM2": 60.0,
+      "p10MwM2": 46.2,
+      "p90MwM2": 74.60000000000001,
+      "maxMwM2": 107.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 6,
+          "percent": 46.15384615384615
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 6,
+          "percent": 46.15384615384615
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 7.6923076923076925
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 27.27272727272727
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 27.27272727272727
+        },
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        }
+      ],
+      "sites": [
+        {
+          "name": "Moresby Island",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Palladium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Harmony Project Cinola",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Tasu",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iron",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

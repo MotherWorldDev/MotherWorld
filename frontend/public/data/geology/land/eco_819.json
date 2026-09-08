@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_819",
+  "regionName": "Central Asian southern desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.504764+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 6,
+        "intersectionLengthKm": 408.22899243464235,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 196.85593682364913
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 76.96328532021963
+          },
+          {
+            "name": null,
+            "kinematics": "Anticline",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.25050802246896
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.284169432136785
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.02572225229764
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.849370583870147
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.62572987884252,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 400294.23997687676,
+        "percent": 70.82839031349451
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 400294.23997687676,
+          "percent": 70.82839031349451
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 144772.68578034404,
+          "percent": 25.61619746458364
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 15457.521583961625,
+          "percent": 2.7350665152997045
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 2344.5794499749277,
+          "percent": 0.4148518060450112
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2291.6922441458996,
+          "percent": 0.40549390057711115
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 2123.1741141982243,
+          "percentOfRegion": 0.3742701211576066
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 100,
+      "medianMwM2": 50.0,
+      "p10MwM2": 32.0,
+      "p90MwM2": 70.30000000000003,
+      "maxMwM2": 87.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 32,
+          "percent": 32.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 37,
+          "percent": 37.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 28,
+          "percent": 28.000000000000004
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3,
+          "percent": 3.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 17,
+      "commodityCount": 13,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 10,
+          "sharePct": 34.48275862068966
+        },
+        {
+          "label": "Palladium",
+          "count": 7,
+          "sharePct": 24.137931034482758
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 6.896551724137931
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Graphite",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        }
+      ],
+      "sites": [
+        {
+          "name": "Taskazgan",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Graphite",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Kzyl Alma",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Koch Bulak",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Gushsay",
+          "depositType": null,
+          "commodities": [
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Bichanzor",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Ak Dzhen",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Kok Patas",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Muruntau",
+          "depositType": "Contact Metasomatic",
+          "commodities": [
+            "Gold",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Ingichka",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Bauxite - Uzbekistan",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Sidzhak Area",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Molybdenum",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Aytym",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Daughystau",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Muruntau",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kokand Phosacid Complex",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Amantaytau",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Ingichke Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

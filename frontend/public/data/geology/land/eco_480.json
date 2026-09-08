@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_480",
+  "regionName": "Marajó várzea",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.125220+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 97.16292307698427,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 74949.78540889735,
+        "percent": 87.45805572905137
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 74949.78540889735,
+          "percent": 87.45805572905137
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 10188.42158074249,
+          "percent": 11.888753750772818
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 395.79601597113367,
+          "percent": 0.4618498883391155
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 163.9750526880194,
+          "percent": 0.19134063183669248
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2502.3100190766527,
+          "percentOfRegion": 2.8370769230157693
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 6,
+      "medianMwM2": 69.0,
+      "p10MwM2": 37.5,
+      "p90MwM2": 96.5,
+      "maxMwM2": 121.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 3,
+          "percent": 50.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

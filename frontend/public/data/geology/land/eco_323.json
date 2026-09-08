@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_323",
+  "regionName": "Sundarbans mangroves",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.998550+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 80.27624148885421,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.27624148885421
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 70.12019929246955,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 14269.768612807204,
+        "percent": 100.0
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 14269.768612807204,
+          "percent": 100.0
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 865.380791825268,
+          "percentOfRegion": 4.252393660553237
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 5215.289922113251,
+          "percentOfRegion": 25.627407046977186
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Sargipali Pb Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

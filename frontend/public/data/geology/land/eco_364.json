@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_364",
+  "regionName": "Puget lowland forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.123417+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 11,
+        "intersectionLengthKm": 479.92206032359894,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Seattle fault zone-northern",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 73.90817982554515
+          },
+          {
+            "name": "Southern Whidbey Island fault-middle",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 59.966714007118874
+          },
+          {
+            "name": "Southern Whidbey Island fault-northern",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 57.932419155826565
+          },
+          {
+            "name": "Seattle fault zone-middle",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 57.23852789241818
+          },
+          {
+            "name": "Southern Whidbey Island fault-southern",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.626993164672314
+          },
+          {
+            "name": "Seattle fault zone-southern",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.07147252117629
+          },
+          {
+            "name": "Devils Mountain fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.00106117344368
+          },
+          {
+            "name": "Tacoma fault zone",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.900208579139566
+          },
+          {
+            "name": "Strawberry Point fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.363283409545037
+          },
+          {
+            "name": "Lake Creek-Boundary Creek fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.939915691362174
+          },
+          {
+            "name": "Utsalady Point fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.973284903351182
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 93.00489567304513,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 8837.562946119133,
+        "percent": 26.313834360395422
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 8837.562946119133,
+          "percent": 26.313834360395422
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 6607.919250382212,
+          "percent": 19.675072605596792
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 6235.60851335875,
+          "percent": 18.56651777839363
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 5886.7726535107,
+          "percent": 17.527859373246024
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3776.476066161502,
+          "percent": 11.244453507922078
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1345.1881209132198,
+          "percent": 4.005296212665287
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 797.472286759061,
+          "percent": 2.374472893570586
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 98.23454969429551,
+          "percent": 0.2924932682101973
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2526.0199119784215,
+          "percentOfRegion": 6.995104326954809
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 94,
+      "medianMwM2": 32.7,
+      "p10MwM2": 20.79,
+      "p90MwM2": 42.7,
+      "maxMwM2": 105.1,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 79,
+          "percent": 84.04255319148936
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 14,
+          "percent": 14.893617021276595
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 1.0638297872340425
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1328,
+      "commodityCount": 55,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 933,
+          "sharePct": 36.4453125
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 933,
+          "sharePct": 36.4453125
+        },
+        {
+          "label": "Stone",
+          "count": 146,
+          "sharePct": 5.703125
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 112,
+          "sharePct": 4.375
+        },
+        {
+          "label": "Gold",
+          "count": 53,
+          "sharePct": 2.0703125
+        },
+        {
+          "label": "Limestone",
+          "count": 50,
+          "sharePct": 1.953125
+        },
+        {
+          "label": "General",
+          "count": 43,
+          "sharePct": 1.6796875
+        },
+        {
+          "label": "Copper",
+          "count": 26,
+          "sharePct": 1.015625
+        },
+        {
+          "label": "Dimension",
+          "count": 26,
+          "sharePct": 1.015625
+        },
+        {
+          "label": "Clay",
+          "count": 26,
+          "sharePct": 1.015625
+        },
+        {
+          "label": "Silver",
+          "count": 22,
+          "sharePct": 0.8593750000000001
+        },
+        {
+          "label": "Iron",
+          "count": 18,
+          "sharePct": 0.703125
+        },
+        {
+          "label": "Silica",
+          "count": 18,
+          "sharePct": 0.703125
+        },
+        {
+          "label": "Chromium",
+          "count": 17,
+          "sharePct": 0.6640625
+        },
+        {
+          "label": "Nickel",
+          "count": 16,
+          "sharePct": 0.625
+        },
+        {
+          "label": "Diatomite",
+          "count": 13,
+          "sharePct": 0.5078125
+        },
+        {
+          "label": "Zinc",
+          "count": 10,
+          "sharePct": 0.390625
+        },
+        {
+          "label": "Aluminum",
+          "count": 10,
+          "sharePct": 0.390625
+        },
+        {
+          "label": "Lead",
+          "count": 9,
+          "sharePct": 0.3515625
+        },
+        {
+          "label": "Magnesite",
+          "count": 9,
+          "sharePct": 0.3515625
+        },
+        {
+          "label": "Manganese",
+          "count": 8,
+          "sharePct": 0.3125
+        },
+        {
+          "label": "Arsenic",
+          "count": 7,
+          "sharePct": 0.2734375
+        },
+        {
+          "label": "Flagstone",
+          "count": 5,
+          "sharePct": 0.1953125
+        },
+        {
+          "label": "Mercury",
+          "count": 4,
+          "sharePct": 0.15625
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 0.1171875
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 0.1171875
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 3,
+          "sharePct": 0.1171875
+        },
+        {
+          "label": "Gemstone",
+          "count": 3,
+          "sharePct": 0.1171875
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 3,
+          "sharePct": 0.1171875
+        },
+        {
+          "label": "Uranium",
+          "count": 2,
+          "sharePct": 0.078125
+        }
+      ],
+      "sites": [
+        {
+          "name": "Blomquist Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Yankee Boy Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wayside Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Aristo Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Horseshoe Bend Placer",
+          "depositType": "Stream Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Coe Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Granite Falls Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Anderson Prospect",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Byrd Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Granite Falls Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mercury",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Royal Reward Mine",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Sturman and Herringa Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mount Vernon",
+          "depositType": "Unknown",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Mountain Home Claim",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Smith Claim",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Smith Open Cut",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Fidalgo Island",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Matrix Property",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Cyprus Lake",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Last Chance Claim",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Winlock Placer Prospect",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Anacortes",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Cardinal Reward Mine",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Sultan Placer",
+          "depositType": "Stream Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mount Vernon",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Stephens",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Sultan Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Wayside",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Horseshoe Bend Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Jefferson",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sultan",
+          "depositType": "Unknown",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Lynx Mine",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Belleville Property",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Samish Bay",
+          "depositType": "Replacement",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Stephens",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Alverson",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Day Creek Roadcut Exposure",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Port Angeles",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Olivine Hill",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Anacopper",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

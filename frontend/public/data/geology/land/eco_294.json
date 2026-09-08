@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_294",
+  "regionName": "Irrawaddy dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.855027+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 110.40929128662226,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.63149095602637
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.27348904014939
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.50431129044651
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000009,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 23481.459975180802,
+        "percent": 67.24351395226783
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 23481.459975180802,
+          "percent": 67.24351395226783
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 8728.85079499033,
+          "percent": 24.996682524876817
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1574.5901574562527,
+          "percent": 4.509130834876798
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 938.0516892266996,
+          "percent": 2.68628492091784
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 197.08441727368978,
+          "percent": 0.5643877670607187
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    }
+  ]
+}

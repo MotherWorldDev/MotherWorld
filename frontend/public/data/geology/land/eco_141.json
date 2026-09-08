@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_141",
+  "regionName": "Huon Peninsula montane rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.116704+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 185.84315832457523,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 101.9864806154064
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 83.85667770916882
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 77.68642569476896,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 11007.898626323522,
+        "percent": 86.25419153558451
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 11007.898626323522,
+          "percent": 86.25419153558451
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1533.8122344692852,
+          "percent": 12.018436828185262
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 126.20361825472888,
+          "percent": 0.9888891087165474
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 94.24632769096225,
+          "percent": 0.7384825275136763
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3665.626535262808,
+          "percentOfRegion": 22.313574305231096
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    }
+  ]
+}

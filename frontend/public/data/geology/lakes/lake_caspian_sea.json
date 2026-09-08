@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "regionId": "lake_caspian_sea",
+  "regionName": "Caspian Sea",
+  "kind": "lakes",
+  "generatedAt": "2026-09-08T09:35:33.691333+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 895.9133932573475,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 392.79822515523387
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 260.02589600519275
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 138.81599679873946
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 104.27327529818147
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 123,
+      "medianMwM2": 49.40424,
+      "p10MwM2": 25.0,
+      "p90MwM2": 85.54719999999999,
+      "maxMwM2": 209.34,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 38,
+          "percent": 30.89430894308943
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 43,
+          "percent": 34.959349593495936
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 28,
+          "percent": 22.76422764227642
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 8,
+          "percent": 6.504065040650407
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 2.4390243902439024
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 0.8130081300813009
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2,
+          "percent": 1.6260162601626018
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

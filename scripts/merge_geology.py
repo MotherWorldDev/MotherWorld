@@ -5,7 +5,7 @@ import argparse
 import json
 from pathlib import Path
 
-from geology_common import utc_now_iso
+from geology_common import json_safe, utc_now_iso
 
 
 def deep(a, b):
@@ -60,7 +60,7 @@ def merge(repo: Path, exclude=None) -> dict:
         folder = output_root / kind
         folder.mkdir(parents=True, exist_ok=True)
         path = folder / f"{region_id}.json"
-        path.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+        path.write_text(json.dumps(json_safe(data), indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
         regions[region_id] = {
             "url": f"{kind}/{region_id}.json",
             "kind": kind,
@@ -69,7 +69,7 @@ def merge(repo: Path, exclude=None) -> dict:
         }
 
     index = {"schemaVersion": 1, "generatedAt": utc_now_iso(), "regions": regions}
-    (output_root / "geology.index.json").write_text(json.dumps(index, indent=2) + "\n", encoding="utf-8")
+    (output_root / "geology.index.json").write_text(json.dumps(json_safe(index), indent=2, allow_nan=False) + "\n", encoding="utf-8")
     return index
 
 

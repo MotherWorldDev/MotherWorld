@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_32",
+  "regionName": "Madagascar dry deciduous forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.081828+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 94.01661417540824,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 47915.833653149435,
+        "percent": 33.603854725577925
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 47915.833653149435,
+          "percent": 33.603854725577925
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 34985.91268371895,
+          "percent": 24.53597146562786
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 31842.915932869313,
+          "percent": 22.33175632073342
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 10755.553917494268,
+          "percent": 7.542977838033332
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 9145.272651233983,
+          "percent": 6.41367143525986
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 7944.800413908995,
+          "percent": 5.57176821476759
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 9074.701561208156,
+          "percentOfRegion": 5.98338582459164
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Beryllium",
+          "count": 4,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Ambatoharama-Ambony Prospect",
+          "depositType": null,
+          "commodities": [
+            "Beryllium"
+          ]
+        },
+        {
+          "name": "Belobaka Prospect",
+          "depositType": null,
+          "commodities": [
+            "Beryllium"
+          ]
+        },
+        {
+          "name": "Antsakoa Ii",
+          "depositType": null,
+          "commodities": [
+            "Beryllium"
+          ]
+        },
+        {
+          "name": "Kohimena 400 Prospect",
+          "depositType": null,
+          "commodities": [
+            "Beryllium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_824",
+  "regionName": "Eastern Gobi desert steppe",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.521595+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 329.6298562831531,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 217.97252970981774
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 67.72354531331904
+          },
+          {
+            "name": null,
+            "kinematics": "Anticline",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.93378126001637
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999987,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 151649.7686466583,
+        "percent": 53.70753852713123
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 151649.7686466583,
+          "percent": 53.70753852713123
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 55916.234036286,
+          "percent": 19.803019289750114
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 23228.10506162167,
+          "percent": 8.226351801538259
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 22643.4536707446,
+          "percent": 8.019294531483116
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 11971.852975920763,
+          "percent": 4.239892752118508
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 7752.823167920639,
+          "percent": 2.7457018411633998
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 4721.226558779969,
+          "percent": 1.6720464499474057
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 3934.94211133345,
+          "percent": 1.3935798051817818
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 543.7589443442309,
+          "percent": 0.19257500168618633
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 32,
+      "medianMwM2": 38.0,
+      "p10MwM2": 28.0,
+      "p90MwM2": 67.0,
+      "maxMwM2": 73.7,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 16,
+          "percent": 50.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 8,
+          "percent": 25.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 8,
+          "percent": 25.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 9,
+      "commodityCount": 7,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 25.0
+        },
+        {
+          "label": "REE",
+          "count": 2,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        }
+      ],
+      "sites": [
+        {
+          "name": "Dongjiagan",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Bayan Obo Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "REE"
+          ]
+        },
+        {
+          "name": "Darhan Gold Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bayan Rare Earth Mine",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "REE"
+          ]
+        },
+        {
+          "name": "Bao-Tou Iron Operations",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Boin Sum Copper Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Bulangt Phosphate Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Bayan Obo Iron Ore Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Oyu Tolgoi",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

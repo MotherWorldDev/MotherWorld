@@ -1,0 +1,218 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20022",
+  "regionName": "Southern Norway",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.817389+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 61.29161099521502,
+        "medianAgeMa": 61.308998107910156,
+        "p10AgeMa": 61.229774475097656,
+        "p90AgeMa": 61.308998107910156,
+        "oldestAgeMa": 61.308998107910156,
+        "coveragePct": 0.19462613395787154,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 100.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 11.039163946961168,
+          "medianMmYr": 10.93612003326416,
+          "p10MmYr": 10.89405345916748,
+          "p90MmYr": 11.282475471496582,
+          "coveragePct": 0.19462613395787154
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 85,
+      "medianMwM2": 60.9,
+      "p10MwM2": 46.98,
+      "p90MwM2": 103.68,
+      "maxMwM2": 322.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 4.705882352941177
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 34,
+          "percent": 40.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 21,
+          "percent": 24.705882352941178
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 13,
+          "percent": 15.294117647058824
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 11,
+          "percent": 12.941176470588237
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 1.1764705882352942
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 1,
+          "percent": 1.1764705882352942
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 8,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 12.5
+        }
+      ],
+      "sites": [
+        {
+          "name": "Faeo Grube",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Husnes",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

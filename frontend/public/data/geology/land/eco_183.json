@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_183",
+  "regionName": "Cape York Peninsula tropical savanna",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.296499+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 90.91686195048918,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Palmerville Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 87.74382724850233
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.173034701986845
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 94.92393008002001,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 50812.001627592115,
+        "percent": 43.736479800585045
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 50812.001627592115,
+          "percent": 43.736479800585045
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 37098.50240019448,
+          "percent": 31.932572008282673
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 12743.376087760971,
+          "percent": 10.96887335670244
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 8550.172314967,
+          "percent": 7.359569132620226
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 6973.568309123533,
+          "percent": 6.002505701809621
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 1450.4018198489223,
+          "percentOfRegion": 1.1850633543599438
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 4762.21206491313,
+          "percentOfRegion": 3.891006565619997
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 4,
+          "sharePct": 80.0
+        },
+        {
+          "label": "Kaolin",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bauxite-Australia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Weipa",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Aurukun",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Weipa Andoom",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Kaolin"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

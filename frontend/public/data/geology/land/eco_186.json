@@ -1,0 +1,460 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_186",
+  "regionName": "Kimberly tropical savanna",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.303560+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 11.260548132568722,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Dead Horse Creek Fault",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.260548132568722
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 96.40330372273712,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 154210.69240540924,
+        "percent": 47.33448821970878
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 154210.69240540924,
+          "percent": 47.33448821970878
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 110445.56261149146,
+          "percent": 33.900918936340716
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 20386.060294085044,
+          "percent": 6.257437248902422
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 16745.644609596286,
+          "percent": 5.140023075835445
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 9310.074400872174,
+          "percent": 2.8576981283123937
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 5880.111108770546,
+          "percent": 1.8048816568241743
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 5876.724716791997,
+          "percent": 1.8038422144306823
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2934.418393764641,
+          "percent": 0.9007105196453747
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 2023.6036092742122,
+          "percentOfRegion": 0.598798303753529
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 10131.219680152013,
+          "percentOfRegion": 2.9978979735093647
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 83,
+      "medianMwM2": 55.0,
+      "p10MwM2": 43.0,
+      "p90MwM2": 62.8,
+      "maxMwM2": 76.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 4.819277108433735
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 54,
+          "percent": 65.06024096385542
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 25,
+          "percent": 30.120481927710845
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 20,
+      "commodityCount": 20,
+      "commodities": [
+        {
+          "label": "Uranium",
+          "count": 5,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Nickel",
+          "count": 4,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Aluminum",
+          "count": 4,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Copper",
+          "count": 4,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 7.5
+        },
+        {
+          "label": "Zinc",
+          "count": 3,
+          "sharePct": 7.5
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "Ferrosilicon",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "Gallium",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "Hafnium",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "Tantalum",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 2.5
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 2.5
+        }
+      ],
+      "sites": [
+        {
+          "name": "Edith River Prospects",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Hore and O'Connors Prospect",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Tennysons Prospects",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Panton Sill - Lamboo Deposits",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bauxite-Australia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Sally Mallay Prospect",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Mitchell Platenau, Australia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Ferrosilicon",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Cosmo Howley Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Koolan Island Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Red Tree",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Sally Malay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Fleur De Lys Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Mitchell Plateau",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Brockman",
+          "depositType": null,
+          "commodities": [
+            "Gallium",
+            "Hafnium",
+            "Niobium (Columbium)",
+            "REE",
+            "Tantalum",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Koongie Park",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sally Malay",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Cadjebut",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cape Bougainville",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Blendvale",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cosmo Howley",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

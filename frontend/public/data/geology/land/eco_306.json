@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_306",
+  "regionName": "Eastern Himalayan broadleaf forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.898194+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 458.1248425644693,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 325.14797297881455
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.663106982250678
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.112427440705098
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.237427416081257
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.642831069932026
+          },
+          {
+            "name": null,
+            "kinematics": "Anticline",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.57350775732116
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.747568919364534
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 100.0,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 45718.98826480075,
+        "percent": 54.53992307292383
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 45718.98826480075,
+          "percent": 54.53992307292383
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 12593.181885855676,
+          "percent": 15.022886493459453
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 12506.12805823573,
+          "percent": 14.919036665591525
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4964.082790979319,
+          "percent": 5.921843501425021
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 4722.74273225857,
+          "percent": 5.633939749906998
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3098.2816636634457,
+          "percent": 3.6960582464278477
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 223.2406441562614,
+          "percent": 0.2663122702653167
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 9,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Iridium",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Osmium",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 10.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Patkai Ranges",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Lamosangu",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Phulchowki",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Potni, Subansiri Frontier Divisio",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

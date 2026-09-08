@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_772",
+  "regionName": "Chukchi Peninsula tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.242517+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 180.63576819552003,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 180.63576819552003
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 96.63207969640908,
+      "dominantClass": {
+        "code": "vi",
+        "label": "Intermediate volcanic rocks",
+        "areaKm2": 114650.70046437783,
+        "percent": 39.49100275508119
+      },
+      "classes": [
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 114650.70046437783,
+          "percent": 39.49100275508119
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 66922.17549252117,
+          "percent": 23.051091759987198
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 32885.07195456163,
+          "percent": 11.327139406026863
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 21096.809256604716,
+          "percent": 7.266716636719157
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 16226.981359983403,
+          "percent": 5.589322725445183
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 12121.143748220056,
+          "percent": 4.17508239563193
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 10419.497148838764,
+          "percent": 3.588956621675404
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 5564.375357090181,
+          "percent": 1.9166281729384518
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 4266.199924383183,
+          "percent": 1.4694765255262385
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 3711.0610387804027,
+          "percent": 1.2782610233793186
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 2457.050993380987,
+          "percent": 0.8463219775890629
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 10118.567439524002,
+          "percentOfRegion": 3.3679203035908802
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 59.5,
+      "p10MwM2": 52.7,
+      "p90MwM2": 66.3,
+      "maxMwM2": 68.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 50.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 50.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 45,
+      "commodityCount": 18,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 25,
+          "sharePct": 19.68503937007874
+        },
+        {
+          "label": "Silver",
+          "count": 18,
+          "sharePct": 14.173228346456693
+        },
+        {
+          "label": "Tungsten",
+          "count": 14,
+          "sharePct": 11.023622047244094
+        },
+        {
+          "label": "Tin",
+          "count": 12,
+          "sharePct": 9.448818897637794
+        },
+        {
+          "label": "Copper",
+          "count": 10,
+          "sharePct": 7.874015748031496
+        },
+        {
+          "label": "Lead",
+          "count": 10,
+          "sharePct": 7.874015748031496
+        },
+        {
+          "label": "Zinc",
+          "count": 10,
+          "sharePct": 7.874015748031496
+        },
+        {
+          "label": "Antimony",
+          "count": 8,
+          "sharePct": 6.299212598425196
+        },
+        {
+          "label": "Arsenic",
+          "count": 7,
+          "sharePct": 5.511811023622047
+        },
+        {
+          "label": "Bismuth",
+          "count": 3,
+          "sharePct": 2.3622047244094486
+        },
+        {
+          "label": "Tellurium",
+          "count": 2,
+          "sharePct": 1.574803149606299
+        },
+        {
+          "label": "Mercury",
+          "count": 2,
+          "sharePct": 1.574803149606299
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 0.7874015748031495
+        },
+        {
+          "label": "Scandium",
+          "count": 1,
+          "sharePct": 0.7874015748031495
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 0.7874015748031495
+        },
+        {
+          "label": "Indium",
+          "count": 1,
+          "sharePct": 0.7874015748031495
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 0.7874015748031495
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.7874015748031495
+        }
+      ],
+      "sites": [
+        {
+          "name": "Iul'Tin Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Iul'Tin",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Val'Kumey",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Kuekvun",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Gold",
+            "Tellurium",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Enmyvaam",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Gornostai",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Tumannoe",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Melyul",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Obilnoe",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Komsomol'Skiy Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kukenei",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Dolinnoe",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Niobium (Columbium)",
+            "Scandium",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Plamennoe",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Pelvuntykoinen",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Gold",
+            "Tellurium"
+          ]
+        },
+        {
+          "name": "Zavetone",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Elveney",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Palyansk",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Pyrkakai",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Cadmium",
+            "Copper",
+            "Gold",
+            "Indium",
+            "Lead",
+            "Silver",
+            "Tin",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Barin",
+          "depositType": null,
+          "commodities": [
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Polyarnyy",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Penyelkhin Vankarem Lowland",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Svetlor",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Chechekuyum",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Nickel",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Draznyaschy",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Berezogor",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Enpylkhkan",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Shakh",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Tenkergin",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Pepenveem",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Spoka Rudnaya",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Promezhutochnoe",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Ryveem",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Iul'Tin",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Ametistovoe",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Serdtse-Kamen",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Tin",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Maisky",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Dvoinoi",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kanelyveen",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Lenotap",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Shurykan",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

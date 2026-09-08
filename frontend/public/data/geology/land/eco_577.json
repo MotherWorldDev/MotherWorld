@@ -1,0 +1,713 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_577",
+  "regionName": "Low Monte",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.232619+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 9,
+        "intersectionLengthKm": 150.56262367962222,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Falla Cerro La Cal",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.362492146729224
+          },
+          {
+            "name": "Falla Las Malvinas",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.749109404390893
+          },
+          {
+            "name": "Falla Cerro Salinas",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.72496642487822
+          },
+          {
+            "name": "Falla Rinconada",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.000020903543263
+          },
+          {
+            "name": "Falla Zonda",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 20.80899710096897
+          },
+          {
+            "name": "Falla Niquizanga",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.221354905301844
+          },
+          {
+            "name": "Falla Las Tapias-Villicum",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.515378650688811
+          },
+          {
+            "name": "Falla Los Berros",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.888820655605135
+          },
+          {
+            "name": "Falla Las Peñas",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.2914834875158616
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 98.29429227914794,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 206517.0926430579,
+        "percent": 59.404751260282836
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 206517.0926430579,
+          "percent": 59.404751260282836
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 75368.17742127985,
+          "percent": 21.679696219578254
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 20064.306319989166,
+          "percent": 5.771508357466428
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 19288.53422523277,
+          "percent": 5.548357102846916
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 9954.011806327304,
+          "percent": 2.8632767768952476
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 6981.41388724894,
+          "percent": 2.0082074084488557
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 4748.174549819984,
+          "percent": 1.3658149282586427
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 2478.313271818703,
+          "percent": 0.7128881274341179
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 1682.1090813347969,
+          "percent": 0.4838595696389467
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 561.9327343405091,
+          "percent": 0.16164024914976288
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 2395.829844416765,
+          "percentOfRegion": 0.6774066410169839
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3636.8619185903935,
+          "percentOfRegion": 1.028301079835093
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 23.0,
+      "p10MwM2": 21.32,
+      "p90MwM2": 24.68,
+      "maxMwM2": 25.1,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 180,
+      "commodityCount": 49,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 25,
+          "sharePct": 9.191176470588236
+        },
+        {
+          "label": "Lead",
+          "count": 21,
+          "sharePct": 7.720588235294118
+        },
+        {
+          "label": "Bentonite",
+          "count": 21,
+          "sharePct": 7.720588235294118
+        },
+        {
+          "label": "Silver",
+          "count": 17,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Clay",
+          "count": 17,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Zinc",
+          "count": 15,
+          "sharePct": 5.514705882352941
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 15,
+          "sharePct": 5.514705882352941
+        },
+        {
+          "label": "Strontium",
+          "count": 11,
+          "sharePct": 4.044117647058823
+        },
+        {
+          "label": "Iron",
+          "count": 10,
+          "sharePct": 3.6764705882352944
+        },
+        {
+          "label": "General",
+          "count": 10,
+          "sharePct": 3.6764705882352944
+        },
+        {
+          "label": "Limestone",
+          "count": 10,
+          "sharePct": 3.6764705882352944
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 9,
+          "sharePct": 3.308823529411765
+        },
+        {
+          "label": "Manganese",
+          "count": 8,
+          "sharePct": 2.941176470588235
+        },
+        {
+          "label": "Construction",
+          "count": 7,
+          "sharePct": 2.5735294117647056
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 7,
+          "sharePct": 2.5735294117647056
+        },
+        {
+          "label": "Gold",
+          "count": 7,
+          "sharePct": 2.5735294117647056
+        },
+        {
+          "label": "Kaolin",
+          "count": 5,
+          "sharePct": 1.8382352941176472
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 5,
+          "sharePct": 1.8382352941176472
+        },
+        {
+          "label": "Ball Clay",
+          "count": 5,
+          "sharePct": 1.8382352941176472
+        },
+        {
+          "label": "Sodium",
+          "count": 4,
+          "sharePct": 1.4705882352941175
+        },
+        {
+          "label": "Arsenic",
+          "count": 4,
+          "sharePct": 1.4705882352941175
+        },
+        {
+          "label": "Halite",
+          "count": 3,
+          "sharePct": 1.1029411764705883
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 1.1029411764705883
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 0.7352941176470588
+        },
+        {
+          "label": "Stone",
+          "count": 2,
+          "sharePct": 0.7352941176470588
+        },
+        {
+          "label": "Calcium",
+          "count": 2,
+          "sharePct": 0.7352941176470588
+        },
+        {
+          "label": "Mineral Pigments",
+          "count": 2,
+          "sharePct": 0.7352941176470588
+        },
+        {
+          "label": "Diatomite",
+          "count": 2,
+          "sharePct": 0.7352941176470588
+        },
+        {
+          "label": "Dimension",
+          "count": 2,
+          "sharePct": 0.7352941176470588
+        },
+        {
+          "label": "Dolomite",
+          "count": 2,
+          "sharePct": 0.7352941176470588
+        }
+      ],
+      "sites": [
+        {
+          "name": "La Paisanita",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "La Nenina",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Maria Elvira",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "La Ventana",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "La Discordia",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Santa Tesilita",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Paramillo De Uspallata",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "El Paisano",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hierro Felix",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Claudia",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Pozo Verde",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Cuchilla De Aguila, San Rafael",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "La Salada",
+          "depositType": null,
+          "commodities": [
+            "Bentonite"
+          ]
+        },
+        {
+          "name": "La Casualidad",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "La Tosca",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Reconquista",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "La Perseverancia",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Santa Teresa",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Salinas Del Diamante",
+          "depositType": null,
+          "commodities": [
+            "Halite"
+          ]
+        },
+        {
+          "name": "General San Martin, Guillermo 2",
+          "depositType": null,
+          "commodities": [
+            "Sodium"
+          ]
+        },
+        {
+          "name": "Maria Luisa, Martha",
+          "depositType": null,
+          "commodities": [
+            "Sodium"
+          ]
+        },
+        {
+          "name": "Ripiera Moreno",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Anchoris",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Toma Del Medio, Los Guaracos",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Cerro De La Cal, Cerro Blanco",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Los Reyundos",
+          "depositType": null,
+          "commodities": [
+            "Travertine"
+          ]
+        },
+        {
+          "name": "La Carmona, La Joyita",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Gibraltar, La Esperanza",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "25 De Mayo",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Don Jose Maria",
+          "depositType": "Vein",
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Cerro Salinas",
+          "depositType": null,
+          "commodities": [
+            "Bentonite"
+          ]
+        },
+        {
+          "name": "Blanquita, La China, La Escondida",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "El Borbollon",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Sierra Pintada",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Isabela Zonia",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ponon Trehue",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Puesto Laura",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "El Rodeo",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "La India",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "La Esperanza, Potos, Irma, Mimi, Magdalena",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

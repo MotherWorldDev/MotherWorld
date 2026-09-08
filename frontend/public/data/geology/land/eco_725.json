@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_725",
+  "regionName": "Central Anatolian steppe",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.971394+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 14,
+        "intersectionLengthKm": 478.0201876837856,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 109.78931548959754
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 97.71317212347675
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.10651897949877
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.07985505040883
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.801146233741996
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.827134066102463
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.880573456891725
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.145911055550005
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.991370503396247
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.18862661240671
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.07616696767531
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.765053292510874
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.352323769579922
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.303020082948505
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 90.49005864683393,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 8851.845988816875,
+        "percent": 39.250943959746614
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 8851.845988816875,
+          "percent": 39.250943959746614
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 8113.873316948682,
+          "percent": 35.97861816195057
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 2872.552247586024,
+          "percent": 12.73749988803333
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1581.609420224254,
+          "percent": 7.013188299690132
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 479.1248680156852,
+          "percent": 2.124540278712898
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 429.9536218600837,
+          "percent": 1.9065046475323804
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 222.97202103648988,
+          "percent": 0.9887047643340742
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 2370.06748614374,
+          "percentOfRegion": 9.509941353166074
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 16,
+      "medianMwM2": 72.0,
+      "p10MwM2": 24.490000000000002,
+      "p90MwM2": 129.5,
+      "maxMwM2": 206.8,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 18.75
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 18.75
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 4,
+          "percent": 25.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 6.25
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 4,
+          "percent": 25.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 1,
+          "percent": 6.25
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 6,
+      "commodityCount": 10,
+      "commodities": [
+        {
+          "label": "Magnesite",
+          "count": 2,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Mercury",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Thorium",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        }
+      ],
+      "sites": [
+        {
+          "name": "Seydishir Mine",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Konya Mine",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Cinkur Mine",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Beylikahir",
+          "depositType": "Unknown",
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite",
+            "Thorium"
+          ]
+        },
+        {
+          "name": "Citosan",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Konya Helvacibaba Cayirbagi",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

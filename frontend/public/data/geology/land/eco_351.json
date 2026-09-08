@@ -1,0 +1,750 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_351",
+  "regionName": "Central Pacific Northwest coastal forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.042029+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 12,
+        "intersectionLengthKm": 160.29433044346092,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Whaleshead fault zone",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.01398412751752
+          },
+          {
+            "name": "Lake Creek-Boundary Creek fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.009854280932
+          },
+          {
+            "name": "Beaver Creek fault zone",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.73166526040256
+          },
+          {
+            "name": "Battle Rock fault zone",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.690410226074796
+          },
+          {
+            "name": "Portland Hills fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.207018253292805
+          },
+          {
+            "name": "Happy Camp fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.122032803875925
+          },
+          {
+            "name": "Waldport fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.368618645765844
+          },
+          {
+            "name": "South Slough thrust and reverse faults",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.630303204220462
+          },
+          {
+            "name": "Cape Blanco anticline",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.588986903793286
+          },
+          {
+            "name": "Yaquina faults",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.449918489244363
+          },
+          {
+            "name": "Coquille anticline",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.698861349268697
+          },
+          {
+            "name": "Gales Creek fault zone",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.7826768990726434
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 88.23487755482236,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 22492.845368339535,
+        "percent": 33.0356416303408
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 22492.845368339535,
+          "percent": 33.0356416303408
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 15846.271563470162,
+          "percent": 23.273700591242964
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 15186.154918377259,
+          "percent": 22.30417554608315
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 4455.809023499267,
+          "percent": 6.544325880653452
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3627.644221686705,
+          "percent": 5.327985521952018
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 2789.3247699401923,
+          "percent": 4.096730848471549
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1959.7354524337513,
+          "percent": 2.8782982782606705
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 823.4627770588959,
+          "percent": 1.2094344114032882
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 402.1971548609385,
+          "percent": 0.5907141073148053
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 376.9276497360321,
+          "percent": 0.5536003361661579
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 126.227688011054,
+          "percent": 0.1853928481111273
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 1655.8944189213612,
+          "percentOfRegion": 2.1459088871628706
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 7422.683293039798,
+          "percentOfRegion": 9.619213558014842
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 44,
+      "medianMwM2": 44.8,
+      "p10MwM2": 30.0,
+      "p90MwM2": 87.7,
+      "maxMwM2": 132.8,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 16,
+          "percent": 36.36363636363637
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 10,
+          "percent": 22.727272727272727
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 11,
+          "percent": 25.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 9.090909090909092
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 6.8181818181818175
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2259,
+      "commodityCount": 58,
+      "commodities": [
+        {
+          "label": "Stone",
+          "count": 858,
+          "sharePct": 22.728476821192054
+        },
+        {
+          "label": "Construction",
+          "count": 679,
+          "sharePct": 17.986754966887418
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 679,
+          "sharePct": 17.986754966887418
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 373,
+          "sharePct": 9.880794701986755
+        },
+        {
+          "label": "Manganese",
+          "count": 300,
+          "sharePct": 7.9470198675496695
+        },
+        {
+          "label": "Gold",
+          "count": 201,
+          "sharePct": 5.324503311258278
+        },
+        {
+          "label": "Chromium",
+          "count": 128,
+          "sharePct": 3.390728476821192
+        },
+        {
+          "label": "Iron",
+          "count": 86,
+          "sharePct": 2.2781456953642385
+        },
+        {
+          "label": "Copper",
+          "count": 56,
+          "sharePct": 1.4834437086092715
+        },
+        {
+          "label": "Platinum",
+          "count": 54,
+          "sharePct": 1.4304635761589404
+        },
+        {
+          "label": "Silver",
+          "count": 42,
+          "sharePct": 1.1125827814569536
+        },
+        {
+          "label": "Clay",
+          "count": 39,
+          "sharePct": 1.0331125827814571
+        },
+        {
+          "label": "Titanium",
+          "count": 28,
+          "sharePct": 0.7417218543046358
+        },
+        {
+          "label": "Aluminum",
+          "count": 26,
+          "sharePct": 0.6887417218543046
+        },
+        {
+          "label": "Mercury",
+          "count": 24,
+          "sharePct": 0.6357615894039735
+        },
+        {
+          "label": "Zinc",
+          "count": 15,
+          "sharePct": 0.3973509933774834
+        },
+        {
+          "label": "Silica",
+          "count": 14,
+          "sharePct": 0.3708609271523179
+        },
+        {
+          "label": "Metal",
+          "count": 14,
+          "sharePct": 0.3708609271523179
+        },
+        {
+          "label": "Lead",
+          "count": 14,
+          "sharePct": 0.3708609271523179
+        },
+        {
+          "label": "Iridium",
+          "count": 12,
+          "sharePct": 0.31788079470198677
+        },
+        {
+          "label": "Osmium",
+          "count": 11,
+          "sharePct": 0.2913907284768212
+        },
+        {
+          "label": "General",
+          "count": 11,
+          "sharePct": 0.2913907284768212
+        },
+        {
+          "label": "Limestone",
+          "count": 11,
+          "sharePct": 0.2913907284768212
+        },
+        {
+          "label": "Zirconium",
+          "count": 10,
+          "sharePct": 0.26490066225165565
+        },
+        {
+          "label": "PGE",
+          "count": 10,
+          "sharePct": 0.26490066225165565
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 8,
+          "sharePct": 0.2119205298013245
+        },
+        {
+          "label": "Molybdenum",
+          "count": 7,
+          "sharePct": 0.18543046357615894
+        },
+        {
+          "label": "Dimension",
+          "count": 6,
+          "sharePct": 0.15894039735099338
+        },
+        {
+          "label": "Nickel",
+          "count": 5,
+          "sharePct": 0.13245033112582782
+        },
+        {
+          "label": "Arsenic",
+          "count": 4,
+          "sharePct": 0.10596026490066225
+        }
+      ],
+      "sites": [
+        {
+          "name": "Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Pigeon Point",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Banks Island",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "S. Twomile Creek Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Section 32 Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Coaledo Sand & Gravel",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Coquille Valley Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Seven Devils Mine",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Us Mining Co",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Shepard Chromium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Rose Mine",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Eagle Mine",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Pioneer Mine",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Bandon Plant Section 8 Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "State Route 101 Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Coquille River Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Spruce Hollow Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Geiger Creek Mines, Inc.",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Iowa Mine",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Johnson Creek Sand & Gravel",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Borrow Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Section 26 Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Kentuck",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Kentuck Slough",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Mahaffy Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Enegren",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Koosrock Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Coquille Borrow Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Art E Jones",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Glen Alken Creek Sand & Gravel",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Shuck Mountain Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gray Creek Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "State Route 40 Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Borrow Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Pleasant Valley Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Sugarloaf Mountain Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Section 14 Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Section 14 Pit",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Endicott Creek Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

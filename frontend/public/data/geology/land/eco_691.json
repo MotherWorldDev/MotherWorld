@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_691",
+  "regionName": "Caledon conifer forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.180188+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.17419047244503,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 16974.945481445127,
+        "percent": 77.19265509459287
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 16974.945481445127,
+          "percent": 77.19265509459287
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3124.2843580474364,
+          "percent": 14.207515725561882
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1888.4035391645134,
+          "percent": 8.587413917616002
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2.730161298652416,
+          "percent": 0.012415262229256954
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 183.11066255428145,
+          "percentOfRegion": 0.8258095275550172
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Crushed/Broken",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Potassium",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Stone",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Loch Awe Shale Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Potassium",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cononish",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

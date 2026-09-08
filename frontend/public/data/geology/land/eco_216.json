@@ -1,0 +1,790 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_216",
+  "regionName": "Western Australian Mulga shrublands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.487192+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 15,
+        "intersectionLengthKm": 339.7697364199567,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Roderick River Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.36594891988803
+          },
+          {
+            "name": "Poondarrie Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.36940651580356
+          },
+          {
+            "name": "Mount Narryer West Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.3923099051654
+          },
+          {
+            "name": "Sanford River Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.66066028127471
+          },
+          {
+            "name": "Wilyun Bore Lineament",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.13793535991462
+          },
+          {
+            "name": "Woodrarung Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.825762415180034
+          },
+          {
+            "name": "Edjudina Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.29927917328058
+          },
+          {
+            "name": "Curbur Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 20.337890910501166
+          },
+          {
+            "name": "Mount Narryer East Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.39052550995073
+          },
+          {
+            "name": "Sanford River Scarp 2",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.228047790809548
+          },
+          {
+            "name": "Mount Gerard Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.366051345621083
+          },
+          {
+            "name": "Woodrarung Scarp 2",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.876062054746823
+          },
+          {
+            "name": "Duketon Lineament",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.679789510319447
+          },
+          {
+            "name": "Queen Victoria Springs Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.9391003635465354
+          },
+          {
+            "name": "Lake Wells Scarp 1",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.9009663639544045
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999993,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 320850.9860506325,
+        "percent": 69.48140935113722
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 320850.9860506325,
+          "percent": 69.48140935113722
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 49485.46738216373,
+          "percent": 10.716251984869626
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 26463.296078179534,
+          "percent": 5.730719827983248
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 25559.628243097162,
+          "percent": 5.53502738040914
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 23068.30197945507,
+          "percent": 4.995521916885214
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 8391.089508683117,
+          "percent": 1.8171199416630097
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 3578.2040996886253,
+          "percent": 0.7748726810929888
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 3218.0916782855497,
+          "percent": 0.6968890698474002
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1164.5520701249907,
+          "percent": 0.2521878461121507
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 46,
+      "medianMwM2": 35.0,
+      "p10MwM2": 24.75,
+      "p90MwM2": 54.65,
+      "maxMwM2": 89.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 34,
+          "percent": 73.91304347826086
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 8,
+          "percent": 17.391304347826086
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 4.3478260869565215
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 4.3478260869565215
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 164,
+      "commodityCount": 29,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 81,
+          "sharePct": 23.61516034985423
+        },
+        {
+          "label": "Nickel",
+          "count": 61,
+          "sharePct": 17.784256559766764
+        },
+        {
+          "label": "Copper",
+          "count": 41,
+          "sharePct": 11.9533527696793
+        },
+        {
+          "label": "Palladium",
+          "count": 17,
+          "sharePct": 4.956268221574344
+        },
+        {
+          "label": "Iridium",
+          "count": 16,
+          "sharePct": 4.664723032069971
+        },
+        {
+          "label": "Iron",
+          "count": 14,
+          "sharePct": 4.081632653061225
+        },
+        {
+          "label": "Cobalt",
+          "count": 14,
+          "sharePct": 4.081632653061225
+        },
+        {
+          "label": "Aluminum",
+          "count": 11,
+          "sharePct": 3.206997084548105
+        },
+        {
+          "label": "Chromium",
+          "count": 11,
+          "sharePct": 3.206997084548105
+        },
+        {
+          "label": "Titanium",
+          "count": 10,
+          "sharePct": 2.9154518950437316
+        },
+        {
+          "label": "Vanadium",
+          "count": 9,
+          "sharePct": 2.623906705539359
+        },
+        {
+          "label": "Zinc",
+          "count": 8,
+          "sharePct": 2.3323615160349855
+        },
+        {
+          "label": "PGE",
+          "count": 7,
+          "sharePct": 2.0408163265306123
+        },
+        {
+          "label": "REE",
+          "count": 6,
+          "sharePct": 1.749271137026239
+        },
+        {
+          "label": "Silver",
+          "count": 6,
+          "sharePct": 1.749271137026239
+        },
+        {
+          "label": "Metal",
+          "count": 5,
+          "sharePct": 1.4577259475218658
+        },
+        {
+          "label": "Uranium",
+          "count": 4,
+          "sharePct": 1.1661807580174928
+        },
+        {
+          "label": "Platinum",
+          "count": 4,
+          "sharePct": 1.1661807580174928
+        },
+        {
+          "label": "Zirconium",
+          "count": 3,
+          "sharePct": 0.8746355685131195
+        },
+        {
+          "label": "Sulfur",
+          "count": 3,
+          "sharePct": 0.8746355685131195
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 0.5830903790087464
+        },
+        {
+          "label": "Tantalum",
+          "count": 2,
+          "sharePct": 0.5830903790087464
+        },
+        {
+          "label": "Arsenic",
+          "count": 2,
+          "sharePct": 0.5830903790087464
+        },
+        {
+          "label": "Diamond",
+          "count": 1,
+          "sharePct": 0.2915451895043732
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 0.2915451895043732
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 0.2915451895043732
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 1,
+          "sharePct": 0.2915451895043732
+        },
+        {
+          "label": "Ruthenium",
+          "count": 1,
+          "sharePct": 0.2915451895043732
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 0.2915451895043732
+        }
+      ],
+      "sites": [
+        {
+          "name": "Gabanintha-Yarrabudda Deposits",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Barrambie Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Challa Intrusion Belt See General Comments",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Yeelirrie",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Nullagine Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Argyle Mine",
+          "depositType": null,
+          "commodities": [
+            "Diamond"
+          ]
+        },
+        {
+          "name": "Friendly Creek Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Wagerup",
+          "depositType": "Residual",
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bindoon-New Norcia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Glen Forrest",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Mitchell Plateau",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "North Kimberly",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Sawyer's Valley",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Toodyay",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Werribee",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Mount Weld",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "Phosphorus-Phosphates",
+            "REE",
+            "Tantalum",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Mt. Seabrook Mine",
+          "depositType": null,
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Agnew Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Lunnon Shoot - Kambalda",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Black Swan",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Carr Boyd Rocks",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Mt. Windarra",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Kurnalpi",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Weebo",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mt. Keith",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Jubilee",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Youangarra",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mt. Clifford",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Scotia",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Western Mining",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Mt. Windarra - South Prospect Nickel",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Iridium",
+            "Iron",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ringlock Nickel Property - Australia",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Heron Wells Nickel-Copper Claim",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Mt. Eureka Nickel Prospect",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Pykes Hill Nickel Deposit",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Scotia Second Nickel Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Big Bell Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Burnkura Deposit",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Agnew Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Heron Wells Nickel-Copper Claim-Australia",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,326 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_25",
+  "regionName": "Northern Swahili coastal forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.667655+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 2.729074823681725,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.729074823681725
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 91.20289816813715,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 79548.61829632222,
+        "percent": 60.72335402305066
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 79548.61829632222,
+          "percent": 60.72335402305066
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 22664.295067235613,
+          "percent": 17.300765777276325
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 16569.73906527114,
+          "percent": 12.648492869882446
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 9248.819451922609,
+          "percent": 7.0600765909260215
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 2942.4356605007447,
+          "percent": 2.2461051634745526
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 27.779661541952102,
+          "percent": 0.02120557538999357
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 12635.949137759819,
+          "percentOfRegion": 8.797101831863182
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 112,
+      "medianMwM2": 60.45,
+      "p10MwM2": 37.0,
+      "p90MwM2": 86.0,
+      "maxMwM2": 89.76,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 14,
+          "percent": 12.5
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 32,
+          "percent": 28.57142857142857
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 51,
+          "percent": 45.535714285714285
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 15,
+          "percent": 13.392857142857142
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 12,
+      "commodityCount": 11,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 4,
+          "sharePct": 23.52941176470588
+        },
+        {
+          "label": "Thorium",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Uranium",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bur Eile Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Radioactivity Anomaly",
+          "depositType": null,
+          "commodities": [
+            "Thorium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Magnetic Anomaly",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Baidoa Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Modu Mode Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Kiwara Hill",
+          "depositType": "Residual",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Daimir Magnetic Anomaly",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Magnetic Anomaly",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Baidoa Stream Sample Anomaly",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Mrima Hill",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "REE",
+            "Thorium"
+          ]
+        },
+        {
+          "name": "Tanga Phos-Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Kinangoni Hill",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

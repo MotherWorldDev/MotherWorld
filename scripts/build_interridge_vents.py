@@ -31,9 +31,12 @@ def main():
         else:g=groups.get(r.regionId)
         if g is None or len(g)==0:continue
         settings=Counter(str(x).strip() for x in g.tectonicSetting if x is not None and str(x).strip() and str(x).lower()!='nan');acts=Counter(str(x).strip().lower() for x in g.activity if x is not None and str(x).strip())
-        depths=[x for x in g.depthM if x is not None];temps=[x for x in g.maxTemperatureC if x is not None]
+        depths=[x for x in (as_float(v) for v in g.depthM) if x is not None]
+        temps=[x for x in (as_float(v) for v in g.maxTemperatureC) if x is not None]
         items=[]
-        for x in g.itertuples():items.append({'name':x.name,'activity':x.activity,'depthM':x.depthM,'maxTemperatureC':x.maxTemperatureC,'tectonicSetting':x.tectonicSetting,'ocean':x.ocean,'discoveryYear':x.discoveryYear})
+        for x in g.itertuples():
+            year_value=as_float(x.discoveryYear)
+            items.append({'name':x.name,'activity':x.activity,'depthM':as_float(x.depthM),'maxTemperatureC':as_float(x.maxTemperatureC),'tectonicSetting':x.tectonicSetting,'ocean':x.ocean,'discoveryYear':int(year_value) if year_value is not None else None})
         sec={'seafloor':{'hydrothermal':{'ventFieldCount':len(g),'confirmedOrInferredActive':sum(v for k,v in acts.items() if ('active' in k or 'confirmed' in k or 'inferred' in k) and 'inactive' not in k),'inactiveCount':sum(v for k,v in acts.items() if 'inactive' in k),'medianDepthM':float(__import__('numpy').median(depths)) if depths else None,'maxReportedTemperatureC':max(temps) if temps else None,'tectonicSettings':[{'label':k,'count':v} for k,v in settings.most_common(12)],'fields':items[:40],'source':source}}}
         write_fragment(repo,'interridge_vents',{'regionId':r.regionId,'regionName':r.regionName,'kind':r.kind},sec,source)
     print(f'InterRidge vents parsed: {len(pts)} fields')

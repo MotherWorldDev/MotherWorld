@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_251",
+  "regionName": "Nansei Islands subtropical evergreen forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.682538+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 46.0874964397847,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Onoma",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.718577512833214
+          },
+          {
+            "name": "Ishikawa-Gushikawa",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.305274291134909
+          },
+          {
+            "name": "Kerizaki-Tanowaki",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.854532390294723
+          },
+          {
+            "name": "Miyakojima",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.209112245521857
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 46.34249165162864,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 1100.283216207918,
+        "percent": 60.613563126461464
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1100.283216207918,
+          "percent": 60.613563126461464
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 566.1591034932196,
+          "percent": 31.189170255163017
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 148.80027528100473,
+          "percent": 8.197266618375522
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2101.772935015474,
+          "percentOfRegion": 53.65750834837139
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    }
+  ]
+}

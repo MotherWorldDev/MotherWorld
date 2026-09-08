@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_52",
+  "regionName": "Northern Congolian Forest-Savanna",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.925440+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 88.63681445376847,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.04862928593133
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.1936940024738
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.394491165363343
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000004,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 622605.0276661818,
+        "percent": 88.56215049720589
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 622605.0276661818,
+          "percent": 88.56215049720589
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 60301.14287464542,
+          "percent": 8.577506851231515
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 11018.695862912642,
+          "percent": 1.5673490542665824
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 5010.094939496947,
+          "percent": 0.7126585271889526
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3056.493674808316,
+          "percent": 0.43476946184775417
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 1023.347773836906,
+          "percent": 0.1455656082592978
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 6,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 5,
+          "sharePct": 62.5
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 12.5
+        }
+      ],
+      "sites": [
+        {
+          "name": "Dschang",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Unknown",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bauxite - Cameroon",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bauxite - Cameroon",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bauxite - Cameroon",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Minim Martap",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Silica"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

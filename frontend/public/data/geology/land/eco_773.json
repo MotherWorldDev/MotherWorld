@@ -1,0 +1,267 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_773",
+  "regionName": "Kamchatka tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.248546+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 5,
+        "intersectionLengthKm": 142.1967750320503,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 72.59605274220048
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.66032810728526
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.101887930784851
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.709569580738224
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.128936671041481
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 98.03242922926074,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 39826.30429314217,
+        "percent": 33.88403570792887
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 39826.30429314217,
+          "percent": 33.88403570792887
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 38330.737759815755,
+          "percent": 32.61161461040961
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 24982.916849167617,
+          "percent": 21.255350242256316
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 5523.809317124872,
+          "percent": 4.699631448792967
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 4320.914485667742,
+          "percent": 3.6762140831752674
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1640.5432220476505,
+          "percent": 1.395766594537751
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1467.2136735197505,
+          "percent": 1.2482986153768059
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1444.6348980601194,
+          "percent": 1.2290886975224096
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2359.0409222719027,
+          "percentOfRegion": 1.967570770739336
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 60,
+      "medianMwM2": 65.7444,
+      "p10MwM2": 41.574924,
+      "p90MwM2": 210.10000000000002,
+      "maxMwM2": 343.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 6,
+          "percent": 10.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 9,
+          "percent": 15.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 17,
+          "percent": 28.333333333333332
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 6.666666666666667
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 15,
+          "percent": 25.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 2,
+          "percent": 3.3333333333333335
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 5,
+          "percent": 8.333333333333332
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 2,
+          "percent": 3.3333333333333335
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Mercury",
+          "count": 2,
+          "sharePct": 40.0
+        },
+        {
+          "label": "Boron-Borates",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Klyuchevskoye-Dimitryevskoye",
+          "depositType": null,
+          "commodities": [
+            "Boron-Borates"
+          ]
+        },
+        {
+          "name": "Uzon",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Uzon Deposit",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Aginskoe",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20098",
+  "regionName": "Mascarene Islands",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.210627+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 43.847573318825376,
+        "medianAgeMa": 46.57283401489258,
+        "p10AgeMa": 10.596419334411621,
+        "p90AgeMa": 70.13445281982422,
+        "oldestAgeMa": 82.91791534423828,
+        "coveragePct": 100.0,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 21.798712625739793,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 32.72053347496759,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 45.48075389929262,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 67.01456386886365,
+          "medianMmYr": 41.205684661865234,
+          "p10MmYr": 22.103055953979492,
+          "p90MmYr": 126.42301177978516,
+          "coveragePct": 100.0
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 2,
+          "intersectionLengthKm": 1241.1498039522558
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 3,
+        "confirmedOrInferredActive": 3,
+        "inactiveCount": 0,
+        "medianDepthM": 2700.0,
+        "maxReportedTemperatureC": 356.0,
+        "tectonicSettings": [
+          {
+            "label": "mid-ocean ridge",
+            "count": 3
+          }
+        ],
+        "fields": [
+          {
+            "name": "Dodo Field",
+            "activity": "active, confirmed",
+            "depthM": 2730.0,
+            "maxTemperatureC": 356.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 2009
+          },
+          {
+            "name": "CIR, 19 29'S",
+            "activity": "active, inferred",
+            "depthM": 2700.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 1988
+          },
+          {
+            "name": "Solitaire Field",
+            "activity": "active, confirmed",
+            "depthM": 2630.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 2009
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 8,
+        "intersectionLengthKm": 441.70590189363236,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 102.94169785057124
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 71.26509179117139
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 61.49579239374147
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.88064933698993
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.83594599069838
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 51.00920794969816
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.93953083402545
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.337985746736331
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 104,
+      "medianMwM2": 65.55,
+      "p10MwM2": 37.18,
+      "p90MwM2": 84.57000000000001,
+      "maxMwM2": 149.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 15,
+          "percent": 14.423076923076922
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 17,
+          "percent": 16.346153846153847
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 57,
+          "percent": 54.807692307692314
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 7,
+          "percent": 6.730769230769231
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 8,
+          "percent": 7.6923076923076925
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    }
+  ]
+}

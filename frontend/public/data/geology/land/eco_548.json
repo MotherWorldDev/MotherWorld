@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_548",
+  "regionName": "Trinidad and Tobago dry forest",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.112126+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 12.282800441976125,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Tunapuy - Arima - Tunapuy Oeste",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.666022014292951
+          },
+          {
+            "name": "El Soldado - Norte",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.616778427683175
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 56.98589363044052,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 118.15224839558063,
+        "percent": 85.58210431743157
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 118.15224839558063,
+          "percent": 85.58210431743157
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 11.75894156547936,
+          "percent": 8.517442345659825
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 8.146000076408049,
+          "percent": 5.9004533369086145
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 104.20836243904932,
+          "percentOfRegion": 43.01410636955892
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    }
+  ]
+}

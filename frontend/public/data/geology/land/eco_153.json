@@ -1,0 +1,581 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_153",
+  "regionName": "Southeast Papuan rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.137918+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 680.2394584076626,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 600.142714354547
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.09674405311556
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 90.45192280338087,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 27207.67106735012,
+        "percent": 39.04109038544067
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 27207.67106735012,
+          "percent": 39.04109038544067
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 13220.398848869252,
+          "percent": 18.970340574635202
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 9002.840678617991,
+          "percent": 12.918441853754716
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 8570.749725661923,
+          "percent": 12.298421790025973
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 5926.648619256674,
+          "percent": 8.50432305853668
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 5761.525024247486,
+          "percent": 8.267382337606742
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 7356.437474019091,
+          "percentOfRegion": 9.548077196619104
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 472.792,
+      "p10MwM2": 175.22592,
+      "p90MwM2": 472.792,
+      "maxMwM2": 472.792,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 3,
+          "percent": 75.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 44,
+      "commodityCount": 11,
+      "commodities": [
+        {
+          "label": "Platinum",
+          "count": 35,
+          "sharePct": 33.980582524271846
+        },
+        {
+          "label": "Gold",
+          "count": 33,
+          "sharePct": 32.038834951456316
+        },
+        {
+          "label": "PGE",
+          "count": 7,
+          "sharePct": 6.796116504854369
+        },
+        {
+          "label": "Nickel",
+          "count": 7,
+          "sharePct": 6.796116504854369
+        },
+        {
+          "label": "Iridium",
+          "count": 6,
+          "sharePct": 5.825242718446602
+        },
+        {
+          "label": "Osmium",
+          "count": 6,
+          "sharePct": 5.825242718446602
+        },
+        {
+          "label": "Rhodium",
+          "count": 2,
+          "sharePct": 1.9417475728155338
+        },
+        {
+          "label": "Ruthenium",
+          "count": 2,
+          "sharePct": 1.9417475728155338
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 1.9417475728155338
+        },
+        {
+          "label": "Chromium",
+          "count": 2,
+          "sharePct": 1.9417475728155338
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 0.9708737864077669
+        }
+      ],
+      "sites": [
+        {
+          "name": "Unnamed",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Brown River",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Waria River",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Maiama River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Waria River Region",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Mo River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Juni Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Saia River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Gira River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Debolina Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Lower Gira River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Mubo",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Aikora River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kau Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kau Creek Lode",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Waria River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Wuwu River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Piawaria",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Wiwo River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Mamba",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sela River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Pai - Awa River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bitoi River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kanga",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Debolina Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Imudat River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Dawa Dawa River",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Domara River Headwater",
+          "depositType": "Placer",
+          "commodities": [
+            "Nickel",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Aroboro Creek",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Port Moresby-Nickel-Cobalt Deposit-Papua New Guinea",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Wowo Gap, Papua New Guinea",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Tida - Ura",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Suzy Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Magavara River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Doriri Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Mclaughlins Creek Workings",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Timanagosa",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kerimenge",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sapphire & Moresby King Mines",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

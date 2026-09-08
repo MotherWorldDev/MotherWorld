@@ -1,0 +1,490 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_374",
+  "regionName": "Eastern Canadian Shield taiga",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.096439+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 98.77909871735065,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 436555.6959069241,
+        "percent": 58.327440278093576
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 436555.6959069241,
+          "percent": 58.327440278093576
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 227823.99967284582,
+          "percent": 30.43916471466101
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 29813.48859832431,
+          "percent": 3.983327882339982
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 17253.75431015906,
+          "percent": 2.305243829216387
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 15066.773359485656,
+          "percent": 2.013045143033335
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 11210.53526560552,
+          "percent": 1.4978199398627912
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 6780.589488661323,
+          "percent": 0.9059426601422328
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1801.4018227284664,
+          "percent": 0.24068213567518143
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1161.2573067915534,
+          "percent": 0.15515355049639573
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 989.3092054194244,
+          "percent": 0.13217986647910432
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 920.0966285086713,
+          "percentOfRegion": 0.12143161114637256
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 8330.766003574363,
+          "percentOfRegion": 1.0994696715030168
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 13,
+      "medianMwM2": 22.7,
+      "p10MwM2": 19.36,
+      "p90MwM2": 29.480000000000004,
+      "maxMwM2": 31.4,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 13,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 25,
+      "commodityCount": 18,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 11,
+          "sharePct": 17.46031746031746
+        },
+        {
+          "label": "Nickel",
+          "count": 8,
+          "sharePct": 12.698412698412698
+        },
+        {
+          "label": "Iron",
+          "count": 7,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "PGE",
+          "count": 6,
+          "sharePct": 9.523809523809524
+        },
+        {
+          "label": "Gold",
+          "count": 4,
+          "sharePct": 6.349206349206349
+        },
+        {
+          "label": "Silver",
+          "count": 4,
+          "sharePct": 6.349206349206349
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Zirconium",
+          "count": 3,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Uranium",
+          "count": 3,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Zinc",
+          "count": 3,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 3.1746031746031744
+        },
+        {
+          "label": "Vanadium",
+          "count": 2,
+          "sharePct": 3.1746031746031744
+        },
+        {
+          "label": "REE",
+          "count": 2,
+          "sharePct": 3.1746031746031744
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 1.5873015873015872
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 1.5873015873015872
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 1.5873015873015872
+        },
+        {
+          "label": "Beryllium",
+          "count": 1,
+          "sharePct": 1.5873015873015872
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 1.5873015873015872
+        }
+      ],
+      "sites": [
+        {
+          "name": "Nain Mtns. Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Lake Michikamau",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Strange Lake",
+          "depositType": "Unknown",
+          "commodities": [
+            "REE",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Strange Lake",
+          "depositType": null,
+          "commodities": [
+            "Uranium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "St. Cyr",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Holanna L Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Chrysler # 2",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Betty Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Gallen Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Chance Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Pio Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Lambda Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Daniel's Harbour Mine",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Goose Bay",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Carol Lake Iii",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Great Whale River",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Julienne Lake",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Knob Lake Deposits=",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Voisey's Bay",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Strange Lake",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Niobium (Columbium)",
+            "REE",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Tasisuak Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Ungava Bay Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Kitts Pond",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Eastmain",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Michelin",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

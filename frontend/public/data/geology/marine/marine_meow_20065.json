@@ -1,0 +1,829 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20065",
+  "regionName": "Greater Antilles",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.001036+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 114.43901543158245,
+        "medianAgeMa": 152.28196716308594,
+        "p10AgeMa": 12.053254127502441,
+        "p90AgeMa": 153.81199645996094,
+        "oldestAgeMa": 154.5365753173828,
+        "coveragePct": 19.846389427256398,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 14.733360427597825,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 14.37261837396231,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.21949859288386106,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 70.67452260555602,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 112.81704987924279,
+          "medianMmYr": 149.10617065429688,
+          "p10MmYr": 17.088977813720703,
+          "p90MmYr": 158.02357482910156,
+          "coveragePct": 19.846389427256398
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 2,
+          "intersectionLengthKm": 136.7105167061587
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 4,
+        "confirmedOrInferredActive": 4,
+        "inactiveCount": 0,
+        "medianDepthM": 3200.0,
+        "maxReportedTemperatureC": 398.0,
+        "tectonicSettings": [
+          {
+            "label": "mid-ocean ridge",
+            "count": 4
+          }
+        ],
+        "fields": [
+          {
+            "name": "Beebe",
+            "activity": "active, confirmed",
+            "depthM": 4957.0,
+            "maxTemperatureC": 398.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Von Damm",
+            "activity": "active, confirmed",
+            "depthM": 2372.0,
+            "maxTemperatureC": 215.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Europa",
+            "activity": "active, inferred",
+            "depthM": 2400.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2009
+          },
+          {
+            "name": "Walsh",
+            "activity": "active, inferred",
+            "depthM": 4000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2009
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 37,
+        "intersectionLengthKm": 5214.185749051875,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "North Cuban Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 776.187727787138
+          },
+          {
+            "name": "Muertos Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 564.0758059330935
+          },
+          {
+            "name": "North Caribbean Megathrust (North Hispaniola Fault)",
+            "kinematics": "Reverse-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 505.29607727279455
+          },
+          {
+            "name": "Oriente Fault",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 494.5467781037278
+          },
+          {
+            "name": "North Caribbean Megathrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 484.38393654069534
+          },
+          {
+            "name": "Walton Fault Zone",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 346.04479890448323
+          },
+          {
+            "name": "Oriente Fault",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 286.76685906108366
+          },
+          {
+            "name": "Santiago Deformed Belt",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 256.9179169163487
+          },
+          {
+            "name": "Oriente Fault",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 229.86246993604854
+          },
+          {
+            "name": "Enriquillo-Plantain Garden Fault",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 182.12976807121362
+          },
+          {
+            "name": "Cayman Spreading Center",
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 113.23513289279626
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 110.67050513801674
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 102.81246853020488
+          },
+          {
+            "name": "Septentrional Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 95.42513422545883
+          },
+          {
+            "name": "Septentrional Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 90.503410222712
+          },
+          {
+            "name": "East Yuma Rift Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 64.871841855982
+          },
+          {
+            "name": "Swan Islands Transform",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 62.55104087217949
+          },
+          {
+            "name": "West Yuma Rift Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.736933066671824
+          },
+          {
+            "name": "East Mona Rift Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 45.50756785926362
+          },
+          {
+            "name": "St. Croix Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.94725646066388
+          },
+          {
+            "name": "West Mona Rift Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.069424017128085
+          },
+          {
+            "name": "Sombrero Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.329513703896055
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.909943510522343
+          },
+          {
+            "name": "Cerro Goden Fault",
+            "kinematics": "Normal-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.842770149121762
+          },
+          {
+            "name": "Nipa-Guacanayabo Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.454011877975187
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.742822045106738
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.761117265932306
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.934231316876293
+          },
+          {
+            "name": "Lamentin Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.218421691741664
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.246395200839356
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 127,
+      "medianMwM2": 54.0,
+      "p10MwM2": 27.0,
+      "p90MwM2": 88.4,
+      "maxMwM2": 468.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 15,
+          "percent": 11.811023622047244
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 64,
+          "percent": 50.39370078740157
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 33,
+          "percent": 25.984251968503933
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 9,
+          "percent": 7.086614173228346
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 1.574803149606299
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 0.7874015748031495
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2,
+          "percent": 1.574803149606299
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 1,
+          "percent": 0.7874015748031495
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 35,
+      "commodityCount": 25,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 14,
+          "sharePct": 24.561403508771928
+        },
+        {
+          "label": "Nickel",
+          "count": 4,
+          "sharePct": 7.017543859649122
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 4,
+          "sharePct": 7.017543859649122
+        },
+        {
+          "label": "Stone",
+          "count": 4,
+          "sharePct": 7.017543859649122
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Dolomite",
+          "count": 3,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Nitrogen-Nitrates",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Bromine",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Dimension",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Marble",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Ferrosilicon",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Construction",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        }
+      ],
+      "sites": [
+        {
+          "name": "Puerto Real",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Guanajibo",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Unidentified Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cueva De Las Losetas",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cueva Del Esquelito",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cueva Del Capitan",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cueva El Gato",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cueva De Espinal",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cueva Del Toro",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cueva Del Norte",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Magdalena Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Angibae",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Pigeon Island",
+          "depositType": null,
+          "commodities": [
+            "Bromine",
+            "Halite"
+          ]
+        },
+        {
+          "name": "Golden Grove Beach",
+          "depositType": "Placer",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Laughlands",
+          "depositType": "Placer",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Cousins Cove Cave",
+          "depositType": "Residual",
+          "commodities": [
+            "Nitrogen-Nitrates",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Monarva Cave",
+          "depositType": "Residual",
+          "commodities": [
+            "Nitrogen-Nitrates",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Name Unknown North of Samana",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Unnamed 67-1",
+          "depositType": null,
+          "commodities": [
+            "Dolomite"
+          ]
+        },
+        {
+          "name": "Unnamed 67-2",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Unnamed 67-3",
+          "depositType": null,
+          "commodities": [
+            "Dolomite"
+          ]
+        },
+        {
+          "name": "Unnamed 67-5",
+          "depositType": null,
+          "commodities": [
+            "Dolomite"
+          ]
+        },
+        {
+          "name": "Unnamed 68-1",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cueva De Los Pajaros",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cueva De La Esperanza",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Cueva De Frio",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Unidentified Tonalite Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Roche Lois Plateau",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Ferrosilicon",
+            "Iron",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Moa Bay Nickel-Cobalt Plant",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Laurani",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "(Facility) Punta Gorda Smelter",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Cerro De Maimon",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Arenero Forester-Aguadilla",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

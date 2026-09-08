@@ -1,0 +1,710 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_179",
+  "regionName": "Tasmanian temperate rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.274375+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 5,
+        "intersectionLengthKm": 114.02049250733738,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "D'aguilar Ranges Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.09720032153547
+          },
+          {
+            "name": "Lake Edgar Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.0803427161804
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.448330329156473
+          },
+          {
+            "name": "Lake Echo Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.77032372969863
+          },
+          {
+            "name": "Gell River Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.624295410766415
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 78.58127422770986,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 7321.740374995277,
+        "percent": 27.747326008633948
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 7321.740374995277,
+          "percent": 27.747326008633948
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6756.23067846035,
+          "percent": 25.60420414045265
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 3998.8739372277287,
+          "percent": 15.154601654904893
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2648.3597557967105,
+          "percent": 10.036534726524621
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2528.765746389816,
+          "percent": 9.583307242656774
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 2330.233281931475,
+          "percent": 8.830925331733491
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 802.9888963663877,
+          "percent": 3.0431008950936356
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 3932.65378880692,
+          "percentOfRegion": 11.71147494437887
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3259.6455125071493,
+          "percentOfRegion": 9.707250827911302
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 11,
+      "medianMwM2": 86.0,
+      "p10MwM2": 57.0,
+      "p90MwM2": 105.0,
+      "maxMwM2": 105.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 27.27272727272727
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 9.090909090909092
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3,
+          "percent": 27.27272727272727
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 4,
+          "percent": 36.36363636363637
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 197,
+      "commodityCount": 25,
+      "commodities": [
+        {
+          "label": "Iridium",
+          "count": 175,
+          "sharePct": 36.61087866108787
+        },
+        {
+          "label": "Osmium",
+          "count": 175,
+          "sharePct": 36.61087866108787
+        },
+        {
+          "label": "Gold",
+          "count": 40,
+          "sharePct": 8.368200836820083
+        },
+        {
+          "label": "Tin",
+          "count": 15,
+          "sharePct": 3.1380753138075312
+        },
+        {
+          "label": "Copper",
+          "count": 9,
+          "sharePct": 1.882845188284519
+        },
+        {
+          "label": "Chromium",
+          "count": 8,
+          "sharePct": 1.6736401673640167
+        },
+        {
+          "label": "Silver",
+          "count": 8,
+          "sharePct": 1.6736401673640167
+        },
+        {
+          "label": "Platinum",
+          "count": 6,
+          "sharePct": 1.2552301255230125
+        },
+        {
+          "label": "Lead",
+          "count": 6,
+          "sharePct": 1.2552301255230125
+        },
+        {
+          "label": "Zinc",
+          "count": 6,
+          "sharePct": 1.2552301255230125
+        },
+        {
+          "label": "Tungsten",
+          "count": 5,
+          "sharePct": 1.0460251046025104
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 0.6276150627615062
+        },
+        {
+          "label": "Ruthenium",
+          "count": 3,
+          "sharePct": 0.6276150627615062
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 3,
+          "sharePct": 0.6276150627615062
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 0.6276150627615062
+        },
+        {
+          "label": "Bismuth",
+          "count": 2,
+          "sharePct": 0.41841004184100417
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 0.41841004184100417
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 0.41841004184100417
+        },
+        {
+          "label": "Wollastonite",
+          "count": 1,
+          "sharePct": 0.20920502092050208
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 0.20920502092050208
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.20920502092050208
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 0.20920502092050208
+        },
+        {
+          "label": "Pigment",
+          "count": 1,
+          "sharePct": 0.20920502092050208
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 0.20920502092050208
+        },
+        {
+          "label": "Rhodium",
+          "count": 1,
+          "sharePct": 0.20920502092050208
+        }
+      ],
+      "sites": [
+        {
+          "name": "Kara",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Limestone Creek",
+          "depositType": null,
+          "commodities": [
+            "Wollastonite"
+          ]
+        },
+        {
+          "name": "Castra River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Savage River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Boyes River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Florentine River",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Styx River",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Dundas",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Renison Bell",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Barnes Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Tin Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Mcarthur Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Osmiridium Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Merton Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Chromite Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Keenan Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Harmon River Gravels",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Limestone Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Lead",
+            "Osmium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Conglomerate Plain",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Riley Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Badger Plain",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Stanton & Loughnan's Claim",
+          "depositType": "Placer",
+          "commodities": [
+            "Bismuth",
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Tunbridge & Kelley's Prospect",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Caudry Workings",
+          "depositType": null,
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Fitzgerald's Prospect",
+          "depositType": "Placer",
+          "commodities": [
+            "Bismuth",
+            "Chromium",
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Heazlewood River Deposits",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Jones Creek Workings",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Warner Creek Workings",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Nineteen-Mile Creek Deposits",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Caudry's Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Littlechild",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Daniels",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Webster and Bernard",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Harrison and Brandstater",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "R.J. Stacey",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Williams",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Stewart",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Scanlon and Morgan",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "O'Connell and Welsh",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

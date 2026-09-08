@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20206",
+  "regionName": "Western Bassian",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.858966+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 41.12515791568213,
+        "medianAgeMa": 39.706260681152344,
+        "p10AgeMa": 34.176170349121094,
+        "p90AgeMa": 46.8868522644043,
+        "oldestAgeMa": 93.61880493164062,
+        "coveragePct": 43.20960980489575,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 91.99945746432608,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 8.000542535673903,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 35.34797697405237,
+          "medianMmYr": 42.29393005371094,
+          "p10MmYr": 19.914199829101562,
+          "p90MmYr": 46.601036071777344,
+          "coveragePct": 43.20960980489575
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 31,
+      "medianMwM2": 53.0,
+      "p10MwM2": 47.0,
+      "p90MwM2": 69.0,
+      "maxMwM2": 156.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 22,
+          "percent": 70.96774193548387
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 6,
+          "percent": 19.35483870967742
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 3.225806451612903
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 2,
+          "percent": 6.451612903225806
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 50.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "King Island Mines",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

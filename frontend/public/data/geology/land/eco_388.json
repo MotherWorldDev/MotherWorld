@@ -1,0 +1,590 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_388",
+  "regionName": "Central Tallgrass prairie",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.101004+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000028,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 135610.66844917854,
+        "percent": 39.607009671087745
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 135610.66844917854,
+          "percent": 39.607009671087745
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 131818.27909741728,
+          "percent": 38.49938883675767
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 47433.676326985675,
+          "percent": 13.853674629752536
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 24283.707617130283,
+          "percent": 7.092399539362143
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 2237.2007674261345,
+          "percent": 0.6534060590138516
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1007.0434892944961,
+          "percent": 0.29412126402607275
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 54,
+      "medianMwM2": 55.0,
+      "p10MwM2": 38.0,
+      "p90MwM2": 65.7,
+      "maxMwM2": 105.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 8,
+          "percent": 14.814814814814813
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 28,
+          "percent": 51.85185185185185
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 17,
+          "percent": 31.48148148148148
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 1.8518518518518516
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 6346,
+      "commodityCount": 42,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 2927,
+          "sharePct": 23.754260671968837
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 2927,
+          "sharePct": 23.754260671968837
+        },
+        {
+          "label": "Stone",
+          "count": 2737,
+          "sharePct": 22.21230319753287
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 2730,
+          "sharePct": 22.155494237948385
+        },
+        {
+          "label": "Clay",
+          "count": 276,
+          "sharePct": 2.239896120759617
+        },
+        {
+          "label": "Zinc",
+          "count": 228,
+          "sharePct": 1.8503489693231618
+        },
+        {
+          "label": "Lead",
+          "count": 204,
+          "sharePct": 1.6555753936049342
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 45,
+          "sharePct": 0.3652004544716767
+        },
+        {
+          "label": "Dimension",
+          "count": 43,
+          "sharePct": 0.3489693231618244
+        },
+        {
+          "label": "Limestone",
+          "count": 43,
+          "sharePct": 0.3489693231618244
+        },
+        {
+          "label": "Flagstone",
+          "count": 33,
+          "sharePct": 0.2678136666125629
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 32,
+          "sharePct": 0.25969810095763673
+        },
+        {
+          "label": "Iron",
+          "count": 18,
+          "sharePct": 0.1460801817886707
+        },
+        {
+          "label": "Coal",
+          "count": 7,
+          "sharePct": 0.056808959584483044
+        },
+        {
+          "label": "Bituminous",
+          "count": 7,
+          "sharePct": 0.056808959584483044
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 6,
+          "sharePct": 0.04869339392955689
+        },
+        {
+          "label": "Granite",
+          "count": 6,
+          "sharePct": 0.04869339392955689
+        },
+        {
+          "label": "Silica",
+          "count": 6,
+          "sharePct": 0.04869339392955689
+        },
+        {
+          "label": "Perlite",
+          "count": 5,
+          "sharePct": 0.04057782827463074
+        },
+        {
+          "label": "General",
+          "count": 5,
+          "sharePct": 0.04057782827463074
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 0.024346696964778446
+        },
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 0.024346696964778446
+        },
+        {
+          "label": "Sulfur",
+          "count": 3,
+          "sharePct": 0.024346696964778446
+        },
+        {
+          "label": "Salt",
+          "count": 3,
+          "sharePct": 0.024346696964778446
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 3,
+          "sharePct": 0.024346696964778446
+        },
+        {
+          "label": "Calcium",
+          "count": 3,
+          "sharePct": 0.024346696964778446
+        },
+        {
+          "label": "Kaolin",
+          "count": 2,
+          "sharePct": 0.016231131309852296
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 2,
+          "sharePct": 0.016231131309852296
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 0.016231131309852296
+        },
+        {
+          "label": "Slate",
+          "count": 1,
+          "sharePct": 0.008115565654926148
+        }
+      ],
+      "sites": [
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Picher Field",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Morton Pit",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Turner Creek Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Dyersville Diggings",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Waterloo South Quarry",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Copper",
+            "Fluorine-Fluorite",
+            "Iron"
+          ]
+        },
+        {
+          "name": "George Huber Farm",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Anamosa Mines",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Martin Marietta Quarry",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Zwingle Mines and Occurrences",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Lytle Creek Diggings",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Gillespie Farm Diggings",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Main Baldwin Diggings",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Indian Mines",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Orill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drill Hole",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

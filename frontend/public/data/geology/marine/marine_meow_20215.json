@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20215",
+  "regionName": "Crozet Islands",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.936347+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 70.28796030453127,
+        "medianAgeMa": 70.29202270507812,
+        "p10AgeMa": 65.96161651611328,
+        "p90AgeMa": 75.43184661865234,
+        "oldestAgeMa": 78.33871459960938,
+        "coveragePct": 100.0,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 100.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 98.74247989117316,
+          "medianMmYr": 95.73885345458984,
+          "p10MmYr": 45.873802185058594,
+          "p90MmYr": 142.25030517578125,
+          "coveragePct": 100.0
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 20,
+      "medianMwM2": 68.0,
+      "p10MwM2": 58.9,
+      "p90MwM2": 79.60000000000001,
+      "maxMwM2": 96.1,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 4,
+          "percent": 20.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 14,
+          "percent": 70.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 10.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

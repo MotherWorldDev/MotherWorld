@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20071",
+  "regionName": "Guianan",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.042478+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 141.9310985374908,
+        "medianAgeMa": 149.72744750976562,
+        "p10AgeMa": 113.47747802734375,
+        "p90AgeMa": 166.31385803222656,
+        "oldestAgeMa": 174.9169921875,
+        "coveragePct": 35.73402879850285,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 51.240981462901296,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 48.759018537098704,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 31.408911787853995,
+          "medianMmYr": 28.671998977661133,
+          "p10MmYr": 17.57305908203125,
+          "p90MmYr": 46.96383285522461,
+          "coveragePct": 35.73402879850285
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 444.78316506624316,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "El Soldado - Norte",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 152.64124439769768
+          },
+          {
+            "name": "Los Bajos - Sur",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 101.79842294449973
+          },
+          {
+            "name": "Antilles Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.64159278227403
+          },
+          {
+            "name": "El Pilar - Guaracayal - Casanay",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.956688609024845
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.78362983473147
+          },
+          {
+            "name": "Tunapuy - Arima - Tunapuy Oeste",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.34814900057262
+          },
+          {
+            "name": "Bohordal - Bohordal",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.613437497442748
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 20,
+      "medianMwM2": 58.05,
+      "p10MwM2": 32.79,
+      "p90MwM2": 102.40000000000005,
+      "maxMwM2": 157.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 5,
+          "percent": 25.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 8,
+          "percent": 40.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 3,
+          "percent": 15.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 10.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 5.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 5.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Stone",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Supenaam River",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Carre Des Roches Kourou",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "(Facility) Trinidad Aluminum Smelter Project",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

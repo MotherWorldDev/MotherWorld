@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_177",
+  "regionName": "Tasmanian Central Highland forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.260204+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 45.366935745570544,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Lake Echo Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.179216051230554
+          },
+          {
+            "name": "Poatina Scarp",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.187719694339993
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 94.65561149408424,
+      "dominantClass": {
+        "code": "pb",
+        "label": "Basic plutonic rocks",
+        "areaKm2": 3915.612536444034,
+        "percent": 34.94006319876709
+      },
+      "classes": [
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 3915.612536444034,
+          "percent": 34.94006319876709
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2058.1878273547263,
+          "percent": 18.365763234585845
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1506.5123024591956,
+          "percent": 13.443014232824812
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1499.6909032284348,
+          "percent": 13.382145053862777
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1133.0168066487836,
+          "percent": 10.110213526266149
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 722.47815623518,
+          "percent": 6.446866793799458
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 371.1570313843263,
+          "percent": 3.3119339598938624
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 632.7434817578769,
+          "percentOfRegion": 5.344388505915791
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 11,
+      "medianMwM2": 83.0,
+      "p10MwM2": 72.0,
+      "p90MwM2": 103.0,
+      "maxMwM2": 105.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 9.090909090909092
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 18.181818181818183
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 6,
+          "percent": 54.54545454545454
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 18.181818181818183
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 14,
+      "commodityCount": 17,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 6,
+          "sharePct": 15.384615384615385
+        },
+        {
+          "label": "Silver",
+          "count": 6,
+          "sharePct": 15.384615384615385
+        },
+        {
+          "label": "Gold",
+          "count": 5,
+          "sharePct": 12.82051282051282
+        },
+        {
+          "label": "Lead",
+          "count": 4,
+          "sharePct": 10.256410256410255
+        },
+        {
+          "label": "Zinc",
+          "count": 4,
+          "sharePct": 10.256410256410255
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 5.128205128205128
+        },
+        {
+          "label": "Tin",
+          "count": 2,
+          "sharePct": 5.128205128205128
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Iridium",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Osmium",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 2.564102564102564
+        }
+      ],
+      "sites": [
+        {
+          "name": "Ouse",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "St. Leonards",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Rosebery, Read, Hercules, Mt. Farrell",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Que River Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hellyer Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Hellyer Pb Zn Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "King Island Mine",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Rosebery/W. Coast Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Maccallum",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Mt. Lyell Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Mt. Bischoff",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Blue Tier Tinfield;",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Main Creek/Bowry Creek",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

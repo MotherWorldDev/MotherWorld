@@ -1,0 +1,554 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25056",
+  "regionName": "Puget Trough/Georgia Basin",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:34.920847+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 10,
+        "intersectionLengthKm": 258.60515339965286,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Devils Mountain fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 69.85261518180079
+          },
+          {
+            "name": "Southern Whidbey Island fault-southern",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.34660403736866
+          },
+          {
+            "name": "Southern Whidbey Island fault-middle",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.025445974263995
+          },
+          {
+            "name": "Southern Whidbey Island fault-northern",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 32.87663209540095
+          },
+          {
+            "name": "Utsalady Point fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.135540231903267
+          },
+          {
+            "name": "Strawberry Point fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.517331343427148
+          },
+          {
+            "name": "Seattle fault zone-middle",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.645694595432643
+          },
+          {
+            "name": "Seattle fault zone-southern",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.212657865932144
+          },
+          {
+            "name": "Seattle fault zone-northern",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.748178495619843
+          },
+          {
+            "name": "Tacoma fault zone",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.2444535785033946
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 30,
+      "medianMwM2": 38.0,
+      "p10MwM2": 27.0,
+      "p90MwM2": 46.0,
+      "maxMwM2": 46.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 20,
+          "percent": 66.66666666666666
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 10,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 43,
+      "commodityCount": 15,
+      "commodities": [
+        {
+          "label": "General",
+          "count": 12,
+          "sharePct": 16.216216216216218
+        },
+        {
+          "label": "Limestone",
+          "count": 12,
+          "sharePct": 16.216216216216218
+        },
+        {
+          "label": "Construction",
+          "count": 11,
+          "sharePct": 14.864864864864865
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 11,
+          "sharePct": 14.864864864864865
+        },
+        {
+          "label": "Stone",
+          "count": 9,
+          "sharePct": 12.162162162162163
+        },
+        {
+          "label": "Chromium",
+          "count": 5,
+          "sharePct": 6.756756756756757
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 3,
+          "sharePct": 4.054054054054054
+        },
+        {
+          "label": "Flagstone",
+          "count": 3,
+          "sharePct": 4.054054054054054
+        },
+        {
+          "label": "Magnesite",
+          "count": 2,
+          "sharePct": 2.7027027027027026
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Diatomite",
+          "count": 1,
+          "sharePct": 1.3513513513513513
+        }
+      ],
+      "sites": [
+        {
+          "name": "Nellie Kelly Claim",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Ready Cash Claim",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ready Cash",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Limestone Point Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Burrows Island",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "O'Neal Island",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Alaska Barge Co. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Flagstone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Maury Island Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Henry Island Deposit No. 1",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Gambier Island",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Caldwell Point Deposit",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Red Cross Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Anderson Island",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Unnamed Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Open Bay Deposit",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Olivine Corp.",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Maury Island Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Hat Island",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Humphrey Head Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Village Point Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Dot Island",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Allan Island",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Saddlebag Island",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Weathers Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gedney Hat Island Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Kellett Bluff Deposit",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Seal Rock",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Cliff Island Deposit",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Sucia Island Quarries",
+          "depositType": null,
+          "commodities": [
+            "Flagstone"
+          ]
+        },
+        {
+          "name": "Pohl Pit - Div. 10",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Crane Island Deposit",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Sand and Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Lummi Island Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Davison Head Deposit",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Fidalgo Head",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Nellie Kelly",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Jones Island Depsoit No. 1",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Beacon Point",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

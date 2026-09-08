@@ -1,0 +1,320 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_8",
+  "regionName": "East African montane forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.374052+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 12,
+        "intersectionLengthKm": 491.27933571588477,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 152.92899601718267
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 87.4874268616313
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 77.47761736694422
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 51.31856560430771
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.307827203335368
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.200642552895175
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.604370899643378
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.638001627160625
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.345327867077504
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.693358987340584
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.509866582430321
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.7673341459358761
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.87235770431337,
+      "dominantClass": {
+        "code": "vi",
+        "label": "Intermediate volcanic rocks",
+        "areaKm2": 31046.75912844185,
+        "percent": 50.85007966335488
+      },
+      "classes": [
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 31046.75912844185,
+          "percent": 50.85007966335488
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 25243.384874878746,
+          "percent": 41.34499599619671
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4167.896587344293,
+          "percent": 6.826408921404186
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 597.4372649887007,
+          "percent": 0.9785154190442217
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 78.03221568883708,
+          "percentOfRegion": 0.12764229568656196
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 91,
+      "medianMwM2": 75.0,
+      "p10MwM2": 6.1,
+      "p90MwM2": 137.3,
+      "maxMwM2": 175.7,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 22,
+          "percent": 24.175824175824175
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 18,
+          "percent": 19.78021978021978
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 15,
+          "percent": 16.483516483516482
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 26,
+          "percent": 28.57142857142857
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 5,
+          "percent": 5.4945054945054945
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 5,
+          "percent": 5.4945054945054945
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 9,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        }
+      ],
+      "sites": [
+        {
+          "name": "Gilgil",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sekululu Sukulu",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Macaulder",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Telot West Pokot",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Kenya Fluorspar",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

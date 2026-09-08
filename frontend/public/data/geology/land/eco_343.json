@@ -1,0 +1,621 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_343",
+  "regionName": "Upper Midwest US forest-savanna transition",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.088372+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 98.24038219743477,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 49413.98387341303,
+        "percent": 36.9308213943189
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 49413.98387341303,
+          "percent": 36.9308213943189
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 39738.38180358978,
+          "percent": 29.6995094475118
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 18233.85587525941,
+          "percent": 13.627544712525651
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 9630.318095756733,
+          "percent": 7.197467795269752
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 6806.18392520279,
+          "percent": 5.086777936433306
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 5330.188162315206,
+          "percent": 3.9836542531129338
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 4602.059253517234,
+          "percent": 3.439468243910658
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 46.5043310003798,
+          "percent": 0.034756216916996575
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 2396.564963575617,
+          "percentOfRegion": 1.759617802565153
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1,
+      "medianMwM2": 48.0,
+      "p10MwM2": 48.0,
+      "p90MwM2": 48.0,
+      "maxMwM2": 48.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4717,
+      "commodityCount": 45,
+      "commodities": [
+        {
+          "label": "Sand and Gravel",
+          "count": 1608,
+          "sharePct": 18.61111111111111
+        },
+        {
+          "label": "Construction",
+          "count": 1601,
+          "sharePct": 18.53009259259259
+        },
+        {
+          "label": "Stone",
+          "count": 1589,
+          "sharePct": 18.391203703703702
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 1523,
+          "sharePct": 17.627314814814817
+        },
+        {
+          "label": "Lead",
+          "count": 1070,
+          "sharePct": 12.38425925925926
+        },
+        {
+          "label": "Zinc",
+          "count": 876,
+          "sharePct": 10.13888888888889
+        },
+        {
+          "label": "Iron",
+          "count": 96,
+          "sharePct": 1.1111111111111112
+        },
+        {
+          "label": "Copper",
+          "count": 75,
+          "sharePct": 0.8680555555555556
+        },
+        {
+          "label": "Clay",
+          "count": 40,
+          "sharePct": 0.4629629629629629
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 23,
+          "sharePct": 0.2662037037037037
+        },
+        {
+          "label": "Limestone",
+          "count": 19,
+          "sharePct": 0.2199074074074074
+        },
+        {
+          "label": "Silica",
+          "count": 18,
+          "sharePct": 0.20833333333333334
+        },
+        {
+          "label": "Granite",
+          "count": 16,
+          "sharePct": 0.1851851851851852
+        },
+        {
+          "label": "General",
+          "count": 12,
+          "sharePct": 0.1388888888888889
+        },
+        {
+          "label": "Dimension",
+          "count": 9,
+          "sharePct": 0.10416666666666667
+        },
+        {
+          "label": "Flagstone",
+          "count": 8,
+          "sharePct": 0.0925925925925926
+        },
+        {
+          "label": "Industrial/Frac Sand",
+          "count": 7,
+          "sharePct": 0.08101851851851852
+        },
+        {
+          "label": "Cadmium",
+          "count": 5,
+          "sharePct": 0.057870370370370364
+        },
+        {
+          "label": "Magnesite",
+          "count": 5,
+          "sharePct": 0.057870370370370364
+        },
+        {
+          "label": "Peat",
+          "count": 4,
+          "sharePct": 0.0462962962962963
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 4,
+          "sharePct": 0.0462962962962963
+        },
+        {
+          "label": "Free",
+          "count": 3,
+          "sharePct": 0.034722222222222224
+        },
+        {
+          "label": "Water",
+          "count": 3,
+          "sharePct": 0.034722222222222224
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 2,
+          "sharePct": 0.02314814814814815
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 0.02314814814814815
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 0.02314814814814815
+        },
+        {
+          "label": "Bromine",
+          "count": 2,
+          "sharePct": 0.02314814814814815
+        },
+        {
+          "label": "Kaolin",
+          "count": 1,
+          "sharePct": 0.011574074074074075
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 0.011574074074074075
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 0.011574074074074075
+        }
+      ],
+      "sites": [
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Upper Mississippi Valley Zinc-Lead Region, Illinois Sector",
+          "depositType": "Replacement",
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Leadmine Mine",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Rico Mine",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hird No. 1 Mine",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Black River Falls",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Minnesota Quartz Co.",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Gopher State Silica Pit",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Bellechester Pits",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Thomforde Pits",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Twin City Brick Co. Clay Pit",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Nanik Marl Pit",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Gertkin Marl Pits",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Pine County Peat Deposits",
+          "depositType": null,
+          "commodities": [
+            "Peat"
+          ]
+        },
+        {
+          "name": "Otter Tail County Peat Bogs",
+          "depositType": null,
+          "commodities": [
+            "Peat"
+          ]
+        },
+        {
+          "name": "Graysville Mine",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Upper Mississippi Valley Zn - Pb Dist. Mines",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Cadmium",
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Schullsburg Mine",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Iron",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Bear Hole Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hatfield and Clayton Prospects",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Lansing Or Captain Turner's Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mineral Creek Mines",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Elkader Mine",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sny Magill Mines",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Prospects Near Lansing",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Quarry",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Spellman Farm",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bonson Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Levens Mine North Langworthy Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Stewart and Bartlett Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Level Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Kilbourne Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Brugh and Amsden Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Beadle Mine, Dubuque and L Superior Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Durango Drybone Mine Ewing Diggings",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Kann Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Roadcut",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Roadcut",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

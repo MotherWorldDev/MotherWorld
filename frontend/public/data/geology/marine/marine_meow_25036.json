@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25036",
+  "regionName": "Alboran Sea",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:34.893893+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 10,
+        "intersectionLengthKm": 648.4053160150781,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Arzew Fault",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 132.98858123229417
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 119.79219567076576
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 93.61809194972919
+          },
+          {
+            "name": "Yusuf Fault",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 72.6262160317887
+          },
+          {
+            "name": "",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.12101921136201
+          },
+          {
+            "name": "Yusuf Fault",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 65.0107742939436
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.71272821351096
+          },
+          {
+            "name": "Oran Anticline",
+            "kinematics": "Anticline",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.100630167369694
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.227144976799437
+          },
+          {
+            "name": "Trougout Fault",
+            "kinematics": "Normal-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.207934267514674
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 160,
+      "medianMwM2": 89.3,
+      "p10MwM2": 47.8,
+      "p90MwM2": 123.03999999999999,
+      "maxMwM2": 254.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 11,
+          "percent": 6.875000000000001
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 22,
+          "percent": 13.750000000000002
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 27,
+          "percent": 16.875
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 45,
+          "percent": 28.125
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 52,
+          "percent": 32.5
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 0.625
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2,
+          "percent": 1.25
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Bentonite",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Guadaiza River",
+          "depositType": "Placer",
+          "commodities": [
+            "Chromium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ghazaouet",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mostaganem",
+          "depositType": null,
+          "commodities": [
+            "Bentonite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

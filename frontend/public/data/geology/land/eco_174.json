@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_174",
+  "regionName": "Rakiura Island temperate forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.040610+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 36.18701717125071,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 595.9921385840465,
+        "percent": 100.0
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 595.9921385840465,
+          "percent": 100.0
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1050.985659457678,
+          "percentOfRegion": 63.812982828749135
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 50.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Stewart Island",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

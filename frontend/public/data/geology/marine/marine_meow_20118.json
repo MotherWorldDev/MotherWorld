@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20118",
+  "regionName": "Malacca Strait",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:41.011419+00:00",
+  "sections": {
+    "geothermal": {
+      "measurementCount": 14,
+      "medianMwM2": 109.1,
+      "p10MwM2": 86.56,
+      "p90MwM2": 143.66000000000003,
+      "maxMwM2": 148.4,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 5,
+          "percent": 35.714285714285715
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 9,
+          "percent": 64.28571428571429
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Tin",
+          "count": 2,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Sungei Besi",
+          "depositType": "Unknown",
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Karimun,Kundur Islands",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Buton,Kojang,Dendang,Lobam,Ngenan",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

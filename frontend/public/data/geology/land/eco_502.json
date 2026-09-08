@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_502",
+  "regionName": "Sierra Madre de Chiapas moist forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.836603+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 8,
+        "intersectionLengthKm": 154.96036406868495,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Tonala Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 77.0222178987245
+          },
+          {
+            "name": "El Triunfo Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.81311788866451
+          },
+          {
+            "name": "Jalpatagua Fault",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.13241347964449
+          },
+          {
+            "name": "Mapastapec Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.582190473204019
+          },
+          {
+            "name": "Ashapuco Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.4369648557735033
+          },
+          {
+            "name": "Ahuachapan Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.9618192380019568
+          },
+          {
+            "name": "Las Chinamas Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.9184469172996761
+          },
+          {
+            "name": "El Tigre Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.09319331737228785
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 98.35443048983252,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 4122.059314135895,
+        "percent": 37.30716035564164
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4122.059314135895,
+          "percent": 37.30716035564164
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2380.9708462534227,
+          "percent": 21.549243810894808
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1746.6395466767722,
+          "percent": 15.808157206256862
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1518.286636734988,
+          "percent": 13.74142357152715
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 1055.0459028886594,
+          "percent": 9.54881132997018
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 225.95526596947767,
+          "percent": 2.0450334889205943
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 0.018809422482869327,
+          "percent": 0.00017023678877180827
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 184.86059513160916,
+          "percentOfRegion": 1.645569510167558
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    }
+  ]
+}

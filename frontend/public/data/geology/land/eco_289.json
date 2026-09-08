@@ -1,0 +1,315 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_289",
+  "regionName": "Western Java rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.838824+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 188.34439848637464,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 61.823734094012366
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 57.3836158034411
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.85796541876982
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.279083170151338
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 80.13553743415216,
+      "dominantClass": {
+        "code": "vi",
+        "label": "Intermediate volcanic rocks",
+        "areaKm2": 15955.005312785433,
+        "percent": 47.996230505854186
+      },
+      "classes": [
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 15955.005312785433,
+          "percent": 47.996230505854186
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 7896.537892621527,
+          "percent": 23.754555104332216
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 7092.280392770999,
+          "percent": 21.335168360665325
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 2298.3813513115088,
+          "percent": 6.914046029148278
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 8240.270883164354,
+          "percentOfRegion": 19.864462565847717
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 30,
+      "medianMwM2": 80.69999999999999,
+      "p10MwM2": 69.32000000000001,
+      "p90MwM2": 92.25,
+      "maxMwM2": 114.1,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 13,
+          "percent": 43.333333333333336
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 16,
+          "percent": 53.333333333333336
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 3.3333333333333335
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 13,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 8,
+          "sharePct": 42.10526315789473
+        },
+        {
+          "label": "Manganese",
+          "count": 5,
+          "sharePct": 26.31578947368421
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 15.789473684210526
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        }
+      ],
+      "sites": [
+        {
+          "name": "Tjilatjap Beaches",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kliripan Manganese Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Cikotok",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Panglaksaan Concession Kumpiang",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tjibadong Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Mt. Muro",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Gunung Pongkor",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Prima Lirang Wetar Island",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Karangnunggal Manganese Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kembang Mine Krengseng Andjir",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Pengolahan Dan Pemurnian Logam",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "PGE",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Lerokis",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kelian",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

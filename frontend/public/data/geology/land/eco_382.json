@@ -1,0 +1,256 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_382",
+  "regionName": "Southern Hudson Bay taiga",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.099493+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 97.75797268354434,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 166715.588382416,
+        "percent": 45.686589243116714
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 166715.588382416,
+          "percent": 45.686589243116714
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 129529.17869610357,
+          "percent": 35.496059123834826
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 21911.099956855884,
+          "percent": 6.004498039484652
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 20902.292296358697,
+          "percent": 5.728045299476174
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 13333.197069132108,
+          "percent": 3.653817280707357
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 10620.258902119327,
+          "percent": 2.910366156065195
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1899.8196374852444,
+          "percent": 0.5206248573150819
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 8369.050449439663,
+          "percentOfRegion": 2.2420273164555478
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 8,
+      "medianMwM2": 29.15,
+      "p10MwM2": 27.05,
+      "p90MwM2": 32.42,
+      "maxMwM2": 34.1,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 8,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 11,
+      "commodities": [
+        {
+          "label": "Niobium (Columbium)",
+          "count": 3,
+          "sharePct": 21.428571428571427
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        }
+      ],
+      "sites": [
+        {
+          "name": "Martison Lake",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "Phosphorus-Phosphates",
+            "REE"
+          ]
+        },
+        {
+          "name": "Soab Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "PGE",
+            "Palladium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "James Bay Pyrochlore",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)"
+          ]
+        },
+        {
+          "name": "Martison Lake Occurrence",
+          "depositType": "MAGMATIC, CARBONATITE",
+          "commodities": [
+            "Niobium (Columbium)",
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

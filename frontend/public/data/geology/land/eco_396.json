@@ -1,0 +1,588 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_396",
+  "regionName": "Northern Shortgrass prairie",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.102023+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.10395693045407,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 528147.5510657498,
+        "percent": 74.07554466482011
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 528147.5510657498,
+          "percent": 74.07554466482011
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 165036.54622155603,
+          "percent": 23.147266377157912
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 16202.383173272452,
+          "percent": 2.272471690924983
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 2352.574033851015,
+          "percent": 0.3299612060496556
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1245.9845701258864,
+          "percent": 0.17475606104731634
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 6446.415690465182,
+          "percentOfRegion": 0.8960430695458399
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1472,
+      "medianMwM2": 60.0,
+      "p10MwM2": 46.0,
+      "p90MwM2": 76.0,
+      "maxMwM2": 145.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 74,
+          "percent": 5.0271739130434785
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 657,
+          "percent": 44.63315217391305
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 625,
+          "percent": 42.45923913043478
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 68,
+          "percent": 4.619565217391304
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 48,
+          "percent": 3.260869565217391
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2488,
+      "commodityCount": 74,
+      "commodities": [
+        {
+          "label": "Uranium",
+          "count": 1038,
+          "sharePct": 28.71369294605809
+        },
+        {
+          "label": "Construction",
+          "count": 808,
+          "sharePct": 22.351313969571233
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 808,
+          "sharePct": 22.351313969571233
+        },
+        {
+          "label": "Bentonite",
+          "count": 259,
+          "sharePct": 7.164591977869986
+        },
+        {
+          "label": "Clay",
+          "count": 93,
+          "sharePct": 2.572614107883817
+        },
+        {
+          "label": "Stone",
+          "count": 81,
+          "sharePct": 2.240663900414938
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 78,
+          "sharePct": 2.1576763485477177
+        },
+        {
+          "label": "Gold",
+          "count": 57,
+          "sharePct": 1.5767634854771784
+        },
+        {
+          "label": "Silver",
+          "count": 40,
+          "sharePct": 1.1065006915629323
+        },
+        {
+          "label": "Lignite",
+          "count": 31,
+          "sharePct": 0.8575380359612725
+        },
+        {
+          "label": "Iron",
+          "count": 26,
+          "sharePct": 0.719225449515906
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 22,
+          "sharePct": 0.6085753803596128
+        },
+        {
+          "label": "Lead",
+          "count": 16,
+          "sharePct": 0.4426002766251729
+        },
+        {
+          "label": "Titanium",
+          "count": 16,
+          "sharePct": 0.4426002766251729
+        },
+        {
+          "label": "Potassium",
+          "count": 16,
+          "sharePct": 0.4426002766251729
+        },
+        {
+          "label": "Pumice",
+          "count": 14,
+          "sharePct": 0.3872752420470263
+        },
+        {
+          "label": "Zeolites",
+          "count": 13,
+          "sharePct": 0.359612724757953
+        },
+        {
+          "label": "Copper",
+          "count": 10,
+          "sharePct": 0.2766251728907331
+        },
+        {
+          "label": "Zinc",
+          "count": 9,
+          "sharePct": 0.24896265560165973
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 9,
+          "sharePct": 0.24896265560165973
+        },
+        {
+          "label": "Manganese",
+          "count": 9,
+          "sharePct": 0.24896265560165973
+        },
+        {
+          "label": "Metal",
+          "count": 8,
+          "sharePct": 0.22130013831258644
+        },
+        {
+          "label": "Thorium",
+          "count": 8,
+          "sharePct": 0.22130013831258644
+        },
+        {
+          "label": "Aggregate",
+          "count": 8,
+          "sharePct": 0.22130013831258644
+        },
+        {
+          "label": "Light Weight",
+          "count": 8,
+          "sharePct": 0.22130013831258644
+        },
+        {
+          "label": "Petroleum (Oil)",
+          "count": 7,
+          "sharePct": 0.19363762102351315
+        },
+        {
+          "label": "Abrasive",
+          "count": 7,
+          "sharePct": 0.19363762102351315
+        },
+        {
+          "label": "Diamond",
+          "count": 7,
+          "sharePct": 0.19363762102351315
+        },
+        {
+          "label": "Vanadium",
+          "count": 6,
+          "sharePct": 0.16597510373443983
+        },
+        {
+          "label": "REE",
+          "count": 6,
+          "sharePct": 0.16597510373443983
+        }
+      ],
+      "sites": [
+        {
+          "name": "Runge",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Rhenium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Scenic",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Zortman - Landusky",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Red Lodge",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "North Moccasin",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bearpaw Mtns",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Rocky Boy Stock",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)"
+          ]
+        },
+        {
+          "name": "Dry Lake and Zero Claims",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Imoorcroft - Upton - Osage",
+          "depositType": null,
+          "commodities": [
+            "Bentonite"
+          ]
+        },
+        {
+          "name": "Cox Lease",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Sundance Mine",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "D-7 Mine",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Vein",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Alray Uranium Mine",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "North America Mine",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Hannah #1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Kell Roy #3",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Loc. 118",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Irvine Ranch Area",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Loc. 111",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Figure 8 #3",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Desert Queen",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Loc. 77.",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Loc. 90",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "School Section Mine",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Pete",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Key Claims",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "A Group",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Loc 178",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Loc 127",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Loc. No. 151",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Loc. No. 158",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Loc. 140",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

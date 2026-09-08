@@ -1,0 +1,445 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_524",
+  "regionName": "Brazilian Atlantic dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.137292+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999983,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 44740.083393471956,
+        "percent": 39.04068589804264
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 44740.083393471956,
+          "percent": 39.04068589804264
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 25011.07614269529,
+          "percent": 21.82493848014304
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 17771.525935028523,
+          "percent": 15.50762782126601
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 15038.087562321474,
+          "percent": 13.122399613441893
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 11342.329941371518,
+          "percent": 9.897441108875107
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 607.7378179925063,
+          "percent": 0.5303186641817746
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 87.76925796077364,
+          "percent": 0.07658841404955484
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1,
+      "medianMwM2": 51.0,
+      "p10MwM2": 51.0,
+      "p90MwM2": 51.0,
+      "maxMwM2": 51.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 28,
+      "commodityCount": 14,
+      "commodities": [
+        {
+          "label": "Lead",
+          "count": 15,
+          "sharePct": 29.411764705882355
+        },
+        {
+          "label": "Zinc",
+          "count": 12,
+          "sharePct": 23.52941176470588
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 5,
+          "sharePct": 9.803921568627452
+        },
+        {
+          "label": "Copper",
+          "count": 4,
+          "sharePct": 7.8431372549019605
+        },
+        {
+          "label": "Vanadium",
+          "count": 2,
+          "sharePct": 3.9215686274509802
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 3.9215686274509802
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 3.9215686274509802
+        },
+        {
+          "label": "Gemstone",
+          "count": 2,
+          "sharePct": 3.9215686274509802
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 3.9215686274509802
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Graphite",
+          "count": 1,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 1.9607843137254901
+        }
+      ],
+      "sites": [
+        {
+          "name": "Itacarambi Area Several Mines",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Olhos D'Agua Das Batatas Lead",
+          "depositType": "Replacement",
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Rio Timbo, Rio Curimata",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bento Rodrigues",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Taquari",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Pimenteira",
+          "depositType": "Vein",
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mina Sao Joao",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Riacho Seco Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mina Fabiao",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Mina Capao Do Porco",
+          "depositType": "Vein",
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Alto De Palmeiras Prospect",
+          "depositType": "Vein",
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Fazenda Terra Branca",
+          "depositType": "Vein",
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Vale Do Coxo",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Mina Do Padre",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Mina Aparecida Lead-Zinc",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Fluorine-Fluorite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mina Grande",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mina Do Cantinho Lead-Zinc",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Fluorine-Fluorite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Morro Da Pingueira Lead",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Rui Barbosa Graphite",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Fazenda Sitio De Coirana Amethyst",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Fazenda Lagoa Do Bule Lead",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Paramirim Tin Occurrences",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Jacarezinho",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mina Janelao",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Bananeira",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Campo Alegre",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Correntina",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Campo Alegre De Lourdes Deposit",
+          "depositType": "MAGMATIC BASIC, STRATIFORM, MASSIVE.",
+          "commodities": [
+            "Titanium",
+            "Vanadium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

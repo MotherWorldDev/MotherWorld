@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_556",
+  "regionName": "Sierra de la Laguna pine-oak forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.144420+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 98.62248220090254,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 934.9714475671116,
+        "percent": 89.68164282458521
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 934.9714475671116,
+          "percent": 89.68164282458521
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 107.5735127163319,
+          "percent": 10.318357175414784
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 14.561834250169845,
+          "percentOfRegion": 1.3775177990975278
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Santiago",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver",
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

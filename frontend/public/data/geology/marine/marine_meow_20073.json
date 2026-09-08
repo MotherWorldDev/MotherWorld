@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20073",
+  "regionName": "Sao Pedro and Sao Paulo Islands",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.054852+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 30.552864486390092,
+        "medianAgeMa": 19.449254989624023,
+        "p10AgeMa": 4.151920795440674,
+        "p90AgeMa": 76.49116516113281,
+        "oldestAgeMa": 90.63525390625,
+        "coveragePct": 99.99999999999999,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 50.785327461134806,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 27.50616352926953,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 21.708509009595666,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 39.26579706552935,
+          "medianMmYr": 39.803890228271484,
+          "p10MmYr": 31.85624885559082,
+          "p90MmYr": 49.10808563232422,
+          "coveragePct": 99.99999999999999
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 785.5291954382183
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 10,
+        "intersectionLengthKm": 702.3211863432019,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 103.82596161383293
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 103.01393409487736
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 102.96075348757381
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 84.31779505899371
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.82564287405867
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.56264289590423
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.61401524970466
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.27875841215162
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.261134945288674
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.660547710816235
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 9,
+      "medianMwM2": 42.0,
+      "p10MwM2": 28.6,
+      "p90MwM2": 87.42880000000001,
+      "maxMwM2": 112.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 2,
+          "percent": 22.22222222222222
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 22.22222222222222
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 11.11111111111111
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 11.11111111111111
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

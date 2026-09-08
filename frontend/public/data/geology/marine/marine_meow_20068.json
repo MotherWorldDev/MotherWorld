@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20068",
+  "regionName": "Western Caribbean",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.023224+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 29.170317158080653,
+        "medianAgeMa": 28.1520938873291,
+        "p10AgeMa": 15.627748489379883,
+        "p90AgeMa": 44.59526062011719,
+        "oldestAgeMa": 49.018470764160156,
+        "coveragePct": 14.949892410336822,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 23.050725804355217,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 76.94927419564478,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 18.0779830692372,
+          "medianMmYr": 18.419124603271484,
+          "p10MmYr": 17.096023559570312,
+          "p90MmYr": 18.74288558959961,
+          "coveragePct": 14.949892410336822
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 987.201417616529,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Swan Islands Transform",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 288.11643553063783
+          },
+          {
+            "name": "Swan Islands Transform",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 198.44799301306327
+          },
+          {
+            "name": "Swan Islands Transform",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 193.9784521426836
+          },
+          {
+            "name": "Swan Islands Transform",
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 148.69588742819622
+          },
+          {
+            "name": "Tela Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 133.52236620236098
+          },
+          {
+            "name": "Trujillo Fault",
+            "kinematics": "Normal-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.971553963918344
+          },
+          {
+            "name": "Flowers Bay Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.468729335668794
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 36,
+      "medianMwM2": 60.3,
+      "p10MwM2": 28.7,
+      "p90MwM2": 100.0,
+      "maxMwM2": 139.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 12,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 5,
+          "percent": 13.88888888888889
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 12,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 5.555555555555555
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 5,
+          "percent": 13.88888888888889
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

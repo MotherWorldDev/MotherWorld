@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_2",
+  "regionName": "Cameroon Highlands forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.047636+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000007,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 19129.952849370755,
+        "percent": 50.52196919673613
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 19129.952849370755,
+          "percent": 50.52196919673613
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 18734.669518924835,
+          "percent": 49.47803080326387
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bauxite - Cameroon",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

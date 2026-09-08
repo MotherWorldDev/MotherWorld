@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_517",
+  "regionName": "Windward Islands moist forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.134779+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 9.125296992156962,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 182.69645896552768,
+        "percent": 100.0
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 182.69645896552768,
+          "percent": 100.0
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1819.3913538755446,
+          "percentOfRegion": 90.87470300784292
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 6,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 4,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 37.5
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 12.5
+        }
+      ],
+      "sites": [
+        {
+          "name": "Ravine Souffre",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Vergallier River",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper"
+          ]
+        },
+        {
+          "name": "Roseau River Drainage",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sulfur Springs",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Hotsprings",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Deaux Branches",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

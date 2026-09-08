@@ -1,0 +1,235 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20025",
+  "regionName": "North Sea",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.833498+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 56.40119411208029,
+        "medianAgeMa": 56.09808349609375,
+        "p10AgeMa": 53.066688537597656,
+        "p90AgeMa": 60.51485061645508,
+        "oldestAgeMa": 61.59315872192383,
+        "coveragePct": 2.3555865615869966,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 100.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 20.875108933005265,
+          "medianMmYr": 11.692626953125,
+          "p10MmYr": 11.478217124938965,
+          "p90MmYr": 46.21051788330078,
+          "coveragePct": 2.3555865615869966
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 363,
+      "medianMwM2": 70.0,
+      "p10MwM2": 58.0,
+      "p90MwM2": 85.80000000000001,
+      "maxMwM2": 142.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 0.5509641873278237
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 48,
+          "percent": 13.223140495867769
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 249,
+          "percent": 68.59504132231406
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 49,
+          "percent": 13.498622589531681
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 15,
+          "percent": 4.132231404958678
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 7,
+      "commodities": [
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Vanadium",
+          "count": 2,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Pigment",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bamle Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Storgangen Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Stallingborough Plant  Ti",
+          "depositType": null,
+          "commodities": [
+            "Pigment",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Leith Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Burntisland Non-Met Gr",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

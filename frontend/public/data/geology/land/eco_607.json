@@ -1,0 +1,258 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_607",
+  "regionName": "San Lucan xeric scrub",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.393357+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 5,
+        "intersectionLengthKm": 69.68378093953237,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "El Carrizal",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.81456084319048
+          },
+          {
+            "name": "San Juan de los Planes",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.773616545494203
+          },
+          {
+            "name": "La Gata",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.686424289356427
+          },
+          {
+            "name": "San José del Cabo",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.52017039689324
+          },
+          {
+            "name": "Saltito",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.8890088645980185
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 62.5026644853052,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 1749.2529940986196,
+        "percent": 72.73504778214614
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1749.2529940986196,
+          "percent": 72.73504778214614
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 655.7127651017186,
+          "percent": 27.26495221785386
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1442.8154178177558,
+          "percentOfRegion": 37.49733551469516
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1,
+      "medianMwM2": 613.0,
+      "p10MwM2": 613.0,
+      "p90MwM2": 613.0,
+      "maxMwM2": 613.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 1,
+          "percent": 100.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 7,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 5,
+          "sharePct": 35.714285714285715
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 21.428571428571427
+        },
+        {
+          "label": "Tungsten",
+          "count": 3,
+          "sharePct": 21.428571428571427
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 21.428571428571427
+        }
+      ],
+      "sites": [
+        {
+          "name": "San Jose Del Cabo",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Todos Santos",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Placer De Juan Marquez",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Todos Santos",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Mina El Volcon",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Todos Santos",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Mina Estrella Polar",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

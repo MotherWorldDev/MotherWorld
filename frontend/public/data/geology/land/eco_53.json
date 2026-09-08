@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_53",
+  "regionName": "Sahelian Acacia savanna",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.138301+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.66646455088426,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 2120338.842065154,
+        "percent": 57.99605223960151
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2120338.842065154,
+          "percent": 57.99605223960151
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 707677.3889112473,
+          "percent": 19.35657358241251
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 655386.1736078231,
+          "percent": 17.926290839746773
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 110896.25418134769,
+          "percent": 3.0332628083223776
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 41571.773283063245,
+          "percent": 1.1370818131450902
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 11206.40590884557,
+          "percent": 0.306520490788432
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 5609.664871222785,
+          "percent": 0.15343699340112218
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2978.4346743716765,
+          "percent": 0.08146690969395182
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 340.5321542555653,
+          "percent": 0.009314322888239076
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 9961.426535881756,
+          "percentOfRegion": 0.2715587197433136
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2273.455395430518,
+          "percentOfRegion": 0.06197672937232497
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 131,
+      "medianMwM2": 61.0,
+      "p10MwM2": 36.0,
+      "p90MwM2": 81.0,
+      "maxMwM2": 120.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 19,
+          "percent": 14.50381679389313
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 29,
+          "percent": 22.137404580152673
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 68,
+          "percent": 51.908396946564885
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 9,
+          "percent": 6.870229007633588
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 6,
+          "percent": 4.580152671755725
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 36,
+      "commodityCount": 14,
+      "commodities": [
+        {
+          "label": "Diatomite",
+          "count": 10,
+          "sharePct": 23.809523809523807
+        },
+        {
+          "label": "Gold",
+          "count": 6,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Tin",
+          "count": 5,
+          "sharePct": 11.904761904761903
+        },
+        {
+          "label": "Manganese",
+          "count": 5,
+          "sharePct": 11.904761904761903
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 3,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Uranium",
+          "count": 2,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 2.380952380952381
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 2.380952380952381
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 2.380952380952381
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 2.380952380952381
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 2.380952380952381
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 2.380952380952381
+        }
+      ],
+      "sites": [
+        {
+          "name": "Cominak Mine",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Somair Mine",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Amal. Tin Mines of Nigeria Mine",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Bisichi-Jantar Mine",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Ex Lands Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Gold & Base Metal Mines",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Kaduna Syndicate Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Daouna Beri",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Andjerou",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Dankari",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Koygouma",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Obokite Le Grande",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Obokite Le Petit",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Tintawarwate",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Adjintor",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Tabaghart",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Le Daouna Keina",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Oursi",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Jebel Eyob, Tokar ?",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Ansongo, Mali",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ofalikine, Mali",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tambao, Upper Volta",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Aberketieb Red Sea Hills",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Barka River Basin",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Liptako",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Wadi Ganchiran",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Mangampet",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Tamaguillel",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Koma Bangou",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Venturi Asmara",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Tambao Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Belinga",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Hassai Ariab Area",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Korki Khourki",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Kansalawile",
+          "depositType": "Sediment-hosted Cu-carbonate ecaille",
+          "commodities": [
+            "Cobalt",
+            "Copper"
+          ]
+        },
+        {
+          "name": "Tambao Deposit",
+          "depositType": "RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Manganese"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

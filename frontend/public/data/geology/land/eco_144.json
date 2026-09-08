@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_144",
+  "regionName": "New Britain-New Ireland lowland rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.033016+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 68.01460465768913,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 12628.641322914777,
+        "percent": 53.545187957607624
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 12628.641322914777,
+          "percent": 53.545187957607624
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 5091.823058618449,
+          "percent": 21.589228464814582
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3952.7994413091897,
+          "percent": 16.759790988724976
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1911.7525056333125,
+          "percent": 8.105792588852816
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 11091.383611179574,
+          "percentOfRegion": 31.985395342310774
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 66.66666666666666
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Simeri Tabar Island",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Tabar Island Nord Resources",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

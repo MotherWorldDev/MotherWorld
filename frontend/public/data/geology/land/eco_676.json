@@ -1,0 +1,294 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_676",
+  "regionName": "Pyrenees conifer and mixed forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.692367+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 107.48780322940144,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 65.70007409954478
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.323580310997862
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.464148818858794
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999997,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 8662.999041835732,
+        "percent": 33.39637316245172
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 8662.999041835732,
+          "percent": 33.39637316245172
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 8088.969838058156,
+          "percent": 31.183456665183044
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 6525.367380180787,
+          "percent": 25.155676804095368
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1812.3623622232553,
+          "percent": 6.986763990402624
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 850.2410223331063,
+          "percent": 3.2777293778672556
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 87,
+      "medianMwM2": 85.0,
+      "p10MwM2": 56.0,
+      "p90MwM2": 111.10000000000014,
+      "maxMwM2": 151.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 10,
+          "percent": 11.494252873563218
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 28,
+          "percent": 32.18390804597701
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 32,
+          "percent": 36.7816091954023
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 16,
+          "percent": 18.39080459770115
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 1.1494252873563218
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 10,
+      "commodityCount": 7,
+      "commodities": [
+        {
+          "label": "Tungsten",
+          "count": 4,
+          "sharePct": 22.22222222222222
+        },
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Zinc",
+          "count": 3,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Aluminum",
+          "count": 3,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        }
+      ],
+      "sites": [
+        {
+          "name": "Salau Mine",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Arrens",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Costabonne",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Bauxite - France",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Carboire Zn - Pb Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Escaro Fluorspar Mine",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Auzat",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Lannemezan",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Miniere D'Anglade",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Anglade Salau",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

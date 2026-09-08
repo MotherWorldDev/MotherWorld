@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_378",
+  "regionName": "Muskwa-Slave Lake taiga",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.097437+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000009,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 140603.0925271251,
+        "percent": 47.04427841664415
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 140603.0925271251,
+          "percent": 47.04427841664415
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 130006.36194061897,
+          "percent": 43.4987266435095
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 21559.26997482664,
+          "percent": 7.213499226268258
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 3177.983436079632,
+          "percent": 1.0633189845491557
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1741.0982185544951,
+          "percent": 0.5825526869446276
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 1574.8406025228696,
+          "percent": 0.5269246816362066
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 119.67216038255849,
+          "percent": 0.04004101425203188
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 91.62980987304692,
+          "percent": 0.030658346196049548
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 560,
+      "medianMwM2": 74.0,
+      "p10MwM2": 60.0,
+      "p90MwM2": 103.0,
+      "maxMwM2": 142.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 54,
+          "percent": 9.642857142857144
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 304,
+          "percent": 54.285714285714285
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 135,
+          "percent": 24.107142857142858
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 67,
+          "percent": 11.964285714285715
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Lead",
+          "count": 4,
+          "sharePct": 44.44444444444444
+        },
+        {
+          "label": "Zinc",
+          "count": 4,
+          "sharePct": 44.44444444444444
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        }
+      ],
+      "sites": [
+        {
+          "name": "Fort Mcmurray",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite"
+          ]
+        },
+        {
+          "name": "Dupont & Western Mines Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Pine Point Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Pine Point Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Great Slave Reef Project",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

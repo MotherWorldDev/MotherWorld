@@ -1,0 +1,345 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20176",
+  "regionName": "Humboldtian",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.670757+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 47.03764732306274,
+        "medianAgeMa": 46.770442962646484,
+        "p10AgeMa": 40.2153205871582,
+        "p90AgeMa": 54.20304870605469,
+        "oldestAgeMa": 58.21044158935547,
+        "coveragePct": 67.97553648609683,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 68.89095971392071,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 31.109040286079303,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 95.98571023982632,
+          "medianMmYr": 113.78633117675781,
+          "p10MmYr": 53.770328521728516,
+          "p90MmYr": 132.8907928466797,
+          "coveragePct": 67.97553648609683
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 1839.0088416236931,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1367.2359407408542
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 470.13571332497355
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.637187557865506
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 26,
+      "medianMwM2": 35.43,
+      "p10MwM2": 7.52,
+      "p90MwM2": 65.0,
+      "maxMwM2": 114.75,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 15,
+          "percent": 57.692307692307686
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 5,
+          "percent": 19.230769230769234
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 5,
+          "percent": 19.230769230769234
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 3.8461538461538463
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 15,
+      "commodityCount": 8,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 7,
+          "sharePct": 35.0
+        },
+        {
+          "label": "General",
+          "count": 3,
+          "sharePct": 15.0
+        },
+        {
+          "label": "Limestone",
+          "count": 3,
+          "sharePct": 15.0
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Bentonite",
+          "count": 1,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 5.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Echegaray Area 2, Cantera",
+          "depositType": null,
+          "commodities": [
+            "Bentonite"
+          ]
+        },
+        {
+          "name": "Santa Rosa 13, Cantera",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Unidentified Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Gatico",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Michilla",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Argolla",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Bandurrias",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Atlas Ii",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Desembocadura Rio Loa",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Defensa Caleta El Cobre",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Baritex",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Chalcobamba-Lasbamba",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Marcona Ii",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Marcona I",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Condestable",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

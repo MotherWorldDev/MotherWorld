@@ -1,0 +1,244 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_540",
+  "regionName": "Maranhão Babaçu forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.140299+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.70262057689852,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 88590.63761523811,
+        "percent": 62.737692192167835
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 88590.63761523811,
+          "percent": 62.737692192167835
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 38078.10848130295,
+          "percent": 26.965971952199265
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 10544.249719539193,
+          "percent": 7.467176116000957
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3021.7528450693553,
+          "percent": 2.139930414522269
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 973.2469149097831,
+          "percent": 0.6892293251096815
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 137.12453091711282,
+          "percentOfRegion": 0.09681941183316399
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 284.05148249904465,
+          "percentOfRegion": 0.20056001126829473
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 70.5,
+      "p10MwM2": 56.0,
+      "p90MwM2": 84.3,
+      "maxMwM2": 90.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 50.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 8,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Uranium",
+          "count": 3,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 22.22222222222222
+        },
+        {
+          "label": "Potassium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Gemstone",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        }
+      ],
+      "sites": [
+        {
+          "name": "Arari",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Padrevieira, Lagoa Da Carnauba",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Roca",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Uniao",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Rio Jenipapo",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Fazenda Pocoes Lead Deposit",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "(Facility) Alumar Refinery",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "(Facility) Alumar Aluminum Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_780",
+  "regionName": "Scandinavian Montane Birch forest and grasslands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.202296+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 96.4013179094311,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 126347.2292491253,
+        "percent": 53.19644348558506
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 126347.2292491253,
+          "percent": 53.19644348558506
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 50435.208359206874,
+          "percent": 21.23492321208009
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 26280.118307890236,
+          "percent": 11.064815878183182
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 14372.603087655227,
+          "percent": 6.051350492108157
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 5072.767666259071,
+          "percent": 2.1358062228778323
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 5023.712678510695,
+          "percent": 2.1151524190789597
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 4482.945650519875,
+          "percent": 1.8874712675860348
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3604.931022377828,
+          "percent": 1.517797505659841
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 1891.15380991145,
+          "percent": 0.7962395168408474
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 8866.32478037775,
+          "percentOfRegion": 3.5986820905688015
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 47,
+      "medianMwM2": 46.0,
+      "p10MwM2": 28.6,
+      "p90MwM2": 53.8,
+      "maxMwM2": 57.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 14,
+          "percent": 29.78723404255319
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 33,
+          "percent": 70.2127659574468
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 38,
+      "commodityCount": 24,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 18,
+          "sharePct": 16.216216216216218
+        },
+        {
+          "label": "Copper",
+          "count": 13,
+          "sharePct": 11.711711711711711
+        },
+        {
+          "label": "Zinc",
+          "count": 12,
+          "sharePct": 10.81081081081081
+        },
+        {
+          "label": "Vanadium",
+          "count": 7,
+          "sharePct": 6.306306306306306
+        },
+        {
+          "label": "Silver",
+          "count": 7,
+          "sharePct": 6.306306306306306
+        },
+        {
+          "label": "Titanium",
+          "count": 6,
+          "sharePct": 5.405405405405405
+        },
+        {
+          "label": "Metal",
+          "count": 5,
+          "sharePct": 4.504504504504505
+        },
+        {
+          "label": "Lead",
+          "count": 5,
+          "sharePct": 4.504504504504505
+        },
+        {
+          "label": "Gold",
+          "count": 5,
+          "sharePct": 4.504504504504505
+        },
+        {
+          "label": "Sulfur",
+          "count": 5,
+          "sharePct": 4.504504504504505
+        },
+        {
+          "label": "Aluminum",
+          "count": 5,
+          "sharePct": 4.504504504504505
+        },
+        {
+          "label": "Manganese",
+          "count": 4,
+          "sharePct": 3.6036036036036037
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 4,
+          "sharePct": 3.6036036036036037
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 3,
+          "sharePct": 2.7027027027027026
+        },
+        {
+          "label": "Tin",
+          "count": 2,
+          "sharePct": 1.8018018018018018
+        },
+        {
+          "label": "Magnesite",
+          "count": 2,
+          "sharePct": 1.8018018018018018
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Mercury",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Refiner",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        }
+      ],
+      "sites": [
+        {
+          "name": "Routivare Ruoutevare Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Stjernoy-Seiland Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Hattevarre Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Deposits Other Than Rodsand Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Sogn Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Bleikvassli Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Nickel",
+            "Silver",
+            "Sulfur-Pyrite",
+            "Tin",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Laisvall Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Viscaria",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Kirunavaara Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Kvinesdal",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Glomfjord Kodal",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "REE"
+          ]
+        },
+        {
+          "name": "Tverrfjellet",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iron",
+            "Silver",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Roros Verk",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Grong Gruber Joma/Gjersvik",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Joma",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Kirunavaara",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Tuolluvaara",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Mosjoen",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Bjornevatin",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Heroya",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Eitrheim",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Cobalt",
+            "Copper",
+            "Lead",
+            "Mercury",
+            "Refiner",
+            "Silver",
+            "Sulfur",
+            "Sulfuric Acid",
+            "Tin",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Kiruna",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bleikvassli",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Vasbugo",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Viscaria",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Elkem/Sauda",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Hoyanger",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Kirkenes",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sauda",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ardal Ardal Verk",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Sulitjelma",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Tyssedal",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Svelgen",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sunndalsora Sunndal Verk",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "(Facility) Bremanger Smelterwork",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Stekenjokk",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Kirkenes Ii",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Repparfjord",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,225 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_741",
+  "regionName": "Amur meadow steppe",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.190737+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999994,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 75857.34588690543,
+        "percent": 61.36015553281954
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 75857.34588690543,
+          "percent": 61.36015553281954
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 14910.514457822737,
+          "percent": 12.060947763323874
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 14034.088926921067,
+          "percent": 11.352016989905614
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 9800.395525696213,
+          "percent": 7.927429924010491
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3985.190576512506,
+          "percent": 3.223575920614242
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1568.4852811390226,
+          "percent": 1.2687301365000971
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1527.0767842199473,
+          "percent": 1.2352352681834173
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1141.3986764191604,
+          "percent": 0.9232645763068253
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 619.0468990030856,
+          "percent": 0.5007400873419688
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 182.848131536827,
+          "percent": 0.14790380099393757
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 14,
+      "medianMwM2": 45.25,
+      "p10MwM2": 38.5,
+      "p90MwM2": 54.400000000000006,
+      "maxMwM2": 61.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 14.285714285714285
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 11,
+          "percent": 78.57142857142857
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 7.142857142857142
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        }
+      ],
+      "sites": [
+        {
+          "name": "Sungari River Up Stream",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bidzhan Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Bidzhan",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Xinlonggou Gold Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Heihe Gold Operation",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25058",
+  "regionName": "Northern California",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.153462+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 23.18037952377062,
+        "medianAgeMa": 22.929954528808594,
+        "p10AgeMa": 18.867900848388672,
+        "p90AgeMa": 27.90387535095215,
+        "oldestAgeMa": 31.101207733154297,
+        "coveragePct": 81.26475620340251,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 22.3720329524093,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 77.62796704759069,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 96.30543204835888,
+          "medianMmYr": 100.00637817382812,
+          "p10MmYr": 78.80192565917969,
+          "p90MmYr": 108.3935317993164,
+          "coveragePct": 81.26475620340251
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 27,
+        "intersectionLengthKm": 996.347632615112,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Hosgri",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 147.92818590690348
+          },
+          {
+            "name": "San Andreas (Offshore) 2011 CFM",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 122.15109271910752
+          },
+          {
+            "name": "San Gregorio (North) 2011 CFM",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 85.15900405939934
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.42985839463715
+          },
+          {
+            "name": "San Gregorio (South) 2011 CFM",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 64.34179352051005
+          },
+          {
+            "name": "Point Reyes 2011 CFM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 62.15368935470088
+          },
+          {
+            "name": "San Andreas (North Coast) 2011 CFM",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.84585000471933
+          },
+          {
+            "name": "Reliz 2011 CFM",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.15579654550086
+          },
+          {
+            "name": "Monterey Bay-Tularcitos",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.76416425081037
+          },
+          {
+            "name": "Mendocino",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.23324645998685
+          },
+          {
+            "name": "Santa Rosa Island",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.22541955787178
+          },
+          {
+            "name": "Point Reyes 2011 connector",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.99127529231322
+          },
+          {
+            "name": "San Andreas (Peninsula) 2011 CFM",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.869269530304475
+          },
+          {
+            "name": "Hosgri (Extension)",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.31936576655068
+          },
+          {
+            "name": "San Luis Range - Pecho 2011 CFM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.807726501486236
+          },
+          {
+            "name": "Shoreline",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.966978381151424
+          },
+          {
+            "name": "Hayward (No) 2011 CFM",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.71055777001477
+          },
+          {
+            "name": "Los Osos 2011",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.909112636285434
+          },
+          {
+            "name": "Lions Head 2011 CFM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.810814761502817
+          },
+          {
+            "name": "Casmalia 2011 CFM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.72902174095378
+          },
+          {
+            "name": "San Luis Bay 2011 CFM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.563130874415322
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.055473912888605
+          },
+          {
+            "name": "Pilarcitos 2011 CFM",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.5167162868746855
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.608095081914487
+          },
+          {
+            "name": "Santa Ynez River",
+            "kinematics": "Sinistral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.464192184184551
+          },
+          {
+            "name": "San Luis Range - Oceano 2011 CFM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.207736335054705
+          },
+          {
+            "name": "King Range 2011 CFM",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.430064785069411
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 77,
+      "medianMwM2": 72.0,
+      "p10MwM2": 53.0,
+      "p90MwM2": 96.0,
+      "maxMwM2": 144.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 6,
+          "percent": 7.792207792207792
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 16,
+          "percent": 20.77922077922078
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 27,
+          "percent": 35.064935064935064
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 21,
+          "percent": 27.27272727272727
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 7,
+          "percent": 9.090909090909092
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 39,
+      "commodityCount": 15,
+      "commodities": [
+        {
+          "label": "Stone",
+          "count": 20,
+          "sharePct": 35.714285714285715
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 7,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Construction",
+          "count": 4,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 4,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Manganese",
+          "count": 3,
+          "sharePct": 5.357142857142857
+        },
+        {
+          "label": "Gemstone",
+          "count": 3,
+          "sharePct": 5.357142857142857
+        },
+        {
+          "label": "Dimension",
+          "count": 3,
+          "sharePct": 5.357142857142857
+        },
+        {
+          "label": "Limestone",
+          "count": 3,
+          "sharePct": 5.357142857142857
+        },
+        {
+          "label": "Clay",
+          "count": 2,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "Semiprecious Gemstone",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Geothermal",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "General",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        }
+      ],
+      "sites": [
+        {
+          "name": "Point Isabel",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Point Molate Healey-Tibbets Co.",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Red Rock",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Brooks Island Healy - Tibbitts",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Marin",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Lime Point",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "L P Mcnear Brick Company",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Mcnear Point Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Point Bonita Fort Barry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Red Rock",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Quarry Products Inc",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Pascadero Beach",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Monterey Sand Co.-San Jose Creek",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Guadalupe Sand Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Pacifica Quarry and Mill",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Mcnears Quarry & Mill",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cape San Martin",
+          "depositType": null,
+          "commodities": [
+            "Semiprecious Gemstone"
+          ]
+        },
+        {
+          "name": "Point Molate",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Red Rock",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Unnamed Location",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Whaler's Cove",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "San Francisco Bay Dredge",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Tomales Point",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Slate's Hot Springs",
+          "depositType": null,
+          "commodities": [
+            "Geothermal"
+          ]
+        },
+        {
+          "name": "Pascadero Beach",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Ideal Cement Co.",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Dimension",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Brooks Island",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "San Francisco Bay Dredge",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Dillon Beach Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "L P Mcnear Brick Co",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Morro Rock Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Quarry Products Inc",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "San Rafael Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Point Bonita",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Location",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Location",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Angel Island Dredge",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Ideal Cement Co.",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Dimension",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Southern California Borderland Phosphorites",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

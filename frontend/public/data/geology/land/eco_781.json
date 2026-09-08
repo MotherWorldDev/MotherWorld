@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_781",
+  "regionName": "Taimyr-Central Siberian tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.202296+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 97.6173273674169,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 477822.6812519887,
+        "percent": 50.88582761775762
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 477822.6812519887,
+          "percent": 50.88582761775762
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 180026.91872901996,
+          "percent": 19.17200483032291
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 105746.257699477,
+          "percent": 11.261470105226753
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 65557.51005058453,
+          "percent": 6.981560914485311
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 40483.19567336199,
+          "percent": 4.311266495455998
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 32159.682617358503,
+          "percent": 3.424852210072625
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 20906.877866593146,
+          "percent": 2.2264823853849722
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 7766.002402688568,
+          "percent": 0.8270420703070325
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 4432.266059032874,
+          "percent": 0.47201511247860234
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 4107.9617696319665,
+          "percent": 0.43747825850818334
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 22919.618372459427,
+          "percentOfRegion": 2.3826726325831045
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 47,
+      "medianMwM2": 57.0,
+      "p10MwM2": 37.0,
+      "p90MwM2": 70.0,
+      "maxMwM2": 70.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 9,
+          "percent": 19.148936170212767
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 17,
+          "percent": 36.17021276595745
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 21,
+          "percent": 44.680851063829785
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 34,
+      "commodityCount": 18,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 30,
+          "sharePct": 20.97902097902098
+        },
+        {
+          "label": "Nickel",
+          "count": 29,
+          "sharePct": 20.27972027972028
+        },
+        {
+          "label": "Platinum",
+          "count": 25,
+          "sharePct": 17.482517482517483
+        },
+        {
+          "label": "Palladium",
+          "count": 16,
+          "sharePct": 11.188811188811188
+        },
+        {
+          "label": "Cobalt",
+          "count": 8,
+          "sharePct": 5.594405594405594
+        },
+        {
+          "label": "Gold",
+          "count": 7,
+          "sharePct": 4.895104895104895
+        },
+        {
+          "label": "Ruthenium",
+          "count": 5,
+          "sharePct": 3.4965034965034967
+        },
+        {
+          "label": "Rhodium",
+          "count": 4,
+          "sharePct": 2.797202797202797
+        },
+        {
+          "label": "PGE",
+          "count": 4,
+          "sharePct": 2.797202797202797
+        },
+        {
+          "label": "Iridium",
+          "count": 3,
+          "sharePct": 2.097902097902098
+        },
+        {
+          "label": "Osmium",
+          "count": 3,
+          "sharePct": 2.097902097902098
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 1.3986013986013985
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 1.3986013986013985
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        }
+      ],
+      "sites": [
+        {
+          "name": "Noril'Sk Ii",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Rybnaja River Deposit",
+          "depositType": "Placer",
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sotnikovskol Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Talnakh Deposit",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Lead",
+            "Nickel",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Mount Barjernaja",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ugol'Nyi Ruchei Deposit",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Boulkalakh River Basin",
+          "depositType": "Placer",
+          "commodities": [
+            "Copper",
+            "Iron",
+            "Nickel",
+            "PGE",
+            "Palladium",
+            "Platinum",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Khatygyn - Uele River",
+          "depositType": "Placer",
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kangalas - Uele River",
+          "depositType": "Placer",
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Udzha River",
+          "depositType": "Placer",
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE",
+            "Palladium",
+            "Platinum",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Ugol'Nyi Ruchei Placer",
+          "depositType": "Placer",
+          "commodities": [
+            "Copper",
+            "Iron",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Oktyabrsky",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Morozova Mine",
+          "depositType": null,
+          "commodities": [
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Mt. Chernaya",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Mt. Zub - Mt. Marksheiderskaya",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Arylakhskoe",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Taimyr River Lode",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Khanar River Intrusion",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Rhodium"
+          ]
+        },
+        {
+          "name": "Oktyabrsky-Talnakh Nickel-Copper Deposits-U.S.S.R.",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Tareya River Intrusions",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kuntykakhskaya Intrusion",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Severnyi Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Taimyr Mine",
+          "depositType": null,
+          "commodities": [
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Noril'Sk I",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Norilsk Concentrator",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "(Facility) Nadezdha Copper Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "(Facility) Norilsk Copper Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Taimyr",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Norilsk Nickel Plant",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "(Facility) Norilsk Copper Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Talnakh Concentrator",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Mayak",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "REE"
+          ]
+        },
+        {
+          "name": "Noril'Sk-Talnakh District",
+          "depositType": "MAGMATIC, GABBROIC, STRATIFORM",
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Iridium",
+            "Nickel",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Noril'Sk-Talnakh District",
+          "depositType": "MAGMATIC, GABBROIC, INTERCONTINENTAL RIFT ZONE",
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Iridium",
+            "Nickel",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

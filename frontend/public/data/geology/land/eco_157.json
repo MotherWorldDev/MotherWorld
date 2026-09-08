@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_157",
+  "regionName": "Sulawesi montane rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.168819+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 5,
+        "intersectionLengthKm": 404.71142444743083,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 115.55431952479488
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 111.40620623236606
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 95.25266366997353
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 61.20419356747873
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.294041452817613
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 94.00905302323174,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 15315.267659900572,
+        "percent": 21.59608311077982
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 15315.267659900572,
+          "percent": 21.59608311077982
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 14287.897294952896,
+          "percent": 20.147386536899226
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 14231.775151864449,
+          "percent": 20.06824861431061
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 7870.9169623572125,
+          "percent": 11.098792437181377
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 7164.898473448349,
+          "percent": 10.103234651133388
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4558.346699155765,
+          "percent": 6.427731878331134
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 4490.8761152257575,
+          "percent": 6.332591501392089
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1801.643304621008,
+          "percent": 2.5405000687286643
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1195.2551690501011,
+          "percent": 1.68543120124371
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 4519.343990679176,
+          "percentOfRegion": 5.990946976768196
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 18,
+      "medianMwM2": 10.850000000000001,
+      "p10MwM2": 2.8600000000000003,
+      "p90MwM2": 59.07000000000001,
+      "maxMwM2": 353.8,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 14,
+          "percent": 77.77777777777779
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 2,
+          "percent": 11.11111111111111
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 5.555555555555555
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 1,
+          "percent": 5.555555555555555
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Nickel",
+          "count": 4,
+          "sharePct": 57.14285714285714
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        }
+      ],
+      "sites": [
+        {
+          "name": "Soroako",
+          "depositType": "Placer",
+          "commodities": [
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sulut",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Soroako Pt Inco",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "(Facility) Soroako Nickel Matte Smelter",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Soroako Deposit",
+          "depositType": "LATERITE, RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Iron",
+            "Nickel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

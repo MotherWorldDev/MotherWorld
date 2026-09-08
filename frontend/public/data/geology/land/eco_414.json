@@ -1,0 +1,333 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_414",
+  "regionName": "Canadian Middle Arctic Tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.107942+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 91.73418298450841,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 439782.0254009891,
+        "percent": 48.70105679933081
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 439782.0254009891,
+          "percent": 48.70105679933081
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 361608.24213837733,
+          "percent": 40.044163977438615
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 34838.171842191055,
+          "percent": 3.8579470912309315
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 30808.444968456657,
+          "percent": 3.4116988454446515
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 11650.076099430758,
+          "percent": 1.2901187066878872
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 10880.915361096711,
+          "percent": 1.2049425543172512
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 7137.356709003552,
+          "percent": 0.790384314059519
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 3204.2602391199084,
+          "percent": 0.3548368302750215
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 2421.421340747192,
+          "percent": 0.2681459710485374
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 692.6634239241014,
+          "percent": 0.07670491016677813
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 81368.00710094033,
+          "percentOfRegion": 8.265817015491542
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 16,
+      "medianMwM2": 47.5,
+      "p10MwM2": 37.0,
+      "p90MwM2": 70.0,
+      "maxMwM2": 119.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 7,
+          "percent": 43.75
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 5,
+          "percent": 31.25
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 3,
+          "percent": 18.75
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 6.25
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 13,
+      "commodityCount": 9,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 8,
+          "sharePct": 27.586206896551722
+        },
+        {
+          "label": "Nickel",
+          "count": 8,
+          "sharePct": 27.586206896551722
+        },
+        {
+          "label": "PGE",
+          "count": 4,
+          "sharePct": 13.793103448275861
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 6.896551724137931
+        },
+        {
+          "label": "Asbestos",
+          "count": 2,
+          "sharePct": 6.896551724137931
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 6.896551724137931
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 3.4482758620689653
+        }
+      ],
+      "sites": [
+        {
+          "name": "Donaldson Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Katiniq Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Expo Ungava",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Raglan Nickel Deposits",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Katiniq",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Donaldson Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Asbestos Hill",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Asbestos Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Meadowbank Au Project",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mary River Iron Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Melville Lpeninsula Iron Deposit.",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Raglan Nickel Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Expo Ungava",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

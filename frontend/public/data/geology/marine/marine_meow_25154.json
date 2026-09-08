@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25154",
+  "regionName": "Gilbert/Ellis Islands",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.214443+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 122.27745281789662,
+        "medianAgeMa": 134.52491760253906,
+        "p10AgeMa": 90.10149383544922,
+        "p90AgeMa": 144.51156616210938,
+        "oldestAgeMa": 150.02423095703125,
+        "coveragePct": 93.4451404286238,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 2.061496456454936,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.17752241048221443,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 24.623306490575494,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 73.13179408763635,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.005880554851009031,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 143.57583578319293,
+          "medianMmYr": 96.01782989501953,
+          "p10MmYr": 87.48699188232422,
+          "p90MmYr": 209.0467529296875,
+          "coveragePct": 93.4451404286238
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 4,
+          "intersectionLengthKm": 1469.6712123827665
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 2,
+        "confirmedOrInferredActive": 0,
+        "inactiveCount": 2,
+        "medianDepthM": 3000.0,
+        "maxReportedTemperatureC": null,
+        "tectonicSettings": [
+          {
+            "label": "back-arc spreading center",
+            "count": 2
+          }
+        ],
+        "fields": [
+          {
+            "name": "Tripartite Ridge, south of TR3",
+            "activity": "inactive",
+            "depthM": 3000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": null
+          },
+          {
+            "name": "Tripartite Ridge, south of TR1",
+            "activity": "inactive",
+            "depthM": 3000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": null
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 15,
+        "intersectionLengthKm": 448.6552595965595,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.8984979178768
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.68559756331712
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.827260832762704
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.68644734038942
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.81201143674232
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.238125169497366
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.345054540344027
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.52361877729655
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.220878215578892
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.957923316584136
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.687785927228266
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.929332398500527
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.431478222851062
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.28631759618614
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.12493034140414
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 52,
+      "medianMwM2": 51.55,
+      "p10MwM2": 12.270000000000007,
+      "p90MwM2": 95.03999999999999,
+      "maxMwM2": 211.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 15,
+          "percent": 28.846153846153843
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 20,
+          "percent": 38.46153846153847
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 8,
+          "percent": 15.384615384615385
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 7.6923076923076925
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 5.769230769230769
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 1.9230769230769231
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 1,
+          "percent": 1.9230769230769231
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 5,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Nauru Island",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Naura Island",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Npc Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Nauru Island",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Nauru Phosphate",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

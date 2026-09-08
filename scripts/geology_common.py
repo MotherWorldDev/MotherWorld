@@ -55,7 +55,9 @@ def read_vector(path:Path)->gpd.GeoDataFrame:
     return g.to_crs(WGS84)
 
 def _rid(row,idx=None):
-    for k in ('id','regionId','region_id'):
+    # Runtime marine TopoJSON is fragmented: `id` is a feature fragment
+    # identifier while `regionId` is the canonical inventory identifier.
+    for k in ('regionId','region_id','id'):
         v=row.get(k)
         if v is not None and str(v).strip(): return str(v)
     e=row.get('ECO_ID') or row.get('eco_id')
@@ -86,15 +88,32 @@ def load_regions(repo:Path, kinds:Iterable[str]|None=None, globalize_open_ocean:
             if rid and row.geometry is not None and not row.geometry.is_empty:grouped[rid].append(row.geometry)
         for rid,geoms in grouped.items():out.append({'regionId':rid,'regionName':names.get(rid,rid),'kind':kind,'geometry':unary_union(geoms)})
     result=gpd.GeoDataFrame(out,geometry='geometry',crs=WGS84)
-    if globalize_open_ocean and not result.empty and 'marine' in kinds:
-        marine=result[result.kind=='marine']
-        if not marine.empty:
-            ocean=unary_union([g for g in marine.geometry if g is not None and not g.is_empty])
+    if globalize_open_ocean and 'marine' in kinds:
+        # The app's open-ocean selection is a non-species whole-ocean scope:
+        # residual ocean plus every mapped marine/coastal ecoregion.  Build it
+        # from the world minus canonical land coverage, without adding this
+        # synthetic ID to the species inventory.
+        land=result[result.kind=='land']
+        lakes=result[result.kind=='lakes']
+        exclusion_geoms=[g for g in [*land.geometry.tolist(),*lakes.geometry.tolist()] if g is not None and not g.is_empty]
+        missing_exclusion_kinds=tuple(k for k in ('land','lakes') if k not in kinds)
+        if missing_exclusion_kinds:
+            exclusions=load_regions(repo,kinds=missing_exclusion_kinds,globalize_open_ocean=False)
+            exclusion_geoms.extend(g for g in exclusions.geometry if g is not None and not g.is_empty)
+        ocean=box(-180.0,-89.999,180.0,89.999).difference(unary_union(exclusion_geoms)) if exclusion_geoms else None
+        if ocean is not None and not ocean.is_empty:
             mask=result.regionId.map(_is_open_ocean_id)
-            if mask.any() and ocean is not None and not ocean.is_empty:
+            if mask.any():
                 for idx in result.index[mask]:
+                    result.at[idx,'regionId']='open_ocean'
                     result.at[idx,'geometry']=ocean
                     result.at[idx,'regionName']='Global Ocean'
+                result=result.drop_duplicates(subset=['regionId'],keep='first').reset_index(drop=True)
+            else:
+                result=gpd.GeoDataFrame(
+                    pd.concat([result,gpd.GeoDataFrame([{'regionId':'open_ocean','regionName':'Global Ocean','kind':'marine','geometry':ocean}],geometry='geometry',crs=WGS84)],ignore_index=True),
+                    geometry='geometry',crs=WGS84,
+                )
     return result
 
 def fragments_root(repo:Path,provider_id:str)->Path:
@@ -102,7 +121,7 @@ def fragments_root(repo:Path,provider_id:str)->Path:
 
 def write_fragment(repo:Path,provider_id:str,region:dict,sections:dict,source:dict):
     payload={'schemaVersion':1,'providerId':provider_id,'regionId':region['regionId'],'regionName':region.get('regionName',region['regionId']),'kind':region.get('kind'),'generatedAt':utc_now_iso(),'sections':sections,'source':source}
-    p=fragments_root(repo,provider_id)/f"{region['regionId']}.json";p.write_text(json.dumps(payload,indent=2,ensure_ascii=False)+'\n',encoding='utf-8');return p
+    p=fragments_root(repo,provider_id)/f"{region['regionId']}.json";p.write_text(json.dumps(json_safe(payload),indent=2,ensure_ascii=False,allow_nan=False)+'\n',encoding='utf-8');return p
 
 def region_records(regions:gpd.GeoDataFrame):
     return [dict(regionId=r.regionId,regionName=r.regionName,kind=r.kind,geometry=r.geometry) for r in regions.itertuples()]
@@ -116,6 +135,18 @@ def assign_points(points:gpd.GeoDataFrame,regions:gpd.GeoDataFrame):
 def region_projected(regions:gpd.GeoDataFrame):return regions.to_crs(AREA_CRS)
 def source_obj(provider_id,label,**kw):
     d={'providerId':provider_id,'label':label};d.update({k:v for k,v in kw.items() if v is not None});return d
+
+def json_safe(value):
+    """Convert pandas/NumPy values and non-finite numbers to JSON-safe values."""
+    if isinstance(value, np.generic):
+        return json_safe(value.item())
+    if isinstance(value, float):
+        return value if math.isfinite(value) else None
+    if isinstance(value, dict):
+        return {str(k): json_safe(v) for k, v in value.items()}
+    if isinstance(value, (list, tuple)):
+        return [json_safe(v) for v in value]
+    return value
 
 def split_multi(v):
     if v is None or (isinstance(v,float) and math.isnan(v)):return []

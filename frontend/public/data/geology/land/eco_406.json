@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_406",
+  "regionName": "Aleutian Islands tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.105577+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 38.55437730685573,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 2862.098292850428,
+        "percent": 61.528493172859115
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2862.098292850428,
+          "percent": 61.528493172859115
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1789.5649370772157,
+          "percent": 38.471506827140885
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 7413.538064609878,
+          "percentOfRegion": 61.445622693144145
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 7,
+      "medianMwM2": 39.0,
+      "p10MwM2": 37.0,
+      "p90MwM2": 45.0,
+      "maxMwM2": 45.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 57.14285714285714
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 42.857142857142854
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 63,
+      "commodityCount": 13,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 47,
+          "sharePct": 24.736842105263158
+        },
+        {
+          "label": "Silver",
+          "count": 35,
+          "sharePct": 18.421052631578945
+        },
+        {
+          "label": "Copper",
+          "count": 31,
+          "sharePct": 16.315789473684212
+        },
+        {
+          "label": "Mercury",
+          "count": 16,
+          "sharePct": 8.421052631578947
+        },
+        {
+          "label": "Zinc",
+          "count": 15,
+          "sharePct": 7.894736842105263
+        },
+        {
+          "label": "Arsenic",
+          "count": 12,
+          "sharePct": 6.315789473684211
+        },
+        {
+          "label": "Molybdenum",
+          "count": 11,
+          "sharePct": 5.7894736842105265
+        },
+        {
+          "label": "Lead",
+          "count": 9,
+          "sharePct": 4.736842105263158
+        },
+        {
+          "label": "Sulfur",
+          "count": 8,
+          "sharePct": 4.2105263157894735
+        },
+        {
+          "label": "Cadmium",
+          "count": 2,
+          "sharePct": 1.0526315789473684
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 1.0526315789473684
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 0.5263157894736842
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 0.5263157894736842
+        }
+      ],
+      "sites": [
+        {
+          "name": "Unnamed (on northern Akun Island)",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Mercury",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Makushin River Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Pyramid Peak, Ruby Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sedanka Island",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Little Sitkin Island Sulfur Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Makushin Volcano Sulfur",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Mak North",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold",
+            "Mercury",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Pumicestone Bay",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mount Coxcomb",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Makushin Valley",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold",
+            "Mercury",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Mid Vein",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Royal Dutch",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Makushin Valley NC",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Wide Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Makushin Valley SE",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Makushin River",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Nateekin River",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Anderson Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Portage Bay",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Beaver Inlet, Amugul Bay, Tanaskan Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Beaver Inlet, Erskine Bay, Kisselem Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Tarasof Point",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Naginak Cove",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mt. Aspid",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Boulder Bay",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sweeper Cove",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Mercury",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Beyer Bay",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Andrew Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Blind Cove",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Finger Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bay of Islands",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Boat Harbor",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Mercury",
+            "Silver",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

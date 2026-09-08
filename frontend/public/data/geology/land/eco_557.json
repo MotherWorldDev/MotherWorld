@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_557",
+  "regionName": "Sierra Madre de Oaxaca pine-oak forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.144420+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999983,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 6184.519369858003,
+        "percent": 43.35876221306302
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 6184.519369858003,
+          "percent": 43.35876221306302
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 3247.76078270184,
+          "percent": 22.769576596105594
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1896.5332284181409,
+          "percent": 13.296317524839917
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 939.457977241724,
+          "percent": 6.586402694915374
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 881.1067883971309,
+          "percent": 6.177311030607054
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 817.0440986183257,
+          "percent": 5.7281768672658835
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 297.175362712111,
+          "percent": 2.0834530732031675
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Asbestos",
+          "count": 2,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Graphite",
+          "count": 2,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 12.5
+        }
+      ],
+      "sites": [
+        {
+          "name": "Pegaso",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Asbestos",
+            "Magnesite",
+            "Manganese",
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Telixtlahuaca",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Totolapilla",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Pegasopapalo",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Telixtlahuaca",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

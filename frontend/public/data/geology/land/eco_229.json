@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_229",
+  "regionName": "Eastern Java-Bali montane rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.055235+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 96.99061601365406,
+      "dominantClass": {
+        "code": "vi",
+        "label": "Intermediate volcanic rocks",
+        "areaKm2": 9345.38646729231,
+        "percent": 60.86292577075717
+      },
+      "classes": [
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 9345.38646729231,
+          "percent": 60.86292577075717
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 5725.293977980864,
+          "percent": 37.2866487241777
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 282.17279490256624,
+          "percent": 1.8376834313688746
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1.9565211757110745,
+          "percent": 0.012742073696254453
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 476.4225706401741,
+          "percentOfRegion": 3.009383986345922
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 13,
+      "medianMwM2": 7820.0,
+      "p10MwM2": 1632.0000000000002,
+      "p90MwM2": 54672.000000000015,
+      "maxMwM2": 109480.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 12,
+          "percent": 92.3076923076923
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

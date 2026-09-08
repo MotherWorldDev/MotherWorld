@@ -1,0 +1,534 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_173",
+  "regionName": "Northland temperate kauri forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.232995+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 103.98449920295158,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Kerepehi Central",
+            "kinematics": "Normal-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.071507116710315
+          },
+          {
+            "name": "Wairoa North",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.2095384812366
+          },
+          {
+            "name": "Kerepehi South",
+            "kinematics": "Normal-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.54651794662139
+          },
+          {
+            "name": "Kerepehi North",
+            "kinematics": "Normal-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.156935658383272
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 87.19926470587353,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 10140.554897177493,
+        "percent": 38.8420089624386
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 10140.554897177493,
+          "percent": 38.8420089624386
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 5791.315867950557,
+          "percent": 22.18284355522395
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4257.0196200531,
+          "percent": 16.305931570017247
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 3514.3509943733525,
+          "percent": 13.461240948323175
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2170.098444250187,
+          "percent": 8.312265361770416
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 233.84455737321662,
+          "percent": 0.8957096022266112
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3832.4997081759107,
+          "percentOfRegion": 12.80073529412658
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 44,
+      "medianMwM2": 81.0,
+      "p10MwM2": 55.9,
+      "p90MwM2": 107.3,
+      "maxMwM2": 142.12,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 4.545454545454546
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 4,
+          "percent": 9.090909090909092
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 15,
+          "percent": 34.090909090909086
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 16,
+          "percent": 36.36363636363637
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 7,
+          "percent": 15.909090909090908
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 33,
+      "commodityCount": 16,
+      "commodities": [
+        {
+          "label": "General",
+          "count": 9,
+          "sharePct": 16.071428571428573
+        },
+        {
+          "label": "Limestone",
+          "count": 9,
+          "sharePct": 16.071428571428573
+        },
+        {
+          "label": "Gold",
+          "count": 8,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Silica",
+          "count": 4,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Platinum",
+          "count": 4,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Brick Clay",
+          "count": 3,
+          "sharePct": 5.357142857142857
+        },
+        {
+          "label": "Kaolin",
+          "count": 3,
+          "sharePct": 5.357142857142857
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 5.357142857142857
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "Pumice",
+          "count": 2,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "Quartz",
+          "count": 2,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "Perlite",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        }
+      ],
+      "sites": [
+        {
+          "name": "Otoroa",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Te Pene",
+          "depositType": null,
+          "commodities": [
+            "Brick Clay",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Maungaparerua",
+          "depositType": null,
+          "commodities": [
+            "Brick Clay",
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Putahi",
+          "depositType": null,
+          "commodities": [
+            "Brick Clay",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Pokapu",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Hikurangi",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Portland",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Mt Hobson",
+          "depositType": null,
+          "commodities": [
+            "Perlite"
+          ]
+        },
+        {
+          "name": "Dairy Flat",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Puni",
+          "depositType": null,
+          "commodities": [
+            "Pumice",
+            "Quartz",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Mercer",
+          "depositType": null,
+          "commodities": [
+            "Pumice",
+            "Quartz",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Kopuku",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Coromandel",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Golden Cross",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Karangahake",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Waihi",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Huntly",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Marakopa",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Hangatiki",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Te Kumi",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Waterfall Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Wade",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Upper Mangaorongo Valley",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kerikeri",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Palladium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Bauxite - New Zealand",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Komata",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Oue",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Turiwiri",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Waikato North Head",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Te Kuiti",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Auckland Operation",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Golden Crosswaihi",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "North Island West Coast",
+          "depositType": "SYNGENETIC SEDIMENT-HOSTED (NON-CARBONIFEROUS)",
+          "commodities": [
+            "Vanadium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

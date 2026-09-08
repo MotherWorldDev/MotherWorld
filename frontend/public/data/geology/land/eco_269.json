@@ -1,0 +1,158 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_269",
+  "regionName": "South Taiwan monsoon rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.757376+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 92.83130549608019,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Chaochou fault",
+            "kinematics": "Reverse-Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 61.00594680978356
+          },
+          {
+            "name": "Hengchun fault",
+            "kinematics": "Reverse-Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.812103477654823
+          },
+          {
+            "name": "Hengchun offshore structure",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.730956133504078
+          },
+          {
+            "name": "Kaoping River structure",
+            "kinematics": "Reverse-Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.28229907513772434
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 93.75433898021235,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 2214.5929529643163,
+        "percent": 91.81373852580677
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2214.5929529643163,
+          "percent": 91.81373852580677
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 197.4566907192859,
+          "percent": 8.186261474193234
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 160.6842371372963,
+          "percentOfRegion": 6.24566101978746
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 92.9292,
+      "p10MwM2": 71.83176,
+      "p90MwM2": 181.42124,
+      "maxMwM2": 219.3464,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 50.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

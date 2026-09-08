@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_796",
+  "regionName": "Mediterranean Acacia-Argania dry woodlands and succulent thickets",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.345836+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 8,
+        "intersectionLengthKm": 365.66538973866864,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "South Atlas Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 108.79370796756417
+          },
+          {
+            "name": "North Atlas Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 108.57772208447766
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.73063802693767
+          },
+          {
+            "name": "Kasbah Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.35831078571785
+          },
+          {
+            "name": "South Atlas Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.675651689856895
+          },
+          {
+            "name": "North Atlas Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.991221911223896
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.553356259939113
+          },
+          {
+            "name": "Beni-Mellal Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.984781012951365
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 93.47979968812928,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 35013.95016207158,
+        "percent": 37.482673173558
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 35013.95016207158,
+          "percent": 37.482673173558
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 18932.74440202702,
+          "percent": 20.26763239836926
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 18840.437520101616,
+          "percent": 20.1688172498109
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 13193.221103397193,
+          "percent": 14.12343344398784
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 4826.961468521424,
+          "percent": 5.167295272554921
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2605.851437008121,
+          "percent": 2.7895817895470216
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 0.5293494169668199,
+          "percent": 0.0005666721720611166
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 6515.589551854981,
+          "percentOfRegion": 6.520200311870723
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 266,
+      "medianMwM2": 63.0,
+      "p10MwM2": 56.0,
+      "p90MwM2": 73.5,
+      "maxMwM2": 103.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 42,
+          "percent": 15.789473684210526
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 216,
+          "percent": 81.203007518797
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 6,
+          "percent": 2.2556390977443606
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 0.7518796992481203
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 34,
+      "commodityCount": 14,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 25,
+          "sharePct": 32.05128205128205
+        },
+        {
+          "label": "Uranium",
+          "count": 14,
+          "sharePct": 17.94871794871795
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 9,
+          "sharePct": 11.538461538461538
+        },
+        {
+          "label": "Magnesite",
+          "count": 6,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Manganese",
+          "count": 5,
+          "sharePct": 6.41025641025641
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 5,
+          "sharePct": 6.41025641025641
+        },
+        {
+          "label": "Aluminum",
+          "count": 3,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Calcium",
+          "count": 3,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Chlorine",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Potassium",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Sodium",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        }
+      ],
+      "sites": [
+        {
+          "name": "Idikel",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tasdremt",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Oufrent",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Aoufour",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sidi-Daoui Opencast Operations",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Meraa-El-Arech",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Ben-Guerir",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Khouribga",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Tiranimine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Daoui Nord",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Merra El Arech",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Calcium",
+            "Iron",
+            "Magnesite",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Maroc Phosphore-1 Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Ben Guerir",
+          "depositType": null,
+          "commodities": [
+            "Magnesite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Kettara Mines",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Benguerir",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Sidi Hajjaj",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Mrzig",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Southern Khouribga Region",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Calcium",
+            "Chlorine",
+            "Fluorine-Fluorite",
+            "Iron",
+            "Magnesite",
+            "Phosphorus-Phosphates",
+            "Potassium",
+            "Silica",
+            "Sodium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Sidi Daoui-Recette 4",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Ouled Fares",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Recette 4 Khouribga Area",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Tessaout",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "El Outa",
+          "depositType": null,
+          "commodities": [
+            "Magnesite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "N'Zala",
+          "depositType": null,
+          "commodities": [
+            "Magnesite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Tessaout",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Sidi Chennane",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Jbel Ihroud",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Khouribga Underground",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Calcium",
+            "Fluorine-Fluorite",
+            "Iron",
+            "Magnesite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Al Borouj",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Seksaoua",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Ganntour",
+          "depositType": "CHEMICAL SEDIMENT, MARINE, RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Meskala",
+          "depositType": "CHEMICAL SEDIMENT, MARINE",
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Oulad-Abdoun",
+          "depositType": "CHEMICAL SEDIMENT, MARINE, RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Youssoufia",
+          "depositType": "CHEMICAL SEDIMENT, MARINE, RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

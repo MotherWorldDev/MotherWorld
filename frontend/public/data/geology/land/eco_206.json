@@ -1,0 +1,607 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_206",
+  "regionName": "Southwest Australia woodlands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.412564+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 27.81235372128539,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Serpentine Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.960848988901565
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.017142618313481
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.5944509621279366
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.5056336994939663
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.112656216111103
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.8771904106980957
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.74443082563924
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.13142022551303,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 49251.239919882166,
+        "percent": 82.31962553758453
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 49251.239919882166,
+          "percent": 82.31962553758453
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 8999.184216898448,
+          "percent": 15.041438064988993
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 673.8936796323312,
+          "percent": 1.1263609900932456
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 513.8695893324958,
+          "percent": 0.8588931413263109
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 391.09339849680725,
+          "percent": 0.6536822660069087
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 524.2182862955976,
+          "percentOfRegion": 0.868579774486984
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 69,
+      "commodityCount": 22,
+      "commodities": [
+        {
+          "label": "Titanium",
+          "count": 40,
+          "sharePct": 23.668639053254438
+        },
+        {
+          "label": "Zirconium",
+          "count": 36,
+          "sharePct": 21.301775147928996
+        },
+        {
+          "label": "Metal",
+          "count": 24,
+          "sharePct": 14.201183431952662
+        },
+        {
+          "label": "REE",
+          "count": 17,
+          "sharePct": 10.059171597633137
+        },
+        {
+          "label": "Aluminum",
+          "count": 17,
+          "sharePct": 10.059171597633137
+        },
+        {
+          "label": "Thorium",
+          "count": 5,
+          "sharePct": 2.9585798816568047
+        },
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 1.7751479289940828
+        },
+        {
+          "label": "Lithium",
+          "count": 3,
+          "sharePct": 1.7751479289940828
+        },
+        {
+          "label": "Tantalum",
+          "count": 3,
+          "sharePct": 1.7751479289940828
+        },
+        {
+          "label": "Tin",
+          "count": 3,
+          "sharePct": 1.7751479289940828
+        },
+        {
+          "label": "Vanadium",
+          "count": 2,
+          "sharePct": 1.183431952662722
+        },
+        {
+          "label": "Diatomite",
+          "count": 2,
+          "sharePct": 1.183431952662722
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 2,
+          "sharePct": 1.183431952662722
+        },
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 1.183431952662722
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 1.183431952662722
+        },
+        {
+          "label": "Pigment",
+          "count": 2,
+          "sharePct": 1.183431952662722
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Kaolin",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Kyanite",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        }
+      ],
+      "sites": [
+        {
+          "name": "Wundowie",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Capel South Amc Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Cable Sands Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "North Capel Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Yoganup Extended Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Lake Gnangara Diatomite Deposit",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Gingin Diatomite Deposit",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Capel Amc Depost",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Capel North Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Dunkley/Norton Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Waroona Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Yoganup Extended Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Capel Amc",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Cooljarloo",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Dunkley/Norton",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Gingin",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Waroona North",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Yoganup Extended",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Coates",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Yoganup Centalmine, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "North Boyanup, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Wonnerup Mine, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Jurien Deposit, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Cooljarloo Prospect, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "North Capel Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Mount Saddleback",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Del Park-Huntly Mine",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Huntley Mine",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Jarrahdale Mine",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Willowdale Mine",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Hedges Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Greenbushes Mine",
+          "depositType": null,
+          "commodities": [
+            "Lithium",
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Bauxite-Australia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Yoganup Extended Mine, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Capel South Mine, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Mt Saddleback Mine",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Del Park",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Boddington Gold Deposit",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Huntley",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Pinjarra",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

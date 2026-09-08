@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "regionId": "lake_onega",
+  "regionName": "Lake Onega",
+  "kind": "lakes",
+  "generatedAt": "2026-09-08T09:35:48.261184+00:00",
+  "sections": {
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Pudozhgorsk Pudozhgorskoe Deposits",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

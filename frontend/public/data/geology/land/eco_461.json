@@ -1,0 +1,190 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_461",
+  "regionName": "Eastern Panamanian montane forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.623546+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 49.65282494182071,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "PIERRE HILLS FAULT SYSTEM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.57151381825706
+          },
+          {
+            "name": "Falla de Los Saltos",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.940324444576424
+          },
+          {
+            "name": "JAQUE RIVER FAULT",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.137553892012136
+          },
+          {
+            "name": "Rio Gatun Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.003432786975087
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 92.34618763555272,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 1296.582230153507,
+        "percent": 49.657617625738794
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1296.582230153507,
+          "percent": 49.657617625738794
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1153.00560350603,
+          "percent": 44.15879691059621
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 64.65209852093774,
+          "percent": 2.4761014861928348
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 58.57664538821961,
+          "percent": 2.243418574495136
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 38.22739140628068,
+          "percent": 1.4640654029770213
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 216.40785749299388,
+          "percentOfRegion": 7.653812364447204
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 22.22222222222222
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 22.22222222222222
+        },
+        {
+          "label": "Molybdenum",
+          "count": 2,
+          "sharePct": 22.22222222222222
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        }
+      ],
+      "sites": [
+        {
+          "name": "Rio Pito",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Rio Semble",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_202",
+  "regionName": "Jarrah-Karri forest and shrublands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.048639+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 88.37949684453811,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 5924.137571739355,
+        "percent": 79.87088666941024
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 5924.137571739355,
+          "percent": 79.87088666941024
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1493.0050427650626,
+          "percent": 20.129113330589764
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 975.2367034627068,
+          "percentOfRegion": 11.620503155461973
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 50.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Beenup",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

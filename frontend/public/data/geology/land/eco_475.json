@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_475",
+  "regionName": "Leeward Islands moist forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.694086+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 3.458171769530927,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.9375746663876845
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.5205971031432428
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 77.51884290845346,
+      "dominantClass": {
+        "code": "vi",
+        "label": "Intermediate volcanic rocks",
+        "areaKm2": 683.8676999536764,
+        "percent": 94.9234590779144
+      },
+      "classes": [
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 683.8676999536764,
+          "percent": 94.9234590779144
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 36.573491925297425,
+          "percent": 5.076540922085612
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 208.93438294711717,
+          "percentOfRegion": 22.481157091546542
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 10,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 7,
+          "sharePct": 41.17647058823529
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 17.647058823529413
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Stone",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        }
+      ],
+      "sites": [
+        {
+          "name": "Galway's Soufriere",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Soufrieve Hills",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Les Mamelles",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mt. Misery",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Profit Mountain",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Red Point",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bordeaux Mountain",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Muhlenfels Point",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "H S Truman Airport Project",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Brookman Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

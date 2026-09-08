@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_104",
+  "regionName": "Namibian savanna woodlands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.022331+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 97.4849006226436,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 52302.36764130055,
+        "percent": 52.25098056087012
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 52302.36764130055,
+          "percent": 52.25098056087012
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 14429.149736519816,
+          "percent": 14.414973095738686
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 8452.509851052204,
+          "percent": 8.444205259441095
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 7456.358473860741,
+          "percent": 7.449032601058152
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 6601.888708675654,
+          "percent": 6.5954023524863485
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 4064.476942876289,
+          "percent": 4.06048359395175
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 3370.2963228469407,
+          "percent": 3.3669850064376283
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 2141.204837953091,
+          "percent": 2.1391011040269228
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 1280.0941185641207,
+          "percent": 1.2788364259892775
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2582.52598797059,
+          "percentOfRegion": 2.5150993773565062
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 8,
+      "commodityCount": 8,
+      "commodities": [
+        {
+          "label": "Tin",
+          "count": 3,
+          "sharePct": 27.27272727272727
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Dimension",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Marble",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Stone",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        }
+      ],
+      "sites": [
+        {
+          "name": "Karibib Marble",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Dimension",
+            "Marble",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Brandberg West",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Krantzberg",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Uis Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Fluswa Kohero Operations",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Uis Tin Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Wonarah",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Uisiscor",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

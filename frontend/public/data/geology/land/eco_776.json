@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_776",
+  "regionName": "Northwest Russian-Novaya Zemlya tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.199280+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 93.93986541060545,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 84220.74550596857,
+        "percent": 31.326981822199556
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 84220.74550596857,
+          "percent": 31.326981822199556
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 77038.86225239815,
+          "percent": 28.655588630627587
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 57915.24510945195,
+          "percent": 21.542315018375803
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 38688.54275238921,
+          "percent": 14.390697544295605
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 7119.163346058016,
+          "percent": 2.648063721015432
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 2120.5292525862124,
+          "percent": 0.7887579354721211
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1741.0218967492262,
+          "percent": 0.6475953280139177
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 17343.344955256973,
+          "percentOfRegion": 6.060134589394515
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 58,
+      "medianMwM2": 41.0,
+      "p10MwM2": 32.0,
+      "p90MwM2": 50.0,
+      "maxMwM2": 63.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 17,
+          "percent": 29.310344827586203
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 38,
+          "percent": 65.51724137931035
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 3,
+          "percent": 5.172413793103448
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Rhodium",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Rai-Iz Massif",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Palladium",
+            "Platinum",
+            "Rhodium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

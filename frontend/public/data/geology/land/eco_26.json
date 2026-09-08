@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_26",
+  "regionName": "Northwest Congolian lowland forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.064334+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000004,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 335169.8517069059,
+        "percent": 77.55055660249448
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 335169.8517069059,
+          "percent": 77.55055660249448
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 96698.93895341527,
+          "percent": 22.37389938420132
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 326.4976661134824,
+          "percent": 0.07554401330420811
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 6,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 5,
+          "sharePct": 71.42857142857143
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        }
+      ],
+      "sites": [
+        {
+          "name": "Ovali",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Torrent Kanda",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Imeno-M'Bila",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Missoumbini",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

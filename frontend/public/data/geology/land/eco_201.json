@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_201",
+  "regionName": "Hampton mallee and woodlands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.384295+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 6,
+        "intersectionLengthKm": 135.0173216295624,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Madura Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 64.92623316193507
+          },
+          {
+            "name": "Madura Scarp Splay",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.666873934165817
+          },
+          {
+            "name": "Forrest Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.64013798101798
+          },
+          {
+            "name": "Horseshoe Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.364706602255056
+          },
+          {
+            "name": "Mundrabilla Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.87041058285103
+          },
+          {
+            "name": "Moonera Scarp 3",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.548959367337428
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 88.4445504763098,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 6785.082886646192,
+        "percent": 70.65847841879057
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 6785.082886646192,
+          "percent": 70.65847841879057
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2817.5621723532686,
+          "percent": 29.34152158120944
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1254.603926139052,
+          "percentOfRegion": 11.55544952369025
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    }
+  ]
+}

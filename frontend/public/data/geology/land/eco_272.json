@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_272",
+  "regionName": "Southern Annamites montane rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.763932+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 5,
+        "intersectionLengthKm": 154.52036085494458,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.5651623891648
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 45.31589658120382
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.765743160598845
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.878468221274954
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.995090502702169
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.73388833692005,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 15635.152780578688,
+        "percent": 33.89956984129241
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 15635.152780578688,
+          "percent": 33.89956984129241
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 8454.770813352827,
+          "percent": 18.33132670346485
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 4850.113649032571,
+          "percent": 10.515840087460907
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 4795.701756342804,
+          "percent": 10.397866199880808
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 3709.7511974164545,
+          "percent": 8.043347677858934
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 2883.1103658272186,
+          "percent": 6.251055079418066
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2485.473043934105,
+          "percent": 5.388912294234411
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 2283.523376787102,
+          "percent": 4.951052367826823
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1024.3828936935392,
+          "percent": 2.2210297485627812
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 123.06345389982673,
+          "percentOfRegion": 0.266111663079989
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 6,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 22.22222222222222
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        }
+      ],
+      "sites": [
+        {
+          "name": "Ban Namtang",
+          "depositType": "Residual",
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Sekong",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Houei Vi",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Muong Sanxay",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Nong Ta",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Attopeu",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

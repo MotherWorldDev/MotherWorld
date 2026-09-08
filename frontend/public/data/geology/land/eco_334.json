@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_334",
+  "regionName": "Eastern Great Lakes lowland forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.085865+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 92.82754292234272,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 54593.34288475884,
+        "percent": 45.4895150803518
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 54593.34288475884,
+          "percent": 45.4895150803518
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 27304.80385319858,
+          "percent": 22.75153381371128
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 23858.437812385288,
+          "percent": 19.87987379617174
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 9453.48710648414,
+          "percent": 7.877050965720897
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3829.981457391353,
+          "percent": 3.191304837867163
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 390.20177260781117,
+          "percent": 0.3251328546942384
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 334.7377776480314,
+          "percent": 0.27891787495824155
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 248.03184969416066,
+          "percent": 0.20667077652465893
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 8954.319292276658,
+          "percentOfRegion": 6.925977091311822
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 318.6641347198416,
+          "percentOfRegion": 0.2464799863453581
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 30,
+      "medianMwM2": 41.6595,
+      "p10MwM2": 30.51,
+      "p90MwM2": 52.39000000000002,
+      "maxMwM2": 71.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 13,
+          "percent": 43.333333333333336
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 14,
+          "percent": 46.666666666666664
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 3,
+          "percent": 10.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1300,
+      "commodityCount": 80,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 512,
+          "sharePct": 21.80579216354344
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 512,
+          "sharePct": 21.80579216354344
+        },
+        {
+          "label": "Stone",
+          "count": 190,
+          "sharePct": 8.091993185689947
+        },
+        {
+          "label": "Iron",
+          "count": 166,
+          "sharePct": 7.0698466780238505
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 151,
+          "sharePct": 6.431005110732538
+        },
+        {
+          "label": "Limestone",
+          "count": 90,
+          "sharePct": 3.8330494037478706
+        },
+        {
+          "label": "General",
+          "count": 76,
+          "sharePct": 3.2367972742759794
+        },
+        {
+          "label": "Lead",
+          "count": 57,
+          "sharePct": 2.4275979557069847
+        },
+        {
+          "label": "Dimension",
+          "count": 57,
+          "sharePct": 2.4275979557069847
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 56,
+          "sharePct": 2.385008517887564
+        },
+        {
+          "label": "Salt",
+          "count": 54,
+          "sharePct": 2.2998296422487225
+        },
+        {
+          "label": "Zinc",
+          "count": 37,
+          "sharePct": 1.5758091993185688
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 29,
+          "sharePct": 1.2350936967632027
+        },
+        {
+          "label": "Titanium",
+          "count": 23,
+          "sharePct": 0.9795570698466781
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 23,
+          "sharePct": 0.9795570698466781
+        },
+        {
+          "label": "Sulfur",
+          "count": 22,
+          "sharePct": 0.9369676320272573
+        },
+        {
+          "label": "Graphite",
+          "count": 20,
+          "sharePct": 0.8517887563884157
+        },
+        {
+          "label": "Marble",
+          "count": 19,
+          "sharePct": 0.8091993185689949
+        },
+        {
+          "label": "Natural Gas",
+          "count": 15,
+          "sharePct": 0.6388415672913117
+        },
+        {
+          "label": "Silica",
+          "count": 11,
+          "sharePct": 0.46848381601362865
+        },
+        {
+          "label": "Aluminum",
+          "count": 11,
+          "sharePct": 0.46848381601362865
+        },
+        {
+          "label": "REE",
+          "count": 11,
+          "sharePct": 0.46848381601362865
+        },
+        {
+          "label": "Copper",
+          "count": 10,
+          "sharePct": 0.42589437819420783
+        },
+        {
+          "label": "Feldspar",
+          "count": 9,
+          "sharePct": 0.3833049403747871
+        },
+        {
+          "label": "Zirconium",
+          "count": 9,
+          "sharePct": 0.3833049403747871
+        },
+        {
+          "label": "Flagstone",
+          "count": 9,
+          "sharePct": 0.3833049403747871
+        },
+        {
+          "label": "Silver",
+          "count": 8,
+          "sharePct": 0.34071550255536626
+        },
+        {
+          "label": "Calcium",
+          "count": 8,
+          "sharePct": 0.34071550255536626
+        },
+        {
+          "label": "Granite",
+          "count": 8,
+          "sharePct": 0.34071550255536626
+        },
+        {
+          "label": "Metal",
+          "count": 7,
+          "sharePct": 0.2981260647359455
+        }
+      ],
+      "sites": [
+        {
+          "name": "Elizabethtown-Westport Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Retsof Mine",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Fox Knoll",
+          "depositType": null,
+          "commodities": [
+            "Garnet",
+            "Wollastonite"
+          ]
+        },
+        {
+          "name": "Upton",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Cadmium",
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hudson Bay",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Joyceville",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Cornell Property",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Globe Graphite Mine",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Plattsburg",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium"
+          ]
+        },
+        {
+          "name": "Fonda",
+          "depositType": "Unknown",
+          "commodities": [
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Humbug Vein, Mineville",
+          "depositType": "Vein",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Westport Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Port Leyden Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Split Rock Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "La Vallee Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Mattabi Zn, Cu, Ag, Pb Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sturgeon Lake & Mattagami Prospect Ag Cu Zn Pb",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Balmat - Edwards District",
+          "depositType": "replacement",
+          "commodities": [
+            "Lead",
+            "Mercury",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Stitts Road Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Leto Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Town of Victory Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Franklin Street Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Harkington Sand and Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Hanover Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Pallette Quarry",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Morrisonville Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Jones Road Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Peppermint Plant",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Sterling Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Peters Corners Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Clarence Sand and Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Olivieri Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Lancaster Quarry and Plant",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Limestone Quarry and Plant",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Buffalo Quarry and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Clarence Center Mine",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Gypsum-Anhydrite"
+          ]
+        },
+        {
+          "name": "Jacques Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Witherbee Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Sawyer Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Biglow Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

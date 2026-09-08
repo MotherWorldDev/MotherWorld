@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_441",
+  "regionName": "Atlantic Coast restingas",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.115855+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 59.48365156127079,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 3468.626761019342,
+        "percent": 73.98485414748343
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3468.626761019342,
+          "percent": 73.98485414748343
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 461.1957221081762,
+          "percent": 9.837177818344822
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 452.70202492788655,
+          "percent": 9.656009595197068
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 254.82430040620093,
+          "percent": 5.4353321927455855
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 50.944222575376855,
+          "percent": 1.0866262462290828
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 537.1581505768665,
+          "percentOfRegion": 6.815301016955335
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2656.1984952016983,
+          "percentOfRegion": 33.701047421773936
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 86.5,
+      "p10MwM2": 64.5,
+      "p90MwM2": 91.0,
+      "maxMwM2": 91.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3,
+          "percent": 75.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "REE",
+          "count": 2,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Thorium",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        }
+      ],
+      "sites": [
+        {
+          "name": "Marau Manganese",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Buena",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Thorium"
+          ]
+        },
+        {
+          "name": "Sao Joao Da Barro Buena",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

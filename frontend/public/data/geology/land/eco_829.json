@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_829",
+  "regionName": "Kopet Dag semi-desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.558182+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 186.02266051647788,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 78.34916360391678
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 69.91180354186011
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.66696027811004
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.09473309259094802
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999994,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 16780.576171392313,
+        "percent": 63.87064621852277
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 16780.576171392313,
+          "percent": 63.87064621852277
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4232.299704038666,
+          "percent": 16.109084356010133
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 3339.3219996124053,
+          "percent": 12.710210416408923
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1920.5536389782014,
+          "percent": 7.310059009058169
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 10,
+      "medianMwM2": 41.5,
+      "p10MwM2": 31.7,
+      "p90MwM2": 53.8,
+      "maxMwM2": 61.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 40.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 5,
+          "percent": 50.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 10.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

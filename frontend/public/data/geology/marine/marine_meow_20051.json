@@ -1,0 +1,780 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20051",
+  "regionName": "Central Kuroshio Current",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.941397+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 51.793608509814966,
+        "medianAgeMa": 22.264272689819336,
+        "p10AgeMa": 17.245405197143555,
+        "p90AgeMa": 133.71023559570312,
+        "oldestAgeMa": 140.21437072753906,
+        "coveragePct": 34.37301235902373,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 28.84332294620099,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 37.749307150508876,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 11.170521627329398,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 22.23684827596075,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 103.57756893491782,
+          "medianMmYr": 88.31063842773438,
+          "p10MmYr": 49.503726959228516,
+          "p90MmYr": 201.92173767089844,
+          "coveragePct": 34.37301235902373
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 2,
+          "intersectionLengthKm": 391.41070712578386
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 11,
+        "confirmedOrInferredActive": 8,
+        "inactiveCount": 3,
+        "medianDepthM": 690.0,
+        "maxReportedTemperatureC": 278.0,
+        "tectonicSettings": [
+          {
+            "label": "arc volcano",
+            "count": 10
+          },
+          {
+            "label": "back-arc spreading center",
+            "count": 1
+          }
+        ],
+        "fields": [
+          {
+            "name": "Omuro Hole",
+            "activity": "active, confirmed",
+            "depthM": 200.0,
+            "maxTemperatureC": 194.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2012
+          },
+          {
+            "name": "Shinkurose Bank",
+            "activity": "inactive",
+            "depthM": 200.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1992
+          },
+          {
+            "name": "Kurose Hole",
+            "activity": "inactive",
+            "depthM": 760.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1989
+          },
+          {
+            "name": "Myojin Knoll",
+            "activity": "active, confirmed",
+            "depthM": 1360.0,
+            "maxTemperatureC": 278.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1996
+          },
+          {
+            "name": "Myojinsho Caldera",
+            "activity": "active, inferred",
+            "depthM": 1110.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1988
+          },
+          {
+            "name": "Sumisu Caldera",
+            "activity": "active, confirmed",
+            "depthM": 690.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1998
+          },
+          {
+            "name": "Nishi-Shichito Ridge",
+            "activity": "inactive",
+            "depthM": 1600.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": null
+          },
+          {
+            "name": "Bayonnaise Knoll caldera",
+            "activity": "active, inferred",
+            "depthM": 900.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2003
+          },
+          {
+            "name": "Nagahama Bay, Iwo-dake Volcano",
+            "activity": "active, confirmed",
+            "depthM": 26.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1994
+          },
+          {
+            "name": "Akuseki-jima",
+            "activity": "active, confirmed",
+            "depthM": 5.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1993
+          },
+          {
+            "name": "Kodakara-jima",
+            "activity": "active, confirmed",
+            "depthM": 10.0,
+            "maxTemperatureC": 80.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1993
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 105,
+        "intersectionLengthKm": 2507.1721266768545,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 74.64659932426368
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 71.50337943000778
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 65.82888786617751
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 63.080067287552936
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 62.45897738543522
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 62.23326293863677
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 56.63862690942429
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 56.20844817217489
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.256637746001125
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.13897593404825
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.71480277338306
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 51.982676523425
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.62624901746896
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.52731797267687
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.17748031642869
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 49.007758732372366
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.0081588367454
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 45.25378928376469
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.88773520821206
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.85485719487301
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.96865738598221
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.86166715295951
+          },
+          {
+            "name": "Mitsukue-oki",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.681972626715634
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.90678764415011
+          },
+          {
+            "name": "Iyonagahama-oki",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.44047526340833
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.775272367732676
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.08478371885274
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.04974053978138
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.04199905741526
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.98266303393737
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 530,
+      "medianMwM2": 88.0,
+      "p10MwM2": 40.86666667,
+      "p90MwM2": 196.65000000000003,
+      "maxMwM2": 4941.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 47,
+          "percent": 8.867924528301886
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 99,
+          "percent": 18.679245283018865
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 84,
+          "percent": 15.849056603773585
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 81,
+          "percent": 15.283018867924527
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 116,
+          "percent": 21.88679245283019
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 51,
+          "percent": 9.622641509433963
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 26,
+          "percent": 4.905660377358491
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 26,
+          "percent": 4.905660377358491
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 23,
+      "commodityCount": 19,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 8,
+          "sharePct": 18.6046511627907
+        },
+        {
+          "label": "Mercury",
+          "count": 3,
+          "sharePct": 6.976744186046512
+        },
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 6.976744186046512
+        },
+        {
+          "label": "Sulfur",
+          "count": 3,
+          "sharePct": 6.976744186046512
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 3,
+          "sharePct": 6.976744186046512
+        },
+        {
+          "label": "Nickel",
+          "count": 3,
+          "sharePct": 6.976744186046512
+        },
+        {
+          "label": "Aluminum",
+          "count": 3,
+          "sharePct": 6.976744186046512
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 4.651162790697675
+        },
+        {
+          "label": "Selenium",
+          "count": 2,
+          "sharePct": 4.651162790697675
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 4.651162790697675
+        },
+        {
+          "label": "Zinc",
+          "count": 2,
+          "sharePct": 4.651162790697675
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 4.651162790697675
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 2.3255813953488373
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 2.3255813953488373
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 2.3255813953488373
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 2.3255813953488373
+        },
+        {
+          "label": "Sodium",
+          "count": 1,
+          "sharePct": 2.3255813953488373
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 2.3255813953488373
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 2.3255813953488373
+        }
+      ],
+      "sites": [
+        {
+          "name": "Fuji",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Daito Mine",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Kuroki Mine",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "(Facility) Niihama Copper Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Selenium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "(Facility) Naoshima Copper Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "(Facility) Niihama Nickel Refinery",
+          "depositType": null,
+          "commodities": [
+            "Antimony"
+          ]
+        },
+        {
+          "name": "Harimapb",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "(Facility) Naoshima Copper Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur",
+            "Sulfuric Acid"
+          ]
+        },
+        {
+          "name": "(Facility) Shisaka-Jima Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Saganoseki",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Gold",
+            "Lead",
+            "Selenium",
+            "Silver",
+            "Sulfur",
+            "Sulfuric Acid"
+          ]
+        },
+        {
+          "name": "(Facility) Kikumoto Refinery",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "(Facility) Toyo Besshi Copper Smelter",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Gypsum-Anhydrite",
+            "Sodium",
+            "Sulfur",
+            "Sulfuric Acid"
+          ]
+        },
+        {
+          "name": "Kakogawa I",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Toyo",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "(Facility) Niihama Electrolytic Refinery",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "(Facility) Saganoseki Copper Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "(Facility) Niihama Besshi Copper Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Kakogawa Ii",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "(Facility) Harima Works Refinery",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "(Facility) Niihama Nickel Smelter",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "(Facility) Saganoseki Copper Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Sakaida Kagawa",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Minamata",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

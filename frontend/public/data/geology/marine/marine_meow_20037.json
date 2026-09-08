@@ -1,0 +1,281 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20037",
+  "regionName": "Gulf of St. Lawrence - Eastern Scotian Shelf",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.876760+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 180.4311354440739,
+        "medianAgeMa": 181.80307006835938,
+        "p10AgeMa": 168.9501495361328,
+        "p90AgeMa": 189.94541931152344,
+        "oldestAgeMa": 191.9825897216797,
+        "coveragePct": 10.325852305874001,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 100.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 15.634909328966373,
+          "medianMmYr": 15.809684753417969,
+          "p10MmYr": 14.7455472946167,
+          "p90MmYr": 16.322601318359375,
+          "coveragePct": 10.325852305874001
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 59,
+      "medianMwM2": 51.0,
+      "p10MwM2": 35.5444,
+      "p90MwM2": 70.0,
+      "maxMwM2": 75.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 9,
+          "percent": 15.254237288135593
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 31,
+          "percent": 52.54237288135594
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 19,
+          "percent": 32.20338983050847
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 15,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Halite",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Potassium",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Refiner",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        }
+      ],
+      "sites": [
+        {
+          "name": "Indian Head Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Grosse Ile",
+          "depositType": null,
+          "commodities": [
+            "Halite"
+          ]
+        },
+        {
+          "name": "Anse-A-La-Cabane",
+          "depositType": null,
+          "commodities": [
+            "Halite",
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Belledune Isf",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Bismuth",
+            "Copper",
+            "Lead",
+            "Refiner",
+            "Silver",
+            "Sulfur",
+            "Sulfuric Acid"
+          ]
+        },
+        {
+          "name": "Natashquan",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_545",
+  "regionName": "Sinaloan dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.083906+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 11,
+        "intersectionLengthKm": 99.99088831750018,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Amatlán de las Cañas",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.28014969277601
+          },
+          {
+            "name": "Santa Rosa Cinco Minas (Seccion A)",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.913866224584595
+          },
+          {
+            "name": "Santa Rosa Cinco Minas (Seccion C)",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.174569855900081
+          },
+          {
+            "name": "Tepuzhuacán",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.308796388051467
+          },
+          {
+            "name": "Tepehuaje\n",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.912966926579449
+          },
+          {
+            "name": "Santa Rosa Cinco Minas (Seccion B)",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.8536434912919
+          },
+          {
+            "name": "Ameca",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.2744083029699853
+          },
+          {
+            "name": "Z.F. Plan de Barrancas (Hostotipaquillo A)",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.7953456138206803
+          },
+          {
+            "name": "Z.F. Plan de Barrancas (Hostotipaquillo B)",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.4099288648258217
+          },
+          {
+            "name": "Z.F. Plan de Barrancas (Hostotipaquillo C)",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.7536697974308763
+          },
+          {
+            "name": "Z.F. Plan de Barrancas (Hostotipaquillo H)",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.3135431592693214
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.16520325502017,
+      "dominantClass": {
+        "code": "py",
+        "label": "Pyroclastics",
+        "areaKm2": 22780.97756016431,
+        "percent": 29.749081995218845
+      },
+      "classes": [
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 22780.97756016431,
+          "percent": 29.749081995218845
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 18858.149722351853,
+          "percent": 24.62636385496323
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 13756.05034074167,
+          "percent": 17.963665889065147
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 8563.300353096729,
+          "percent": 11.182589670753519
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 8351.131488683786,
+          "percent": 10.905523907109986
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2228.149413923049,
+          "percent": 2.9096819676564185
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2039.318571111104,
+          "percent": 2.6630927152328576
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 644.6444205934334,
+          "percentOfRegion": 0.8347967449794862
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 12,
+      "medianMwM2": 153.85,
+      "p10MwM2": 68.73,
+      "p90MwM2": 258.73,
+      "maxMwM2": 259.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 4,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 2,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 4,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 160,
+      "commodityCount": 22,
+      "commodities": [
+        {
+          "label": "Silver",
+          "count": 114,
+          "sharePct": 29.381443298969074
+        },
+        {
+          "label": "Gold",
+          "count": 112,
+          "sharePct": 28.865979381443296
+        },
+        {
+          "label": "Copper",
+          "count": 48,
+          "sharePct": 12.371134020618557
+        },
+        {
+          "label": "Lead",
+          "count": 43,
+          "sharePct": 11.082474226804123
+        },
+        {
+          "label": "Zinc",
+          "count": 36,
+          "sharePct": 9.278350515463918
+        },
+        {
+          "label": "Tungsten",
+          "count": 6,
+          "sharePct": 1.5463917525773196
+        },
+        {
+          "label": "Molybdenum",
+          "count": 5,
+          "sharePct": 1.2886597938144329
+        },
+        {
+          "label": "Dimension",
+          "count": 3,
+          "sharePct": 0.7731958762886598
+        },
+        {
+          "label": "Marble",
+          "count": 3,
+          "sharePct": 0.7731958762886598
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 0.7731958762886598
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 3,
+          "sharePct": 0.7731958762886598
+        },
+        {
+          "label": "Graphite",
+          "count": 2,
+          "sharePct": 0.5154639175257731
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        },
+        {
+          "label": "Stone",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 0.25773195876288657
+        }
+      ],
+      "sites": [
+        {
+          "name": "La Aurora Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Maquipo",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Jerocoa",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite"
+          ]
+        },
+        {
+          "name": "Productos Calcareous",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Piedras Verdes",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "San Alberto",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Las Yedras Mine",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Algorroba-Pichucate",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Blanca",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "San Pascual",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Magnesite",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "La Guadalupe",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Maria Bonita",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Antonio Rosales",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "La Victoria",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Las Tablas",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Lupita",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Maria",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Piedras Verdes",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "El Cobre",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "El Manto",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "El Toro",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "La Quintera",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Promontorio",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "San Manuel",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Santo Domingo",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "El Tranvia",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "La Cocinera",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Margarita",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Topiyeca",
+          "depositType": "Contact Metamorphic",
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "San Cayetano",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Gochico",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sara Alicia",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Moniguasa",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "El Triunfo",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "La Verde",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "La Reyna and Others",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Maria Bonita",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Las Trancas",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Ana Maria",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Alamos District",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

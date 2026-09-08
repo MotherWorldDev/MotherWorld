@@ -1,0 +1,805 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_81",
+  "regionName": "Highveld grasslands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.210348+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.83184932044544,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 163064.63801826962,
+        "percent": 67.67302293703821
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 163064.63801826962,
+          "percent": 67.67302293703821
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 28748.293820248116,
+          "percent": 11.930753170901435
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 13017.728632445182,
+          "percent": 5.402453033581083
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 10112.20831624394,
+          "percent": 4.196640753298172
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 7276.057888867471,
+          "percent": 3.0196174865906795
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 6255.49330645166,
+          "percent": 2.596075686026807
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 5361.3771429994595,
+          "percent": 2.225010908445182
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 3072.5416890163947,
+          "percent": 1.2751273772337848
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 2521.8860371705964,
+          "percent": 1.0466012356334498
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1027.361666075604,
+          "percent": 0.42636264022601067
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 502.0026082689891,
+          "percent": 0.20833477102518155
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 405.85763894519283,
+          "percentOfRegion": 0.16815067955453586
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 386,
+      "medianMwM2": 50.0,
+      "p10MwM2": 39.8,
+      "p90MwM2": 59.0,
+      "maxMwM2": 72.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 47,
+          "percent": 12.176165803108809
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 303,
+          "percent": 78.49740932642487
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 36,
+          "percent": 9.32642487046632
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 262,
+      "commodityCount": 39,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 220,
+          "sharePct": 21.50537634408602
+        },
+        {
+          "label": "Silver",
+          "count": 120,
+          "sharePct": 11.730205278592376
+        },
+        {
+          "label": "Platinum",
+          "count": 78,
+          "sharePct": 7.624633431085044
+        },
+        {
+          "label": "Osmium",
+          "count": 76,
+          "sharePct": 7.429130009775172
+        },
+        {
+          "label": "Iridium",
+          "count": 74,
+          "sharePct": 7.233626588465299
+        },
+        {
+          "label": "Uranium",
+          "count": 73,
+          "sharePct": 7.1358748778103624
+        },
+        {
+          "label": "PGE",
+          "count": 71,
+          "sharePct": 6.940371456500488
+        },
+        {
+          "label": "Rhodium",
+          "count": 71,
+          "sharePct": 6.940371456500488
+        },
+        {
+          "label": "Ruthenium",
+          "count": 69,
+          "sharePct": 6.744868035190615
+        },
+        {
+          "label": "Sulfur",
+          "count": 32,
+          "sharePct": 3.1280547409579667
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 30,
+          "sharePct": 2.932551319648094
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 14,
+          "sharePct": 1.3685239491691104
+        },
+        {
+          "label": "Copper",
+          "count": 12,
+          "sharePct": 1.1730205278592376
+        },
+        {
+          "label": "Lead",
+          "count": 10,
+          "sharePct": 0.9775171065493646
+        },
+        {
+          "label": "Zinc",
+          "count": 9,
+          "sharePct": 0.8797653958944283
+        },
+        {
+          "label": "Iron",
+          "count": 8,
+          "sharePct": 0.7820136852394917
+        },
+        {
+          "label": "Vanadium",
+          "count": 7,
+          "sharePct": 0.6842619745845552
+        },
+        {
+          "label": "Chromium",
+          "count": 7,
+          "sharePct": 0.6842619745845552
+        },
+        {
+          "label": "Nickel",
+          "count": 4,
+          "sharePct": 0.39100684261974583
+        },
+        {
+          "label": "Titanium",
+          "count": 4,
+          "sharePct": 0.39100684261974583
+        },
+        {
+          "label": "Subbituminous",
+          "count": 4,
+          "sharePct": 0.39100684261974583
+        },
+        {
+          "label": "Metal",
+          "count": 3,
+          "sharePct": 0.2932551319648094
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 3,
+          "sharePct": 0.2932551319648094
+        },
+        {
+          "label": "Asbestos",
+          "count": 3,
+          "sharePct": 0.2932551319648094
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 3,
+          "sharePct": 0.2932551319648094
+        },
+        {
+          "label": "Manganese",
+          "count": 3,
+          "sharePct": 0.2932551319648094
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 0.19550342130987292
+        },
+        {
+          "label": "Tin",
+          "count": 2,
+          "sharePct": 0.19550342130987292
+        },
+        {
+          "label": "Dolomite",
+          "count": 1,
+          "sharePct": 0.09775171065493646
+        },
+        {
+          "label": "Quartz",
+          "count": 1,
+          "sharePct": 0.09775171065493646
+        }
+      ],
+      "sites": [
+        {
+          "name": "(Facility) Impala Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Roodekrans 203",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Rooiwater Complex",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Piet Retief Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Cradock",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Cala",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "East Rand Proprietary Mines, Ltd.",
+          "depositType": "Fossil Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "PGE",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Orion and Minerva",
+          "depositType": null,
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Winterveld 293 Kt",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Virginia",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "PGE",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Pres. Brand",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Pres. Steyn",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Welkom",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Freddies",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Loraine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Vaal Reefs",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Doornfontein",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Western Deeps",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "West Driefontein",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Western Areas",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Venterspost",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Randfontein Est.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "West Rand Consol.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Luipaardsvlei",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Rand Leases",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "PGE",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Cons. Main Reef",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Langaagte Est.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "PGE",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Robinson Deep, Ltd.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Nourse Mines",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Rose Deep, Ltd.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Wit G. M.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium"
+          ]
+        },
+        {
+          "name": "East Rand Prop. Mines",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Lead",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Uranium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Geduld",
+          "depositType": null,
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "PGE",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Springs",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Lead",
+            "Osmium",
+            "PGE",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Silver",
+            "Uranium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Govt. G. M. Areas",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Lead",
+            "Osmium",
+            "PGE",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Silver",
+            "Uranium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Van Ryn Deep",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "New Modder",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Lead",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Uranium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Brakpan",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "S. A. Lands",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "PGE",
+            "Platinum",
+            "Rhodium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Dagga",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

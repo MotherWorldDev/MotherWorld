@@ -1,0 +1,640 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25035",
+  "regionName": "Western Mediterranean",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.110720+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 12.652127867130693,
+        "medianAgeMa": 12.480575561523438,
+        "p10AgeMa": 8.151524543762207,
+        "p90AgeMa": 19.01152801513672,
+        "oldestAgeMa": 22.15298843383789,
+        "coveragePct": 25.446464486740535,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 99.10019862018967,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.8998013798103279,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 77.42427020396948,
+          "medianMmYr": 100.53270721435547,
+          "p10MmYr": 29.77375602722168,
+          "p90MmYr": 103.7726821899414,
+          "coveragePct": 25.446464486740535
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 5,
+          "intersectionLengthKm": 988.8270024211823
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 12,
+        "confirmedOrInferredActive": 12,
+        "inactiveCount": 0,
+        "medianDepthM": 245.0,
+        "maxReportedTemperatureC": 135.0,
+        "tectonicSettings": [
+          {
+            "label": "arc volcano",
+            "count": 8
+          },
+          {
+            "label": "other",
+            "count": 3
+          },
+          {
+            "label": "back-arc spreading center",
+            "count": 1
+          }
+        ],
+        "fields": [
+          {
+            "name": "Palinuro",
+            "activity": "active, confirmed",
+            "depthM": 1000.0,
+            "maxTemperatureC": 54.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 2006
+          },
+          {
+            "name": "Stromboli",
+            "activity": "active, inferred",
+            "depthM": 250.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1969
+          },
+          {
+            "name": "Sisifo",
+            "activity": "active, inferred",
+            "depthM": 1200.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 2007
+          },
+          {
+            "name": "Panarea",
+            "activity": "active, confirmed",
+            "depthM": 200.0,
+            "maxTemperatureC": 135.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1800
+          },
+          {
+            "name": "Secca del Capo",
+            "activity": "active, inferred",
+            "depthM": 240.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1995
+          },
+          {
+            "name": "Enarete Seamount",
+            "activity": "active, confirmed",
+            "depthM": 600.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 2011
+          },
+          {
+            "name": "Eolo Seamount",
+            "activity": "active, inferred",
+            "depthM": 800.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1976
+          },
+          {
+            "name": "Vulcano",
+            "activity": "active, confirmed",
+            "depthM": 8.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1960
+          },
+          {
+            "name": "Capo Miseno, Gulf of Naples",
+            "activity": "active, confirmed",
+            "depthM": 20.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "other",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1982
+          },
+          {
+            "name": "Ischia Island, Gulf of Naples",
+            "activity": "active, confirmed",
+            "depthM": 10.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "other",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1954
+          },
+          {
+            "name": "Capo Palinuro",
+            "activity": "active, confirmed",
+            "depthM": 30.0,
+            "maxTemperatureC": 25.0,
+            "tectonicSetting": "other",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1990
+          },
+          {
+            "name": "Marsili",
+            "activity": "active, confirmed",
+            "depthM": 800.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "Mediterranean",
+            "discoveryYear": 2006
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 51,
+        "intersectionLengthKm": 2577.099776669056,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 302.2177509024529
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 153.99193795654637
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 110.56217451333913
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 109.5340834809988
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 107.33660641732547
+          },
+          {
+            "name": "Khar Al Din Fault",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 87.10640792788504
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 81.0462579469407
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.61328447177428
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.01277434741299
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 78.70226633530228
+          },
+          {
+            "name": "",
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.55799260011966
+          },
+          {
+            "name": "Marza Fault",
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.51230349410868
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.1916457756521
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 58.48107655307341
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 57.34735206932237
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 57.05852522696656
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.87965985740508
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.55144019938899
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.974194298541256
+          },
+          {
+            "name": "Arzew Fault",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.48097344163199
+          },
+          {
+            "name": "",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 46.54774392692073
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 46.437011937326865
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 45.7505674127517
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.16948025279454
+          },
+          {
+            "name": "",
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.388868799859715
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.58608669923024
+          },
+          {
+            "name": "",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.826325517814375
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.49042188158456
+          },
+          {
+            "name": "Mitidja Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 32.20236914610787
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.25128716936245
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1244,
+      "medianMwM2": 90.0,
+      "p10MwM2": 47.86,
+      "p90MwM2": 159.0,
+      "maxMwM2": 921.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 85,
+          "percent": 6.832797427652733
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 139,
+          "percent": 11.173633440514468
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 256,
+          "percent": 20.578778135048232
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 220,
+          "percent": 17.684887459807076
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 371,
+          "percent": 29.82315112540193
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 118,
+          "percent": 9.485530546623794
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 33,
+          "percent": 2.652733118971061
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 16,
+          "percent": 1.2861736334405145
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 9,
+      "commodityCount": 10,
+      "commodities": [
+        {
+          "label": "Lead",
+          "count": 4,
+          "sharePct": 21.052631578947366
+        },
+        {
+          "label": "Zinc",
+          "count": 4,
+          "sharePct": 21.052631578947366
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 10.526315789473683
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 2,
+          "sharePct": 10.526315789473683
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 10.526315789473683
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "General",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Limestone",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Mercury",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        }
+      ],
+      "sites": [
+        {
+          "name": "Celdran Mine",
+          "depositType": "Replacement",
+          "commodities": [
+            "Iron",
+            "Lead",
+            "Sulfur-Pyrite",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Coto Ponce Mine",
+          "depositType": "Replacement",
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cartagena Mines",
+          "depositType": "Replacement",
+          "commodities": [
+            "Iron",
+            "Lead",
+            "Silver",
+            "Sulfur-Pyrite",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sete Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Algiers",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Fej Hassen",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Genoa Conversion Plant",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Annaba Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Ismail Taght",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

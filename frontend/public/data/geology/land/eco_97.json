@@ -1,0 +1,669 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_97",
+  "regionName": "Kalahari xeric savanna",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.224551+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.58924105071539,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 430885.4000726931,
+        "percent": 63.108289826238085
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 430885.4000726931,
+          "percent": 63.108289826238085
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 71443.99999393403,
+          "percent": 10.463823228176896
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 64589.855794582785,
+          "percent": 9.459952318253949
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 35030.653827944305,
+          "percent": 5.130655747917108
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 24588.730633345876,
+          "percent": 3.601311947461436
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 15605.618140200822,
+          "percent": 2.285628318674159
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 14084.1409034406,
+          "percent": 2.0627898878401387
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 13134.617969756087,
+          "percent": 1.9237209649072367
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 12138.295675069743,
+          "percent": 1.777797719137478
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1270.1600539656456,
+          "percent": 0.1860300413934913
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 2816.112362326229,
+          "percentOfRegion": 0.4107589492845352
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 38,
+      "medianMwM2": 52.8,
+      "p10MwM2": 35.0,
+      "p90MwM2": 63.310000000000066,
+      "maxMwM2": 76.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 5,
+          "percent": 13.157894736842104
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 29,
+          "percent": 76.31578947368422
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 4,
+          "percent": 10.526315789473683
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 148,
+      "commodityCount": 42,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 44,
+          "sharePct": 12.256267409470752
+        },
+        {
+          "label": "Platinum",
+          "count": 36,
+          "sharePct": 10.027855153203342
+        },
+        {
+          "label": "Manganese",
+          "count": 33,
+          "sharePct": 9.192200557103064
+        },
+        {
+          "label": "Iron",
+          "count": 29,
+          "sharePct": 8.07799442896936
+        },
+        {
+          "label": "Silver",
+          "count": 29,
+          "sharePct": 8.07799442896936
+        },
+        {
+          "label": "PGE",
+          "count": 24,
+          "sharePct": 6.685236768802229
+        },
+        {
+          "label": "Copper",
+          "count": 22,
+          "sharePct": 6.128133704735376
+        },
+        {
+          "label": "Asbestos",
+          "count": 14,
+          "sharePct": 3.8997214484679668
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 10,
+          "sharePct": 2.785515320334262
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 10,
+          "sharePct": 2.785515320334262
+        },
+        {
+          "label": "Uranium",
+          "count": 10,
+          "sharePct": 2.785515320334262
+        },
+        {
+          "label": "Silica",
+          "count": 10,
+          "sharePct": 2.785515320334262
+        },
+        {
+          "label": "Sulfur",
+          "count": 9,
+          "sharePct": 2.5069637883008355
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 8,
+          "sharePct": 2.2284122562674096
+        },
+        {
+          "label": "Diamond",
+          "count": 7,
+          "sharePct": 1.9498607242339834
+        },
+        {
+          "label": "Chromium",
+          "count": 6,
+          "sharePct": 1.6713091922005572
+        },
+        {
+          "label": "Nickel",
+          "count": 6,
+          "sharePct": 1.6713091922005572
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 6,
+          "sharePct": 1.6713091922005572
+        },
+        {
+          "label": "Palladium",
+          "count": 4,
+          "sharePct": 1.1142061281337048
+        },
+        {
+          "label": "Zinc",
+          "count": 4,
+          "sharePct": 1.1142061281337048
+        },
+        {
+          "label": "Aluminum",
+          "count": 4,
+          "sharePct": 1.1142061281337048
+        },
+        {
+          "label": "REE",
+          "count": 3,
+          "sharePct": 0.8356545961002786
+        },
+        {
+          "label": "Vanadium",
+          "count": 2,
+          "sharePct": 0.5571030640668524
+        },
+        {
+          "label": "Tin",
+          "count": 2,
+          "sharePct": 0.5571030640668524
+        },
+        {
+          "label": "Iridium",
+          "count": 2,
+          "sharePct": 0.5571030640668524
+        },
+        {
+          "label": "Osmium",
+          "count": 2,
+          "sharePct": 0.5571030640668524
+        },
+        {
+          "label": "Rhodium",
+          "count": 2,
+          "sharePct": 0.5571030640668524
+        },
+        {
+          "label": "Vermiculite",
+          "count": 2,
+          "sharePct": 0.5571030640668524
+        },
+        {
+          "label": "Arsenic",
+          "count": 2,
+          "sharePct": 0.5571030640668524
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 0.5571030640668524
+        }
+      ],
+      "sites": [
+        {
+          "name": "Tseila Hill",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kopong",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tshweneng Hills",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Otjosondu",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Orkorusa Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Matchless Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Shashe Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Jwaneng Mine",
+          "depositType": null,
+          "commodities": [
+            "Diamond"
+          ]
+        },
+        {
+          "name": "Dilokong Mine",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Hendriksplaats Montrose Mine",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Mooinooi Mine",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Bafokeng North Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Wildebeestfontein North Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Brits Ucar Mine",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Rahman Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Etaneno Rare Earths Deposit",
+          "depositType": "Unknown",
+          "commodities": [
+            "REE"
+          ]
+        },
+        {
+          "name": "Aminius Sepiolite Deposit",
+          "depositType": "Unknown",
+          "commodities": [
+            "Bentonite"
+          ]
+        },
+        {
+          "name": "Dikolakolane",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Rooikoppiesfontein",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Goudini",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Schildpadnest No. 233",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium"
+          ]
+        },
+        {
+          "name": "Otjihase",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Palladium",
+            "Sulfur-Pyrite",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wonderkop",
+          "depositType": null,
+          "commodities": [
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Middlepunt",
+          "depositType": null,
+          "commodities": [
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "East Driefontein",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Spaarwater",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Elsburg",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Transvaal G.M.E.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Van Dyk",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Buffelsfontein",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ellaton",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Stilfontein",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Village M.R.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "St. Helena",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Marievale",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Zandpan",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "East Geduld",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "D. Roodepoort",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Vogels",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "West Reefs Exp.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

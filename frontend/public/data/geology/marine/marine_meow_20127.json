@@ -1,0 +1,830 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20127",
+  "regionName": "Eastern Philippines",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.409214+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 60.77200321024048,
+        "medianAgeMa": 64.48873901367188,
+        "p10AgeMa": 41.65294647216797,
+        "p90AgeMa": 76.3475112915039,
+        "oldestAgeMa": 80.1135482788086,
+        "coveragePct": 53.8411757600034,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 1.4243690024300562,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 23.08367114274723,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 75.49195985482271,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 38.92028656228772,
+          "medianMmYr": 38.65193557739258,
+          "p10MmYr": 35.75203323364258,
+          "p90MmYr": 42.641700744628906,
+          "coveragePct": 53.8411757600034
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 22.86208096327625
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 1,
+        "confirmedOrInferredActive": 1,
+        "inactiveCount": 0,
+        "medianDepthM": null,
+        "maxReportedTemperatureC": null,
+        "tectonicSettings": [
+          {
+            "label": "arc volcano",
+            "count": 1
+          }
+        ],
+        "fields": [
+          {
+            "name": "Leyte",
+            "activity": "active, inferred",
+            "depthM": null,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2002
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 52,
+        "intersectionLengthKm": 4379.578138967012,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1324.6309951014125
+          },
+          {
+            "name": "Offshore Ticao-Guinayangan",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 231.3837722989851
+          },
+          {
+            "name": "Sibuyan Sea Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 205.43473464046963
+          },
+          {
+            "name": "Guinayangan-Dingalan",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 185.05126388735454
+          },
+          {
+            "name": "San Narciso-Uson",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 164.5512456558384
+          },
+          {
+            "name": "Offshore Davao Gulf",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 118.2355127798967
+          },
+          {
+            "name": "Lubang Fault South",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 117.04101772369118
+          },
+          {
+            "name": "Lubang Fault North",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 114.78075686549133
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 109.21443558342712
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 107.05624194006387
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 106.73208710619895
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 104.84039259070619
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 101.8902046065824
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 90.8095328628493
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 79.14079617474931
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 72.6249660855961
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 71.37668681147801
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.00746898968323
+          },
+          {
+            "name": "Lamon Bay",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 65.16722007215812
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 63.45087598705976
+          },
+          {
+            "name": "West Mindanao Extension Mindanao Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 61.862346986975304
+          },
+          {
+            "name": "Tablas Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 55.49871493091527
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.83664403661021
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 51.444436832734695
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 49.158210620362645
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 49.123271069452244
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 49.104817785705
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 49.05515337552111
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 49.040126512001706
+          },
+          {
+            "name": "Palanan-Dinapigue",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.03781621744092
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 23,
+      "medianMwM2": 45.6383,
+      "p10MwM2": 31.16424,
+      "p90MwM2": 67.66352,
+      "maxMwM2": 117.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 7,
+          "percent": 30.434782608695656
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 8,
+          "percent": 34.78260869565217
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 7,
+          "percent": 30.434782608695656
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 4.3478260869565215
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 41,
+      "commodityCount": 20,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 13,
+          "sharePct": 16.049382716049383
+        },
+        {
+          "label": "Nickel",
+          "count": 11,
+          "sharePct": 13.580246913580247
+        },
+        {
+          "label": "Gold",
+          "count": 10,
+          "sharePct": 12.345679012345679
+        },
+        {
+          "label": "Copper",
+          "count": 10,
+          "sharePct": 12.345679012345679
+        },
+        {
+          "label": "Silver",
+          "count": 9,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Chromium",
+          "count": 3,
+          "sharePct": 3.7037037037037033
+        },
+        {
+          "label": "Metal",
+          "count": 3,
+          "sharePct": 3.7037037037037033
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 3.7037037037037033
+        },
+        {
+          "label": "Cobalt",
+          "count": 3,
+          "sharePct": 3.7037037037037033
+        },
+        {
+          "label": "Silica",
+          "count": 2,
+          "sharePct": 2.4691358024691357
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 2.4691358024691357
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 2.4691358024691357
+        },
+        {
+          "label": "Free",
+          "count": 2,
+          "sharePct": 2.4691358024691357
+        },
+        {
+          "label": "Water",
+          "count": 2,
+          "sharePct": 2.4691358024691357
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 1.2345679012345678
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 1.2345679012345678
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 1.2345679012345678
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 1.2345679012345678
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 1.2345679012345678
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 1.2345679012345678
+        }
+      ],
+      "sites": [
+        {
+          "name": "Anda Peninsula",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Hijo Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Placer Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Siana Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Bully Bueno Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Amacan Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Dizon Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Lepanto Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Tapian Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Rio Tuba Mine",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Giporlos-Salcedo",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Pujada Peninsula Nickel Deposit-Davao, Philippines",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Iron",
+            "Nickel",
+            "PGE",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Northern Cayagan",
+          "depositType": "Placer",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Aringay Beach",
+          "depositType": "Placer",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Damortis Bay",
+          "depositType": "Placer",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Dinapipue, Philippines",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Isao-Piu Copper Project",
+          "depositType": "Unknown",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Palanan, Philippines",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Bauxite - Philippines",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Adlay-Carascal",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Lingayen Gulf Deposits",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Dinagat",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Timor Island Project",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Laoag Magnetite Sand Deposits",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Makambal",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Nonoc",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Candon Mine Area, Patpata I & Ii,",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Undeveloped Philippine Laterites",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Ambil Island-Escudero Co.",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Chromium",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Mansaiay Barite Operations",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Limay Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Toledo Cebu Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Puray Project",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Leyte Magnetite Operations, Inclu",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Surigao Nickel Project",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Free",
+            "Iron",
+            "Nickel",
+            "Water"
+          ]
+        },
+        {
+          "name": "Candon Mine Area, Patpata I & Ii,",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Ino-Capayang",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Santa Cruz Nickel Deposit",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Free",
+            "Iron",
+            "Nickel",
+            "Water"
+          ]
+        },
+        {
+          "name": "Basay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Laoag Magnetite Sand Deposits",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

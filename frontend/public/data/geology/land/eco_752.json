@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_752",
+  "regionName": "Ghorat-Hazarajat alpine meadow",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.107748+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 749.977331929297,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 241.70380125163987
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 150.37790563487616
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 130.72091589759114
+          },
+          {
+            "name": null,
+            "kinematics": "Anticline",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 106.16892332289834
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 72.31392046352325
+          },
+          {
+            "name": null,
+            "kinematics": "Anticline",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.20299155968105
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.488873799087163
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999997,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 26763.290144557715,
+        "percent": 40.29293309026986
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 26763.290144557715,
+          "percent": 40.29293309026986
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 23637.056358214988,
+          "percent": 35.58629470249065
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 7538.005162712298,
+          "percent": 11.348692033555457
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4957.4997699402475,
+          "percent": 7.4636640505072585
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 2048.6807099943067,
+          "percent": 3.084350030405849
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1057.235958336278,
+          "percent": 1.591700329061876
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 419.9214304934012,
+          "percent": 0.6322042622805722
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 0.10727215066191895,
+          "percent": 0.0001615014284762363
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Construction",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Hagigak Barite",
+          "depositType": "Vein",
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Rugh",
+          "depositType": null,
+          "commodities": [
+            "Halite"
+          ]
+        },
+        {
+          "name": "Hajigak Sandstone",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel",
+            "Silica"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,677 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_327",
+  "regionName": "Sierra Madre Oriental pine-oak forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.015099+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 22.203264851255685,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "SN Reservorio Debodhe\n",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.183473180972229
+          },
+          {
+            "name": "SN Sierra El Diablo",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.659204440061711
+          },
+          {
+            "name": "SN Cerro el Fraile \n",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.3605872302217445
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.94144048021504,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 29893.279338346652,
+        "percent": 46.57548410957762
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 29893.279338346652,
+          "percent": 46.57548410957762
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 14607.794072537155,
+          "percent": 22.75980072312355
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 7737.249185847743,
+          "percent": 12.055088450768318
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6546.183317414684,
+          "percent": 10.19933790561142
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2872.847365201591,
+          "percent": 4.476064846975371
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1595.303162426308,
+          "percent": 2.4855759801579183
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 914.2143429876447,
+          "percent": 1.4243996158008678
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 15.563192772561589,
+          "percent": 0.02424836798493673
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 37.606947571431725,
+          "percentOfRegion": 0.05855951978493663
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 10,
+      "medianMwM2": 64.0,
+      "p10MwM2": 48.59,
+      "p90MwM2": 72.0,
+      "maxMwM2": 72.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 10.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 30.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 6,
+          "percent": 60.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 502,
+      "commodityCount": 47,
+      "commodities": [
+        {
+          "label": "Lead",
+          "count": 124,
+          "sharePct": 13.671444321940463
+        },
+        {
+          "label": "Zinc",
+          "count": 98,
+          "sharePct": 10.804851157662625
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 97,
+          "sharePct": 10.694597574421168
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 72,
+          "sharePct": 7.938257993384785
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 69,
+          "sharePct": 7.6074972436604185
+        },
+        {
+          "label": "Silver",
+          "count": 63,
+          "sharePct": 6.945975744211687
+        },
+        {
+          "label": "Copper",
+          "count": 56,
+          "sharePct": 6.174200661521499
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 42,
+          "sharePct": 4.630650496141125
+        },
+        {
+          "label": "Iron",
+          "count": 28,
+          "sharePct": 3.0871003307607494
+        },
+        {
+          "label": "Stone",
+          "count": 25,
+          "sharePct": 2.7563395810363835
+        },
+        {
+          "label": "Strontium",
+          "count": 24,
+          "sharePct": 2.6460859977949283
+        },
+        {
+          "label": "Construction",
+          "count": 24,
+          "sharePct": 2.6460859977949283
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 24,
+          "sharePct": 2.6460859977949283
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 23,
+          "sharePct": 2.535832414553473
+        },
+        {
+          "label": "Gold",
+          "count": 20,
+          "sharePct": 2.2050716648291067
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 11,
+          "sharePct": 1.2127894156560088
+        },
+        {
+          "label": "REE",
+          "count": 11,
+          "sharePct": 1.2127894156560088
+        },
+        {
+          "label": "Molybdenum",
+          "count": 10,
+          "sharePct": 1.1025358324145533
+        },
+        {
+          "label": "Dolomite",
+          "count": 10,
+          "sharePct": 1.1025358324145533
+        },
+        {
+          "label": "Manganese",
+          "count": 8,
+          "sharePct": 0.8820286659316428
+        },
+        {
+          "label": "Bismuth",
+          "count": 5,
+          "sharePct": 0.5512679162072767
+        },
+        {
+          "label": "General",
+          "count": 5,
+          "sharePct": 0.5512679162072767
+        },
+        {
+          "label": "Limestone",
+          "count": 5,
+          "sharePct": 0.5512679162072767
+        },
+        {
+          "label": "Mercury",
+          "count": 5,
+          "sharePct": 0.5512679162072767
+        },
+        {
+          "label": "Dimension",
+          "count": 4,
+          "sharePct": 0.4410143329658214
+        },
+        {
+          "label": "Titanium",
+          "count": 4,
+          "sharePct": 0.4410143329658214
+        },
+        {
+          "label": "Tungsten",
+          "count": 4,
+          "sharePct": 0.4410143329658214
+        },
+        {
+          "label": "Antimony",
+          "count": 4,
+          "sharePct": 0.4410143329658214
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 0.33076074972436603
+        },
+        {
+          "label": "Marble",
+          "count": 3,
+          "sharePct": 0.33076074972436603
+        }
+      ],
+      "sites": [
+        {
+          "name": "Zimapan Mining District",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cardonal Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Pioneer Mine",
+          "depositType": null,
+          "commodities": [
+            "Bismuth"
+          ]
+        },
+        {
+          "name": "Texas Main Mine",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Bismuth",
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver",
+            "Tellurium"
+          ]
+        },
+        {
+          "name": "Gem Group",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Red Rock Talc Mine 1941",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Mex-Tex Mine",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Copper",
+            "Fluorine-Fluorite",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Devils Canyon Prospect",
+          "depositType": "Replacement",
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Hembrillo Talc Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Mountain Chief Mine",
+          "depositType": "Replacement",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Black Prince Mine",
+          "depositType": "Replacement",
+          "commodities": [
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Modoc Mine",
+          "depositType": "Replacement",
+          "commodities": [
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Fillmore Canyon Prospect",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Miera Prospect",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Waddell Atir Prospect 1978",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Silver Cave Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "The Park Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wet King Manganese Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Lucky John Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "La Cantera",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Encantada-Buenavista - Fluorita De Mexico Operation",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "La Valenciana",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Esperanza",
+          "depositType": "Replacement",
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "San Jorge - Delta",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Rocky Ridge",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Hidalgo State",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Unnamed Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "El Porvenir Mine",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Mariana Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Gioconda",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Los Volcanes",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Unnamed Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Las Catalinas",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "El Palpito",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "La Escondida",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Leona Sierra La Norte",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Corea El Indio",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "REE",
+            "Strontium"
+          ]
+        },
+        {
+          "name": "Cueva Canon La",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "REE",
+            "Strontium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

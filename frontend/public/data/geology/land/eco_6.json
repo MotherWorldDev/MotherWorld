@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_6",
+  "regionName": "Cross-Niger transition forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.155684+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.0,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 10442.934065262249,
+        "percent": 50.619850001960685
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 10442.934065262249,
+          "percent": 50.619850001960685
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 10156.831427118559,
+          "percent": 49.233029733107905
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 30.35108216012417,
+          "percent": 0.14712026493141403
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 19,
+      "medianMwM2": 78.28,
+      "p10MwM2": 31.6,
+      "p90MwM2": 87.0,
+      "maxMwM2": 95.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 21.052631578947366
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 7,
+          "percent": 36.84210526315789
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 8,
+          "percent": 42.10526315789473
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

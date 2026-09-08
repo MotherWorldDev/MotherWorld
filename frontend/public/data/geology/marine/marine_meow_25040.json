@@ -1,0 +1,572 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25040",
+  "regionName": "Gulf of Maine/Bay of Fundy",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.117798+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 185.8309009562998,
+        "medianAgeMa": 186.4656524658203,
+        "p10AgeMa": 179.77272033691406,
+        "p90AgeMa": 191.06236267089844,
+        "oldestAgeMa": 191.96031188964844,
+        "coveragePct": 15.117045230370953,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 100.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 19.62422882687558,
+          "medianMmYr": 19.45728874206543,
+          "p10MmYr": 19.06534194946289,
+          "p90MmYr": 20.421960830688477,
+          "coveragePct": 15.117045230370953
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 5,
+      "medianMwM2": 55.0,
+      "p10MwM2": 38.0,
+      "p90MwM2": 79.0,
+      "maxMwM2": 79.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 40.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 20.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 40.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 86,
+      "commodityCount": 23,
+      "commodities": [
+        {
+          "label": "Granite",
+          "count": 27,
+          "sharePct": 18.88111888111888
+        },
+        {
+          "label": "Silver",
+          "count": 26,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Copper",
+          "count": 19,
+          "sharePct": 13.286713286713287
+        },
+        {
+          "label": "Lead",
+          "count": 19,
+          "sharePct": 13.286713286713287
+        },
+        {
+          "label": "Gold",
+          "count": 8,
+          "sharePct": 5.594405594405594
+        },
+        {
+          "label": "Zinc",
+          "count": 6,
+          "sharePct": 4.195804195804196
+        },
+        {
+          "label": "Stone",
+          "count": 5,
+          "sharePct": 3.4965034965034967
+        },
+        {
+          "label": "Construction",
+          "count": 4,
+          "sharePct": 2.797202797202797
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 4,
+          "sharePct": 2.797202797202797
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 2.097902097902098
+        },
+        {
+          "label": "Dimension",
+          "count": 3,
+          "sharePct": 2.097902097902098
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 3,
+          "sharePct": 2.097902097902098
+        },
+        {
+          "label": "Silica",
+          "count": 2,
+          "sharePct": 1.3986013986013985
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 1.3986013986013985
+        },
+        {
+          "label": "Bismuth",
+          "count": 2,
+          "sharePct": 1.3986013986013985
+        },
+        {
+          "label": "Tellurium",
+          "count": 2,
+          "sharePct": 1.3986013986013985
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 1.3986013986013985
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        },
+        {
+          "label": "Diatomite",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        },
+        {
+          "label": "Mica",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        },
+        {
+          "label": "Marble",
+          "count": 1,
+          "sharePct": 0.6993006993006993
+        }
+      ],
+      "sites": [
+        {
+          "name": "Long Island Molybdenite Occurrence, East Shore",
+          "depositType": "Vein",
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Factory Bog",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Nantucket Island",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "A R Whitten and Son Inc",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Eggemoggin Silver Mine (1876)",
+          "depositType": "Stratabound Exhalative",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Deer Isle Mine (1870s, 1907-1910?)",
+          "depositType": "Stratabound Exhalative",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Riverside Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Black Island",
+          "depositType": "Unknown",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Jewels Island",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Porterfield Ledge Mine",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Curtis Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Palmer Quarry",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Alton Stone Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Swett Mine",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Early Dawn Mine",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Hardwood Island Quarry",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Eagle Island Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Sherwood Quarries, Upper",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Hurricane Island Quarries",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Gross Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Stonington Quarries",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Little Sue Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Merrill Quarry",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Deer Isle Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Chief Isle Mine",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Cross Island Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cundell Island Quarry",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "George Gins Quarry",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "South Bay Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Hancock Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Black Island Quarries",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Stave Island Mine",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Manchester Crushed Stone",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Georgetown Sand and Gravel Co.",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Island City Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Little Chief Mine",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Sprucehead Quarry",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Dix Island Quarry",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Verde Antique Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Deer Isle Jr Mine",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

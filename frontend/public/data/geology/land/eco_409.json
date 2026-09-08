@@ -1,0 +1,591 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_409",
+  "regionName": "Beringia lowland tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.106932+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 88.577629222578,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 102023.42975978043,
+        "percent": 75.19263972995122
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 102023.42975978043,
+          "percent": 75.19263972995122
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 16002.445199220998,
+          "percent": 11.794017310498834
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 11768.807082849999,
+          "percent": 8.67376908535272
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3057.736156188739,
+          "percent": 2.2535926671246282
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 1472.339616116459,
+          "percent": 1.0851340968976444
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1329.8996503200422,
+          "percent": 0.9801539265926975
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 28.077077348173404,
+          "percent": 0.02069318358226228
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 710.0840296732403,
+          "percentOfRegion": 0.4635634748198703
+        },
+        {
+          "code": "ig",
+          "label": "Ice and glaciers",
+          "areaKm2": 338.9980866725553,
+          "percentOfRegion": 0.22130779520211402
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 16447.643813593633,
+          "percentOfRegion": 10.737499507399976
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 12,
+      "medianMwM2": 76.5,
+      "p10MwM2": 59.7,
+      "p90MwM2": 92.4,
+      "maxMwM2": 101.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 8.333333333333332
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 8.333333333333332
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 6,
+          "percent": 50.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3,
+          "percent": 25.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 8.333333333333332
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 64,
+      "commodityCount": 21,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 39,
+          "sharePct": 38.23529411764706
+        },
+        {
+          "label": "Iron",
+          "count": 11,
+          "sharePct": 10.784313725490197
+        },
+        {
+          "label": "Tungsten",
+          "count": 8,
+          "sharePct": 7.8431372549019605
+        },
+        {
+          "label": "Silver",
+          "count": 7,
+          "sharePct": 6.862745098039216
+        },
+        {
+          "label": "Titanium",
+          "count": 7,
+          "sharePct": 6.862745098039216
+        },
+        {
+          "label": "Tin",
+          "count": 5,
+          "sharePct": 4.901960784313726
+        },
+        {
+          "label": "Bismuth",
+          "count": 3,
+          "sharePct": 2.941176470588235
+        },
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Thorium",
+          "count": 2,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Uranium",
+          "count": 2,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Zinc",
+          "count": 2,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Construction",
+          "count": 2,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 2,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 1.9607843137254901
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 0.9803921568627451
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 0.9803921568627451
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.9803921568627451
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 0.9803921568627451
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 0.9803921568627451
+        },
+        {
+          "label": "Mercury",
+          "count": 1,
+          "sharePct": 0.9803921568627451
+        }
+      ],
+      "sites": [
+        {
+          "name": "Puale Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Humble Oil & Refining Co. Iron Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Keefers Bar Placer Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed (beach southwest of Cinder River)",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Sleitat Mountain",
+          "depositType": null,
+          "commodities": [
+            "Silver",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Unnamed (south of Inland Lake)",
+          "depositType": null,
+          "commodities": [
+            "Thorium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed (south of Selawik Lake)",
+          "depositType": null,
+          "commodities": [
+            "Thorium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Hopeful Gulch Placer Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Ungalik River",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Alameda Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Village Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Moffet Point",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Becharof Lake",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Ongoveyuk River",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Molybdenum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Myghapowit Mountain",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Kangukhsam Mountain",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Margaret Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kamuk Mtn. Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Hopeful Gulch",
+          "depositType": "Placer",
+          "commodities": [
+            "Bismuth",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Bonanza Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Antimony",
+            "Gold",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Unnamed Magnetite Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Lagoon Creek",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Old Man Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kejulik River",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Koktalee River",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kemuk Mountain",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "PGE",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Stuyahok River",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Alameda Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Lake Nerka",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Port Heiden",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sleitat Mountains",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sleitat Mountain Tin",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Tin",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mcgeary Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Azure",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Hope",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Knick Construction Co., Inc.",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Egegik Beach",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Cinder River",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

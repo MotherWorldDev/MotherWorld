@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_640",
+  "regionName": "Hawai'i tropical low shrublands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.477028+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 4.048571474423177,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.5045674153131292
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.2236010655736114
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.006813038377283
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.31358995515915283
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 34.81489913478423,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 518.4146008453042,
+        "percent": 100.0
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 518.4146008453042,
+          "percent": 100.0
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 970.6450079109555,
+          "percentOfRegion": 65.18510086521583
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 14,
+      "commodityCount": 7,
+      "commodities": [
+        {
+          "label": "Calcium",
+          "count": 5,
+          "sharePct": 23.809523809523807
+        },
+        {
+          "label": "Stone",
+          "count": 5,
+          "sharePct": 23.809523809523807
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 3,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Pumice",
+          "count": 2,
+          "sharePct": 9.523809523809524
+        },
+        {
+          "label": "Clay",
+          "count": 2,
+          "sharePct": 9.523809523809524
+        },
+        {
+          "label": "General",
+          "count": 2,
+          "sharePct": 9.523809523809524
+        },
+        {
+          "label": "Limestone",
+          "count": 2,
+          "sharePct": 9.523809523809524
+        }
+      ],
+      "sites": [
+        {
+          "name": "Waianea Quarry",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Yamada Kawaihae Coral Mill",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Ewa Pit",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Cinder Pit",
+          "depositType": null,
+          "commodities": [
+            "Pumice"
+          ]
+        },
+        {
+          "name": "Barbers Point Mill",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Manawaunui Quarry and Mill",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Barbers Point Limestone Pit",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Unnamed Cinder Pit",
+          "depositType": null,
+          "commodities": [
+            "Pumice"
+          ]
+        },
+        {
+          "name": "Cyprus Hawaiian Cement Corp.",
+          "depositType": null,
+          "commodities": [
+            "Clay",
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Makakilo Quarry and Mill",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Waiele Pit and Mill",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Kawaihae Coral Mill",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Waianae Cement Plant",
+          "depositType": null,
+          "commodities": [
+            "Clay",
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Boase Number 1 Quarry and Mill",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

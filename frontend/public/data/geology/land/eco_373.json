@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_373",
+  "regionName": "Eastern Canadian forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.096439+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 94.14994538505539,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 263327.10251813376,
+        "percent": 60.07900057988578
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 263327.10251813376,
+          "percent": 60.07900057988578
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 54001.441248274874,
+          "percent": 12.320617927455281
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 44115.04071909329,
+          "percent": 10.065001025716954
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 36077.045119183305,
+          "percent": 8.231104181487426
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 20609.463711088847,
+          "percent": 4.702121317589687
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 12103.382437130176,
+          "percent": 2.761429087645272
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 3812.748491752818,
+          "percent": 0.8698919201877511
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 2300.824307039973,
+          "percent": 0.5249411228658116
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1941.9093120274886,
+          "percent": 0.4430534098758438
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 12.445249653274233,
+          "percent": 0.0028394272901871025
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 1347.0708284505213,
+          "percentOfRegion": 0.28935943172331335
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 25887.009186503306,
+          "percentOfRegion": 5.560695183221336
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 25,
+      "medianMwM2": 39.0,
+      "p10MwM2": 27.4,
+      "p90MwM2": 54.6,
+      "maxMwM2": 82.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 13,
+          "percent": 52.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 10,
+          "percent": 40.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 4.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 4.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 74,
+      "commodityCount": 33,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 29,
+          "sharePct": 16.76300578034682
+        },
+        {
+          "label": "Titanium",
+          "count": 18,
+          "sharePct": 10.404624277456648
+        },
+        {
+          "label": "Metal",
+          "count": 12,
+          "sharePct": 6.9364161849710975
+        },
+        {
+          "label": "Vanadium",
+          "count": 12,
+          "sharePct": 6.9364161849710975
+        },
+        {
+          "label": "Gold",
+          "count": 12,
+          "sharePct": 6.9364161849710975
+        },
+        {
+          "label": "Copper",
+          "count": 11,
+          "sharePct": 6.358381502890173
+        },
+        {
+          "label": "Aluminum",
+          "count": 9,
+          "sharePct": 5.202312138728324
+        },
+        {
+          "label": "Silver",
+          "count": 7,
+          "sharePct": 4.046242774566474
+        },
+        {
+          "label": "Zinc",
+          "count": 7,
+          "sharePct": 4.046242774566474
+        },
+        {
+          "label": "Dimension",
+          "count": 6,
+          "sharePct": 3.4682080924855487
+        },
+        {
+          "label": "Stone",
+          "count": 6,
+          "sharePct": 3.4682080924855487
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 6,
+          "sharePct": 3.4682080924855487
+        },
+        {
+          "label": "Chromium",
+          "count": 4,
+          "sharePct": 2.312138728323699
+        },
+        {
+          "label": "Lead",
+          "count": 4,
+          "sharePct": 2.312138728323699
+        },
+        {
+          "label": "Silica",
+          "count": 3,
+          "sharePct": 1.7341040462427744
+        },
+        {
+          "label": "Nickel",
+          "count": 3,
+          "sharePct": 1.7341040462427744
+        },
+        {
+          "label": "Asbestos",
+          "count": 3,
+          "sharePct": 1.7341040462427744
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 1.1560693641618496
+        },
+        {
+          "label": "Cadmium",
+          "count": 2,
+          "sharePct": 1.1560693641618496
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 1.1560693641618496
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 2,
+          "sharePct": 1.1560693641618496
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 2,
+          "sharePct": 1.1560693641618496
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 1,
+          "sharePct": 0.5780346820809248
+        },
+        {
+          "label": "Granite",
+          "count": 1,
+          "sharePct": 0.5780346820809248
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 0.5780346820809248
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 0.5780346820809248
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 0.5780346820809248
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 0.5780346820809248
+        },
+        {
+          "label": "Wollastonite",
+          "count": 1,
+          "sharePct": 0.5780346820809248
+        },
+        {
+          "label": "Tantalum",
+          "count": 1,
+          "sharePct": 0.5780346820809248
+        }
+      ],
+      "sites": [
+        {
+          "name": "Allard Lake Area Lac Tio",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Sept Isles Seven Islands",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Lake St. John Lac St-Jean Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Mt. Peyton",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Indian Head",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Dunamagon",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Dimension",
+            "Granite",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Goose Arm Road",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Nut Cove",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Romaines Brook",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite"
+          ]
+        },
+        {
+          "name": "Diamond Cove",
+          "depositType": "Vein",
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Dicks Point",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Fortune",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Grey River",
+          "depositType": "Vein",
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Magpie Mountain Deposit",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Kellogg Property",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Magpie Mountain",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Kellogg Property Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Mount Cormack",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Winter House Brook",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "N. Side of Table Mountain",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Duck Pond Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Copperfield Mining Cobalt Deposit, Canada",
+          "depositType": null,
+          "commodities": [
+            "Cobalt"
+          ]
+        },
+        {
+          "name": "Buchans Pb, Zn, Cu, Ag Unit",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Tio Lake, Canada",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Steel Mtn. Sheep Brook Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Mealy Mtns. Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Magpie Mtn. Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Stowbridge Chromite Deposit",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Lac St. Jean",
+          "depositType": null,
+          "commodities": [
+            "Wollastonite"
+          ]
+        },
+        {
+          "name": "Hickman's Harbour",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Lac De La Blache Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Somex",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Rendell-Jackman",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Lablache-Hervieux-Shmoo Lakes",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Pine Cove",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Daniel's Harbor Mine",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hope Brook",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Chilisay",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Puyjalon Lake",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Lac Saint Jean Alf3 Plant",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

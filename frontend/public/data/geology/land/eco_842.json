@@ -1,0 +1,616 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_842",
+  "regionName": "South Sahara desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.642172+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 59.99439580876389,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Kalabsha Fault",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 59.99439580876389
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.80526752038361,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 1508507.6371573922,
+        "percent": 51.84755878248184
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1508507.6371573922,
+          "percent": 51.84755878248184
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 528397.4392012247,
+          "percent": 18.16107298012967
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 486182.81067339744,
+          "percent": 16.710151963778998
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 243614.13237675634,
+          "percent": 8.37304216268236
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 125883.80602092798,
+          "percent": 4.326639038256076
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 13102.534992949824,
+          "percent": 0.4503354418056632
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2371.518696644042,
+          "percent": 0.0815093354513642
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1445.7419381910363,
+          "percent": 0.0496902954140219
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 5676.8070275519785,
+          "percentOfRegion": 0.19473247961641416
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 286,
+      "medianMwM2": 58.0,
+      "p10MwM2": 38.0,
+      "p90MwM2": 111.0,
+      "maxMwM2": 121.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 55,
+          "percent": 19.230769230769234
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 93,
+          "percent": 32.51748251748251
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 44,
+          "percent": 15.384615384615385
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 24,
+          "percent": 8.391608391608392
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 70,
+          "percent": 24.475524475524477
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 43,
+      "commodityCount": 25,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 11,
+          "sharePct": 18.333333333333332
+        },
+        {
+          "label": "Gold",
+          "count": 6,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Kaolin",
+          "count": 4,
+          "sharePct": 6.666666666666667
+        },
+        {
+          "label": "Copper",
+          "count": 4,
+          "sharePct": 6.666666666666667
+        },
+        {
+          "label": "Metal",
+          "count": 3,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Platinum",
+          "count": 3,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Uranium",
+          "count": 3,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Tin",
+          "count": 2,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Dolomite",
+          "count": 2,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Wollastonite",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Dimension",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Marble",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Stone",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Chlorine",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        }
+      ],
+      "sites": [
+        {
+          "name": "Agracha Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "El Rhein Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Laouni Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Kalabsha Area",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Gebel Abu Khruq",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Arak Canyon",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Silet",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Abu Swayel Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Hammash Copper Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Um Garaiat Gold Mine",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Haimur Gold Deposit",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Barramiya Gold Deposit",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Wadi El Miyah Ilmenite Occurrence G. El Rokham",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Wadi Um Gerifat Iron Ore Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bu-Craamine",
+          "depositType": "Unknown",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Rouessa Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Tazadit Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "F'Derik Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Darhib Ore Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Abu Dahr Ilmenite Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Wadi Kalabsha Kaolin Quarry",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Dirbat Well",
+          "depositType": null,
+          "commodities": [
+            "Wollastonite"
+          ]
+        },
+        {
+          "name": "F'Derik",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Silet",
+          "depositType": null,
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Um Hobal",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "F'Derik",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Guelb El Rhein",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Gebeit Red Sea Hills",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Halaib",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Wadi Alaki",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Dolomite",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Akjoujt",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Arak Canyon",
+          "depositType": null,
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Wadi Atalla",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Dolomite"
+          ]
+        },
+        {
+          "name": "Timagouine",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Abanker",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Akjoujt Tailings Project",
+          "depositType": null,
+          "commodities": [
+            "Chlorine",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kalabsha",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Laouni",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

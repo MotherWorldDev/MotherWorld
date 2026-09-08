@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_271",
+  "regionName": "South Western Ghats montane rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.068423+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.49466683746793,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 12461.26404792862,
+        "percent": 55.56879690566296
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 12461.26404792862,
+          "percent": 55.56879690566296
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 9963.666383953208,
+          "percent": 44.43120309433704
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 113.89616524085689,
+          "percentOfRegion": 0.5053331625320588
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 39.0,
+      "p10MwM2": 39.0,
+      "p90MwM2": 39.0,
+      "maxMwM2": 39.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bauxite-India",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Alampara",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Antamina",
+          "depositType": null,
+          "commodities": []
+        },
+        {
+          "name": "Puy-Puy",
+          "depositType": null,
+          "commodities": []
+        },
+        {
+          "name": "Toro Mocho",
+          "depositType": "CU AG MO",
+          "commodities": [
+            "Copper",
+            "Molybdenum",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

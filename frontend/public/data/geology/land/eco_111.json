@@ -1,0 +1,164 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_111",
+  "regionName": "Central African mangroves",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.074999+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 51.0761299002136,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.01006530194906
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.066064598264536
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 77.04084020535221,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 16181.62205703494,
+        "percent": 68.26170752704341
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 16181.62205703494,
+          "percent": 68.26170752704341
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 2956.946375785882,
+          "percent": 12.473793292514484
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2785.1172427357023,
+          "percent": 11.748937033756576
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1689.233769634783,
+          "percent": 7.125984102284956
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 92.35052717823486,
+          "percent": 0.3895780444005787
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 7064.474891761197,
+          "percentOfRegion": 22.959159794647746
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 18,
+      "medianMwM2": 64.0,
+      "p10MwM2": 48.0,
+      "p90MwM2": 71.6,
+      "maxMwM2": 75.96,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 5,
+          "percent": 27.77777777777778
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 13,
+          "percent": 72.22222222222221
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

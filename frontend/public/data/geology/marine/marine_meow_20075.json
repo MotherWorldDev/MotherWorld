@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20075",
+  "regionName": "Northeastern Brazil",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.068984+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 109.48372357488459,
+        "medianAgeMa": 112.32904815673828,
+        "p10AgeMa": 88.4591064453125,
+        "p90AgeMa": 122.50132751464844,
+        "oldestAgeMa": 125.2468490600586,
+        "coveragePct": 83.17116788087864,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 17.66889139671736,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 82.33110860328263,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 39.17361179476196,
+          "medianMmYr": 39.65696716308594,
+          "p10MmYr": 34.44837951660156,
+          "p90MmYr": 42.571533203125,
+          "coveragePct": 83.17116788087864
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 21,
+      "medianMwM2": 67.0,
+      "p10MwM2": 45.0,
+      "p90MwM2": 101.0,
+      "maxMwM2": 123.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 4.761904761904762
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 6,
+          "percent": 28.57142857142857
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 7,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3,
+          "percent": 14.285714285714285
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 4,
+          "percent": 19.047619047619047
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Diatomite",
+          "count": 2,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Uranium",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        }
+      ],
+      "sites": [
+        {
+          "name": "Olinda",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Guaju Camaratuba",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Lagoa Do Poco",
+          "depositType": "LACUSTRINE, SEDIMENTARY",
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Fortaleza",
+          "depositType": "LACUSTRINE, SEDIMENTARY",
+          "commodities": [
+            "Diatomite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

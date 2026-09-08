@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_248",
+  "regionName": "Mindoro rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.650416+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 232.53756934722725,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Central Mindoro Fault",
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 127.7582772636485
+          },
+          {
+            "name": "Aglubang River Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.67258019198708
+          },
+          {
+            "name": "Southern Mindoro Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.10671189159165
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 84.85426950438956,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 6496.02510850605,
+        "percent": 76.22125529010634
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6496.02510850605,
+          "percent": 76.22125529010634
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2026.5649272805247,
+          "percent": 23.778744709893665
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1521.2063289275206,
+          "percentOfRegion": 15.145730495610502
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 6,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 28.57142857142857
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 28.57142857142857
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        }
+      ],
+      "sites": [
+        {
+          "name": "San Andres",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Sablayan",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Mindoro",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Mansalay",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Immacorp Gold Claims",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sablayan",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

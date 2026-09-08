@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_164",
+  "regionName": "New Caledonia dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.038604+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 51.32967290982457,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 912.4902301878054,
+        "percent": 40.90251081593151
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 912.4902301878054,
+          "percent": 40.90251081593151
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 647.8824634013764,
+          "percent": 29.041428160028637
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 364.82161688675467,
+          "percent": 16.3531834500024
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 305.6961947406553,
+          "percent": 13.702877574037457
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2115.310003669945,
+          "percentOfRegion": 48.67032709017536
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Nickel",
+          "count": 3,
+          "sharePct": 60.0
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 40.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Poum, New Caledonia",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Poum Mining District",
+          "depositType": "LATERITE, RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Poya Mining District",
+          "depositType": "LATERITE, RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

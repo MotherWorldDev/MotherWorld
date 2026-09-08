@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_103",
+  "regionName": "Namib Desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.022331+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 95.44923928211513,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 39146.15896419601,
+        "percent": 51.66940869390609
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 39146.15896419601,
+          "percent": 51.66940869390609
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 17642.403635588973,
+          "percent": 23.28638589098478
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 11603.333950810533,
+          "percent": 15.315357112422099
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3357.2335461839148,
+          "percent": 4.431246302793708
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2634.3857277496422,
+          "percent": 3.477152201547677
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 652.4221739270098,
+          "percent": 0.8611385851785243
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 522.4051843101105,
+          "percent": 0.6895278537192444
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 204.39526098327005,
+          "percent": 0.2697833594478962
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3612.161779206789,
+          "percentOfRegion": 4.550760717885116
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 7,
+      "medianMwM2": 69.0,
+      "p10MwM2": 62.0,
+      "p90MwM2": 92.0,
+      "maxMwM2": 92.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 5,
+          "percent": 71.42857142857143
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 28.57142857142857
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 7,
+      "commodityCount": 10,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Uranium",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Beryllium",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Lithium",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Tantalum",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Semiprecious Gemstone",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 8.333333333333332
+        }
+      ],
+      "sites": [
+        {
+          "name": "Rossing",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Hope Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Brandberg West",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Khan Mine Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Gorob",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Donkerhoek Mine",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Lithium",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Walvis Bay",
+          "depositType": null,
+          "commodities": [
+            "Semiprecious Gemstone",
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

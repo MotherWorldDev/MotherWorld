@@ -1,0 +1,411 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20122",
+  "regionName": "Ogasawara Islands",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.367654+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 119.3478024906817,
+        "medianAgeMa": 158.17904663085938,
+        "p10AgeMa": 18.800880432128906,
+        "p90AgeMa": 164.83583068847656,
+        "oldestAgeMa": 168.5257110595703,
+        "coveragePct": 68.55393295351287,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 13.348816939370934,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 13.667813301089746,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 22.368731506706645,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 50.61463825283267,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 92.99461081810858,
+          "medianMmYr": 90.64399719238281,
+          "p10MmYr": 47.646690368652344,
+          "p90MmYr": 144.7661895751953,
+          "coveragePct": 68.55393295351287
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 2,
+          "intersectionLengthKm": 763.2889703411003
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 10,
+        "confirmedOrInferredActive": 10,
+        "inactiveCount": 0,
+        "medianDepthM": 1065.0,
+        "maxReportedTemperatureC": 317.0,
+        "tectonicSettings": [
+          {
+            "label": "arc volcano",
+            "count": 9
+          },
+          {
+            "label": "back-arc spreading center",
+            "count": 1
+          }
+        ],
+        "fields": [
+          {
+            "name": "Suiyo Seamount",
+            "activity": "active, confirmed",
+            "depthM": 1380.0,
+            "maxTemperatureC": 317.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1991
+          },
+          {
+            "name": "Mokuyo Seamount",
+            "activity": "active, confirmed",
+            "depthM": 1200.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1990
+          },
+          {
+            "name": "Doyo Seamount",
+            "activity": "active, confirmed",
+            "depthM": 520.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1990
+          },
+          {
+            "name": "Nishinoshima Island",
+            "activity": "active, inferred",
+            "depthM": 5.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1975
+          },
+          {
+            "name": "Kaikata Seamount",
+            "activity": "active, confirmed",
+            "depthM": 930.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1988
+          },
+          {
+            "name": "Sumisu Rift",
+            "activity": "active, inferred",
+            "depthM": 1600.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1987
+          },
+          {
+            "name": "Minami-Hiyoshi submarine volcano",
+            "activity": "active, confirmed",
+            "depthM": 80.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2005
+          },
+          {
+            "name": "Nikko volcano",
+            "activity": "active, confirmed",
+            "depthM": 600.0,
+            "maxTemperatureC": 248.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1992
+          },
+          {
+            "name": "W Syoyo",
+            "activity": "active, inferred",
+            "depthM": 2150.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2003
+          },
+          {
+            "name": "SW Syoyo",
+            "activity": "active, inferred",
+            "depthM": 1750.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2003
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 19,
+        "intersectionLengthKm": 1119.847882758416,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 101.27404544657361
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 87.66082558847494
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 83.80711953569437
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 82.69519413145582
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.29264838359
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 75.75820734663189
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 72.89457429151808
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.69543869403864
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 67.19427426560783
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.57051368439399
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 56.72876383821363
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 56.367058323977474
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.57837741336896
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 46.77619617313658
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.63334678423039
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.48168557829232
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 32.601005272062885
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.777124113152839
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.0614838940019
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 283,
+      "medianMwM2": 78.0,
+      "p10MwM2": 20.200000000000003,
+      "p90MwM2": 689.0000000000007,
+      "maxMwM2": 120744.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 79,
+          "percent": 27.915194346289752
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 36,
+          "percent": 12.7208480565371
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 28,
+          "percent": 9.89399293286219
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 28,
+          "percent": 9.89399293286219
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 41,
+          "percent": 14.487632508833922
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 10,
+          "percent": 3.53356890459364
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 15,
+          "percent": 5.30035335689046
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 46,
+          "percent": 16.25441696113074
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    }
+  ]
+}

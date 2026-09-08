@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_738",
+  "regionName": "South Siberian forest steppe",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.042059+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 102.22622183868322,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Mayna Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 57.36584156305383
+          },
+          {
+            "name": "Mayna Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.129534443204435
+          },
+          {
+            "name": "Mayna Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.730845832424954
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999997,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 58526.5431112238,
+        "percent": 35.9950180072805
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 58526.5431112238,
+          "percent": 35.9950180072805
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 40300.97861827,
+          "percent": 24.78592402628104
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 35140.43540315852,
+          "percent": 21.612084669285693
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 7869.434967193977,
+          "percent": 4.839863048343076
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 7766.9320693813015,
+          "percent": 4.776821675037395
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 7069.957464635185,
+          "percent": 4.3481680742126
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 5855.142882701243,
+          "percent": 3.6010323230181394
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 66.8078269952785,
+          "percent": 0.04108817654157955
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 91,
+      "medianMwM2": 48.56688,
+      "p10MwM2": 39.0,
+      "p90MwM2": 61.96464,
+      "maxMwM2": 73.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 10,
+          "percent": 10.989010989010989
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 66,
+          "percent": 72.52747252747253
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 15,
+          "percent": 16.483516483516482
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 27,
+      "commodityCount": 23,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 7,
+          "sharePct": 14.000000000000002
+        },
+        {
+          "label": "Copper",
+          "count": 5,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Platinum",
+          "count": 4,
+          "sharePct": 8.0
+        },
+        {
+          "label": "Molybdenum",
+          "count": 4,
+          "sharePct": 8.0
+        },
+        {
+          "label": "Mercury",
+          "count": 3,
+          "sharePct": 6.0
+        },
+        {
+          "label": "Cobalt",
+          "count": 3,
+          "sharePct": 6.0
+        },
+        {
+          "label": "Aluminum",
+          "count": 3,
+          "sharePct": 6.0
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 4.0
+        },
+        {
+          "label": "Arsenic",
+          "count": 2,
+          "sharePct": 4.0
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 4.0
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 2,
+          "sharePct": 4.0
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 4.0
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Selenium",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Tellurium",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Refiner",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 2.0
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 2.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Terel River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Kasma River",
+          "depositType": "Placer",
+          "commodities": [
+            "Mercury",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ur River",
+          "depositType": "Placer",
+          "commodities": [
+            "Mercury",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bachat River",
+          "depositType": "Placer",
+          "commodities": [
+            "Mercury",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Dzhida District",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Ilikta",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ol'Khovo",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Selenium",
+            "Tellurium"
+          ]
+        },
+        {
+          "name": "Kiyalykh-Uzen'",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "(Facility) Belovsk Zinc Smelter",
+          "depositType": null,
+          "commodities": [
+            "Refiner",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Tomsk",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Odrabash",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Bol'Shoy Telek",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Berikul'Skiy",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "(Facility) Krasnoyarsk Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "(Facility) Krasnoyarsk Pgm Refinery",
+          "depositType": null,
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "(Facility) Sayansk Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Tuganskoe",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Tolchein",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Kiyalykh-Uzensk Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Talskoe",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Minusinsk",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Minvsinsk",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Tulunskoe",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Komsomolsk",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Abakan",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Goryachegorsk",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Dzhetsky",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum",
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

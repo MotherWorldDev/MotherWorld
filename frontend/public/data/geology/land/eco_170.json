@@ -1,0 +1,643 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_170",
+  "regionName": "Nelson Coast temperate forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.209552+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 402.53909823194607,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "White Creek",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 106.41074350874662
+          },
+          {
+            "name": "Paparoa Rangefront",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 74.40803199827336
+          },
+          {
+            "name": "Alpine Kaniere to Springs Junction",
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 69.39444561690661
+          },
+          {
+            "name": "Brunner Anticline",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.003644453859174
+          },
+          {
+            "name": "Maimai",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.90349136462241
+          },
+          {
+            "name": "Inangahua",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.66303071619838
+          },
+          {
+            "name": "Lyell",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.755710573339464
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 82.96769732010607,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 5256.48894422935,
+        "percent": 43.322326044825694
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 5256.48894422935,
+          "percent": 43.322326044825694
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3198.2536652246295,
+          "percent": 26.358999234846443
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1758.3092069585246,
+          "percent": 14.491430603140728
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1466.9172204854756,
+          "percent": 12.089869641295001
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 453.4721333440116,
+          "percent": 3.73737447589213
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2490.854262989979,
+          "percentOfRegion": 17.032302679893967
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 23,
+      "medianMwM2": 84.0,
+      "p10MwM2": 60.0,
+      "p90MwM2": 98.0,
+      "maxMwM2": 108.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 11,
+          "percent": 47.82608695652174
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 10,
+          "percent": 43.47826086956522
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 8.695652173913043
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 39,
+      "commodityCount": 24,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 22,
+          "sharePct": 28.57142857142857
+        },
+        {
+          "label": "Platinum",
+          "count": 14,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Iridium",
+          "count": 4,
+          "sharePct": 5.194805194805195
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 3.896103896103896
+        },
+        {
+          "label": "Quartz",
+          "count": 3,
+          "sharePct": 3.896103896103896
+        },
+        {
+          "label": "Dimension",
+          "count": 3,
+          "sharePct": 3.896103896103896
+        },
+        {
+          "label": "Marble",
+          "count": 3,
+          "sharePct": 3.896103896103896
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 3.896103896103896
+        },
+        {
+          "label": "Osmium",
+          "count": 3,
+          "sharePct": 3.896103896103896
+        },
+        {
+          "label": "Zirconium",
+          "count": 3,
+          "sharePct": 3.896103896103896
+        },
+        {
+          "label": "Mica",
+          "count": 2,
+          "sharePct": 2.5974025974025974
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 2.5974025974025974
+        },
+        {
+          "label": "Asbestos",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "General",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Limestone",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Dolomite",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Feldspar",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Thorium",
+          "count": 1,
+          "sharePct": 1.2987012987012987
+        }
+      ],
+      "sites": [
+        {
+          "name": "Kanieri Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Taharoa Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Waverley Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Aorere Valley",
+          "depositType": null,
+          "commodities": [
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Hamama",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Takaka Hill",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Cobb",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Mt Owen",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Buller",
+          "depositType": null,
+          "commodities": [
+            "Mica",
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Crushington",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Globe Hill",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Stillwater",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Babelthaup",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Shamrock Claim",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "German Terrace",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Rochfort Hydraulic Sluicing Claim",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bradshaw's",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Glen Gyle and Hit-Or-Miss Claim",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Ten-Mile Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Boatmans' Creek and Maimai Stream",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Waikoromumu Valley",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Salisbury",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Saddle Hill",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Waterfall Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Martha Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Cobb",
+          "depositType": null,
+          "commodities": [
+            "Magnesite",
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Blackwater",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Appo's Flat",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Mt Burnett",
+          "depositType": null,
+          "commodities": [
+            "Dolomite"
+          ]
+        },
+        {
+          "name": "Little Totara River",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Mica",
+            "Quartz",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Taramakau River",
+          "depositType": null,
+          "commodities": [
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Wharetea Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Iron",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Reefton",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Globe-Progess",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Barrytown",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Blackwater Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Westport",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Gold",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Westport Deposit",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Gold",
+            "REE",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Takaka District",
+          "depositType": "PLACER",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

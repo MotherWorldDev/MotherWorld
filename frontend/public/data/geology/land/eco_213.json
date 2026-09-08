@@ -1,0 +1,610 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_213",
+  "regionName": "Pilbara shrublands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.465595+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 44.636993815239876,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Balfour Downs Lineament",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.636993815239876
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 98.38450123718486,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 91786.38694838242,
+        "percent": 52.36229656339285
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 91786.38694838242,
+          "percent": 52.36229656339285
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 18407.683768718933,
+          "percent": 10.501215142991313
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 17705.57890721821,
+          "percent": 10.100678372792748
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 14319.013722958625,
+          "percent": 8.168710720452484
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 10886.679725194987,
+          "percent": 6.2106328761139045
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 8580.500153722649,
+          "percent": 4.895003590936982
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 7793.819006034164,
+          "percent": 4.446217742342027
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 5811.32569695768,
+          "percent": 3.3152449909776776
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2878.323014003607,
+          "percentOfRegion": 1.6154987628151924
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 22,
+      "medianMwM2": 40.6,
+      "p10MwM2": 40.5,
+      "p90MwM2": 50.2,
+      "maxMwM2": 50.2,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 22,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 51,
+      "commodityCount": 19,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 32,
+          "sharePct": 32.98969072164948
+        },
+        {
+          "label": "Gold",
+          "count": 11,
+          "sharePct": 11.34020618556701
+        },
+        {
+          "label": "Copper",
+          "count": 8,
+          "sharePct": 8.24742268041237
+        },
+        {
+          "label": "Nickel",
+          "count": 8,
+          "sharePct": 8.24742268041237
+        },
+        {
+          "label": "Zinc",
+          "count": 5,
+          "sharePct": 5.154639175257731
+        },
+        {
+          "label": "Chromium",
+          "count": 4,
+          "sharePct": 4.123711340206185
+        },
+        {
+          "label": "Palladium",
+          "count": 4,
+          "sharePct": 4.123711340206185
+        },
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 3.0927835051546393
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 3.0927835051546393
+        },
+        {
+          "label": "Tantalum",
+          "count": 3,
+          "sharePct": 3.0927835051546393
+        },
+        {
+          "label": "Tin",
+          "count": 3,
+          "sharePct": 3.0927835051546393
+        },
+        {
+          "label": "Iridium",
+          "count": 3,
+          "sharePct": 3.0927835051546393
+        },
+        {
+          "label": "PGE",
+          "count": 3,
+          "sharePct": 3.0927835051546393
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 2.0618556701030926
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 1.0309278350515463
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 1.0309278350515463
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 1.0309278350515463
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 1.0309278350515463
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 1.0309278350515463
+        }
+      ],
+      "sites": [
+        {
+          "name": "Braeside Area",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Balla Balla Deposit",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Andover Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Moolyella Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Mt. Scholl A",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Talga - Talga",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Rudall River",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Ruth Well Nickel Prospect-Australia",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Mons Cupri Texasgulf",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sherlock Bay, Australia",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron",
+            "Nickel",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Mount Tom Price Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mount Whaleback Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Paraburdoo Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Robe River Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bamboo Creek Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Golden Spec Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Eastern Deepdale Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mt. Tom Price Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mr. Whaleback Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Paraburdoo Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Shay Gap Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sunrise Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Ruth Well Nickel Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Fieldings Gully",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Robe River Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Pilgangoora",
+          "depositType": null,
+          "commodities": [
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Tr 5585",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Koodaideri",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Robe River",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "West Angelas",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mt. Newman",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mt. Tom Price",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Giles Mini",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mc Cameys Monster",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Wittenoom",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Yandi",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Wodgina",
+          "depositType": null,
+          "commodities": [
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Sherlock Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Marandoo",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Paraburdoo",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

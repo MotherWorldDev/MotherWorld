@@ -1,0 +1,437 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20002",
+  "regionName": "North and East Iceland",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.734130+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 20.064643980232578,
+        "medianAgeMa": 18.903369903564453,
+        "p10AgeMa": 4.008545875549316,
+        "p90AgeMa": 38.34370803833008,
+        "oldestAgeMa": 55.77236557006836,
+        "coveragePct": 90.59898602650232,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 53.18078462115036,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 45.342820951575824,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 1.4763944272738225,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 17.170997220508514,
+          "medianMmYr": 17.872095108032227,
+          "p10MmYr": 11.843375205993652,
+          "p90MmYr": 21.204404830932617,
+          "coveragePct": 90.59898602650232
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 2,
+          "intersectionLengthKm": 543.7236205817145
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 6,
+        "confirmedOrInferredActive": 5,
+        "inactiveCount": 1,
+        "medianDepthM": 650.0,
+        "maxReportedTemperatureC": 270.0,
+        "tectonicSettings": [
+          {
+            "label": "mid-ocean ridge",
+            "count": 6
+          }
+        ],
+        "fields": [
+          {
+            "name": "Kolbeinsey Ridge, 69 N",
+            "activity": "active, inferred",
+            "depthM": 1200.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Arctic",
+            "discoveryYear": 1980
+          },
+          {
+            "name": "Squid Forest",
+            "activity": "inactive",
+            "depthM": 900.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Arctic",
+            "discoveryYear": 1999
+          },
+          {
+            "name": "Kolbeinsey Field",
+            "activity": "active, confirmed",
+            "depthM": 110.0,
+            "maxTemperatureC": 131.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Arctic",
+            "discoveryYear": 1988
+          },
+          {
+            "name": "Grimsey Field",
+            "activity": "active, confirmed",
+            "depthM": 400.0,
+            "maxTemperatureC": 251.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Arctic",
+            "discoveryYear": 1997
+          },
+          {
+            "name": "Troll Wall",
+            "activity": "active, confirmed",
+            "depthM": 550.0,
+            "maxTemperatureC": 270.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Arctic",
+            "discoveryYear": 2005
+          },
+          {
+            "name": "Soria Moria",
+            "activity": "active, confirmed",
+            "depthM": 750.0,
+            "maxTemperatureC": 270.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Arctic",
+            "discoveryYear": 2005
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 36,
+        "intersectionLengthKm": 1569.613202118489,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 140.44570284636538
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 98.04937028847228
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 94.8593438092502
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 93.14353484570496
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 74.84049624959134
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 64.41113800342244
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.87952090095888
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.7456400467609
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.48619095812679
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 49.27197986497238
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.864056417875084
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 46.294074193367315
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.47846134760414
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.972949261702595
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.341081147664305
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.26629178816647
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.63268384257029
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.266679066278904
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.03890158094206
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.59076497023083
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.299391273595454
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.096392803579214
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.532599162193453
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.70412030888326
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.484327216662948
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.797613472654362
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.126618156560074
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.512416098812214
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.432551590132167
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.222675489690026
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 92,
+      "medianMwM2": 86.8665,
+      "p10MwM2": 59.0,
+      "p90MwM2": 157.0,
+      "maxMwM2": 377.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 2.1739130434782608
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 9,
+          "percent": 9.782608695652174
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 25,
+          "percent": 27.173913043478258
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 20,
+          "percent": 21.73913043478261
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 21,
+          "percent": 22.82608695652174
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 11,
+          "percent": 11.956521739130435
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 3,
+          "percent": 3.260869565217391
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 1,
+          "percent": 1.0869565217391304
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    }
+  ]
+}

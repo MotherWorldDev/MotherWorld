@@ -1,0 +1,126 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20112",
+  "regionName": "Gulf of Tonkin",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:40.962273+00:00",
+  "sections": {
+    "geothermal": {
+      "measurementCount": 13,
+      "medianMwM2": 83.0,
+      "p10MwM2": 64.0,
+      "p90MwM2": 89.0,
+      "maxMwM2": 89.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 5,
+          "percent": 38.46153846153847
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 8,
+          "percent": 61.53846153846154
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Graphite",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Haikou",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Lingshui Tin Deposit",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Chinhsien Manganese Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

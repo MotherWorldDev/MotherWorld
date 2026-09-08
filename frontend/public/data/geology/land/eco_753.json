@@ -1,0 +1,202 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_753",
+  "regionName": "Hindu Kush alpine meadow",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.113771+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 384.826563160723,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 235.772563365
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 113.0622709019085
+          },
+          {
+            "name": null,
+            "kinematics": "Anticline",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.889065897359664
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.102662996454868
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999997,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 7322.5630055316215,
+        "percent": 25.909747528776165
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 7322.5630055316215,
+          "percent": 25.909747528776165
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6988.783985702648,
+          "percent": 24.728722506848996
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 6166.886425079352,
+          "percent": 21.820566131249393
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2422.664848345622,
+          "percent": 8.572221846375044
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1975.102497318312,
+          "percent": 6.988592247047179
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1891.6073195107708,
+          "percent": 6.69315757817107
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 830.8119035360035,
+          "percent": 2.9396983881543237
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 663.3876508816394,
+          "percent": 2.3472937733778245
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Lithium",
+          "count": 2,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 2,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Tantalum",
+          "count": 2,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Tin",
+          "count": 2,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Beryllium",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Gemstone",
+          "count": 1,
+          "sharePct": 10.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Darkhenj",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Pasghushta",
+          "depositType": null,
+          "commodities": [
+            "Lithium",
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Pasghushta",
+          "depositType": null,
+          "commodities": [
+            "Lithium",
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tin"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

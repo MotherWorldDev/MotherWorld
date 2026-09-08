@@ -1,0 +1,628 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_331",
+  "regionName": "Appalachian-Blue Ridge forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.084867+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000004,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 98266.26728853513,
+        "percent": 60.194601424848585
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 98266.26728853513,
+          "percent": 60.194601424848585
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 34985.39489936915,
+          "percent": 21.430873073410805
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 26805.360524497417,
+          "percent": 16.4200598775542
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1650.246539606831,
+          "percent": 1.0108853775089761
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1477.516822039397,
+          "percent": 0.9050769776369335
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 60.31043612408237,
+          "percent": 0.03694413926997192
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2.545242582269922,
+          "percent": 0.0015591297705389237
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 36,
+      "medianMwM2": 48.5,
+      "p10MwM2": 27.0,
+      "p90MwM2": 307.0,
+      "maxMwM2": 338.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 9,
+          "percent": 25.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 18,
+          "percent": 50.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 2.7777777777777777
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 8.333333333333332
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 1,
+          "percent": 2.7777777777777777
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 4,
+          "percent": 11.11111111111111
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 10578,
+      "commodityCount": 94,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 3468,
+          "sharePct": 22.026040012702445
+        },
+        {
+          "label": "Manganese",
+          "count": 1314,
+          "sharePct": 8.345506510003176
+        },
+        {
+          "label": "Mica",
+          "count": 1298,
+          "sharePct": 8.243886948237536
+        },
+        {
+          "label": "Stone",
+          "count": 982,
+          "sharePct": 6.2369006033661485
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 919,
+          "sharePct": 5.836773578913941
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 744,
+          "sharePct": 4.725309622102255
+        },
+        {
+          "label": "Zinc",
+          "count": 744,
+          "sharePct": 4.725309622102255
+        },
+        {
+          "label": "Feldspar",
+          "count": 653,
+          "sharePct": 4.147348364560178
+        },
+        {
+          "label": "Lead",
+          "count": 504,
+          "sharePct": 3.2010161956176564
+        },
+        {
+          "label": "Gold",
+          "count": 410,
+          "sharePct": 2.604001270244522
+        },
+        {
+          "label": "Copper",
+          "count": 389,
+          "sharePct": 2.4706255954271197
+        },
+        {
+          "label": "Limestone",
+          "count": 375,
+          "sharePct": 2.3817084788821847
+        },
+        {
+          "label": "Construction",
+          "count": 371,
+          "sharePct": 2.356303588440775
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 371,
+          "sharePct": 2.356303588440775
+        },
+        {
+          "label": "General",
+          "count": 302,
+          "sharePct": 1.9180692283264529
+        },
+        {
+          "label": "Dimension",
+          "count": 299,
+          "sharePct": 1.8990155604953953
+        },
+        {
+          "label": "Aluminum",
+          "count": 276,
+          "sharePct": 1.752937440457288
+        },
+        {
+          "label": "Clay",
+          "count": 209,
+          "sharePct": 1.327405525563671
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 186,
+          "sharePct": 1.1813274055255638
+        },
+        {
+          "label": "Marble",
+          "count": 163,
+          "sharePct": 1.0352492854874562
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 139,
+          "sharePct": 0.8828199428389965
+        },
+        {
+          "label": "Kaolin",
+          "count": 107,
+          "sharePct": 0.6795808193077167
+        },
+        {
+          "label": "Cobalt",
+          "count": 104,
+          "sharePct": 0.6605271514766592
+        },
+        {
+          "label": "Sulfur",
+          "count": 95,
+          "sharePct": 0.6033661479834868
+        },
+        {
+          "label": "Asbestos",
+          "count": 87,
+          "sharePct": 0.5525563671006668
+        },
+        {
+          "label": "Quartz",
+          "count": 83,
+          "sharePct": 0.5271514766592569
+        },
+        {
+          "label": "Titanium",
+          "count": 79,
+          "sharePct": 0.501746586217847
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 70,
+          "sharePct": 0.4445855827246745
+        },
+        {
+          "label": "Silver",
+          "count": 65,
+          "sharePct": 0.412829469672912
+        },
+        {
+          "label": "Nickel",
+          "count": 59,
+          "sharePct": 0.37472213401079707
+        }
+      ],
+      "sites": [
+        {
+          "name": "Williams Verdolite",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Robert Miller's Farm",
+          "depositType": "Contact Metamorphic",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Irish Creek Mine",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Randolph Mine",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Mica",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Deake Mine",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Mica",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Lower Harmony Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Andover Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Hainesville Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Branchville Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Quarryville",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Mount Salem Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Atlas Portland Cement Co.",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Robert Williams Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Raia Industries",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "New Jersey Calcite Co.",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Hill Vein Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Pikes Peak Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Universal Limestone Products",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "William Nearpass Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Sandford Nearpass Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Spivey Creek Barite Prospect B",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Laurelton Chapel Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Jasper Roberts Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Edwards #2 Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Molybdenite Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Edwards #1 Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Ray Mica Mine",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Feldspar",
+            "Mica",
+            "Molybdenum",
+            "Niobium (Columbium)",
+            "Quartz",
+            "Tantalum",
+            "Thorium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Rabbit Station Hematitic Magnetite Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "George Lewis Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Brackens Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Devils Den Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Edwards #3 Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Wilson Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Marshburn Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Carver Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Goforth Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Tipton Soapstone Mine",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Babbs Mill Barite Mine A",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Caney Valley Barite Mine",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Berkey Barite Prospect",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

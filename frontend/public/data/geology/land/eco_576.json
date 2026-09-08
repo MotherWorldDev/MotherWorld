@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_576",
+  "regionName": "Humid Pampas",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.222039+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 105.62755160837617,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Falla Tostado-Selva",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.70854881589175
+          },
+          {
+            "name": "Falla Tostado-Selva",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.91900279248441
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.00035294590052,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 228705.19555456215,
+        "percent": 57.95875625174871
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 228705.19555456215,
+          "percent": 57.95875625174871
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 160070.0404672533,
+          "percent": 40.56514954176354
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 5824.666296933356,
+          "percent": 1.4760942064877458
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 637.9338853761868,
+          "percentOfRegion": 0.1600499124233853
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3346.5027167484654,
+          "percentOfRegion": 0.839597141676159
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 55.0,
+      "p10MwM2": 55.0,
+      "p90MwM2": 55.0,
+      "maxMwM2": 55.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 2,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 23,
+      "commodityCount": 14,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 9,
+          "sharePct": 19.148936170212767
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 9,
+          "sharePct": 19.148936170212767
+        },
+        {
+          "label": "Iron",
+          "count": 5,
+          "sharePct": 10.638297872340425
+        },
+        {
+          "label": "Manganese",
+          "count": 5,
+          "sharePct": 10.638297872340425
+        },
+        {
+          "label": "Zinc",
+          "count": 3,
+          "sharePct": 6.382978723404255
+        },
+        {
+          "label": "General",
+          "count": 3,
+          "sharePct": 6.382978723404255
+        },
+        {
+          "label": "Limestone",
+          "count": 3,
+          "sharePct": 6.382978723404255
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 4.25531914893617
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 2,
+          "sharePct": 4.25531914893617
+        },
+        {
+          "label": "Stone",
+          "count": 2,
+          "sharePct": 4.25531914893617
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 2.127659574468085
+        },
+        {
+          "label": "Clay",
+          "count": 1,
+          "sharePct": 2.127659574468085
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 2.127659574468085
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 1,
+          "sharePct": 2.127659574468085
+        }
+      ],
+      "sites": [
+        {
+          "name": "Maria Redondo",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Las Margaritas Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Lira and Manantiales Quarries",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay",
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Giandana Pit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Naviera Antares Pit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Portaluppi and Vita Pits",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Giusto Pit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Piedramar Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "La Calera and Municipal Quarries",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Bartolini Y Vazquez, Dayli, and Moras Pits",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Santa Adelina Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "El Sacrificio Quarry",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Manzo and Olate Quarries",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Crepy, El Molino, and La Diabla Quarries",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Fray Luis Beltran Borghi",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Grossi-Nihuil",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Allos Harnos",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Andina",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Riconda Jujuy",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Carbometal",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Grossi-Blanco En Calada",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Zarate",
+          "depositType": null,
+          "commodities": [
+            "Sulfur",
+            "Sulfuric Acid",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

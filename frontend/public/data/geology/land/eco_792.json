@@ -1,0 +1,260 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_792",
+  "regionName": "Iberian conifer forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.316120+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 8,
+        "intersectionLengthKm": 23.943223123306378,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.062074577044157
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.71314939915863
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.065049914204814
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.295681101179661
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.6322203809122922
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.5547036499768483
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.0351947387737854
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.5851493620561878
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 100.0,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 15190.142663993887,
+        "percent": 44.160712368127534
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 15190.142663993887,
+          "percent": 44.160712368127534
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 11606.536489793372,
+          "percent": 33.74246910339274
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 3726.443852092231,
+          "percent": 10.833500300052771
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2020.3895985288489,
+          "percent": 5.873667279220299
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1139.787656743509,
+          "percent": 3.3135853943953735
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 714.1128452481091,
+          "percent": 2.0760655548112767
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 18,
+      "medianMwM2": 59.5,
+      "p10MwM2": 7.680000000000001,
+      "p90MwM2": 84.5,
+      "maxMwM2": 95.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 8,
+          "percent": 44.44444444444444
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 5.555555555555555
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 4,
+          "percent": 22.22222222222222
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 5,
+          "percent": 27.77777777777778
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 40.0
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Oria Area",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Molybdenum",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Ojos Negros",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Marquesado",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,272 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20076",
+  "regionName": "Eastern Brazil",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.078216+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 113.69315366906102,
+        "medianAgeMa": 114.70228576660156,
+        "p10AgeMa": 102.54474639892578,
+        "p90AgeMa": 122.57572174072266,
+        "oldestAgeMa": 124.1216812133789,
+        "coveragePct": 66.48428443308772,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 4.339578742929096,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 95.66042125707091,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 45.56188637452566,
+          "medianMmYr": 45.778568267822266,
+          "p10MmYr": 43.39016342163086,
+          "p90MmYr": 47.19664764404297,
+          "coveragePct": 66.48428443308772
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 84,
+      "medianMwM2": 81.45,
+      "p10MwM2": 67.38,
+      "p90MwM2": 95.5,
+      "maxMwM2": 140.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 3.571428571428571
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 1.1904761904761905
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 32,
+          "percent": 38.095238095238095
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 43,
+          "percent": 51.19047619047619
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 5,
+          "percent": 5.952380952380952
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 9,
+      "commodityCount": 7,
+      "commodities": [
+        {
+          "label": "Titanium",
+          "count": 7,
+          "sharePct": 28.000000000000004
+        },
+        {
+          "label": "Zirconium",
+          "count": 6,
+          "sharePct": 24.0
+        },
+        {
+          "label": "REE",
+          "count": 4,
+          "sharePct": 16.0
+        },
+        {
+          "label": "Metal",
+          "count": 3,
+          "sharePct": 12.0
+        },
+        {
+          "label": "Thorium",
+          "count": 3,
+          "sharePct": 12.0
+        },
+        {
+          "label": "Pigment",
+          "count": 1,
+          "sharePct": 4.0
+        },
+        {
+          "label": "Graphite",
+          "count": 1,
+          "sharePct": 4.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Atalhos, Barra Do Itapoana",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Jacareipe",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Praia De Carapebus",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Aracruz",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Salvador Plant  Ti",
+          "depositType": null,
+          "commodities": [
+            "Pigment",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Anchieta",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Guarapari",
+          "depositType": null,
+          "commodities": [
+            "REE"
+          ]
+        },
+        {
+          "name": "Cia National Grafite",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Serra",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

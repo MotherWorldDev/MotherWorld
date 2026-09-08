@@ -1,0 +1,691 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_192",
+  "regionName": "Southeast Australia temperate savanna",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.326498+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 15,
+        "intersectionLengthKm": 344.5936990849181,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Cadell Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 85.35552668611491
+          },
+          {
+            "name": "Leaghur Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 72.9636971383889
+          },
+          {
+            "name": "Mount William Fault Zone",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.41906098525795
+          },
+          {
+            "name": "Walgett scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.944775256592564
+          },
+          {
+            "name": "Avonmore Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.085728933075913
+          },
+          {
+            "name": "Leichardt Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 20.750887205825283
+          },
+          {
+            "name": "Avonmore Scarp (splay)",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.1614428412914
+          },
+          {
+            "name": "Tyrrell Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.736613978648045
+          },
+          {
+            "name": "Sebastian Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.578928507013192
+          },
+          {
+            "name": "Tatura Scarp",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.004030270670373
+          },
+          {
+            "name": "Whitelaw Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.3411460256227254
+          },
+          {
+            "name": "Iona Ridge",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.125435864907547
+          },
+          {
+            "name": "Beechworth Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.715954755539382
+          },
+          {
+            "name": "Bet Bet Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.354777037834501
+          },
+          {
+            "name": "Hamley Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.0556935981354654
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 100.0,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 257482.90639663028,
+        "percent": 92.67712431458357
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 257482.90639663028,
+          "percent": 92.67712431458357
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 10813.292893069727,
+          "percent": 3.892083182241652
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 7551.32455588169,
+          "percent": 2.7179864263578697
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1285.5284191144137,
+          "percent": 0.4627067434320207
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 694.8457208190333,
+          "percent": 0.2500993333848928
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 77,
+      "medianMwM2": 70.0,
+      "p10MwM2": 58.0,
+      "p90MwM2": 91.58,
+      "maxMwM2": 116.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 1.2987012987012987
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 16,
+          "percent": 20.77922077922078
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 37,
+          "percent": 48.05194805194805
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 19,
+          "percent": 24.675324675324674
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 4,
+          "percent": 5.194805194805195
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 45,
+      "commodityCount": 20,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 16,
+          "sharePct": 14.414414414414415
+        },
+        {
+          "label": "Lead",
+          "count": 12,
+          "sharePct": 10.81081081081081
+        },
+        {
+          "label": "Zinc",
+          "count": 12,
+          "sharePct": 10.81081081081081
+        },
+        {
+          "label": "Silver",
+          "count": 12,
+          "sharePct": 10.81081081081081
+        },
+        {
+          "label": "Platinum",
+          "count": 11,
+          "sharePct": 9.90990990990991
+        },
+        {
+          "label": "Copper",
+          "count": 11,
+          "sharePct": 9.90990990990991
+        },
+        {
+          "label": "Titanium",
+          "count": 7,
+          "sharePct": 6.306306306306306
+        },
+        {
+          "label": "Metal",
+          "count": 6,
+          "sharePct": 5.405405405405405
+        },
+        {
+          "label": "Zirconium",
+          "count": 5,
+          "sharePct": 4.504504504504505
+        },
+        {
+          "label": "Tin",
+          "count": 4,
+          "sharePct": 3.6036036036036037
+        },
+        {
+          "label": "REE",
+          "count": 3,
+          "sharePct": 2.7027027027027026
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 1.8018018018018018
+        },
+        {
+          "label": "Iridium",
+          "count": 2,
+          "sharePct": 1.8018018018018018
+        },
+        {
+          "label": "Osmium",
+          "count": 2,
+          "sharePct": 1.8018018018018018
+        },
+        {
+          "label": "Vermiculite",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        },
+        {
+          "label": "Asbestos",
+          "count": 1,
+          "sharePct": 0.9009009009009009
+        }
+      ],
+      "sites": [
+        {
+          "name": "Gibsonvale Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Hawks Nest/Bridge Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Tomago Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Viney Creek Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Parish",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Wingello",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Hillview",
+          "depositType": null,
+          "commodities": [
+            "Vermiculite"
+          ]
+        },
+        {
+          "name": "Narromine River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ophir River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Aberfoyle River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Cudegong River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Platina Lead",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Unnamed On Hill 2 Miles E. Fifield",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": "Placer",
+          "commodities": [
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Georgina Lead",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Platina Development",
+          "depositType": "Placer",
+          "commodities": [
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Mount Hope Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Pyrites Hill Iron-Cobalt Prospect-Australia",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Cobar",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Elura",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hexham, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Northern Division Nsw, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Southern Division Nsw, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Woodsreef Mine",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Temora Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mineral Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Csa Cobar Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "North Broken Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Ardlethan Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Elura Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "New Broken Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Zinc Corp. Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Woodlawn Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "North Lead",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Fifield Lead",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sheahan-Grants Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Girilambone",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mineral Hill",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Elura",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Peak",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

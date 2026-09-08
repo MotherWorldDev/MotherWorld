@@ -1,0 +1,608 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_500",
+  "regionName": "Serra do Mar coastal forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.131129+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 97.31720268714261,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 41074.0817869219,
+        "percent": 40.372746711818955
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 41074.0817869219,
+          "percent": 40.372746711818955
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 31675.3219766375,
+          "percent": 31.134469610597066
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 13267.049125890137,
+          "percent": 13.040515835544902
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 12493.777720944587,
+          "percent": 12.280447948128383
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1236.4893581328822,
+          "percent": 1.2153764489910828
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1064.682925339254,
+          "percent": 1.0465035906610682
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 925.7468723091308,
+          "percent": 0.9099398542585417
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2804.64444593592,
+          "percentOfRegion": 2.682797312857877
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 102,
+      "medianMwM2": 65.0,
+      "p10MwM2": 42.0,
+      "p90MwM2": 123.0,
+      "maxMwM2": 187.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 6,
+          "percent": 5.88235294117647
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 34,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 34,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 14,
+          "percent": 13.725490196078432
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 11,
+          "percent": 10.784313725490197
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 3,
+          "percent": 2.941176470588235
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 104,
+      "commodityCount": 40,
+      "commodities": [
+        {
+          "label": "Mica",
+          "count": 20,
+          "sharePct": 11.1731843575419
+        },
+        {
+          "label": "Iron",
+          "count": 18,
+          "sharePct": 10.05586592178771
+        },
+        {
+          "label": "Lead",
+          "count": 13,
+          "sharePct": 7.262569832402235
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 11,
+          "sharePct": 6.145251396648044
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 10,
+          "sharePct": 5.58659217877095
+        },
+        {
+          "label": "General",
+          "count": 8,
+          "sharePct": 4.4692737430167595
+        },
+        {
+          "label": "Limestone",
+          "count": 8,
+          "sharePct": 4.4692737430167595
+        },
+        {
+          "label": "Zinc",
+          "count": 8,
+          "sharePct": 4.4692737430167595
+        },
+        {
+          "label": "Tungsten",
+          "count": 6,
+          "sharePct": 3.35195530726257
+        },
+        {
+          "label": "Kaolin",
+          "count": 6,
+          "sharePct": 3.35195530726257
+        },
+        {
+          "label": "Copper",
+          "count": 5,
+          "sharePct": 2.793296089385475
+        },
+        {
+          "label": "Silver",
+          "count": 5,
+          "sharePct": 2.793296089385475
+        },
+        {
+          "label": "Clay",
+          "count": 5,
+          "sharePct": 2.793296089385475
+        },
+        {
+          "label": "Quartz",
+          "count": 5,
+          "sharePct": 2.793296089385475
+        },
+        {
+          "label": "Tin",
+          "count": 4,
+          "sharePct": 2.2346368715083798
+        },
+        {
+          "label": "Gold",
+          "count": 4,
+          "sharePct": 2.2346368715083798
+        },
+        {
+          "label": "Aluminum",
+          "count": 4,
+          "sharePct": 2.2346368715083798
+        },
+        {
+          "label": "Feldspar",
+          "count": 4,
+          "sharePct": 2.2346368715083798
+        },
+        {
+          "label": "Nickel",
+          "count": 4,
+          "sharePct": 2.2346368715083798
+        },
+        {
+          "label": "Cobalt",
+          "count": 3,
+          "sharePct": 1.675977653631285
+        },
+        {
+          "label": "Dolomite",
+          "count": 2,
+          "sharePct": 1.1173184357541899
+        },
+        {
+          "label": "Dimension",
+          "count": 2,
+          "sharePct": 1.1173184357541899
+        },
+        {
+          "label": "Marble",
+          "count": 2,
+          "sharePct": 1.1173184357541899
+        },
+        {
+          "label": "Molybdenum",
+          "count": 2,
+          "sharePct": 1.1173184357541899
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 2,
+          "sharePct": 1.1173184357541899
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 2,
+          "sharePct": 1.1173184357541899
+        },
+        {
+          "label": "Diatomite",
+          "count": 2,
+          "sharePct": 1.1173184357541899
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 1.1173184357541899
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 0.5586592178770949
+        },
+        {
+          "label": "Wollastonite",
+          "count": 1,
+          "sharePct": 0.5586592178770949
+        }
+      ],
+      "sites": [
+        {
+          "name": "Iporanga Area",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Sudeste De Porangaba",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Dolomite"
+          ]
+        },
+        {
+          "name": "Vale Do Ribeira Wollastonite Deposit",
+          "depositType": null,
+          "commodities": [
+            "Wollastonite"
+          ]
+        },
+        {
+          "name": "Sete Barras",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Cerro Da Catinga, Macico De Aguti",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Batatal",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Sao Andre Lopes",
+          "depositType": "Stratiform",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Descampado",
+          "depositType": "Stratiform",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Marques De Abrantes",
+          "depositType": "Stratiform",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Ribeirao Do Rocha",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Sitio Pedeira-Barra Do Braco",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Guarau",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Fazenda Rio Das Canoas",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Inhandjara",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Aracariguama",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bateia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Berrante, Morro Grande",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": "Vein",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Morro Do Bau",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Tangua",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Perau Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cipo Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Hanabusa Mine",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Santa Rita Mine",
+          "depositType": null,
+          "commodities": [
+            "Kaolin",
+            "Mica"
+          ]
+        },
+        {
+          "name": "Fundao Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Roseira Mine",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Muscovita",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Aparecida",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Santa Margarida",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Gero",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Italiana",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Fernandes",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Baroneza",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Surpreza",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Agua Funda",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Estados Unidos",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Paulina",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Pedra Preta",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Turvo",
+          "depositType": "Residual",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Tubarao, Laguna",
+          "depositType": "Residual",
+          "commodities": [
+            "Clay",
+            "Kaolin"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

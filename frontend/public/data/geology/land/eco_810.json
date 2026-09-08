@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_810",
+  "regionName": "Arabian sand desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.210348+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.8224374194642,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 636959.6709464754,
+        "percent": 89.26605665818538
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 636959.6709464754,
+          "percent": 89.26605665818538
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 29196.991436364504,
+          "percent": 4.091782275531347
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 14557.675386617413,
+          "percent": 2.040170414466413
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 12695.922592229846,
+          "percent": 1.7792569877491653
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 12456.600882908519,
+          "percent": 1.7457174934322532
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 7685.0696819605455,
+          "percent": 1.0770161706354555
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1269.2549438497217,
+          "percentOfRegion": 0.17756258053602728
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 5,
+      "medianMwM2": 38.9391,
+      "p10MwM2": 26.0,
+      "p90MwM2": 38.9391,
+      "maxMwM2": 38.9391,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 5,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 40.0
+        },
+        {
+          "label": "Diatomite",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bayda Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Lasail Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Bi'R Hayzan Diatomite Deposit",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Jebal Ali",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

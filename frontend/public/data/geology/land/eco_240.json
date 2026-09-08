@@ -1,0 +1,238 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_240",
+  "regionName": "Luzon montane rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.603769+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 6,
+        "intersectionLengthKm": 112.89050914074355,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Bambang-Ma. Aurora",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.843526314267
+          },
+          {
+            "name": "Bangui Fault",
+            "kinematics": "Sinistral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.53380460694502
+          },
+          {
+            "name": "General Nakar West",
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.355332342416062
+          },
+          {
+            "name": "Iba Fault",
+            "kinematics": "Reverse-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.38354846552919
+          },
+          {
+            "name": "General Nakar East",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.979683604655976
+          },
+          {
+            "name": "Dinapigue North",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.7946138069303007
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 94.09049922838183,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 5522.57858233028,
+        "percent": 71.14742311922704
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 5522.57858233028,
+          "percent": 71.14742311922704
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 1042.9605447520046,
+          "percent": 13.436468864662068
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 650.8342909512829,
+          "percent": 8.384703266508222
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 545.7890612394817,
+          "percent": 7.031404749602673
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 487.5147388616597,
+          "percentOfRegion": 5.909500771617921
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 10,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 5,
+          "sharePct": 35.714285714285715
+        },
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 21.428571428571427
+        },
+        {
+          "label": "Manganese",
+          "count": 3,
+          "sharePct": 21.428571428571427
+        },
+        {
+          "label": "Chromium",
+          "count": 2,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        }
+      ],
+      "sites": [
+        {
+          "name": "Soli",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Bornay",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Absai",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Madulag",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Antipolo-Salat",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Lumbay Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bully Bueno Hercules",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Sitio Malinao, Barrio of Bagong S",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "San Fabian Copper Project",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sitios Saet and Kalantas, Barrio",
+          "depositType": null,
+          "commodities": [
+            "Manganese",
+            "Silica"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

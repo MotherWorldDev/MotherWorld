@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_228",
+  "regionName": "East Deccan moist deciduous forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.055235+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.37300668971861,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 144811.4007034939,
+        "percent": 42.8323402822786
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 144811.4007034939,
+          "percent": 42.8323402822786
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 48388.674969613465,
+          "percent": 14.312410362985009
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 43869.41871720267,
+          "percent": 12.975703993971871
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 34879.62339939594,
+          "percent": 10.316700833656174
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 34812.5392489516,
+          "percent": 10.296858672435299
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 28565.553176771667,
+          "percent": 8.44912408881553
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 2761.7191989833386,
+          "percent": 0.8168617658575152
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2133.1698021869834,
+          "percentOfRegion": 0.6269933102813872
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 145,
+      "medianMwM2": 50.0,
+      "p10MwM2": 38.3,
+      "p90MwM2": 92.7,
+      "maxMwM2": 110.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 20,
+          "percent": 13.793103448275861
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 75,
+          "percent": 51.724137931034484
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 20,
+          "percent": 13.793103448275861
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 22,
+          "percent": 15.172413793103448
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 8,
+          "percent": 5.517241379310345
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 308,
+      "commodityCount": 21,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 113,
+          "sharePct": 27.033492822966508
+        },
+        {
+          "label": "Manganese",
+          "count": 81,
+          "sharePct": 19.37799043062201
+        },
+        {
+          "label": "Chromium",
+          "count": 59,
+          "sharePct": 14.114832535885165
+        },
+        {
+          "label": "Aluminum",
+          "count": 38,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 32,
+          "sharePct": 7.655502392344498
+        },
+        {
+          "label": "Sulfur",
+          "count": 24,
+          "sharePct": 5.741626794258373
+        },
+        {
+          "label": "Silica",
+          "count": 21,
+          "sharePct": 5.023923444976076
+        },
+        {
+          "label": "Copper",
+          "count": 19,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Graphite",
+          "count": 6,
+          "sharePct": 1.4354066985645932
+        },
+        {
+          "label": "Titanium",
+          "count": 4,
+          "sharePct": 0.9569377990430622
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 0.7177033492822966
+        },
+        {
+          "label": "Ferrochrome",
+          "count": 3,
+          "sharePct": 0.7177033492822966
+        },
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 0.7177033492822966
+        },
+        {
+          "label": "Zinc",
+          "count": 3,
+          "sharePct": 0.7177033492822966
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 0.4784688995215311
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 0.4784688995215311
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 0.23923444976076555
+        },
+        {
+          "label": "Kyanite",
+          "count": 1,
+          "sharePct": 0.23923444976076555
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 0.23923444976076555
+        },
+        {
+          "label": "Asbestos",
+          "count": 1,
+          "sharePct": 0.23923444976076555
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 0.23923444976076555
+        }
+      ],
+      "sites": [
+        {
+          "name": "Peli",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Adilabad",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Amatola",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Banjari",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Banjartola",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Barbaspur",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Bharweli",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Bharweli",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Bijora",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Birsola",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Chiklajhori",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Dhapewata",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Dongargaon",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ghondi",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Gongalpara",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Gulla Hurki",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Hirapur",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Jaitpuri",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kanatola",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Katangi",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kera",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kokma",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kosmi",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kurthitola",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Laugur",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Nishkal",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Piparia",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Polwatur",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Rajpur",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Samnapur",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sonawani",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Titwa",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Waraseoni",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Summary of Deposits In Mysore",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Panchpatali Mine",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Balaghat Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Bhutuda Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Dalapahar Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Gurda Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Siljora Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

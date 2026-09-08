@@ -1,0 +1,659 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_336",
+  "regionName": "Interior Plateau US Hardwood Forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.085865+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 97.94378941787343,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 70198.54645255485,
+        "percent": 58.033452808407816
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 70198.54645255485,
+          "percent": 58.033452808407816
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 26425.02646670512,
+          "percent": 21.845687751568065
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 19658.49183853201,
+          "percent": 16.2517632636024
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4680.14420176965,
+          "percent": 3.8690961764217198
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 2539.4542683956424,
+          "percentOfRegion": 2.0562105821266248
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1,
+      "medianMwM2": 57.0,
+      "p10MwM2": 57.0,
+      "p90MwM2": 57.0,
+      "maxMwM2": 57.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2882,
+      "commodityCount": 63,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 614,
+          "sharePct": 14.092265320174432
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 580,
+          "sharePct": 13.31191186596282
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 578,
+          "sharePct": 13.26600872159743
+        },
+        {
+          "label": "Stone",
+          "count": 366,
+          "sharePct": 8.400275418866192
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 346,
+          "sharePct": 7.941243975212302
+        },
+        {
+          "label": "Oil Shale",
+          "count": 247,
+          "sharePct": 5.669038329125545
+        },
+        {
+          "label": "Uranium",
+          "count": 247,
+          "sharePct": 5.669038329125545
+        },
+        {
+          "label": "Zinc",
+          "count": 232,
+          "sharePct": 5.324764746385127
+        },
+        {
+          "label": "Construction",
+          "count": 150,
+          "sharePct": 3.4427358274041775
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 150,
+          "sharePct": 3.4427358274041775
+        },
+        {
+          "label": "Lead",
+          "count": 139,
+          "sharePct": 3.190268533394538
+        },
+        {
+          "label": "Limestone",
+          "count": 134,
+          "sharePct": 3.075510672481065
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 111,
+          "sharePct": 2.547624512279091
+        },
+        {
+          "label": "General",
+          "count": 75,
+          "sharePct": 1.7213679137020887
+        },
+        {
+          "label": "Clay",
+          "count": 72,
+          "sharePct": 1.6525131971540052
+        },
+        {
+          "label": "Dimension",
+          "count": 60,
+          "sharePct": 1.3770943309616708
+        },
+        {
+          "label": "Calcium",
+          "count": 24,
+          "sharePct": 0.5508377323846684
+        },
+        {
+          "label": "Aluminum",
+          "count": 22,
+          "sharePct": 0.5049345880192793
+        },
+        {
+          "label": "Silica",
+          "count": 19,
+          "sharePct": 0.4360798714711958
+        },
+        {
+          "label": "Manganese",
+          "count": 19,
+          "sharePct": 0.4360798714711958
+        },
+        {
+          "label": "Dolomite",
+          "count": 14,
+          "sharePct": 0.3213220105577232
+        },
+        {
+          "label": "Silver",
+          "count": 12,
+          "sharePct": 0.2754188661923342
+        },
+        {
+          "label": "Sulfur",
+          "count": 12,
+          "sharePct": 0.2754188661923342
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 11,
+          "sharePct": 0.25246729400963963
+        },
+        {
+          "label": "Cobalt",
+          "count": 10,
+          "sharePct": 0.22951572182694516
+        },
+        {
+          "label": "Cadmium",
+          "count": 10,
+          "sharePct": 0.22951572182694516
+        },
+        {
+          "label": "Nickel",
+          "count": 8,
+          "sharePct": 0.18361257746155613
+        },
+        {
+          "label": "Flagstone",
+          "count": 7,
+          "sharePct": 0.1606610052788616
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 6,
+          "sharePct": 0.1377094330961671
+        },
+        {
+          "label": "Germanium",
+          "count": 6,
+          "sharePct": 0.1377094330961671
+        }
+      ],
+      "sites": [
+        {
+          "name": "Shawnee Low Interest Refractory Clay Deposit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "Shawnee High Interest Refractory Clay Deposit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "Shawnee Low Interest Fluorine Deposit",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mount Pleasent Plant",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Mat-Nel No. 1 Pit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Bush No. 2 Pit",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Brick Clay"
+          ]
+        },
+        {
+          "name": "Tennlite Quarry No. 1",
+          "depositType": null,
+          "commodities": [
+            "Bloating Material"
+          ]
+        },
+        {
+          "name": "The Stone Man Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Rock Hill Plant",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Franklin Plant",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Lebanon Quarry - Plant #1",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Sumner County Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Goodlettsville Plant #503",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Donelson Pike Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "River Road Plant #515",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Hermitage Plant #506",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Danley Plant #516",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "White House Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cumberland City Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Dolomite",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Lynchburg Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Simpson Stone Plant",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Eller and Olsen Stone Co. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Porter Brown Limestone Co. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Parsons Plant",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Burns Stone Co. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Livingston Limestone Co. East Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Smith County Highway Department Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Millersville Plant",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "De Kalb County Highway Department",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Waynesboro Plant",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Winton Quarry Pit #374",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Clark & Stephenson Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Lincoln County Highway Department Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Pickett Co. Hwy. Dept. Pit No. 164",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Overton County Hwy, Dept. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "White County Hwy. Dept. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Bostick Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Moore County Highway Department Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Dixie Limestone Co. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Columbia Rock Products Corp. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_663",
+  "regionName": "English Lowlands beech forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.172556+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 94.93609881077887,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 20889.252893525365,
+        "percent": 48.014757306803254
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 20889.252893525365,
+          "percent": 48.014757306803254
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 13143.90537932819,
+          "percent": 30.211775886328567
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 9472.742965067615,
+          "percent": 21.77346680686817
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2320.6092074201874,
+          "percentOfRegion": 5.0639011892211325
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 31,
+      "medianMwM2": 48.0,
+      "p10MwM2": 33.5,
+      "p90MwM2": 67.0,
+      "maxMwM2": 78.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 6,
+          "percent": 19.35483870967742
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 18,
+          "percent": 58.06451612903226
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 7,
+          "percent": 22.58064516129032
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 10,
+      "commodityCount": 16,
+      "commodities": [
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Refiner",
+          "count": 2,
+          "sharePct": 8.333333333333332
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        },
+        {
+          "label": "Mercury",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        },
+        {
+          "label": "Smelter",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 4.166666666666666
+        }
+      ],
+      "sites": [
+        {
+          "name": "(Facility) Brimsdown Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Mercury",
+            "Nickel",
+            "PGE",
+            "Silver"
+          ]
+        },
+        {
+          "name": "(Facility) Acton  Refinery",
+          "depositType": null,
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "(Facility) Rotherhithe Works Refinery",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Northfleet",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Refiner",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Stowmarket Conversion Plant",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Vanandium Operation",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Avonmouth Isf",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Lead",
+            "Refiner",
+            "Smelter",
+            "Sulfur",
+            "Sulfuric Acid",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Vanandium Operation",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Severnside Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Vanandium Operation",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

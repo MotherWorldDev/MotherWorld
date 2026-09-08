@@ -1,0 +1,495 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20029",
+  "regionName": "Azores Canaries Madeira",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.867269+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 88.47485762444339,
+        "medianAgeMa": 85.26207733154297,
+        "p10AgeMa": 10.364206314086914,
+        "p90AgeMa": 164.32044982910156,
+        "oldestAgeMa": 191.9735565185547,
+        "coveragePct": 99.57468130495926,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 21.218975006848893,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 18.18630145686031,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 11.294094913797068,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 25.79278705429515,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 23.507841568198593,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 26.070292292245185,
+          "medianMmYr": 25.366785049438477,
+          "p10MmYr": 19.117549896240234,
+          "p90MmYr": 36.34209060668945,
+          "coveragePct": 99.57468130495926
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 2,
+          "intersectionLengthKm": 923.4832330686718
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 12,
+        "confirmedOrInferredActive": 12,
+        "inactiveCount": 0,
+        "medianDepthM": 1370.0,
+        "maxReportedTemperatureC": 333.0,
+        "tectonicSettings": [
+          {
+            "label": "mid-ocean ridge",
+            "count": 11
+          },
+          {
+            "label": "intra-plate volcano",
+            "count": 1
+          }
+        ],
+        "fields": [
+          {
+            "name": "South Kurchatov",
+            "activity": "active, inferred",
+            "depthM": 2900.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 1992
+          },
+          {
+            "name": "Luso",
+            "activity": "active, confirmed",
+            "depthM": 570.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2018
+          },
+          {
+            "name": "Menez Gwen",
+            "activity": "active, confirmed",
+            "depthM": 865.0,
+            "maxTemperatureC": 281.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 1994
+          },
+          {
+            "name": "Bubbylon",
+            "activity": "active, confirmed",
+            "depthM": 1000.0,
+            "maxTemperatureC": 300.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Lucky Strike",
+            "activity": "active, confirmed",
+            "depthM": 1740.0,
+            "maxTemperatureC": 333.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 1993
+          },
+          {
+            "name": "Evan",
+            "activity": "active, confirmed",
+            "depthM": 1775.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2006
+          },
+          {
+            "name": "Menez Hom",
+            "activity": "active, confirmed",
+            "depthM": 1802.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2002
+          },
+          {
+            "name": "Lucky Strike segment, southern end",
+            "activity": "active, inferred",
+            "depthM": 2600.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 1994
+          },
+          {
+            "name": "North FAMOUS",
+            "activity": "active, inferred",
+            "depthM": 2500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 1994
+          },
+          {
+            "name": "El Hierro, Tagoro",
+            "activity": "active, confirmed",
+            "depthM": 350.0,
+            "maxTemperatureC": 38.0,
+            "tectonicSetting": "intra-plate volcano",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2016
+          },
+          {
+            "name": "Don Joao de Castro Bank",
+            "activity": "active, confirmed",
+            "depthM": 45.0,
+            "maxTemperatureC": 121.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 1995
+          },
+          {
+            "name": "Ribeira Quente",
+            "activity": "active, confirmed",
+            "depthM": 10.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 1986
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 131,
+        "intersectionLengthKm": 1765.4731002502738,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 85.74577600011574
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 74.83438289795221
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 65.57444632753148
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 65.53931921115395
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.554207459023665
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 55.97334110878901
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 55.70650941645515
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.90709720389265
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.273975552528036
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 45.246243820705615
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.80969602113654
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.056799162515148
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.078406493774
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.050677596161027
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.543684171213044
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.90944119800204
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.381018420582173
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 20.84051102918901
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 20.45597282809288
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.908395716832423
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.95226416557404
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.387447946300732
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.265016812177127
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.088126185353463
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.797084459449323
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.700439945633418
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.63586076424782
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.800557936051627
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.741457386834734
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.872815619795631
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 234,
+      "medianMwM2": 88.05,
+      "p10MwM2": 32.0,
+      "p90MwM2": 162.67000000000002,
+      "maxMwM2": 385.4,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 37,
+          "percent": 15.81196581196581
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 45,
+          "percent": 19.230769230769234
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 23,
+          "percent": 9.82905982905983
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 25,
+          "percent": 10.683760683760683
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 67,
+          "percent": 28.63247863247863
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 25,
+          "percent": 10.683760683760683
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 6,
+          "percent": 2.564102564102564
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 3,
+          "percent": 1.282051282051282
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    }
+  ]
+}

@@ -1,0 +1,694 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_654",
+  "regionName": "Central European mixed forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.564543+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 43.542779117816664,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.542779117816664
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.81702584286137,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 276263.0256778958,
+        "percent": 37.706255163665965
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 276263.0256778958,
+          "percent": 37.706255163665965
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 207794.169073213,
+          "percent": 28.36116031586422
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 112034.71081558146,
+          "percent": 15.291258693898547
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 90916.54977783887,
+          "percent": 12.40890856136605
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 26547.26386009983,
+          "percent": 3.623350980645483
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 11182.517230302003,
+          "percent": 1.526265945372926
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2696.6162233781097,
+          "percent": 0.3680525077421237
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 2035.3790114330654,
+          "percent": 0.27780235944185544
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 1962.7245972056783,
+          "percent": 0.2678859912456327
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 682.5247448115508,
+          "percent": 0.09315561545100193
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 320.8080514539412,
+          "percent": 0.043786062999195775
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 235.31801832198502,
+          "percent": 0.03211780230700242
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1343.0571451429482,
+          "percentOfRegion": 0.18297415713866258
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1074,
+      "medianMwM2": 51.480000000000004,
+      "p10MwM2": 28.0,
+      "p90MwM2": 78.51,
+      "maxMwM2": 185.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 276,
+          "percent": 25.69832402234637
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 423,
+          "percent": 39.385474860335194
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 282,
+          "percent": 26.256983240223462
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 74,
+          "percent": 6.890130353817504
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 11,
+          "percent": 1.0242085661080074
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 8,
+          "percent": 0.74487895716946
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 90,
+      "commodityCount": 37,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 22,
+          "sharePct": 13.017751479289942
+        },
+        {
+          "label": "Lead",
+          "count": 17,
+          "sharePct": 10.059171597633137
+        },
+        {
+          "label": "Silver",
+          "count": 17,
+          "sharePct": 10.059171597633137
+        },
+        {
+          "label": "Zinc",
+          "count": 15,
+          "sharePct": 8.875739644970414
+        },
+        {
+          "label": "Gold",
+          "count": 13,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Iron",
+          "count": 11,
+          "sharePct": 6.508875739644971
+        },
+        {
+          "label": "Potassium",
+          "count": 10,
+          "sharePct": 5.9171597633136095
+        },
+        {
+          "label": "Sulfur",
+          "count": 9,
+          "sharePct": 5.325443786982249
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 6,
+          "sharePct": 3.5502958579881656
+        },
+        {
+          "label": "Nickel",
+          "count": 5,
+          "sharePct": 2.9585798816568047
+        },
+        {
+          "label": "Titanium",
+          "count": 5,
+          "sharePct": 2.9585798816568047
+        },
+        {
+          "label": "Aluminum",
+          "count": 4,
+          "sharePct": 2.366863905325444
+        },
+        {
+          "label": "Rhenium",
+          "count": 4,
+          "sharePct": 2.366863905325444
+        },
+        {
+          "label": "Selenium",
+          "count": 4,
+          "sharePct": 2.366863905325444
+        },
+        {
+          "label": "Manganese",
+          "count": 3,
+          "sharePct": 1.7751479289940828
+        },
+        {
+          "label": "Molybdenum",
+          "count": 2,
+          "sharePct": 1.183431952662722
+        },
+        {
+          "label": "Arsenic",
+          "count": 2,
+          "sharePct": 1.183431952662722
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Boron-Borates",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Germanium",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Thallium",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Quartz",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        },
+        {
+          "label": "Ferrochrome",
+          "count": 1,
+          "sharePct": 0.591715976331361
+        }
+      ],
+      "sites": [
+        {
+          "name": "Myszkow Cu-Mo-W Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Molybdenum",
+            "Silver",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Trzebionka Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Miedziana",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Jeziorko Mine",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Osiek Mine",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Machow Mine",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Weferlingen Silica Sand",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Dachsberg",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Stassfurt",
+          "depositType": null,
+          "commodities": [
+            "Boron-Borates",
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Silesia - Cracow Zn - Pb Mines",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Cadmium",
+            "Germanium",
+            "Lead",
+            "Silver",
+            "Thallium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "(Facility) Glogow Ii Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "(Facility) Orzel-Bialy Smelter",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Basznia Mine",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "(Facility) Krakow Complex Phosphoric Acid Pl.",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "(Facility) Laziska Ferroalloy Plant",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Nemirov",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "(Facility) Szopienice Zn",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Salggitter",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Yazov",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Rozdol Mining Complex",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "(Facility) Legnica Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Lautawerke",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Rudna",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Nickel",
+            "Rhenium",
+            "Selenium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "(Facility) Skawina Aluminum Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "(Facility) Glogow I Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Bacau Complex Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Beloruskaliy Combine/Enterprise",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Bitterfeld",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bartensleben",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Izera Mts.",
+          "depositType": null,
+          "commodities": [
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Konrad",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Siegfried-Giesen Werk",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "(Facility) Miasteczko-Slaskie Pb",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Sieroszowice",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Nickel",
+            "Rhenium",
+            "Selenium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Lauta",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Strzelin Granitoids",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Trzebinia",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Suceava",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Grzybow Mine",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Szklary",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

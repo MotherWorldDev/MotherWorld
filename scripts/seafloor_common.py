@@ -25,7 +25,14 @@ def is_open_ocean_id(region_id: str) -> bool:
 
 
 def load_marine_analysis_regions(repo: Path, whole_ocean_for_open_ocean: bool = True) -> gpd.GeoDataFrame:
-    return load_regions(Path(repo), kinds=("marine",), globalize_open_ocean=whole_ocean_for_open_ocean).copy()
+    # Include canonical land coverage while constructing the synthetic
+    # whole-ocean scope, then return only marine analysis regions.
+    regions = load_regions(
+        Path(repo),
+        kinds=("land", "marine", "lakes"),
+        globalize_open_ocean=whole_ocean_for_open_ocean,
+    )
+    return regions[regions.kind == "marine"].copy()
 
 
 def polygon_parts(geom):

@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_152",
+  "regionName": "Solomon Islands rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.035092+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 63.82849035753583,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 9576.972119648162,
+        "percent": 42.37526740579326
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 9576.972119648162,
+          "percent": 42.37526740579326
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 7142.541296581654,
+          "percent": 31.603631462872865
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 4848.173091729649,
+          "percent": 21.451731155208048
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 1032.6950493705135,
+          "percent": 4.569369976125822
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 12807.602292411351,
+          "percentOfRegion": 36.17150964246421
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 5,
+      "medianMwM2": 47.8,
+      "p10MwM2": 47.8,
+      "p90MwM2": 47.8,
+      "maxMwM2": 47.8,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 5,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 28.57142857142857
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        }
+      ],
+      "sites": [
+        {
+          "name": "New Georgia Island",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bauxite - Solomon Islands",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Solomon Island Nickel Deposit British",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Bougainville",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

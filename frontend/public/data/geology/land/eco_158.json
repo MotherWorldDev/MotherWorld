@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_158",
+  "regionName": "Trobriand Islands rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.036600+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 63.36732339046684,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 1051.7535354710424,
+        "percent": 41.25895219708734
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1051.7535354710424,
+          "percent": 41.25895219708734
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 773.8945587093655,
+          "percent": 30.358898284164436
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 723.5042217751353,
+          "percent": 28.38214951874822
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1473.6660383053368,
+          "percentOfRegion": 36.63267660953334
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 66.66666666666666
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Sagari River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Wapolu",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

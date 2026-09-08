@@ -1,0 +1,1007 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25057",
+  "regionName": "Oregon, Washington, Vancouver Coast and Shelf",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.146932+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 3.5906797746979886,
+        "medianAgeMa": 3.418816328048706,
+        "p10AgeMa": 0.6493219137191772,
+        "p90AgeMa": 6.776935577392578,
+        "oldestAgeMa": 15.715466499328613,
+        "coveragePct": 66.50140235943988,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 100.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 63.515436077981235,
+          "medianMmYr": 63.00233840942383,
+          "p10MmYr": 60.05895233154297,
+          "p90MmYr": 67.65145874023438,
+          "coveragePct": 66.50140235943988
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 825.114839054633
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 19,
+        "confirmedOrInferredActive": 18,
+        "inactiveCount": 1,
+        "medianDepthM": 2500.0,
+        "maxReportedTemperatureC": 402.0,
+        "tectonicSettings": [
+          {
+            "label": "mid-ocean ridge",
+            "count": 19
+          }
+        ],
+        "fields": [
+          {
+            "name": "Gorda Ridge, GR-15",
+            "activity": "active, inferred",
+            "depthM": 3365.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1985
+          },
+          {
+            "name": "Sea Cliff",
+            "activity": "active, confirmed",
+            "depthM": 2800.0,
+            "maxTemperatureC": 308.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1988
+          },
+          {
+            "name": "Gorda Ridge, EP96A",
+            "activity": "active, inferred",
+            "depthM": 3150.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1996
+          },
+          {
+            "name": "Gorda Ridge, EP96B",
+            "activity": "active, inferred",
+            "depthM": 3400.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1984
+          },
+          {
+            "name": "Gorda Ridge, 41 30'N",
+            "activity": "inactive",
+            "depthM": 3350.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1984
+          },
+          {
+            "name": "NESCA",
+            "activity": "active, confirmed",
+            "depthM": 3300.0,
+            "maxTemperatureC": 217.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1988
+          },
+          {
+            "name": "SESCA",
+            "activity": "active, inferred",
+            "depthM": 3300.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1986
+          },
+          {
+            "name": "West Valley",
+            "activity": "active, inferred",
+            "depthM": 3000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1987
+          },
+          {
+            "name": "Middle Valley, Dead Dog Vent Field",
+            "activity": "active, confirmed",
+            "depthM": 2450.0,
+            "maxTemperatureC": 276.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1990
+          },
+          {
+            "name": "Middle Valley, Bent Hill Massive Sulfide",
+            "activity": "active, confirmed",
+            "depthM": 2440.0,
+            "maxTemperatureC": 270.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1990
+          },
+          {
+            "name": "ET",
+            "activity": "active, inferred",
+            "depthM": 2500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": null
+          },
+          {
+            "name": "Sasquatch Field",
+            "activity": "active, confirmed",
+            "depthM": 2200.0,
+            "maxTemperatureC": 289.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2000
+          },
+          {
+            "name": "Salty Dawg Field",
+            "activity": "active, confirmed",
+            "depthM": 2200.0,
+            "maxTemperatureC": 329.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1995
+          },
+          {
+            "name": "High-Rise Field",
+            "activity": "active, confirmed",
+            "depthM": 2200.0,
+            "maxTemperatureC": 343.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1988
+          },
+          {
+            "name": "Main Endeavour Field",
+            "activity": "active, confirmed",
+            "depthM": 2220.0,
+            "maxTemperatureC": 402.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1984
+          },
+          {
+            "name": "Mothra Field",
+            "activity": "active, confirmed",
+            "depthM": 2270.0,
+            "maxTemperatureC": 320.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1996
+          },
+          {
+            "name": "Stockwork",
+            "activity": "active, inferred",
+            "depthM": 2300.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2005
+          },
+          {
+            "name": "Baby Bare Seamount",
+            "activity": "active, confirmed",
+            "depthM": 2600.0,
+            "maxTemperatureC": 25.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1995
+          },
+          {
+            "name": "Split Seamount",
+            "activity": "active, inferred",
+            "depthM": 2350.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1990
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 88,
+        "intersectionLengthKm": 2913.751140364917,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Mendocino",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 165.43975735352623
+          },
+          {
+            "name": "Big Lagoon - Bald Mtn 2011 CFM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 128.7035727332889
+          },
+          {
+            "name": "Wecoma fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 102.7238108633843
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 98.6501333538546
+          },
+          {
+            "name": "Daisy Bank fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 93.43021735224005
+          },
+          {
+            "name": "Alvin Canyon fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 83.77363372221596
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.15964144925503
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 73.64302317139129
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 70.07831679923588
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.57655065063327
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.55980042628647
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.32897977061529
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 65.38625371407159
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.4437317106879
+          },
+          {
+            "name": "Mad River - Trinidad fault zone (alt2)",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 55.98363295638113
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 48.424242366852994
+          },
+          {
+            "name": "Little Salmon (Offshore)",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.62733102455307
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.38154487168447
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.13517942561729
+          },
+          {
+            "name": "Cape Blanco anticline",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.668475852292175
+          },
+          {
+            "name": "Table Bluff",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.86509362113946
+          },
+          {
+            "name": "Trinidad (alt1)",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.4336025812294
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.96001759474231
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.121805054375024
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.087533210343615
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.756823669522596
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.621587901807985
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.357188289526064
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.24592420123509
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.09660403119484
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4388,
+      "medianMwM2": 287.5,
+      "p10MwM2": 92.0,
+      "p90MwM2": 1708.6000000000004,
+      "maxMwM2": 489000.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 53,
+          "percent": 1.2078395624430265
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 71,
+          "percent": 1.618049225159526
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 166,
+          "percent": 3.7830446672743845
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 223,
+          "percent": 5.0820419325433
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 513,
+          "percent": 11.690975387420236
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 426,
+          "percent": 9.708295350957156
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 821,
+          "percent": 18.710118505013675
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 2105,
+          "percent": 47.97174111212397
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 66,
+      "commodityCount": 21,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 24,
+          "sharePct": 17.51824817518248
+        },
+        {
+          "label": "Chromium",
+          "count": 20,
+          "sharePct": 14.5985401459854
+        },
+        {
+          "label": "Platinum",
+          "count": 14,
+          "sharePct": 10.218978102189782
+        },
+        {
+          "label": "Iron",
+          "count": 12,
+          "sharePct": 8.75912408759124
+        },
+        {
+          "label": "Titanium",
+          "count": 12,
+          "sharePct": 8.75912408759124
+        },
+        {
+          "label": "Stone",
+          "count": 10,
+          "sharePct": 7.2992700729927
+        },
+        {
+          "label": "Construction",
+          "count": 9,
+          "sharePct": 6.569343065693431
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 9,
+          "sharePct": 6.569343065693431
+        },
+        {
+          "label": "Zirconium",
+          "count": 7,
+          "sharePct": 5.109489051094891
+        },
+        {
+          "label": "Metal",
+          "count": 6,
+          "sharePct": 4.37956204379562
+        },
+        {
+          "label": "Clay",
+          "count": 3,
+          "sharePct": 2.18978102189781
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 2,
+          "sharePct": 1.4598540145985401
+        },
+        {
+          "label": "Volcanic Materials",
+          "count": 1,
+          "sharePct": 0.7299270072992701
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 0.7299270072992701
+        },
+        {
+          "label": "Iridium",
+          "count": 1,
+          "sharePct": 0.7299270072992701
+        },
+        {
+          "label": "Osmium",
+          "count": 1,
+          "sharePct": 0.7299270072992701
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 0.7299270072992701
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 0.7299270072992701
+        },
+        {
+          "label": "Garnet",
+          "count": 1,
+          "sharePct": 0.7299270072992701
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 0.7299270072992701
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 0.7299270072992701
+        }
+      ],
+      "sites": [
+        {
+          "name": "Unknown",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Basalt Rock Co. Preston  Island",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Volcanic Materials"
+          ]
+        },
+        {
+          "name": "Agate Beach Chromium Occurence",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Five Mile Point",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Hubbard Mound Beach",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Otter Point Beach",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Section 5 Chromium Occurrence",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Chromium Occurence",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Beach Chromium Occurence",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Point Brown",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Metal",
+            "Platinum",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Leadbetter Point",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iron",
+            "Metal",
+            "Platinum",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Fort Canby",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Metal",
+            "Platinum",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Ozette Beach Placer",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sunset Creek Placer",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iron",
+            "Metal",
+            "Platinum",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Cedar Creek Placer",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iron",
+            "Metal",
+            "Platinum",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Johnson Point Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Morgan Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Port of Astoria",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Cape Mears Pit",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Merchants Beach",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Colbrook Pit",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cape Meares",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cedar Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sunset Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Shi Shi Beach Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Hammond-Mcgowan-Columbia Placer",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Unnamed Location",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Little Wink Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "City of Astoria",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Oregon, State",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "City of Astoria",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Southwest Oregon Beach Sands",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Calcium",
+            "Chromium",
+            "Garnet",
+            "Gold",
+            "Iron",
+            "Platinum",
+            "Silica",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Otter Point Beach",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Basalt Rock Co",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Location",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Butler",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Ruby Beach Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Morgan Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

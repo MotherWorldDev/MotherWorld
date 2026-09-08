@@ -1,0 +1,606 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_661",
+  "regionName": "East European forest steppe",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.611098+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 88.02295606265726,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 88.02295606265726
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.89991387852602,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 392898.6443232665,
+        "percent": 53.871434156808704
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 392898.6443232665,
+          "percent": 53.871434156808704
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 151277.96664919262,
+          "percent": 20.7421459388204
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 94001.19376886796,
+          "percent": 12.888767100490375
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 82913.40837700588,
+          "percent": 11.368489773722434
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 8180.055926208444,
+          "percent": 1.1215903912999468
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 53.42010264173488,
+          "percent": 0.007324579974234759
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1.809159171651817,
+          "percent": 0.00024805888389535475
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 241.46001336050486,
+          "percentOfRegion": 0.03307412331217638
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 489.22590687471876,
+          "percentOfRegion": 0.06701199816189696
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 515,
+      "medianMwM2": 43.0,
+      "p10MwM2": 33.080000000000005,
+      "p90MwM2": 53.0,
+      "maxMwM2": 79.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 165,
+          "percent": 32.038834951456316
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 342,
+          "percent": 66.40776699029126
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 8,
+          "percent": 1.5533980582524272
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 43,
+      "commodityCount": 23,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 17,
+          "sharePct": 28.333333333333332
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 10,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Manganese",
+          "count": 4,
+          "sharePct": 6.666666666666667
+        },
+        {
+          "label": "Titanium",
+          "count": 4,
+          "sharePct": 6.666666666666667
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 5.0
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Ferromanganese",
+          "count": 2,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Pigment",
+          "count": 2,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Graphite",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Construction",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 1.6666666666666667
+        }
+      ],
+      "sites": [
+        {
+          "name": "Zaval'E",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Dimitrovsk",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Lepatinsk",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Schchigry",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Bashkiria Area Southern Urals",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Lebedi",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Voronezh Group",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Poltavskkremenchug",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Shchigry Mine Combine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Tulachermet Sp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mikhaylovka Starij Oskol",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Valea Calugareasca Complex Phosacid",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Lebidi Pp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Ostakhovo",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Kosaya Gora Iron Works",
+          "depositType": null,
+          "commodities": [
+            "Ferromanganese",
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tulafemn",
+          "depositType": null,
+          "commodities": [
+            "Ferromanganese",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Gubkin Pp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "(Facility) Seror Smelter",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Beloglinsk",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Lipetsk Bf",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sumy Plant  Ti",
+          "depositType": null,
+          "commodities": [
+            "Pigment",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Uvarovo Phos-Acid Complex",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Lipestsk Bf Sov-Sokol Bf",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Ryazan",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "REE",
+            "Sand and Gravel",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Krementchug",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Stoilensk",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Lipetsk Sp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Belgorod",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Polpinskaya Mine Combine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Lebidinsk Iron Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Kma/Gubkin",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Kursk Magnetic Anomaly Kma",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mikhalovka Pp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sumy Phos-Acid Complex",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Meleuz I & Ii Phos-Acid Complex",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Koshchevat",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Alekseyevka",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Novo-Berezovsk",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Bismuth",
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Kiever",
+          "depositType": null,
+          "commodities": [
+            "Pigment",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Tulachermet Bf",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

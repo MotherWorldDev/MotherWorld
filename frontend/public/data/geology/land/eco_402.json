@@ -1,0 +1,640 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_402",
+  "regionName": "Western shortgrass prairie",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.246330+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 45.68788951447967,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Cheraw fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 45.68788951447967
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.32248629760319,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 284402.55007408693,
+        "percent": 58.78143677501109
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 284402.55007408693,
+          "percent": 58.78143677501109
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 143125.7607948054,
+          "percent": 29.58179473722577
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 32683.630437904707,
+          "percent": 6.755181188294736
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 17589.2747110736,
+          "percent": 3.635420424598644
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 2813.0136140560016,
+          "percent": 0.581404709130786
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 2252.3283134410717,
+          "percent": 0.4655200676597828
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 572.8105328008169,
+          "percent": 0.11839073211235421
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 391.18361032845445,
+          "percent": 0.08085136596684028
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 3300.3788054190213,
+          "percentOfRegion": 0.6775137023967284
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1540,
+      "medianMwM2": 49.0,
+      "p10MwM2": 36.0,
+      "p90MwM2": 65.0,
+      "maxMwM2": 136.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 287,
+          "percent": 18.636363636363637
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1035,
+          "percent": 67.20779220779221
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 158,
+          "percent": 10.25974025974026
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 43,
+          "percent": 2.792207792207792
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 17,
+          "percent": 1.103896103896104
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4515,
+      "commodityCount": 75,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 3035,
+          "sharePct": 36.913159815130136
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 3035,
+          "sharePct": 36.913159815130136
+        },
+        {
+          "label": "Limestone",
+          "count": 251,
+          "sharePct": 3.052785210411092
+        },
+        {
+          "label": "General",
+          "count": 247,
+          "sharePct": 3.004135246898565
+        },
+        {
+          "label": "Stone",
+          "count": 220,
+          "sharePct": 2.675747993189005
+        },
+        {
+          "label": "Clay",
+          "count": 184,
+          "sharePct": 2.2378983215762585
+        },
+        {
+          "label": "Uranium",
+          "count": 172,
+          "sharePct": 2.0919484310386767
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 167,
+          "sharePct": 2.0311359766480175
+        },
+        {
+          "label": "Copper",
+          "count": 158,
+          "sharePct": 1.921673558744831
+        },
+        {
+          "label": "Gold",
+          "count": 94,
+          "sharePct": 1.143274142544393
+        },
+        {
+          "label": "Iron",
+          "count": 89,
+          "sharePct": 1.082461688153734
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 89,
+          "sharePct": 1.082461688153734
+        },
+        {
+          "label": "Silver",
+          "count": 63,
+          "sharePct": 0.766236925322306
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 42,
+          "sharePct": 0.5108246168815374
+        },
+        {
+          "label": "Geothermal",
+          "count": 31,
+          "sharePct": 0.3770372172220871
+        },
+        {
+          "label": "Feldspar",
+          "count": 28,
+          "sharePct": 0.34054974458769155
+        },
+        {
+          "label": "Pumice",
+          "count": 22,
+          "sharePct": 0.2675747993189005
+        },
+        {
+          "label": "Sulfur",
+          "count": 22,
+          "sharePct": 0.2675747993189005
+        },
+        {
+          "label": "Vanadium",
+          "count": 21,
+          "sharePct": 0.2554123084407687
+        },
+        {
+          "label": "Calcium",
+          "count": 19,
+          "sharePct": 0.23108732668450496
+        },
+        {
+          "label": "Graphite",
+          "count": 17,
+          "sharePct": 0.2067623449282413
+        },
+        {
+          "label": "Manganese",
+          "count": 16,
+          "sharePct": 0.19459985405010946
+        },
+        {
+          "label": "Lead",
+          "count": 16,
+          "sharePct": 0.19459985405010946
+        },
+        {
+          "label": "Zinc",
+          "count": 12,
+          "sharePct": 0.1459498905375821
+        },
+        {
+          "label": "Dimension",
+          "count": 11,
+          "sharePct": 0.13378739965945025
+        },
+        {
+          "label": "Dolomite",
+          "count": 10,
+          "sharePct": 0.12162490878131842
+        },
+        {
+          "label": "Silica",
+          "count": 10,
+          "sharePct": 0.12162490878131842
+        },
+        {
+          "label": "Potassium",
+          "count": 8,
+          "sharePct": 0.09729992702505473
+        },
+        {
+          "label": "Mica",
+          "count": 8,
+          "sharePct": 0.09729992702505473
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 7,
+          "sharePct": 0.08513743614692289
+        }
+      ],
+      "sites": [
+        {
+          "name": "Unk",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Pumice"
+          ]
+        },
+        {
+          "name": "Blasted Pine Claim",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Niobium (Columbium)",
+            "REE",
+            "Strontium",
+            "Thorium"
+          ]
+        },
+        {
+          "name": "Saul Ranch - Rattlesnake Mine",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Bear Gulch",
+          "depositType": null,
+          "commodities": [
+            "Feldspar"
+          ]
+        },
+        {
+          "name": "Red Onion",
+          "depositType": null,
+          "commodities": [
+            "Feldspar"
+          ]
+        },
+        {
+          "name": "Santa Fe #3 #4",
+          "depositType": null,
+          "commodities": [
+            "Feldspar"
+          ]
+        },
+        {
+          "name": "S.P. Smith",
+          "depositType": null,
+          "commodities": [
+            "Feldspar"
+          ]
+        },
+        {
+          "name": "Welch",
+          "depositType": null,
+          "commodities": [
+            "Feldspar"
+          ]
+        },
+        {
+          "name": "Willie",
+          "depositType": null,
+          "commodities": [
+            "Feldspar"
+          ]
+        },
+        {
+          "name": "Yellow Onion",
+          "depositType": null,
+          "commodities": [
+            "Feldspar"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Booster Claim No. 1",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Mike's Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Allen Jones Property",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Gold Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Baca County No. 4 Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Baca County No. 3 Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Baca County No. 1 Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron",
+            "Manganese",
+            "Metal",
+            "Silver",
+            "Titanium",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Black Bear Claim",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Indian Creek",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "King Solomon",
+          "depositType": null,
+          "commodities": [
+            "Uranium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed Uranium Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

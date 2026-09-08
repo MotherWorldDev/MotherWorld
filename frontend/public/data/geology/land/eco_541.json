@@ -1,0 +1,468 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_541",
+  "regionName": "Panamanian dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.054208+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 60.844676339391064,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Rincon Hondo Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.800337336308296
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.874663999108773
+          },
+          {
+            "name": "Pedro Miguel Fault",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.16967500397399998
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 80.60569773481213,
+      "dominantClass": {
+        "code": "vi",
+        "label": "Intermediate volcanic rocks",
+        "areaKm2": 1704.5241631635004,
+        "percent": 41.73089045048905
+      },
+      "classes": [
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1704.5241631635004,
+          "percent": 41.73089045048905
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1299.3072620586954,
+          "percent": 31.810196761226734
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 712.0957953513271,
+          "percent": 17.433834185669834
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 210.63244382681344,
+          "percent": 5.156793683899454
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 155.9857508021841,
+          "percent": 3.8189099452143327
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2.0167514874182415,
+          "percent": 0.049374973500589
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 982.7746115709435,
+          "percentOfRegion": 19.39430226518775
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 35,
+      "commodityCount": 14,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 12,
+          "sharePct": 21.818181818181817
+        },
+        {
+          "label": "Molybdenum",
+          "count": 11,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Stone",
+          "count": 8,
+          "sharePct": 14.545454545454545
+        },
+        {
+          "label": "Gold",
+          "count": 5,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Construction",
+          "count": 4,
+          "sharePct": 7.2727272727272725
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 4,
+          "sharePct": 7.2727272727272725
+        },
+        {
+          "label": "Clay",
+          "count": 2,
+          "sharePct": 3.6363636363636362
+        },
+        {
+          "label": "General",
+          "count": 2,
+          "sharePct": 3.6363636363636362
+        },
+        {
+          "label": "Limestone",
+          "count": 2,
+          "sharePct": 3.6363636363636362
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        }
+      ],
+      "sites": [
+        {
+          "name": "Nuestro Amo",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Unnamed Clay Pit",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed Sand Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Limestone Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Unnamed Rock Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Stone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Clay Pit",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed Sand, Coarse Gravel, and Rubble Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Sand, Coarse Gravel, and Rubble Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Sand, Coarse Gravel, and Rubble Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Stone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Limestone Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Unnamed Stone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnames Stone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Stone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Stone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Stone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cerro Negro",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Puerto De Guarare",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Las Lomitas",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Agua Benite",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Esquiguita",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "El Guesime",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Las Lajas",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "La Soledad",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "El Cacao",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Campana",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Trinidaita",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Las Tablas",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Quebrada Panama",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Calle Arribe",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Las Cuestas Ii",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Cerro Ensillado",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Las Rincones",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Panama",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,610 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_340",
+  "regionName": "Ozark Highlands mixed forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.086865+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000009,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 67458.24227001029,
+        "percent": 63.36308147667474
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 67458.24227001029,
+          "percent": 63.36308147667474
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 34288.14033846924,
+          "percent": 32.206623784443785
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 2429.0719545248708,
+          "percent": 2.2816112455347777
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2287.5530715644054,
+          "percent": 2.148683493346689
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 19,
+      "medianMwM2": 34.0,
+      "p10MwM2": 21.0,
+      "p90MwM2": 76.99999999999997,
+      "maxMwM2": 118.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 11,
+          "percent": 57.89473684210527
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 5,
+          "percent": 26.31578947368421
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 5.263157894736842
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 10.526315789473683
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 9958,
+      "commodityCount": 65,
+      "commodities": [
+        {
+          "label": "Lead",
+          "count": 4235,
+          "sharePct": 27.076273895530978
+        },
+        {
+          "label": "Zinc",
+          "count": 3789,
+          "sharePct": 24.224793811137395
+        },
+        {
+          "label": "Iron",
+          "count": 1577,
+          "sharePct": 10.082475545041877
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 1240,
+          "sharePct": 7.927881848986637
+        },
+        {
+          "label": "Stone",
+          "count": 1083,
+          "sharePct": 6.924109711655264
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 1015,
+          "sharePct": 6.489354900581805
+        },
+        {
+          "label": "Construction",
+          "count": 560,
+          "sharePct": 3.5803337382520297
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 560,
+          "sharePct": 3.5803337382520297
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 488,
+          "sharePct": 3.120005114762483
+        },
+        {
+          "label": "Manganese",
+          "count": 318,
+          "sharePct": 2.0331180870788312
+        },
+        {
+          "label": "Clay",
+          "count": 156,
+          "sharePct": 0.9973786842273511
+        },
+        {
+          "label": "Copper",
+          "count": 148,
+          "sharePct": 0.9462310593951794
+        },
+        {
+          "label": "Cobalt",
+          "count": 60,
+          "sharePct": 0.3836071862412889
+        },
+        {
+          "label": "Nickel",
+          "count": 51,
+          "sharePct": 0.3260661083050956
+        },
+        {
+          "label": "Dimension",
+          "count": 45,
+          "sharePct": 0.2877053896809667
+        },
+        {
+          "label": "Limestone",
+          "count": 45,
+          "sharePct": 0.2877053896809667
+        },
+        {
+          "label": "Silver",
+          "count": 41,
+          "sharePct": 0.2621315772648808
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 28,
+          "sharePct": 0.1790166869126015
+        },
+        {
+          "label": "Silica",
+          "count": 23,
+          "sharePct": 0.14704942139249408
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 14,
+          "sharePct": 0.08950834345630075
+        },
+        {
+          "label": "Cadmium",
+          "count": 13,
+          "sharePct": 0.08311489035227927
+        },
+        {
+          "label": "Coal",
+          "count": 13,
+          "sharePct": 0.08311489035227927
+        },
+        {
+          "label": "Tungsten",
+          "count": 12,
+          "sharePct": 0.07672143724825779
+        },
+        {
+          "label": "General",
+          "count": 11,
+          "sharePct": 0.0703279841442363
+        },
+        {
+          "label": "Flagstone",
+          "count": 11,
+          "sharePct": 0.0703279841442363
+        },
+        {
+          "label": "Granite",
+          "count": 11,
+          "sharePct": 0.0703279841442363
+        },
+        {
+          "label": "Bituminous",
+          "count": 11,
+          "sharePct": 0.0703279841442363
+        },
+        {
+          "label": "Gold",
+          "count": 9,
+          "sharePct": 0.057541077936193334
+        },
+        {
+          "label": "Aluminum",
+          "count": 6,
+          "sharePct": 0.038360718624128896
+        },
+        {
+          "label": "Dolomite",
+          "count": 6,
+          "sharePct": 0.038360718624128896
+        }
+      ],
+      "sites": [
+        {
+          "name": "Kimbrough Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Unk",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Mountain View Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Sepers Diggings",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Manganese Field Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Batesville District",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Silver Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Woodruff Farm",
+          "depositType": null,
+          "commodities": [
+            "Platinum",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Fredricktown Claim",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Gold",
+            "Lead",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Jumbo Shaft",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Slater Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Desloge Mines",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Taylor Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Central Mining Co. Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hazel Run",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Shepherd Mountain",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Greasy Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Aubuchon Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Eaton Mine",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Stanford Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Green's Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Arthur Mines",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Peach Orchard Diggings",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Parole Mine",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Dry Bone Shaft",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Little Saturday Shaft",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Poverty Flat Workings",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Jerktail Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Fox Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Lead",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Old Miller Place",
+          "depositType": "Vein",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Old Copper Mines",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Iron",
+            "Lead",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Manganese Deposits",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Madison Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Iron",
+            "Lead",
+            "Nickel",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Hickory Nut  No. 1 , 2 , 3",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Hill Prospect",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Schulte",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Ruth",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Marquand Prospects",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Cornwall Copper Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Avon Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

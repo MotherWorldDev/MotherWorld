@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20225",
+  "regionName": "East Antarctic Enderby Land",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.016275+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 130.24925350540548,
+        "medianAgeMa": 127.61168670654297,
+        "p10AgeMa": 123.54576873779297,
+        "p90AgeMa": 142.1894989013672,
+        "oldestAgeMa": 151.46920776367188,
+        "coveragePct": 28.65342674984466,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 98.62519366060323,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 1.3748063393967431,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 42.899225472252574,
+          "medianMmYr": 49.30596923828125,
+          "p10MmYr": 6.92156457901001,
+          "p90MmYr": 65.67790985107422,
+          "coveragePct": 28.65342674984466
+        }
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_551",
+  "regionName": "Yucatán dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.143330+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 97.89787096944522,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 42359.90249540241,
+        "percent": 87.25222917686659
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 42359.90249540241,
+          "percent": 87.25222917686659
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 6188.8886300779695,
+          "percent": 12.747770823133408
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1042.4723460540333,
+          "percentOfRegion": 2.10212903055478
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 7,
+      "medianMwM2": 61.67,
+      "p10MwM2": 49.5,
+      "p90MwM2": 74.88000000000001,
+      "maxMwM2": 85.2,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 42.857142857142854
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 3,
+          "percent": 42.857142857142854
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 14.285714285714285
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

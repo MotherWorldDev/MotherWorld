@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20178",
+  "regionName": "Araucanian",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.683368+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 29.72906185216463,
+        "medianAgeMa": 31.285688400268555,
+        "p10AgeMa": 21.409379959106445,
+        "p90AgeMa": 35.728580474853516,
+        "oldestAgeMa": 38.000789642333984,
+        "coveragePct": 61.08001396133205,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 3.40768560023156,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 96.59231439976845,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 97.04749001868419,
+          "medianMmYr": 76.41443634033203,
+          "p10MmYr": 72.51146697998047,
+          "p90MmYr": 131.12478637695312,
+          "coveragePct": 61.08001396133205
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 892.1076981165214,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 892.1076981165214
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 103,
+      "medianMwM2": 47.0,
+      "p10MwM2": 22.200000000000003,
+      "p90MwM2": 85.0,
+      "maxMwM2": 172.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 35,
+          "percent": 33.980582524271846
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 46,
+          "percent": 44.66019417475729
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 8,
+          "percent": 7.766990291262135
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 6,
+          "percent": 5.825242718446602
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 7,
+          "percent": 6.796116504854369
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 0.9708737864077669
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

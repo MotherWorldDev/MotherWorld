@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_338",
+  "regionName": "New England-Acadian forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.086865+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 96.23732220936074,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 112625.26133820938,
+        "percent": 35.01995733086683
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 112625.26133820938,
+          "percent": 35.01995733086683
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 71608.57084628065,
+          "percent": 22.266133421262282
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 51049.951005847055,
+          "percent": 15.873588968632973
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 48807.103770291316,
+          "percent": 15.17619289997526
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 21545.43471627259,
+          "percent": 6.699386935698621
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 6799.138292837115,
+          "percent": 2.1141396705557614
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 5261.758822465279,
+          "percent": 1.6361033684503572
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 2003.3980679780016,
+          "percent": 0.6229411947524464
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1902.4629897781033,
+          "percent": 0.5915562098054774
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 256.31975420097496,
+          "percentOfRegion": 0.07670177407869273
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 12317.68727521483,
+          "percentOfRegion": 3.685976016560656
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 238,
+      "medianMwM2": 52.0,
+      "p10MwM2": 39.0,
+      "p90MwM2": 74.30000000000001,
+      "maxMwM2": 106.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 30,
+          "percent": 12.605042016806722
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 127,
+          "percent": 53.36134453781513
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 69,
+          "percent": 28.991596638655466
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 9,
+          "percent": 3.7815126050420167
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 1.2605042016806722
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5276,
+      "commodityCount": 95,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 1476,
+          "sharePct": 16.347325285192156
+        },
+        {
+          "label": "Construction",
+          "count": 885,
+          "sharePct": 9.801749916934323
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 885,
+          "sharePct": 9.801749916934323
+        },
+        {
+          "label": "Stone",
+          "count": 520,
+          "sharePct": 5.759220290176099
+        },
+        {
+          "label": "Copper",
+          "count": 464,
+          "sharePct": 5.138996566618673
+        },
+        {
+          "label": "Dimension",
+          "count": 438,
+          "sharePct": 4.8510355521098685
+        },
+        {
+          "label": "Feldspar",
+          "count": 401,
+          "sharePct": 4.441244877616569
+        },
+        {
+          "label": "Silver",
+          "count": 342,
+          "sharePct": 3.7877948831542807
+        },
+        {
+          "label": "Mica",
+          "count": 325,
+          "sharePct": 3.599512681360062
+        },
+        {
+          "label": "Lead",
+          "count": 318,
+          "sharePct": 3.5219847159153836
+        },
+        {
+          "label": "Granite",
+          "count": 239,
+          "sharePct": 2.647026248754015
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 214,
+          "sharePct": 2.370140657880164
+        },
+        {
+          "label": "Gold",
+          "count": 206,
+          "sharePct": 2.2815372688005318
+        },
+        {
+          "label": "Zinc",
+          "count": 204,
+          "sharePct": 2.259386421530624
+        },
+        {
+          "label": "Manganese",
+          "count": 175,
+          "sharePct": 1.9381991361169564
+        },
+        {
+          "label": "Slate",
+          "count": 164,
+          "sharePct": 1.8163694761324618
+        },
+        {
+          "label": "Beryllium",
+          "count": 133,
+          "sharePct": 1.4730313434488869
+        },
+        {
+          "label": "Gemstone",
+          "count": 126,
+          "sharePct": 1.3955033780042088
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 125,
+          "sharePct": 1.3844279543692546
+        },
+        {
+          "label": "Graphite",
+          "count": 92,
+          "sharePct": 1.0189389744157715
+        },
+        {
+          "label": "Garnet",
+          "count": 80,
+          "sharePct": 0.886033890796323
+        },
+        {
+          "label": "Sulfur",
+          "count": 79,
+          "sharePct": 0.8749584671613689
+        },
+        {
+          "label": "Titanium",
+          "count": 66,
+          "sharePct": 0.7309779599069665
+        },
+        {
+          "label": "Molybdenum",
+          "count": 65,
+          "sharePct": 0.7199025362720124
+        },
+        {
+          "label": "Lithium",
+          "count": 59,
+          "sharePct": 0.6534499944622881
+        },
+        {
+          "label": "Silica",
+          "count": 59,
+          "sharePct": 0.6534499944622881
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 59,
+          "sharePct": 0.6534499944622881
+        },
+        {
+          "label": "Limestone",
+          "count": 58,
+          "sharePct": 0.6423745708273342
+        },
+        {
+          "label": "Nickel",
+          "count": 48,
+          "sharePct": 0.5316203344777938
+        },
+        {
+          "label": "General",
+          "count": 47,
+          "sharePct": 0.5205449108428397
+        }
+      ],
+      "sites": [
+        {
+          "name": "Diana Complex",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Hager Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Blue Hills Falls",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Candage Farm Prospect (1836)",
+          "depositType": "Vein",
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Catherine Hill Molybdenite Prospect",
+          "depositType": "Magmatic Stock Disseminated",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Pequoit; Sands; Duchesnehill Granite Quarries",
+          "depositType": "Pegmatite",
+          "commodities": [
+            "Molybdenum",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Basin Falls",
+          "depositType": "Pegmatite",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Harvard Mine",
+          "depositType": "Pegmatite",
+          "commodities": [
+            "Beryllium",
+            "Cesium",
+            "Lithium",
+            "Mica",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Catheart Mtn.",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Rhenium"
+          ]
+        },
+        {
+          "name": "Dodlin Hill",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Burke Hill Molybdenite Occurrence",
+          "depositType": "Veins",
+          "commodities": [
+            "Arsenic",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Cooper Mine (1903-1906)",
+          "depositType": "Disseminated",
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Marshfield Granite Quarry",
+          "depositType": "Miarolitic Cavities In Granite",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Hans Bergendahl Prospect",
+          "depositType": "Disseminated Sulfides In Syenite",
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Loudville",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Lincoln",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Kirschnerville",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Phillips Mine",
+          "depositType": "Replacement",
+          "commodities": [
+            "Molybdenum",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Tilly Foster",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Russell",
+          "depositType": "Contact Metamorphic",
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Vera Cruz",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Topham",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Bowdoinham",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "North Groton",
+          "depositType": null,
+          "commodities": [
+            "Mica",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Jackson",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Litchfield",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)"
+          ]
+        },
+        {
+          "name": "Parker Mountain Mine",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Mica",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Weeks Feldspar Quarry",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Feldspar",
+            "Mica",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "George Porter Mine",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Allen Mine",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Burnt Hill Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Molybdenum",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Mount Pleasant Tungsten Mine",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Allis Exploration",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Lawrence Explorations",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Roseville Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Panther Hill Granite Co.",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Haggerty Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Hude Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "L & H Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "D.L. & W. Railroad Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

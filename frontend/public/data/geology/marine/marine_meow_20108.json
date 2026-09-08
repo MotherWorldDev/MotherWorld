@@ -1,0 +1,243 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20108",
+  "regionName": "Northern Bay of Bengal",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.294933+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 106.74075001816658,
+        "medianAgeMa": 109.8188705444336,
+        "p10AgeMa": 103.8053207397461,
+        "p90AgeMa": 122.45476531982422,
+        "oldestAgeMa": 134.46226501464844,
+        "coveragePct": 53.34475454424223,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 4.465714097128227,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.04672214393568133,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 95.48756375893609,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 55.420154541838585,
+          "medianMmYr": 60.672855377197266,
+          "p10MmYr": 39.765750885009766,
+          "p90MmYr": 61.13262939453125,
+          "coveragePct": 53.34475454424223
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 134.87671379798925
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 5,
+        "intersectionLengthKm": 1223.0896451266055,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 433.3153872883979
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 287.9566027735529
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 263.7994882523653
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 237.50861780396758
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.509549008321788
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 6,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Tin",
+          "count": 5,
+          "sharePct": 35.714285714285715
+        },
+        {
+          "label": "Tungsten",
+          "count": 5,
+          "sharePct": 35.714285714285715
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Kyanite",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        }
+      ],
+      "sites": [
+        {
+          "name": "Kambay Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Kambauk Mine",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Kechaung Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Pachaung Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Medaw Kanbay Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Moiskal Island Deposit",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Kyanite",
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

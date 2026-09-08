@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_163",
+  "regionName": "Lesser Sundas deciduous forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.038604+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 67.41084294548376,
+      "dominantClass": {
+        "code": "vi",
+        "label": "Intermediate volcanic rocks",
+        "areaKm2": 21168.90930480632,
+        "percent": 80.48979498400676
+      },
+      "classes": [
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 21168.90930480632,
+          "percent": 80.48979498400676
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2910.102570159392,
+          "percent": 11.064980055508991
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 2221.103945943708,
+          "percent": 8.445224960484243
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 12714.551066105681,
+          "percentOfRegion": 32.58915705451619
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Batu Hijau",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

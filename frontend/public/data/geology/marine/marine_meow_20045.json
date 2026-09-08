@@ -1,0 +1,188 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20045",
+  "regionName": "Sea of Okhotsk",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.909383+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 19.898057832483243,
+        "medianAgeMa": 19.760461807250977,
+        "p10AgeMa": 12.017788887023926,
+        "p90AgeMa": 27.856117248535156,
+        "oldestAgeMa": 41.98692321777344,
+        "coveragePct": 5.065492919233891,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 51.13044434733292,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 48.86955565266706,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 14.707484161752014,
+          "medianMmYr": 14.758912086486816,
+          "p10MmYr": 12.982869148254395,
+          "p90MmYr": 16.097820281982422,
+          "coveragePct": 5.065492919233891
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 197.31147745482423
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 5.47180538522518,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.9805109457456496
+          },
+          {
+            "name": "Tuin Fault",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.4912944394795298
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 149,
+      "medianMwM2": 72.906,
+      "p10MwM2": 32.0,
+      "p90MwM2": 147.0,
+      "maxMwM2": 210.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 20,
+          "percent": 13.422818791946309
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 29,
+          "percent": 19.463087248322147
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 38,
+          "percent": 25.503355704697988
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 24,
+          "percent": 16.10738255033557
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 31,
+          "percent": 20.80536912751678
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 5,
+          "percent": 3.3557046979865772
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2,
+          "percent": 1.342281879194631
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

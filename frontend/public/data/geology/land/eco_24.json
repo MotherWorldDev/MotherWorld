@@ -1,0 +1,210 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_24",
+  "regionName": "Northeast Congolian lowland forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.593699+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 124.727684911351,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 58.56282223187084
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.0567634638556
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.540392844103582
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.567706371520974
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999993,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 390951.16394502105,
+        "percent": 76.32322141137563
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 390951.16394502105,
+          "percent": 76.32322141137563
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 98659.13430626008,
+          "percent": 19.260674085038058
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 20082.674950892277,
+          "percent": 3.9206289382609194
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 2244.67621229214,
+          "percent": 0.4382156528678698
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 293.3029949299025,
+          "percent": 0.05725991245751253
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 8,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Tin",
+          "count": 4,
+          "sharePct": 36.36363636363637
+        },
+        {
+          "label": "Tungsten",
+          "count": 3,
+          "sharePct": 27.27272727272727
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 2,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        }
+      ],
+      "sites": [
+        {
+          "name": "Kilo-Moto Gold Project",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Miluba",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Minerga",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Kalima-Messaraba",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Punia-Kasese",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Bingo",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Bingo",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)"
+          ]
+        },
+        {
+          "name": "Kailo and Moga Deposits",
+          "depositType": "VEIN/STOCKWORK/PLACER",
+          "commodities": [
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

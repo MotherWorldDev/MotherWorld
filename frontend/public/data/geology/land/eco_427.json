@@ -1,0 +1,700 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_427",
+  "regionName": "Central Mexican matorral",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.377258+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 73.8904233873431,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Aljibes Mediograben B\n",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.502777000775897
+          },
+          {
+            "name": "Aljibes Mediograben E\n",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.92843017248569
+          },
+          {
+            "name": "Aljibes Mediograben A\n",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.825268010313124
+          },
+          {
+            "name": "Aljibes Mediograben C\n",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.627629566353992
+          },
+          {
+            "name": "Aljibes Mediograben D\n",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.937592351488522
+          },
+          {
+            "name": "SN Cerro Guadril",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.852590937851415
+          },
+          {
+            "name": "SN Reservorio Debodhe\n",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.2161353480744745
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000003,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 14921.624260767747,
+        "percent": 25.07076046107076
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 14921.624260767747,
+          "percent": 25.07076046107076
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 13714.347688155163,
+          "percent": 23.04233907521586
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 11312.454289539823,
+          "percent": 19.006766740906585
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 7436.705028440293,
+          "percent": 12.494876370655513
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 6566.186781555039,
+          "percent": 11.032263851853989
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 2718.7517487021487,
+          "percent": 4.567945999286393
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 2197.09979690856,
+          "percent": 3.6914857092459443
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 650.8665019549933,
+          "percent": 1.0935617917649603
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 12,
+      "medianMwM2": 79.55,
+      "p10MwM2": 53.2,
+      "p90MwM2": 335.00000000000006,
+      "maxMwM2": 392.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 2,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 4,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 2,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 2,
+          "percent": 16.666666666666664
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 60,
+      "commodityCount": 37,
+      "commodities": [
+        {
+          "label": "Silver",
+          "count": 17,
+          "sharePct": 11.486486486486488
+        },
+        {
+          "label": "Lead",
+          "count": 16,
+          "sharePct": 10.81081081081081
+        },
+        {
+          "label": "Gold",
+          "count": 14,
+          "sharePct": 9.45945945945946
+        },
+        {
+          "label": "Tin",
+          "count": 13,
+          "sharePct": 8.783783783783784
+        },
+        {
+          "label": "Zinc",
+          "count": 12,
+          "sharePct": 8.108108108108109
+        },
+        {
+          "label": "Copper",
+          "count": 10,
+          "sharePct": 6.756756756756757
+        },
+        {
+          "label": "Mercury",
+          "count": 8,
+          "sharePct": 5.405405405405405
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 7,
+          "sharePct": 4.72972972972973
+        },
+        {
+          "label": "Antimony",
+          "count": 7,
+          "sharePct": 4.72972972972973
+        },
+        {
+          "label": "Kaolin",
+          "count": 4,
+          "sharePct": 2.7027027027027026
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 2.027027027027027
+        },
+        {
+          "label": "Feldspar",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Dimension",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Stone",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Calcium",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Selenium",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Clay",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Arsenic",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Cadmium",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 1.3513513513513513
+        },
+        {
+          "label": "Pumice",
+          "count": 1,
+          "sharePct": 0.6756756756756757
+        },
+        {
+          "label": "Construction",
+          "count": 1,
+          "sharePct": 0.6756756756756757
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 1,
+          "sharePct": 0.6756756756756757
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 0.6756756756756757
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 0.6756756756756757
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 0.6756756756756757
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 0.6756756756756757
+        },
+        {
+          "label": "Tellurium",
+          "count": 1,
+          "sharePct": 0.6756756756756757
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bilboa Mine, Ojo Caliente Dist.",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Orizabita-El Espiritu Pumicite",
+          "depositType": null,
+          "commodities": [
+            "Pumice"
+          ]
+        },
+        {
+          "name": "San Bartolo",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Rancho Tepozan",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Feldspar",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Cerro Xicuco",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cerro Del Mui",
+          "depositType": "Replacement",
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Bernal Quarry",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "San Jose Iturbide",
+          "depositType": null,
+          "commodities": [
+            "Feldspar",
+            "Silica"
+          ]
+        },
+        {
+          "name": "(Facility) Aquascalientes Smelter",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Selenium",
+            "Silver",
+            "Tellurium"
+          ]
+        },
+        {
+          "name": "La Doncella Clay Mine",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Los Volantes",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Nuevo Valle De Moreno",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Cerro Picudo",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Providencia",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Las Pilas",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Santa Anita",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Municipio De Guadalupe",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Mercury",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Ixmiquilpan Hidalgo Fluorspar Mines",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "La Consentida Fluorspar Deposit",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Las Cuevas Fluorspar Mine",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Tableros Intrusive Center",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "La Fortuna Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Talco San Juan Mine",
+          "depositType": null,
+          "commodities": [
+            "Kaolin",
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Lago Texcoco Basin",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Sodium"
+          ]
+        },
+        {
+          "name": "La Presa Mine",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Tocayos Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Minerales Pennsalt",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "El Monte & El Carrizal",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "(Facility) Monterrey Refinery",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Bismuth",
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Cerro San Pedro",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Fluoruros De Hidalgo",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "(Facility) Tlalnepantla Refinery",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "(Facility) Sucursal Refinery",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Mina El Perro",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Lead",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Real De Angeles",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "El Refugiorio Colorado",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "El Orita/San Geronimo",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "San Luis Potosi, Spl",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "San Luis Potosi",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Lead",
+            "Refiner",
+            "Silver",
+            "Sulfur",
+            "Sulfuric Acid",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Vanandium Operation",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

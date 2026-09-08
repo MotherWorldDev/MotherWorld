@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_681",
+  "regionName": "Southern Korea evergreen forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.177182+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 70.42546867828091,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 4096.207813324795,
+        "percent": 39.3987728397576
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 4096.207813324795,
+          "percent": 39.3987728397576
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 2896.2571230988965,
+          "percent": 27.857223480535215
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2038.780472939849,
+          "percent": 19.609710342867693
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 997.7904071854024,
+          "percent": 9.597100387950903
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 367.75453523399545,
+          "percent": 3.5371929488885914
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 4366.036998756629,
+          "percentOfRegion": 29.574531321719018
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 44,
+      "medianMwM2": 63.0,
+      "p10MwM2": 46.6,
+      "p90MwM2": 77.10000000000001,
+      "maxMwM2": 87.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 2.272727272727273
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 16,
+          "percent": 36.36363636363637
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 23,
+          "percent": 52.27272727272727
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 9.090909090909092
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 12,
+      "commodityCount": 10,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 9,
+          "sharePct": 30.0
+        },
+        {
+          "label": "Silver",
+          "count": 7,
+          "sharePct": 23.333333333333332
+        },
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Zinc",
+          "count": 3,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 6.666666666666667
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 6.666666666666667
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 1,
+          "sharePct": 3.3333333333333335
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 3.3333333333333335
+        }
+      ],
+      "sites": [
+        {
+          "name": "Dukeum",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sinchon",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Ungnam",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Yong Ho",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Il-Kwang",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cholma",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron",
+            "Silver",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Ki-Chang",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "(Facility) Changhung Copper Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Onsan Zn",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Sulfur",
+            "Sulfuric Acid",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Ulsan Ii Phos-Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Mool-Kum Iron Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "(Facility) Chang-Hang Copper Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

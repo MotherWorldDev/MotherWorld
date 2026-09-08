@@ -1,0 +1,588 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_387",
+  "regionName": "Central US forest-grasslands transition",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.101004+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 98.43949595610692,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 101772.17160447154,
+        "percent": 45.282892170385445
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 101772.17160447154,
+          "percent": 45.282892170385445
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 90590.65501100579,
+          "percent": 40.30774619265101
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 24102.664696778334,
+          "percent": 10.724330131471959
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 8282.016469567352,
+          "percent": 3.6850315054915947
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 3562.791452170898,
+          "percentOfRegion": 1.5605040438930942
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 6,
+      "medianMwM2": 59.0,
+      "p10MwM2": 58.0,
+      "p90MwM2": 67.5,
+      "maxMwM2": 75.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 4,
+          "percent": 66.66666666666666
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4134,
+      "commodityCount": 63,
+      "commodities": [
+        {
+          "label": "Stone",
+          "count": 1731,
+          "sharePct": 24.274295330248215
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 1596,
+          "sharePct": 22.381152713504417
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 1158,
+          "sharePct": 16.238956668068994
+        },
+        {
+          "label": "Construction",
+          "count": 1157,
+          "sharePct": 16.22493338942645
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 501,
+          "sharePct": 7.025662599915861
+        },
+        {
+          "label": "Clay",
+          "count": 398,
+          "sharePct": 5.581264899733558
+        },
+        {
+          "label": "Lead",
+          "count": 93,
+          "sharePct": 1.3041649137568363
+        },
+        {
+          "label": "Zinc",
+          "count": 79,
+          "sharePct": 1.1078390127611837
+        },
+        {
+          "label": "Iron",
+          "count": 72,
+          "sharePct": 1.0096760622633572
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 54,
+          "sharePct": 0.7572570466975179
+        },
+        {
+          "label": "Limestone",
+          "count": 40,
+          "sharePct": 0.5609311457018651
+        },
+        {
+          "label": "Dimension",
+          "count": 32,
+          "sharePct": 0.448744916561492
+        },
+        {
+          "label": "Silica",
+          "count": 30,
+          "sharePct": 0.4206983592763988
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 18,
+          "sharePct": 0.2524190155658393
+        },
+        {
+          "label": "Sulfur",
+          "count": 15,
+          "sharePct": 0.2103491796381994
+        },
+        {
+          "label": "Aluminum",
+          "count": 15,
+          "sharePct": 0.2103491796381994
+        },
+        {
+          "label": "Diatomite",
+          "count": 14,
+          "sharePct": 0.1963259009956528
+        },
+        {
+          "label": "General",
+          "count": 13,
+          "sharePct": 0.18230262235310615
+        },
+        {
+          "label": "Coal",
+          "count": 12,
+          "sharePct": 0.16827934371055953
+        },
+        {
+          "label": "Calcium",
+          "count": 11,
+          "sharePct": 0.1542560650680129
+        },
+        {
+          "label": "Copper",
+          "count": 10,
+          "sharePct": 0.14023278642546627
+        },
+        {
+          "label": "Titanium",
+          "count": 7,
+          "sharePct": 0.0981629504978264
+        },
+        {
+          "label": "Vermiculite",
+          "count": 6,
+          "sharePct": 0.08413967185527976
+        },
+        {
+          "label": "Perlite",
+          "count": 6,
+          "sharePct": 0.08413967185527976
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 6,
+          "sharePct": 0.08413967185527976
+        },
+        {
+          "label": "Free",
+          "count": 4,
+          "sharePct": 0.0560931145701865
+        },
+        {
+          "label": "Water",
+          "count": 4,
+          "sharePct": 0.0560931145701865
+        },
+        {
+          "label": "Silver",
+          "count": 4,
+          "sharePct": 0.0560931145701865
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 3,
+          "sharePct": 0.04206983592763988
+        },
+        {
+          "label": "Flagstone",
+          "count": 3,
+          "sharePct": 0.04206983592763988
+        }
+      ],
+      "sites": [
+        {
+          "name": "Naeger Bank",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Shawnee Special Use Silica Deposit 2",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Shawnee Low Interest Refractory Clay Deposit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "Shawnee Low Interest Refractory Clay Deposit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "Shawnee High Interest Sand & Gravel Deposit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Shawnee High Interest Sand and Gravel Deposit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Sphalerite and Galena Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sphalerite Occurrence",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sphalerite Occurrence Z83",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sphalerite and Galena Occurence Z84",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Iron Ridge Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mayville Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Coal Iii Underclay",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Upper Block Coal Underclay",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Howell Hollow Fire Clay",
+          "depositType": null,
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "Northern Illinois Area Fireclay",
+          "depositType": null,
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "La Salle County Fire Clay",
+          "depositType": null,
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "Madison County Fireclay",
+          "depositType": null,
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "Southwestern Illinois Area Underclay",
+          "depositType": null,
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "Erin Mound",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Birk No. 2 Pit",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Birk No. 2b Mine",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Rhymer Mine",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Whitaker Mines",
+          "depositType": null,
+          "commodities": [
+            "Diatomite"
+          ]
+        },
+        {
+          "name": "Extension",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Fairview-Blue Diggings Fault",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Tamora Mining Company Mine",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Minor Fluorite Occurence No. 1",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Little Jean Mine",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Minor Lead Occurence No. 1",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Alto Pass Lead Prospect No. 1",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Alto Pass Lead Prospect No. 2",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

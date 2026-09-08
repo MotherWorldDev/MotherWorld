@@ -1,0 +1,582 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_715",
+  "regionName": "Okhotsk-Manchurian taiga",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.933604+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 520.317359743854,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 132.3182003210762
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 89.27128109479762
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 77.73081683004732
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 76.08985859252189
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 58.202385469539344
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.609440570958135
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.095376864913526
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 97.88555856160085,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 120319.5160209949,
+        "percent": 30.463149372036614
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 120319.5160209949,
+          "percent": 30.463149372036614
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 62038.48689451357,
+          "percent": 15.707241481530982
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 61633.57349941655,
+          "percent": 15.6047233062133
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 45347.086305768746,
+          "percent": 11.48122191148294
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 44208.25070477232,
+          "percent": 11.192885320955984
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 20191.081631964007,
+          "percent": 5.112087848077585
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 15516.793002528953,
+          "percent": 3.9286260337726997
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 14134.31093247731,
+          "percent": 3.578601705244011
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 5661.169539882951,
+          "percent": 1.4333256899386595
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 3183.0522503160028,
+          "percent": 0.8059024783930632
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2734.1021570334,
+          "percent": 0.6922348523541482
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 8531.753796509382,
+          "percentOfRegion": 2.114441438399202
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 28,
+      "medianMwM2": 55.0,
+      "p10MwM2": 40.910000000000004,
+      "p90MwM2": 59.2,
+      "maxMwM2": 98.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 27,
+          "percent": 96.42857142857143
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 3.571428571428571
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 34,
+      "commodityCount": 13,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 14,
+          "sharePct": 21.53846153846154
+        },
+        {
+          "label": "Tin",
+          "count": 13,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Tungsten",
+          "count": 8,
+          "sharePct": 12.307692307692308
+        },
+        {
+          "label": "Copper",
+          "count": 7,
+          "sharePct": 10.76923076923077
+        },
+        {
+          "label": "Silver",
+          "count": 5,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Manganese",
+          "count": 4,
+          "sharePct": 6.153846153846154
+        },
+        {
+          "label": "Molybdenum",
+          "count": 4,
+          "sharePct": 6.153846153846154
+        },
+        {
+          "label": "Platinum",
+          "count": 3,
+          "sharePct": 4.615384615384616
+        },
+        {
+          "label": "Bismuth",
+          "count": 2,
+          "sharePct": 3.076923076923077
+        },
+        {
+          "label": "Zinc",
+          "count": 2,
+          "sharePct": 3.076923076923077
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 1.5384615384615385
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 1.5384615384615385
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 1.5384615384615385
+        }
+      ],
+      "sites": [
+        {
+          "name": "Dzhana River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Imperial Gavana",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Solegu - Chaidak River",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Bismuth",
+            "Copper",
+            "Gold",
+            "Platinum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Vostok-2",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Ir-Nimiisk",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Malyi-Khingan",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Belaya Gora",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Festival'Noe",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Mnogovershinnoe Deposit",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Copper",
+            "Gold",
+            "Iron",
+            "Lead",
+            "Manganese",
+            "Molybdenum",
+            "Silver",
+            "Tin",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Umul'Ta",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Komsomol'Sk",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Pereval'Noe",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Solnechnoe",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Vostok-2",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Umal'Ta",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Umalta",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Nizhny Amur Group",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Selemdzha Group",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Komsomol'Sk",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Nochnoye",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Festival'Noe",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Preval'Noe",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Solnechnyy Concentrator",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Kerbi Group",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Malmakan-Karantsay Group",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Gornyy",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Tokur",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mnogovershinnoe",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Lantar Group",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "M'Ao Chaja",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Solnechnoe",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Belaya Gora",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Malyykhingen",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Molodezhnyy",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

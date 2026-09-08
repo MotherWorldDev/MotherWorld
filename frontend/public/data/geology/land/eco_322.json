@@ -1,0 +1,199 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_322",
+  "regionName": "Sunda Shelf mangroves",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.082341+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 73.73813497796279,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 16846.957534552497,
+        "percent": 61.47717851490141
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 16846.957534552497,
+          "percent": 61.47717851490141
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 5304.414495559225,
+          "percent": 19.35663672159825
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 4373.098632434408,
+          "percent": 15.958119722095127
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 602.9890781252218,
+          "percent": 2.2004012963415343
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 203.2349734149463,
+          "percent": 0.7416361509475236
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 72.90112671660262,
+          "percent": 0.26602759411615484
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 9759.80115722625,
+          "percentOfRegion": 26.261865022037227
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 28,
+      "medianMwM2": 99.05,
+      "p10MwM2": 52.807004849,
+      "p90MwM2": 146.7,
+      "maxMwM2": 165.9,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 3.571428571428571
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 10.714285714285714
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 6,
+          "percent": 21.428571428571427
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 14.285714285714285
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 12,
+          "percent": 42.857142857142854
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 2,
+          "percent": 7.142857142857142
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Dai",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sebuku Island",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Chromium",
+            "Iron",
+            "Nickel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20041",
+  "regionName": "Virginian",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.892097+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 185.0359514135217,
+        "medianAgeMa": 185.25241088867188,
+        "p10AgeMa": 177.7247772216797,
+        "p90AgeMa": 192.07757568359375,
+        "oldestAgeMa": 193.9987335205078,
+        "coveragePct": 56.55960195825339,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 100.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 21.815575393175735,
+          "medianMmYr": 21.845298767089844,
+          "p10MmYr": 20.727426528930664,
+          "p90MmYr": 22.880033493041992,
+          "coveragePct": 56.55960195825339
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 59,
+      "medianMwM2": 32.0,
+      "p10MwM2": 20.0,
+      "p90MwM2": 48.400000000000006,
+      "maxMwM2": 55.5,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 43,
+          "percent": 72.88135593220339
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 16,
+          "percent": 27.11864406779661
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 29,
+      "commodityCount": 18,
+      "commodities": [
+        {
+          "label": "Stone",
+          "count": 12,
+          "sharePct": 21.052631578947366
+        },
+        {
+          "label": "Construction",
+          "count": 8,
+          "sharePct": 14.035087719298245
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 8,
+          "sharePct": 14.035087719298245
+        },
+        {
+          "label": "Dimension",
+          "count": 7,
+          "sharePct": 12.280701754385964
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 4,
+          "sharePct": 7.017543859649122
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Garnet",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Wollastonite",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Kyanite",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Mineral Pigments",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Marble",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Diatomite",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Graphite",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Granite",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        }
+      ],
+      "sites": [
+        {
+          "name": "Spottiswood and Company Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Mitchell's Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Woodcliff Lake Sandstone",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Deershead",
+          "depositType": null,
+          "commodities": [
+            "Garnet",
+            "Wollastonite"
+          ]
+        },
+        {
+          "name": "Granite Rock Quarry No. Ak-048",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Gneiss Rock Quarry No. Ak-047",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Sachem Head Granite Gneiss Rock Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unnamed Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Block Island Placer",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Virginia Placer",
+          "depositType": null,
+          "commodities": [
+            "Kyanite",
+            "Metal",
+            "Mineral Pigments",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "West Hills Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Searle Mine",
+          "depositType": "Unknown",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bridge Street Shaft",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Millstone Quartz Monzonite Rock Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Dolomitic Marble Quarry No. 1",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Mount Airy Farm Mine",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Diatomite",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Milford Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Love Point Dredge & Terminal",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "West Hills Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Trader Gravel Co. Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Quarries",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Pine Hill Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Tower Hill Deposit",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Traprock Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "C & G Construction, Inc., Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Block Island Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Millstone Quarry",
+          "depositType": null,
+          "commodities": [
+            "Granite"
+          ]
+        },
+        {
+          "name": "Barker Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

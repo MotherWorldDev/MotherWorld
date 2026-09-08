@@ -1,0 +1,697 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20157",
+  "regionName": "Samoa Islands",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.540670+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 106.14155264104737,
+        "medianAgeMa": 113.13520050048828,
+        "p10AgeMa": 103.2034683227539,
+        "p90AgeMa": 119.30126190185547,
+        "oldestAgeMa": 122.93899536132812,
+        "coveragePct": 79.82416904604914,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 6.063347737061732,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.11725300114544106,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 1.4827195465186906,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 92.33667971527413,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 70.19518111588108,
+          "medianMmYr": 70.79896545410156,
+          "p10MmYr": 60.68475341796875,
+          "p90MmYr": 78.14689636230469,
+          "coveragePct": 79.82416904604914
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 2,
+          "intersectionLengthKm": 490.8948388437476
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 34,
+        "confirmedOrInferredActive": 33,
+        "inactiveCount": 1,
+        "medianDepthM": 2000.0,
+        "maxReportedTemperatureC": 360.0,
+        "tectonicSettings": [
+          {
+            "label": "back-arc spreading center",
+            "count": 22
+          },
+          {
+            "label": "arc volcano",
+            "count": 11
+          },
+          {
+            "label": "intra-plate volcano",
+            "count": 1
+          }
+        ],
+        "fields": [
+          {
+            "name": "Vailulu'u Seamount",
+            "activity": "active, confirmed",
+            "depthM": 1000.0,
+            "maxTemperatureC": 85.0,
+            "tectonicSetting": "intra-plate volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2005
+          },
+          {
+            "name": "Mata Fitu",
+            "activity": "active, confirmed",
+            "depthM": 2750.0,
+            "maxTemperatureC": 331.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Kulo Lasi",
+            "activity": "active, confirmed",
+            "depthM": 1478.0,
+            "maxTemperatureC": 343.0,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Mata Ono",
+            "activity": "active, inferred",
+            "depthM": 2600.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Mata Nima",
+            "activity": "inactive",
+            "depthM": 2670.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Mata Fa",
+            "activity": "active, inferred",
+            "depthM": 2600.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Mata Tolu",
+            "activity": "active, confirmed",
+            "depthM": 1900.0,
+            "maxTemperatureC": 271.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Mata Ua",
+            "activity": "active, confirmed",
+            "depthM": 2397.0,
+            "maxTemperatureC": 360.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2012
+          },
+          {
+            "name": "Mata Taha",
+            "activity": "active, inferred",
+            "depthM": 2160.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "NELSC, T08C12",
+            "activity": "active, inferred",
+            "depthM": 2000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "Tahi Moana 7",
+            "activity": "active, inferred",
+            "depthM": 1940.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2004
+          },
+          {
+            "name": "Lobster",
+            "activity": "active, inferred",
+            "depthM": 1500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "Niuatahi",
+            "activity": "active, confirmed",
+            "depthM": 1635.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2009
+          },
+          {
+            "name": "Tafu",
+            "activity": "active, confirmed",
+            "depthM": 1400.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "MTJ, PAPATUA",
+            "activity": "active, inferred",
+            "depthM": 2170.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1986
+          },
+          {
+            "name": "NELSC, T08C09 and T08C18",
+            "activity": "active, inferred",
+            "depthM": 1800.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "Maka",
+            "activity": "active, confirmed",
+            "depthM": 1660.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "Dugong submarine volcano",
+            "activity": "active, inferred",
+            "depthM": 1170.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "MTJ, T08C05",
+            "activity": "active, inferred",
+            "depthM": 2100.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "MTJ, T08C03 and T08C04",
+            "activity": "active, inferred",
+            "depthM": 2300.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "MTJ, T08C03, 15.72 S",
+            "activity": "active, inferred",
+            "depthM": 2400.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "NWLSC, Central Caldera",
+            "activity": "active, inferred",
+            "depthM": 2200.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "NWLSC, Southern Caldera",
+            "activity": "active, inferred",
+            "depthM": 2160.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "MTJ, V12A-04",
+            "activity": "active, inferred",
+            "depthM": 1330.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2012
+          },
+          {
+            "name": "MTJ, T08C01",
+            "activity": "active, inferred",
+            "depthM": 2400.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "FRSC, 14b, 16.11 S",
+            "activity": "active, inferred",
+            "depthM": 2250.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "FRSC, 14b, 16.31 S",
+            "activity": "active, inferred",
+            "depthM": 2380.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Atlantic",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "FRSC, Central",
+            "activity": "active, inferred",
+            "depthM": 2419.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2004
+          },
+          {
+            "name": "FRSC, South Central",
+            "activity": "active, inferred",
+            "depthM": 1820.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2004
+          },
+          {
+            "name": "FRSC, 11a-3",
+            "activity": "active, inferred",
+            "depthM": 2000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "Niua North",
+            "activity": "active, confirmed",
+            "depthM": 1375.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2012
+          },
+          {
+            "name": "West Mata submarine volcano",
+            "activity": "active, confirmed",
+            "depthM": 1208.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2009
+          },
+          {
+            "name": "East Mata submarine volcano",
+            "activity": "active, inferred",
+            "depthM": 1350.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          },
+          {
+            "name": "Niua South",
+            "activity": "active, confirmed",
+            "depthM": 1180.0,
+            "maxTemperatureC": 315.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2008
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 40,
+        "intersectionLengthKm": 1076.6895248467993,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 76.92968183274473
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 64.98112144671033
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.35991262665667
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.30572135941078
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.25491472699348
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.85127701319929
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.05418233361191
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.070228623758176
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.695691554907846
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 32.08986060203581
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.581348275693127
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.401154949565527
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.279564075890164
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.865036082970462
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.85053202818373
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.93889522810004
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.185554083524913
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.475720531928673
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.069183291758794
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.154245431833758
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.02547261827183
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.68107562820751
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.16566095677901
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.027216640328096
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.768188667175885
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.279579928415675
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.04365838953904
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.728712553848354
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.65003138391247
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.56273851710387
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 13,
+      "medianMwM2": 53.59104,
+      "p10MwM2": 22.859928,
+      "p90MwM2": 163.60000000000005,
+      "maxMwM2": 283.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 30.76923076923077
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 4,
+          "percent": 30.76923076923077
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 15.384615384615385
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 7.6923076923076925
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 7.6923076923076925
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 1,
+          "percent": 7.6923076923076925
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    }
+  ]
+}

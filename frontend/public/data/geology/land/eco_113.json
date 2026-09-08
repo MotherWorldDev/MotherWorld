@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_113",
+  "regionName": "Guinean mangroves",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.023843+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 77.20145020275046,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 8586.322951490454,
+        "percent": 47.069031790134666
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 8586.322951490454,
+          "percent": 47.069031790134666
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 5067.314275577697,
+          "percent": 27.778314195177988
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 3030.114275416716,
+          "percent": 16.610666284404413
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1558.227618254315,
+          "percent": 8.541987730282932
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 864.6238028097406,
+          "percentOfRegion": 3.659154032296916
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 4522.459837359253,
+          "percentOfRegion": 19.139395764952603
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Sierra Rutile",
+          "depositType": "FLUVIAL PLACER",
+          "commodities": [
+            "Titanium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

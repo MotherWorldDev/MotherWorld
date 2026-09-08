@@ -1,0 +1,426 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_724",
+  "regionName": "Altai steppe and semi-desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.964879+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 734.3027188310756,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 247.21116813773264
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 130.12667000372747
+          },
+          {
+            "name": null,
+            "kinematics": "Anticline",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 99.28536351114649
+          },
+          {
+            "name": null,
+            "kinematics": "Anticline",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 92.87202472696657
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.89366256380134
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 74.4287356563955
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.485094231305647
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.14384830367437,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 18340.398867181044,
+        "percent": 22.22667504163954
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 18340.398867181044,
+          "percent": 22.22667504163954
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 15742.2957677534,
+          "percent": 19.078041594032815
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 14385.867993971555,
+          "percent": 17.434190794296224
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 12592.267628497799,
+          "percent": 15.26053182609961
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 6710.922136833216,
+          "percent": 8.132946652106458
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 6572.278076750466,
+          "percent": 7.964924326516411
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 5742.7823676222215,
+          "percent": 6.959660934550627
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 1494.097640906362,
+          "percent": 1.810692503767243
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 934.350272809983,
+          "percent": 1.132336326991058
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 712.5563680912729,
+          "percentOfRegion": 0.8561516963256626
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 15,
+      "medianMwM2": 42.5,
+      "p10MwM2": 39.4,
+      "p90MwM2": 51.8,
+      "maxMwM2": 57.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 13.333333333333334
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 13,
+          "percent": 86.66666666666667
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 14,
+      "commodityCount": 12,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 6,
+          "sharePct": 13.043478260869565
+        },
+        {
+          "label": "Lead",
+          "count": 6,
+          "sharePct": 13.043478260869565
+        },
+        {
+          "label": "Zinc",
+          "count": 6,
+          "sharePct": 13.043478260869565
+        },
+        {
+          "label": "Indium",
+          "count": 4,
+          "sharePct": 8.695652173913043
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 4,
+          "sharePct": 8.695652173913043
+        },
+        {
+          "label": "Tantalum",
+          "count": 4,
+          "sharePct": 8.695652173913043
+        },
+        {
+          "label": "Tellurium",
+          "count": 4,
+          "sharePct": 8.695652173913043
+        },
+        {
+          "label": "Tin",
+          "count": 4,
+          "sharePct": 8.695652173913043
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 6.521739130434782
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 4.3478260869565215
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 4.3478260869565215
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 2.1739130434782608
+        }
+      ],
+      "sites": [
+        {
+          "name": "Dzhyenama River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bulkuldak River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Xxii Congress",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Maleyev",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Ognevka",
+          "depositType": null,
+          "commodities": [
+            "Indium",
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tellurium",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Bakyrchik",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Koraotkel'Skoe  Loc. Uncertain",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Mai",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Ziryanovsk",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Asubulak Concentrator",
+          "depositType": null,
+          "commodities": [
+            "Indium",
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tellurium",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Ziryanovsk Concentrator",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Grekhov",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Ognevka Concentrator",
+          "depositType": null,
+          "commodities": [
+            "Indium",
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tellurium",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Asubulak",
+          "depositType": null,
+          "commodities": [
+            "Indium",
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tellurium",
+            "Tin"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,681 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20060",
+  "regionName": "Cortezian",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.962248+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 4.266085290158456,
+        "medianAgeMa": 3.6034579277038574,
+        "p10AgeMa": 0.7494947910308838,
+        "p90AgeMa": 9.003255844116211,
+        "oldestAgeMa": 10.29076862335205,
+        "coveragePct": 28.413447702970476,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 100.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 43.968572519222946,
+          "medianMmYr": 42.39634323120117,
+          "p10MmYr": 39.17998123168945,
+          "p90MmYr": 48.1285400390625,
+          "coveragePct": 28.413447702970476
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 4,
+          "intersectionLengthKm": 1413.1626891115077
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 16,
+        "confirmedOrInferredActive": 15,
+        "inactiveCount": 1,
+        "medianDepthM": 2000.0,
+        "maxReportedTemperatureC": 359.0,
+        "tectonicSettings": [
+          {
+            "label": "mid-ocean ridge",
+            "count": 13
+          },
+          {
+            "label": "other",
+            "count": 3
+          }
+        ],
+        "fields": [
+          {
+            "name": "San Felipe",
+            "activity": "active, inferred",
+            "depthM": 1.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "other",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1982
+          },
+          {
+            "name": "Bahia Concepcion",
+            "activity": "active, confirmed",
+            "depthM": 15.0,
+            "maxTemperatureC": 92.0,
+            "tectonicSetting": "other",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1968
+          },
+          {
+            "name": "Punta Mita, Bahia de Banderas",
+            "activity": "active, confirmed",
+            "depthM": 10.0,
+            "maxTemperatureC": 85.0,
+            "tectonicSetting": "other",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1997
+          },
+          {
+            "name": "Wagner Basin",
+            "activity": "active, inferred",
+            "depthM": 120.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2007
+          },
+          {
+            "name": "Consag Basin",
+            "activity": "active, inferred",
+            "depthM": 140.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2007
+          },
+          {
+            "name": "Ringvent",
+            "activity": "active, confirmed",
+            "depthM": 1740.0,
+            "maxTemperatureC": 70.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2016
+          },
+          {
+            "name": "Guaymas Basin, Northern Trough_2",
+            "activity": "active, confirmed",
+            "depthM": 1800.0,
+            "maxTemperatureC": 331.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2015
+          },
+          {
+            "name": "Guaymas Basin, Northern Trough",
+            "activity": "inactive",
+            "depthM": 2000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1977
+          },
+          {
+            "name": "Guaymas Basin, Southern Trough",
+            "activity": "active, confirmed",
+            "depthM": 2000.0,
+            "maxTemperatureC": 359.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1982
+          },
+          {
+            "name": "Pescadero Basin, Auka",
+            "activity": "active, confirmed",
+            "depthM": 3685.0,
+            "maxTemperatureC": 290.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2015
+          },
+          {
+            "name": "Alarcon Rise/Pescadero intersection",
+            "activity": "active, inferred",
+            "depthM": 2384.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2015
+          },
+          {
+            "name": "Alarcon Rise, Ja Sit",
+            "activity": "active, confirmed",
+            "depthM": 2304.0,
+            "maxTemperatureC": 300.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2012
+          },
+          {
+            "name": "Alarcon Rise, Meyibo",
+            "activity": "active, confirmed",
+            "depthM": 2295.0,
+            "maxTemperatureC": 354.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2012
+          },
+          {
+            "name": "Alarcon Rise, Tzab-ek",
+            "activity": "active, confirmed",
+            "depthM": 2249.0,
+            "maxTemperatureC": 355.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2015
+          },
+          {
+            "name": "Alarcon Rise/Tamayo intersection",
+            "activity": "active, inferred",
+            "depthM": 2358.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2015
+          },
+          {
+            "name": "EPR/Tamayo intersection",
+            "activity": "active, inferred",
+            "depthM": 3200.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1979
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 56,
+        "intersectionLengthKm": 1283.6151907706953,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 52.14547397797759
+          },
+          {
+            "name": "Middle America Trench megathrust",
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.3490366605301
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.830018798804694
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.738077501321115
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.5184275368373
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.18038789325563
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.89535154153407
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.81410514015528
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.77360550298578
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.521906115321954
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.90090787790603
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.85041220940729
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.28252697733305
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.778742883384986
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.514672409031043
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.675491737456774
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.011970191927002
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.432089500880092
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.245085114008965
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.987886950286942
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.870166900547574
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.264934120155832
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.17438040317277
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.157020861835893
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.00426392263956
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.543979706662395
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.252040722745168
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.680464264117848
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.47958994835715
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.952648351675162
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 993,
+      "medianMwM2": 231.0,
+      "p10MwM2": 92.2,
+      "p90MwM2": 2372.0,
+      "maxMwM2": 123701.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 11,
+          "percent": 1.1077542799597182
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 14,
+          "percent": 1.4098690835850958
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 28,
+          "percent": 2.8197381671701915
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 56,
+          "percent": 5.639476334340383
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 169,
+          "percent": 17.01913393756294
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 149,
+          "percent": 15.005035246727088
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 148,
+          "percent": 14.904330312185296
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 413,
+          "percent": 41.591137965760325
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 11,
+      "commodityCount": 10,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 6,
+          "sharePct": 37.5
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Salt",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Uranium",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 6.25
+        }
+      ],
+      "sites": [
+        {
+          "name": "San Clemente",
+          "depositType": null,
+          "commodities": [
+            "Halite",
+            "Salt"
+          ]
+        },
+        {
+          "name": "San Marcos Island",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite"
+          ]
+        },
+        {
+          "name": "Eureka",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Eureka Claim",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Isla Carmen Mn",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "San Hilario",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Sant Isabel, San Nicolas, San Juanico",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Guadalupe",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Isla Carmen",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Puerto Vallarta",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mesa Galindo",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

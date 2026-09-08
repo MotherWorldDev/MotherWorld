@@ -1,0 +1,563 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_379",
+  "regionName": "Northern Canadian Shield taiga",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.098495+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000016,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 240805.4633228434,
+        "percent": 38.050483686126114
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 240805.4633228434,
+          "percent": 38.050483686126114
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 221231.20527404585,
+          "percent": 34.95748913244673
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 61469.37348865481,
+          "percent": 9.712983089551754
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 57438.71870103958,
+          "percent": 9.076085727987572
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 15592.729420135167,
+          "percent": 2.4638597822325607
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 11091.797421959509,
+          "percent": 1.7526523320123086
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 10472.041858471612,
+          "percent": 1.6547226645019575
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 7686.78476618127,
+          "percent": 1.2146147944833494
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 4671.248440261443,
+          "percent": 0.7381197258457256
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2398.4619512105205,
+          "percent": 0.37898906481193906
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 6,
+      "medianMwM2": 43.4,
+      "p10MwM2": 32.45,
+      "p90MwM2": 59.5,
+      "maxMwM2": 63.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 50.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 2,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 31,
+      "commodityCount": 26,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 15,
+          "sharePct": 20.54794520547945
+        },
+        {
+          "label": "Silver",
+          "count": 6,
+          "sharePct": 8.21917808219178
+        },
+        {
+          "label": "Beryllium",
+          "count": 4,
+          "sharePct": 5.47945205479452
+        },
+        {
+          "label": "REE",
+          "count": 4,
+          "sharePct": 5.47945205479452
+        },
+        {
+          "label": "Zirconium",
+          "count": 4,
+          "sharePct": 5.47945205479452
+        },
+        {
+          "label": "Lithium",
+          "count": 4,
+          "sharePct": 5.47945205479452
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 3,
+          "sharePct": 4.10958904109589
+        },
+        {
+          "label": "Tantalum",
+          "count": 3,
+          "sharePct": 4.10958904109589
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 4.10958904109589
+        },
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 4.10958904109589
+        },
+        {
+          "label": "Zinc",
+          "count": 3,
+          "sharePct": 4.10958904109589
+        },
+        {
+          "label": "Arsenic",
+          "count": 3,
+          "sharePct": 4.10958904109589
+        },
+        {
+          "label": "Gallium",
+          "count": 2,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Thorium",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Uranium",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        }
+      ],
+      "sites": [
+        {
+          "name": "Canada, General Other Than Reported In Specific Areas",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Blaisdell Lake",
+          "depositType": null,
+          "commodities": [
+            "Beryllium"
+          ]
+        },
+        {
+          "name": "Thor Lake",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Gallium",
+            "Niobium (Columbium)",
+            "REE",
+            "Tantalum",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Thor Lake",
+          "depositType": null,
+          "commodities": [
+            "Lithium"
+          ]
+        },
+        {
+          "name": "Thor Lake",
+          "depositType": null,
+          "commodities": [
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Axis Lake Deposit",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Achak",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Buxton Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Izok Lake Zn-Cu-Pb-Ag",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Con/Rycon Mine",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Gold",
+            "Lead",
+            "Molybdenum",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Giant Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Thor Lake Property",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Gallium",
+            "Niobium (Columbium)",
+            "REE",
+            "Tantalum",
+            "Thorium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Giant Yellowknife Division",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Ann",
+          "depositType": null,
+          "commodities": [
+            "Lithium"
+          ]
+        },
+        {
+          "name": "Con Tailings",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Thor Lake",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Niobium (Columbium)",
+            "REE",
+            "Tantalum",
+            "Uranium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Nicholas Lake",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Terra Operations",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Cobalt",
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Yellowknife Lithium Group",
+          "depositType": null,
+          "commodities": [
+            "Lithium"
+          ]
+        },
+        {
+          "name": "Kim Lex Lake/Indin Lake",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Spider Lake",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Miramar Con",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Bullmoose Lake",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Cullaton Lake",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Tundra",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kennedy Lake",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Crestaurum",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Giant Tailings",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Colomac Baton Lake",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Hoidas Lake REE deposit",
+          "depositType": null,
+          "commodities": [
+            "REE"
+          ]
+        },
+        {
+          "name": "Yellowknife Area",
+          "depositType": "PEGMATITES",
+          "commodities": [
+            "Lithium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

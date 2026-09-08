@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_442",
+  "regionName": "Bahia coastal forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.115855+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 97.66572438462055,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 45017.383099385115,
+        "percent": 42.15011016749266
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 45017.383099385115,
+          "percent": 42.15011016749266
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 34756.50002706925,
+          "percent": 32.54276913305164
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 12287.96556439383,
+          "percent": 11.505313428150615
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 12115.511417013478,
+          "percent": 11.343843329036343
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 2625.16762100716,
+          "percent": 2.457963942268732
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2552.651277704889,
+          "percentOfRegion": 2.334275615379348
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 12,
+      "medianMwM2": 58.625,
+      "p10MwM2": 38.9576,
+      "p90MwM2": 76.7,
+      "maxMwM2": 85.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 4,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 5,
+          "percent": 41.66666666666667
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 8.333333333333332
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 31,
+      "commodityCount": 23,
+      "commodities": [
+        {
+          "label": "Mica",
+          "count": 9,
+          "sharePct": 15.789473684210526
+        },
+        {
+          "label": "REE",
+          "count": 6,
+          "sharePct": 10.526315789473683
+        },
+        {
+          "label": "Titanium",
+          "count": 5,
+          "sharePct": 8.771929824561402
+        },
+        {
+          "label": "Zirconium",
+          "count": 5,
+          "sharePct": 8.771929824561402
+        },
+        {
+          "label": "Thorium",
+          "count": 4,
+          "sharePct": 7.017543859649122
+        },
+        {
+          "label": "Tantalum",
+          "count": 3,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Manganese",
+          "count": 3,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Lithium",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Tin",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 3.508771929824561
+        },
+        {
+          "label": "Beryllium",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Ferrochrome",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Ferromanganese",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 1.7543859649122806
+        }
+      ],
+      "sites": [
+        {
+          "name": "Rio Das Mortes",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sao Matheus River",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Cumuruxatiba Beach Titanium",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Santa Cruz",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Nazare Southern",
+          "depositType": null,
+          "commodities": [
+            "Lithium",
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Nazare Northern",
+          "depositType": null,
+          "commodities": [
+            "Lithium",
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Guarapari",
+          "depositType": "Placer",
+          "commodities": [
+            "REE"
+          ]
+        },
+        {
+          "name": "Prado",
+          "depositType": "Placer",
+          "commodities": [
+            "REE"
+          ]
+        },
+        {
+          "name": "Coutinho #2",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Sapucaia",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Corrego Divnino",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Antonio Amaro",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Sebastiao Pimenta",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Municipio De Itambe Ta-Nb",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Mica",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Marau Manganese Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Corrego Baixio",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Ferruginha",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Pedra Mariano",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Camacari Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Sao Antonio De Jesus Nazare",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Pojuca Cr",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Ferrochrome",
+            "Ferromanganese",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "(Facility) Camacari Copper Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Joacema",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Thorium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Laginha",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Boa Vista",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Thorium"
+          ]
+        },
+        {
+          "name": "(Facility) Aratu Aluminum Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "(Facility) Camacari Copper Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur",
+            "Sulfuric Acid"
+          ]
+        },
+        {
+          "name": "Samarco",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Alcobaca",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Vitoria District",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Vitoria District",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "REE",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

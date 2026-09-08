@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_143",
+  "regionName": "Louisiade Archipelago rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.033016+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 25.588765176754556,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 373.87228521313546,
+        "percent": 100.0
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 373.87228521313546,
+          "percent": 100.0
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1087.2075388057679,
+          "percentOfRegion": 74.41123482324556
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 40.0
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 40.0
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Misima Gold Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Misima Island",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_554",
+  "regionName": "Cuban pine forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.146309+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 29.028159205294138,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Pinar del Rio Fault",
+            "kinematics": "Sinistral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.028159205294138
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 77.5769942495839,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 4004.2064623379106,
+        "percent": 78.14442223186153
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 4004.2064623379106,
+          "percent": 78.14442223186153
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1005.9531487418191,
+          "percent": 19.631761833492973
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 113.95078346266055,
+          "percent": 2.2238159346455095
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1481.0828642437082,
+          "percentOfRegion": 22.4230057504162
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 60.5,
+      "p10MwM2": 45.0,
+      "p90MwM2": 63.4,
+      "maxMwM2": 64.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 50.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 37,
+      "commodityCount": 13,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 15,
+          "sharePct": 24.193548387096776
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 7,
+          "sharePct": 11.29032258064516
+        },
+        {
+          "label": "Chromium",
+          "count": 6,
+          "sharePct": 9.67741935483871
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 6,
+          "sharePct": 9.67741935483871
+        },
+        {
+          "label": "Zinc",
+          "count": 6,
+          "sharePct": 9.67741935483871
+        },
+        {
+          "label": "Lead",
+          "count": 5,
+          "sharePct": 8.064516129032258
+        },
+        {
+          "label": "Iron",
+          "count": 5,
+          "sharePct": 8.064516129032258
+        },
+        {
+          "label": "Manganese",
+          "count": 3,
+          "sharePct": 4.838709677419355
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 1.6129032258064515
+        }
+      ],
+      "sites": [
+        {
+          "name": "Javier Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Chevere Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Cayoguan Grupo",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Tres Hermanas",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "La Deseada",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Isabel Maria",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "El Indio",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Santa Gertrudis",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Nieves",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Castellanos",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Loma Hierro",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron",
+            "Silver",
+            "Sulfur-Pyrite",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Santa Lucia",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Delita",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Mantua",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Amerika",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Asiento Viejo",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cabezas De Horacio",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Candida",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Crusellas",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cuprifera",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Estrella",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Pena Blanca",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "San Cayetano Barite",
+          "depositType": "Vein",
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Santa Lucia Barite",
+          "depositType": "Vein",
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "T. Contino",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cayo Alto",
+          "depositType": "Vein",
+          "commodities": [
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Florencia",
+          "depositType": null,
+          "commodities": [
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Los Arroyos",
+          "depositType": null,
+          "commodities": [
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "San Cayetano Pyrite",
+          "depositType": null,
+          "commodities": [
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Dora",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cuerpo 70",
+          "depositType": null,
+          "commodities": [
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Potosi",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Iron",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Brooklyn",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Francisco",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Matahambre",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Moa Bay District",
+          "depositType": "LATERITE, RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Chromium",
+            "Cobalt",
+            "Iron",
+            "Manganese",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Nicaro District",
+          "depositType": "LATERITE, RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Chromium",
+            "Cobalt",
+            "Iron",
+            "Nickel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

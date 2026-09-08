@@ -1,0 +1,153 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_515",
+  "regionName": "Veracruz montane forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.134779+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000004,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 1874.4692399288508,
+        "percent": 37.882078413585276
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1874.4692399288508,
+          "percent": 37.882078413585276
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1355.137943950344,
+          "percent": 27.386654718271185
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1195.0125376991234,
+          "percent": 24.150600977615415
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 498.95550671040496,
+          "percent": 10.083639265700182
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 24.59371710004969,
+          "percent": 0.4970266248279319
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 7,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 3,
+          "sharePct": 27.27272727272727
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Coal",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 9.090909090909092
+        }
+      ],
+      "sites": [
+        {
+          "name": "Xicotepec De Juarez",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Molangotetzintla/Acuatitla",
+          "depositType": null,
+          "commodities": [
+            "Calcium",
+            "Coal",
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Molango-Tetzintla",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Manganese",
+            "Phosphorus-Phosphates",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Molango",
+          "depositType": "MARINE CHEMICAL SEDIMENT",
+          "commodities": [
+            "Manganese"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

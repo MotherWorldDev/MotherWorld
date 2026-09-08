@@ -1,0 +1,621 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_525",
+  "regionName": "Caatinga",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.137292+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.15078882372686,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 341860.54615341785,
+        "percent": 47.1393924385957
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 341860.54615341785,
+          "percent": 47.1393924385957
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 101175.10243778191,
+          "percent": 13.951106416033667
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 87768.95987298353,
+          "percent": 12.10252393829379
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 87441.99957150611,
+          "percent": 12.057439151129529
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 80814.59404450262,
+          "percent": 11.143581516774338
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 20717.079782781286,
+          "percent": 2.8566927802892947
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 5433.750936832631,
+          "percent": 0.7492637588836882
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 3033.9756203937554,
+          "percentOfRegion": 0.4148043088483038
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3177.3533133195992,
+          "percentOfRegion": 0.43440686742477985
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 53,
+      "medianMwM2": 78.0,
+      "p10MwM2": 37.2,
+      "p90MwM2": 115.60000000000005,
+      "maxMwM2": 370.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 8,
+          "percent": 15.09433962264151
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 9,
+          "percent": 16.9811320754717
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 10,
+          "percent": 18.867924528301888
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 7.547169811320755
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 19,
+          "percent": 35.84905660377358
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 2,
+          "percent": 3.7735849056603774
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 1,
+          "percent": 1.8867924528301887
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 426,
+      "commodityCount": 51,
+      "commodities": [
+        {
+          "label": "Tungsten",
+          "count": 59,
+          "sharePct": 9.735973597359736
+        },
+        {
+          "label": "Copper",
+          "count": 46,
+          "sharePct": 7.590759075907591
+        },
+        {
+          "label": "Manganese",
+          "count": 44,
+          "sharePct": 7.2607260726072615
+        },
+        {
+          "label": "Gold",
+          "count": 37,
+          "sharePct": 6.105610561056106
+        },
+        {
+          "label": "Chromium",
+          "count": 28,
+          "sharePct": 4.62046204620462
+        },
+        {
+          "label": "Iron",
+          "count": 27,
+          "sharePct": 4.455445544554455
+        },
+        {
+          "label": "Lead",
+          "count": 21,
+          "sharePct": 3.4653465346534658
+        },
+        {
+          "label": "Gemstone",
+          "count": 20,
+          "sharePct": 3.3003300330033
+        },
+        {
+          "label": "Asbestos",
+          "count": 20,
+          "sharePct": 3.3003300330033
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 19,
+          "sharePct": 3.1353135313531353
+        },
+        {
+          "label": "Beryllium",
+          "count": 18,
+          "sharePct": 2.9702970297029703
+        },
+        {
+          "label": "Magnesite",
+          "count": 17,
+          "sharePct": 2.8052805280528053
+        },
+        {
+          "label": "Tantalum",
+          "count": 15,
+          "sharePct": 2.4752475247524752
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 14,
+          "sharePct": 2.31023102310231
+        },
+        {
+          "label": "Uranium",
+          "count": 13,
+          "sharePct": 2.145214521452145
+        },
+        {
+          "label": "Molybdenum",
+          "count": 12,
+          "sharePct": 1.9801980198019802
+        },
+        {
+          "label": "Titanium",
+          "count": 11,
+          "sharePct": 1.8151815181518154
+        },
+        {
+          "label": "Tin",
+          "count": 11,
+          "sharePct": 1.8151815181518154
+        },
+        {
+          "label": "General",
+          "count": 11,
+          "sharePct": 1.8151815181518154
+        },
+        {
+          "label": "Limestone",
+          "count": 11,
+          "sharePct": 1.8151815181518154
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 10,
+          "sharePct": 1.65016501650165
+        },
+        {
+          "label": "Platinum",
+          "count": 9,
+          "sharePct": 1.4851485148514851
+        },
+        {
+          "label": "Metal",
+          "count": 9,
+          "sharePct": 1.4851485148514851
+        },
+        {
+          "label": "Zinc",
+          "count": 9,
+          "sharePct": 1.4851485148514851
+        },
+        {
+          "label": "Nickel",
+          "count": 9,
+          "sharePct": 1.4851485148514851
+        },
+        {
+          "label": "Quartz",
+          "count": 9,
+          "sharePct": 1.4851485148514851
+        },
+        {
+          "label": "Lithium",
+          "count": 8,
+          "sharePct": 1.3201320132013201
+        },
+        {
+          "label": "Calcium",
+          "count": 8,
+          "sharePct": 1.3201320132013201
+        },
+        {
+          "label": "Vanadium",
+          "count": 7,
+          "sharePct": 1.155115511551155
+        },
+        {
+          "label": "Diamond",
+          "count": 7,
+          "sharePct": 1.155115511551155
+        }
+      ],
+      "sites": [
+        {
+          "name": "Solonopole",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Lithium",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        },
+        {
+          "name": "Maracas",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Diamond",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Feira De S. Anna",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ituassu / Ituacu",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Serra Do Assurua'",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Macahubes",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Serras Do Pitango",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sao Bartho Lo Meu",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Caucasus",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Bruscus River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Brotas De Macaubas Manganese",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Foz Do Rio Acarau",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Fazenda Boa Vista",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Olho D'Agua Do Costa, Boqueirao Dos Almeidas, Jarra, Morro Do Arapua",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Fazenda Estrela",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Olho D'Agua",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Riacho Das Bruscas, Pedras Pretas",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Lagoa Das Braunas",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Mina Batoque",
+          "depositType": "Vein",
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Boi Morto",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Santa Ursula",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Serragem, Panela De Baixo, Alto Da Barriguda, Pacajus",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Independencia",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Troia",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Tabuleirinho, Bom Acerto, Castelo, Pelo Sinal, Fazenda Castelo",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Abrigo",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Bonfim",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Novo Horizonte Copper",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Boqueirao",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Mina Bonita",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Garimpo De Bonito",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mina Bodo",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Chupador, Trapia, Cacador",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Saco Dos Cavalos, Agua Fria",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Baixos I",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Sao Francisco",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Acari, Jardim Do Serido",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Malhada Dos Angicos",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Boqueirao, Quixabeiral",
+          "depositType": null,
+          "commodities": [
+            "Lithium",
+            "Niobium (Columbium)",
+            "Tantalum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

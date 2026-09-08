@@ -1,0 +1,129 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_89",
+  "regionName": "Fynbos shrubland",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.222017+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 91.43002046564466,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 42623.375321785556,
+        "percent": 87.01525081606715
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 42623.375321785556,
+          "percent": 87.01525081606715
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3534.915268699421,
+          "percent": 7.216498843586658
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 2596.157480425416,
+          "percent": 5.300032965755351
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 229.35065637576054,
+          "percent": 0.46821737459084006
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 4591.382026055208,
+          "percentOfRegion": 8.569979534355285
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 4,
+          "sharePct": 80.0
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Langebaan Phosphate Works",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Somerset West Aeci Phos Acid Pl.",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Good Hope Tin Mines",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Langebaan Phosphate Works",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Langebaan Area",
+          "depositType": "PHOSPHATIC BEACH SANDS (BOTH CONSOLIDATED AND UNCONSOLIDATED)",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

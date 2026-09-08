@@ -1,0 +1,222 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_16",
+  "regionName": "Kwazulu Natal-Cape coastal forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.037604+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 79.80522285732535,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 7362.712688331661,
+        "percent": 83.57810719789741
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 7362.712688331661,
+          "percent": 83.57810719789741
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1074.0584720148534,
+          "percent": 12.192214732639261
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 370.2629917519253,
+          "percent": 4.203054135889246
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2.345403361133433,
+          "percent": 0.02662393357407196
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2229.2207266408204,
+          "percentOfRegion": 20.194777142674543
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 11,
+      "commodityCount": 10,
+      "commodities": [
+        {
+          "label": "Titanium",
+          "count": 6,
+          "sharePct": 27.27272727272727
+        },
+        {
+          "label": "Zirconium",
+          "count": 4,
+          "sharePct": 18.181818181818183
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "REE",
+          "count": 2,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 2,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Titanium-Ilmenite",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Titanium-Rutile",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Pigment",
+          "count": 1,
+          "sharePct": 4.545454545454546
+        }
+      ],
+      "sites": [
+        {
+          "name": "Empageni Area Mineral Sands",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Wavecrest",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Richards Bay Deposit",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium-Ilmenite",
+            "Titanium-Rutile"
+          ]
+        },
+        {
+          "name": "Richards Bay Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "(Facility) Hillside Al Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Umbogintwini Plant  Ti",
+          "depositType": null,
+          "commodities": [
+            "Pigment",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "(Facility) Richards Bay Al Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Richards Bay Deposit",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Transkei Coast Deposit",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "North Natal",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Transkei Coast",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

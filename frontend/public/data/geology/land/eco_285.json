@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_285",
+  "regionName": "Tonle Sap freshwater swamp forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.071755+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.9023470511594,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 24046.01665314757,
+        "percent": 93.03979006369873
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 24046.01665314757,
+          "percent": 93.03979006369873
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1665.5465471377,
+          "percent": 6.4443979775222235
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 133.31095160685362,
+          "percent": 0.5158119587790441
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 25.262951750821077,
+          "percentOfRegion": 0.09765294884062922
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Ba Phnom",
+          "depositType": "Vein",
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

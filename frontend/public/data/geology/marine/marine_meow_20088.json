@@ -1,0 +1,233 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20088",
+  "regionName": "Southern Red Sea",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.142662+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 4.926857520012388,
+        "medianAgeMa": 4.921875,
+        "p10AgeMa": 0.9426871538162231,
+        "p90AgeMa": 8.995007514953613,
+        "oldestAgeMa": 10.078938484191895,
+        "coveragePct": 61.39634638065409,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 100.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 15.950046622630882,
+          "medianMmYr": 15.985512733459473,
+          "p10MmYr": 14.198546409606934,
+          "p90MmYr": 17.6339168548584,
+          "coveragePct": 61.39634638065409
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 714.7375672198634
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 2,
+        "confirmedOrInferredActive": 2,
+        "inactiveCount": 0,
+        "medianDepthM": 2175.0,
+        "maxReportedTemperatureC": null,
+        "tectonicSettings": [
+          {
+            "label": "mid-ocean ridge",
+            "count": 2
+          }
+        ],
+        "fields": [
+          {
+            "name": "Suakin Deep",
+            "activity": "active, inferred",
+            "depthM": 2850.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 1972
+          },
+          {
+            "name": "Red Sea Rift, 18 N",
+            "activity": "active, inferred",
+            "depthM": 1500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 1980
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 389.10805463399737,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 280.9672930098785
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 108.14076162411884
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 162,
+      "medianMwM2": 125.0,
+      "p10MwM2": 45.100000000000016,
+      "p90MwM2": 180.0,
+      "maxMwM2": 335.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 9,
+          "percent": 5.555555555555555
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 15,
+          "percent": 9.25925925925926
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 11,
+          "percent": 6.790123456790123
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 20,
+          "percent": 12.345679012345679
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 73,
+          "percent": 45.06172839506173
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 22,
+          "percent": 13.580246913580247
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 7,
+          "percent": 4.320987654320987
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 5,
+          "percent": 3.0864197530864197
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    }
+  ]
+}

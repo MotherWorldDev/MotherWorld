@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_614",
+  "regionName": "Northern Mesoamerican Pacific mangroves",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.160212+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 65.00228702160217,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 3967.6912472025574,
+        "percent": 78.2150534535189
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3967.6912472025574,
+          "percent": 78.2150534535189
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 574.2707914115858,
+          "percent": 11.320593727831142
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 276.59540868054415,
+          "percent": 5.452522216843306
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 102.16255361942311,
+          "percent": 2.0139292839192113
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 86.79226211925906,
+          "percent": 1.7109348984238413
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 47.10248263241808,
+          "percent": 0.9285307165686185
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 18.18271724261366,
+          "percent": 0.35843570289496457
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2731.23174182185,
+          "percentOfRegion": 34.9977129783981
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Isla Magdalena",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Santa Rita",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Negociacion Minera - Beltran",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "San Hilario",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

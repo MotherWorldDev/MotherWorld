@@ -1,0 +1,704 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_352",
+  "regionName": "Central-Southern Cascades Forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.049671+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 14,
+        "intersectionLengthKm": 273.8022713665257,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Hat Creek-McArthur-Mayfield",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 85.95071414019503
+          },
+          {
+            "name": "Klamath graben fault system (west)",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.32154365011925
+          },
+          {
+            "name": "Almanor 2011 CFM",
+            "kinematics": "Normal-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.654448605934984
+          },
+          {
+            "name": "Sky Lakes fault zone",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.336737034971254
+          },
+          {
+            "name": "Walker Spring 2011 CFM",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.138047381276508
+          },
+          {
+            "name": "Rocky Ledge 2011 CFM",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.91037626943305
+          },
+          {
+            "name": "Mount Hood fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.153634429650529
+          },
+          {
+            "name": "Pittville 2011 CFM",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.792934578184363
+          },
+          {
+            "name": "Mount Angel fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.788202714011964
+          },
+          {
+            "name": "Sandy River fault zone",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.517912509326835
+          },
+          {
+            "name": "Cedar Mtn-Mahogany Mtn",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.645475271462018
+          },
+          {
+            "name": "Battle Creek 2011 CFM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.872060224395813
+          },
+          {
+            "name": "Keddie Ridge 2011 CFM",
+            "kinematics": "Normal-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.858795190212257
+          },
+          {
+            "name": "Gillem - Big Crack 2011 CFM",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.8613893673518274
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000003,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 43392.57042474336,
+        "percent": 73.86691537573704
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 43392.57042474336,
+          "percent": 73.86691537573704
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 8148.780703518087,
+          "percent": 13.871621080529003
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 2255.540783023128,
+          "percent": 3.8395937026834566
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1804.5591812406426,
+          "percent": 3.0718903956701986
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1803.5491459473153,
+          "percent": 3.0701710185784887
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 966.9835930553714,
+          "percent": 1.6460904375744805
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 370.8737647284687,
+          "percent": 0.6313362109255787
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1.3991579608984175,
+          "percent": 0.0023817783017536795
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 353,
+      "medianMwM2": 82.0,
+      "p10MwM2": 40.658,
+      "p90MwM2": 159.0,
+      "maxMwM2": 1594.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 32,
+          "percent": 9.06515580736544
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 78,
+          "percent": 22.096317280453256
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 60,
+          "percent": 16.997167138810198
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 52,
+          "percent": 14.730878186968837
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 85,
+          "percent": 24.07932011331445
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 17,
+          "percent": 4.815864022662889
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 14,
+          "percent": 3.9660056657223794
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 15,
+          "percent": 4.2492917847025495
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2561,
+      "commodityCount": 63,
+      "commodities": [
+        {
+          "label": "Stone",
+          "count": 1107,
+          "sharePct": 23.74008149260133
+        },
+        {
+          "label": "Gold",
+          "count": 718,
+          "sharePct": 15.397812567016942
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 527,
+          "sharePct": 11.301737079133604
+        },
+        {
+          "label": "Silver",
+          "count": 457,
+          "sharePct": 9.800557580956466
+        },
+        {
+          "label": "Copper",
+          "count": 359,
+          "sharePct": 7.698906283508471
+        },
+        {
+          "label": "Construction",
+          "count": 229,
+          "sharePct": 4.9110015011794985
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 229,
+          "sharePct": 4.9110015011794985
+        },
+        {
+          "label": "Zinc",
+          "count": 219,
+          "sharePct": 4.696547287154193
+        },
+        {
+          "label": "Lead",
+          "count": 208,
+          "sharePct": 4.460647651726356
+        },
+        {
+          "label": "Mercury",
+          "count": 108,
+          "sharePct": 2.3161055114733005
+        },
+        {
+          "label": "Pumice",
+          "count": 94,
+          "sharePct": 2.0158696118378727
+        },
+        {
+          "label": "Clay",
+          "count": 50,
+          "sharePct": 1.0722710701265281
+        },
+        {
+          "label": "Geothermal",
+          "count": 30,
+          "sharePct": 0.6433626420759168
+        },
+        {
+          "label": "Antimony",
+          "count": 29,
+          "sharePct": 0.6219172206733862
+        },
+        {
+          "label": "Arsenic",
+          "count": 27,
+          "sharePct": 0.5790263778683251
+        },
+        {
+          "label": "Molybdenum",
+          "count": 27,
+          "sharePct": 0.5790263778683251
+        },
+        {
+          "label": "Tungsten",
+          "count": 20,
+          "sharePct": 0.4289084280506112
+        },
+        {
+          "label": "Aluminum",
+          "count": 19,
+          "sharePct": 0.4074630066480806
+        },
+        {
+          "label": "Diatomite",
+          "count": 19,
+          "sharePct": 0.4074630066480806
+        },
+        {
+          "label": "Iron",
+          "count": 14,
+          "sharePct": 0.30023589963542785
+        },
+        {
+          "label": "Manganese",
+          "count": 13,
+          "sharePct": 0.27879047823289727
+        },
+        {
+          "label": "Silica",
+          "count": 13,
+          "sharePct": 0.27879047823289727
+        },
+        {
+          "label": "Uranium",
+          "count": 12,
+          "sharePct": 0.25734505683036674
+        },
+        {
+          "label": "Chromium",
+          "count": 11,
+          "sharePct": 0.23589963542783618
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 10,
+          "sharePct": 0.2144542140253056
+        },
+        {
+          "label": "Dimension",
+          "count": 10,
+          "sharePct": 0.2144542140253056
+        },
+        {
+          "label": "Platinum",
+          "count": 8,
+          "sharePct": 0.17156337122024448
+        },
+        {
+          "label": "Vanadium",
+          "count": 7,
+          "sharePct": 0.15011794981771392
+        },
+        {
+          "label": "Titanium",
+          "count": 6,
+          "sharePct": 0.12867252841518337
+        },
+        {
+          "label": "Nickel",
+          "count": 6,
+          "sharePct": 0.12867252841518337
+        }
+      ],
+      "sites": [
+        {
+          "name": "Scieffelin #2",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Cinder Pits",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Durango",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Chinook",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Molybdenum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Annie Trail #4",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Annie Trail #1",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Annie Trail #2",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "S & D",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Ethel",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mineral Slide Magalia Consolidated",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Lucky John",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Steiffer Joe S. Campbell Placer Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Hupp Placer",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Indian Springs",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Emma No. 2 Placer",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Oro Fino",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Princess",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Magalia Perschbaker",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Ethel Drift Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Helmke Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Bader Brothers",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Anti-Axis Claim",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Wyoming Black Diamond",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Pitts Old Bader, Mowry and Newman",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Carr Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Nolan",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Burroughs and Raker",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cinder Pits",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cinder Pit",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cinder Pit",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cinder Cones",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cinder Pit",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Volcolite Association Placer Claim",
+          "depositType": null,
+          "commodities": [
+            "Pumice"
+          ]
+        },
+        {
+          "name": "Rogers' Tiller-Trail",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Dawn Marie Claim",
+          "depositType": "Other",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Last Chance Sulfur Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Sulfides"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

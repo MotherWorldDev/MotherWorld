@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25014",
+  "regionName": "Eastern Bering Sea",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.077325+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 74.93569454899017,
+        "medianAgeMa": 75.81634521484375,
+        "p10AgeMa": 71.36065673828125,
+        "p90AgeMa": 77.45576477050781,
+        "oldestAgeMa": 78.47281646728516,
+        "coveragePct": 8.693975595472125,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 100.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 138.42398734275582,
+          "medianMmYr": 139.14727783203125,
+          "p10MmYr": 135.7100830078125,
+          "p90MmYr": 141.19528198242188,
+          "coveragePct": 8.693975595472125
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 11.164526129243503,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Togiak-Tikchik section",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.227863933057968
+          },
+          {
+            "name": null,
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.9366621961855355
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 11,
+      "medianMwM2": 78.0,
+      "p10MwM2": 6.0,
+      "p90MwM2": 113.0,
+      "maxMwM2": 113.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 18.181818181818183
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 27.27272727272727
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 4,
+          "percent": 36.36363636363637
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 18.181818181818183
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 31,
+      "commodityCount": 22,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 21,
+          "sharePct": 28.767123287671232
+        },
+        {
+          "label": "Iron",
+          "count": 7,
+          "sharePct": 9.58904109589041
+        },
+        {
+          "label": "Tungsten",
+          "count": 6,
+          "sharePct": 8.21917808219178
+        },
+        {
+          "label": "Titanium",
+          "count": 5,
+          "sharePct": 6.8493150684931505
+        },
+        {
+          "label": "Chromium",
+          "count": 4,
+          "sharePct": 5.47945205479452
+        },
+        {
+          "label": "Mercury",
+          "count": 4,
+          "sharePct": 5.47945205479452
+        },
+        {
+          "label": "Silver",
+          "count": 4,
+          "sharePct": 5.47945205479452
+        },
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 4.10958904109589
+        },
+        {
+          "label": "Tin",
+          "count": 3,
+          "sharePct": 4.10958904109589
+        },
+        {
+          "label": "REE",
+          "count": 2,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "Uranium",
+          "count": 2,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "Diamond",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Beryllium",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 1.36986301369863
+        }
+      ],
+      "sites": [
+        {
+          "name": "North Spit (Goodnews Bay)",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Goodnews Bay",
+          "depositType": null,
+          "commodities": [
+            "Diamond",
+            "Mercury",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Port Heiden",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Port Moller",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Swede Creek",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Nome Offshore Placer deposits",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Egegik Beach Beach Placer Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Gold Run Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Anvil Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Golovnin Bay",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Tungsten",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Clear Creek Tributary",
+          "depositType": "Placer",
+          "commodities": [
+            "Niobium (Columbium)",
+            "REE",
+            "Tin",
+            "Tungsten",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Lost River Tin Mine",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Fluorine-Fluorite",
+            "Lead",
+            "Tin",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Mercury",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Daniels Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Mercury",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Nome",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron",
+            "PGE",
+            "Silver",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Bluff",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bonanza Beach",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Rocky Point",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Daniels Creek Bluff",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Tiflighak Bay",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Goodnews Bay Mining Co.",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "PGE",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Peluk Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "West Cape",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Port Moller Spit",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Ilnik Spit",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Nelson Lagoon",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "South Spit (Goodnews Bay)",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Hagemeister Strait (north of Tongue Point)",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Hagemeister Strait (west of Pyrite Point)",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Nelson Lagoon",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Moller Spit",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Titanium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

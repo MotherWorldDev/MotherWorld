@@ -1,0 +1,416 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20066",
+  "regionName": "Southern Caribbean",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.008562+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 147.75581206471045,
+        "medianAgeMa": 150.72689819335938,
+        "p10AgeMa": 149.25222778320312,
+        "p90AgeMa": 152.06101989746094,
+        "oldestAgeMa": 154.9193878173828,
+        "coveragePct": 39.13855271461547,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 3.236945845382823,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 20.401039151956063,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 76.36201500266111,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 142.38629207087223,
+          "medianMmYr": 147.14666748046875,
+          "p10MmYr": 137.31654357910156,
+          "p90MmYr": 157.09657287597656,
+          "coveragePct": 39.13855271461547
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 5.259411909141503
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 42,
+        "intersectionLengthKm": 3887.73986504813,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 678.2042572759696
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 368.9466295474336
+          },
+          {
+            "name": "CUIZA FAULT",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 225.3628915109675
+          },
+          {
+            "name": "El Pilar - Offshore",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 174.4077947849587
+          },
+          {
+            "name": "San Sebastián - Centro",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 166.11862848057157
+          },
+          {
+            "name": "Cañón de Los Roques - Sur",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 163.18742581138628
+          },
+          {
+            "name": "Punta Arenas - Sur",
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 156.11367317214706
+          },
+          {
+            "name": "Coche - Este",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 155.74109261915297
+          },
+          {
+            "name": "San Sebastián - Este 2",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 155.5861788194566
+          },
+          {
+            "name": "Costa Norte - Centro",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 151.39794406445947
+          },
+          {
+            "name": "La Tortuga - La Tortuga",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 136.31542300151153
+          },
+          {
+            "name": "Costa Norte - Este",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 100.75519545746775
+          },
+          {
+            "name": "Patao Sur - Este",
+            "kinematics": "Reverse-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 95.2509560686235
+          },
+          {
+            "name": "Costa Norte - Oeste",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 94.79221794185624
+          },
+          {
+            "name": "Costa NE de Falcón - Costa Oriental Falcón",
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 91.50629191390566
+          },
+          {
+            "name": "Antilles Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 74.25901211887245
+          },
+          {
+            "name": "Patao Sur - Oeste",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 74.1040991488596
+          },
+          {
+            "name": "Rio Seco - Centro",
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 64.16676285082345
+          },
+          {
+            "name": "Margarita - Margarita",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 62.23313945670625
+          },
+          {
+            "name": "Píritu - Norte",
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 61.796804570927705
+          },
+          {
+            "name": "Píritu - Sur",
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.806536810107204
+          },
+          {
+            "name": "Rio Seco - Este",
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.22886972575938
+          },
+          {
+            "name": "Urica - Norte",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.70596627950426
+          },
+          {
+            "name": "Paraguaná Oeste - Paraguaná Oeste",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.247887595690706
+          },
+          {
+            "name": "Charagato - Charagato",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.96804609727448
+          },
+          {
+            "name": "San Mateo - Norte",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.52226530862082
+          },
+          {
+            "name": "Boconó - Cabudare - Morón",
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.04169772635895
+          },
+          {
+            "name": "San Mateo - Sur",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.80637688451332
+          },
+          {
+            "name": "Los Médanos - Los Médanos",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.988952898179825
+          },
+          {
+            "name": "Costa NE de Falcón - Oeste",
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.34225797725534
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 89,
+      "medianMwM2": 49.0,
+      "p10MwM2": 33.0,
+      "p90MwM2": 63.0,
+      "maxMwM2": 116.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 13,
+          "percent": 14.606741573033707
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 58,
+          "percent": 65.1685393258427
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 17,
+          "percent": 19.101123595505616
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 1.1235955056179776
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Bromine",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Manicuare",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Lizardo",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Bonaire Salt",
+          "depositType": null,
+          "commodities": [
+            "Bromine",
+            "Halite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

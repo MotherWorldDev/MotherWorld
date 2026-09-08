@@ -1,0 +1,656 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_419",
+  "regionName": "Ogilvie-MacKenzie alpine tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.306174+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 10.167747411901951,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.167747411901951
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999979,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 201879.69044266795,
+        "percent": 66.63293725138521
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 201879.69044266795,
+          "percent": 66.63293725138521
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 61498.956862289146,
+          "percent": 20.298506128303746
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 15971.045046982552,
+          "percent": 5.27144479031613
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 10496.831138227064,
+          "percent": 3.464611467543852
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 8967.032038186208,
+          "percent": 2.9596819859465113
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 2227.2211765982042,
+          "percent": 0.7351224314828766
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1334.356403943985,
+          "percent": 0.44042115549128913
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 597.6889971439184,
+          "percent": 0.19727478953037253
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 59,
+      "medianMwM2": 64.0,
+      "p10MwM2": 49.8,
+      "p90MwM2": 96.0,
+      "maxMwM2": 138.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 1.694915254237288
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 21,
+          "percent": 35.59322033898305
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 24,
+          "percent": 40.67796610169492
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 10,
+          "percent": 16.94915254237288
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 5.084745762711865
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 49,
+      "commodityCount": 23,
+      "commodities": [
+        {
+          "label": "Silver",
+          "count": 24,
+          "sharePct": 16.43835616438356
+        },
+        {
+          "label": "Zinc",
+          "count": 24,
+          "sharePct": 16.43835616438356
+        },
+        {
+          "label": "Lead",
+          "count": 21,
+          "sharePct": 14.383561643835616
+        },
+        {
+          "label": "Gold",
+          "count": 14,
+          "sharePct": 9.58904109589041
+        },
+        {
+          "label": "Copper",
+          "count": 9,
+          "sharePct": 6.164383561643835
+        },
+        {
+          "label": "Tungsten",
+          "count": 7,
+          "sharePct": 4.794520547945205
+        },
+        {
+          "label": "Platinum",
+          "count": 6,
+          "sharePct": 4.10958904109589
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 5,
+          "sharePct": 3.4246575342465753
+        },
+        {
+          "label": "Cadmium",
+          "count": 4,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "Cobalt",
+          "count": 4,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "Uranium",
+          "count": 4,
+          "sharePct": 2.73972602739726
+        },
+        {
+          "label": "Tin",
+          "count": 3,
+          "sharePct": 2.054794520547945
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 2.054794520547945
+        },
+        {
+          "label": "Nickel",
+          "count": 3,
+          "sharePct": 2.054794520547945
+        },
+        {
+          "label": "Mercury",
+          "count": 2,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Bismuth",
+          "count": 2,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Molybdenum",
+          "count": 2,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Iridium",
+          "count": 2,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Antimony",
+          "count": 2,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "Arsenic",
+          "count": 2,
+          "sharePct": 1.36986301369863
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 0.684931506849315
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 0.684931506849315
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 0.684931506849315
+        }
+      ],
+      "sites": [
+        {
+          "name": "Lucky Gulch Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Fox Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Unnamed (Tatonduk River)",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Fourth of July Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Mercury",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed",
+          "depositType": null,
+          "commodities": [
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cantung Mine",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Copper",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mactung Deposit",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Bailey",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Lened",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Lucky Gulch",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Fourth of July Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Prairie Creek Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Howard Pass Pb - Zn Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Tom Macmillan Pass Prospect",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Prairie Creek",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Bear-Twit",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Snake River Iron Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Cantung",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Fourth of July Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Brewery Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Rosie",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Kathleen Lake",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Eagle Bluff",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Nickel",
+            "Silver",
+            "Tin",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Jason",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Fox Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Mactung Tungsten Mine",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Tatonduk River Red Beds",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Calico Bluff",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Coates Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Goz Creek",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Spartan",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Ruby Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Lucky Gulch",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Tom Claims",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Howard's Pass",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Casca Zinc",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Ettrain Creek",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Cadmium",
+            "Copper",
+            "Lead",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hard Luck Creek",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Bismuth",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Nation Gossan",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Nation River",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

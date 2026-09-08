@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_547",
+  "regionName": "Southern Pacific dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.104584+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 67.82953373339646,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Tonala Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 67.82953373339646
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 88.13493296484366,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 12223.811457609085,
+        "percent": 32.539151086039844
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 12223.811457609085,
+          "percent": 32.539151086039844
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 9886.920245858146,
+          "percent": 26.318468079393103
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 7924.200766797806,
+          "percent": 21.09381078734178
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 2460.238899108854,
+          "percent": 6.549028142611217
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1845.640232322814,
+          "percent": 4.91299841937944
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1621.7297101799045,
+          "percent": 4.316960241350532
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 953.928126788267,
+          "percent": 2.539307117950072
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 650.0037163567464,
+          "percent": 1.7302761259340056
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 5057.344542787917,
+          "percentOfRegion": 11.865067035156295
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 30.0,
+      "p10MwM2": 21.0,
+      "p90MwM2": 39.0,
+      "maxMwM2": 39.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 12.5
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 12.5
+        }
+      ],
+      "sites": [
+        {
+          "name": "El Zapote, La Escuadra, Los Varones",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Burro Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "La Calera and El Calvario Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

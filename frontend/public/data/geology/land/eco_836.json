@@ -1,0 +1,640 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_836",
+  "regionName": "Red Sea coastal desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.606606+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 6,
+        "intersectionLengthKm": 170.85373405266964,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 79.43827963688808
+          },
+          {
+            "name": "",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 32.62349715984954
+          },
+          {
+            "name": "",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.574248618702242
+          },
+          {
+            "name": "St. Anthony Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.873815580430133
+          },
+          {
+            "name": "",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.10066464950699
+          },
+          {
+            "name": "",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.243228407292675
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 85.25222011779992,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 33270.99576538705,
+        "percent": 66.61053143211474
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 33270.99576538705,
+          "percent": 66.61053143211474
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 7902.555598871265,
+          "percent": 15.821390854200814
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 4651.309796984977,
+          "percent": 9.3122015228319
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 4123.690591860123,
+          "percent": 8.255876190852538
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 8640.598985827943,
+          "percentOfRegion": 14.747779882199968
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 102,
+      "medianMwM2": 80.0,
+      "p10MwM2": 60.0,
+      "p90MwM2": 97.80000000000001,
+      "maxMwM2": 179.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 3.9215686274509802
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 40,
+          "percent": 39.21568627450981
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 52,
+          "percent": 50.98039215686274
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 6,
+          "percent": 5.88235294117647
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 57,
+      "commodityCount": 27,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 9,
+          "sharePct": 10.112359550561797
+        },
+        {
+          "label": "Zinc",
+          "count": 9,
+          "sharePct": 10.112359550561797
+        },
+        {
+          "label": "Iron",
+          "count": 8,
+          "sharePct": 8.98876404494382
+        },
+        {
+          "label": "Lead",
+          "count": 8,
+          "sharePct": 8.98876404494382
+        },
+        {
+          "label": "Gold",
+          "count": 6,
+          "sharePct": 6.741573033707865
+        },
+        {
+          "label": "Metal",
+          "count": 5,
+          "sharePct": 5.617977528089887
+        },
+        {
+          "label": "Titanium",
+          "count": 5,
+          "sharePct": 5.617977528089887
+        },
+        {
+          "label": "Gemstone",
+          "count": 3,
+          "sharePct": 3.3707865168539324
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 3.3707865168539324
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 3,
+          "sharePct": 3.3707865168539324
+        },
+        {
+          "label": "Tin",
+          "count": 3,
+          "sharePct": 3.3707865168539324
+        },
+        {
+          "label": "Semiprecious Gemstone",
+          "count": 3,
+          "sharePct": 3.3707865168539324
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 2.247191011235955
+        },
+        {
+          "label": "Chromium",
+          "count": 2,
+          "sharePct": 2.247191011235955
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 2,
+          "sharePct": 2.247191011235955
+        },
+        {
+          "label": "Tantalum",
+          "count": 2,
+          "sharePct": 2.247191011235955
+        },
+        {
+          "label": "Emerald",
+          "count": 2,
+          "sharePct": 2.247191011235955
+        },
+        {
+          "label": "Graphite",
+          "count": 2,
+          "sharePct": 2.247191011235955
+        },
+        {
+          "label": "General",
+          "count": 2,
+          "sharePct": 2.247191011235955
+        },
+        {
+          "label": "Limestone",
+          "count": 2,
+          "sharePct": 2.247191011235955
+        },
+        {
+          "label": "Silica",
+          "count": 2,
+          "sharePct": 2.247191011235955
+        },
+        {
+          "label": "Clay",
+          "count": 1,
+          "sharePct": 1.1235955056179776
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 1.1235955056179776
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 1.1235955056179776
+        },
+        {
+          "label": "Asbestos",
+          "count": 1,
+          "sharePct": 1.1235955056179776
+        },
+        {
+          "label": "Feldspar",
+          "count": 1,
+          "sharePct": 1.1235955056179776
+        },
+        {
+          "label": "Salt",
+          "count": 1,
+          "sharePct": 1.1235955056179776
+        }
+      ],
+      "sites": [
+        {
+          "name": "Halaib",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Abu Ghalga",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "El Hamrawein",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Zabara",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Wadi Araba Clay Accurrence",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Umm Samiuki Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "El Atawi",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Hatit Gold Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Um Ud Gold Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Atud Gold Deposit",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Um Rus Gold Deposit",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Semna Gold Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Kolmnab Ilmenite Ore Occurrence El Hamra Dome Ilmenite Ore",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Phosphorus-Phosphates",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Umm Effin Ilmenite Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Abu Ghalaga Ilmenite Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Un Sammki Pb and Zn Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wadi Essel Ore Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Abu Anz Ore Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Gebel El Russas Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wadi El Gemal Ore Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Zug El Bahar Lead,Zinc Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wadi Um Nar Iron Ore Occurrence",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Wadi Umm Ghamis El Zaraga Iron Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Wadi El Dabbah Iron Ore Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Wadi Kareim Iron Ore Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Safaga",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Gebel El Hadid Iron Ore Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Wadi Mialik",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Hamata Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hangaliya Gold Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Um Gheig Lead, Zinc Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Umm Kabu",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Sikheit-Nugrus",
+          "depositType": null,
+          "commodities": [
+            "Gemstone"
+          ]
+        },
+        {
+          "name": "Gabal Duwl",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "El Atshan Area",
+          "depositType": null,
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Wadi Sifein",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Abu Dabbab",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Sagia",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Nuweibi",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Zabara",
+          "depositType": null,
+          "commodities": [
+            "Emerald",
+            "Semiprecious Gemstone",
+            "Tin"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

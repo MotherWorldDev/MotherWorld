@@ -1,0 +1,693 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_403",
+  "regionName": "Willamette Valley oak savanna",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.254908+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 10,
+        "intersectionLengthKm": 203.25919492422543,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Portland Hills fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.23340579631117
+          },
+          {
+            "name": "Newberg fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.782328542642734
+          },
+          {
+            "name": "Lacamas Lake fault",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.41107736608465
+          },
+          {
+            "name": "Gales Creek fault zone",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.154293434683627
+          },
+          {
+            "name": "Mount Angel fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.45571784700254
+          },
+          {
+            "name": "Turner and Mill Creek faults",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.396375979083004
+          },
+          {
+            "name": "Helvetia fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.980374855696184
+          },
+          {
+            "name": "Grant Butte fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.199666964643283
+          },
+          {
+            "name": "Sandy River fault zone",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.74868106825118
+          },
+          {
+            "name": "Bolton fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.897273069827047
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000004,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 5685.398007728658,
+        "percent": 38.10770455583947
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 5685.398007728658,
+          "percent": 38.10770455583947
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3797.560191257105,
+          "percent": 25.454031820589773
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 3657.387606746175,
+          "percent": 24.51449241981087
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 1778.941708418403,
+          "percent": 11.923771203759891
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 60,
+      "medianMwM2": 41.5,
+      "p10MwM2": 31.0,
+      "p90MwM2": 50.318000000000005,
+      "maxMwM2": 218.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 20,
+          "percent": 33.33333333333333
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 38,
+          "percent": 63.33333333333333
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 1.6666666666666667
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 1,
+          "percent": 1.6666666666666667
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1618,
+      "commodityCount": 35,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 722,
+          "sharePct": 25.952552120776417
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 722,
+          "sharePct": 25.952552120776417
+        },
+        {
+          "label": "Stone",
+          "count": 697,
+          "sharePct": 25.05391804457225
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 314,
+          "sharePct": 11.286843997124372
+        },
+        {
+          "label": "Clay",
+          "count": 106,
+          "sharePct": 3.8102084831056793
+        },
+        {
+          "label": "Iron",
+          "count": 41,
+          "sharePct": 1.4737598849748381
+        },
+        {
+          "label": "Aluminum",
+          "count": 36,
+          "sharePct": 1.2940330697340043
+        },
+        {
+          "label": "Titanium",
+          "count": 29,
+          "sharePct": 1.0424155283968368
+        },
+        {
+          "label": "Metal",
+          "count": 15,
+          "sharePct": 0.5391804457225018
+        },
+        {
+          "label": "Gold",
+          "count": 13,
+          "sharePct": 0.46728971962616817
+        },
+        {
+          "label": "Silica",
+          "count": 12,
+          "sharePct": 0.4313443565780014
+        },
+        {
+          "label": "General",
+          "count": 9,
+          "sharePct": 0.3235082674335011
+        },
+        {
+          "label": "Limestone",
+          "count": 9,
+          "sharePct": 0.3235082674335011
+        },
+        {
+          "label": "Copper",
+          "count": 8,
+          "sharePct": 0.28756290438533433
+        },
+        {
+          "label": "Silver",
+          "count": 7,
+          "sharePct": 0.2516175413371675
+        },
+        {
+          "label": "Manganese",
+          "count": 6,
+          "sharePct": 0.2156721782890007
+        },
+        {
+          "label": "Platinum",
+          "count": 4,
+          "sharePct": 0.14378145219266716
+        },
+        {
+          "label": "Dimension",
+          "count": 3,
+          "sharePct": 0.10783608914450035
+        },
+        {
+          "label": "Free",
+          "count": 3,
+          "sharePct": 0.10783608914450035
+        },
+        {
+          "label": "Water",
+          "count": 3,
+          "sharePct": 0.10783608914450035
+        },
+        {
+          "label": "Arsenic",
+          "count": 2,
+          "sharePct": 0.07189072609633358
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 0.07189072609633358
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 0.07189072609633358
+        },
+        {
+          "label": "Antimony",
+          "count": 2,
+          "sharePct": 0.07189072609633358
+        },
+        {
+          "label": "Uranium",
+          "count": 2,
+          "sharePct": 0.07189072609633358
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 0.07189072609633358
+        },
+        {
+          "label": "Geothermal",
+          "count": 2,
+          "sharePct": 0.07189072609633358
+        },
+        {
+          "label": "Calcium",
+          "count": 2,
+          "sharePct": 0.07189072609633358
+        },
+        {
+          "label": "Lithium",
+          "count": 1,
+          "sharePct": 0.03594536304816679
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 0.03594536304816679
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bauxite Dixie Mt",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Bauxite Scapoose - St Helens",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Bauxite Tualatin Mountains",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Bauxite Red Flat Hill",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Bauxite Yamhill",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Bauxite Waldo Hills",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Bauxite Chapman and Eola Hills",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Snyder Ranch Arsenic",
+          "depositType": null,
+          "commodities": [
+            "Arsenic"
+          ]
+        },
+        {
+          "name": "Kroaker Prospect",
+          "depositType": "Unknown",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Bauxite Pumpkin Ridge",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Dallas Manganese",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Hillsboro",
+          "depositType": "Stream Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Elmira Clay",
+          "depositType": null,
+          "commodities": [
+            "Clay",
+            "Construction",
+            "Sand and Gravel",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Tonquin Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Howland Acres Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Washougal Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Fall Creek Ranch",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "King's Clay",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed Clay Locality",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed Clay Locality",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed Clay Prospect",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed Clay Prospect",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Abc Crushing Pit and Plant",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Abiqua Pit & Plant",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Albany Rock Products",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Albany Rock Products 1",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Holmes Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Albert Troutman",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Valley Yard Supply/Albertson",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Arrowhead Timber Co",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Builder Supply",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Barton Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Barton Sand & Gravel",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Judd Rd Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Barton Sand & Gravel Pit & Plant",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Blacktop Paving Co.",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Bob Kingbury",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Boring Sand & Gravel",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Brinegar-Barstad",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

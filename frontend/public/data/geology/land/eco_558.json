@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_558",
+  "regionName": "Sierra Madre del Sur pine-oak forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.144420+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.90139254443402,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 17059.957231613214,
+        "percent": 28.068033644224755
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 17059.957231613214,
+          "percent": 28.068033644224755
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 12465.914558714083,
+          "percent": 20.509647503197847
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 10229.920497286526,
+          "percent": 16.83086005418027
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 8392.949635228475,
+          "percent": 13.808568775268876
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 4738.437073447015,
+          "percent": 7.795952205090971
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 3422.135285401037,
+          "percent": 5.6302959627432845
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 3368.034930788423,
+          "percent": 5.541286913493297
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1103.3860818279973,
+          "percent": 1.815354941800695
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 59.99349460657876,
+          "percentOfRegion": 0.09860745556603367
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 11,
+      "commodityCount": 9,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 4,
+          "sharePct": 23.52941176470588
+        },
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 17.647058823529413
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 17.647058823529413
+        },
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Mercury",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        }
+      ],
+      "sites": [
+        {
+          "name": "Cienega District",
+          "depositType": "Stockwork",
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Las Truchas/Ferrotepec",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Morelos National Mining Reserve",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sola De Vega",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Recibimiento Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Xochipala",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Chutla, Tibor, and Tepetate Depos",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Morelense",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Real De Guadalupe",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Zaniza Deposits",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Pluma Hidalgo Deposit",
+          "depositType": "MAGMATIC, BASIC, MASSIVE",
+          "commodities": [
+            "Titanium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

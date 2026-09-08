@@ -1,0 +1,672 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_236",
+  "regionName": "Jian Nan subtropical evergreen forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.563249+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 33.74708544651964,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.74708544651964
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.40911737181419,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 151060.02348566818,
+        "percent": 22.939600902310627
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 151060.02348566818,
+          "percent": 22.939600902310627
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 149195.68637400583,
+          "percent": 22.6564872875894
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 112919.82092457863,
+          "percent": 17.14772423702143
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 111302.76609118805,
+          "percent": 16.9021622964154
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 39276.90691378106,
+          "percent": 5.964493772005963
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 27900.60905946279,
+          "percent": 4.236917365607264
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 24629.198768910217,
+          "percent": 3.7401291040847973
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 17875.674199927755,
+          "percent": 2.714555595478098
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 16667.925229581382,
+          "percent": 2.531149829143427
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 4871.308707041718,
+          "percent": 0.7397448711643401
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 2812.074979173616,
+          "percent": 0.42703473917926676
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3914.1610792550364,
+          "percentOfRegion": 0.5908826281857295
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 92,
+      "medianMwM2": 69.6,
+      "p10MwM2": 47.46,
+      "p90MwM2": 93.46000000000002,
+      "maxMwM2": 220.7,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 1.0869565217391304
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 21,
+          "percent": 22.82608695652174
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 53,
+          "percent": 57.608695652173914
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 10,
+          "percent": 10.869565217391305
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 4,
+          "percent": 4.3478260869565215
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 1.0869565217391304
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2,
+          "percent": 2.1739130434782608
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 188,
+      "commodityCount": 30,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 41,
+          "sharePct": 13.311688311688311
+        },
+        {
+          "label": "Zinc",
+          "count": 38,
+          "sharePct": 12.337662337662337
+        },
+        {
+          "label": "Lead",
+          "count": 37,
+          "sharePct": 12.012987012987013
+        },
+        {
+          "label": "Tungsten",
+          "count": 36,
+          "sharePct": 11.688311688311687
+        },
+        {
+          "label": "Tin",
+          "count": 30,
+          "sharePct": 9.740259740259742
+        },
+        {
+          "label": "Iron",
+          "count": 29,
+          "sharePct": 9.415584415584416
+        },
+        {
+          "label": "Copper",
+          "count": 16,
+          "sharePct": 5.194805194805195
+        },
+        {
+          "label": "Antimony",
+          "count": 11,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "Bismuth",
+          "count": 10,
+          "sharePct": 3.2467532467532463
+        },
+        {
+          "label": "Molybdenum",
+          "count": 9,
+          "sharePct": 2.922077922077922
+        },
+        {
+          "label": "Mercury",
+          "count": 8,
+          "sharePct": 2.5974025974025974
+        },
+        {
+          "label": "Gold",
+          "count": 7,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Silver",
+          "count": 6,
+          "sharePct": 1.948051948051948
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 4,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Sulfur",
+          "count": 3,
+          "sharePct": 0.974025974025974
+        },
+        {
+          "label": "Tantalum",
+          "count": 3,
+          "sharePct": 0.974025974025974
+        },
+        {
+          "label": "Aluminum",
+          "count": 3,
+          "sharePct": 0.974025974025974
+        },
+        {
+          "label": "Cadmium",
+          "count": 2,
+          "sharePct": 0.6493506493506493
+        },
+        {
+          "label": "Beryllium",
+          "count": 2,
+          "sharePct": 0.6493506493506493
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 0.6493506493506493
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 2,
+          "sharePct": 0.6493506493506493
+        },
+        {
+          "label": "Gallium",
+          "count": 1,
+          "sharePct": 0.3246753246753247
+        },
+        {
+          "label": "Indium",
+          "count": 1,
+          "sharePct": 0.3246753246753247
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 0.3246753246753247
+        },
+        {
+          "label": "Boron-Borates",
+          "count": 1,
+          "sharePct": 0.3246753246753247
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 0.3246753246753247
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 0.3246753246753247
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 0.3246753246753247
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 0.3246753246753247
+        },
+        {
+          "label": "Graphite",
+          "count": 1,
+          "sharePct": 0.3246753246753247
+        }
+      ],
+      "sites": [
+        {
+          "name": "Baimazai",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Dongxiangqiao",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Houmenshan",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Jianai",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Jiaoling",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Lianzhou",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Manganese",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Longtou",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Longtou Manganese Deposit",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Manaoshan",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Lead",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Mogui Manganese Deposit",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Qibaoshan",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Gallium",
+            "Gold",
+            "Indium",
+            "Iron",
+            "Lead",
+            "Manganese",
+            "Silver",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Qingshuitang",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Songtao",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Wuyeshan",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Xiaodai",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Xinrong",
+          "depositType": "Residual",
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Yanqian",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Zhuziban",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Dajishan Mine",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Bismuth",
+            "Molybdenum",
+            "Niobium (Columbium)",
+            "Tantalum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Pangushan Mine",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Shizhuyuan",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Molybdenum",
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Xiangdong Mine",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Chayuanpo",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Xingluokeng",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Huangsha",
+          "depositType": "Vein",
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Shangping",
+          "depositType": "Vein",
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Wengyuan",
+          "depositType": "Vein",
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Xialong",
+          "depositType": "Vein",
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Yaogangxian",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Yochang District",
+          "depositType": "Vein",
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Yangjiatan",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Qiliping",
+          "depositType": null,
+          "commodities": [
+            "Boron-Borates"
+          ]
+        },
+        {
+          "name": "Tangganshan Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Taojiang Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Damingshan",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Houjiangqiao",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Iron",
+            "Manganese",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wujiaao Mine",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Jiangkou",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Miaoqian",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Gueimeishan Mine",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

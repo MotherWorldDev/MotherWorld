@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_266",
+  "regionName": "Red River freshwater swamp forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.742800+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 179.07193407065057,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 179.07193407065057
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.94568425504147,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 8814.304295347407,
+        "percent": 82.36654243697224
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 8814.304295347407,
+          "percent": 82.36654243697224
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1557.0237242470187,
+          "percent": 14.549833584286292
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 329.98835785604916,
+          "percent": 3.083623978741454
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 5.815658529032251,
+          "percentOfRegion": 0.05431574495849786
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 36,
+      "medianMwM2": 55.0,
+      "p10MwM2": 32.8,
+      "p90MwM2": 94.0,
+      "maxMwM2": 118.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 7,
+          "percent": 19.444444444444446
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 13,
+          "percent": 36.11111111111111
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 6,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 9,
+          "percent": 25.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 2.7777777777777777
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

@@ -1,0 +1,253 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_300",
+  "regionName": "Southern Vietnam lowland dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.862584+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 98.59809317178355,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 63.482663872500574
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.11542929928297
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 85.78104429067074,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 8800.896845507805,
+        "percent": 29.45319414423791
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 8800.896845507805,
+          "percent": 29.45319414423791
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 8378.859726032566,
+          "percent": 28.040799312872068
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 6473.410440455411,
+          "percent": 21.663998320283547
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 2718.3932424962127,
+          "percent": 9.09740965461863
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 2684.8239027826667,
+          "percent": 8.98506607222775
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 824.5747716894969,
+          "percent": 2.7595324957601064
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 4953.029367694915,
+          "percentOfRegion": 14.21895570932934
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 8,
+      "commodityCount": 12,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Zinc",
+          "count": 2,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 5.555555555555555
+        }
+      ],
+      "sites": [
+        {
+          "name": "Phu Ninh",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bong Mieu",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold",
+            "Lead",
+            "Silver",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Nui Vong",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Hoi Loc Beach",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Krong Pha",
+          "depositType": "Vein",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Long Hai",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Duc-Bo",
+          "depositType": "Vein",
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Duc Bo",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

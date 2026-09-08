@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_573",
+  "regionName": "Miskito pine forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.148933+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 96.90097910280726,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 9556.620163728301,
+        "percent": 52.34697172093773
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 9556.620163728301,
+          "percent": 52.34697172093773
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 8632.100516229752,
+          "percent": 47.28285877996913
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 67.5792540185424,
+          "percent": 0.3701694990931399
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 583.8605091986541,
+          "percentOfRegion": 3.0990208971928097
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Rosita Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_742",
+  "regionName": "Bohai Sea saline meadow",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.192240+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 77.2143120844461,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 8922.682634666371,
+        "percent": 100.0
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 8922.682634666371,
+          "percent": 100.0
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2633.0541112726555,
+          "percentOfRegion": 22.78568791555396
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 30,
+      "medianMwM2": 66.6,
+      "p10MwM2": 57.9,
+      "p90MwM2": 75.2,
+      "maxMwM2": 82.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 6,
+          "percent": 20.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 23,
+          "percent": 76.66666666666667
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 3.3333333333333335
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

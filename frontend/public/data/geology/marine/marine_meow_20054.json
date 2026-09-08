@@ -1,0 +1,842 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20054",
+  "regionName": "Gulf of Alaska",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.953715+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 44.057130014347656,
+        "medianAgeMa": 44.65143966674805,
+        "p10AgeMa": 29.29804801940918,
+        "p90AgeMa": 56.049007415771484,
+        "oldestAgeMa": 60.97848129272461,
+        "coveragePct": 46.306926587197346,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 58.84871127778266,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 41.15128872221732,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 77.60920554376152,
+          "medianMmYr": 60.82823181152344,
+          "p10MmYr": 52.3143196105957,
+          "p90MmYr": 123.2626724243164,
+          "coveragePct": 46.306926587197346
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 125,
+        "intersectionLengthKm": 4568.938714181629,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse-Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 141.72310857595335
+          },
+          {
+            "name": null,
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 133.71558342849403
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 132.344617336764
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse-Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 122.45116023132739
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 109.36913629640951
+          },
+          {
+            "name": "BT4",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 102.96087044316229
+          },
+          {
+            "name": "F1",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 102.05157040698629
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 99.84956294018964
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 99.00225305608971
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 97.48435778648627
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 96.03557964566163
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 90.99184970852494
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 90.16268032107413
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 88.84305886972511
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 85.76428333023505
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 84.84639599796607
+          },
+          {
+            "name": "BT2",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 83.53898969807683
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 76.23578507912165
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 75.90883621696246
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 75.40392671436491
+          },
+          {
+            "name": "BT2",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 75.31685821381926
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 75.10680746358858
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 74.53222095014799
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 74.50882710033612
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 73.53000406771109
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 73.37543858345404
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 72.94181534048434
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 66.14252050004046
+          },
+          {
+            "name": "F3",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 65.81019833830618
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse-Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 58.35739449083069
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 31,
+      "medianMwM2": 69.0,
+      "p10MwM2": 46.0,
+      "p90MwM2": 134.0,
+      "maxMwM2": 140.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 9.67741935483871
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 6,
+          "percent": 19.35483870967742
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 11,
+          "percent": 35.483870967741936
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 12.903225806451612
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 7,
+          "percent": 22.58064516129032
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 113,
+      "commodityCount": 32,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 63,
+          "sharePct": 23.42007434944238
+        },
+        {
+          "label": "Copper",
+          "count": 49,
+          "sharePct": 18.21561338289963
+        },
+        {
+          "label": "Zinc",
+          "count": 24,
+          "sharePct": 8.921933085501859
+        },
+        {
+          "label": "Lead",
+          "count": 19,
+          "sharePct": 7.063197026022305
+        },
+        {
+          "label": "Titanium",
+          "count": 15,
+          "sharePct": 5.5762081784386615
+        },
+        {
+          "label": "Iron",
+          "count": 14,
+          "sharePct": 5.204460966542751
+        },
+        {
+          "label": "Silver",
+          "count": 14,
+          "sharePct": 5.204460966542751
+        },
+        {
+          "label": "Arsenic",
+          "count": 11,
+          "sharePct": 4.089219330855019
+        },
+        {
+          "label": "Chromium",
+          "count": 9,
+          "sharePct": 3.3457249070631967
+        },
+        {
+          "label": "Antimony",
+          "count": 9,
+          "sharePct": 3.3457249070631967
+        },
+        {
+          "label": "Molybdenum",
+          "count": 6,
+          "sharePct": 2.2304832713754648
+        },
+        {
+          "label": "Zirconium",
+          "count": 5,
+          "sharePct": 1.858736059479554
+        },
+        {
+          "label": "Platinum",
+          "count": 4,
+          "sharePct": 1.486988847583643
+        },
+        {
+          "label": "Tungsten",
+          "count": 3,
+          "sharePct": 1.1152416356877324
+        },
+        {
+          "label": "Mercury",
+          "count": 3,
+          "sharePct": 1.1152416356877324
+        },
+        {
+          "label": "PGE",
+          "count": 3,
+          "sharePct": 1.1152416356877324
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 0.7434944237918215
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 0.7434944237918215
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Tantalum",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Thorium",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Stone",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Pumice",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 0.37174721189591076
+        }
+      ],
+      "sites": [
+        {
+          "name": "Byers Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Disk I.",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Banzer",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed [on Pete Dahl (Copper Sands) Island]",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iron",
+            "Manganese",
+            "Nickel",
+            "Titanium",
+            "Vanadium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Red Head #1",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Wagner Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Snug Harbor",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wilson",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Anchor Point",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Fairview",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed (on Granite Island)",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Iron Mask",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Latouche Consolidated Copper Co.",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Lietzke",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed (near Cape Resurrection)",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cameron",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Bruin Bay Iron Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cape Kubugakli Placer",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Gold",
+            "Lead",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Cape Alitak Beach",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Khantaak Beach",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Akwe Beach",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iron",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Unnamed (east of Sitkagi Bluffs)",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Old Harbor",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Dry Spruce Island",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Tugidak Island",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sitkanak Island",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed (near Cook Inlet Shoals)",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Unnamed (near Tyonek)",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Iron",
+            "Tantalum",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Cape Chiniak",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Yakutat Beach",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Kodiak Is. West Coast Beaches",
+          "depositType": "Beach Placer",
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Chalet Mountain",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Happy Jack Copper Mining Co",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Lituya Bay",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iron",
+            "Metal",
+            "Platinum",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Woody Island",
+          "depositType": null,
+          "commodities": [
+            "Fire Clay (Refractory)"
+          ]
+        },
+        {
+          "name": "Gore Point",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Wilson Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Bligh Island",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Byers - Fairmont Island",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_839",
+  "regionName": "Saharan Atlantic coastal desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.218505+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 91.82707906429226,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 14513.379712724516,
+        "percent": 39.746462266613584
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 14513.379712724516,
+          "percent": 39.746462266613584
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 11832.344612066354,
+          "percent": 32.40415726439905
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 8331.248522835565,
+          "percent": 22.8160264253502
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1837.9240389715187,
+          "percent": 5.033354043637163
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3249.949451411112,
+          "percentOfRegion": 8.172920935707621
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 11,
+      "medianMwM2": 90.0,
+      "p10MwM2": 74.0,
+      "p90MwM2": 112.0,
+      "maxMwM2": 112.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 5,
+          "percent": 45.45454545454545
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 36.36363636363637
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 2,
+          "percent": 18.181818181818183
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

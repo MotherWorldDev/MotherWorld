@@ -1,0 +1,696 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_348",
+  "regionName": "Blue Mountains forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.033501+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 9,
+        "intersectionLengthKm": 294.5116035091983,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Hite fault system",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 77.68092078683877
+          },
+          {
+            "name": "Wallowa fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.68173229618169
+          },
+          {
+            "name": "Pine Valley graben fault system, Halfway-Posey Valley section",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.61983314622669
+          },
+          {
+            "name": "Rush Peak fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 32.81521485548952
+          },
+          {
+            "name": "Cuddy Mountain-Lick Creek fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.313599936727
+          },
+          {
+            "name": "Juniper Mountain fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.02825535083656
+          },
+          {
+            "name": "Pine Valley graben fault system, Brownlee section",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.741829770569726
+          },
+          {
+            "name": "Metolius fault zone",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.7234842377307
+          },
+          {
+            "name": "Cottonwood Mountain fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.9067331285976277
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999997,
+      "dominantClass": {
+        "code": "vb",
+        "label": "Basic volcanic rocks",
+        "areaKm2": 48220.54244864416,
+        "percent": 67.9869723779828
+      },
+      "classes": [
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 48220.54244864416,
+          "percent": 67.9869723779828
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 10152.97062424088,
+          "percent": 14.314847953439894
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 3314.4372975531487,
+          "percent": 4.673082166947664
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3118.0429213605726,
+          "percent": 4.396182357211672
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3068.584659295899,
+          "percent": 4.326450302653491
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 2181.1388632792573,
+          "percent": 3.0752252073531197
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 870.4338318933044,
+          "percent": 1.2272396344113656
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 115,
+      "medianMwM2": 70.0,
+      "p10MwM2": 42.56,
+      "p90MwM2": 111.10000000000002,
+      "maxMwM2": 230.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 7,
+          "percent": 6.086956521739131
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 27,
+          "percent": 23.47826086956522
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 38,
+          "percent": 33.04347826086956
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 22,
+          "percent": 19.130434782608695
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 16,
+          "percent": 13.91304347826087
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 3,
+          "percent": 2.608695652173913
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2,
+          "percent": 1.7391304347826086
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 4791,
+      "commodityCount": 74,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 2362,
+          "sharePct": 26.96962776889701
+        },
+        {
+          "label": "Silver",
+          "count": 1170,
+          "sharePct": 13.35921443251884
+        },
+        {
+          "label": "Copper",
+          "count": 826,
+          "sharePct": 9.43137702671843
+        },
+        {
+          "label": "Construction",
+          "count": 641,
+          "sharePct": 7.319022607901347
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 641,
+          "sharePct": 7.319022607901347
+        },
+        {
+          "label": "Stone",
+          "count": 609,
+          "sharePct": 6.95364238410596
+        },
+        {
+          "label": "Lead",
+          "count": 286,
+          "sharePct": 3.2655857501712715
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 267,
+          "sharePct": 3.048641242292761
+        },
+        {
+          "label": "Zinc",
+          "count": 254,
+          "sharePct": 2.9002055263758852
+        },
+        {
+          "label": "Chromium",
+          "count": 243,
+          "sharePct": 2.7746060744462206
+        },
+        {
+          "label": "Mercury",
+          "count": 214,
+          "sharePct": 2.443480246631651
+        },
+        {
+          "label": "Arsenic",
+          "count": 140,
+          "sharePct": 1.5985384791048183
+        },
+        {
+          "label": "Molybdenum",
+          "count": 130,
+          "sharePct": 1.4843571591687599
+        },
+        {
+          "label": "Antimony",
+          "count": 104,
+          "sharePct": 1.187485727335008
+        },
+        {
+          "label": "Manganese",
+          "count": 98,
+          "sharePct": 1.118976935373373
+        },
+        {
+          "label": "Tungsten",
+          "count": 72,
+          "sharePct": 0.822105503539621
+        },
+        {
+          "label": "Nickel",
+          "count": 53,
+          "sharePct": 0.6051609956611099
+        },
+        {
+          "label": "Uranium",
+          "count": 51,
+          "sharePct": 0.5823247316738982
+        },
+        {
+          "label": "Limestone",
+          "count": 48,
+          "sharePct": 0.5480703356930806
+        },
+        {
+          "label": "General",
+          "count": 46,
+          "sharePct": 0.5252340717058689
+        },
+        {
+          "label": "Pumice",
+          "count": 44,
+          "sharePct": 0.5023978077186573
+        },
+        {
+          "label": "Platinum",
+          "count": 41,
+          "sharePct": 0.4681434117378397
+        },
+        {
+          "label": "Diatomite",
+          "count": 38,
+          "sharePct": 0.43388901575702216
+        },
+        {
+          "label": "Dimension",
+          "count": 38,
+          "sharePct": 0.43388901575702216
+        },
+        {
+          "label": "Gemstone",
+          "count": 31,
+          "sharePct": 0.35396209180178123
+        },
+        {
+          "label": "Geothermal",
+          "count": 31,
+          "sharePct": 0.35396209180178123
+        },
+        {
+          "label": "Iron",
+          "count": 30,
+          "sharePct": 0.3425439598081754
+        },
+        {
+          "label": "Asbestos",
+          "count": 29,
+          "sharePct": 0.33112582781456956
+        },
+        {
+          "label": "Cobalt",
+          "count": 21,
+          "sharePct": 0.23978077186572275
+        },
+        {
+          "label": "Volcanic Materials",
+          "count": 20,
+          "sharePct": 0.22836263987211694
+        }
+      ],
+      "sites": [
+        {
+          "name": "Gold Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "John Day",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Little Baby Prospect",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Drum Lummon, Glacier Park",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "North Powder",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Bi-Metallic",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Bowman",
+          "depositType": "Vein",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Gardner-Murphy",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Frazier",
+          "depositType": "Contact Metamorphic",
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Contact",
+          "depositType": "Contact Metamorphic",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Green",
+          "depositType": "Contact Metamorphic",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Le Gore",
+          "depositType": "Contact Metamorphic",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Metzger",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Seeber",
+          "depositType": "Contact Metamorphic",
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Wilmot, Matterhorn",
+          "depositType": "Contact Metamorphic",
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Chloride Mine",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Gray Eagle",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Standard & Other Mines",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Cobalt",
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Stibnite Parker",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Argonaut Claims",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Inspiration Barite Deposit",
+          "depositType": "Vein",
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "New Meadows Manganese Deposit",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Great Eastern",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Pine Hill Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Tussel Adit",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Iron Dike Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gold Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Squaw Creek",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,749 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_686",
+  "regionName": "Western European broadleaf forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.739300+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 10,
+        "intersectionLengthKm": 158.19099823889601,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.790818126852933
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.33603660770222
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.59535154271692
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.93516035261307
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.817029762374396
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.137563312263712
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.807470694804806
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.618734438049993
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.103895727823265
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.048937673694705
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999993,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 109888.56520213852,
+        "percent": 22.247981757748274
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 109888.56520213852,
+          "percent": 22.247981757748274
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 107904.98976676622,
+          "percent": 21.84638810676099
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 74887.31029366377,
+          "percent": 15.161645893141962
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 69867.20705926973,
+          "percent": 14.145278403263786
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 59699.09022550263,
+          "percent": 12.086646757540004
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 57729.10968257082,
+          "percent": 11.687805521405519
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 7068.086787592545,
+          "percent": 1.431001174901866
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 3491.652343530865,
+          "percent": 0.7069181174617969
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1727.4065788836936,
+          "percent": 0.34972983753609754
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 1662.5767803338808,
+          "percent": 0.3366044302397007
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1876,
+      "medianMwM2": 92.0,
+      "p10MwM2": 60.0,
+      "p90MwM2": 130.75,
+      "maxMwM2": 201.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 27,
+          "percent": 1.439232409381663
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 158,
+          "percent": 8.422174840085288
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 417,
+          "percent": 22.228144989339018
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 527,
+          "percent": 28.091684434968016
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 662,
+          "percent": 35.287846481876336
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 82,
+          "percent": 4.371002132196162
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 3,
+          "percent": 0.15991471215351813
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 270,
+      "commodityCount": 45,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 68,
+          "sharePct": 13.991769547325102
+        },
+        {
+          "label": "Silver",
+          "count": 38,
+          "sharePct": 7.818930041152264
+        },
+        {
+          "label": "Aluminum",
+          "count": 35,
+          "sharePct": 7.20164609053498
+        },
+        {
+          "label": "Lead",
+          "count": 33,
+          "sharePct": 6.790123456790123
+        },
+        {
+          "label": "Copper",
+          "count": 32,
+          "sharePct": 6.584362139917696
+        },
+        {
+          "label": "Zinc",
+          "count": 29,
+          "sharePct": 5.967078189300412
+        },
+        {
+          "label": "Potassium",
+          "count": 27,
+          "sharePct": 5.555555555555555
+        },
+        {
+          "label": "Gold",
+          "count": 25,
+          "sharePct": 5.1440329218107
+        },
+        {
+          "label": "Platinum",
+          "count": 23,
+          "sharePct": 4.732510288065844
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 22,
+          "sharePct": 4.526748971193416
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 21,
+          "sharePct": 4.320987654320987
+        },
+        {
+          "label": "Nickel",
+          "count": 12,
+          "sharePct": 2.4691358024691357
+        },
+        {
+          "label": "Uranium",
+          "count": 12,
+          "sharePct": 2.4691358024691357
+        },
+        {
+          "label": "Chromium",
+          "count": 9,
+          "sharePct": 1.8518518518518516
+        },
+        {
+          "label": "Tungsten",
+          "count": 8,
+          "sharePct": 1.646090534979424
+        },
+        {
+          "label": "Bromine",
+          "count": 8,
+          "sharePct": 1.646090534979424
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 7,
+          "sharePct": 1.440329218106996
+        },
+        {
+          "label": "Graphite",
+          "count": 6,
+          "sharePct": 1.2345679012345678
+        },
+        {
+          "label": "Magnesite",
+          "count": 6,
+          "sharePct": 1.2345679012345678
+        },
+        {
+          "label": "Tin",
+          "count": 5,
+          "sharePct": 1.02880658436214
+        },
+        {
+          "label": "Palladium",
+          "count": 5,
+          "sharePct": 1.02880658436214
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 5,
+          "sharePct": 1.02880658436214
+        },
+        {
+          "label": "Vanadium",
+          "count": 4,
+          "sharePct": 0.823045267489712
+        },
+        {
+          "label": "Rhodium",
+          "count": 4,
+          "sharePct": 0.823045267489712
+        },
+        {
+          "label": "Arsenic",
+          "count": 4,
+          "sharePct": 0.823045267489712
+        },
+        {
+          "label": "Sulfur",
+          "count": 4,
+          "sharePct": 0.823045267489712
+        },
+        {
+          "label": "Manganese",
+          "count": 4,
+          "sharePct": 0.823045267489712
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 3,
+          "sharePct": 0.6172839506172839
+        },
+        {
+          "label": "Cadmium",
+          "count": 3,
+          "sharePct": 0.6172839506172839
+        },
+        {
+          "label": "Bismuth",
+          "count": 3,
+          "sharePct": 0.6172839506172839
+        }
+      ],
+      "sites": [
+        {
+          "name": "Sabart,Ariege",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bad Lauterberg Area",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Fluorine-Fluorite",
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Vosges Mountains Area",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "La Brasque",
+          "depositType": "Residual",
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Boke-Gaoual",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Boke",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Fatala",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Fria",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Kamarang-Kukui",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Sangaredi",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Ambierle",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Colombies",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Courcelles - Fremoy",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Chaillac",
+          "depositType": "Unknown",
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Kropfmuehl",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Mestsky-Vrch",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Velke Vbrno-Konstantin Vvk",
+          "depositType": null,
+          "commodities": [
+            "Graphite",
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Cinovec",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Hub",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Freudenberg",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Platinum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Freiberg",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Tilkerode",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Palladium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Klettenberg",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "St. Blasien",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Rhodium"
+          ]
+        },
+        {
+          "name": "Friedensgrube Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Dreikonigstollen",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Siebengebirge",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sadisdorf",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Molybdenum",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Siegen",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Platinum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Michaelis - Fundgrube Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Sauerland Region",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Platinum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Siegerland",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Platinum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Westerwald Region",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Platinum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Rousses Mountains",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Worth",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Brassert Grube Mine",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Germany, Federal Republic",
+          "depositType": null,
+          "commodities": [
+            "PGE"
+          ]
+        },
+        {
+          "name": "Unnamed Gypsum Prospect",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Gypsum-Anhydrite"
+          ]
+        },
+        {
+          "name": "Bauxite - France",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bauxite - France",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20143",
+  "regionName": "Central and Southern Great Barrier Reef",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:34.422828+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 3,
+        "intersectionLengthKm": 21.909521764236068,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "The Narrows Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.690604140310114
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.876572171859314
+          },
+          {
+            "name": "Mount Morgan Lineament",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.3423454520666365
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 28.57142857142857
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 28.57142857142857
+        },
+        {
+          "label": "Zirconium",
+          "count": 2,
+          "sharePct": 28.57142857142857
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        }
+      ],
+      "sites": [
+        {
+          "name": "Curtis Island",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "(Facility) Townsville Copper Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Gladstone",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_232",
+  "regionName": "Hainan Island monsoon rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.056787+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 96.75315378249849,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 12708.98927967019,
+        "percent": 84.88279666126594
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 12708.98927967019,
+          "percent": 84.88279666126594
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1712.9215886708957,
+          "percent": 11.440530140380877
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 550.4861067336133,
+          "percent": 3.6766731983531775
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 502.4442985572756,
+          "percentOfRegion": 3.2468462175014654
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 2,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Damao",
+          "depositType": null,
+          "commodities": [
+            "Manganese",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Hainan Iron Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Shihlu Iron Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

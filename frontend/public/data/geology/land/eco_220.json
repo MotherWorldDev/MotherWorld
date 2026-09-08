@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_220",
+  "regionName": "Borneo montane rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.053235+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.9186997540314,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 82241.05408980866,
+        "percent": 69.3017261529451
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 82241.05408980866,
+          "percent": 69.3017261529451
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 16336.552717969244,
+          "percent": 13.766254765017072
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 12469.279936362798,
+          "percent": 10.507436134397894
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 3076.545814523355,
+          "percent": 2.592500034134509
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 1886.250849385641,
+          "percent": 1.5894791386931248
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1411.739461375314,
+          "percent": 1.1896246057923774
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1249.5809498841747,
+          "percent": 1.0529791690199328
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 96.5583201503678,
+          "percentOfRegion": 0.08130024596866517
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 1,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 100.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Busang",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

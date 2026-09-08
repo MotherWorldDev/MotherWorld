@@ -1,0 +1,596 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20064",
+  "regionName": "Eastern Caribbean",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.994009+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 91.70425547041361,
+        "medianAgeMa": 83.21343994140625,
+        "p10AgeMa": 55.79349136352539,
+        "p90AgeMa": 152.74908447265625,
+        "oldestAgeMa": 155.66217041015625,
+        "coveragePct": 46.57176828153261,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 4.385088518201907,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 67.52320457518968,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 15.917060494385925,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 12.174646412222494,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 48.30513887372706,
+          "medianMmYr": 44.032379150390625,
+          "p10MmYr": 8.796147346496582,
+          "p90MmYr": 137.25765991210938,
+          "coveragePct": 46.57176828153261
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 386.777739193691
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 2,
+        "confirmedOrInferredActive": 2,
+        "inactiveCount": 0,
+        "medianDepthM": 632.5,
+        "maxReportedTemperatureC": 250.0,
+        "tectonicSettings": [
+          {
+            "label": "arc volcano",
+            "count": 2
+          }
+        ],
+        "fields": [
+          {
+            "name": "Montserrat-Marie Galante fault",
+            "activity": "active, inferred",
+            "depthM": 1000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 1987
+          },
+          {
+            "name": "Kick'em Jenny submarine volcano",
+            "activity": "active, confirmed",
+            "depthM": 265.0,
+            "maxTemperatureC": 250.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Atlantic",
+            "discoveryYear": 2003
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 28,
+        "intersectionLengthKm": 3034.120039025087,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Antilles Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1338.855442956742
+          },
+          {
+            "name": "North Caribbean Megathrust (Puerto Rico trench)",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 235.05288133964518
+          },
+          {
+            "name": "Sombrero Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 184.65673721585708
+          },
+          {
+            "name": "Muertos Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 112.60771957289904
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 95.71930084005682
+          },
+          {
+            "name": "St. Croix Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 87.78911521980942
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 83.0938307002549
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.46572138386823
+          },
+          {
+            "name": "Bunce Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 70.65410459290266
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 61.02688700074991
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.98626102689056
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.31067120770868
+          },
+          {
+            "name": "Bowin Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 59.3074649876601
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.65974137810405
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 51.80348064891646
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.62308557654336
+          },
+          {
+            "name": "Morne Piton Fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 46.3675914409362
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 45.98910376515293
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.36503958985019
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.869424625479176
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.49292717807054
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.28896486863167
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.909407892189435
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.618174103917216
+          },
+          {
+            "name": null,
+            "kinematics": "Normal-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.128015643590842
+          },
+          {
+            "name": "Bunce Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.65425306923539
+          },
+          {
+            "name": "Bowin Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.624571196389775
+          },
+          {
+            "name": null,
+            "kinematics": "Normal-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.200120003035282
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 629,
+      "medianMwM2": 59.0,
+      "p10MwM2": 30.0,
+      "p90MwM2": 116.0,
+      "maxMwM2": 1710.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 120,
+          "percent": 19.07790143084261
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 205,
+          "percent": 32.591414944356124
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 131,
+          "percent": 20.82670906200318
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 85,
+          "percent": 13.513513513513514
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 53,
+          "percent": 8.426073131955485
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 10,
+          "percent": 1.5898251192368837
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 20,
+          "percent": 3.1796502384737675
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 5,
+          "percent": 0.7949125596184419
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 18,
+      "commodityCount": 11,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 9,
+          "sharePct": 34.61538461538461
+        },
+        {
+          "label": "Copper",
+          "count": 4,
+          "sharePct": 15.384615384615385
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 3,
+          "sharePct": 11.538461538461538
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 2,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Molybdenum",
+          "count": 2,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 3.8461538461538463
+        }
+      ],
+      "sites": [
+        {
+          "name": "Peninsula De Colombier",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "South of Castries",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Barium-Barite",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Terre-De-Haut",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Grand Abaque",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Grande Anse",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mingo Cay",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Shore",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed Copper Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Mt. Pimad",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "English Harbor",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Anse Reine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron"
+          ]
+        },
+        {
+          "name": "South of St. Jean",
+          "depositType": "Vein",
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed Manganese Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Unnamed Phosphate Occurrence",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Unnamed Phosphate Occurrence",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Unnamed Phosphate Occurrence",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Copper Mine Point",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Esperance River",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

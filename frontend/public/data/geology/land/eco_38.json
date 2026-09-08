@@ -1,0 +1,662 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_38",
+  "regionName": "Central bushveld",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.098495+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999989,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 54885.950122251765,
+        "percent": 35.273863241249146
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 54885.950122251765,
+          "percent": 35.273863241249146
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 45889.26748411823,
+          "percent": 29.491914449334473
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 16798.874156566773,
+          "percent": 10.796227236402634
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 11793.814606373444,
+          "percent": 7.579597375853828
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 6746.896635385403,
+          "percent": 4.336066127840312
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 5485.737581522814,
+          "percent": 3.525549923013301
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 5089.193407005162,
+          "percent": 3.2707006410040815
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 3858.5217759673205,
+          "percent": 2.4797779602192516
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 2939.623024014607,
+          "percent": 1.8892241147134656
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 2111.6078489842803,
+          "percent": 1.3570789303695117
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 13,
+      "medianMwM2": 46.5,
+      "p10MwM2": 32.400000000000006,
+      "p90MwM2": 46.8424,
+      "maxMwM2": 46.928,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 15.384615384615385
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 11,
+          "percent": 84.61538461538461
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 216,
+      "commodityCount": 41,
+      "commodities": [
+        {
+          "label": "Chromium",
+          "count": 70,
+          "sharePct": 11.345218800648297
+        },
+        {
+          "label": "Platinum",
+          "count": 57,
+          "sharePct": 9.238249594813615
+        },
+        {
+          "label": "Copper",
+          "count": 54,
+          "sharePct": 8.752025931928689
+        },
+        {
+          "label": "Nickel",
+          "count": 52,
+          "sharePct": 8.427876823338735
+        },
+        {
+          "label": "PGE",
+          "count": 48,
+          "sharePct": 7.779578606158834
+        },
+        {
+          "label": "Gold",
+          "count": 43,
+          "sharePct": 6.9692058346839545
+        },
+        {
+          "label": "Iron",
+          "count": 41,
+          "sharePct": 6.645056726094004
+        },
+        {
+          "label": "Palladium",
+          "count": 31,
+          "sharePct": 5.024311183144246
+        },
+        {
+          "label": "Silica",
+          "count": 22,
+          "sharePct": 3.565640194489465
+        },
+        {
+          "label": "Iridium",
+          "count": 20,
+          "sharePct": 3.2414910858995136
+        },
+        {
+          "label": "Osmium",
+          "count": 20,
+          "sharePct": 3.2414910858995136
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 20,
+          "sharePct": 3.2414910858995136
+        },
+        {
+          "label": "Rhodium",
+          "count": 19,
+          "sharePct": 3.079416531604538
+        },
+        {
+          "label": "Ruthenium",
+          "count": 16,
+          "sharePct": 2.593192868719611
+        },
+        {
+          "label": "Tin",
+          "count": 15,
+          "sharePct": 2.4311183144246353
+        },
+        {
+          "label": "Cobalt",
+          "count": 13,
+          "sharePct": 2.106969205834684
+        },
+        {
+          "label": "Manganese",
+          "count": 12,
+          "sharePct": 1.9448946515397085
+        },
+        {
+          "label": "Vanadium",
+          "count": 11,
+          "sharePct": 1.7828200972447326
+        },
+        {
+          "label": "Aluminum",
+          "count": 6,
+          "sharePct": 0.9724473257698543
+        },
+        {
+          "label": "Magnesite",
+          "count": 6,
+          "sharePct": 0.9724473257698543
+        },
+        {
+          "label": "Lead",
+          "count": 5,
+          "sharePct": 0.8103727714748784
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 4,
+          "sharePct": 0.6482982171799028
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 0.48622366288492713
+        },
+        {
+          "label": "Asbestos",
+          "count": 3,
+          "sharePct": 0.48622366288492713
+        },
+        {
+          "label": "Ferrochrome",
+          "count": 3,
+          "sharePct": 0.48622366288492713
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 0.3241491085899514
+        },
+        {
+          "label": "Calcium",
+          "count": 2,
+          "sharePct": 0.3241491085899514
+        },
+        {
+          "label": "Quartz",
+          "count": 2,
+          "sharePct": 0.3241491085899514
+        },
+        {
+          "label": "REE",
+          "count": 2,
+          "sharePct": 0.3241491085899514
+        },
+        {
+          "label": "Arsenic",
+          "count": 2,
+          "sharePct": 0.3241491085899514
+        }
+      ],
+      "sites": [
+        {
+          "name": "Lobatse",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Taupone",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kgwakgwe",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Otse",
+          "depositType": "Supergene Enrichment",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sobathwe",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Dinaka",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ramotswa",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Mheelo",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Masumakane",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Dinokwe",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Nooitgedacht 155",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Kafferskraal 214",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Zaaiplaats",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Ranaka Quartz Vein",
+          "depositType": "Vein",
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Malonga Graphite Mine",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Preezburg",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Union Mine",
+          "depositType": "PGE reefs",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Osmium",
+            "PGE",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Rustenburg Mine",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Osmium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Hendricksplaats No. 357",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Garatouw No. 467",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Thorncliffe No. 217",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Twyfelaar",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Atok",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Western Platinum Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium"
+          ]
+        },
+        {
+          "name": "Dwarsrivier No. 86",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Tweefontein 1033",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Mooihoek Platinum Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Vlackfontein 902",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bafokeng South Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Blaavwbank",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Der Brochen 7 Jt",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Helena 6 Jt",
+          "depositType": null,
+          "commodities": [
+            "Osmium",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Elandsfontein 386 Kq",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Forest Hill 117 Kt",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Osmium",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Maandagshoek No. 148",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Palladium",
+            "Platinum",
+            "Rhodium"
+          ]
+        },
+        {
+          "name": "Zeekoegat No. 421 Ks",
+          "depositType": null,
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Impala Platinum Co.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Zwartfontein Central Ore Body",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Zwartfontein North Sector",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

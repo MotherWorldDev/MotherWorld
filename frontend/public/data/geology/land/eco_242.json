@@ -1,0 +1,465 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_242",
+  "regionName": "Malabar Coast moist forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.059794+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 74.12456172077226,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 9671.023728397671,
+        "percent": 36.81258185084813
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 9671.023728397671,
+          "percent": 36.81258185084813
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 8178.623207303744,
+          "percent": 31.131785496714787
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 4282.442122672021,
+          "percent": 16.301040674677697
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4138.884728744561,
+          "percent": 15.754591977759377
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 9170.684385622255,
+          "percentOfRegion": 25.87543827922765
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 11,
+      "medianMwM2": 47.0,
+      "p10MwM2": 40.0,
+      "p90MwM2": 96.0,
+      "maxMwM2": 96.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 8,
+          "percent": 72.72727272727273
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3,
+          "percent": 27.27272727272727
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 30,
+      "commodityCount": 17,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 14,
+          "sharePct": 25.454545454545453
+        },
+        {
+          "label": "Titanium",
+          "count": 8,
+          "sharePct": 14.545454545454545
+        },
+        {
+          "label": "Zirconium",
+          "count": 6,
+          "sharePct": 10.909090909090908
+        },
+        {
+          "label": "REE",
+          "count": 5,
+          "sharePct": 9.090909090909092
+        },
+        {
+          "label": "Aluminum",
+          "count": 3,
+          "sharePct": 5.454545454545454
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 3,
+          "sharePct": 5.454545454545454
+        },
+        {
+          "label": "Thorium",
+          "count": 3,
+          "sharePct": 5.454545454545454
+        },
+        {
+          "label": "Garnet",
+          "count": 2,
+          "sharePct": 3.6363636363636362
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 3.6363636363636362
+        },
+        {
+          "label": "Pigment",
+          "count": 2,
+          "sharePct": 3.6363636363636362
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        },
+        {
+          "label": "Kyanite",
+          "count": 1,
+          "sharePct": 1.8181818181818181
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bicholim-Srirgao Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Cuddegal Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Kudnem Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Pailigao Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Tungar Hill",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Manavalakurichi Deposit",
+          "depositType": null,
+          "commodities": [
+            "Garnet",
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Chavara Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Sancordem Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Chowgule Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Naduvallur",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Redi",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Silica",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Malki",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Nanminda",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Alupuram Alwaye",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Alwaye Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Kankauli, Vagda East, Kasal North",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Keralacochin",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mandovi  Chowgule",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Chavara Plant  Ti",
+          "depositType": null,
+          "commodities": [
+            "Pigment",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Nindakara",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Manavalakkurichi Area Beach Depos",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Trivandrum Plant  Ti",
+          "depositType": null,
+          "commodities": [
+            "Pigment",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Aiwaye Processing Plant",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Thorium"
+          ]
+        },
+        {
+          "name": "Pale  Chowgule",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Cochin Phos-Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Goa State",
+          "depositType": "RESIDUAL ENRICHMENT",
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Manavalakurichi",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Chavara",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Chavara Deposit",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Kyanite",
+            "REE",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Manavalakurichi Deposit",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Garnet",
+            "REE",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

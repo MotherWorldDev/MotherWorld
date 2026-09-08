@@ -1,0 +1,1254 @@
+{
+  "schemaVersion": 1,
+  "regionId": "open_ocean",
+  "regionName": "Global Ocean",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.268951+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 63.756867091385146,
+        "medianAgeMa": 55.21160125732422,
+        "p10AgeMa": 9.806302070617676,
+        "p90AgeMa": 132.5860137939453,
+        "oldestAgeMa": 299.9045715332031,
+        "coveragePct": 80.57524070179191,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 20.770829795418358,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 26.037312698699623,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 28.714012334639033,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 19.4556183641622,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 5.006915911917273,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.015310895163570436,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 78.22198775710585,
+          "medianMmYr": 63.90896987915039,
+          "p10MmYr": 25.74376678466797,
+          "p90MmYr": 155.56341552734375,
+          "coveragePct": 80.61431517874543
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 161,
+          "intersectionLengthKm": 169463.67421797256
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 721,
+        "confirmedOrInferredActive": 666,
+        "inactiveCount": 55,
+        "medianDepthM": 2320.0,
+        "maxReportedTemperatureC": 407.0,
+        "tectonicSettings": [
+          {
+            "label": "mid-ocean ridge",
+            "count": 404
+          },
+          {
+            "label": "arc volcano",
+            "count": 150
+          },
+          {
+            "label": "back-arc spreading center",
+            "count": 147
+          },
+          {
+            "label": "other",
+            "count": 11
+          },
+          {
+            "label": "intra-plate volcano",
+            "count": 8
+          },
+          {
+            "label": "NotProvided",
+            "count": 1
+          }
+        ],
+        "fields": [
+          {
+            "name": "Aden New Century Mountains",
+            "activity": "active, inferred",
+            "depthM": 800.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 2000
+          },
+          {
+            "name": "Aden",
+            "activity": "active, confirmed",
+            "depthM": 1600.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 1984
+          },
+          {
+            "name": "Palinuro",
+            "activity": "active, confirmed",
+            "depthM": 1000.0,
+            "maxTemperatureC": 54.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 2006
+          },
+          {
+            "name": "Stromboli",
+            "activity": "active, inferred",
+            "depthM": 250.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1969
+          },
+          {
+            "name": "Sisifo",
+            "activity": "active, inferred",
+            "depthM": 1200.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 2007
+          },
+          {
+            "name": "Panarea",
+            "activity": "active, confirmed",
+            "depthM": 200.0,
+            "maxTemperatureC": 135.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1800
+          },
+          {
+            "name": "Secca del Capo",
+            "activity": "active, inferred",
+            "depthM": 240.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1995
+          },
+          {
+            "name": "Enarete Seamount",
+            "activity": "active, confirmed",
+            "depthM": 600.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 2011
+          },
+          {
+            "name": "Eolo Seamount",
+            "activity": "active, inferred",
+            "depthM": 800.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1976
+          },
+          {
+            "name": "Vulcano",
+            "activity": "active, confirmed",
+            "depthM": 8.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "Mediterranean",
+            "discoveryYear": 1960
+          },
+          {
+            "name": "Piip Submarine Volcano",
+            "activity": "active, confirmed",
+            "depthM": 500.0,
+            "maxTemperatureC": 133.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1990
+          },
+          {
+            "name": "Kagamil Island",
+            "activity": "active, confirmed",
+            "depthM": 5.0,
+            "maxTemperatureC": 37.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2007
+          },
+          {
+            "name": "Central Andaman Trough, rift valley, dredges 9 and 10",
+            "activity": "active, inferred",
+            "depthM": 3350.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "Indian",
+            "discoveryYear": 1994
+          },
+          {
+            "name": "Central Andaman Trough, seamount crater, dredge 6",
+            "activity": "active, inferred",
+            "depthM": 1640.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "Indian",
+            "discoveryYear": 1994
+          },
+          {
+            "name": "Pulau Weh",
+            "activity": "active, confirmed",
+            "depthM": 8.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1982
+          },
+          {
+            "name": "Banda Api",
+            "activity": "active, confirmed",
+            "depthM": 3.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1993
+          },
+          {
+            "name": "Manuk Island",
+            "activity": "active, confirmed",
+            "depthM": 2.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": null
+          },
+          {
+            "name": "Krakatau",
+            "activity": "active, inferred",
+            "depthM": 250.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2002
+          },
+          {
+            "name": "Komba-ridge",
+            "activity": "active, inferred",
+            "depthM": 1000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2001
+          },
+          {
+            "name": "Sangeang Island",
+            "activity": "active, confirmed",
+            "depthM": 2.0,
+            "maxTemperatureC": 96.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1991
+          },
+          {
+            "name": "Matupi Harbour, Rabaul caldera, New Britain Island",
+            "activity": "active, confirmed",
+            "depthM": 30.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1961
+          },
+          {
+            "name": "Hook Ridge",
+            "activity": "active, confirmed",
+            "depthM": 1080.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "Southern",
+            "discoveryYear": 1997
+          },
+          {
+            "name": "Three Sisters, Middle Sister",
+            "activity": "active, inferred",
+            "depthM": 1040.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "Southern",
+            "discoveryYear": 1995
+          },
+          {
+            "name": "Little Volcano",
+            "activity": "active, inferred",
+            "depthM": 1500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "Southern",
+            "discoveryYear": 1995
+          },
+          {
+            "name": "Deception Island",
+            "activity": "active, confirmed",
+            "depthM": 100.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "Southern",
+            "discoveryYear": 1995
+          },
+          {
+            "name": "Owen transform fault",
+            "activity": "inactive",
+            "depthM": 4500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": null
+          },
+          {
+            "name": "Carlsberg Ridge, CR2003",
+            "activity": "active, inferred",
+            "depthM": 3500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 2003
+          },
+          {
+            "name": "Carlsberg Ridge, 63 40'E",
+            "activity": "active, inferred",
+            "depthM": 3500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 2007
+          },
+          {
+            "name": "Carlsberg Ridge, 63 50'E",
+            "activity": "active, inferred",
+            "depthM": 3500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": 2009
+          },
+          {
+            "name": "Carlsberg Ridge, 1.67 S",
+            "activity": "inactive",
+            "depthM": 4500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "Indian",
+            "discoveryYear": null
+          },
+          {
+            "name": "Loihi Seamount",
+            "activity": "active, confirmed",
+            "depthM": 4800.0,
+            "maxTemperatureC": 200.0,
+            "tectonicSetting": "intra-plate volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1985
+          },
+          {
+            "name": "Hawaiian Ridge",
+            "activity": "inactive",
+            "depthM": 5000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "intra-plate volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1987
+          },
+          {
+            "name": "Vailulu'u Seamount",
+            "activity": "active, confirmed",
+            "depthM": 1000.0,
+            "maxTemperatureC": 85.0,
+            "tectonicSetting": "intra-plate volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2005
+          },
+          {
+            "name": "Teahitia seamount",
+            "activity": "active, confirmed",
+            "depthM": 1460.0,
+            "maxTemperatureC": 30.0,
+            "tectonicSetting": "intra-plate volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1983
+          },
+          {
+            "name": "Bounty Seamount",
+            "activity": "active, confirmed",
+            "depthM": 420.0,
+            "maxTemperatureC": 19.0,
+            "tectonicSetting": "intra-plate volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1999
+          },
+          {
+            "name": "Macdonald Seamount",
+            "activity": "active, confirmed",
+            "depthM": 150.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "intra-plate volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1989
+          },
+          {
+            "name": "Chile Rise, Segment N8",
+            "activity": "active, inferred",
+            "depthM": 3330.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1998
+          },
+          {
+            "name": "Chile Rise, Segment N9A",
+            "activity": "active, inferred",
+            "depthM": 3450.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1998
+          },
+          {
+            "name": "Chile Triple Junction, 10 km north",
+            "activity": "active, inferred",
+            "depthM": 3000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2010
+          },
+          {
+            "name": "Chile Triple Junction",
+            "activity": "active, inferred",
+            "depthM": 3000.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2010
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 5530,
+        "intersectionLengthKm": 288147.9776213844,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5404.197337510685
+          },
+          {
+            "name": "Middle America Trench megathrust",
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3328.620883368706
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2082.610345102028
+          },
+          {
+            "name": "Antilles Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1466.7560478578885
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1330.7386443662622
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1324.6309951014125
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1248.2383287615064
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1114.9321337102795
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 934.3928368488766
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 920.7736317630184
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 920.1377242725873
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 843.0769096804061
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 821.3183163740188
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 814.1294557225718
+          },
+          {
+            "name": "North Cuban Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 805.4224424706184
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 800.7630063911879
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 769.1698175322156
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 748.8348701444069
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 699.9556181317153
+          },
+          {
+            "name": "Muertos Thrust",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 676.6835255059925
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 670.4073971689851
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 656.7035098814247
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 654.5901148488457
+          },
+          {
+            "name": "North Caribbean Megathrust (North Hispaniola Fault)",
+            "kinematics": "Reverse-Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 627.6096577020786
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 618.9037903658186
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 609.1255892824262
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 583.479991434136
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 581.2635724523533
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 560.4199612134518
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 552.2726691625039
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 36641,
+      "medianMwM2": 71.0,
+      "p10MwM2": 33.0,
+      "p90MwM2": 295.0,
+      "maxMwM2": 489000.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 5269,
+          "percent": 14.380066046232361
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 9060,
+          "percent": 24.726399388662973
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 6323,
+          "percent": 17.256625092109932
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3531,
+          "percent": 9.636745722005404
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 4755,
+          "percent": 12.977265904314839
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1926,
+          "percent": 5.256406757457492
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2125,
+          "percent": 5.799514205398324
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 3585,
+          "percent": 9.784121612401409
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1649,
+      "commodityCount": 106,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 380,
+          "sharePct": 11.750154607297464
+        },
+        {
+          "label": "Copper",
+          "count": 339,
+          "sharePct": 10.482374768089054
+        },
+        {
+          "label": "Silver",
+          "count": 188,
+          "sharePct": 5.813234384662956
+        },
+        {
+          "label": "Iron",
+          "count": 179,
+          "sharePct": 5.534941249226963
+        },
+        {
+          "label": "Titanium",
+          "count": 150,
+          "sharePct": 4.638218923933209
+        },
+        {
+          "label": "Lead",
+          "count": 141,
+          "sharePct": 4.3599257884972165
+        },
+        {
+          "label": "Zinc",
+          "count": 130,
+          "sharePct": 4.019789734075449
+        },
+        {
+          "label": "Stone",
+          "count": 120,
+          "sharePct": 3.710575139146568
+        },
+        {
+          "label": "Construction",
+          "count": 101,
+          "sharePct": 3.1230674087816945
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 101,
+          "sharePct": 3.1230674087816945
+        },
+        {
+          "label": "Nickel",
+          "count": 88,
+          "sharePct": 2.7210884353741496
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 76,
+          "sharePct": 2.350030921459493
+        },
+        {
+          "label": "Zirconium",
+          "count": 72,
+          "sharePct": 2.2263450834879404
+        },
+        {
+          "label": "Chromium",
+          "count": 62,
+          "sharePct": 1.91713048855906
+        },
+        {
+          "label": "Molybdenum",
+          "count": 57,
+          "sharePct": 1.7625231910946195
+        },
+        {
+          "label": "Metal",
+          "count": 57,
+          "sharePct": 1.7625231910946195
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 56,
+          "sharePct": 1.7316017316017316
+        },
+        {
+          "label": "Platinum",
+          "count": 54,
+          "sharePct": 1.6697588126159555
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 50,
+          "sharePct": 1.5460729746444033
+        },
+        {
+          "label": "Limestone",
+          "count": 46,
+          "sharePct": 1.4223871366728509
+        },
+        {
+          "label": "Manganese",
+          "count": 43,
+          "sharePct": 1.3296227581941866
+        },
+        {
+          "label": "Cobalt",
+          "count": 41,
+          "sharePct": 1.2677798392084108
+        },
+        {
+          "label": "General",
+          "count": 37,
+          "sharePct": 1.1440940012368583
+        },
+        {
+          "label": "Sulfur",
+          "count": 36,
+          "sharePct": 1.1131725417439702
+        },
+        {
+          "label": "Aluminum",
+          "count": 36,
+          "sharePct": 1.1131725417439702
+        },
+        {
+          "label": "Granite",
+          "count": 31,
+          "sharePct": 0.95856524427953
+        },
+        {
+          "label": "REE",
+          "count": 29,
+          "sharePct": 0.8967223252937538
+        },
+        {
+          "label": "Tungsten",
+          "count": 29,
+          "sharePct": 0.8967223252937538
+        },
+        {
+          "label": "Tin",
+          "count": 29,
+          "sharePct": 0.8967223252937538
+        },
+        {
+          "label": "Dimension",
+          "count": 27,
+          "sharePct": 0.8348794063079777
+        }
+      ],
+      "sites": [
+        {
+          "name": "Lime Point Barite",
+          "depositType": "Replacement",
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Alaska Tidewater Co.",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Gould Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Rich Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Triangle No. 2 Claim",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Welcome Claim",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Stonerock Bay Prospect",
+          "depositType": "Vein",
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Wood Cove Occurrence",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Forrester Point Occurence",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Lakeside Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "North Spit (Goodnews Bay)",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Goodnews Bay",
+          "depositType": null,
+          "commodities": [
+            "Diamond",
+            "Mercury",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Day Harbor",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed  (near mouth of Port Camden)",
+          "depositType": null,
+          "commodities": [
+            "Thorium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Copper Bullion Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed Near Salmon Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "REE",
+            "Thorium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Salmon Bay Occurrence",
+          "depositType": "Vein",
+          "commodities": [
+            "Fluorine-Fluorite",
+            "REE",
+            "Thorium",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Unnamed (on Thomas Bay)",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Gold",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Lillie Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Castle Island",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Byers Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Disk I.",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Banzer",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed [on Pete Dahl (Copper Sands) Island]",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Iron",
+            "Manganese",
+            "Nickel",
+            "Titanium",
+            "Vanadium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Red Head #1",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Reynolds-Alaska Development Co.",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Rua",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wagner Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Snug Harbor",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Wilson",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Anchor Point",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Fairview",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed (on Granite Island)",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

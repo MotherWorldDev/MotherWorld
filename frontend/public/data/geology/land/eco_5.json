@@ -1,0 +1,255 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_5",
+  "regionName": "Congolian coastal forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.810801+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 2,
+        "intersectionLengthKm": 66.52570091594389,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 50.42409534018293
+          },
+          {
+            "name": null,
+            "kinematics": null,
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 16.101605575760956
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 96.11264083705852,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 138053.6584814127,
+        "percent": 76.06993974707184
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 138053.6584814127,
+          "percent": 76.06993974707184
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 25503.90185434094,
+          "percent": 14.053088478174288
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 13428.488834933358,
+          "percent": 7.399328259780533
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 4496.490371782907,
+          "percent": 2.4776435149733254
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 7340.218798069674,
+          "percentOfRegion": 3.8873591629414026
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 11,
+      "commodityCount": 11,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 4,
+          "sharePct": 21.052631578947366
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 15.789473684210526
+        },
+        {
+          "label": "Aluminum",
+          "count": 3,
+          "sharePct": 15.789473684210526
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 10.526315789473683
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 5.263157894736842
+        }
+      ],
+      "sites": [
+        {
+          "name": "Londela-Kayes",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Monts Bamba",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Alemble",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ogooue Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Iron",
+            "Metal",
+            "Platinum",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Mayombe",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Edea",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Les Mamelles Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Edea",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Sumbi",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Mabounie",
+          "depositType": null,
+          "commodities": [
+            "REE"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

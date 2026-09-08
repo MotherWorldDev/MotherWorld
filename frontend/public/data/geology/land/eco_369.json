@@ -1,0 +1,746 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_369",
+  "regionName": "Alaska Peninsula montane taiga",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.162620+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 11,
+        "intersectionLengthKm": 48.65670882710442,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse-Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.534390696160455
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.178519058439595
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.5321518936692025
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.320834738765107
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 6.0684442616163485
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.911686061719252
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.9490639594191146
+          },
+          {
+            "name": null,
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.4534158867364977
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.3587251105960623
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.8173798180040476
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.5320973419787346
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 75.98641918228807,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 24733.71225857193,
+        "percent": 66.55368674122772
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 24733.71225857193,
+          "percent": 66.55368674122772
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 6453.485370140419,
+          "percent": 17.365094217289162
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2658.0020470156287,
+          "percent": 7.152174883627193
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2432.527985594978,
+          "percent": 6.54546733018011
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 885.8217521616671,
+          "percent": 2.383576827675805
+        }
+      ],
+      "excluded": [
+        {
+          "code": "ig",
+          "label": "Ice and glaciers",
+          "areaKm2": 2250.8904220053255,
+          "percentOfRegion": 4.602281155573207
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 9493.706927329478,
+          "percentOfRegion": 19.411299662138724
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 5,
+      "medianMwM2": 81.0,
+      "p10MwM2": 71.8,
+      "p90MwM2": 115.0,
+      "maxMwM2": 129.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 40.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 40.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 20.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 341,
+      "commodityCount": 31,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 196,
+          "sharePct": 21.374045801526716
+        },
+        {
+          "label": "Copper",
+          "count": 143,
+          "sharePct": 15.59432933478735
+        },
+        {
+          "label": "Silver",
+          "count": 124,
+          "sharePct": 13.522355507088331
+        },
+        {
+          "label": "Zinc",
+          "count": 96,
+          "sharePct": 10.468920392584515
+        },
+        {
+          "label": "Lead",
+          "count": 94,
+          "sharePct": 10.25081788440567
+        },
+        {
+          "label": "Arsenic",
+          "count": 52,
+          "sharePct": 5.670665212649945
+        },
+        {
+          "label": "Mercury",
+          "count": 35,
+          "sharePct": 3.816793893129771
+        },
+        {
+          "label": "Molybdenum",
+          "count": 30,
+          "sharePct": 3.271537622682661
+        },
+        {
+          "label": "Chromium",
+          "count": 30,
+          "sharePct": 3.271537622682661
+        },
+        {
+          "label": "Antimony",
+          "count": 26,
+          "sharePct": 2.8353326063249726
+        },
+        {
+          "label": "Iron",
+          "count": 13,
+          "sharePct": 1.4176663031624863
+        },
+        {
+          "label": "Tungsten",
+          "count": 12,
+          "sharePct": 1.3086150490730644
+        },
+        {
+          "label": "Construction",
+          "count": 7,
+          "sharePct": 0.7633587786259541
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 7,
+          "sharePct": 0.7633587786259541
+        },
+        {
+          "label": "PGE",
+          "count": 6,
+          "sharePct": 0.6543075245365322
+        },
+        {
+          "label": "Stone",
+          "count": 6,
+          "sharePct": 0.6543075245365322
+        },
+        {
+          "label": "Pumice",
+          "count": 6,
+          "sharePct": 0.6543075245365322
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 6,
+          "sharePct": 0.6543075245365322
+        },
+        {
+          "label": "Sulfur",
+          "count": 4,
+          "sharePct": 0.43620501635768816
+        },
+        {
+          "label": "Uranium",
+          "count": 4,
+          "sharePct": 0.43620501635768816
+        },
+        {
+          "label": "Tin",
+          "count": 4,
+          "sharePct": 0.43620501635768816
+        },
+        {
+          "label": "Platinum",
+          "count": 3,
+          "sharePct": 0.3271537622682661
+        },
+        {
+          "label": "Nickel",
+          "count": 3,
+          "sharePct": 0.3271537622682661
+        },
+        {
+          "label": "Bismuth",
+          "count": 3,
+          "sharePct": 0.3271537622682661
+        },
+        {
+          "label": "Tellurium",
+          "count": 1,
+          "sharePct": 0.10905125408942204
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 1,
+          "sharePct": 0.10905125408942204
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 0.10905125408942204
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 0.10905125408942204
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 0.10905125408942204
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 0.10905125408942204
+        }
+      ],
+      "sites": [
+        {
+          "name": "Apollo Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mallard Duck Bay",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Molybdenum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Lake Fork Area Gold Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Cornelius Creek Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Braided Creeks",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed (on western Nakchamik Island)",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Bearskin Gulch",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Home Creek",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Molybdenum",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Windy Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Molybdenum",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Warner Bay Breccia Pipe",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Foot Bay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Mike",
+          "depositType": "molybdenum porphyry",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Molybdenum",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Halibut Bay 43",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Rex",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Molybdenum",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cape Kubugakli Lode",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "West Coast Kodiak Island",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Halibut Bay 41",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Halibut Bay 42",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Halibut Bay 45",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Halibut Bay 44",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Halibut Bay 47",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Halibut Bay 46",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Halibut Bay 14G",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Halibut Bay 50",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Halibut Bay 51",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Halibut Bay 15G",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Halibut Bay 16G",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Paint River Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed Magnetite Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Chenik Mtn. Magnetite Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Herman Lode",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Mercury",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sitka",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Shumagin",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Mercury",
+            "Silver",
+            "Tellurium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Apollo Consolidated Gold Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mary Lou",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed (northwest of Ramsey Bay)",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "South Kodiak Island Beaches",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Gold",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Wanberg and Boyer Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Calaveras",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Wanberg Gold Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

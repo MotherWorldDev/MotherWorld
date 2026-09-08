@@ -1,0 +1,638 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_426",
+  "regionName": "Baja California desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.370109+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 130.97093520021073,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Agua Blanca",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 55.724158639380626
+          },
+          {
+            "name": "San Diego Trough south",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.888619197510984
+          },
+          {
+            "name": "Maximitos",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.096888526522026
+          },
+          {
+            "name": "Bahía Soledad",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.2612688367971
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 92.40032866644042,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 18560.747340627706,
+        "percent": 25.893635108377477
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 18560.747340627706,
+          "percent": 25.893635108377477
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 16693.706857591067,
+          "percent": 23.28897355498743
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 14865.98909875709,
+          "percent": 20.739170152149452
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 9419.498278252595,
+          "percent": 13.140906820447778
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 5828.77125558245,
+          "percent": 8.13157322021641
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 4714.595666896151,
+          "percent": 6.577214680086149
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1106.141728063378,
+          "percent": 1.5431507018000585
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 491.2823671696451,
+          "percent": 0.6853757619352683
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 5895.541893813223,
+          "percentOfRegion": 7.5996713335594945
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 48,
+      "medianMwM2": 78.25,
+      "p10MwM2": 43.977000000000004,
+      "p90MwM2": 131.32000000000002,
+      "maxMwM2": 171.75,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 8.333333333333332
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 8,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 18,
+          "percent": 37.5
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 8,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 9,
+          "percent": 18.75
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 2.083333333333333
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 123,
+      "commodityCount": 23,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 43,
+          "sharePct": 21.82741116751269
+        },
+        {
+          "label": "Copper",
+          "count": 40,
+          "sharePct": 20.304568527918782
+        },
+        {
+          "label": "Gold",
+          "count": 38,
+          "sharePct": 19.289340101522843
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 20,
+          "sharePct": 10.152284263959391
+        },
+        {
+          "label": "Sulfur",
+          "count": 14,
+          "sharePct": 7.1065989847715745
+        },
+        {
+          "label": "Silver",
+          "count": 12,
+          "sharePct": 6.091370558375635
+        },
+        {
+          "label": "Magnesite",
+          "count": 9,
+          "sharePct": 4.568527918781726
+        },
+        {
+          "label": "Chromium",
+          "count": 2,
+          "sharePct": 1.015228426395939
+        },
+        {
+          "label": "Asbestos",
+          "count": 2,
+          "sharePct": 1.015228426395939
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 2,
+          "sharePct": 1.015228426395939
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 1.015228426395939
+        },
+        {
+          "label": "Zirconium",
+          "count": 2,
+          "sharePct": 1.015228426395939
+        },
+        {
+          "label": "Bromine",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Uranium",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Potassium",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        },
+        {
+          "label": "Cement Rock",
+          "count": 1,
+          "sharePct": 0.5076142131979695
+        }
+      ],
+      "sites": [
+        {
+          "name": "Santo Domingo Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Guerrero Negro",
+          "depositType": null,
+          "commodities": [
+            "Bromine",
+            "Halite"
+          ]
+        },
+        {
+          "name": "Aguajito",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Bonet",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Silver",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "El Gato",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron"
+          ]
+        },
+        {
+          "name": "El Manzano",
+          "depositType": "Vein",
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Esmeralda",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Hercules Coloso, Et.Al.",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Leon Grande",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Luciano",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Mina De Barita",
+          "depositType": "Vein",
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "San Antonio Del Mar",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Santa Teresa",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Vibora",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "El Tigre",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Isla Santa Margarita",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "La Minita",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Punta Eugenia",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "San Bartolome District",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "San Hilario Sur",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "San Roque",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "El Marmol",
+          "depositType": null,
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Punta Eugenia",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bartolome",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Morro Hermosa",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "La Grulla",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Tepustete",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Guadalupe Y Solis",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "La Cochalosa",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Cerro Blanco",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Sauzalito",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "El Taraicito",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Campo Rodriguez",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Canada Del Gringo",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Phosphorus-Phosphates",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "San Isidro",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Rosarito",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "La Otilia",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Morro Hermoso",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "El Tigre",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Morro Hermoso",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

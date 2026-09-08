@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_411",
+  "regionName": "Brooks-British Range tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.107942+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.22570510741218,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 93973.53375084282,
+        "percent": 58.97656007219128
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 93973.53375084282,
+          "percent": 58.97656007219128
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 28508.68702574369,
+          "percent": 17.89167892111957
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 27593.05519904743,
+          "percent": 17.31704036837197
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2738.387926788491,
+          "percent": 1.718576429118867
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2199.906853928949,
+          "percent": 1.380632754196097
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1991.3829172601295,
+          "percent": 1.2497658602252384
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1178.6790272400478,
+          "percent": 0.7397235336511032
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 1156.8470351874594,
+          "percent": 0.7260220611258824
+        }
+      ],
+      "excluded": [
+        {
+          "code": "ig",
+          "label": "Ice and glaciers",
+          "areaKm2": 1103.1225355443455,
+          "percentOfRegion": 0.686944783840181
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 140.27018722380092,
+          "percentOfRegion": 0.08735010874755358
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 89.0,
+      "p10MwM2": 55.900000000000006,
+      "p90MwM2": 99.7,
+      "maxMwM2": 100.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 845,
+      "commodityCount": 41,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 369,
+          "sharePct": 20.108991825613078
+        },
+        {
+          "label": "Copper",
+          "count": 311,
+          "sharePct": 16.94822888283379
+        },
+        {
+          "label": "Lead",
+          "count": 207,
+          "sharePct": 11.280653950953678
+        },
+        {
+          "label": "Silver",
+          "count": 207,
+          "sharePct": 11.280653950953678
+        },
+        {
+          "label": "Zinc",
+          "count": 191,
+          "sharePct": 10.408719346049047
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 55,
+          "sharePct": 2.997275204359673
+        },
+        {
+          "label": "Antimony",
+          "count": 54,
+          "sharePct": 2.9427792915531334
+        },
+        {
+          "label": "Construction",
+          "count": 52,
+          "sharePct": 2.833787465940054
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 52,
+          "sharePct": 2.833787465940054
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 38,
+          "sharePct": 2.0708446866485013
+        },
+        {
+          "label": "Molybdenum",
+          "count": 33,
+          "sharePct": 1.7983651226158037
+        },
+        {
+          "label": "Tin",
+          "count": 30,
+          "sharePct": 1.6348773841961852
+        },
+        {
+          "label": "Tungsten",
+          "count": 27,
+          "sharePct": 1.4713896457765667
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 21,
+          "sharePct": 1.1444141689373297
+        },
+        {
+          "label": "Vanadium",
+          "count": 21,
+          "sharePct": 1.1444141689373297
+        },
+        {
+          "label": "REE",
+          "count": 21,
+          "sharePct": 1.1444141689373297
+        },
+        {
+          "label": "Uranium",
+          "count": 16,
+          "sharePct": 0.8719346049046321
+        },
+        {
+          "label": "Bismuth",
+          "count": 16,
+          "sharePct": 0.8719346049046321
+        },
+        {
+          "label": "Arsenic",
+          "count": 14,
+          "sharePct": 0.7629427792915531
+        },
+        {
+          "label": "Nickel",
+          "count": 14,
+          "sharePct": 0.7629427792915531
+        },
+        {
+          "label": "Chromium",
+          "count": 13,
+          "sharePct": 0.7084468664850135
+        },
+        {
+          "label": "Manganese",
+          "count": 10,
+          "sharePct": 0.544959128065395
+        },
+        {
+          "label": "Cobalt",
+          "count": 10,
+          "sharePct": 0.544959128065395
+        },
+        {
+          "label": "Beryllium",
+          "count": 7,
+          "sharePct": 0.38147138964577654
+        },
+        {
+          "label": "Titanium",
+          "count": 6,
+          "sharePct": 0.32697547683923706
+        },
+        {
+          "label": "Mercury",
+          "count": 5,
+          "sharePct": 0.2724795640326975
+        },
+        {
+          "label": "Stone",
+          "count": 5,
+          "sharePct": 0.2724795640326975
+        },
+        {
+          "label": "Iron",
+          "count": 4,
+          "sharePct": 0.21798365122615804
+        },
+        {
+          "label": "Thorium",
+          "count": 4,
+          "sharePct": 0.21798365122615804
+        },
+        {
+          "label": "PGE",
+          "count": 4,
+          "sharePct": 0.21798365122615804
+        }
+      ],
+      "sites": [
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Vermont Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Swift Gulch Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Smucker Prospect",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Arctic Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sun Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mikado Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Lofty Gulch Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Chandalar Area",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Myrtle Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Slate Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Spring Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Colorado Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Wiseman Area",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Clara Gulch Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "California Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Nolan Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Birch Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Crevice Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Copper",
+            "Gold",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Emery Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Emma Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Garnet Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Jim Pup",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Wakeup Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mascot Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Birch Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Lake Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Copper",
+            "Gold",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Confederate Gulch Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Nugget Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Gold Creek",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Linda Creek",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Agnes Creek Placer",
+          "depositType": "Unknown",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Buckeye Gulch Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Porcupine Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Rosie Creek Placer Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

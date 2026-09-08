@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_370",
+  "regionName": "Central Canadian Shield forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.095439+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.59446452540323,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 113695.21840984654,
+        "percent": 42.031795937108434
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 113695.21840984654,
+          "percent": 42.031795937108434
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 67582.1807273898,
+          "percent": 24.984343836507563
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 39449.76332339868,
+          "percent": 14.584117300334196
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 15067.771759586542,
+          "percent": 5.570379446766759
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 12524.141017885187,
+          "percent": 4.630028834226945
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 10038.203755851046,
+          "percent": 3.7110068280981108
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 4088.840772838904,
+          "percent": 1.51159673543852
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 3375.119352579373,
+          "percent": 1.2477422522697381
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 3300.3796641856534,
+          "percent": 1.220111861344733
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 1376.5026385327014,
+          "percent": 0.5088769679049859
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 1101.4325401634874,
+          "percentOfRegion": 0.4055354745967456
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 95,
+      "medianMwM2": 33.0,
+      "p10MwM2": 24.56,
+      "p90MwM2": 39.480000000000004,
+      "maxMwM2": 52.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 86,
+          "percent": 90.52631578947368
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 9,
+          "percent": 9.473684210526317
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 223,
+      "commodityCount": 38,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 155,
+          "sharePct": 33.91684901531728
+        },
+        {
+          "label": "Copper",
+          "count": 73,
+          "sharePct": 15.973741794310722
+        },
+        {
+          "label": "Silver",
+          "count": 73,
+          "sharePct": 15.973741794310722
+        },
+        {
+          "label": "Nickel",
+          "count": 31,
+          "sharePct": 6.783369803063458
+        },
+        {
+          "label": "Zinc",
+          "count": 28,
+          "sharePct": 6.12691466083151
+        },
+        {
+          "label": "PGE",
+          "count": 15,
+          "sharePct": 3.282275711159737
+        },
+        {
+          "label": "Lead",
+          "count": 14,
+          "sharePct": 3.063457330415755
+        },
+        {
+          "label": "Platinum",
+          "count": 7,
+          "sharePct": 1.5317286652078774
+        },
+        {
+          "label": "Iron",
+          "count": 6,
+          "sharePct": 1.312910284463895
+        },
+        {
+          "label": "Asbestos",
+          "count": 4,
+          "sharePct": 0.87527352297593
+        },
+        {
+          "label": "Lithium",
+          "count": 4,
+          "sharePct": 0.87527352297593
+        },
+        {
+          "label": "Sulfur",
+          "count": 4,
+          "sharePct": 0.87527352297593
+        },
+        {
+          "label": "Chromium",
+          "count": 3,
+          "sharePct": 0.6564551422319475
+        },
+        {
+          "label": "Cadmium",
+          "count": 3,
+          "sharePct": 0.6564551422319475
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 0.6564551422319475
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 3,
+          "sharePct": 0.6564551422319475
+        },
+        {
+          "label": "Cobalt",
+          "count": 3,
+          "sharePct": 0.6564551422319475
+        },
+        {
+          "label": "Tin",
+          "count": 2,
+          "sharePct": 0.437636761487965
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 0.437636761487965
+        },
+        {
+          "label": "Molybdenum",
+          "count": 2,
+          "sharePct": 0.437636761487965
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 0.437636761487965
+        },
+        {
+          "label": "Magnesite",
+          "count": 2,
+          "sharePct": 0.437636761487965
+        },
+        {
+          "label": "Ferrochrome",
+          "count": 2,
+          "sharePct": 0.437636761487965
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 0.437636761487965
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 1,
+          "sharePct": 0.2188183807439825
+        },
+        {
+          "label": "Beryllium",
+          "count": 1,
+          "sharePct": 0.2188183807439825
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 0.2188183807439825
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 0.2188183807439825
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 0.2188183807439825
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 0.2188183807439825
+        }
+      ],
+      "sites": [
+        {
+          "name": "Senneterre",
+          "depositType": null,
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Massberyl",
+          "depositType": null,
+          "commodities": [
+            "Beryllium"
+          ]
+        },
+        {
+          "name": "Bird-Ginn",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Abitibi Asbestos",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Asbestos Island",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Premier Langmuir",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Quebec Lithium",
+          "depositType": null,
+          "commodities": [
+            "Lithium"
+          ]
+        },
+        {
+          "name": "Reaume Township",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Alexo Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Marbridge Mines, Ltd.",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Teck",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Dumont Nickel Mine",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Horden",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "R.M. Nickel",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Redeco",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Bilson",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Ataman",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Cons. Mogador",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Quebec Moly",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Dundonald",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Ansil",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hoyle Pond Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Texmont Nickel Mine - Canada",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Marbridge Nickel Mine-Canada",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Dumont",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Langmuir Nickel - Copper Deposit: Canada",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Canadian Jamieson-Timmons Nickel Deposit-Canada",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Geco Mine",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Kidd Creek Mine",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Tin",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Willroy & Willecho Cu, Zn, Pb, Ag Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Manitou - Barvue Cu, Zn, Pb, Ag, Au Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Lake Dufault",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Chibougamau",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Hemlo Mine",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bachelor Lake Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bousquet Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Camflo Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Chadbourne Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Chimo Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Destor Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

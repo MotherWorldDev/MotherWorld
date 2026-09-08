@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25196",
+  "regionName": "Northeastern New Zealand",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.237774+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 107.87410140291998,
+        "medianAgeMa": 127.05154418945312,
+        "p10AgeMa": 27.17365074157715,
+        "p90AgeMa": 128.16107177734375,
+        "oldestAgeMa": 128.5049591064453,
+        "coveragePct": 29.3189622477177,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 19.40570235561745,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 80.59429764438256,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 180.86879403765315,
+          "medianMmYr": 209.6309356689453,
+          "p10MmYr": 53.1111946105957,
+          "p90MmYr": 209.64111328125,
+          "coveragePct": 29.3189622477177
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 60.763492147697676
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 11,
+        "confirmedOrInferredActive": 11,
+        "inactiveCount": 0,
+        "medianDepthM": 890.0,
+        "maxReportedTemperatureC": 302.0,
+        "tectonicSettings": [
+          {
+            "label": "arc volcano",
+            "count": 8
+          },
+          {
+            "label": "back-arc spreading center",
+            "count": 3
+          }
+        ],
+        "fields": [
+          {
+            "name": "Kibblewhite",
+            "activity": "active, inferred",
+            "depthM": 1106.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2002
+          },
+          {
+            "name": "Brothers volcano",
+            "activity": "active, confirmed",
+            "depthM": 1800.0,
+            "maxTemperatureC": 302.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1998
+          },
+          {
+            "name": "Healy volcano",
+            "activity": "active, confirmed",
+            "depthM": 1370.0,
+            "maxTemperatureC": 34.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2005
+          },
+          {
+            "name": "Rumble II West",
+            "activity": "active, inferred",
+            "depthM": 1500.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1996
+          },
+          {
+            "name": "Rumble III volcano",
+            "activity": "active, confirmed",
+            "depthM": 380.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2000
+          },
+          {
+            "name": "Rumble V volcano",
+            "activity": "active, confirmed",
+            "depthM": 755.0,
+            "maxTemperatureC": 40.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2001
+          },
+          {
+            "name": "Tangaroa volcano",
+            "activity": "active, confirmed",
+            "depthM": 890.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2012
+          },
+          {
+            "name": "Clark volcano",
+            "activity": "active, confirmed",
+            "depthM": 930.0,
+            "maxTemperatureC": 221.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "S. Pacific",
+            "discoveryYear": 2005
+          },
+          {
+            "name": "White Island",
+            "activity": "active, confirmed",
+            "depthM": 30.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1989
+          },
+          {
+            "name": "Calypso Vents",
+            "activity": "active, confirmed",
+            "depthM": 200.0,
+            "maxTemperatureC": 200.0,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1989
+          },
+          {
+            "name": "Whale Island",
+            "activity": "active, confirmed",
+            "depthM": 42.0,
+            "maxTemperatureC": 86.0,
+            "tectonicSetting": "back-arc spreading center",
+            "ocean": "S. Pacific",
+            "discoveryYear": 1990
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 192,
+        "intersectionLengthKm": 3786.1691066034864,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Hikurangi Raukumara",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 209.6725201143543
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 93.0859114957634
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 78.15087720942667
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 76.19868416906424
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 73.30128159286328
+          },
+          {
+            "name": "Ruatoria South 1",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 68.8173560002036
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 67.32207626501247
+          },
+          {
+            "name": "Ariel Bank",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.152157511452636
+          },
+          {
+            "name": "Gable End",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.663329979013625
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.6422432580161
+          },
+          {
+            "name": "Houtunui",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.82022781136526
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.570620000695406
+          },
+          {
+            "name": "Paritu Ridge",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.897595750779466
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.874120754070184
+          },
+          {
+            "name": "Ruatoria South 2",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.75214608712515
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.02521792648064
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.05225935962983
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.04424435943918
+          },
+          {
+            "name": "Hariki",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.97499119475662
+          },
+          {
+            "name": "Ohena 2",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.725299291791487
+          },
+          {
+            "name": "Wairaka 5",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.27794732186647
+          },
+          {
+            "name": "Opotiki 3",
+            "kinematics": "Normal-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.553533225466424
+          },
+          {
+            "name": "Matatara 4",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.299539029136916
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.115960212979996
+          },
+          {
+            "name": "Ohae 1",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.806653095317145
+          },
+          {
+            "name": "Astrolabe 7",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 28.232997185602688
+          },
+          {
+            "name": "Otara East 3",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.779917763117822
+          },
+          {
+            "name": "Astrolabe 5",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.68785594379817
+          },
+          {
+            "name": "White Island 1",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.93343655282415
+          },
+          {
+            "name": "Tauranga Trough East 2",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.067655621856538
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 74,
+      "medianMwM2": 83.3,
+      "p10MwM2": 34.110000000000014,
+      "p90MwM2": 178.50000000000006,
+      "maxMwM2": 336.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 8,
+          "percent": 10.81081081081081
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 10,
+          "percent": 13.513513513513514
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 17,
+          "percent": 22.972972972972975
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 9,
+          "percent": 12.162162162162163
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 19,
+          "percent": 25.675675675675674
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 8,
+          "percent": 10.81081081081081
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2,
+          "percent": 2.7027027027027026
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 1,
+          "percent": 1.3513513513513513
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Iridium",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 16.666666666666664
+        }
+      ],
+      "sites": [
+        {
+          "name": "Thames",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Coromandel",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Queen of Beauty Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Platinum",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

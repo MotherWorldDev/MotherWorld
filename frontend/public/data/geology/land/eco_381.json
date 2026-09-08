@@ -1,0 +1,212 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_381",
+  "regionName": "Northwest Territories taiga",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.098495+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000004,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 319982.7152739459,
+        "percent": 95.70507012723839
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 319982.7152739459,
+          "percent": 95.70507012723839
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 10529.608603926285,
+          "percent": 3.149348017090195
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 1958.2728433087377,
+          "percent": 0.5857086362826717
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1033.1898291079656,
+          "percent": 0.30902139499901476
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 515.9295433468319,
+          "percent": 0.15431168863121114
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 322.7746945053182,
+          "percent": 0.09654013575852888
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 126,
+      "medianMwM2": 72.0,
+      "p10MwM2": 50.5,
+      "p90MwM2": 108.5,
+      "maxMwM2": 144.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 3,
+          "percent": 2.380952380952381
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 27,
+          "percent": 21.428571428571427
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 49,
+          "percent": 38.88888888888889
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 28,
+          "percent": 22.22222222222222
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 19,
+          "percent": 15.079365079365079
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 7,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 22.22222222222222
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 22.22222222222222
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Uranium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        }
+      ],
+      "sites": [
+        {
+          "name": "Canada Tungsten Mine",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Echo Bay Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Hood River",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

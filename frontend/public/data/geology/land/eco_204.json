@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_204",
+  "regionName": "Naracoorte woodlands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:30.398751+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 57.896292075267525,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Kanawinka Fault",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 57.896292075267525
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 85.03731331400823,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 13813.363091148478,
+        "percent": 66.08217711485482
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 13813.363091148478,
+          "percent": 66.08217711485482
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6945.31194359986,
+          "percent": 33.22589371946519
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 144.63610637829004,
+          "percent": 0.6919291656799907
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3678.0288924409965,
+          "percentOfRegion": 14.96268668599181
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 84,
+      "medianMwM2": 64.0,
+      "p10MwM2": 50.0,
+      "p90MwM2": 91.26,
+      "maxMwM2": 123.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 32,
+          "percent": 38.095238095238095
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 37,
+          "percent": 44.047619047619044
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 14,
+          "percent": 16.666666666666664
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 1.1904761904761905
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

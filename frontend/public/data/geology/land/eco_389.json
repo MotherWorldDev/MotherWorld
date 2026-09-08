@@ -1,0 +1,626 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_389",
+  "regionName": "Central-Southern US mixed grasslands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.101509+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.38256236181707,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 116361.20634888834,
+        "percent": 42.57622386303513
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 116361.20634888834,
+          "percent": 42.57622386303513
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 100502.9181799436,
+          "percent": 36.773722768803715
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 37155.3480531334,
+          "percent": 13.595032795346293
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 14450.987391070625,
+          "percent": 5.287573870275529
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2539.4542683956424,
+          "percent": 0.929178863073775
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 2290.9936155322753,
+          "percent": 0.8382678394655391
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 1697.9464309452685,
+          "percentOfRegion": 0.6174376381828878
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 600,
+      "medianMwM2": 45.5,
+      "p10MwM2": 33.0,
+      "p90MwM2": 61.0,
+      "maxMwM2": 93.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 183,
+          "percent": 30.5
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 346,
+          "percent": 57.666666666666664
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 66,
+          "percent": 11.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 5,
+          "percent": 0.8333333333333334
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1998,
+      "commodityCount": 49,
+      "commodities": [
+        {
+          "label": "Sand and Gravel",
+          "count": 1174,
+          "sharePct": 33.248371566128576
+        },
+        {
+          "label": "Construction",
+          "count": 1173,
+          "sharePct": 33.220050977060325
+        },
+        {
+          "label": "Clay",
+          "count": 233,
+          "sharePct": 6.59869725290286
+        },
+        {
+          "label": "Copper",
+          "count": 200,
+          "sharePct": 5.664117813650524
+        },
+        {
+          "label": "Stone",
+          "count": 161,
+          "sharePct": 4.559614839988671
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 160,
+          "sharePct": 4.5312942509204195
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 95,
+          "sharePct": 2.690455961483999
+        },
+        {
+          "label": "Dolomite",
+          "count": 48,
+          "sharePct": 1.3593882752761257
+        },
+        {
+          "label": "Silver",
+          "count": 33,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Granite",
+          "count": 24,
+          "sharePct": 0.6796941376380629
+        },
+        {
+          "label": "Limestone",
+          "count": 21,
+          "sharePct": 0.5947323704333051
+        },
+        {
+          "label": "General",
+          "count": 19,
+          "sharePct": 0.5380911922967998
+        },
+        {
+          "label": "Vanadium",
+          "count": 16,
+          "sharePct": 0.4531294250920419
+        },
+        {
+          "label": "Flagstone",
+          "count": 13,
+          "sharePct": 0.36816765788728406
+        },
+        {
+          "label": "Pumice",
+          "count": 12,
+          "sharePct": 0.33984706881903143
+        },
+        {
+          "label": "Titanium",
+          "count": 11,
+          "sharePct": 0.3115264797507788
+        },
+        {
+          "label": "Lead",
+          "count": 11,
+          "sharePct": 0.3115264797507788
+        },
+        {
+          "label": "Chromium",
+          "count": 11,
+          "sharePct": 0.3115264797507788
+        },
+        {
+          "label": "Bentonite",
+          "count": 11,
+          "sharePct": 0.3115264797507788
+        },
+        {
+          "label": "Iodine",
+          "count": 10,
+          "sharePct": 0.2832058906825262
+        },
+        {
+          "label": "Metal",
+          "count": 8,
+          "sharePct": 0.22656471254602095
+        },
+        {
+          "label": "Molybdenum",
+          "count": 8,
+          "sharePct": 0.22656471254602095
+        },
+        {
+          "label": "Uranium",
+          "count": 7,
+          "sharePct": 0.19824412347776835
+        },
+        {
+          "label": "Strontium",
+          "count": 7,
+          "sharePct": 0.19824412347776835
+        },
+        {
+          "label": "Zirconium",
+          "count": 6,
+          "sharePct": 0.16992353440951571
+        },
+        {
+          "label": "Cobalt",
+          "count": 6,
+          "sharePct": 0.16992353440951571
+        },
+        {
+          "label": "Silica",
+          "count": 6,
+          "sharePct": 0.16992353440951571
+        },
+        {
+          "label": "Nickel",
+          "count": 5,
+          "sharePct": 0.1416029453412631
+        },
+        {
+          "label": "Salt",
+          "count": 5,
+          "sharePct": 0.1416029453412631
+        },
+        {
+          "label": "Iron",
+          "count": 4,
+          "sharePct": 0.11328235627301048
+        }
+      ],
+      "sites": [
+        {
+          "name": "Wichita Mtns. Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Mcbryde Mine",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Trevino Mine",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Van Vacter-1",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Moravia West-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Great Salt Plains-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Van Vacter-2",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cedar Knoll-1",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Metal",
+            "Silver",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Bucher-1",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Hitchcock-1",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Kingfisher Creek-1",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Metal",
+            "Silver",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Kingfisher Creek-2",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Buckhorn Prospect",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Parker Prospect",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Clark and Bennett Prospect",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Hobbs Canyon",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Zircon Mine",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Copper Eagle Prospect",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Wolf Creek-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Vance Prospect",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Barium-Barite",
+            "Copper"
+          ]
+        },
+        {
+          "name": "Randlett Northeast-3",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cross Mountain-1",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Pearson Prospect",
+          "depositType": "Magmatic Vein",
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Hattie Green Prospect",
+          "depositType": "Magmatic Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Three Boys Claim",
+          "depositType": "Magmatic Vein",
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Hardin Prospect-2",
+          "depositType": "Magmatic Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Randlett Northeast-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Hardin Prospect-1",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Randlett Northeast-2",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Chromium",
+            "Cobalt",
+            "Copper",
+            "Nickel",
+            "Silver",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Randlett Northeast-4",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Silver",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Temple East-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cookietown Northeast-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Matthews Prospect",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Benson Prospect",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Taylor North-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Whiskey Creek-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Whiskey Creek-2",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Whiskey Creek-3",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Taylor South-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Taylor Southeast-1",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

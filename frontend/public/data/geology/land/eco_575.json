@@ -1,0 +1,549 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_575",
+  "regionName": "Espinal",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.215397+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 6,
+        "intersectionLengthKm": 281.2599514043053,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Falla Tostado-Selva",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 93.80568793488727
+          },
+          {
+            "name": "Falla Tostado-Selva",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 80.36499945314259
+          },
+          {
+            "name": "Zona de falla Sierra Chica",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.8095315593398
+          },
+          {
+            "name": "Falla Tostado-Selva",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 35.17304517862552
+          },
+          {
+            "name": "Falla Las Lagunas",
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 20.033130498319633
+          },
+          {
+            "name": "Zona de falla Sierra Chica",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 12.073556779990437
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 98.86369173808981,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 155472.5120318655,
+        "percent": 52.658090432545
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 155472.5120318655,
+          "percent": 52.658090432545
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 125570.77167222698,
+          "percent": 42.53045740359128
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 11925.833180513095,
+          "percent": 4.0392452266686965
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1572.2662537248082,
+          "percent": 0.5325220355075411
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 707.6673965076154,
+          "percent": 0.2396849016874701
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 2670.9357852661474,
+          "percentOfRegion": 0.8943587511914032
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 722.5641897568377,
+          "percentOfRegion": 0.24194951071882814
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 77.0,
+      "p10MwM2": 71.4,
+      "p90MwM2": 77.0,
+      "maxMwM2": 77.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 4,
+          "percent": 100.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 30,
+      "commodityCount": 21,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 9,
+          "sharePct": 17.307692307692307
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 9,
+          "sharePct": 17.307692307692307
+        },
+        {
+          "label": "General",
+          "count": 5,
+          "sharePct": 9.615384615384617
+        },
+        {
+          "label": "Limestone",
+          "count": 5,
+          "sharePct": 9.615384615384617
+        },
+        {
+          "label": "Tungsten",
+          "count": 4,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Stone",
+          "count": 4,
+          "sharePct": 7.6923076923076925
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Clay",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Dimension",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "REE",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Thorium",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        },
+        {
+          "label": "Lithium",
+          "count": 1,
+          "sharePct": 1.9230769230769231
+        }
+      ],
+      "sites": [
+        {
+          "name": "Loma Blanca",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Yofre Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "La Dorita Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "La Cautiva Quarry",
+          "depositType": null,
+          "commodities": [
+            "Stone"
+          ]
+        },
+        {
+          "name": "Macoreta Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "La Calera Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "La Encarnacion Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Piedra Buena Mine",
+          "depositType": "Evaporite, Marine",
+          "commodities": [
+            "Gypsum-Anhydrite"
+          ]
+        },
+        {
+          "name": "Aremin and Adjacent Quarries",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Los Anegadizos Quarry",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Parana Quarry",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "San Pascual Quarry",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "De Elia Quarry",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "A. Faes Quarry",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Vazquez and Bartolin Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Chaviyu Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Ayui Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "El Tala, La Elisa, and Techint Quarries",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Drags Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Argentina Prospect",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "El Salto Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Novillo Muerto Complex",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Loma Blanca",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Santo Domingo Tungsten Mine",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Cerro Morro Mine",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Mercedes Quarry",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Costa Grande Quarry",
+          "depositType": "Unconsolidated Sediments",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Echeveste, Gonzalez, and Hourcade Pits",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Rio Tercero",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Thorium"
+          ]
+        },
+        {
+          "name": "San Luis Province",
+          "depositType": "PEGMATITE, ZONED",
+          "commodities": [
+            "Lithium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_301",
+  "regionName": "Sri Lanka dry-zone dry evergreen forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.076308+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 90.26529991709089,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 31354.551612820513,
+        "percent": 71.97730816940044
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 31354.551612820513,
+          "percent": 71.97730816940044
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 7517.5715601802085,
+          "percent": 17.257289198527847
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 4689.594276930538,
+          "percent": 10.765402632071703
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 4697.932149574758,
+          "percentOfRegion": 9.734700082909109
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 10,
+      "commodityCount": 9,
+      "commodities": [
+        {
+          "label": "Zirconium",
+          "count": 4,
+          "sharePct": 23.52941176470588
+        },
+        {
+          "label": "Graphite",
+          "count": 3,
+          "sharePct": 17.647058823529413
+        },
+        {
+          "label": "REE",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Rhodium",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Thorium",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Titanium-Ilmenite",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Titanium-Rutile",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        }
+      ],
+      "sites": [
+        {
+          "name": "Ceylon",
+          "depositType": "Placer",
+          "commodities": [
+            "Rhodium",
+            "Thorium"
+          ]
+        },
+        {
+          "name": "Pulmoddai Deposit",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium-Ilmenite",
+            "Titanium-Rutile",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Kahatagaha-Kolongaha Mines",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Ragedera",
+          "depositType": null,
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Pulmoddai",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Eppawella",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Kahatagaha-Kolongaha",
+          "depositType": "GRAPHITE, CRYSTALLINE, LUMP ORE",
+          "commodities": [
+            "Graphite"
+          ]
+        },
+        {
+          "name": "Eppawella Project",
+          "depositType": "MAGMATIC, CARBONATITE (?) RESIDUAL ENRICHMENT, SEE FOR G13",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Pulmoddai Deposit",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Pulmoddai",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,673 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_344",
+  "regionName": "Western Great Lakes forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.088372+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 94.99452655011798,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 79501.95606511345,
+        "percent": 28.94295564034513
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 79501.95606511345,
+          "percent": 28.94295564034513
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 69527.58807850802,
+          "percent": 25.31175328426273
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 38745.445788836674,
+          "percent": 14.105410410446314
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 27169.594297707892,
+          "percent": 9.891182575189527
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 21285.628367560337,
+          "percent": 7.749104903967391
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 18334.631300669345,
+          "percent": 6.674784454142713
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 9851.26167500211,
+          "percent": 3.5863850875253465
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 6166.533178441407,
+          "percent": 2.244947232394758
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 4102.355597153382,
+          "percent": 1.4934764117261028
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 14317.512114814068,
+          "percentOfRegion": 4.9514364188177185
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 156.2528085723678,
+          "percentOfRegion": 0.054037031064025916
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 86,
+      "medianMwM2": 46.0,
+      "p10MwM2": 33.5,
+      "p90MwM2": 80.5,
+      "maxMwM2": 161.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 24,
+          "percent": 27.906976744186046
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 45,
+          "percent": 52.32558139534884
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 7,
+          "percent": 8.13953488372093
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 4.651162790697675
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 4,
+          "percent": 4.651162790697675
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 2,
+          "percent": 2.3255813953488373
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5626,
+      "commodityCount": 62,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 2524,
+          "sharePct": 28.636260494667575
+        },
+        {
+          "label": "Construction",
+          "count": 2131,
+          "sharePct": 24.177444973905153
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 2131,
+          "sharePct": 24.177444973905153
+        },
+        {
+          "label": "Copper",
+          "count": 534,
+          "sharePct": 6.05854322668482
+        },
+        {
+          "label": "Manganese",
+          "count": 197,
+          "sharePct": 2.2350805536646248
+        },
+        {
+          "label": "Gold",
+          "count": 117,
+          "sharePct": 1.3274336283185841
+        },
+        {
+          "label": "Stone",
+          "count": 95,
+          "sharePct": 1.077830723848423
+        },
+        {
+          "label": "Silver",
+          "count": 90,
+          "sharePct": 1.0211027910142956
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 87,
+          "sharePct": 0.9870660313138189
+        },
+        {
+          "label": "Free",
+          "count": 85,
+          "sharePct": 0.9643748581801679
+        },
+        {
+          "label": "Water",
+          "count": 85,
+          "sharePct": 0.9643748581801679
+        },
+        {
+          "label": "Silica",
+          "count": 76,
+          "sharePct": 0.8622645790787383
+        },
+        {
+          "label": "Aluminum",
+          "count": 66,
+          "sharePct": 0.7488087134104833
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 65,
+          "sharePct": 0.7374631268436578
+        },
+        {
+          "label": "Limestone",
+          "count": 57,
+          "sharePct": 0.6466984343090538
+        },
+        {
+          "label": "General",
+          "count": 54,
+          "sharePct": 0.6126616746085772
+        },
+        {
+          "label": "Nickel",
+          "count": 48,
+          "sharePct": 0.5445881552076242
+        },
+        {
+          "label": "Clay",
+          "count": 46,
+          "sharePct": 0.5218969820739733
+        },
+        {
+          "label": "Zinc",
+          "count": 39,
+          "sharePct": 0.4424778761061947
+        },
+        {
+          "label": "Lead",
+          "count": 28,
+          "sharePct": 0.31767642387111417
+        },
+        {
+          "label": "Titanium",
+          "count": 28,
+          "sharePct": 0.31767642387111417
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 23,
+          "sharePct": 0.26094849103698664
+        },
+        {
+          "label": "Metal",
+          "count": 22,
+          "sharePct": 0.24960290447016112
+        },
+        {
+          "label": "Platinum",
+          "count": 17,
+          "sharePct": 0.1928749716360336
+        },
+        {
+          "label": "Cobalt",
+          "count": 16,
+          "sharePct": 0.18152938506920807
+        },
+        {
+          "label": "Granite",
+          "count": 16,
+          "sharePct": 0.18152938506920807
+        },
+        {
+          "label": "Palladium",
+          "count": 12,
+          "sharePct": 0.13614703880190604
+        },
+        {
+          "label": "Molybdenum",
+          "count": 11,
+          "sharePct": 0.12480145223508056
+        },
+        {
+          "label": "Uranium",
+          "count": 11,
+          "sharePct": 0.12480145223508056
+        },
+        {
+          "label": "Peat",
+          "count": 10,
+          "sharePct": 0.11345586566825505
+        }
+      ],
+      "sites": [
+        {
+          "name": "Skanee Area",
+          "depositType": "Vanadate",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Vanadium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Seine Bay-Bad Vermilion Lake Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Camp Five Deposit",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Mattawin Gold Mines, Ltd.",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Pigeon River",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Hititrite Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Spruce Road deposit",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "PGE",
+            "Palladium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Minnamax Cu-Ni Prospect",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Iridium",
+            "Nickel",
+            "Osmium",
+            "Palladium",
+            "Platinum",
+            "Rhodium",
+            "Ruthenium",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Emo Prospect",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Atikokan",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Great Lakes Nickel",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "South Filson Creek deposit",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Wyman Creek deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Dunka Pit Cu-Ni deposit",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Sunbeam Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Loon Lake",
+          "depositType": null,
+          "commodities": [
+            "Cobalt"
+          ]
+        },
+        {
+          "name": "Mather Mine",
+          "depositType": "Chemical Bedded",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Tracy Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Humboldt Mine (Cci)",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Tilden Mine",
+          "depositType": "Chemical Sediment: Taconite",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Groveland Mine",
+          "depositType": "Chemical Sedimentation",
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Iron River - Crystal Falls Area",
+          "depositType": "See Individual Mines Of This District",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Homer Mine",
+          "depositType": "Secondary Enrichment",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sherwood Mine",
+          "depositType": "Secondary Enrichment",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Puritan Mine",
+          "depositType": "Secondary Enrichment",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Ironton Mine",
+          "depositType": "Secondary Enrichment",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Yale Mine",
+          "depositType": "Secondary Enrichment",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Dean Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Colby Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "White Pine Mine",
+          "depositType": "Disseminated, Clastic Sedimentary Rock;",
+          "commodities": [
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Shebandowan Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum",
+            "Selenium",
+            "Silver",
+            "Tellurium"
+          ]
+        },
+        {
+          "name": "Norpax Nickel Mines Deposit-Ontario, Canada",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Werner Lake Nickel Deposit-Canada",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Michigan Nickel Deposits",
+          "depositType": "Sulfides",
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Aad Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Adriatic Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Ajax Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Alberta Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Alexander Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Allan Mine",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

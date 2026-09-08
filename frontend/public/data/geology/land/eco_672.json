@@ -1,0 +1,181 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_672",
+  "regionName": "North Atlantic moist mixed forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.175674+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 84.57033459847463,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 13230.897374246924,
+        "percent": 40.451259251707775
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 13230.897374246924,
+          "percent": 40.451259251707775
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 8363.526694160606,
+          "percent": 25.570086215208466
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 6026.796547673436,
+          "percent": 18.425924010397036
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2421.1714243575125,
+          "percent": 7.402327310779766
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1649.7311470318382,
+          "percent": 5.043777488146413
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1016.122783113015,
+          "percent": 3.1066257237605486
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 5967.545163360296,
+          "percentOfRegion": 15.429665401525305
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 5,
+      "commodityCount": 9,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Dimension",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Marble",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Iridium",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 10.0
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 10.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Ledmore",
+          "depositType": null,
+          "commodities": [
+            "Calcium",
+            "Dimension",
+            "Marble"
+          ]
+        },
+        {
+          "name": "Rhum",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Cobalt",
+            "Iridium"
+          ]
+        },
+        {
+          "name": "Lecanvey",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Keel",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sperrin Mountains Project",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

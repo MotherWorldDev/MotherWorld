@@ -1,0 +1,414 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_355",
+  "regionName": "Fraser Plateau and Basin conifer forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.090380+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 98.22544086524583,
+      "dominantClass": {
+        "code": "vi",
+        "label": "Intermediate volcanic rocks",
+        "areaKm2": 36680.1420225367,
+        "percent": 35.68253055913701
+      },
+      "classes": [
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 36680.1420225367,
+          "percent": 35.68253055913701
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 28022.479432285443,
+          "percent": 27.260335526262562
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 7428.217522932646,
+          "percent": 7.226187908408497
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6922.731773949598,
+          "percent": 6.734450153570644
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 6808.581507290082,
+          "percent": 6.6234044990606575
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 6800.269881087479,
+          "percent": 6.615318929059639
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 5224.990036397548,
+          "percent": 5.0828828997006195
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3487.967250955371,
+          "percent": 3.3931029477752515
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1368.1990589789332,
+          "percent": 1.3309873419520082
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 52.219479053779864,
+          "percent": 0.05079923507313216
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1857.1280585465843,
+          "percentOfRegion": 1.7745591347540894
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 22,
+      "medianMwM2": 65.0,
+      "p10MwM2": 58.0,
+      "p90MwM2": 100.19000000000003,
+      "maxMwM2": 119.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 4,
+          "percent": 18.181818181818183
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 13,
+          "percent": 59.09090909090909
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 9.090909090909092
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 13.636363636363635
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 17,
+      "commodityCount": 15,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 12,
+          "sharePct": 21.428571428571427
+        },
+        {
+          "label": "Copper",
+          "count": 10,
+          "sharePct": 17.857142857142858
+        },
+        {
+          "label": "Silver",
+          "count": 10,
+          "sharePct": 17.857142857142858
+        },
+        {
+          "label": "Molybdenum",
+          "count": 9,
+          "sharePct": 16.071428571428573
+        },
+        {
+          "label": "Platinum",
+          "count": 3,
+          "sharePct": 5.357142857142857
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "Antimony",
+          "count": 2,
+          "sharePct": 3.571428571428571
+        },
+        {
+          "label": "Iridium",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Osmium",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 1.7857142857142856
+        }
+      ],
+      "sites": [
+        {
+          "name": "Horsefly River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Iridium",
+            "Osmium",
+            "PGE",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Twenty Mile Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Endako",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Copper",
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Equity Silver",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Morehead Creek",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Equity Silver",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Glacier Gulch",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Silver Queen Mine",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Endako Mine",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Gibraltar",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Prosperity",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Poison Mountain",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Lucky Ship",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Huckleberry Mountain",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Ox Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Blackdome Mountain",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Berg",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

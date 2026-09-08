@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20144",
+  "regionName": "Exmouth to Broome",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:34.432386+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 12,
+        "intersectionLengthKm": 1465.354747642859,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "West Australian Shear Zone Outer Shelf FZ Nth)",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 399.15113567106937
+          },
+          {
+            "name": "West Australian Shear Zone (Inner Shelf FZ Sth)",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 225.142044634253
+          },
+          {
+            "name": "West Australian Shear Zone Outer Shelf FZ Sth)",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 207.88071043900504
+          },
+          {
+            "name": "West Australian Shear Zone (Flinders Fault)",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 141.93820584049647
+          },
+          {
+            "name": "West Australian Shear Zone (Inner Shelf FZ Nth)",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 99.44874698349125
+          },
+          {
+            "name": "West Australian Shear Zone (Inner basin SZ)",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 97.40609265212217
+          },
+          {
+            "name": "West Australian Shear Zone (Dampier Flt NS)",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 90.24700105233718
+          },
+          {
+            "name": "West Australian Shear Zone (Long Island Fault)",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 83.34815803875009
+          },
+          {
+            "name": "Cape Range Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.88554549352482
+          },
+          {
+            "name": "West Australian Shear Zone (Sholl Island Fault)",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 47.7052261770752
+          },
+          {
+            "name": "West Australian Shear Zone (Barrow Is Flt)",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.1439688876076
+          },
+          {
+            "name": "Rough Range Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.057911773126727
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 451,
+      "medianMwM2": 57.0,
+      "p10MwM2": 45.0,
+      "p90MwM2": 64.0,
+      "maxMwM2": 78.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 6,
+          "percent": 1.3303769401330376
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 296,
+          "percent": 65.6319290465632
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 149,
+          "percent": 33.03769401330377
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

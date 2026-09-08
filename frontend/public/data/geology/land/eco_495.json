@@ -1,0 +1,679 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_495",
+  "regionName": "Puerto Rican moist forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.801130+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 212.26988306111136,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Great Southern Puerto Rico Fault",
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.195642019719635
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.30473693808891
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.72688885041708
+          },
+          {
+            "name": "Cerro Goden Fault",
+            "kinematics": "Normal-Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.62762537862324
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.642231803013555
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.381593523282447
+          },
+          {
+            "name": "Cerrillos Fault",
+            "kinematics": "Dextral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.391164547966499
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 85.09212660354402,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 2646.5876009381177,
+        "percent": 41.35723585569343
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2646.5876009381177,
+          "percent": 41.35723585569343
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 2420.046467948151,
+          "percent": 37.81716219073669
+        },
+        {
+          "code": "py",
+          "label": "Pyroclastics",
+          "areaKm2": 1332.6997990075542,
+          "percent": 20.825601953569866
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1121.1432001070802,
+          "percentOfRegion": 14.907873396455992
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 7,
+      "medianMwM2": 29.0,
+      "p10MwM2": 25.0,
+      "p90MwM2": 66.00000000000001,
+      "maxMwM2": 90.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 57.14285714285714
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 2,
+          "percent": 28.57142857142857
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 14.285714285714285
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 616,
+      "commodityCount": 39,
+      "commodities": [
+        {
+          "label": "Stone",
+          "count": 217,
+          "sharePct": 17.656631407648497
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 212,
+          "sharePct": 17.24979658258747
+        },
+        {
+          "label": "Construction",
+          "count": 136,
+          "sharePct": 11.065907241659886
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 136,
+          "sharePct": 11.065907241659886
+        },
+        {
+          "label": "Copper",
+          "count": 107,
+          "sharePct": 8.70626525630594
+        },
+        {
+          "label": "Limestone",
+          "count": 93,
+          "sharePct": 7.5671277461350686
+        },
+        {
+          "label": "General",
+          "count": 75,
+          "sharePct": 6.102522375915378
+        },
+        {
+          "label": "Iron",
+          "count": 45,
+          "sharePct": 3.6615134255492268
+        },
+        {
+          "label": "Gold",
+          "count": 35,
+          "sharePct": 2.8478437754271764
+        },
+        {
+          "label": "Zinc",
+          "count": 15,
+          "sharePct": 1.2205044751830758
+        },
+        {
+          "label": "Nickel",
+          "count": 15,
+          "sharePct": 1.2205044751830758
+        },
+        {
+          "label": "Silver",
+          "count": 14,
+          "sharePct": 1.1391375101708707
+        },
+        {
+          "label": "Cobalt",
+          "count": 14,
+          "sharePct": 1.1391375101708707
+        },
+        {
+          "label": "Chromium",
+          "count": 13,
+          "sharePct": 1.0577705451586654
+        },
+        {
+          "label": "High Calcium",
+          "count": 12,
+          "sharePct": 0.9764035801464606
+        },
+        {
+          "label": "Molybdenum",
+          "count": 10,
+          "sharePct": 0.8136696501220505
+        },
+        {
+          "label": "Manganese",
+          "count": 10,
+          "sharePct": 0.8136696501220505
+        },
+        {
+          "label": "Silica",
+          "count": 9,
+          "sharePct": 0.7323026851098454
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 9,
+          "sharePct": 0.7323026851098454
+        },
+        {
+          "label": "Volcanic Materials",
+          "count": 8,
+          "sharePct": 0.6509357200976403
+        },
+        {
+          "label": "Lead",
+          "count": 8,
+          "sharePct": 0.6509357200976403
+        },
+        {
+          "label": "Ultra Pure",
+          "count": 6,
+          "sharePct": 0.4882017900732303
+        },
+        {
+          "label": "Dimension",
+          "count": 5,
+          "sharePct": 0.40683482506102525
+        },
+        {
+          "label": "Dolomite",
+          "count": 4,
+          "sharePct": 0.32546786004882017
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 0.16273393002441008
+        },
+        {
+          "label": "Kaolin",
+          "count": 2,
+          "sharePct": 0.16273393002441008
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 2,
+          "sharePct": 0.16273393002441008
+        },
+        {
+          "label": "Bentonite",
+          "count": 2,
+          "sharePct": 0.16273393002441008
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 0.16273393002441008
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 0.16273393002441008
+        }
+      ],
+      "sites": [
+        {
+          "name": "Cerro La Tiza",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Copper",
+            "Gold",
+            "Kaolin",
+            "Potassium",
+            "Quartz",
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Valle Del General",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Borinquen",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Rosario",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Rio Jajome",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cordzal River",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Quarry",
+          "depositType": "Unknown",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Metropolis Quarry Inc.'s Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "San Juan Cement Co.'s Sand and Gravel Workings",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Crushed/Broken",
+            "Sand and Gravel",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Limestone Workings",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Operation",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Limestone Quarry",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Mine",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Location",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Sand Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarries",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone",
+            "Volcanic Materials"
+          ]
+        },
+        {
+          "name": "Unidentified Volcanic Rock Quarry",
+          "depositType": "Unknown",
+          "commodities": [
+            "Volcanic Materials"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Limestone Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Levitt Homes, Inc.'s Limestone Quarries",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Unidentified Aggregate Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Productos Agregados De Gurabo's Sand and Gravel Operation",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Operation",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Cantera Carraizo's Aggregate Workings",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Quartz Diorite Quarry",
+          "depositType": "Unknown",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Mora Development Corp.'s Limestone Operation",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Cantera Hipodromo's Volcanic Sand Working",
+          "depositType": null,
+          "commodities": [
+            "Volcanic Materials"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Quarry",
+          "depositType": "Unknown",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Rafeal Colon Homs, Inc.'s Aggregate Workings",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone",
+            "Volcanic Materials"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Workings",
+          "depositType": "Unknown",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unidentified Sand and Gravel Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Las Piedras Construction's Aggregate Workings",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone",
+            "Volcanic Materials"
+          ]
+        },
+        {
+          "name": "San Lorenzo Sand and Gravel's Quarry",
+          "depositType": "Unknown",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

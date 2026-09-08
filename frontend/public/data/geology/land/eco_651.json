@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_651",
+  "regionName": "Celtic broadleaf forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.170035+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 90.18230752540464,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 70867.80105576356,
+        "percent": 37.33569127578002
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 70867.80105576356,
+          "percent": 37.33569127578002
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 47344.97113446681,
+          "percent": 24.943023480385087
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 43578.362199216834,
+          "percent": 22.95863922874969
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 8127.911411889501,
+          "percent": 4.282074322475619
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 7166.660834703095,
+          "percent": 3.7756531515935547
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 6133.331593666004,
+          "percent": 3.23125836362434
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 5474.285962055299,
+          "percent": 2.884049562562386
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 1119.1545227715035,
+          "percent": 0.5896106148293072
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 20663.92616240169,
+          "percentOfRegion": 9.817692474595386
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 277,
+      "medianMwM2": 68.0,
+      "p10MwM2": 42.704,
+      "p90MwM2": 120.03999999999999,
+      "maxMwM2": 144.9,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 21,
+          "percent": 7.581227436823104
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 79,
+          "percent": 28.51985559566787
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 78,
+          "percent": 28.158844765342963
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 39,
+          "percent": 14.079422382671481
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 60,
+          "percent": 21.660649819494584
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 100,
+      "commodityCount": 36,
+      "commodities": [
+        {
+          "label": "Lead",
+          "count": 34,
+          "sharePct": 15.246636771300448
+        },
+        {
+          "label": "Zinc",
+          "count": 26,
+          "sharePct": 11.659192825112108
+        },
+        {
+          "label": "Copper",
+          "count": 25,
+          "sharePct": 11.210762331838566
+        },
+        {
+          "label": "Tin",
+          "count": 21,
+          "sharePct": 9.417040358744394
+        },
+        {
+          "label": "Silver",
+          "count": 19,
+          "sharePct": 8.520179372197308
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 13,
+          "sharePct": 5.829596412556054
+        },
+        {
+          "label": "Aluminum",
+          "count": 9,
+          "sharePct": 4.0358744394618835
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 9,
+          "sharePct": 4.0358744394618835
+        },
+        {
+          "label": "Tungsten",
+          "count": 8,
+          "sharePct": 3.587443946188341
+        },
+        {
+          "label": "Iron",
+          "count": 8,
+          "sharePct": 3.587443946188341
+        },
+        {
+          "label": "Gold",
+          "count": 6,
+          "sharePct": 2.690582959641256
+        },
+        {
+          "label": "Nickel",
+          "count": 4,
+          "sharePct": 1.7937219730941705
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 4,
+          "sharePct": 1.7937219730941705
+        },
+        {
+          "label": "Titanium",
+          "count": 4,
+          "sharePct": 1.7937219730941705
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 4,
+          "sharePct": 1.7937219730941705
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 1.345291479820628
+        },
+        {
+          "label": "Magnesite",
+          "count": 3,
+          "sharePct": 1.345291479820628
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 0.8968609865470852
+        },
+        {
+          "label": "Potassium",
+          "count": 2,
+          "sharePct": 0.8968609865470852
+        },
+        {
+          "label": "Pigment",
+          "count": 2,
+          "sharePct": 0.8968609865470852
+        },
+        {
+          "label": "Metal",
+          "count": 2,
+          "sharePct": 0.8968609865470852
+        },
+        {
+          "label": "Quartz",
+          "count": 1,
+          "sharePct": 0.4484304932735426
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 0.4484304932735426
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 0.4484304932735426
+        },
+        {
+          "label": "Peat",
+          "count": 1,
+          "sharePct": 0.4484304932735426
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 0.4484304932735426
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 0.4484304932735426
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 0.4484304932735426
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 0.4484304932735426
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 0.4484304932735426
+        }
+      ],
+      "sites": [
+        {
+          "name": "Leadhills Area",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Mottram Area",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Hemerdon Mine",
+          "depositType": "Stockwork",
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Redmoor Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Tin",
+            "Tungsten",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Northern Ireland",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "River Urr",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Wicklow",
+          "depositType": "Placer",
+          "commodities": [
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Bauxite - Ireland",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Northern Pennine Fluorspar Ore Field",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite",
+            "Lead",
+            "Quartz"
+          ]
+        },
+        {
+          "name": "Southern Pennines Fluorspar Ore Field",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Calcium",
+            "Copper",
+            "Fluorine-Fluorite",
+            "Iron",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Silvermines",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Tynagh Pb, Zn, Cu, Ag Mine",
+          "depositType": null,
+          "commodities": [
+            "Cadmium",
+            "Copper",
+            "Lead",
+            "Peat",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Bula, Navan, Ireland",
+          "depositType": "Stratabound",
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Navan",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Boulby Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Geevor Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Wheal Jane Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Tin",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Caldbeck Area",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Rennicks and Bennett Pb - Zn Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Carrock Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "South Crofty Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "Broadwood Mill & Mines",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Mogul",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "(Facility) West Midlands Copper Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Marine Mining",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "(Facility) Darley Dale Works Refinery",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Levant Tin Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Coed-Y-Brennin",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Parys Mountain",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "North Welland Tubes",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "(Facility) Goscote Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Nickel",
+            "Silver",
+            "Tin",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "(Facility) B.C.R. Widnes Refinery",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Stanton",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Burtree Pasture Mine",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Whiteheaps",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Beckermet",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Groverake",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Aberdeen Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Hartlepool",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Ballynoe",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,239 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_488",
+  "regionName": "Orinoco Delta swamp forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.767341+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 37.249536460263485,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "CAMPEARITO FAULT SYSTEM",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 20.65452623992237
+          },
+          {
+            "name": "CAMPEARITO FAULT SYSTEM",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.324741905266794
+          },
+          {
+            "name": "El Pilar - Guaracayal - Casanay",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 4.32104609155825
+          },
+          {
+            "name": "CAMPEARITO FAULT SYSTEM",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.9492222235160679
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 97.71629869705646,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 21909.614448540036,
+        "percent": 79.87180352732348
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 21909.614448540036,
+          "percent": 79.87180352732348
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 3820.879714909406,
+          "percent": 13.929070025744602
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1440.3555943859162,
+          "percent": 5.250836308164207
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 207.2164011814087,
+          "percent": 0.7554102661949577
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 52.908829603512416,
+          "percent": 0.19287987257274522
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 641.0819296045669,
+          "percentOfRegion": 2.2837013029435904
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 12,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 6,
+          "sharePct": 42.857142857142854
+        },
+        {
+          "label": "Iron",
+          "count": 5,
+          "sharePct": 35.714285714285715
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Clay",
+          "count": 1,
+          "sharePct": 7.142857142857142
+        }
+      ],
+      "sites": [
+        {
+          "name": "Wausa",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Gold"
+          ]
+        },
+        {
+          "name": "La Linea",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "San Juan De Amacuro",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Rio Acure",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Clay"
+          ]
+        },
+        {
+          "name": "Rio Aroi",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Polvo De Oro",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Cuyubini",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Munosse River and Tributaries",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Yarikita Hill",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Mabaruma",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Manoa",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Amacuro Delta Region Aluminum",
+          "depositType": "LATERITE BAUXITE, RESIDUAL",
+          "commodities": [
+            "Aluminum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

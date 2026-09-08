@@ -1,0 +1,247 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_544",
+  "regionName": "Sierra de la Laguna dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.073126+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 141.31550478655856,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "San José del Cabo",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 96.33974713436604
+          },
+          {
+            "name": "San Juan de los Planes",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 24.566882963571494
+          },
+          {
+            "name": "La Gata",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.492979723401968
+          },
+          {
+            "name": "Saltito",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.915894965219048
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 89.97336745324849,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 2727.839270228764,
+        "percent": 75.94261277272085
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2727.839270228764,
+          "percent": 75.94261277272085
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 864.1352097546583,
+          "percent": 24.057387227279143
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 400.2896551228469,
+          "percentOfRegion": 10.026632546751344
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 11,
+      "commodityCount": 9,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 7,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Silver",
+          "count": 4,
+          "sharePct": 19.047619047619047
+        },
+        {
+          "label": "Copper",
+          "count": 3,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 9.523809523809524
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Antimony",
+          "count": 1,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 4.761904761904762
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 4.761904761904762
+        }
+      ],
+      "sites": [
+        {
+          "name": "Santiago",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "San Antonio Mn",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Amarillos",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "El Triunofo Copper Mine, System of Veins",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Mina El Palmor",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mangle",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Distrito La Trinidad",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Triunfo Mn",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "San Jose Del Cabo",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "El Triunfo-San Antonio Zone",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Cobalt",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Paredones Amarillos",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

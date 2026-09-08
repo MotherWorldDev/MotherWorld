@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_313",
+  "regionName": "Kinabalu montane alpine meadows",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.079824+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000009,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 576.8013356367826,
+        "percent": 97.6677049350533
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 576.8013356367826,
+          "percent": 97.6677049350533
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 13.773958438512627,
+          "percent": 2.332295064946709
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Mamut",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

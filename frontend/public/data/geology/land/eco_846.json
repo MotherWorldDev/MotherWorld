@@ -1,0 +1,198 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_846",
+  "regionName": "West Saharan montane xeric woodlands",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.220506+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999997,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 126715.09040817364,
+        "percent": 49.21419546856159
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 126715.09040817364,
+          "percent": 49.21419546856159
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 50231.69014973844,
+          "percent": 19.509217172021888
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 35228.33159514184,
+          "percent": 13.682143078380992
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 14854.613888343165,
+          "percent": 5.769303949167004
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 13391.200884809574,
+          "percent": 5.2009368085593275
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 9763.522889153766,
+          "percent": 3.7920023762031283
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 7292.258280213795,
+          "percent": 2.8322011471060677
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 5,
+      "medianMwM2": 63.0,
+      "p10MwM2": 63.0,
+      "p90MwM2": 63.0,
+      "maxMwM2": 63.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 5,
+          "percent": 100.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "PGE",
+          "count": 1,
+          "sharePct": 20.0
+        },
+        {
+          "label": "Uranium",
+          "count": 1,
+          "sharePct": 20.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Hoggar",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Iron",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Hoggar",
+          "depositType": null,
+          "commodities": [
+            "PGE",
+            "Uranium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

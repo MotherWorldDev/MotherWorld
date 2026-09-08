@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_286",
+  "regionName": "Tonle Sap-Mekong peat swamp forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.072275+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 96.90355602576697,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 24314.49603303582,
+        "percent": 85.61709171108264
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 24314.49603303582,
+          "percent": 85.61709171108264
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2910.1561266405297,
+          "percent": 10.24734806962981
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1174.4624879991297,
+          "percent": 4.135560219287546
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 907.4617179266834,
+          "percentOfRegion": 3.0964439742330088
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Molybdenum",
+          "count": 2,
+          "sharePct": 50.0
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Tapok Tang Dong",
+          "depositType": "Vein",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Phnom Den",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Triton",
+          "depositType": "Vein",
+          "commodities": [
+            "Molybdenum"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

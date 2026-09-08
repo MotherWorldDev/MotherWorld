@@ -1,0 +1,664 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_648",
+  "regionName": "Cantabrian mixed forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.515748+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 4,
+        "intersectionLengthKm": 257.62696827434996,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 114.54847605016525
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 82.75115516621997
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.2075061030757
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.119830954889032
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 92.90236503469875,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 22483.614533369164,
+        "percent": 25.127858827302063
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 22483.614533369164,
+          "percent": 25.127858827302063
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 18898.13080042539,
+          "percent": 21.12069490197843
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 17681.578936076596,
+          "percent": 19.76106727368592
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 12649.82640298851,
+          "percent": 14.137542323206779
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 12647.78006377968,
+          "percent": 14.135255318923019
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 5115.911233437865,
+          "percent": 5.717581354903792
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 6835.928901426367,
+          "percentOfRegion": 7.097634965301307
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 350,
+      "medianMwM2": 71.8,
+      "p10MwM2": 48.0,
+      "p90MwM2": 105.40000000000009,
+      "maxMwM2": 6390.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 10,
+          "percent": 2.857142857142857
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 56,
+          "percent": 16.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 162,
+          "percent": 46.285714285714285
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 72,
+          "percent": 20.57142857142857
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 37,
+          "percent": 10.571428571428571
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 8,
+          "percent": 2.2857142857142856
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 1,
+          "percent": 0.2857142857142857
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 52,
+      "commodityCount": 34,
+      "commodities": [
+        {
+          "label": "Tungsten",
+          "count": 11,
+          "sharePct": 10.2803738317757
+        },
+        {
+          "label": "Lead",
+          "count": 10,
+          "sharePct": 9.345794392523365
+        },
+        {
+          "label": "Zinc",
+          "count": 10,
+          "sharePct": 9.345794392523365
+        },
+        {
+          "label": "Iron",
+          "count": 7,
+          "sharePct": 6.5420560747663545
+        },
+        {
+          "label": "Tin",
+          "count": 7,
+          "sharePct": 6.5420560747663545
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 7,
+          "sharePct": 6.5420560747663545
+        },
+        {
+          "label": "Copper",
+          "count": 6,
+          "sharePct": 5.607476635514018
+        },
+        {
+          "label": "Silver",
+          "count": 5,
+          "sharePct": 4.672897196261682
+        },
+        {
+          "label": "Aluminum",
+          "count": 4,
+          "sharePct": 3.7383177570093453
+        },
+        {
+          "label": "Gold",
+          "count": 4,
+          "sharePct": 3.7383177570093453
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 4,
+          "sharePct": 3.7383177570093453
+        },
+        {
+          "label": "Potassium",
+          "count": 3,
+          "sharePct": 2.803738317757009
+        },
+        {
+          "label": "Magnesite",
+          "count": 2,
+          "sharePct": 1.8691588785046727
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 1.8691588785046727
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 1.8691588785046727
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 2,
+          "sharePct": 1.8691588785046727
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 1.8691588785046727
+        },
+        {
+          "label": "Calcium",
+          "count": 2,
+          "sharePct": 1.8691588785046727
+        },
+        {
+          "label": "Quartz",
+          "count": 2,
+          "sharePct": 1.8691588785046727
+        },
+        {
+          "label": "Kaolin",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Ferrochrome",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Refiner",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 1,
+          "sharePct": 0.9345794392523363
+        }
+      ],
+      "sites": [
+        {
+          "name": "Galicia",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Perdon",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Eugui",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Magnesite",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Rio Minho",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Borralha Mines",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Silleda",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Santa Comba Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Santiago Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Beriain Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "La Troya Pb-Zn-Cu Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Rubiales Pb-Zn Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Reocin Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Sulfur-Pyrite",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "San Finx",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Bordeaux Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Borralha",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Santiago",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Reocin",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Rubiales Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "(Facility) Santander Smelter",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Ferrochrome"
+          ]
+        },
+        {
+          "name": "Le Boucau Satec Phos. Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "La Troya",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Fluoruros S.A.",
+          "depositType": null,
+          "commodities": [
+            "Fluorine-Fluorite"
+          ]
+        },
+        {
+          "name": "Minal E Metallurgica",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Salave",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Abandonada",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "San Ciprian",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Axpeasua",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Borralha",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Santa Comba",
+          "depositType": null,
+          "commodities": [
+            "Tin",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Guipozca",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "(Facility) Aviles Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Le Boucau Socadour Phos. Acid Plt",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "(Facility) Berango Vizcaya Copper Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Villabona-Asturias",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Fluorine-Fluorite",
+            "Lead",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Esparza Pamplona",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Cee",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Sopuerta",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Dumbria",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Zubiri",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "Franco Belga",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

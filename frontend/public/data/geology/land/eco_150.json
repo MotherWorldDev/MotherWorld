@@ -1,0 +1,224 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_150",
+  "regionName": "Queensland tropical rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.035092+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 93.7663093787925,
+      "dominantClass": {
+        "code": "pa",
+        "label": "Acid plutonic rocks",
+        "areaKm2": 9003.195263025642,
+        "percent": 28.083167389705487
+      },
+      "classes": [
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 9003.195263025642,
+          "percent": 28.083167389705487
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 5939.188316394839,
+          "percent": 18.52578054518913
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 5836.701783136551,
+          "percent": 18.206099989053342
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 5137.183189698258,
+          "percent": 16.024130457367647
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 3202.219032645492,
+          "percent": 9.988504134926703
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2940.5573870918206,
+          "percent": 9.172317483757698
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2131.3216792979783,
+          "percentOfRegion": 6.233690621207566
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 71.0,
+      "p10MwM2": 71.0,
+      "p90MwM2": 71.0,
+      "maxMwM2": 71.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 2,
+          "percent": 100.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 8,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 22.22222222222222
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Lead",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        }
+      ],
+      "sites": [
+        {
+          "name": "Coopooro and Wairamba Creeks",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Heberton Tinfield",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Tin",
+            "Titanium",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Byfieldzirconium",
+          "depositType": "PLACER, MARINE",
+          "commodities": [
+            "Zirconium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,853 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_25055",
+  "regionName": "North American Pacific Fijordland",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.139759+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 12.803390469506551,
+        "medianAgeMa": 13.442828178405762,
+        "p10AgeMa": 2.385798692703247,
+        "p90AgeMa": 22.043624877929688,
+        "oldestAgeMa": 26.171899795532227,
+        "coveragePct": 63.69064831148434,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 86.39391665185839,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 13.606083348141603,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 58.45361500478239,
+          "medianMmYr": 58.04846954345703,
+          "p10MmYr": 55.87447738647461,
+          "p90MmYr": 61.735408782958984,
+          "coveragePct": 63.69064831148434
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 291.58769353000196
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 4,
+        "confirmedOrInferredActive": 2,
+        "inactiveCount": 2,
+        "medianDepthM": 1850.0,
+        "maxReportedTemperatureC": 311.0,
+        "tectonicSettings": [
+          {
+            "label": "mid-ocean ridge",
+            "count": 4
+          }
+        ],
+        "fields": [
+          {
+            "name": "Dellwood Seamount",
+            "activity": "inactive",
+            "depthM": 800.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1974
+          },
+          {
+            "name": "Explorer Deep",
+            "activity": "inactive",
+            "depthM": 3200.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1969
+          },
+          {
+            "name": "Magic Mountain",
+            "activity": "active, confirmed",
+            "depthM": 1850.0,
+            "maxTemperatureC": 311.0,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 1984
+          },
+          {
+            "name": "Magic Mountain, 3-km south",
+            "activity": "active, inferred",
+            "depthM": 1850.0,
+            "maxTemperatureC": null,
+            "tectonicSetting": "mid-ocean ridge",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2002
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 22,
+        "intersectionLengthKm": 1149.6978851832994,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 278.0163847361288
+          },
+          {
+            "name": "Chatham Strait section",
+            "kinematics": "Reverse-Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 221.46692443103578
+          },
+          {
+            "name": null,
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 103.08941474405782
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 60.17396937207052
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 53.14402824779073
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 45.536111696296715
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.51246628603058
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 38.22194473060878
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.727416806526854
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.82294373003214
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.802772354910175
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.857661979162653
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.309537204424124
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.92037559111096
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.382822943675897
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.856441083727532
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.435024111159024
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.488472533706263
+          },
+          {
+            "name": null,
+            "kinematics": "Spreading_Ridge",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.583447503256995
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 10.785701651917163
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.8963121452473555
+          },
+          {
+            "name": "Chilkat River section",
+            "kinematics": "Strike-Slip",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.6677113004225304
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 335,
+      "medianMwM2": 95.0,
+      "p10MwM2": 25.14,
+      "p90MwM2": 360.4000000000003,
+      "maxMwM2": 739.954,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 42,
+          "percent": 12.53731343283582
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 39,
+          "percent": 11.641791044776118
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 43,
+          "percent": 12.835820895522387
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 58,
+          "percent": 17.313432835820898
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 51,
+          "percent": 15.223880597014924
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 21,
+          "percent": 6.26865671641791
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 33,
+          "percent": 9.850746268656717
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 48,
+          "percent": 14.328358208955224
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 172,
+      "commodityCount": 32,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 65,
+          "sharePct": 19.938650306748464
+        },
+        {
+          "label": "Gold",
+          "count": 52,
+          "sharePct": 15.950920245398773
+        },
+        {
+          "label": "Silver",
+          "count": 26,
+          "sharePct": 7.975460122699387
+        },
+        {
+          "label": "Zinc",
+          "count": 26,
+          "sharePct": 7.975460122699387
+        },
+        {
+          "label": "Lead",
+          "count": 22,
+          "sharePct": 6.748466257668712
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 21,
+          "sharePct": 6.441717791411043
+        },
+        {
+          "label": "Iron",
+          "count": 15,
+          "sharePct": 4.601226993865031
+        },
+        {
+          "label": "Stone",
+          "count": 14,
+          "sharePct": 4.294478527607362
+        },
+        {
+          "label": "Nickel",
+          "count": 10,
+          "sharePct": 3.067484662576687
+        },
+        {
+          "label": "Molybdenum",
+          "count": 9,
+          "sharePct": 2.7607361963190185
+        },
+        {
+          "label": "Antimony",
+          "count": 6,
+          "sharePct": 1.8404907975460123
+        },
+        {
+          "label": "Dimension",
+          "count": 6,
+          "sharePct": 1.8404907975460123
+        },
+        {
+          "label": "Chromium",
+          "count": 5,
+          "sharePct": 1.5337423312883436
+        },
+        {
+          "label": "General",
+          "count": 5,
+          "sharePct": 1.5337423312883436
+        },
+        {
+          "label": "Limestone",
+          "count": 5,
+          "sharePct": 1.5337423312883436
+        },
+        {
+          "label": "Strontium",
+          "count": 4,
+          "sharePct": 1.2269938650306749
+        },
+        {
+          "label": "Uranium",
+          "count": 4,
+          "sharePct": 1.2269938650306749
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 4,
+          "sharePct": 1.2269938650306749
+        },
+        {
+          "label": "Mica",
+          "count": 3,
+          "sharePct": 0.9202453987730062
+        },
+        {
+          "label": "Platinum",
+          "count": 3,
+          "sharePct": 0.9202453987730062
+        },
+        {
+          "label": "Calcium",
+          "count": 3,
+          "sharePct": 0.9202453987730062
+        },
+        {
+          "label": "Arsenic",
+          "count": 2,
+          "sharePct": 0.6134969325153374
+        },
+        {
+          "label": "Cobalt",
+          "count": 2,
+          "sharePct": 0.6134969325153374
+        },
+        {
+          "label": "PGE",
+          "count": 2,
+          "sharePct": 0.6134969325153374
+        },
+        {
+          "label": "Thorium",
+          "count": 2,
+          "sharePct": 0.6134969325153374
+        },
+        {
+          "label": "Garnet",
+          "count": 2,
+          "sharePct": 0.6134969325153374
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 0.6134969325153374
+        },
+        {
+          "label": "Marble",
+          "count": 2,
+          "sharePct": 0.6134969325153374
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 0.3067484662576687
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 0.3067484662576687
+        }
+      ],
+      "sites": [
+        {
+          "name": "Slow Boat",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Lime Point Barite",
+          "depositType": "Replacement",
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Alaska Tidewater Co.",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Gould Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Unnamed Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Wood Cove Occurrence",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Forrester Point Occurence",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Lakeside Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Lillie Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Howard Bay Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Lucky Four",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Typhoon",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Goldstream",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Moonshine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Unidentified Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Last Chance Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Hyder Mica Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mica"
+          ]
+        },
+        {
+          "name": "Bay View",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sanford",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Dall",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed (near Driest Point)",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed (southeast of Driest Point)",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Unnamed (on Ham Island)",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Unnamed (near Canoe Cove)",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Percy Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Stebbins Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Unnamed (Francis Island)",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Bismuth",
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Smith prospect",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unnamed (northeast side of Willoughby Island)",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Cobalt",
+            "Copper"
+          ]
+        },
+        {
+          "name": "Chicagof Prosperity Gold Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "McKallick Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sealion Cove Copper-Molybdenum Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Siginaka Islands Copper Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Kelp Bay, Portage Arm Copper Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Kelp Bay, the Basin Copper-Nickel Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Boulder Creek Placer",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

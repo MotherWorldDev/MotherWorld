@@ -1,0 +1,213 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20205",
+  "regionName": "Bassian",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.849375+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 60.0850798713049,
+        "medianAgeMa": 74.67607116699219,
+        "p10AgeMa": 31.61375617980957,
+        "p90AgeMa": 89.73457336425781,
+        "oldestAgeMa": 91.51300048828125,
+        "coveragePct": 28.09745735695468,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 47.06835677482624,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 52.931643225173744,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 40.47884337337865,
+          "medianMmYr": 37.47011947631836,
+          "p10MmYr": 30.88433837890625,
+          "p90MmYr": 61.75859069824219,
+          "coveragePct": 28.09745735695468
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 49.570053517188,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Selwyn Fault",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 49.570053517188
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 41,
+      "medianMwM2": 56.0,
+      "p10MwM2": 53.0,
+      "p90MwM2": 67.0,
+      "maxMwM2": 93.9,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 28,
+          "percent": 68.29268292682927
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 12,
+          "percent": 29.268292682926827
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 2.4390243902439024
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Iridium",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Osmium",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Spero River",
+          "depositType": "Placer",
+          "commodities": [
+            "Iridium",
+            "Osmium"
+          ]
+        },
+        {
+          "name": "Bell Bay",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

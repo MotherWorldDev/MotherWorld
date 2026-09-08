@@ -1,0 +1,588 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_187",
+  "regionName": "Mitchell Grass Downs",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.043627+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99999999999976,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 235220.6075893309,
+        "percent": 49.83703906914701
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 235220.6075893309,
+          "percent": 49.83703906914701
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 123517.77813857596,
+          "percent": 26.17015744459651
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 58123.048052617305,
+          "percent": 12.31473996391286
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 33184.17723084257,
+          "percent": 7.030851395547592
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 9769.658176354076,
+          "percent": 2.0699327376843915
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 5745.943769664727,
+          "percent": 1.2174138442744655
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 5352.511234344169,
+          "percent": 1.1340558730712078
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1065.775358737551,
+          "percent": 0.22580967176596428
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 75,
+      "medianMwM2": 82.06,
+      "p10MwM2": 66.9,
+      "p90MwM2": 87.8,
+      "maxMwM2": 98.2,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 4.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 20,
+          "percent": 26.666666666666668
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 52,
+          "percent": 69.33333333333334
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 65,
+      "commodityCount": 23,
+      "commodities": [
+        {
+          "label": "Uranium",
+          "count": 14,
+          "sharePct": 11.475409836065573
+        },
+        {
+          "label": "Copper",
+          "count": 14,
+          "sharePct": 11.475409836065573
+        },
+        {
+          "label": "Gold",
+          "count": 14,
+          "sharePct": 11.475409836065573
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 10,
+          "sharePct": 8.19672131147541
+        },
+        {
+          "label": "Aluminum",
+          "count": 10,
+          "sharePct": 8.19672131147541
+        },
+        {
+          "label": "Zinc",
+          "count": 10,
+          "sharePct": 8.19672131147541
+        },
+        {
+          "label": "Lead",
+          "count": 10,
+          "sharePct": 8.19672131147541
+        },
+        {
+          "label": "Silver",
+          "count": 10,
+          "sharePct": 8.19672131147541
+        },
+        {
+          "label": "REE",
+          "count": 4,
+          "sharePct": 3.278688524590164
+        },
+        {
+          "label": "Metal",
+          "count": 4,
+          "sharePct": 3.278688524590164
+        },
+        {
+          "label": "Titanium",
+          "count": 4,
+          "sharePct": 3.278688524590164
+        },
+        {
+          "label": "Cobalt",
+          "count": 3,
+          "sharePct": 2.459016393442623
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 2,
+          "sharePct": 1.639344262295082
+        },
+        {
+          "label": "Zirconium",
+          "count": 2,
+          "sharePct": 1.639344262295082
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 1.639344262295082
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 1.639344262295082
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 0.819672131147541
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 0.819672131147541
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 0.819672131147541
+        },
+        {
+          "label": "Iridium",
+          "count": 1,
+          "sharePct": 0.819672131147541
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 0.819672131147541
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.819672131147541
+        },
+        {
+          "label": "Smelter",
+          "count": 1,
+          "sharePct": 0.819672131147541
+        }
+      ],
+      "sites": [
+        {
+          "name": "Anderson's Lode",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Bikini Prospect",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Burke River Area",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Carlton Hills",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Duke",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Easter Egg - Midnight",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Elaine Mary",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Mary Kathleen",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates",
+            "REE",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Skal",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Thorntonia Area",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Valhalla",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Granite Creek Mine",
+          "depositType": null,
+          "commodities": [
+            "Tin"
+          ]
+        },
+        {
+          "name": "North Stradbroke Amc Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "North Stradbroke Crl Mine",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "North Weipa",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Pera Head",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "South Weipa",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Tamborine Mountain",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Turtle Head",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Weipa-Andoom",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Wenlock River",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Weipa",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Weipa",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Julia Creek",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Bow River",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Copper",
+            "Gold",
+            "Iridium",
+            "Nickel",
+            "Palladium",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hilton Zn - Pb - Ag Prospect",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Mount Isa Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Islands of Queensland, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Coast of Queensland, Australia",
+          "depositType": "Placer",
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Weipa Mine",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Cement Hill Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Cracow Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Croydon Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Far Fanning Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mt. Morgans Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Ravenswood Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Wirralie Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Starra Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Mt. Isa Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Greenvale Mine",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

@@ -1,0 +1,365 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20104",
+  "regionName": "South India and Sri Lanka",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.263033+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 109.94417841323646,
+        "medianAgeMa": 113.05156707763672,
+        "p10AgeMa": 95.08300018310547,
+        "p90AgeMa": 119.44222259521484,
+        "oldestAgeMa": 126.8205795288086,
+        "coveragePct": 79.76481001386321,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 17.86127332589525,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 82.13872667410476,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 45.62015512773122,
+          "medianMmYr": 53.3215446472168,
+          "p10MmYr": 27.578073501586914,
+          "p90MmYr": 55.67255783081055,
+          "coveragePct": 79.76481001386321
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 13,
+      "medianMwM2": 53.0,
+      "p10MwM2": 42.0,
+      "p90MwM2": 229.40000000000015,
+      "maxMwM2": 271.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 7.6923076923076925
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 9,
+          "percent": 69.23076923076923
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 7.6923076923076925
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 2,
+          "percent": 15.384615384615385
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 18,
+      "commodityCount": 13,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 8,
+          "sharePct": 21.052631578947366
+        },
+        {
+          "label": "Titanium",
+          "count": 6,
+          "sharePct": 15.789473684210526
+        },
+        {
+          "label": "Zirconium",
+          "count": 5,
+          "sharePct": 13.157894736842104
+        },
+        {
+          "label": "Gold",
+          "count": 5,
+          "sharePct": 13.157894736842104
+        },
+        {
+          "label": "Molybdenum",
+          "count": 3,
+          "sharePct": 7.894736842105263
+        },
+        {
+          "label": "Garnet",
+          "count": 2,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "REE",
+          "count": 2,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 5.263157894736842
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 2.631578947368421
+        },
+        {
+          "label": "Kyanite",
+          "count": 1,
+          "sharePct": 2.631578947368421
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 2.631578947368421
+        },
+        {
+          "label": "Thorium",
+          "count": 1,
+          "sharePct": 2.631578947368421
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 2.631578947368421
+        }
+      ],
+      "sites": [
+        {
+          "name": "Tanjore Beach Deposits",
+          "depositType": null,
+          "commodities": [
+            "Garnet",
+            "Iron",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Rs",
+          "depositType": null,
+          "commodities": [
+            "Garnet",
+            "Kyanite",
+            "Silica",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Chavara Kmml",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Manavalakurichi",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Lipuram Deposit",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Chavara Irel",
+          "depositType": null,
+          "commodities": [
+            "REE",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Canariaco",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cerro Corona",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "El Galeno",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Rio Blanco",
+          "depositType": null,
+          "commodities": []
+        },
+        {
+          "name": "La Granja",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "La Vega",
+          "depositType": null,
+          "commodities": []
+        },
+        {
+          "name": "Laguna Chamis",
+          "depositType": null,
+          "commodities": []
+        },
+        {
+          "name": "Magistral",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Michiquillay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Minas Conga",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Paramo",
+          "depositType": null,
+          "commodities": []
+        },
+        {
+          "name": "Tantahuatay",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

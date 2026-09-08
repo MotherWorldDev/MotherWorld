@@ -1,0 +1,686 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_356",
+  "regionName": "Great Basin montane forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:31.073750+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 6,
+        "intersectionLengthKm": 27.398743450849928,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Ione Valley fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.6242483129796295
+          },
+          {
+            "name": "Southwest Reese River Valley fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.285138351169549
+          },
+          {
+            "name": "Western Toiyabe Range fault zone",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.475393580074509
+          },
+          {
+            "name": "Eastern Monitor Range fault zone",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 5.006817428197238
+          },
+          {
+            "name": "Schell Creek Range fault system",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.591057186887801
+          },
+          {
+            "name": "Smith Valley fault",
+            "kinematics": "Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.4160885915411969
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 98.90992468069855,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 3522.876064133164,
+        "percent": 45.759591119086565
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3522.876064133164,
+          "percent": 45.759591119086565
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1702.3956139591826,
+          "percent": 22.112877603279173
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 1111.0448858301495,
+          "percent": 14.431662870050394
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 632.4604720061305,
+          "percent": 8.215200328117776
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 359.0364082099159,
+          "percent": 4.663621125880794
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 323.1649477132253,
+          "percent": 4.1976770122388265
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 26.565655600875093,
+          "percent": 0.34506849403049716
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 21.117540158776627,
+          "percent": 0.2743014473159683
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 84.84609623755195,
+          "percentOfRegion": 1.0900753193012211
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 3,
+      "medianMwM2": 85.0,
+      "p10MwM2": 81.8,
+      "p90MwM2": 85.0,
+      "maxMwM2": 85.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3,
+          "percent": 100.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 742,
+      "commodityCount": 42,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 490,
+          "sharePct": 30.303030303030305
+        },
+        {
+          "label": "Silver",
+          "count": 445,
+          "sharePct": 27.52009894867038
+        },
+        {
+          "label": "Lead",
+          "count": 156,
+          "sharePct": 9.647495361781075
+        },
+        {
+          "label": "Copper",
+          "count": 142,
+          "sharePct": 8.781694495980211
+        },
+        {
+          "label": "Zinc",
+          "count": 71,
+          "sharePct": 4.390847247990106
+        },
+        {
+          "label": "Mercury",
+          "count": 46,
+          "sharePct": 2.8447742733457018
+        },
+        {
+          "label": "Antimony",
+          "count": 40,
+          "sharePct": 2.473716759431045
+        },
+        {
+          "label": "Tungsten",
+          "count": 36,
+          "sharePct": 2.2263450834879404
+        },
+        {
+          "label": "Uranium",
+          "count": 31,
+          "sharePct": 1.91713048855906
+        },
+        {
+          "label": "Molybdenum",
+          "count": 22,
+          "sharePct": 1.3605442176870748
+        },
+        {
+          "label": "Iron",
+          "count": 21,
+          "sharePct": 1.2987012987012987
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 20,
+          "sharePct": 1.2368583797155226
+        },
+        {
+          "label": "Manganese",
+          "count": 16,
+          "sharePct": 0.9894867037724181
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 15,
+          "sharePct": 0.927643784786642
+        },
+        {
+          "label": "Gemstone",
+          "count": 10,
+          "sharePct": 0.6184291898577613
+        },
+        {
+          "label": "Arsenic",
+          "count": 7,
+          "sharePct": 0.4329004329004329
+        },
+        {
+          "label": "Selenium",
+          "count": 5,
+          "sharePct": 0.30921459492888065
+        },
+        {
+          "label": "Bismuth",
+          "count": 5,
+          "sharePct": 0.30921459492888065
+        },
+        {
+          "label": "REE",
+          "count": 4,
+          "sharePct": 0.24737167594310452
+        },
+        {
+          "label": "Kyanite",
+          "count": 3,
+          "sharePct": 0.1855287569573284
+        },
+        {
+          "label": "Garnet",
+          "count": 3,
+          "sharePct": 0.1855287569573284
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 0.1855287569573284
+        },
+        {
+          "label": "Beryllium",
+          "count": 2,
+          "sharePct": 0.12368583797155226
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 0.12368583797155226
+        },
+        {
+          "label": "Vanadium",
+          "count": 2,
+          "sharePct": 0.12368583797155226
+        },
+        {
+          "label": "Volcanic Materials",
+          "count": 2,
+          "sharePct": 0.12368583797155226
+        },
+        {
+          "label": "Construction",
+          "count": 2,
+          "sharePct": 0.12368583797155226
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 2,
+          "sharePct": 0.12368583797155226
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 0.06184291898577613
+        },
+        {
+          "label": "Cadmium",
+          "count": 1,
+          "sharePct": 0.06184291898577613
+        }
+      ],
+      "sites": [
+        {
+          "name": "Washoe Claims",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Overlay No 9",
+          "depositType": null,
+          "commodities": [
+            "Silver"
+          ]
+        },
+        {
+          "name": "California & North Comstock Cons.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Silverado - Kentuck",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Rattler",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Frederick",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "New Bodie",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Fifty-One Mining Claims",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Southern Cons.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "New Enterprise Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Blizzard Extension",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Taylor",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Defiance Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Hickman Canyon Mining and Dev. Co. Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cowan",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Redbird Nos 3 and 4",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Montague Mine Star",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Cb Group",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Black Horse",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Monte Cristo",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bodie Placer #99 Ceres #120, and Uranus Placer #100",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Placer Mining Area",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Tailings Pond",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Johnson, Mars, Palfrey and Russian",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unknown",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Claw Group",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Taylor Deposit",
+          "depositType": null,
+          "commodities": [
+            "Kyanite"
+          ]
+        },
+        {
+          "name": "Eva Bell",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Unidentified Prospect Symbol",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Bull Domingo",
+          "depositType": "Replacement",
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Warren Group",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Standard Hill",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Hornspoon Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Iron"
+          ]
+        },
+        {
+          "name": "Griffith Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead"
+          ]
+        },
+        {
+          "name": "Wide West, Johnson, Chihuahua",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Ruby Hill  Mines",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Greco-American Group",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Gold Crown Mine",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Manganese",
+            "Silver"
+          ]
+        },
+        {
+          "name": "May Queen Group",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Lexington Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Tungsten"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

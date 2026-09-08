@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_418",
+  "regionName": "Kalaallit Nunaat High Arctic tundra",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.108943+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 63.90218942035738,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 35696.064978406306,
+        "percent": 37.43187758895058
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 35696.064978406306,
+          "percent": 37.43187758895058
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 32846.74220773496,
+          "percent": 34.44399919877792
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 12414.601328189965,
+          "percent": 13.018293123164781
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 5616.087145134716,
+          "percent": 5.889183770612553
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 4843.408811634628,
+          "percent": 5.078931973594985
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3945.8378695169818,
+          "percent": 4.137714344899185
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 474.30595754298946,
+          "percentOfRegion": 0.3178305111429938
+        },
+        {
+          "code": "ig",
+          "label": "Ice and glaciers",
+          "areaKm2": 33840.41708845506,
+          "percentOfRegion": 22.676327145945514
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 19554.88988263589,
+          "percentOfRegion": 13.103652922554327
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 4,
+      "medianMwM2": 46.0,
+      "p10MwM2": 35.6,
+      "p90MwM2": 73.9,
+      "maxMwM2": 82.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 50.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 1,
+          "percent": 25.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

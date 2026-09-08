@@ -1,0 +1,632 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_330",
+  "regionName": "Appalachian Piedmont forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.084867+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000004,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 111569.79454664917,
+        "percent": 67.14558444579129
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 111569.79454664917,
+          "percent": 67.14558444579129
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 31526.977904950374,
+          "percent": 18.973749712807187
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 12361.704886838568,
+          "percent": 7.439593330308761
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 6414.503286150184,
+          "percent": 3.8604137780133474
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 2461.5637476530064,
+          "percent": 1.4814326508204316
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1707.7873873454043,
+          "percent": 1.0277905655236512
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 118.6979902145524,
+          "percent": 0.07143551673535195
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 55,
+      "medianMwM2": 46.0,
+      "p10MwM2": 26.4,
+      "p90MwM2": 61.0,
+      "maxMwM2": 68.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 15,
+          "percent": 27.27272727272727
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 33,
+          "percent": 60.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 7,
+          "percent": 12.727272727272727
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 6512,
+      "commodityCount": 88,
+      "commodities": [
+        {
+          "label": "Gold",
+          "count": 1897,
+          "sharePct": 19.688635184224182
+        },
+        {
+          "label": "Mica",
+          "count": 1202,
+          "sharePct": 12.475350285417749
+        },
+        {
+          "label": "Iron",
+          "count": 539,
+          "sharePct": 5.5941878567721846
+        },
+        {
+          "label": "Copper",
+          "count": 503,
+          "sharePct": 5.220550077841204
+        },
+        {
+          "label": "Construction",
+          "count": 481,
+          "sharePct": 4.992215879605605
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 481,
+          "sharePct": 4.992215879605605
+        },
+        {
+          "label": "Stone",
+          "count": 462,
+          "sharePct": 4.795018162947587
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 377,
+          "sharePct": 3.9128178515827714
+        },
+        {
+          "label": "Manganese",
+          "count": 294,
+          "sharePct": 3.05137519460301
+        },
+        {
+          "label": "Clay",
+          "count": 275,
+          "sharePct": 2.8541774779449924
+        },
+        {
+          "label": "Granite",
+          "count": 249,
+          "sharePct": 2.584327970939284
+        },
+        {
+          "label": "Feldspar",
+          "count": 229,
+          "sharePct": 2.376751427088739
+        },
+        {
+          "label": "Lead",
+          "count": 226,
+          "sharePct": 2.3456149455111572
+        },
+        {
+          "label": "Tin",
+          "count": 214,
+          "sharePct": 2.22106901920083
+        },
+        {
+          "label": "Zinc",
+          "count": 185,
+          "sharePct": 1.9200830306175403
+        },
+        {
+          "label": "Silver",
+          "count": 172,
+          "sharePct": 1.7851582771146859
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 133,
+          "sharePct": 1.3803840166061236
+        },
+        {
+          "label": "Dimension",
+          "count": 115,
+          "sharePct": 1.1935651271406331
+        },
+        {
+          "label": "Sulfur",
+          "count": 114,
+          "sharePct": 1.183186299948106
+        },
+        {
+          "label": "Vermiculite",
+          "count": 114,
+          "sharePct": 1.183186299948106
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 107,
+          "sharePct": 1.110534509600415
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 99,
+          "sharePct": 1.027503892060197
+        },
+        {
+          "label": "Kyanite",
+          "count": 95,
+          "sharePct": 0.9859885832900882
+        },
+        {
+          "label": "Quartz",
+          "count": 94,
+          "sharePct": 0.975609756097561
+        },
+        {
+          "label": "Lithium",
+          "count": 86,
+          "sharePct": 0.8925791385573429
+        },
+        {
+          "label": "Graphite",
+          "count": 84,
+          "sharePct": 0.8718214841722886
+        },
+        {
+          "label": "Arsenic",
+          "count": 69,
+          "sharePct": 0.7161390762843799
+        },
+        {
+          "label": "Titanium",
+          "count": 60,
+          "sharePct": 0.6227296315516346
+        },
+        {
+          "label": "Thorium",
+          "count": 44,
+          "sharePct": 0.4566683964711988
+        },
+        {
+          "label": "Beryllium",
+          "count": 42,
+          "sharePct": 0.4359107420861443
+        }
+      ],
+      "sites": [
+        {
+          "name": "Hatchet Creek Copper",
+          "depositType": null,
+          "commodities": [
+            "Bismuth",
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Boy Scout",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Williams Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Bessemer City",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Feldspar",
+            "Lithium",
+            "Mica"
+          ]
+        },
+        {
+          "name": "Kings Mountain",
+          "depositType": null,
+          "commodities": [
+            "Beryllium",
+            "Crushed/Broken",
+            "Feldspar",
+            "Lithium",
+            "Mica",
+            "Niobium (Columbium)",
+            "Stone",
+            "Tantalum",
+            "Tin"
+          ]
+        },
+        {
+          "name": "Copper Prospect",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Pine Hill Mine",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sanders Prospect",
+          "depositType": null,
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Robbins Mine",
+          "depositType": "Hot Spring",
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Mcconnell Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mica",
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Bates Mine",
+          "depositType": null,
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Jackson Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mica",
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "McKennis Pit",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Mcduffy Pit",
+          "depositType": null,
+          "commodities": [
+            "Kaolin"
+          ]
+        },
+        {
+          "name": "Hallison Prospect",
+          "depositType": null,
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Reaves Mine",
+          "depositType": null,
+          "commodities": [
+            "Mica",
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Ruff Prospect",
+          "depositType": null,
+          "commodities": [
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Jones Prospect",
+          "depositType": null,
+          "commodities": [
+            "Mica",
+            "Talc-Soapstone"
+          ]
+        },
+        {
+          "name": "Firmstone Magnetite Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Pig Iron"
+          ]
+        },
+        {
+          "name": "Hancock Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Phillips Mine",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver"
+          ]
+        },
+        {
+          "name": "W. H. Purvis Prospect",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cassana Kid Prospect",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Gilmore-Hart Prospect",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Graham Prospect",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Barringer Phillips Prospect",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Pearman Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cross Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Hepler and Claude Hepler Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Hunt Mine",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Ida Mine",
+          "depositType": "Hydrothermal Vein And Replacement",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Silver Hill Mine",
+          "depositType": "Stratabound Exhalative",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Whitney Mine",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Eva Furr Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Emmons Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Fisher Hill Mine",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Gardner Hill Mine",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Beard Mine",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Deep River Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        },
+        {
+          "name": "Pucket Mine",
+          "depositType": "Hydrothermal Vein",
+          "commodities": [
+            "Copper",
+            "Gold"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

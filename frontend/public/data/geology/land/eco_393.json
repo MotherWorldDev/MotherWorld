@@ -1,0 +1,633 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_393",
+  "regionName": "Mid-Atlantic US coastal savannas",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.102023+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 90.48755952459544,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 56624.218561793175,
+        "percent": 79.81981911468446
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 56624.218561793175,
+          "percent": 79.81981911468446
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 6700.693883494621,
+          "percent": 9.445572712667836
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6641.429896538615,
+          "percent": 9.362031767839058
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 677.9836199322548,
+          "percent": 0.9557134964547896
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 273.9688346116108,
+          "percent": 0.38619769733149245
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 21.753915636880674,
+          "percent": 0.03066521102232997
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 7457.522274228757,
+          "percentOfRegion": 9.512440475404599
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 94,
+      "medianMwM2": 54.0,
+      "p10MwM2": 44.0,
+      "p90MwM2": 66.0,
+      "maxMwM2": 102.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 4,
+          "percent": 4.25531914893617
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 65,
+          "percent": 69.14893617021278
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 22,
+          "percent": 23.404255319148938
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 2.127659574468085
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 1,
+          "percent": 1.0638297872340425
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 652,
+      "commodityCount": 36,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 450,
+          "sharePct": 36.674816625916876
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 450,
+          "sharePct": 36.674816625916876
+        },
+        {
+          "label": "Clay",
+          "count": 49,
+          "sharePct": 3.9934800325998365
+        },
+        {
+          "label": "Limestone",
+          "count": 38,
+          "sharePct": 3.0969845150774247
+        },
+        {
+          "label": "Iron",
+          "count": 37,
+          "sharePct": 3.015484922575387
+        },
+        {
+          "label": "General",
+          "count": 36,
+          "sharePct": 2.93398533007335
+        },
+        {
+          "label": "Stone",
+          "count": 25,
+          "sharePct": 2.037489812550937
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 22,
+          "sharePct": 1.7929910350448246
+        },
+        {
+          "label": "Sand",
+          "count": 21,
+          "sharePct": 1.7114914425427872
+        },
+        {
+          "label": "Titanium",
+          "count": 19,
+          "sharePct": 1.5484922575387123
+        },
+        {
+          "label": "Metal",
+          "count": 10,
+          "sharePct": 0.8149959250203749
+        },
+        {
+          "label": "Calcium",
+          "count": 8,
+          "sharePct": 0.6519967400162999
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 8,
+          "sharePct": 0.6519967400162999
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 7,
+          "sharePct": 0.5704971475142625
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 6,
+          "sharePct": 0.4889975550122249
+        },
+        {
+          "label": "Zirconium",
+          "count": 5,
+          "sharePct": 0.40749796251018744
+        },
+        {
+          "label": "Uranium",
+          "count": 4,
+          "sharePct": 0.32599837000814996
+        },
+        {
+          "label": "Cement Rock",
+          "count": 3,
+          "sharePct": 0.24449877750611246
+        },
+        {
+          "label": "Aluminum",
+          "count": 3,
+          "sharePct": 0.24449877750611246
+        },
+        {
+          "label": "Chromium",
+          "count": 3,
+          "sharePct": 0.24449877750611246
+        },
+        {
+          "label": "Tungsten",
+          "count": 2,
+          "sharePct": 0.16299918500407498
+        },
+        {
+          "label": "Thorium",
+          "count": 2,
+          "sharePct": 0.16299918500407498
+        },
+        {
+          "label": "Silica",
+          "count": 2,
+          "sharePct": 0.16299918500407498
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 0.16299918500407498
+        },
+        {
+          "label": "Magnesite",
+          "count": 2,
+          "sharePct": 0.16299918500407498
+        },
+        {
+          "label": "Mica",
+          "count": 2,
+          "sharePct": 0.16299918500407498
+        },
+        {
+          "label": "Dimension",
+          "count": 2,
+          "sharePct": 0.16299918500407498
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.08149959250203749
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 1,
+          "sharePct": 0.08149959250203749
+        },
+        {
+          "label": "Manganese",
+          "count": 1,
+          "sharePct": 0.08149959250203749
+        }
+      ],
+      "sites": [
+        {
+          "name": "Barber's Quarry",
+          "depositType": null,
+          "commodities": [
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Hoffman's Quarry",
+          "depositType": null,
+          "commodities": [
+            "Tungsten"
+          ]
+        },
+        {
+          "name": "Aurora Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Easton Clay Pit",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Clay Prospect Ene of Kinsale",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Clay Prospect Ne of Kinsale",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Clay Prospect Ne of Kinsale",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unnamed Gravel Pit 2.5 Mi W of Brentland",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Gravel Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Richland",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Morehead",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Chowan",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Allied-Kennecott Titanium Corp.",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "New Hanover",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Topsail Island",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Noil Township",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Perquimans",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Albermarle Sound",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Ravenels Quadrangle",
+          "depositType": "Placer , Modern , Beach",
+          "commodities": [
+            "Iron",
+            "Thorium",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Santee Quadrangle",
+          "depositType": "Placer , Modern , Beach",
+          "commodities": [
+            "Iron",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Olin Quadrangle",
+          "depositType": "Placer , Modern , Beach",
+          "commodities": [
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Myrtle Beach",
+          "depositType": "Placer , Modern , Beach",
+          "commodities": [
+            "Iron",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Owens-Illinois",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Staytons Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "William M. Killen Sand Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Barber Sand and Gravel Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "George Nashold Sand and Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Tarburton Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Clough and Caulk Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Delaware Sand and Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Constructors Sand and Gravel Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Woodlawn Sand & Gravel Pit & Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Whittington Sand & Gravel Pit & Mil",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Sussex Sand and Gravel Pit and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Chase Masonry Sand Plant",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "William Spiegel & Son Quarry & Plnt",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

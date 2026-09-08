@@ -1,0 +1,300 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_790",
+  "regionName": "Cyprus Mediterranean forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.302217+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 6,
+        "intersectionLengthKm": 148.0031672842176,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.31200909214705
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.76009644012566
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.334308114293785
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 13.613159657142962
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.951014153793123
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 11.032579826715018
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 73.02046565470815,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 5301.8119932956,
+        "percent": 78.23515216570527
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 5301.8119932956,
+          "percent": 78.23515216570527
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 1474.952474505451,
+          "percent": 21.764847834294716
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2503.87268924796,
+          "percentOfRegion": 26.979534345291924
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 97,
+      "medianMwM2": 22.4,
+      "p10MwM2": 10.180000000000001,
+      "p90MwM2": 38.20000000000002,
+      "maxMwM2": 46.1,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 87,
+          "percent": 89.69072164948454
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 10,
+          "percent": 10.309278350515463
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 11,
+      "commodityCount": 6,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 6,
+          "sharePct": 37.5
+        },
+        {
+          "label": "Sulfur",
+          "count": 4,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Asbestos",
+          "count": 3,
+          "sharePct": 18.75
+        },
+        {
+          "label": "Sulfur-Pyrite",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Zinc",
+          "count": 1,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 6.25
+        }
+      ],
+      "sites": [
+        {
+          "name": "Hellenic Mining Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur-Pyrite"
+          ]
+        },
+        {
+          "name": "Cyprus Asbestos Mine",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Kalavassos",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Sha Shia Mine",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Kampia Area Mines",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Amiandos",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Ayios Nikolaos Mines",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Limni",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Cyprus Asbestos Mine",
+          "depositType": null,
+          "commodities": [
+            "Asbestos"
+          ]
+        },
+        {
+          "name": "Mathiatis Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Troulli Copper",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

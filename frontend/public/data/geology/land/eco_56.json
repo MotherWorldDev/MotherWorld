@@ -1,0 +1,145 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_56",
+  "regionName": "South Arabian fog woodlands, shrublands, and dune",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.144420+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 86.36111748806995,
+      "dominantClass": {
+        "code": "sc",
+        "label": "Carbonate sedimentary rocks",
+        "areaKm2": 7804.452119808452,
+        "percent": 46.30312556930171
+      },
+      "classes": [
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 7804.452119808452,
+          "percent": 46.30312556930171
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 4791.408851239741,
+          "percent": 28.427005802203904
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2273.215409818453,
+          "percent": 13.486786381806754
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 694.6004498227677,
+          "percent": 4.121003160107341
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 627.0297825522227,
+          "percent": 3.72011235529498
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 336.8058701080616,
+          "percent": 1.9982394992864991
+        },
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 327.61775646005134,
+          "percent": 1.9437272319988275
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 2661.905586108248,
+          "percentOfRegion": 13.638882511930026
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 2,
+      "medianMwM2": 47.0,
+      "p10MwM2": 47.0,
+      "p90MwM2": 47.0,
+      "maxMwM2": 47.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 2,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

@@ -1,0 +1,587 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_549",
+  "regionName": "Tumbes-Piura dry forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:32.120681+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 8,
+        "intersectionLengthKm": 226.4074337034116,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "CELICA-MACARA-AMOTAPE FAULT SYSTEM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 84.73384647747606
+          },
+          {
+            "name": "CELICA-MACARA-AMOTAPE FAULT SYSTEM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 44.59765324323848
+          },
+          {
+            "name": "CELICA-MACARA-AMOTAPE FAULT SYSTEM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 33.279924565169814
+          },
+          {
+            "name": "PONCE-ENRIQUEZ_FAULT",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 29.474395198693507
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.7751720311083
+          },
+          {
+            "name": "CELICA-MACARA-AMOTAPE FAULT SYSTEM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 8.964117857674198
+          },
+          {
+            "name": "NARANJAL_FAULT",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 2.452975816926558
+          },
+          {
+            "name": "CELICA-MACARA-AMOTAPE FAULT SYSTEM",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 0.1293485131246576
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.51083653588046,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 14974.850346797442,
+        "percent": 36.74297014056239
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 14974.850346797442,
+          "percent": 36.74297014056239
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 9078.21720735776,
+          "percent": 22.274724358151733
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 6876.335853886136,
+          "percent": 16.872088675654158
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 4000.2712683891154,
+          "percent": 9.815246520978075
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 2517.7053865993466,
+          "percent": 6.17755581526308
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 1839.8789492147637,
+          "percent": 4.514410209628909
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 1468.4291901796569,
+          "percent": 3.6030042797616457
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 200.34193578990508,
+          "percentOfRegion": 0.4891634641194763
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 8,
+      "medianMwM2": 36.0,
+      "p10MwM2": 28.0,
+      "p90MwM2": 39.0,
+      "maxMwM2": 39.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 8,
+          "percent": 100.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 33,
+      "commodityCount": 19,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 11,
+          "sharePct": 17.1875
+        },
+        {
+          "label": "Silver",
+          "count": 10,
+          "sharePct": 15.625
+        },
+        {
+          "label": "Zinc",
+          "count": 7,
+          "sharePct": 10.9375
+        },
+        {
+          "label": "Lead",
+          "count": 6,
+          "sharePct": 9.375
+        },
+        {
+          "label": "Gold",
+          "count": 6,
+          "sharePct": 9.375
+        },
+        {
+          "label": "Clay",
+          "count": 4,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 4.6875
+        },
+        {
+          "label": "Molybdenum",
+          "count": 3,
+          "sharePct": 4.6875
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 2,
+          "sharePct": 3.125
+        },
+        {
+          "label": "Antimony",
+          "count": 2,
+          "sharePct": 3.125
+        },
+        {
+          "label": "Manganese",
+          "count": 2,
+          "sharePct": 3.125
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 1.5625
+        },
+        {
+          "label": "Bismuth",
+          "count": 1,
+          "sharePct": 1.5625
+        },
+        {
+          "label": "Magnesite",
+          "count": 1,
+          "sharePct": 1.5625
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 1.5625
+        },
+        {
+          "label": "Travertine",
+          "count": 1,
+          "sharePct": 1.5625
+        },
+        {
+          "label": "Bentonite",
+          "count": 1,
+          "sharePct": 1.5625
+        },
+        {
+          "label": "Diatomite",
+          "count": 1,
+          "sharePct": 1.5625
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 1,
+          "sharePct": 1.5625
+        }
+      ],
+      "sites": [
+        {
+          "name": "Caprichosa",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Zapotal",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Piedras Gordas",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "San Sebastian, Mina",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Suyo",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Iron",
+            "Lead"
+          ]
+        },
+        {
+          "name": "Turmalina, Mina.",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Arsenic",
+            "Bismuth",
+            "Copper",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Salmueras De Ramon",
+          "depositType": null,
+          "commodities": [
+            "Magnesite"
+          ]
+        },
+        {
+          "name": "El Carmelo",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Campana",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "La Huaca",
+          "depositType": null,
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Unknown Name",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Santa Rosa",
+          "depositType": "Vein",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Ponce Enriquez",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Arenillas",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Balao",
+          "depositType": "Placer",
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Lilenes",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Naranjo",
+          "depositType": null,
+          "commodities": [
+            "Travertine"
+          ]
+        },
+        {
+          "name": "Santa Rosa",
+          "depositType": "Vein",
+          "commodities": [
+            "Antimony"
+          ]
+        },
+        {
+          "name": "Turmalina",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Tambo Grande",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Santa Teresita #4, Mina",
+          "depositType": "Manto",
+          "commodities": [
+            "Bentonite"
+          ]
+        },
+        {
+          "name": "Tambo Grande Iron 1",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Limon",
+          "depositType": "Stratiform",
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Sacachispa",
+          "depositType": "Vein",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tambo Grande",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Leon",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Tingo",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Cemsa",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Pasaje",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Tambo Grande",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Canariacu",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Molybdenum"
+          ]
+        },
+        {
+          "name": "Hualgayoc",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Sechura Desert Phosphate Deposits",
+          "depositType": "MARINE CHEMICAL SEDIMENT",
+          "commodities": [
+            "Diatomite",
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

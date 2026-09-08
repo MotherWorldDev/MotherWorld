@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_830",
+  "regionName": "Mesopotamian shrub desert",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.568762+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 6,
+        "intersectionLengthKm": 198.74665523680304,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 65.02169239353603
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.741207021730524
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.57526110277766
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral-Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 25.30638456004399
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.495472760717366
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.606637397997464
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 99.99929628602845,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 134527.1359645697,
+        "percent": 65.80137451639102
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 134527.1359645697,
+          "percent": 65.80137451639102
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 37326.91827276409,
+          "percent": 18.257747860295982
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 20159.988394701522,
+          "percent": 9.860872582281283
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 12430.221569557008,
+          "percent": 6.080005041031714
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 1.4387129757050947,
+          "percentOfRegion": 0.0007037139715801667
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 248,
+      "medianMwM2": 50.2,
+      "p10MwM2": 36.034,
+      "p90MwM2": 69.80540000000006,
+      "maxMwM2": 90.4392,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 40,
+          "percent": 16.129032258064516
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 144,
+          "percent": 58.06451612903226
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 48,
+          "percent": 19.35483870967742
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 16,
+          "percent": 6.451612903225806
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 25,
+      "commodityCount": 10,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 15,
+          "sharePct": 46.875
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 9.375
+        },
+        {
+          "label": "General",
+          "count": 3,
+          "sharePct": 9.375
+        },
+        {
+          "label": "Limestone",
+          "count": 3,
+          "sharePct": 9.375
+        },
+        {
+          "label": "Uranium",
+          "count": 2,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Sulfur",
+          "count": 2,
+          "sharePct": 6.25
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 3.125
+        },
+        {
+          "label": "Potassium",
+          "count": 1,
+          "sharePct": 3.125
+        },
+        {
+          "label": "Calcium",
+          "count": 1,
+          "sharePct": 3.125
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 3.125
+        }
+      ],
+      "sites": [
+        {
+          "name": "Timna Mine",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Makhtesh Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Nahal Zin Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Oron Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Dead Sea Works Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Be'Er Sheva' Calcite",
+          "depositType": "Unknown",
+          "commodities": [
+            "Calcium"
+          ]
+        },
+        {
+          "name": "Khneifiss",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "Fluorine-Fluorite",
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Arad Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Arad Negev Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Marbat",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Tarag El Hbari",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Ga'Ara 2",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Al Qaim Al Khaim",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Mishor Rotem Phos-Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Al Tamin",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Akashat Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Kneifess",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Fatha Makhul",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Beersheva",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Ga'Ara 1",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Kubaysah Kubaisa",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Baiji",
+          "depositType": null,
+          "commodities": [
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Hussayniya Husseiniat",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Beersheva",
+          "depositType": "CHEMICAL SEDIMENT, MARINE",
+          "commodities": [
+            "Phosphorus-Phosphates",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Akashat",
+          "depositType": "CHEMICAL SEDIMENT, MARINE",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

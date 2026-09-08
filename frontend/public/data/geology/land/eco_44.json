@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_44",
+  "regionName": "Guinean forest-savanna",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.115855+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 95.9203642655598,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 385786.14194462524,
+        "percent": 59.965613172126154
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 385786.14194462524,
+          "percent": 59.965613172126154
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 172557.52383420727,
+          "percent": 26.82190104606523
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 36040.86541127196,
+          "percent": 5.602100124040253
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 31354.984128476375,
+          "percent": 4.873738698307757
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 14811.786227665678,
+          "percent": 2.3023062436595128
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 2794.3119427029965,
+          "percent": 0.43434071580111794
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 22520.21692105118,
+          "percentOfRegion": 3.3576779962668653
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 4842.2287335403635,
+          "percentOfRegion": 0.7219577381735425
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 91,
+      "medianMwM2": 47.5,
+      "p10MwM2": 26.0,
+      "p90MwM2": 72.0,
+      "maxMwM2": 96.14,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 41,
+          "percent": 45.05494505494506
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 16,
+          "percent": 17.582417582417584
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 30,
+          "percent": 32.967032967032964
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 4,
+          "percent": 4.395604395604396
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 59,
+      "commodityCount": 19,
+      "commodities": [
+        {
+          "label": "Aluminum",
+          "count": 31,
+          "sharePct": 39.743589743589745
+        },
+        {
+          "label": "Manganese",
+          "count": 10,
+          "sharePct": 12.82051282051282
+        },
+        {
+          "label": "Iron",
+          "count": 7,
+          "sharePct": 8.974358974358974
+        },
+        {
+          "label": "Silica",
+          "count": 5,
+          "sharePct": 6.41025641025641
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 4,
+          "sharePct": 5.128205128205128
+        },
+        {
+          "label": "Gold",
+          "count": 3,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 3.8461538461538463
+        },
+        {
+          "label": "Diamond",
+          "count": 2,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Ferrosilicon",
+          "count": 2,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Nickel",
+          "count": 2,
+          "sharePct": 2.564102564102564
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Niobium (Columbium)",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Tantalum",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Tin",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Chromium",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Bentonite",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        },
+        {
+          "label": "Fluorine-Fluorite",
+          "count": 1,
+          "sharePct": 1.282051282051282
+        }
+      ],
+      "sites": [
+        {
+          "name": "Yakau-Himakrom",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kapili Hill",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Aketechi",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kalimbi Hill - Three Hills Area",
+          "depositType": "Metamorphic",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Aserebusu",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Buabinso",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Broumba",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Koissi Ndawa",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "State Gold Mining Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Ghana Cons. Diamond Mine",
+          "depositType": null,
+          "commodities": [
+            "Diamond"
+          ]
+        },
+        {
+          "name": "Aredor Mine",
+          "depositType": null,
+          "commodities": [
+            "Diamond"
+          ]
+        },
+        {
+          "name": "Sefwi Bekwai",
+          "depositType": "Residual",
+          "commodities": [
+            "Aluminum",
+            "Iron",
+            "Silica",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Ashanti",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Atewa Range",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Kibi",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Kindia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Kindia-Friguiagbe",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Nyinahin",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Nyinahin",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Sefwi Hills",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Tougue",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Kumasi",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Boke-Sangaredi",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bauxite - Guinea",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Cbg, Boke Project",
+          "depositType": "Unknown",
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Friguia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Ferrosilicon",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Kindia",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Blafo - Gueto",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "M'Bouessou",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Bauxite Ghana",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Tougue-Dabola",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Tougue",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Ferrosilicon",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Sangaredi",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Bauxite - Guinea",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Kibi",
+          "depositType": "Residual",
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Mt. Ejuanema",
+          "depositType": "Residual",
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Tema",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Lero Project",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Agbaja Prospect",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Tougue",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Silica"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

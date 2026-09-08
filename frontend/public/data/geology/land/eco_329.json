@@ -1,0 +1,614 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_329",
+  "regionName": "Appalachian mixed mesophytic forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.083856+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 100.00000000000003,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 165701.5083547838,
+        "percent": 91.26089634907598
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 165701.5083547838,
+          "percent": 91.26089634907598
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 12533.214339810529,
+          "percent": 6.902727598213684
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 2035.635511349518,
+          "percent": 1.1211359706394812
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 1298.6543544522092,
+          "percent": 0.7152400820708502
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 34,
+      "medianMwM2": 52.5,
+      "p10MwM2": 3.5200000000000005,
+      "p90MwM2": 74.5,
+      "maxMwM2": 77.04,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 7,
+          "percent": 20.588235294117645
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 19,
+          "percent": 55.88235294117647
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 8,
+          "percent": 23.52941176470588
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1577,
+      "commodityCount": 59,
+      "commodities": [
+        {
+          "label": "Stone",
+          "count": 434,
+          "sharePct": 17.45776347546259
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 416,
+          "sharePct": 16.733708769107
+        },
+        {
+          "label": "Clay",
+          "count": 355,
+          "sharePct": 14.279967819790828
+        },
+        {
+          "label": "Construction",
+          "count": 224,
+          "sharePct": 9.010458567980692
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 224,
+          "sharePct": 9.010458567980692
+        },
+        {
+          "label": "Iron",
+          "count": 200,
+          "sharePct": 8.045052292839904
+        },
+        {
+          "label": "Flagstone",
+          "count": 141,
+          "sharePct": 5.671761866452131
+        },
+        {
+          "label": "Limestone",
+          "count": 106,
+          "sharePct": 4.263877715205148
+        },
+        {
+          "label": "General",
+          "count": 101,
+          "sharePct": 4.062751407884151
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 43,
+          "sharePct": 1.7296862429605793
+        },
+        {
+          "label": "Silica",
+          "count": 34,
+          "sharePct": 1.3676588897827837
+        },
+        {
+          "label": "Coal",
+          "count": 26,
+          "sharePct": 1.0458567980691875
+        },
+        {
+          "label": "Aluminum",
+          "count": 23,
+          "sharePct": 0.925181013676589
+        },
+        {
+          "label": "Manganese",
+          "count": 20,
+          "sharePct": 0.8045052292839904
+        },
+        {
+          "label": "Dimension",
+          "count": 18,
+          "sharePct": 0.7240547063555913
+        },
+        {
+          "label": "Zinc",
+          "count": 13,
+          "sharePct": 0.5229283990345938
+        },
+        {
+          "label": "Ball Clay",
+          "count": 12,
+          "sharePct": 0.4827031375703942
+        },
+        {
+          "label": "Titanium",
+          "count": 11,
+          "sharePct": 0.4424778761061947
+        },
+        {
+          "label": "Strontium",
+          "count": 8,
+          "sharePct": 0.32180209171359614
+        },
+        {
+          "label": "Bituminous",
+          "count": 7,
+          "sharePct": 0.2815768302493966
+        },
+        {
+          "label": "Chromium",
+          "count": 7,
+          "sharePct": 0.2815768302493966
+        },
+        {
+          "label": "Zirconium",
+          "count": 6,
+          "sharePct": 0.2413515687851971
+        },
+        {
+          "label": "Thorium",
+          "count": 4,
+          "sharePct": 0.16090104585679807
+        },
+        {
+          "label": "Brick Clay",
+          "count": 3,
+          "sharePct": 0.12067578439259855
+        },
+        {
+          "label": "Lead",
+          "count": 3,
+          "sharePct": 0.12067578439259855
+        },
+        {
+          "label": "Bloating Material",
+          "count": 2,
+          "sharePct": 0.08045052292839903
+        },
+        {
+          "label": "Slate",
+          "count": 2,
+          "sharePct": 0.08045052292839903
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 0.08045052292839903
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 0.08045052292839903
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 2,
+          "sharePct": 0.08045052292839903
+        }
+      ],
+      "sites": [
+        {
+          "name": "Crab Orchard Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Eller and Tuttle Quarry",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Davis Mine",
+          "depositType": null,
+          "commodities": [
+            "Dimension",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Crab Orchard Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Signal Mountain Plant #521",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Anderson Quarry",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Richard City Quarry Penn-Dixie Cement Corp.",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Bennetts Lake Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Fentress County Hwy. Dept. Quarry Pit No. 404",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Cumberland County Highway Dept. Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Franklin Mine",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Nickajack Plant",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "South Pittsburg Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Crossville Limestone Company Pit No. 48",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Mcminnville Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Jellico Stone Company Quarry",
+          "depositType": null,
+          "commodities": [
+            "Crushed/Broken",
+            "General",
+            "Limestone",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Hoyt's Sand Co. No. 3 Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Potter Sand Co. #37 Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Penhook Mine",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Mid-State Materials Co., Inc.",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Taylor Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Burkhart Quarry",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Sewanee Silica Company Pit",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "White Silica Sand Co. Pit",
+          "depositType": null,
+          "commodities": [
+            "Silica"
+          ]
+        },
+        {
+          "name": "Deep Well-Sphalerite Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Congo Bottom Prospect",
+          "depositType": null,
+          "commodities": [
+            "Barium-Barite"
+          ]
+        },
+        {
+          "name": "Deep Well-Sphalerite Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Deep Well-Sphalerite Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Briceville",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Bloating Material"
+          ]
+        },
+        {
+          "name": "South Clinchfield",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Bituminous",
+            "Bloating Material"
+          ]
+        },
+        {
+          "name": "Pocono Sand Plant",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Sang Run Quarry and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Sang Run Quarry and Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Superior Sand Co. Quarry & Mill",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Crushed/Broken",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Number 2 Quarry",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Nutter Brothers Clay Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Clay"
+          ]
+        },
+        {
+          "name": "Nelsonville Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Kimberly Plant",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Mccort Quarry",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Ayers Limestone Quarry",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "General",
+            "Limestone"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

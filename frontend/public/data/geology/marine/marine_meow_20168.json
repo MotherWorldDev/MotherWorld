@@ -1,0 +1,361 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20168",
+  "regionName": "Nicoya",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.616396+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 15.68985551373027,
+        "medianAgeMa": 15.269478797912598,
+        "p10AgeMa": 9.692659378051758,
+        "p90AgeMa": 21.597721099853516,
+        "oldestAgeMa": 23.47692108154297,
+        "coveragePct": 84.00256116421495,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 73.73419484687847,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 26.26580515312153,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 113.62924092287807,
+          "medianMmYr": 98.59812927246094,
+          "p10MmYr": 66.30687713623047,
+          "p90MmYr": 186.80543518066406,
+          "coveragePct": 84.00256116421495
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 295.8449742363403
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "hydrothermal": {
+        "ventFieldCount": 2,
+        "confirmedOrInferredActive": 2,
+        "inactiveCount": 0,
+        "medianDepthM": 2395.0,
+        "maxReportedTemperatureC": 12.0,
+        "tectonicSettings": [
+          {
+            "label": "arc volcano",
+            "count": 1
+          },
+          {
+            "label": "other",
+            "count": 1
+          }
+        ],
+        "fields": [
+          {
+            "name": "Jaco Scar",
+            "activity": "active, confirmed",
+            "depthM": 1790.0,
+            "maxTemperatureC": 5.0,
+            "tectonicSetting": "arc volcano",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2009
+          },
+          {
+            "name": "Dorado Outcrop",
+            "activity": "active, confirmed",
+            "depthM": 3000.0,
+            "maxTemperatureC": 12.0,
+            "tectonicSetting": "other",
+            "ocean": "N. Pacific",
+            "discoveryYear": 2013
+          }
+        ],
+        "source": {
+          "providerId": "interridge_vents",
+          "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+          "version": "3.4 (2020)",
+          "doi": "10.1594/PANGAEA.917894",
+          "license": "CC BY-NC-SA 4.0"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 7,
+        "intersectionLengthKm": 1287.1176166532591,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Middle America Trench megathrust",
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 774.6195995657505
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 266.012862408684
+          },
+          {
+            "name": null,
+            "kinematics": "Dextral_Transform",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 194.57773791265848
+          },
+          {
+            "name": "Azuero Fault",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 26.89614169555185
+          },
+          {
+            "name": null,
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.844854393722345
+          },
+          {
+            "name": "Zona Falla Media",
+            "kinematics": "Dextral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.970199050013576
+          },
+          {
+            "name": null,
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.1962216268783148
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 739,
+      "medianMwM2": 51.33,
+      "p10MwM2": 15.0,
+      "p90MwM2": 184.20000000000005,
+      "maxMwM2": 1162.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 284,
+          "percent": 38.43031123139377
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 127,
+          "percent": 17.185385656292286
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 48,
+          "percent": 6.495263870094722
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 48,
+          "percent": 6.495263870094722
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 134,
+          "percent": 18.132611637347768
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 31,
+          "percent": 4.194857916102842
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 23,
+          "percent": 3.1123139377537212
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 44,
+          "percent": 5.953991880920163
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 7,
+      "commodityCount": 5,
+      "commodities": [
+        {
+          "label": "Manganese",
+          "count": 5,
+          "sharePct": 55.55555555555556
+        },
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 11.11111111111111
+        }
+      ],
+      "sites": [
+        {
+          "name": "Playa Blanca Prospect",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "El Zapotalillo Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Playa Real Mines",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "La Esperanza Mine",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Carbon Claim",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Playa Caldera",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Lepanto",
+          "depositType": null,
+          "commodities": [
+            "Halite"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "interridge_vents",
+      "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
+      "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

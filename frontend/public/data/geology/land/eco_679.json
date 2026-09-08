@@ -1,0 +1,462 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_679",
+  "regionName": "Sarmatic mixed forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.177182+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 98.54908591964407,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 425295.407632186,
+        "percent": 50.78448773182694
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 425295.407632186,
+          "percent": 50.78448773182694
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 127939.5262295248,
+          "percent": 15.277247728567616
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 118421.24495479945,
+          "percent": 14.140670587244669
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 79890.07338127575,
+          "percent": 9.539666732152854
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 43224.210419882795,
+          "percent": 5.161399216623751
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 32571.96501591299,
+          "percent": 3.889415516996861
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 9555.333424396815,
+          "percent": 1.1410015353010166
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 553.647092488719,
+          "percent": 0.06611095128629166
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 12329.592186072554,
+          "percentOfRegion": 1.4509140803559568
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 238,
+      "medianMwM2": 40.0,
+      "p10MwM2": 26.0,
+      "p90MwM2": 67.30000000000001,
+      "maxMwM2": 98.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 115,
+          "percent": 48.319327731092436
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 87,
+          "percent": 36.554621848739494
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 33,
+          "percent": 13.865546218487395
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 3,
+          "percent": 1.2605042016806722
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 24,
+      "commodityCount": 21,
+      "commodities": [
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 12,
+          "sharePct": 27.27272727272727
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 6.8181818181818175
+        },
+        {
+          "label": "Iron",
+          "count": 3,
+          "sharePct": 6.8181818181818175
+        },
+        {
+          "label": "Chromium",
+          "count": 3,
+          "sharePct": 6.8181818181818175
+        },
+        {
+          "label": "Titanium",
+          "count": 2,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Silver",
+          "count": 2,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Zinc",
+          "count": 2,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Ferrochrome",
+          "count": 2,
+          "sharePct": 4.545454545454546
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "General",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Limestone",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Pigment",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 2.272727272727273
+        }
+      ],
+      "sites": [
+        {
+          "name": "Vanandium Operation",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Taberg Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Se Norway Oslo Area",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Kingisepp",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Nygruvan and Knallagruvan Mines",
+          "depositType": null,
+          "commodities": [
+            "Arsenic",
+            "Copper",
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Hoiaasen Grube",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Nickel",
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Maardu",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Limestone",
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Kingisepp Phos-Acid Complex",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Uusikaupunki Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Zagorsk",
+          "depositType": null,
+          "commodities": [
+            "Pigment",
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Voskresensk",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Lopatinsk Mine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Lista Farsund",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "(Facility) Vargon Smelter",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Maardu Chemical Combine",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Dannemora",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Zinkgruvan",
+          "depositType": null,
+          "commodities": [
+            "Lead",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Kokhtla Yarve Phosacid Complex",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "(Facility) Vargon Smelter",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Ferrochrome"
+          ]
+        },
+        {
+          "name": "Kedainai Phosacid Complex",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Voskresensk I-Iii Phos-Acid Complex",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "(Facility) Trollhatten Smelter",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Ferrochrome"
+          ]
+        },
+        {
+          "name": "Yegor'Yevsk",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "Voskresensk",
+          "depositType": "CHEMICAL SEDIMENT, MARINE",
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

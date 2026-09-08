@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20094",
+  "regionName": "Northern Monsoon Current Coast",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.179984+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 158.12414299332062,
+        "medianAgeMa": 158.88934326171875,
+        "p10AgeMa": 147.15713500976562,
+        "p90AgeMa": 167.696533203125,
+        "oldestAgeMa": 170.0,
+        "coveragePct": 92.43005122613117,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 16.420616641896174,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 83.57938335810384,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 28.50762607300925,
+          "medianMmYr": 25.86890983581543,
+          "p10MmYr": 25.845022201538086,
+          "p90MmYr": 31.537282943725586,
+          "coveragePct": 92.43005122613117
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 6,
+      "medianMwM2": 52.5,
+      "p10MwM2": 48.0,
+      "p90MwM2": 56.5,
+      "maxMwM2": 59.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 6,
+          "percent": 100.0
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 3,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Guiba Prospect",
+          "depositType": "Placer",
+          "commodities": [
+            "Iron",
+            "Metal",
+            "Titanium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

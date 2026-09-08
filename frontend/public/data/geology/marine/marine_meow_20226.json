@@ -1,0 +1,140 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20226",
+  "regionName": "East Antarctic Dronning Maud Land",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:29.023868+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 146.72804472651205,
+        "medianAgeMa": 149.4286651611328,
+        "p10AgeMa": 133.2426300048828,
+        "p90AgeMa": 155.87515258789062,
+        "oldestAgeMa": 160.86355590820312,
+        "coveragePct": 41.62491397956595,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 0.0,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 51.47384043623493,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 48.52615956376507,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 27.631393701311136,
+          "medianMmYr": 31.252662658691406,
+          "p10MmYr": 6.17180061340332,
+          "p90MmYr": 41.65167236328125,
+          "coveragePct": 41.62491397956595
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 8,
+      "medianMwM2": 49.0,
+      "p10MwM2": -2.9999999999999964,
+      "p90MwM2": 185.8,
+      "maxMwM2": 190.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 1,
+          "percent": 12.5
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 3,
+          "percent": 37.5
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 1,
+          "percent": 12.5
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 2,
+          "percent": 25.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    }
+  ]
+}

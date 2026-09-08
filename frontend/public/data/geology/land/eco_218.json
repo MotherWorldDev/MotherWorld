@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_218",
+  "regionName": "Andaman Islands rain forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.053235+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 40.792437803327594,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 2254.364635987633,
+        "percent": 100.0
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 2254.364635987633,
+          "percent": 100.0
+        }
+      ],
+      "excluded": [
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 3272.06319570163,
+          "percentOfRegion": 59.2075621966722
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 2,
+      "commodityCount": 2,
+      "commodities": [
+        {
+          "label": "Copper",
+          "count": 2,
+          "sharePct": 66.66666666666666
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 33.33333333333333
+        }
+      ],
+      "sites": [
+        {
+          "name": "Corbyns: Cove",
+          "depositType": null,
+          "commodities": [
+            "Copper"
+          ]
+        },
+        {
+          "name": "Rangachang",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Sulfur"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

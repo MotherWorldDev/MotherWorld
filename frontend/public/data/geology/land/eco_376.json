@@ -1,0 +1,504 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_376",
+  "regionName": "Mid-Canada Boreal Plains forests",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.097437+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 99.9999999999999,
+      "dominantClass": {
+        "code": "ss",
+        "label": "Siliciclastic sedimentary rocks",
+        "areaKm2": 270368.8860531892,
+        "percent": 47.45129109974578
+      },
+      "classes": [
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 270368.8860531892,
+          "percent": 47.45129109974578
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 176770.76876656024,
+          "percent": 31.024284373527145
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 106696.30944103339,
+          "percent": 18.72581461743722
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 10700.347590905592,
+          "percent": 1.8779724095347154
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 3390.09193447671,
+          "percent": 0.594980589616026
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1217.0980572285196,
+          "percent": 0.21360769374595823
+        },
+        {
+          "code": "va",
+          "label": "Acid volcanic rocks",
+          "areaKm2": 638.4361967237558,
+          "percent": 0.11204921639316769
+        }
+      ],
+      "excluded": [],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 514,
+      "medianMwM2": 58.0,
+      "p10MwM2": 45.0,
+      "p90MwM2": 73.0,
+      "maxMwM2": 89.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 19,
+          "percent": 3.6964980544747084
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 276,
+          "percent": 53.69649805447471
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 195,
+          "percent": 37.93774319066148
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 24,
+          "percent": 4.669260700389105
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 32,
+      "commodityCount": 17,
+      "commodities": [
+        {
+          "label": "Potassium",
+          "count": 11,
+          "sharePct": 15.492957746478872
+        },
+        {
+          "label": "Nickel",
+          "count": 9,
+          "sharePct": 12.676056338028168
+        },
+        {
+          "label": "Copper",
+          "count": 8,
+          "sharePct": 11.267605633802818
+        },
+        {
+          "label": "Zirconium",
+          "count": 5,
+          "sharePct": 7.042253521126761
+        },
+        {
+          "label": "Gold",
+          "count": 5,
+          "sharePct": 7.042253521126761
+        },
+        {
+          "label": "Zinc",
+          "count": 5,
+          "sharePct": 7.042253521126761
+        },
+        {
+          "label": "Metal",
+          "count": 3,
+          "sharePct": 4.225352112676056
+        },
+        {
+          "label": "Petroleum (Oil)",
+          "count": 3,
+          "sharePct": 4.225352112676056
+        },
+        {
+          "label": "Sulfur",
+          "count": 3,
+          "sharePct": 4.225352112676056
+        },
+        {
+          "label": "Titanium",
+          "count": 3,
+          "sharePct": 4.225352112676056
+        },
+        {
+          "label": "Vanadium",
+          "count": 3,
+          "sharePct": 4.225352112676056
+        },
+        {
+          "label": "PGE",
+          "count": 3,
+          "sharePct": 4.225352112676056
+        },
+        {
+          "label": "Silver",
+          "count": 3,
+          "sharePct": 4.225352112676056
+        },
+        {
+          "label": "Platinum",
+          "count": 2,
+          "sharePct": 2.8169014084507045
+        },
+        {
+          "label": "Uranium",
+          "count": 2,
+          "sharePct": 2.8169014084507045
+        },
+        {
+          "label": "Natural Gas",
+          "count": 2,
+          "sharePct": 2.8169014084507045
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 1.4084507042253522
+        }
+      ],
+      "sites": [
+        {
+          "name": "Suncor",
+          "depositType": null,
+          "commodities": [
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Syncrude",
+          "depositType": null,
+          "commodities": [
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Suncor Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Nickel",
+            "Petroleum (Oil)",
+            "Sulfur",
+            "Titanium",
+            "Vanadium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Syncrude Deposit",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Nickel",
+            "Petroleum (Oil)",
+            "Titanium",
+            "Vanadium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Suncor",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Nickel",
+            "Petroleum (Oil)",
+            "Titanium",
+            "Vanadium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Northern Manitoba and Development Co.",
+          "depositType": null,
+          "commodities": [
+            "Gold",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Deilmann Deposit",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE",
+            "Platinum",
+            "Uranium"
+          ]
+        },
+        {
+          "name": "G. R. - 34 Deposit",
+          "depositType": null,
+          "commodities": [
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Lotus Mine",
+          "depositType": null,
+          "commodities": [
+            "Gold"
+          ]
+        },
+        {
+          "name": "Sylvia Zone",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Namew Lake",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel",
+            "PGE"
+          ]
+        },
+        {
+          "name": "Copper-Man",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Eagle Point Deposit",
+          "depositType": null,
+          "commodities": [
+            "Uranium"
+          ]
+        },
+        {
+          "name": "Spruce Point",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Allan Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Bell Plaine Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Cloverhill Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Cory Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "K-1 Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "K-2 Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Lanigan Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Rocanville Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Vade Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Collonsay Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Penobsquis Mine",
+          "depositType": null,
+          "commodities": [
+            "Potassium"
+          ]
+        },
+        {
+          "name": "Namew Lake",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Caroline North-Garrington",
+          "depositType": null,
+          "commodities": [
+            "Natural Gas",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "Minago Nickel Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Sinclair-Hythe",
+          "depositType": null,
+          "commodities": [
+            "Natural Gas",
+            "Sulfur"
+          ]
+        },
+        {
+          "name": "34 Deposit",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Spruce Point",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Reed Lake Freeport",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Silver",
+            "Zinc"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

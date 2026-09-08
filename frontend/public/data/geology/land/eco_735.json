@@ -1,0 +1,648 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_735",
+  "regionName": "Pontic steppe",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:33.020820+00:00",
+  "sections": {
+    "tectonics": {
+      "faults": {
+        "count": 1,
+        "intersectionLengthKm": 18.690077457666064,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Sinistral-Normal",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.690077457666064
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "surfaceGeology": {
+      "rockCoveragePct": 98.72626962559855,
+      "dominantClass": {
+        "code": "sm",
+        "label": "Mixed sedimentary rocks",
+        "areaKm2": 678572.1799896128,
+        "percent": 68.98415754674022
+      },
+      "classes": [
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 678572.1799896128,
+          "percent": 68.98415754674022
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 123301.47122421348,
+          "percent": 12.534920186097523
+        },
+        {
+          "code": "sc",
+          "label": "Carbonate sedimentary rocks",
+          "areaKm2": 87180.50505945088,
+          "percent": 8.862835632485853
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 70759.62321521164,
+          "percent": 7.193476449183132
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 13193.897436968127,
+          "percent": 1.3413015244174522
+        },
+        {
+          "code": "pa",
+          "label": "Acid plutonic rocks",
+          "areaKm2": 6616.49321530987,
+          "percent": 0.672637670437448
+        },
+        {
+          "code": "pi",
+          "label": "Intermediate plutonic rocks",
+          "areaKm2": 2129.1446836341283,
+          "percent": 0.21645044790646945
+        },
+        {
+          "code": "pb",
+          "label": "Basic plutonic rocks",
+          "areaKm2": 1910.4771554402455,
+          "percent": 0.19422054273188066
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 3751.2212471828852,
+          "percentOfRegion": 0.3764945739532123
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 8939.65074458921,
+          "percentOfRegion": 0.8972358004482534
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1241,
+      "medianMwM2": 53.0,
+      "p10MwM2": 38.93724,
+      "p90MwM2": 74.0,
+      "maxMwM2": 130.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 138,
+          "percent": 11.120064464141821
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 735,
+          "percent": 59.22643029814666
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 289,
+          "percent": 23.28767123287671
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 70,
+          "percent": 5.640612409347301
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 9,
+          "percent": 0.7252215954875101
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 126,
+      "commodityCount": 36,
+      "commodities": [
+        {
+          "label": "Iron",
+          "count": 38,
+          "sharePct": 20.43010752688172
+        },
+        {
+          "label": "Manganese",
+          "count": 21,
+          "sharePct": 11.29032258064516
+        },
+        {
+          "label": "Nickel",
+          "count": 16,
+          "sharePct": 8.60215053763441
+        },
+        {
+          "label": "Titanium",
+          "count": 16,
+          "sharePct": 8.60215053763441
+        },
+        {
+          "label": "Copper",
+          "count": 10,
+          "sharePct": 5.376344086021505
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 8,
+          "sharePct": 4.301075268817205
+        },
+        {
+          "label": "Zirconium",
+          "count": 8,
+          "sharePct": 4.301075268817205
+        },
+        {
+          "label": "Zinc",
+          "count": 7,
+          "sharePct": 3.763440860215054
+        },
+        {
+          "label": "Palladium",
+          "count": 6,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Cobalt",
+          "count": 6,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Aluminum",
+          "count": 6,
+          "sharePct": 3.225806451612903
+        },
+        {
+          "label": "Mercury",
+          "count": 5,
+          "sharePct": 2.6881720430107525
+        },
+        {
+          "label": "Ferromanganese",
+          "count": 4,
+          "sharePct": 2.1505376344086025
+        },
+        {
+          "label": "Platinum",
+          "count": 3,
+          "sharePct": 1.6129032258064515
+        },
+        {
+          "label": "Garnet",
+          "count": 3,
+          "sharePct": 1.6129032258064515
+        },
+        {
+          "label": "Magnesite",
+          "count": 3,
+          "sharePct": 1.6129032258064515
+        },
+        {
+          "label": "Chromium",
+          "count": 2,
+          "sharePct": 1.0752688172043012
+        },
+        {
+          "label": "Silica",
+          "count": 2,
+          "sharePct": 1.0752688172043012
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 2,
+          "sharePct": 1.0752688172043012
+        },
+        {
+          "label": "Lead",
+          "count": 2,
+          "sharePct": 1.0752688172043012
+        },
+        {
+          "label": "Gold",
+          "count": 2,
+          "sharePct": 1.0752688172043012
+        },
+        {
+          "label": "Pigment",
+          "count": 2,
+          "sharePct": 1.0752688172043012
+        },
+        {
+          "label": "Vanadium",
+          "count": 1,
+          "sharePct": 0.5376344086021506
+        },
+        {
+          "label": "Ferrochrome",
+          "count": 1,
+          "sharePct": 0.5376344086021506
+        },
+        {
+          "label": "Arsenic",
+          "count": 1,
+          "sharePct": 0.5376344086021506
+        },
+        {
+          "label": "Mill Concentrate",
+          "count": 1,
+          "sharePct": 0.5376344086021506
+        },
+        {
+          "label": "Molybdenum",
+          "count": 1,
+          "sharePct": 0.5376344086021506
+        },
+        {
+          "label": "Tungsten",
+          "count": 1,
+          "sharePct": 0.5376344086021506
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 0.5376344086021506
+        },
+        {
+          "label": "Refiner",
+          "count": 1,
+          "sharePct": 0.5376344086021506
+        }
+      ],
+      "sites": [
+        {
+          "name": "Bolshe Tokmak Deposits",
+          "depositType": "Chemical Sediment, Marine",
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Kerch",
+          "depositType": null,
+          "commodities": [
+            "Vanadium"
+          ]
+        },
+        {
+          "name": "Vasil'Yevka",
+          "depositType": null,
+          "commodities": [
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Pokrovo - Kireyevo Intrusives",
+          "depositType": null,
+          "commodities": [
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Vasil' - Tarama Gully",
+          "depositType": null,
+          "commodities": [
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Pokrovo - Kireyevo Extrusives",
+          "depositType": null,
+          "commodities": [
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Krynka River",
+          "depositType": null,
+          "commodities": [
+            "Palladium"
+          ]
+        },
+        {
+          "name": "Bogdanovka",
+          "depositType": null,
+          "commodities": [
+            "Palladium",
+            "Platinum"
+          ]
+        },
+        {
+          "name": "Batamshinsk",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Kempirsai",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Nikopol Basin",
+          "depositType": null,
+          "commodities": [
+            "Manganese",
+            "Phosphorus-Phosphates",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Yubileinnoe Deposit",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Volchansk",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Zaporzhye Sp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Second Novaya",
+          "depositType": null,
+          "commodities": [
+            "Mercury"
+          ]
+        },
+        {
+          "name": "Kempirsai Group",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Krivoy Rog Central",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Marganets",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ingulets",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Mariupolzhdanovbf",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Kramatorsk Bf",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Konstantinovka Zn",
+          "depositType": null,
+          "commodities": [
+            "Zinc"
+          ]
+        },
+        {
+          "name": "Nikopolfemn",
+          "depositType": null,
+          "commodities": [
+            "Ferromanganese",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Ordzonikidze Sp",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Malyshevo",
+          "depositType": null,
+          "commodities": [
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "Trioko Deposit",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "(Facility) Zaporozhye Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        },
+        {
+          "name": "Tulcea Ferroalloy Plant",
+          "depositType": null,
+          "commodities": [
+            "Chromium",
+            "Ferrochrome",
+            "Ferromanganese",
+            "Manganese",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Zaporozh'Yefemn",
+          "depositType": null,
+          "commodities": [
+            "Ferromanganese",
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Podkolodnovo",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Poltrovskordzonikidize",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "(Facility) Nikolayev Refinery",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Azovstalzdanov Bf",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Grushveka",
+          "depositType": null,
+          "commodities": [
+            "Manganese"
+          ]
+        },
+        {
+          "name": "Krivoy Rog South",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Novo-Buranovo",
+          "depositType": null,
+          "commodities": [
+            "Cobalt",
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Vysokopol",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Volchansk",
+          "depositType": null,
+          "commodities": [
+            "Titanium"
+          ]
+        },
+        {
+          "name": "Kamysh-Burunskkerch",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Komunarsk Sp",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

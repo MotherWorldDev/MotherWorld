@@ -1,0 +1,509 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20049",
+  "regionName": "Sea of Japan/East Sea",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:27.932845+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 22.448162942339135,
+        "medianAgeMa": 22.522836685180664,
+        "p10AgeMa": 16.575416564941406,
+        "p90AgeMa": 28.222768783569336,
+        "oldestAgeMa": 29.84000015258789,
+        "coveragePct": 9.136529314548762,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 32.941795605647464,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 67.05820439435256,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 0.0,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 0.0,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 14.39661502978206,
+          "medianMmYr": 14.303800582885742,
+          "p10MmYr": 12.898655891418457,
+          "p90MmYr": 16.000574111938477,
+          "coveragePct": 9.136529314548762
+        }
+      },
+      "tectonics": {
+        "ridges": {
+          "featureCount": 1,
+          "intersectionLengthKm": 527.1160693516907
+        },
+        "source": {
+          "providerId": "earthbyte_seafloor_tectonics",
+          "label": "EarthByte / GPlates seafloor tectonic features",
+          "version": "GPlates GeoData / staged release",
+          "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 33,
+        "intersectionLengthKm": 845.4103757732677,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 73.18778460524325
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 73.11049964523815
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 42.50359901139303
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 41.267789458520106
+          },
+          {
+            "name": "Kaburagi",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.44782945871217
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 40.01999618572426
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 39.34841830001399
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.572771398656414
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.858905083020765
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 36.56563462881674
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 34.243838921139115
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 32.8454228092701
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.53472866006662
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 30.900045768715316
+          },
+          {
+            "name": "Monzen-oki",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.634931447483808
+          },
+          {
+            "name": "Kitayuri",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 27.16682432961728
+          },
+          {
+            "name": "Nosaka",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.389593178783592
+          },
+          {
+            "name": null,
+            "kinematics": "Subduction_Thrust",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.965123610083996
+          },
+          {
+            "name": "Yahiko",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 22.504707794792715
+          },
+          {
+            "name": "Gomura",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 21.26556753635122
+          },
+          {
+            "name": "Gentatsuse-nishi",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.90630101972785
+          },
+          {
+            "name": "Nokogirizaki-oki",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 18.078762688650716
+          },
+          {
+            "name": "Kandamisaki",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 17.27354698533063
+          },
+          {
+            "name": "Gentatsuse-higashi",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.671599606973379
+          },
+          {
+            "name": "Matsuoka",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 14.455335757523818
+          },
+          {
+            "name": "Kanazu",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 9.296948325463994
+          },
+          {
+            "name": "Mikata",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 7.493374093976234
+          },
+          {
+            "name": "Urazoko-Yanagaseyama",
+            "kinematics": "Sinistral",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.1674532341806554
+          },
+          {
+            "name": "Hakodatenishi",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 3.0326087577593768
+          },
+          {
+            "name": "Oda",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.9083574259625287
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 657,
+      "medianMwM2": 92.0,
+      "p10MwM2": 68.0,
+      "p90MwM2": 119.0,
+      "maxMwM2": 268.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 11,
+          "percent": 1.67427701674277
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 31,
+          "percent": 4.71841704718417
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 101,
+          "percent": 15.37290715372907
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 273,
+          "percent": 41.55251141552511
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 228,
+          "percent": 34.70319634703196
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 9,
+          "percent": 1.36986301369863
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 3,
+          "percent": 0.45662100456621
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 8,
+      "commodityCount": 14,
+      "commodities": [
+        {
+          "label": "Chromium",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Aluminum",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Phosphorus-Phosphates",
+          "count": 2,
+          "sharePct": 11.76470588235294
+        },
+        {
+          "label": "Copper",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Gold",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Palladium",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Platinum",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Selenium",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Silver",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Sodium",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Sulfur",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Sulfuric Acid",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        },
+        {
+          "label": "Nickel",
+          "count": 1,
+          "sharePct": 5.88235294117647
+        }
+      ],
+      "sites": [
+        {
+          "name": "Hokaido Placer",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "(Facility) Onsan Copper Smelter",
+          "depositType": null,
+          "commodities": [
+            "Copper",
+            "Gold",
+            "Gypsum-Anhydrite",
+            "Palladium",
+            "Platinum",
+            "Selenium",
+            "Silver",
+            "Sodium",
+            "Sulfur",
+            "Sulfuric Acid"
+          ]
+        },
+        {
+          "name": "(Facility) Ulsan Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "Niigata",
+          "depositType": null,
+          "commodities": [
+            "Aluminum"
+          ]
+        },
+        {
+          "name": "(Facility) Onsan Copper/Nickel Refinery",
+          "depositType": null,
+          "commodities": [
+            "Nickel"
+          ]
+        },
+        {
+          "name": "Kurosaki Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        },
+        {
+          "name": "(Facility) Niigata Smelter",
+          "depositType": null,
+          "commodities": [
+            "Chromium"
+          ]
+        },
+        {
+          "name": "Niigata Phosphoric Acid Plant",
+          "depositType": null,
+          "commodities": [
+            "Phosphorus-Phosphates"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "earthbyte_seafloor_tectonics",
+      "label": "EarthByte / GPlates seafloor tectonic features",
+      "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

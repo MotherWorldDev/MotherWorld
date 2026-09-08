@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20209",
+  "regionName": "Leeuwin",
+  "kind": "marine",
+  "generatedAt": "2026-09-08T09:35:28.885725+00:00",
+  "sections": {
+    "seafloor": {
+      "age": {
+        "meanAgeMa": 77.800493587005,
+        "medianAgeMa": 75.89335632324219,
+        "p10AgeMa": 51.153533935546875,
+        "p90AgeMa": 96.55606079101562,
+        "oldestAgeMa": 134.5349884033203,
+        "coveragePct": 28.969601946466852,
+        "ageBands": [
+          {
+            "label": "0–20 Ma",
+            "percent": 0.0,
+            "min": 0,
+            "max": 20
+          },
+          {
+            "label": "20–50 Ma",
+            "percent": 8.335823384384469,
+            "min": 20,
+            "max": 50
+          },
+          {
+            "label": "50–100 Ma",
+            "percent": 82.24953875402937,
+            "min": 50,
+            "max": 100
+          },
+          {
+            "label": "100–150 Ma",
+            "percent": 9.414637861586137,
+            "min": 100,
+            "max": 150
+          },
+          {
+            "label": "150–200 Ma",
+            "percent": 0.0,
+            "min": 150,
+            "max": 200
+          },
+          {
+            "label": "200+ Ma",
+            "percent": 0.0,
+            "min": 200,
+            "max": null
+          }
+        ],
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "earthbyte_seafloor_age",
+          "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+          "version": "2020 / Zenodo v1.1",
+          "doi": "10.1029/2020GC009214",
+          "license": "CC BY 4.0"
+        },
+        "spreadingRate": {
+          "meanMmYr": 16.978896467020178,
+          "medianMmYr": 12.915034294128418,
+          "p10MmYr": 5.833795547485352,
+          "p90MmYr": 20.930204391479492,
+          "coveragePct": 28.969601946466852
+        }
+      }
+    },
+    "tectonics": {
+      "faults": {
+        "count": 9,
+        "intersectionLengthKm": 277.13379044065056,
+        "medianSlipRateMmYr": null,
+        "items": [
+          {
+            "name": "Badaminna Shear Zone group (Dunsborough Fault)",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 54.13869957559693
+          },
+          {
+            "name": "Badaminna Shear Zone 1",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 51.14877356954479
+          },
+          {
+            "name": "Badaminna Shear Zone 2",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 43.53854710137586
+          },
+          {
+            "name": "Badaminna Shear Zone (Felix Fault)",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 37.012284886572985
+          },
+          {
+            "name": "Badaminna Shear Zone 4",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 31.04005050070515
+          },
+          {
+            "name": "Badaminna Shear Zone 6",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 23.494915344303163
+          },
+          {
+            "name": "Badaminna Shear Zone 3",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 19.703385354794836
+          },
+          {
+            "name": "Badaminna Shear Zone 5",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 15.252618807216273
+          },
+          {
+            "name": "Badaminna Shear Zone 8",
+            "kinematics": "Reverse",
+            "slipRateMmYr": null,
+            "intersectionLengthKm": 1.8045153005405683
+          }
+        ],
+        "source": {
+          "providerId": "gem_active_faults",
+          "label": "GEM Global Active Faults Database",
+          "license": "CC BY-SA 4.0"
+        }
+      }
+    },
+    "geothermal": {
+      "measurementCount": 28,
+      "medianMwM2": 62.0,
+      "p10MwM2": 40.28,
+      "p90MwM2": 129.9,
+      "maxMwM2": 171.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 2,
+          "percent": 7.142857142857142
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 10,
+          "percent": 35.714285714285715
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 10,
+          "percent": 35.714285714285715
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 2,
+          "percent": 7.142857142857142
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 3,
+          "percent": 10.714285714285714
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 1,
+          "percent": 3.571428571428571
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 3,
+      "commodityCount": 7,
+      "commodities": [
+        {
+          "label": "Quartz",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Silica",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Metal",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Titanium",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Zirconium",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Aluminum",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        },
+        {
+          "label": "Contained or Metal",
+          "count": 1,
+          "sharePct": 14.285714285714285
+        }
+      ],
+      "sites": [
+        {
+          "name": "Kemerton",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Quartz",
+            "Silica"
+          ]
+        },
+        {
+          "name": "Minninup Hind-Dune",
+          "depositType": null,
+          "commodities": [
+            "Metal",
+            "Titanium",
+            "Zirconium"
+          ]
+        },
+        {
+          "name": "(Facility) Western Australia Al Smelter",
+          "depositType": null,
+          "commodities": [
+            "Aluminum",
+            "Contained or Metal"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "earthbyte_seafloor_age",
+      "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
+      "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gem_active_faults",
+      "label": "GEM Global Active Faults Database",
+      "version": null
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

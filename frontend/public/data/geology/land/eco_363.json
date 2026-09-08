@@ -1,0 +1,617 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_363",
+  "regionName": "Piney Woods",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.093432+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 98.21744235097907,
+      "dominantClass": {
+        "code": "su",
+        "label": "Unconsolidated sediments",
+        "areaKm2": 121188.51843276522,
+        "percent": 81.09967671951358
+      },
+      "classes": [
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 121188.51843276522,
+          "percent": 81.09967671951358
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 23191.754449407814,
+          "percent": 15.519983350970634
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 5051.29495489798,
+          "percent": 3.3803399295157854
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 2712.047655458973,
+          "percentOfRegion": 1.7825576490208543
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "geothermal": {
+      "measurementCount": 1018,
+      "medianMwM2": 68.0,
+      "p10MwM2": 51.0,
+      "p90MwM2": 80.0,
+      "maxMwM2": 110.0,
+      "bins": [
+        {
+          "label": "0–40 mW/m²",
+          "count": 10,
+          "percent": 0.9823182711198428
+        },
+        {
+          "label": "40–60 mW/m²",
+          "count": 239,
+          "percent": 23.477406679764243
+        },
+        {
+          "label": "60–80 mW/m²",
+          "count": 661,
+          "percent": 64.9312377210216
+        },
+        {
+          "label": "80–100 mW/m²",
+          "count": 101,
+          "percent": 9.921414538310412
+        },
+        {
+          "label": "100–150 mW/m²",
+          "count": 7,
+          "percent": 0.68762278978389
+        },
+        {
+          "label": "150–200 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "200–300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        },
+        {
+          "label": "≥300 mW/m²",
+          "count": 0,
+          "percent": 0.0
+        }
+      ],
+      "source": {
+        "providerId": "ihfc_heat_flow",
+        "label": "IHFC Global Heat Flow Database",
+        "version": "Release 2024 / quality update 2026.03",
+        "doi": "10.5880/fidgeo.2024.014",
+        "license": "CC BY 4.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1972,
+      "commodityCount": 50,
+      "commodities": [
+        {
+          "label": "Construction",
+          "count": 1368,
+          "sharePct": 38.97435897435898
+        },
+        {
+          "label": "Sand and Gravel",
+          "count": 1368,
+          "sharePct": 38.97435897435898
+        },
+        {
+          "label": "Aluminum",
+          "count": 114,
+          "sharePct": 3.2478632478632483
+        },
+        {
+          "label": "Clay",
+          "count": 113,
+          "sharePct": 3.219373219373219
+        },
+        {
+          "label": "Iron",
+          "count": 107,
+          "sharePct": 3.0484330484330484
+        },
+        {
+          "label": "Stone",
+          "count": 65,
+          "sharePct": 1.8518518518518516
+        },
+        {
+          "label": "Crushed/Broken",
+          "count": 59,
+          "sharePct": 1.680911680911681
+        },
+        {
+          "label": "Fire Clay (Refractory)",
+          "count": 38,
+          "sharePct": 1.0826210826210827
+        },
+        {
+          "label": "Silica",
+          "count": 31,
+          "sharePct": 0.8831908831908831
+        },
+        {
+          "label": "Gypsum-Anhydrite",
+          "count": 28,
+          "sharePct": 0.7977207977207977
+        },
+        {
+          "label": "Halite",
+          "count": 23,
+          "sharePct": 0.6552706552706553
+        },
+        {
+          "label": "Limestone",
+          "count": 22,
+          "sharePct": 0.6267806267806267
+        },
+        {
+          "label": "Bentonite",
+          "count": 18,
+          "sharePct": 0.5128205128205128
+        },
+        {
+          "label": "Bromine",
+          "count": 18,
+          "sharePct": 0.5128205128205128
+        },
+        {
+          "label": "Kaolin",
+          "count": 17,
+          "sharePct": 0.4843304843304843
+        },
+        {
+          "label": "General",
+          "count": 14,
+          "sharePct": 0.39886039886039887
+        },
+        {
+          "label": "Sulfur",
+          "count": 13,
+          "sharePct": 0.3703703703703704
+        },
+        {
+          "label": "Strontium",
+          "count": 10,
+          "sharePct": 0.2849002849002849
+        },
+        {
+          "label": "Barium-Barite",
+          "count": 10,
+          "sharePct": 0.2849002849002849
+        },
+        {
+          "label": "Titanium",
+          "count": 8,
+          "sharePct": 0.2279202279202279
+        },
+        {
+          "label": "Diamond",
+          "count": 8,
+          "sharePct": 0.2279202279202279
+        },
+        {
+          "label": "Ball Clay",
+          "count": 8,
+          "sharePct": 0.2279202279202279
+        },
+        {
+          "label": "Ultra Pure",
+          "count": 5,
+          "sharePct": 0.14245014245014245
+        },
+        {
+          "label": "Salt",
+          "count": 4,
+          "sharePct": 0.11396011396011395
+        },
+        {
+          "label": "Dimension",
+          "count": 4,
+          "sharePct": 0.11396011396011395
+        },
+        {
+          "label": "Free",
+          "count": 4,
+          "sharePct": 0.11396011396011395
+        },
+        {
+          "label": "Water",
+          "count": 4,
+          "sharePct": 0.11396011396011395
+        },
+        {
+          "label": "Gemstone",
+          "count": 3,
+          "sharePct": 0.08547008547008547
+        },
+        {
+          "label": "Talc-Soapstone",
+          "count": 2,
+          "sharePct": 0.056980056980056974
+        },
+        {
+          "label": "Calcium",
+          "count": 2,
+          "sharePct": 0.056980056980056974
+        }
+      ],
+      "sites": [
+        {
+          "name": "Unk",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unk",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unk",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Hurricane Creek Deposit",
+          "depositType": null,
+          "commodities": [
+            "Niobium (Columbium)"
+          ]
+        },
+        {
+          "name": "Bob Wolf Mine",
+          "depositType": null,
+          "commodities": [
+            "Antimony",
+            "Copper",
+            "Silver"
+          ]
+        },
+        {
+          "name": "Humble Dome Prospect",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone",
+            "Sulfur",
+            "Ultra Pure"
+          ]
+        },
+        {
+          "name": "South Liberty Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone",
+            "Sulfur",
+            "Ultra Pure"
+          ]
+        },
+        {
+          "name": "Pine Prairie Dome Mine",
+          "depositType": null,
+          "commodities": [
+            "Halite",
+            "Limestone",
+            "Sulfur",
+            "Ultra Pure"
+          ]
+        },
+        {
+          "name": "Rayburn's Dome Quarry",
+          "depositType": null,
+          "commodities": [
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone",
+            "Ultra Pure"
+          ]
+        },
+        {
+          "name": "Bennett-Clark Pit",
+          "depositType": null,
+          "commodities": [
+            "Bentonite"
+          ]
+        },
+        {
+          "name": "Miller Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Bentonite"
+          ]
+        },
+        {
+          "name": "Unnamed Pit",
+          "depositType": "Sedimentary",
+          "commodities": [
+            "Bentonite"
+          ]
+        },
+        {
+          "name": "Cleveland Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Dolen No. 36 Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Unnamed Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Trinity River Dredge Operation",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Teal Pit",
+          "depositType": null,
+          "commodities": [
+            "Clay",
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Rose City Pit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "Boggy Creek Salt Dome",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Brooks Salt Dome",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Bullard Dome",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "East Tyler Salt Dome",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Mount Sylvan Salt Dome",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Whitehouse Salt Dome",
+          "depositType": null,
+          "commodities": [
+            "General",
+            "Gypsum-Anhydrite",
+            "Halite",
+            "Limestone"
+          ]
+        },
+        {
+          "name": "Surratt Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Warren Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bowie Hill Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Hickory Hill Occurrence",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Waters Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Atlanta Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Bivins Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "John Stone Hill Deposit",
+          "depositType": null,
+          "commodities": [
+            "Construction",
+            "Iron",
+            "Sand and Gravel"
+          ]
+        },
+        {
+          "name": "John Davis Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Prewitt Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Jurnigan Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Harris Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Duncan Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        },
+        {
+          "name": "Knight-Field Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron",
+            "Stone"
+          ]
+        },
+        {
+          "name": "Bear Creek Deposit",
+          "depositType": null,
+          "commodities": [
+            "Iron"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "ihfc_heat_flow",
+      "label": "IHFC Global Heat Flow Database",
+      "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}

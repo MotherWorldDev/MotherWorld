@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 1,
+  "regionId": "eco_73",
+  "regionName": "Makgadikgadi halophytics",
+  "kind": "land",
+  "generatedAt": "2026-09-08T09:35:35.189237+00:00",
+  "sections": {
+    "surfaceGeology": {
+      "rockCoveragePct": 90.76136571388412,
+      "dominantClass": {
+        "code": "ev",
+        "label": "Evaporites",
+        "areaKm2": 8938.109768553559,
+        "percent": 56.01765702631278
+      },
+      "classes": [
+        {
+          "code": "ev",
+          "label": "Evaporites",
+          "areaKm2": 8938.109768553559,
+          "percent": 56.01765702631278
+        },
+        {
+          "code": "su",
+          "label": "Unconsolidated sediments",
+          "areaKm2": 3067.875984029841,
+          "percent": 19.227244811567868
+        },
+        {
+          "code": "ss",
+          "label": "Siliciclastic sedimentary rocks",
+          "areaKm2": 2421.2185536099378,
+          "percent": 15.174460152531285
+        },
+        {
+          "code": "vb",
+          "label": "Basic volcanic rocks",
+          "areaKm2": 1528.6750415543247,
+          "percent": 9.580638009588064
+        }
+      ],
+      "excluded": [
+        {
+          "code": "wb",
+          "label": "Water bodies",
+          "areaKm2": 1624.1550889827402,
+          "percentOfRegion": 9.238634286115795
+        }
+      ],
+      "source": {
+        "providerId": "glim",
+        "label": "Global Lithological Map (GLiM)",
+        "version": "v1.0",
+        "doi": "10.1594/PANGAEA.788537",
+        "license": "CC BY 3.0"
+      }
+    },
+    "minerals": {
+      "occurrenceCount": 1,
+      "commodityCount": 4,
+      "commodities": [
+        {
+          "label": "Bromine",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Cobalt",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Halite",
+          "count": 1,
+          "sharePct": 25.0
+        },
+        {
+          "label": "Sodium",
+          "count": 1,
+          "sharePct": 25.0
+        }
+      ],
+      "sites": [
+        {
+          "name": "Sua Pan",
+          "depositType": null,
+          "commodities": [
+            "Bromine",
+            "Cobalt",
+            "Halite",
+            "Sodium"
+          ]
+        }
+      ],
+      "source": {
+        "providerId": "usgs_mrds",
+        "label": "USGS Mineral Resources Data System (MRDS)",
+        "license": "U.S. federal public data"
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "glim",
+      "label": "Global Lithological Map (GLiM)",
+      "version": "v1.0"
+    },
+    {
+      "id": "usgs_mrds",
+      "label": "USGS Mineral Resources Data System (MRDS)",
+      "version": null
+    }
+  ]
+}
