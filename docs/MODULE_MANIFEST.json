@@ -1,0 +1,147 @@
+{
+  "schemaVersion": 6,
+  "package": "MotherWorld unified environment stack \u2014 historical backbones + regional climate + geology/seafloor + Moon Selenology",
+  "modules": [
+    {
+      "id": "vegetation",
+      "scope": "regional land",
+      "implemented": true
+    },
+    {
+      "id": "habitat",
+      "scope": "regional land",
+      "implemented": true
+    },
+    {
+      "id": "pollution_air",
+      "scope": "land/marine/lakes",
+      "implemented": true
+    },
+    {
+      "id": "pollution_water",
+      "scope": "marine/lakes",
+      "implemented": true
+    },
+    {
+      "id": "pollution_contaminants",
+      "scope": "observation based",
+      "implemented": true
+    },
+    {
+      "id": "pollution_land",
+      "scope": "regional land",
+      "implemented": true
+    },
+    {
+      "id": "biodiversity",
+      "scope": "regional",
+      "implemented": true
+    },
+    {
+      "id": "regional_climate_normals",
+      "scope": "land/lakes/marine; whole-ocean aggregate for open_ocean",
+      "implemented": true,
+      "components": [
+        "precipitation",
+        "relative_humidity",
+        "wind"
+      ],
+      "baseline": "1991-2020",
+      "earthHealthWeight": 0
+    },
+    {
+      "id": "geology",
+      "scope": "land/marine/lakes; descriptive regional context; whole-ocean seafloor aggregate for open_ocean",
+      "implemented": true,
+      "components": [
+        "surface_geology",
+        "geologic_age",
+        "minerals_resources",
+        "tectonics_seismicity",
+        "volcanism",
+        "geothermal_heat_flow",
+        "impact_structures",
+        "seafloor_bathymetry",
+        "seafloor_age_spreading",
+        "seafloor_sediment",
+        "seafloor_crust_thickness",
+        "seafloor_ridges_trenches",
+        "hydrothermal_vents"
+      ],
+      "earthHealthWeight": 0
+    },
+    {
+      "id": "climate_forcing",
+      "scope": "global",
+      "implemented": true
+    },
+    {
+      "id": "cryosphere",
+      "scope": "global",
+      "implemented": true
+    },
+    {
+      "id": "global_ocean",
+      "scope": "whole ocean; open_ocean selection",
+      "implemented": true
+    },
+    {
+      "id": "freshwater",
+      "scope": "global only",
+      "implemented": true
+    },
+    {
+      "id": "earth_health",
+      "scope": "global top-center index",
+      "implemented": true,
+      "historicalSlider": true
+    },
+    {
+      "id": "ozone",
+      "scope": "global only",
+      "implemented": true
+    },
+    {
+      "id": "selenology",
+      "scope": "Moon only; descriptive planetary geology",
+      "implemented": true,
+      "components": [
+        "geologic_surface_mode",
+        "surface_geology",
+        "geologic_age",
+        "topography_relief",
+        "crust_gravity",
+        "mineralogy_elements",
+        "volcanism",
+        "tectonics_moonquakes",
+        "polar_volatiles",
+        "impact_history",
+        "returned_samples"
+      ],
+      "earthHealthWeight": 0
+    }
+  ],
+  "compatibleExistingModules": [
+    "species",
+    "temperature_distribution"
+  ],
+  "identifiedFutureFamilies": [
+    "nutrient_cycles"
+  ],
+  "earthHealthHistory": {
+    "requestedStartYear": 1993,
+    "fixedComposition": true,
+    "backboneFamilies": [
+      "biodiversity",
+      "habitat",
+      "vegetation",
+      "pollution",
+      "climate_forcing",
+      "cryosphere",
+      "ocean",
+      "freshwater",
+      "ozone"
+    ],
+    "diagnosticsHaveEarthHealthWeight": false
+  }
+}

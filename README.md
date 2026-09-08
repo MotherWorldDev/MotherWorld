@@ -162,3 +162,7 @@ The Species tab loads GBIF land/lake and OBIS marine inventories on demand, with
 The Climate tab loads compact empirical temperature histograms when opened for a region. It offers regional daily means and area-weighted space-time views, with statistics, source attribution, actual coverage dates and keyboard-accessible bin inspection. Land/lakes use ERA5-Land 2 m air temperature; marine regions use NOAA OISST sea-surface temperature. Short releases are marked as previews, and regions awaiting data show an availability message.
 
 See [CLIMATE_PIPELINE.md](CLIMATE_PIPELINE.md) for credential setup, resumable builders and validation, and [CLIMATE_DATA_SOURCES.md](CLIMATE_DATA_SOURCES.md) for dataset references. The planned baseline is 1991–2020. Raw rasters and credentials stay local; only the manifest and per-region summaries are published.
+
+## Unified environmental stack v8
+
+The installed environmental modules add fixed nine-family historical Earth Health, lazy precipitation/humidity/wind normals, descriptive geology and seafloor context, and a Moon-only Selenology tab. Earth Health and all diagnostic panels remain source-gated: scaffold indexes do not claim values until their real provider builds pass validation. See [docs/README.md](docs/README.md) for the scoring, provenance, licensing, and Moon-texture contracts.

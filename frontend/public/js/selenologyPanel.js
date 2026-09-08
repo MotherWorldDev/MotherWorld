@@ -1,5 +1,5 @@
-import { createSelenologyDataService } from "./selenologyDataService.js?v=20260907-env8-selenology";
-import { MOON_IMPACT_STATS } from "./moonImpactStats.js?v=20260907-env8-selenology";
+import { createSelenologyDataService } from "./selenologyDataService.js?v=20260908-env8-selenology";
+import { MOON_IMPACT_STATS } from "./moonImpactStats.js?v=20260908-env8-selenology";
 
 function esc(value) {
   return String(value ?? "").replace(/[&<>"']/g, (ch) => ({
@@ -11,17 +11,18 @@ function details(title, body, open = false) {
 }
 function statusBody(section, label) {
   if (section?.status === "ready" && section?.summary) return `<p>${esc(section.summary)}</p>`;
-  return `<p class="selenology-note">${esc(section?.note || `${label} data contract is ready; the provider build has not been run yet.`)}</p>`;
+  if (section?.status === "not_built") return `<p class="selenology-note">${esc(`${label} information is not available in this release yet.`)}</p>`;
+  return `<p class="selenology-note">${esc(section?.note || `${label} data is not available in this release yet.`)}</p>`;
 }
 function legendHtml(data) {
   const items = data?.legend || [];
-  if (!items.length) return `<p class="selenology-note">The geology texture works without a legend; optionally pass the official QGIS SLD to the builder to generate one.</p>`;
+  if (!items.length) return `<p class="selenology-note">A mapped-unit legend is not available in this release.</p>`;
   return `<div class="selenology-legend">${items.slice(0, 80).map((x) => `<div><i style="--selenology-swatch:${esc(x.color || "#777")}"></i><span><b>${esc(x.label || x.code || "Mapped unit")}</b>${x.code ? `<small>${esc(x.code)}</small>` : ""}${x.age ? `<small>${esc(x.age)}</small>` : ""}</span></div>`).join("")}</div>`;
 }
 function textureHtml(data) {
   const tex = data?.texture || {};
   const ready = tex.available === true;
-  return `<div class="selenology-map-status ${ready ? "is-ready" : "is-missing"}"><div><b>${ready ? "Geologic Moon enabled" : "Geologic texture not built yet"}</b><span>${ready ? "The Moon sphere uses the USGS Unified Geologic Map while this tab is active." : "Run the bundled texture builder; the natural LROC surface remains active until then."}</span></div><strong>${ready ? "LIVE" : "NATURAL"}</strong></div>${legendHtml(data)}<p class="selenology-source">Source: USGS Astrogeology · Unified Geologic Map of the Moon, 1:5M (Fortezzo, Spudis & Harrel, 2020) · CC0</p>`;
+  return `<div class="selenology-map-status ${ready ? "is-ready" : "is-missing"}"><div><b>${ready ? "Geologic Moon enabled" : "Geologic texture unavailable"}</b><span>${ready ? "The Moon sphere uses the USGS Unified Geologic Map while this tab is active." : "The natural LROC surface remains active because the official mapped texture is not available in this release."}</span></div><strong>${ready ? "LIVE" : "NATURAL"}</strong></div>${legendHtml(data)}<p class="selenology-source">Source: USGS Astrogeology · Unified Geologic Map of the Moon, 1:5M (Fortezzo, Spudis & Harrel, 2020) · CC0</p>`;
 }
 function impactsHtml() {
   return `<div class="selenology-kv"><div><span>Catalogued craters ≥1 km</span><strong>${MOON_IMPACT_STATS.cratersGe1Km.toLocaleString()}</strong></div><div><span>Catalogued craters ≥20 km</span><strong>${MOON_IMPACT_STATS.cratersGe20Km.toLocaleString()}</strong></div><div><span>Approx. catalogue completeness</span><strong>~1–2 km+</strong></div></div><p class="selenology-note">The Moon has vastly more sub-kilometre craters. These are catalogue-qualified counts, not the literal total number of lunar craters.</p>`;

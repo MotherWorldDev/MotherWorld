@@ -1,15 +1,15 @@
-import { APP_CONFIG } from "./config.js?v=20260908-species-geometry1";
+import { APP_CONFIG } from "./config.js?v=20260908-env8-selenology";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
-import { createUI } from "./ui.js?v=20260906-species1";
-import { createSelenologyPanel } from "./selenologyPanel.js?v=20260907-env8-selenology";
-import { createGeologyPanel } from "./geologyPanel.js?v=20260907-env8-selenology";
-import { createClimateExtrasPanel } from "./climateExtrasPanel.js?v=20260907-env8-selenology";
-import { createEnvironmentHealthPanel } from "./environmentHealthPanel.js?v=20260907-env8-selenology";
-import { createEarthHealth } from "./earthHealth.js?v=20260907-env8-selenology";
+import { createUI } from "./ui.js?v=20260908-env8-selenology";
+import { createSelenologyPanel } from "./selenologyPanel.js?v=20260908-env8-selenology";
+import { createGeologyPanel } from "./geologyPanel.js?v=20260908-env8-selenology";
+import { createClimateExtrasPanel } from "./climateExtrasPanel.js?v=20260908-env8-selenology";
+import { createEnvironmentHealthPanel } from "./environmentHealthPanel.js?v=20260908-env8-selenology";
+import { createEarthHealth } from "./earthHealth.js?v=20260908-env8-selenology";
 import { createTemperaturePanel } from "./temperaturePanel.js?v=20260907-temperature1";
 import { createSpeciesPanel } from "./speciesPanel.js?v=20260908-species-geometry1";
 import { getBiomeColor, paletteMapFromIndex } from "./biomePalette.js";
-import { createGlobeExplorer } from "./globe.js?v=20260906-regions";
+import { createGlobeExplorer } from "./globe.js?v=20260908-env8-selenology";
 
 function toPublicDataUrl(relPath, fallback) {
   if (!relPath) return fallback;

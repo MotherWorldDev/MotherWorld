@@ -1,4 +1,4 @@
-import { createClimateExtrasDataService } from "./climateExtrasDataService.js?v=20260907-env4-climate";
+import { createClimateExtrasDataService } from "./climateExtrasDataService.js?v=20260908-env8-selenology";
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const COMPASS = ["N", "NNE", "NE", "ENE", "E", "ESE", "SE", "SSE", "S", "SSW", "SW", "WSW", "W", "WNW", "NW", "NNW"];

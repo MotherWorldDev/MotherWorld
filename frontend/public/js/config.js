@@ -1,12 +1,12 @@
 export const APP_CONFIG = {
   data: {
-    moonSelenologyUrl: "./data/moon/selenology.json?v=20260907-env8-selenology",
+    moonSelenologyUrl: "./data/moon/selenology.json?v=20260908-env8-selenology",
     geologyBaseUrl: "./data/geology/",
-    geologyIndexUrl: "./data/geology/geology.index.json?v=20260907-env8-selenology",
+    geologyIndexUrl: "./data/geology/geology.index.json?v=20260908-env8-selenology",
     climateExtrasBaseUrl: "./data/climate-extras/",
-    climateExtrasIndexUrl: "./data/climate-extras/climate-extras.index.json?v=20260907-env8-selenology",
+    climateExtrasIndexUrl: "./data/climate-extras/climate-extras.index.json?v=20260908-env8-selenology",
     regionalHealthBaseUrl: "./data/indices/regions/",
-    earthHealthUrl: "./data/indices/earth-health.json?v=20260907-env8-selenology",
+    earthHealthUrl: "./data/indices/earth-health.json?v=20260908-env8-selenology",
     climateIndexUrl: "./data/climate/climate.index.json?v=20260907-temperature1",
     climateBaseUrl: "./data/climate/",
     speciesIndexUrl: "./data/species/species.index.json?v=20260908-species-geometry1",

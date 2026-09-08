@@ -1,4 +1,4 @@
-import { createGeologyDataService } from "./geologyDataService.js?v=20260907-env7-impacts-moon";
+import { createGeologyDataService } from "./geologyDataService.js?v=20260908-env8-selenology";
 
 function esc(value){return String(value??"").replace(/[&<>"']/g,ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[ch]));}
 function finite(v){const n=Number(v);return Number.isFinite(n)?n:null;}

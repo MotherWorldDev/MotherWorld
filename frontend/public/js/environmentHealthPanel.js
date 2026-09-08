@@ -1,13 +1,134 @@
-function esc(v){return String(v??'').replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;')}
-function num(v,d=1){const n=Number(v);return Number.isFinite(n)?n.toFixed(d):'—'}
-function pct(v){const n=Number(v);return Number.isFinite(n)?`${(n*100).toFixed(0)}%`:'—'}
-function raw(c){if(c.raw==null)return '—';const n=Number(c.raw);const x=Number.isFinite(n)?n.toLocaleString(undefined,{maximumFractionDigits:3}):String(c.raw);return `${x}${c.unit?` ${c.unit}`:''}`}
-function card(f){const s=Number(f.score),ok=Number.isFinite(s);return `<details class="env-family-card" data-family-id="${esc(f.id)}"><summary><span class="env-family-name">${esc(f.label||f.id)}</span><span class="env-family-coverage">coverage ${esc(pct(f.coverage))}</span><strong>${ok?Math.round(s):'—'}</strong><span class="env-family-track"><i style="width:${ok?Math.max(0,Math.min(100,s)):0}%"></i></span></summary><div class="env-family-body">${(f.components||[]).map(c=>`<div class="env-component"><div><b>${esc(c.label||c.id)}</b><small>${esc(raw(c))}${c.source?` · ${esc(c.source)}`:''}</small></div><div class="env-component-score">${Number.isFinite(Number(c.score))?`${num(c.score,0)}/100`:'context'}</div></div>`).join('')}${f.context&&Object.keys(f.context).length?`<details class="env-context"><summary>Context / raw provider details</summary><pre>${esc(JSON.stringify(f.context,null,2))}</pre></details>`:''}</div></details>`}
-export function createEnvironmentHealthPanel(config={}){
- const els={tab:document.getElementById('sidebar-tab-health'),panel:document.getElementById('sidebar-health-panel'),status:document.getElementById('regional-health-status'),title:document.getElementById('regional-health-title'),cards:document.getElementById('regional-health-cards'),note:document.getElementById('regional-health-note')}; let region=null,serial=0; const cache=new Map(); const base=String(config.regionalHealthBaseUrl||'./data/indices/regions/').replace(/\/?$/,'/');
- function reset(msg='Select a region to inspect environmental condition indices.'){if(els.status){els.status.hidden=false;els.status.textContent=msg}if(els.cards)els.cards.innerHTML='';if(els.title)els.title.textContent='Regional health';if(els.note)els.note.textContent='100 = best condition / lowest pressure. Coverage is shown separately; missing data is never treated as healthy.'}
- async function load(){const r=region,n=++serial;if(!r||r.id==='moon'){reset(r?.id==='moon'?'Environmental Earth indices do not apply to the Moon.':undefined);return}reset('Loading regional environmental indices…');try{let d=cache.get(r.id);if(!d){const res=await fetch(`${base}${encodeURIComponent(r.id)}.json`);if(res.status===404){reset('No generated family indices for this region yet. Run the unified scoring pipeline.');return}if(!res.ok)throw new Error(`regional index request failed (${res.status})`);d=await res.json();cache.set(r.id,d)}if(n!==serial)return;if(els.status)els.status.hidden=true;if(els.title)els.title.textContent=d.regionName||r.name||r.id;if(els.cards)els.cards.innerHTML=(d.families||[]).map(card).join('');}catch(e){if(n===serial)reset(`Regional indices unavailable: ${e.message}`)}}
- function setRegion(r){region=r||null;serial++;reset();if(els.panel?.hidden===false)load()}
- function openFamily(fid){if(!region)return;els.tab?.click();window.requestAnimationFrame(async()=>{await load();const el=els.cards?.querySelector(`[data-family-id="${CSS.escape(fid)}"]`);if(el){el.open=true;el.scrollIntoView({block:'nearest'})}})}
- els.tab?.addEventListener('click',()=>window.requestAnimationFrame(load));window.addEventListener('motherworld:open-family',e=>openFamily(e.detail?.familyId));reset();return{setRegion,reload:load,openFamily}
+function esc(value) {
+  return String(value ?? "").replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+}
+
+function finite(value) {
+  if (value === null || value === undefined || value === "") return null;
+  const number = Number(value);
+  return Number.isFinite(number) ? number : null;
+}
+
+function num(value, digits = 1) {
+  const number = finite(value);
+  return number === null ? "—" : number.toFixed(digits);
+}
+
+function pct(value) {
+  const number = finite(value);
+  return number === null ? "—" : `${(number * 100).toFixed(0)}%`;
+}
+
+function raw(component) {
+  if (component.raw === null || component.raw === undefined) return "—";
+  const number = finite(component.raw);
+  const value = number === null ? String(component.raw) : number.toLocaleString(undefined, { maximumFractionDigits: 3 });
+  return `${value}${component.unit ? ` ${component.unit}` : ""}`;
+}
+
+function card(family) {
+  const score = finite(family.score);
+  const componentRows = (family.components || []).map((component) => {
+    const componentScore = finite(component.score);
+    return `<div class="env-component"><div><b>${esc(component.label || component.id)}</b><small>${esc(raw(component))}${component.source ? ` · ${esc(component.source)}` : ""}</small></div><div class="env-component-score">${componentScore === null ? "context" : `${num(componentScore, 0)}/100`}</div></div>`;
+  }).join("");
+  const context = family.context && Object.keys(family.context).length
+    ? `<details class="env-context"><summary>Context / raw provider details</summary><pre>${esc(JSON.stringify(family.context, null, 2))}</pre></details>`
+    : "";
+  return `<details class="env-family-card" data-family-id="${esc(family.id)}"><summary><span class="env-family-name">${esc(family.label || family.id)}</span><span class="env-family-coverage">coverage ${esc(pct(family.coverage))}</span><strong>${score === null ? "—" : Math.round(score)}</strong><span class="env-family-track"><i style="width:${score === null ? 0 : Math.max(0, Math.min(100, score))}%"></i></span></summary><div class="env-family-body">${componentRows}${context}</div></details>`;
+}
+
+export function createEnvironmentHealthPanel(config = {}, fetcher = (...args) => fetch(...args)) {
+  const els = {
+    tab: document.getElementById("sidebar-tab-health"),
+    panel: document.getElementById("sidebar-health-panel"),
+    status: document.getElementById("regional-health-status"),
+    title: document.getElementById("regional-health-title"),
+    cards: document.getElementById("regional-health-cards"),
+    note: document.getElementById("regional-health-note"),
+  };
+  let region = null;
+  let serial = 0;
+  const cacheLimit = Math.max(1, Number(config.regionalHealthCacheLimit || 6));
+  const cache = new Map();
+  const base = String(config.regionalHealthBaseUrl || "./data/indices/regions/").replace(/\/?$/, "/");
+
+  function reset(message = "Select a region to inspect environmental condition indices.") {
+    if (els.status) {
+      els.status.hidden = false;
+      els.status.textContent = message;
+    }
+    if (els.cards) els.cards.innerHTML = "";
+    if (els.title) els.title.textContent = "Regional health";
+    if (els.note) els.note.textContent = "100 = best condition / lowest pressure. Coverage is shown separately; missing data is never treated as healthy.";
+  }
+
+  function cached(id) {
+    if (!cache.has(id)) return null;
+    const data = cache.get(id);
+    cache.delete(id);
+    cache.set(id, data);
+    return data;
+  }
+
+  function remember(id, data) {
+    cache.delete(id);
+    cache.set(id, data);
+    while (cache.size > cacheLimit) cache.delete(cache.keys().next().value);
+  }
+
+  async function load() {
+    const selected = region;
+    const requestSerial = ++serial;
+    if (!selected || selected.id === "moon") {
+      reset(selected?.id === "moon" ? "Environmental Earth indices do not apply to the Moon." : undefined);
+      return;
+    }
+    reset("Loading regional environmental indices…");
+    try {
+      let data = cached(selected.id);
+      if (!data) {
+        const response = await fetcher(`${base}${encodeURIComponent(selected.id)}.json`);
+        if (requestSerial !== serial) return;
+        if (response.status === 404) {
+          reset("No generated regional indices are available for this region yet.");
+          return;
+        }
+        if (!response.ok) throw new Error(`regional index request failed (${response.status})`);
+        data = await response.json();
+        if (requestSerial !== serial) return;
+        remember(selected.id, data);
+      }
+      if (requestSerial !== serial) return;
+      if (els.status) els.status.hidden = true;
+      if (els.title) els.title.textContent = data.regionName || selected.name || selected.id;
+      if (els.cards) els.cards.innerHTML = (data.families || []).map(card).join("");
+    } catch (error) {
+      if (requestSerial === serial) reset(`Regional indices unavailable: ${error.message}`);
+    }
+  }
+
+  function setRegion(next) {
+    region = next || null;
+    serial += 1;
+    reset();
+    if (els.panel?.hidden === false) load();
+  }
+
+  function openFamily(familyId) {
+    if (!region) return;
+    els.tab?.click();
+    window.requestAnimationFrame(async () => {
+      await load();
+      const element = els.cards?.querySelector(`[data-family-id="${CSS.escape(familyId)}"]`);
+      if (element) {
+        element.open = true;
+        element.scrollIntoView({ block: "nearest" });
+      }
+    });
+  }
+
+  els.tab?.addEventListener("click", () => window.requestAnimationFrame(load));
+  window.addEventListener("motherworld:open-family", (event) => openFamily(event.detail?.familyId));
+  reset();
+  return { setRegion, reload: load, openFamily };
 }

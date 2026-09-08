@@ -1,11 +1,12 @@
-export function createClimateExtrasDataService(dataConfig = {}) {
+export function createClimateExtrasDataService(dataConfig = {}, fetcher = (...args) => fetch(...args)) {
   const indexUrl = dataConfig.climateExtrasIndexUrl || "./data/climate-extras/climate-extras.index.json";
   const baseUrl = dataConfig.climateExtrasBaseUrl || "./data/climate-extras/";
+  const cacheLimit = Math.max(1, Number(dataConfig.climateExtrasCacheLimit || 6));
   let indexPromise = null;
   const cache = new Map();
 
   async function loadJson(url) {
-    const response = await fetch(url, { cache: "default" });
+    const response = await fetcher(url, { cache: "default" });
     if (response.status === 404) return null;
     if (!response.ok) throw new Error(`${response.status} ${response.statusText}`);
     return response.json();
@@ -27,7 +28,12 @@ export function createClimateExtrasDataService(dataConfig = {}) {
 
   async function loadRegion(regionId) {
     if (!regionId) return null;
-    if (cache.has(regionId)) return cache.get(regionId);
+    if (cache.has(regionId)) {
+      const data = cache.get(regionId);
+      cache.delete(regionId);
+      cache.set(regionId, data);
+      return data;
+    }
     const index = await getIndex();
     const entry = index?.regions?.[regionId];
     if (!entry?.url) return null;
@@ -36,6 +42,7 @@ export function createClimateExtrasDataService(dataConfig = {}) {
       throw error;
     });
     cache.set(regionId, promise);
+    while (cache.size > cacheLimit) cache.delete(cache.keys().next().value);
     return promise;
   }
 

@@ -1,4 +1,4 @@
-import { MOON_IMPACT_STATS } from "./moonImpactStats.js?v=20260907-env8-selenology";
+import { MOON_IMPACT_STATS } from "./moonImpactStats.js?v=20260908-env8-selenology";
 import { renderMoonApsidalPlot } from "./moonPlot.js";
 import { renderMoonTimers } from "./moonTimers.js";
 
