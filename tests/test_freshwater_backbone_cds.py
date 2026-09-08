@@ -12,7 +12,7 @@ from netCDF4 import Dataset, date2num
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "scripts"))
-from build_freshwater_backbone_cds import build, root_file  # noqa: E402
+from build_freshwater_backbone_cds import build, root_file, spatial_mask  # noqa: E402
 
 
 def make_fixture(path: Path, year: int, value: float) -> None:
@@ -25,7 +25,7 @@ def make_fixture(path: Path, year: int, value: float) -> None:
         time.calendar = "standard"
         time[:] = date2num([datetime(year, month, 15) for month in range(1, 13)], time.units, time.calendar)
         dataset.createVariable("latitude", "f4", ("latitude",))[:] = [70.0, 0.0, -70.0]
-        dataset.createVariable("longitude", "f4", ("longitude",))[:] = [-20.0, 0.0]
+        dataset.createVariable("longitude", "f4", ("longitude",))[:] = [300.0, 0.0]
         for index, name in enumerate(("swvl1", "swvl2", "swvl3"), start=1):
             variable = dataset.createVariable(name, "f4", ("valid_time", "latitude", "longitude"))
             variable[:] = value + index
@@ -51,6 +51,7 @@ class FreshwaterCdsFixtureTests(unittest.TestCase):
             self.assertEqual(payload["series"][0]["score"], 100.0)
             self.assertIn("acceptedAliases", payload["sources"][0])
             self.assertIn("greenlandBox", payload["method"]["iceExclusion"])
+            self.assertFalse(spatial_mask(np.asarray([70.0]), np.asarray([300.0]))[0, 0])
 
 
 if __name__ == "__main__":

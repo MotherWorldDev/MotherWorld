@@ -123,7 +123,11 @@ def root_zone(path: Path, month: int, expected_year: int | None = None) -> tuple
 
 def spatial_mask(lat: np.ndarray, lon: np.ndarray) -> np.ndarray:
     lat_grid = lat[:, None]
-    lon_grid = lon[None, :]
+    # CDS ERA5 grids commonly use 0–360°E; the package geometry is expressed
+    # in -180..180° longitude.  The data order is preserved, so each mask
+    # column still corresponds to the same source grid column.
+    normalized_lon = ((lon + 180.0) % 360.0) - 180.0
+    lon_grid = normalized_lon[None, :]
     mask = np.isfinite(lat_grid) & np.isfinite(lon_grid) & (lat_grid >= -60.0)
     greenland = (lat_grid >= 58.0) & (lat_grid <= 85.0) & (lon_grid >= -75.0) & (lon_grid <= -10.0)
     return mask & ~greenland
@@ -254,7 +258,7 @@ def build(args) -> dict:
         "series": series,
         "generatedAt": datetime.now(timezone.utc).isoformat(),
         "method": {"backbone": "depth-weighted ERA5-Land volumetric soil water layers 1–3", "layerWeights": {"0–7 cm": 0.07, "7–28 cm": 0.21, "28–100 cm": 0.72}, "baseline": f"{args.baseline_start}–{args.baseline_end} calendar-month per-grid-cell P10–P90 envelope", "normalization": "80% of valid ice-sheet-excluded land-area-months inside the local envelope = 100", "yearDefinition": f"Calendar years {args.start_year}–{args.end_year}; missing source years are omitted and monthly coverage is explicit", "missingYears": missing_years, "scope": "global ice-sheet-excluded land", "iceExclusion": ICE_EXCLUSION, "scoreDirection": "100 = root-zone soil moisture remains within historical local regimes", "diagnosticPolicy": "GRACE terrestrial water storage and JRC surface-water retention remain diagnostics only"},
-        "sources": [{"id": "reanalysis-era5-land-monthly-means", "label": "Copernicus CDS ERA5-Land monthly averaged data", "variables": VARIABLES, "acceptedAliases": VARIABLE_ALIASES, "area": area, "retrievalDirectory": str(directory), "baselineSourceFingerprint": source_id}],
+        "sources": [{"id": "reanalysis-era5-land-monthly-means", "label": "Copernicus CDS ERA5-Land monthly averaged data", "variables": VARIABLES, "acceptedAliases": VARIABLE_ALIASES, "longitudeConvention": "Mask normalizes source longitudes to [-180,180) without reordering data columns", "area": area, "retrievalDirectory": str(directory), "baselineSourceFingerprint": source_id}],
     }
 
 
