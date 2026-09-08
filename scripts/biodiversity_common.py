@@ -19,9 +19,12 @@ from rasterio.windows import Window, from_bounds
 from shapely.geometry import MultiPolygon, Polygon, box, mapping
 from shapely.ops import transform as shp_transform, unary_union
 
+from analysis_geometry import analysis_geometry_cache_identity, analysis_geometry_metadata, apply_land_geometry_overrides
+
 WGS84 = CRS.from_epsg(4326)
 EQUAL_AREA = CRS.from_epsg(6933)
 EARTH_RADIUS_M = 6_371_008.8
+_ANALYSIS_GEOMETRY_CACHE: dict[tuple[str, str, str], object] = {}
 
 
 @dataclass(frozen=True)
@@ -60,7 +63,19 @@ def provider_region_path(repo: Path, provider: str, kind: str, region_id: str) -
     return provider_root(repo, provider) / kind / f"{region_id}.json"
 
 
-def write_provider_region(repo: Path, provider: str, kind: str, region_id: str, payload: dict) -> None:
+def write_provider_region(repo: Path, provider: str, kind: str, region_id: str, payload: dict, *, geometry=None) -> None:
+    # Producers normally load their corrected regions immediately before writing.
+    # The cache therefore carries the geometry actually used by that process;
+    # there is no fallback lookup here that could relabel an old reduction.
+    region_id = str(region_id)
+    payload = dict(payload)
+    if geometry is None:
+        geometry = payload.pop("_analysisGeometryObject", None)
+    if geometry is None:
+        geometry = _ANALYSIS_GEOMETRY_CACHE.get((str(Path(repo).resolve()), str(kind), region_id))
+    if geometry is not None:
+        payload["analysisGeometry"] = analysis_geometry_metadata(region_id, geometry)
+        payload["analysisGeometryCacheIdentity"] = analysis_geometry_cache_identity(region_id, geometry)
     write_json(provider_region_path(repo, provider, kind, region_id), payload, compact=True)
 
 
@@ -138,23 +153,30 @@ def _read_layer(path: Path, kind: str) -> dict[str, object]:
     return result
 
 
+def _cache_analysis_geometries(repo: Path, kind: str, geometries: dict[str, object]) -> dict[str, object]:
+    cache_root = str(Path(repo).resolve())
+    for region_id, geometry in geometries.items():
+        _ANALYSIS_GEOMETRY_CACHE[(cache_root, str(kind), str(region_id))] = geometry
+    return geometries
+
+
 def load_region_geometries(repo: Path, kind: str) -> dict[str, object]:
     if kind == "land":
         shp = repo / "Ecoregions2017/Ecoregions2017.shp"
         if shp.exists():
-            return _read_layer(shp, "land")
+            return _cache_analysis_geometries(repo, kind, apply_land_geometry_overrides(_read_layer(shp, "land")))
         realm_dir = repo / "frontend/public/data/lod1_realms"
         files = sorted(realm_dir.glob("*.topojson"))
         result: dict[str, object] = {}
         for file in files:
             result.update(_read_layer(file, "land"))
         if result:
-            return result
-        return _read_layer(repo / "frontend/public/data/lod0/ecoregions_lod0.topojson", "land")
+            return _cache_analysis_geometries(repo, kind, apply_land_geometry_overrides(result))
+        return _cache_analysis_geometries(repo, kind, apply_land_geometry_overrides(_read_layer(repo / "frontend/public/data/lod0/ecoregions_lod0.topojson", "land")))
     if kind == "marine":
-        return _read_layer(repo / "frontend/public/data/marine/lod0/marine_ecoregions_lod0.topojson", "marine")
+        return _cache_analysis_geometries(repo, kind, _read_layer(repo / "frontend/public/data/marine/lod0/marine_ecoregions_lod0.topojson", "marine"))
     if kind == "lakes":
-        return _read_layer(repo / "frontend/public/data/lakes/lod0/lakes_lod0.topojson", "lakes")
+        return _cache_analysis_geometries(repo, kind, _read_layer(repo / "frontend/public/data/lakes/lod0/lakes_lod0.topojson", "lakes"))
     raise ValueError(f"Unsupported region kind: {kind}")
 
 

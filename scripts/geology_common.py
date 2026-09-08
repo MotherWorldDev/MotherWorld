@@ -10,7 +10,10 @@ import pandas as pd
 from shapely.geometry import box
 from shapely.ops import unary_union
 
+from analysis_geometry import analysis_geometry_cache_identity, analysis_geometry_metadata, apply_land_geometry_overrides
+
 WGS84="EPSG:4326"; AREA_CRS="EPSG:6933"
+_ANALYSIS_GEOMETRY_CACHE: dict[tuple[str, str, str], object] = {}
 GLIM_CLASSES={
  "su":"Unconsolidated sediments","ss":"Siliciclastic sedimentary rocks","py":"Pyroclastics","sm":"Mixed sedimentary rocks","sc":"Carbonate sedimentary rocks","ev":"Evaporites","va":"Acid volcanic rocks","vi":"Intermediate volcanic rocks","vb":"Basic volcanic rocks","pa":"Acid plutonic rocks","pi":"Intermediate plutonic rocks","pb":"Basic plutonic rocks","mt":"Metamorphics","wb":"Water bodies","ig":"Ice and glaciers","nd":"No data"
 }
@@ -79,14 +82,21 @@ def load_regions(repo:Path, kinds:Iterable[str]|None=None, globalize_open_ocean:
     if 'land' in kinds: specs.append(('land',repo/'frontend/public/data/lod0/ecoregions_lod0.topojson',repo/'frontend/public/data/regions.index.json'))
     if 'marine' in kinds: specs.append(('marine',repo/'frontend/public/data/marine/lod0/marine_ecoregions_lod0.topojson',repo/'frontend/public/data/marine.index.json'))
     if 'lakes' in kinds: specs.append(('lakes',repo/'frontend/public/data/lakes/lod0/lakes_lod0.topojson',repo/'frontend/public/data/lakes.index.json'))
-    out=[]
+    out=[]; land_geometries={}
     for kind,path,index in specs:
         if not path.exists():continue
         names=_index_names(index); g=read_vector(path); grouped=defaultdict(list)
         for idx,row in g.iterrows():
             rid=_rid(row,idx)
             if rid and row.geometry is not None and not row.geometry.is_empty:grouped[rid].append(row.geometry)
-        for rid,geoms in grouped.items():out.append({'regionId':rid,'regionName':names.get(rid,rid),'kind':kind,'geometry':unary_union(geoms)})
+        for rid,geoms in grouped.items():
+            geometry=unary_union(geoms)
+            if kind=='land': land_geometries[rid]=geometry
+            out.append({'regionId':rid,'regionName':names.get(rid,rid),'kind':kind,'geometry':geometry})
+    if land_geometries:
+        corrected=apply_land_geometry_overrides(land_geometries)
+        for record in out:
+            if record['kind']=='land': record['geometry']=corrected[record['regionId']]
     result=gpd.GeoDataFrame(out,geometry='geometry',crs=WGS84)
     if globalize_open_ocean and 'marine' in kinds:
         # The app's open-ocean selection is a non-species whole-ocean scope:
@@ -114,14 +124,27 @@ def load_regions(repo:Path, kinds:Iterable[str]|None=None, globalize_open_ocean:
                     pd.concat([result,gpd.GeoDataFrame([{'regionId':'open_ocean','regionName':'Global Ocean','kind':'marine','geometry':ocean}],geometry='geometry',crs=WGS84)],ignore_index=True),
                     geometry='geometry',crs=WGS84,
                 )
+    cache_root=str(Path(repo).resolve())
+    for record in result.itertuples():
+        _ANALYSIS_GEOMETRY_CACHE[(cache_root,str(record.kind),str(record.regionId))]=record.geometry
     return result
 
 def fragments_root(repo:Path,provider_id:str)->Path:
     p=repo/'.cache/motherworld/geology/providers'/provider_id;p.mkdir(parents=True,exist_ok=True);return p
 
 def write_fragment(repo:Path,provider_id:str,region:dict,sections:dict,source:dict):
-    payload={'schemaVersion':1,'providerId':provider_id,'regionId':region['regionId'],'regionName':region.get('regionName',region['regionId']),'kind':region.get('kind'),'generatedAt':utc_now_iso(),'sections':sections,'source':source}
-    p=fragments_root(repo,provider_id)/f"{region['regionId']}.json";p.write_text(json.dumps(json_safe(payload),indent=2,ensure_ascii=False,allow_nan=False)+'\n',encoding='utf-8');return p
+    region_id=str(region['regionId']); kind=str(region.get('kind') or 'land')
+    geometry=region.get('geometry')
+    if geometry is None:
+        geometry=_ANALYSIS_GEOMETRY_CACHE.get((str(Path(repo).resolve()),kind,region_id))
+    # If the producer did not provide a geometry and did not load one in this
+    # process, leave the fragment unverified.  Looking up today's geometry here
+    # would incorrectly relabel sections computed from an older footprint.
+    payload={'schemaVersion':1,'providerId':provider_id,'regionId':region_id,'regionName':region.get('regionName',region_id),'kind':region.get('kind'),'generatedAt':utc_now_iso(),'sections':sections,'source':source}
+    if geometry is not None:
+        payload['analysisGeometry']=analysis_geometry_metadata(region_id,geometry)
+        payload['analysisGeometryCacheIdentity']=analysis_geometry_cache_identity(region_id,geometry)
+    p=fragments_root(repo,provider_id)/f"{region_id}.json";p.write_text(json.dumps(json_safe(payload),indent=2,ensure_ascii=False,allow_nan=False)+'\n',encoding='utf-8');return p
 
 def region_records(regions:gpd.GeoDataFrame):
     return [dict(regionId=r.regionId,regionName=r.regionName,kind=r.kind,geometry=r.geometry) for r in regions.itertuples()]

@@ -5,9 +5,82 @@ import argparse
 import math
 from pathlib import Path
 
-from biodiversity_common import load_metadata, percentile_rank, provider_region_path, read_json, utc_now_iso, write_json
+from analysis_geometry import analysis_geometry_cache_identity, analysis_geometry_metadata
+from biodiversity_common import load_metadata, load_region_geometries, percentile_rank, provider_region_path, read_json, utc_now_iso, write_json
 
 PROVIDERS = ("nhm_bii", "iucn_rasters", "iucn_ranges", "phylacine")
+AFFECTED_ANALYSIS_REGIONS = {
+    "eco_117", "eco_121", "eco_130", "eco_267",
+    "eco_509", "eco_562", "eco_609",
+}
+
+
+def _is_open_ocean(region_id: str) -> bool:
+    rid = str(region_id or "")
+    return rid == "open_ocean" or rid == "marine_ocean_0" or rid.endswith("ocean_0")
+
+
+def _expected_geometry(repo: Path, kinds) -> dict[tuple[str, str], tuple[str, dict]]:
+    expected = {}
+    for kind in kinds:
+        try:
+            geometries = load_region_geometries(repo, kind)
+        except Exception:
+            continue
+        for rid, geometry in geometries.items():
+            rid = str(rid)
+            if rid not in AFFECTED_ANALYSIS_REGIONS:
+                continue
+            expected[(rid, str(kind))] = (
+                analysis_geometry_cache_identity(rid, geometry),
+                analysis_geometry_metadata(rid, geometry),
+            )
+    if "marine" in kinds:
+        # Biodiversity has no synthetic ocean loader of its own, but its merge
+        # can still receive an open_ocean fragment from a shared provider.
+        try:
+            from geology_common import load_regions as load_geology_regions
+            regions = load_geology_regions(repo, kinds=("land", "marine", "lakes"), globalize_open_ocean=True)
+            for row in regions.itertuples():
+                if _is_open_ocean(row.regionId):
+                    expected[("open_ocean", "marine")] = (
+                        analysis_geometry_cache_identity("open_ocean", row.geometry),
+                        analysis_geometry_metadata("open_ocean", row.geometry),
+                    )
+        except Exception:
+            pass
+    return expected
+
+
+def _stale_reason(data: dict, expected: dict[tuple[str, str], tuple[str, dict]]):
+    rid = str(data.get("regionId") or "")
+    if rid not in AFFECTED_ANALYSIS_REGIONS and not _is_open_ocean(rid):
+        return None
+    kind = str(data.get("regionKind") or data.get("kind") or ("marine" if _is_open_ocean(rid) else "land"))
+    key = ("open_ocean" if _is_open_ocean(rid) else rid, kind)
+    target = expected.get(key)
+    if target is None:
+        return {"reason": "expected_analysis_geometry_unavailable"}
+    expected_identity, expected_metadata = target
+    actual_identity = data.get("analysisGeometryCacheIdentity")
+    actual_metadata = data.get("analysisGeometry") or {}
+    if actual_identity != expected_identity:
+        return {
+            "reason": "missing_analysis_geometry_identity" if not actual_identity else "analysis_geometry_identity_mismatch",
+            "expected": expected_identity,
+            "actual": actual_identity,
+            "expectedFingerprint": expected_metadata.get("geometryFingerprint"),
+            "actualFingerprint": actual_metadata.get("geometryFingerprint"),
+        }
+    if actual_metadata.get("geometryFingerprint") != expected_metadata.get("geometryFingerprint"):
+        return {
+            "reason": "analysis_geometry_fingerprint_mismatch",
+            "expected": expected_identity,
+            "actual": actual_identity,
+            "expectedFingerprint": expected_metadata.get("geometryFingerprint"),
+            "actualFingerprint": actual_metadata.get("geometryFingerprint"),
+        }
+    return None
 
 
 def parse_args():
@@ -45,6 +118,8 @@ def main():
     kinds = args.kind or ["land", "marine", "lakes"]
     manifest = read_json(repo / "frontend/public/data/biodiversity/provider-manifest.json", {})
     species_idx = recorded_index(repo)
+    expected_geometry = _expected_geometry(repo, kinds)
+    stale_fragments = []
     regions = {}
 
     for kind in kinds:
@@ -56,7 +131,18 @@ def main():
                     continue
                 path = provider_region_path(repo, provider, kind, rid)
                 if path.exists():
-                    provider_data[provider] = read_json(path, {})
+                    data = read_json(path, {})
+                    stale = _stale_reason(data, expected_geometry)
+                    if stale is not None:
+                        stale_fragments.append({
+                            "providerId": data.get("provider") or provider,
+                            "regionId": rid,
+                            "kind": kind,
+                            "path": path.relative_to(repo).as_posix(),
+                            **stale,
+                        })
+                        continue
+                    provider_data[provider] = data
             if "recorded_species" not in exclude and rid in species_idx:
                 rec = species_idx[rid]
                 provider_data["recorded_species"] = {
@@ -67,6 +153,10 @@ def main():
                     },
                     "source": {"source": rec.get("source")},
                 }
+                expected = expected_geometry.get((str(rid), str(kind)))
+                if expected is not None:
+                    provider_data["recorded_species"]["analysisGeometry"] = expected[1]
+                    provider_data["recorded_species"]["analysisGeometryCacheIdentity"] = expected[0]
             if not provider_data:
                 continue
 
@@ -116,12 +206,23 @@ def main():
                     "occurrenceCount": rec.get("occurrenceCount"),
                 }
 
+            expected = expected_geometry.get((str(rid), str(kind)))
+            analysis_metadata = expected[1] if expected is not None else next(
+                (value.get("analysisGeometry") for value in provider_data.values() if value.get("analysisGeometry")),
+                None,
+            )
+            analysis_identity = expected[0] if expected is not None else next(
+                (value.get("analysisGeometryCacheIdentity") for value in provider_data.values() if value.get("analysisGeometryCacheIdentity")),
+                None,
+            )
             regions[rid] = {
                 "schemaVersion": 1,
                 "regionId": rid,
                 "regionName": region_meta.get("name") or rid,
                 "regionKind": kind,
                 "generatedAt": utc_now_iso(),
+                "analysisGeometry": analysis_metadata,
+                "analysisGeometryCacheIdentity": analysis_identity,
                 "summary": summary,
                 "providers": provider_data,
                 "providerOrder": [p for p in ("nhm_bii", "iucn_rasters", "iucn_ranges", "phylacine", "recorded_species") if p in provider_data],
@@ -155,6 +256,13 @@ def main():
         "regions": {},
         "providers": manifest.get("providers", {}),
         "excludedProviders": sorted(exclude),
+        "analysisGeometryPolicy": {
+            "schemaVersion": 1,
+            "guardedRegionIds": sorted(AFFECTED_ANALYSIS_REGIONS),
+            "guardedSyntheticIds": ["open_ocean"],
+            "requireProducerIdentity": True,
+        },
+        "staleFragments": stale_fragments,
         "design": {
             "headline": "BII intactness when available",
             "compositeScore": False,
@@ -172,6 +280,8 @@ def main():
             "headlineIntactnessPct": payload["summary"].get("intactness", {}).get("valuePct"),
         }
     write_json(data_root / "biodiversity.index.json", index)
+    if stale_fragments:
+        print(f"Withheld {len(stale_fragments)} stale biodiversity fragments for corrected analysis footprints")
     print(f"Merged {len(regions)} biodiversity region payloads. Excluded providers: {sorted(exclude) or 'none'}")
 
 
