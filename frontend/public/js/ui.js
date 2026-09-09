@@ -429,7 +429,7 @@ export function createUI(appConfig = null) {
 
   function setRegionFillEnabled(enabled) {
     if (!els.regionFillToggleBtn) return;
-    els.regionFillToggleBtn.textContent = enabled ? "Filled Regions" : "Outlines Only";
+    els.regionFillToggleBtn.textContent = enabled ? "Selected fill" : "Selected outline";
     els.regionFillToggleBtn.setAttribute("aria-pressed", String(Boolean(enabled)));
   }
 

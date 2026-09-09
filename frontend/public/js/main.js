@@ -1,6 +1,6 @@
 import { APP_CONFIG } from "./config.js?v=20260909-geology1";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
-import { createUI } from "./ui.js?v=20260908-diagnostics1";
+import { createUI } from "./ui.js?v=20260909-selected-region1";
 import { createSelenologyPanel } from "./selenologyPanel.js?v=20260908-env8-selenology";
 import { createGeologyPanel } from "./geologyPanel.js?v=20260908-diagnostics1";
 import { createClimateExtrasPanel } from "./climateExtrasPanel.js?v=20260908-env8-selenology";
@@ -11,7 +11,7 @@ import { createEarthHealth } from "./earthHealth.js?v=20260908-env8-selenology";
 import { createTemperaturePanel } from "./temperaturePanel.js?v=20260907-temperature1";
 import { createSpeciesPanel } from "./speciesPanel.js?v=20260908-species-geometry1";
 import { getBiomeColor, paletteMapFromIndex } from "./biomePalette.js";
-import { createGlobeExplorer } from "./globe.js?v=20260908-env8-selenology";
+import { createGlobeExplorer } from "./globe.js?v=20260909-selected-region1";
 
 function toPublicDataUrl(relPath, fallback) {
   if (!relPath) return fallback;

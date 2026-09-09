@@ -136,18 +136,24 @@ function normalizeLongitudeNear(reference, value) {
 
 function pointInRingRadians(pointLon, pointLat, positions) {
   if (!Array.isArray(positions) || positions.length < 3) return false;
+  const points = positions.map((position) => Cesium.Cartographic.fromCartesian(position));
+  if (points.some((point) => !point)) return false;
+  // Unwrap the ring continuously, not around the click: otherwise a narrow
+  // dateline polygon can appear to contain a point on the opposite meridian.
+  let previousLon = points[0].longitude;
+  const ring = points.map((point) => {
+    const longitude = normalizeLongitudeNear(previousLon, point.longitude);
+    previousLon = longitude;
+    return { longitude, latitude: point.latitude };
+  });
+  const localLon = normalizeLongitudeNear(ring[0].longitude, pointLon);
   let inside = false;
-  for (let i = 0, j = positions.length - 1; i < positions.length; j = i, i += 1) {
-    const a = Cesium.Cartographic.fromCartesian(positions[i]);
-    const b = Cesium.Cartographic.fromCartesian(positions[j]);
-    if (!a || !b) continue;
-    const ax = normalizeLongitudeNear(pointLon, a.longitude);
-    const bx = normalizeLongitudeNear(pointLon, b.longitude);
-    const ay = a.latitude;
-    const by = b.latitude;
+  for (let i = 0, j = ring.length - 1; i < ring.length; j = i, i += 1) {
+    const a = ring[i], b = ring[j];
     const intersects =
-      (ay > pointLat) !== (by > pointLat) &&
-      pointLon < ((bx - ax) * (pointLat - ay)) / ((by - ay) || 1e-12) + ax;
+      (a.latitude > pointLat) !== (b.latitude > pointLat) &&
+      localLon < ((b.longitude - a.longitude) * (pointLat - a.latitude)) /
+        ((b.latitude - a.latitude) || 1e-12) + a.longitude;
     if (intersects) inside = !inside;
   }
   return inside;
@@ -2205,7 +2211,6 @@ export function createGlobeExplorer({
   function shouldShowBaseEntity(entity) {
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
-    if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
     if (getActiveLandGlobalDataSource() !== baseDataSource) return false;
     if (activeRealmSlug && !debugOptions.disableLodSwap && !debugOptions.lod0Only) {
       return getEntityRealmSlug(entity) !== activeRealmSlug;
@@ -2216,7 +2221,6 @@ export function createGlobeExplorer({
   function shouldShowLandOverviewEntity(entity) {
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
-    if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
     if (getActiveLandGlobalDataSource() !== landOverviewDataSource) return false;
     if (activeRealmSlug && !debugOptions.disableLodSwap && !debugOptions.lod0Only) return false;
     return true;
@@ -2227,14 +2231,12 @@ export function createGlobeExplorer({
     if (debugOptions.lod0Only) return false;
     if (debugOptions.disableLodSwap) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
-    if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
     return true;
   }
 
   function shouldShowMarineEntity(entity) {
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
-    if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
     if (getActiveMarineGlobalDataSource() !== marineDataSource) return false;
     return true;
   }
@@ -2242,7 +2244,6 @@ export function createGlobeExplorer({
   function shouldShowMarineOverviewEntity(entity) {
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
-    if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
     if (getActiveMarineGlobalDataSource() !== marineOverviewDataSource) return false;
     return true;
   }
@@ -2250,7 +2251,6 @@ export function createGlobeExplorer({
   function shouldShowLakesEntity(entity) {
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
-    if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
     if (getActiveLakesGlobalDataSource() !== lakesDataSource) return false;
     return true;
   }
@@ -2258,7 +2258,6 @@ export function createGlobeExplorer({
   function shouldShowLakesOverviewEntity(entity) {
     if (debugOptions.lod1Only) return false;
     if (isEntityFilteredOutByDebug(entity)) return false;
-    if (appConfig.globe.cameraCulling !== false && entity._cameraVisible === false) return false;
     if (getActiveLakesGlobalDataSource() !== lakesOverviewDataSource) return false;
     return true;
   }
@@ -2299,47 +2298,27 @@ export function createGlobeExplorer({
     const sources = shouldRenderEcoregions() ? activeDataSources() : [];
     const sourcesChanged = sources.length !== visibleRegionSources.length ||
       sources.some((ds, index) => ds !== visibleRegionSources[index]);
-    const allSources = [landOverviewDataSource, baseDataSource, activeRealmDataSource,
-      marineOverviewDataSource, marineDataSource, lakesOverviewDataSource, lakesDataSource];
-    for (const ds of allSources) {
+    // These sources are lookup collections, never attached to Cesium's renderer.
+    for (const ds of [landOverviewDataSource, baseDataSource, activeRealmDataSource,
+      marineOverviewDataSource, marineDataSource, lakesOverviewDataSource, lakesDataSource]) {
       if (ds) ds.show = sources.includes(ds);
-    }
-    let marineTotal = 0;
-    let marineVisible = 0;
-    let baseTotal = 0;
-    let baseVisible = 0;
-    let detailTotal = 0;
-    let detailVisible = 0;
-
-    for (const ds of sources) {
-      for (const entity of ds.entities.values) {
-        applyEntityVisibility(entity);
-        if (sourcesChanged) applyEntityStyle(entity);
-        if (entity._sourceTag === "marine" || entity._sourceTag === "marineOverview") {
-          marineTotal += 1;
-          if (entity.show) marineVisible += 1;
-        } else if (entity._sourceTag === "base" || entity._sourceTag === "landOverview") {
-          baseTotal += 1;
-          if (entity.show) baseVisible += 1;
-        } else if (entity._sourceTag === "detail") {
-          detailTotal += 1;
-          if (entity.show) detailVisible += 1;
-        }
-      }
     }
     if (sourcesChanged) {
       visibleRegionSources = sources;
       clearHover();
-      // Rebuild from the new LOD so a selected region never keeps a stale outline/fill.
       syncSelectionOverlay();
-      scheduleHover();
     }
-    for (const overlayEntity of selectionOverlayEntities) {
-      if (overlayEntity?._sourceEntity) {
-        overlayEntity.show = sources.length > 0 && overlayEntity._sourceEntity.show !== false;
-      }
+    for (const overlay of selectionOverlayEntities) {
+      applyEntityVisibility(overlay._sourceEntity);
+      overlay.show = sources.length > 0 && overlay._sourceEntity.show !== false;
     }
-    viewCullStats = { marineTotal, marineVisible, baseTotal, baseVisible, detailTotal, detailVisible };
+    viewCullStats = { marineTotal: 0, marineVisible: 0, baseTotal: 0, baseVisible: 0, detailTotal: 0, detailVisible: 0 };
+    for (const overlay of selectionOverlayEntities) {
+      const tag = overlay._sourceEntity?._sourceTag;
+      const category = tag === "detail" ? "detail" : tag?.startsWith("marine") ? "marine" : "base";
+      viewCullStats[`${category}Total`] += 1;
+      if (overlay.show) viewCullStats[`${category}Visible`] += 1;
+    }
     requestRender();
   }
 
@@ -2390,11 +2369,7 @@ export function createGlobeExplorer({
   }
 
   function refreshAllStyles() {
-    for (const ds of loadedDataSources()) {
-      for (const entity of ds.entities.values) {
-        applyEntityStyle(entity);
-      }
-    }
+    syncSelectionOverlay();
     requestRender();
   }
 
@@ -2433,8 +2408,7 @@ export function createGlobeExplorer({
 
   function syncSelectionOverlay() {
     clearSelectionOverlay();
-    if (appConfig.styling.selectionOverlayEnabled === false) return;
-    if (!regionFillEnabled) return;
+    if (!shouldRenderEcoregions()) return;
     if (!selectedRegionId) return;
     if (selectedRegionId === MOON_SELECTION_ID) return;
 
@@ -2443,6 +2417,8 @@ export function createGlobeExplorer({
 
     for (const sourceEntity of sourceEntities) {
       if (!sourceEntity?.polygon) continue;
+      applyEntityVisibility(sourceEntity);
+      if (!sourceEntity.show) continue;
       const baseColor = Cesium.Color.clone(sourceEntity._baseColor ?? selectionAccent);
       let fillColor = blend(baseColor, selectionAccent, 0.32);
       fillColor = blend(fillColor, selectionAccent2, 0.12);
@@ -2453,9 +2429,10 @@ export function createGlobeExplorer({
         show: sourceEntity.show !== false,
         polygon: {
           hierarchy: sourceEntity.polygon.hierarchy,
-          fill: true,
+          fill: regionFillEnabled && !debugOptions.outlineOnly,
           material: fillColor,
-          outline: false,
+          outline: !debugOptions.fillOnly,
+          outlineColor: selectionAccent.withAlpha(0.95),
           perPositionHeight: false,
           height:
             (sourceEntity.polygon.height?.getValue?.(Cesium.JulianDate.now()) ??
@@ -2479,10 +2456,16 @@ export function createGlobeExplorer({
     // Selection label removed; sidebar is the only selection info surface.
   }
 
+  function disposeRegionDataSource(dataSource) {
+    if (!dataSource) return;
+    dataSource.entities.removeAll();
+    dataSource._entityIndex = null;
+  }
+
   function clearActiveRealmLayer() {
     realmLoadToken += 1;
     if (activeRealmDataSource) {
-      viewer.dataSources.remove(activeRealmDataSource, true);
+      disposeRegionDataSource(activeRealmDataSource);
     }
     activeRealmDataSource = null;
     activeRealmSlug = null;
@@ -2498,16 +2481,17 @@ export function createGlobeExplorer({
     const generation = globalLayerGeneration;
     const loading = (async () => {
       const ds = await Cesium.GeoJsonDataSource.load(url, { clampToGround: false });
-      if (generation !== globalLayerGeneration) return null;
+      if (generation !== globalLayerGeneration) {
+        disposeRegionDataSource(ds);
+        return null;
+      }
       ds.show = false;
       buildEntityIndex(ds, sourceTag);
-      await viewer.dataSources.add(ds);
       if (generation !== globalLayerGeneration) {
-        viewer.dataSources.remove(ds, true);
+        disposeRegionDataSource(ds);
         return null;
       }
       attach(ds);
-      for (const entity of ds.entities.values) applyEntityStyle(entity);
       return ds;
     })();
     globalLayerLoads.set(sourceTag, loading);
@@ -2721,15 +2705,8 @@ export function createGlobeExplorer({
     const minMs = appConfig.globe.cameraCullUpdateMs ?? 120;
     if (!force && now - lastCullRunAt < minMs) return;
     lastCullRunAt = now;
-    syncOverviewLodState();
-    if (appConfig.globe.cameraCulling !== false && shouldRenderEcoregions()) {
-      const occluder = new Cesium.EllipsoidalOccluder(viewer.scene.globe.ellipsoid, viewer.camera.positionWC);
-      for (const ds of activeDataSources()) {
-        for (const entity of ds.entities.values) {
-          entity._cameraVisible = entityPassesCameraCulling(entity, occluder);
-        }
-      }
-    }
+    // Cesium culls the selected overlay. Unselected lookup geometry needs no
+    // per-frame horizon/frustum checks or style updates.
     applyAllVisibility();
     debugReport("camera-cull-update");
   }
@@ -2966,20 +2943,19 @@ export function createGlobeExplorer({
     const ds = await Cesium.GeoJsonDataSource.load(url, { clampToGround: false });
     if (token !== realmLoadToken) {
       try {
-        viewer.dataSources.remove(ds, true);
+        disposeRegionDataSource(ds);
       } catch {
         // no-op: loaded but not added
       }
       return;
     }
     buildEntityIndex(ds, "detail");
-    viewer.dataSources.add(ds);
     activeRealmDataSource = ds;
     activeRealmSlug = realmSlug;
     activeRealmLodLevel = lodLevel;
     ds.show = true;
     if (previousDs && previousDs !== ds) {
-      viewer.dataSources.remove(previousDs, true);
+      disposeRegionDataSource(previousDs);
     }
     updateCameraCulling(true);
     applyAllVisibility();
@@ -2991,12 +2967,7 @@ export function createGlobeExplorer({
     const next = Boolean(enabled);
     if (regionFillEnabled === next) return;
     regionFillEnabled = next;
-    if (!regionFillEnabled) {
-      clearSelectionOverlay();
-    } else {
-      syncSelectionOverlay();
-    }
-    refreshAllStyles();
+    syncSelectionOverlay();
     debugReport("fill-toggle");
   }
 
@@ -3018,9 +2989,7 @@ export function createGlobeExplorer({
     }
     updateSelectionLabel();
     const useSelectionOverlay =
-      appConfig.styling.selectionOverlayEnabled !== false &&
-      regionFillEnabled &&
-      selectedRegionId !== MOON_SELECTION_ID;
+      selectedRegionId && selectedRegionId !== MOON_SELECTION_ID;
     if (!useSelectionOverlay) {
       clearSelectionOverlay();
       refreshRegionStylesById(previousSelectedRegionId, selectedRegionId);
@@ -3213,19 +3182,11 @@ export function createGlobeExplorer({
 
   function getCameraFocusRegionRecord() {
     const centerPos = getViewportCenterScreenPosition();
-    if (!centerPos) return null;
-    const entity = pickManagedEntity(
-      viewer,
-      centerPos,
-      isLandVisibleDatasetMode() ? getActiveLandGlobalDataSource() : null,
-      isLandVisibleDatasetMode() ? activeRealmDataSource : null,
-      isMarineVisibleDatasetMode() ? getActiveMarineGlobalDataSource() : null,
-      getActiveLakesGlobalDataSource()
-    );
-    return getRegionRecord(entity);
+    return centerPos ? getRegionRecord(findEntityByGlobeHit(centerPos)) : null;
   }
 
   function findEntityByGlobeHit(screenPosition) {
+    if (!shouldRenderEcoregions()) return null;
     const ray = viewer.camera.getPickRay(screenPosition);
     if (!ray) return null;
     const world = viewer.scene.globe.pick(ray, viewer.scene);
@@ -3246,7 +3207,9 @@ export function createGlobeExplorer({
     for (const dataSource of candidateSources) {
       if (!dataSource || dataSource.show === false) continue;
       for (const entity of dataSource.entities.values) {
-        if (!entity?.polygon || entity.show === false) continue;
+        if (!entity?.polygon) continue;
+        applyEntityVisibility(entity);
+        if (entity.show === false) continue;
         const cullAnchor = entity._cullAnchorCartesian || entity._centerCartesian;
         const cullRadius = Number(entity._cullRadiusMeters);
         if (cullAnchor && Number.isFinite(cullRadius) && cullRadius > 0) {
@@ -3342,32 +3305,8 @@ export function createGlobeExplorer({
     if (!getActiveLandGlobalDataSource() && !getActiveMarineGlobalDataSource() && !getActiveLakesGlobalDataSource()) {
       return;
     }
-    let entity = null;
-    if (isMarineOnlyDatasetMode()) {
-      entity = pickManagedEntity(
-        viewer,
-        click.position,
-        null,
-        null,
-        getActiveMarineGlobalDataSource(),
-        getActiveLakesGlobalDataSource()
-      );
-      if (!entity) {
-        entity = findEntityByGlobeHit(click.position);
-      }
-    } else {
-      entity = pickManagedEntity(
-        viewer,
-        click.position,
-        isLandVisibleDatasetMode() ? getActiveLandGlobalDataSource() : null,
-        isLandVisibleDatasetMode() ? activeRealmDataSource : null,
-        isMarineVisibleDatasetMode() ? getActiveMarineGlobalDataSource() : null,
-        getActiveLakesGlobalDataSource()
-      );
-      if (!entity) {
-        entity = findEntityByGlobeHit(click.position);
-      }
-    }
+    // Geographic lookup works even though unselected regions have no GPU primitive.
+    const entity = findEntityByGlobeHit(click.position);
     if (!entity && screenPositionHitsMoon(viewer, click.position)) {
       lastPickedPosition = click.position;
       activateMoonAnchorTarget();
@@ -3467,27 +3406,27 @@ export function createGlobeExplorer({
     clearActiveRealmLayer();
     clearSelectionOverlay();
     if (landOverviewDataSource) {
-      viewer.dataSources.remove(landOverviewDataSource, true);
+      disposeRegionDataSource(landOverviewDataSource);
       landOverviewDataSource = null;
     }
     if (baseDataSource) {
-      viewer.dataSources.remove(baseDataSource, true);
+      disposeRegionDataSource(baseDataSource);
       baseDataSource = null;
     }
     if (marineOverviewDataSource) {
-      viewer.dataSources.remove(marineOverviewDataSource, true);
+      disposeRegionDataSource(marineOverviewDataSource);
       marineOverviewDataSource = null;
     }
     if (marineDataSource) {
-      viewer.dataSources.remove(marineDataSource, true);
+      disposeRegionDataSource(marineDataSource);
       marineDataSource = null;
     }
     if (lakesOverviewDataSource) {
-      viewer.dataSources.remove(lakesOverviewDataSource, true);
+      disposeRegionDataSource(lakesOverviewDataSource);
       lakesOverviewDataSource = null;
     }
     if (lakesDataSource) {
-      viewer.dataSources.remove(lakesDataSource, true);
+      disposeRegionDataSource(lakesDataSource);
       lakesDataSource = null;
     }
 

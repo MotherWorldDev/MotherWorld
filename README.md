@@ -7,7 +7,7 @@ Fast, minimal biodiversity explorer MVP:
 - 3D globe (CesiumJS)
 - WWF/RESOLVE ecoregion boundaries from local `Ecoregions2017` shapefile
 - biome-based coloring
-- hover + click interactions
+- click a location to show only its selected region polygon and border
 - modern right sidebar summary
 - topology-preserving LOD geometry pipeline (TopoJSON)
 - local JSON summary mode with optional FastAPI API scaffold
