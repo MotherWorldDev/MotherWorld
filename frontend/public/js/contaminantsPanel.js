@@ -68,11 +68,11 @@ function analyteHtml(analyte) {
     <summary>${esc(analyte?.name || "Unspecified analyte")} <span>${esc(analyte?.unit || "")}</span></summary>
     <div class="contaminant-analyte-body">
       <div class="diagnostic-kv">
-        ${stat("Samples", display(analyte?.sampleCount))}
+        ${stat(analyte?.sampleCountLabel || "Samples", display(analyte?.sampleCount))}
         ${stat("Quantified values", display(analyte?.quantifiedCount))}
         ${stat("Positive detections", display(analyte?.detectedCount))}
         ${stat("Detection rate", percent(analyte?.detectionRatePct))}
-        ${stat("Stations", display(analyte?.stationCount))}
+        ${stat(analyte?.stationCountLabel || "Stations", display(analyte?.stationCount))}
         ${stat("Reported years", years || "—")}
         ${stat("Median positive-reported concentration", concentration(analyte?.medianDetected, analyte?.unit))}
         ${stat("90th percentile positive-reported concentration", concentration(analyte?.p90Detected, analyte?.unit))}
@@ -89,10 +89,10 @@ function measurementHtml(category) {
   const analytes = (category?.analytes || []).filter(Boolean);
   const sharedProtocol = category?.protocol || (category?.protocolFields && !Array.isArray(category.protocolFields) && typeof category.protocolFields === "object" ? category.protocolFields : null);
   return `<div class="diagnostic-kv">
-    ${stat("Samples", display(category?.sampleCount))}
+    ${stat(category?.sampleCountLabel || "Samples", display(category?.sampleCount))}
     ${stat("Quantified values", display(category?.quantifiedCount))}
     ${stat("Positive detections", display(category?.detectedCount))}
-    ${stat("Stations", display(category?.stationCount))}
+    ${stat(category?.stationCountLabel || "Stations", display(category?.stationCount))}
   </div>
   ${category?.detectionBasis ? `<p class="regional-diagnostic-note"><strong>Detection basis:</strong> ${esc(category.detectionBasis)}</p>` : ""}
   ${sharedProtocol ? protocolHtml(sharedProtocol) : ""}
@@ -127,7 +127,7 @@ function renderSource(source) {
     return "";
   }
   if (url.protocol !== "https:" && url.protocol !== "http:") return "";
-  return `<a class="regional-diagnostic-source" href="${esc(url.href)}" target="_blank" rel="noopener noreferrer">${esc(source.label || "Source")}</a>`;
+  return `<a class="regional-diagnostic-source" href="${esc(url.href)}" target="_blank" rel="noopener noreferrer">${esc(source.label || "Source")}</a>${source.period ? ` <span>(source records: ${esc(source.period)})</span>` : ""}`;
 }
 
 function renderPayload(payload) {
@@ -193,10 +193,6 @@ export function createContaminantsPanel(config = {}, fetcher = (...args) => fetc
     const requestSerial = ++serial;
     if (!selected || selected.id === "moon") {
       reset(selected?.id === "moon" ? "Earth contaminant datasets do not apply to the Moon." : undefined);
-      return;
-    }
-    if (!selected.isMarine) {
-      reset("This regional contaminants panel is scoped to marine ecoregions.");
       return;
     }
     if (!active()) return;

@@ -86,3 +86,25 @@ test("all protocol groups and concentration summaries remain visible without fal
   assert.match(result.html, /Not reported/);
   assert.equal(statValue(result.html, "90th percentile positive-reported concentration"), "\u2014");
 });
+
+test("PFAS uses water-system and analyte-result labels", async () => {
+  const result = await rendered("contaminants", createContaminantsPanel, {
+    categories: { pfas: { type: "measurements", sampleCountLabel: "Analyte results", stationCountLabel: "Water systems", sampleCount: 29, stationCount: 1, analytes: [
+      { name: "PFOS", unit: "ng/L", sampleCountLabel: "Analyte results", stationCountLabel: "Water systems", sampleCount: 1, stationCount: 1, detectedCount: 0, medianDetected: null }
+    ] } }
+  });
+  assert.equal(statValue(result.html, "Analyte results"), "29");
+  assert.equal(statValue(result.html, "Water systems"), "1");
+  assert.doesNotMatch(result.html, /<span>Stations<\/span>/);
+  assert.equal(statValue(result.html, "Median positive-reported concentration"), "—");
+});
+
+test("published PFAS land inventory loads with its real index and collection years", async () => {
+  const fetcher = async url => response(JSON.parse(readFileSync(new URL(url, publicRoot), "utf8")));
+  const result = await rendered("contaminants", createContaminantsPanel, null, {id:"eco_0"}, fetcher);
+  assert.match(result.html, /PFAS/);
+  assert.match(result.html, /Water systems/);
+  assert.match(result.html, /Analyte results/);
+  assert.match(result.html, /service-area|service-area exposure/i);
+  assert.match(result.html, /2023.2026/);
+});

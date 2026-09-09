@@ -9,7 +9,7 @@ export const APP_CONFIG = {
     biodiversityIndexUrl: "./data/biodiversity/biodiversity.index.json?v=20260908-biodiversity-contaminants",
     biodiversityCacheLimit: 6,
     contaminantsBaseUrl: "./data/contaminants/",
-    contaminantsIndexUrl: "./data/contaminants/contaminants.index.json?v=20260908-biodiversity-contaminants",
+    contaminantsIndexUrl: "./data/contaminants/contaminants.index.json?v=20260909-pfas1",
     contaminantsCacheLimit: 6,
     regionalHealthBaseUrl: "./data/indices/regions/",
     earthHealthUrl: "./data/indices/earth-health.json?v=20260908-env8-selenology",
