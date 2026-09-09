@@ -121,8 +121,9 @@ export const APP_CONFIG = {
     imageryPreloadAncestors: false,
     globeTileCacheSize: 1200,
     imageryRequestDedupWindowMs: 800,
-    maxDevicePixelRatio: 1.25,
-    movingResolutionScaleFactor: 0.75,
+    // Keep a sharp canvas on high-density displays without unbounded GPU cost.
+    maxDevicePixelRatio: 2,
+    movingResolutionScaleFactor: 1,
     cameraCulling: true,
     cameraFrustumCullingBase: true,
     cameraFrustumCullingDetail: true,

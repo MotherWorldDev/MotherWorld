@@ -170,3 +170,5 @@ See [CLIMATE_PIPELINE.md](CLIMATE_PIPELINE.md) for credential setup, resumable b
 The installed environmental modules add fixed nine-family historical Earth Health, lazy precipitation/humidity/wind normals, descriptive geology and seafloor context, and a Moon-only Selenology tab. Earth Health and all diagnostic panels remain source-gated: scaffold indexes do not claim values until their real provider builds pass validation. See [docs/README.md](docs/README.md) for the scoring, provenance, licensing, and Moon-texture contracts.
 
 Mobile controls: on phones and tablets, use **Controls** to change map settings. Regional details appear in a scrolling bottom panel (a side panel in phone landscape), with scrollable section tabs. **Performance** opens the optional statistics panel; it stays hidden on startup. See [mobile layout notes](docs/MOBILE_LAYOUT.md).
+
+Rendering quality: the high-density display scaling regression and its fix are documented in [rendering quality notes](docs/RENDERING_QUALITY.md).

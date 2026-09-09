@@ -613,6 +613,8 @@ export function createGlobeExplorer({
     terrainProvider: new Cesium.EllipsoidTerrainProvider(),
     baseLayer: false,
     scene3DOnly: true,
+    // The scale below caps device pixels; Cesium must honor devicePixelRatio.
+    useBrowserRecommendedResolution: false,
     shadows: false,
     orderIndependentTranslucency: true,
   });
@@ -2801,6 +2803,9 @@ export function createGlobeExplorer({
       preferredRealmLodLevel: getPreferredRealmLodLevel(),
       cameraHeightMeters: getCameraHeightMeters(),
       resolutionScale: viewer.resolutionScale ?? 1,
+      renderWidth: viewer.scene.canvas.width,
+      renderHeight: viewer.scene.canvas.height,
+      renderPixelRatio: viewer.scene.canvas.width / Math.max(1, viewer.scene.canvas.clientWidth),
       blueMarbleDetailTilesVisible: blueMarbleDetailImageryLayer?.show === true,
       blueMarbleDetailTilesAlpha: blueMarbleDetailImageryLayer?.alpha ?? 0,
       blueMarbleUltraTilesVisible: blueMarbleUltraImageryLayer?.show === true,
