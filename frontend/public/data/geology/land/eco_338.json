@@ -3,7 +3,7 @@
   "regionId": "eco_338",
   "regionName": "New England-Acadian forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.086865+00:00",
+  "generatedAt": "2026-09-09T06:27:44.566556+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 96.23732220936074,
@@ -145,6 +145,37 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2002-04-20T10:50:47.450Z",
+            "place": "8 km NNW of Au Sable Forks, New York"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -640,9 +671,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:2ac36ab2163409f8b723a916bf083f830b746e6d8e478f4781b227bf1c05e131"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_338",
+    "geometryFingerprint": "9995c504609f347f55fa7c772e85217c31b3821d005067e539bb389474fa46ae",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -76.22673201699995,
+      40.28735131829879,
+      -59.69264854799996,
+      49.24879054170097
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:2ac36ab2163409f8b723a916bf083f830b746e6d8e478f4781b227bf1c05e131"
 }

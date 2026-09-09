@@ -3,7 +3,7 @@
   "regionId": "eco_597",
   "regionName": "Araya and Paria xeric scrub",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.341515+00:00",
+  "generatedAt": "2026-09-09T06:27:42.133073+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -58,6 +58,65 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 1,
+        "m7Plus": 1,
+        "maxMagnitude": 7.0,
+        "events": [
+          {
+            "magnitude": 7.0,
+            "time": "1997-07-09T19:24:13.170Z",
+            "place": "26 km WSW of Carúpano, Venezuela"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2018-08-22T13:27:48.490Z",
+            "place": "35 km E of Carúpano, Venezuela"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2010-01-15T18:00:46.700Z",
+            "place": "33 km SW of Carúpano, Venezuela"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-12-26T11:29:09.510Z",
+            "place": "32 km WSW of Carúpano, Venezuela"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-08-21T21:31:40.270Z",
+            "place": "43 km E of Carúpano, Venezuela"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1997-07-09T20:06:14.100Z",
+            "place": "35 km WSW of Carúpano, Venezuela"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-02-04T10:59:28.750Z",
+            "place": "45 km E of Carúpano, Venezuela"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -321,9 +380,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:93c62dedd68f3b73b17fa0db419d599b4aad9fa2f92fba9a5fae76a97e4f5720"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_597",
+    "geometryFingerprint": "3bfcd495b95b09f677d624ce6583cfc634c5ea16e81aafd8bf455aa9a06bda3c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -64.40066557999994,
+      10.322114479763988,
+      -61.873367542999915,
+      11.155742528159136
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:93c62dedd68f3b73b17fa0db419d599b4aad9fa2f92fba9a5fae76a97e4f5720"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_650",
   "regionName": "Caucasus mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.539133+00:00",
+  "generatedAt": "2026-09-09T06:27:42.262022+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,150 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 24,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2009-09-07T22:41:37.360Z",
+            "place": "8 km N of Oni, Georgia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1999-01-31T05:07:13.630Z",
+            "place": "1 km SSE of Bavtugay, Russia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2012-05-07T04:40:27.790Z",
+            "place": "1 km ENE of Mamrux, Azerbaijan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2022-12-08T06:42:15.112Z",
+            "place": "7 km E of Tsurib, Russia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2012-10-14T10:13:38.600Z",
+            "place": "10 km E of Lagodekhi, Georgia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-09-27T14:08:32.729Z",
+            "place": "22 km WSW of Susuz, Turkey"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-06-05T18:40:30.020Z",
+            "place": "2 km SE of Mamrux, Azerbaijan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2014-09-29T01:38:08.090Z",
+            "place": "29 km SSE of Usukhchay, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-09-17T04:09:13.300Z",
+            "place": "21 km N of Q’vareli, Georgia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2012-05-07T14:15:14.450Z",
+            "place": "4 km WNW of Mamrux, Azerbaijan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-10-11T09:22:01.210Z",
+            "place": "6 km ESE of Gudermes, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2006-02-06T04:08:03.070Z",
+            "place": "10 km NE of Oni, Georgia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1999-02-21T18:14:37.900Z",
+            "place": "Caucasus region, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-11-27T17:34:30.330Z",
+            "place": "12 km N of Sagarejo, Georgia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2021-02-05T15:36:11.039Z",
+            "place": "9 km SSW of Vahan, Armenia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2017-05-03T08:53:37.190Z",
+            "place": "12 km ESE of Tsurib, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2011-01-19T09:17:49.750Z",
+            "place": "18 km SE of Vani, Georgia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-05-28T00:09:52.520Z",
+            "place": "41 km WSW of Uchkulan, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-03-26T23:35:24.540Z",
+            "place": "42 km N of Tqvarch'eli, Georgia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-05-18T14:47:22.400Z",
+            "place": "11 km WSW of Çinarl?, Azerbaijan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-11-06T01:17:19.800Z",
+            "place": "13 km ESE of Oni, Georgia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2014-06-29T17:26:12.250Z",
+            "place": "3 km SSE of Zaqatala, Azerbaijan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-04-17T08:02:32.030Z",
+            "place": "Russia-Georgia-Azerbaijan border region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-02-22T04:24:20.690Z",
+            "place": "18 km NNW of Java, Georgia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -832,9 +976,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3d9ecae6a162daf14586c51cd9373b1f9e8af9f7494d18dda86975a7532ae8e3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_650",
+    "geometryFingerprint": "e545ef16a67217e5a85d58850b29397eb91b982da274ba19d5c09c67e2808232",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      39.12147858100008,
+      38.9081891026295,
+      48.85411456500009,
+      44.22609344702051
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3d9ecae6a162daf14586c51cd9373b1f9e8af9f7494d18dda86975a7532ae8e3"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_213",
   "regionName": "Pilbara shrublands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.465595+00:00",
+  "generatedAt": "2026-09-09T06:27:41.185266+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2021-11-13T13:05:54.157Z",
+            "place": "27 km NNE of Marble Bar, Australia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -602,9 +631,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5a3fcbd919a53b59c947aef2b6c026d2a76207e3c9cdb3a2c8aa336ff2a74948"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_213",
+    "geometryFingerprint": "ba5f5f666dc234b0bd915a5af0be6c3731b64c6ffddfde6a65a4a4dcda2f447b",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      115.17575050500008,
+      -23.598691877054726,
+      121.40473939000002,
+      -19.953119982822074
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5a3fcbd919a53b59c947aef2b6c026d2a76207e3c9cdb3a2c8aa336ff2a74948"
 }

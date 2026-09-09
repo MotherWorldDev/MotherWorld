@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20118",
   "regionName": "Malacca Strait",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:41.011419+00:00",
+  "generatedAt": "2026-09-09T06:27:40.246761+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 212.823842440423,
+        "medianDepthM": 53.0,
+        "p10DepthM": 8.0,
+        "p90DepthM": 1054.0,
+        "shallowestM": -0.0,
+        "deepestM": 1385.0,
+        "coveragePct": 97.2653797661944,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 81.58359619482496,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.539850188835357,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 10.876553616339677,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "geothermal": {
       "measurementCount": 14,
       "medianMwM2": 109.1,
@@ -61,6 +113,42 @@
         "license": "CC BY 4.0"
       }
     },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2013-07-16T23:41:14.390Z",
+            "place": "93 km ENE of Lhokseumawe, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-01-02T10:39:59.466Z",
+            "place": "32 km N of Lhokseumawe, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 3,
       "commodityCount": 3,
@@ -114,14 +202,43 @@
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9c36de02a15cb7c3af343fe3e24744757103c96a460977c4792b38cc8491a58e"
     },
     {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20118",
+    "geometryFingerprint": "c374101d76e294489f10b7a6c91c497501be0436c43ca621ffdedd53ec6773aa",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      96.04289333720641,
+      0.261649177002816,
+      105.20914721871176,
+      7.665480971162141
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9c36de02a15cb7c3af343fe3e24744757103c96a460977c4792b38cc8491a58e"
 }

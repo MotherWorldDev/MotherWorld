@@ -3,7 +3,7 @@
   "regionId": "eco_430",
   "regionName": "Great Basin shrub steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.420420+00:00",
+  "generatedAt": "2026-09-09T06:27:41.680157+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,170 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 28,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.5,
+        "events": [
+          {
+            "magnitude": 6.5,
+            "time": "2020-05-15T11:03:27.176Z",
+            "place": "Monte Cristo Range, NV Earthquake"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1994-09-12T12:23:43.250Z",
+            "place": "4 km S of Carter Springs, Nevada"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2021-07-08T22:49:48.110Z",
+            "place": "Antelope Valley, CA"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2008-02-21T14:16:02.821Z",
+            "place": "8 km ENE of Wells, Nevada"
+          },
+          {
+            "magnitude": 5.71,
+            "time": "2024-12-09T23:08:31.577Z",
+            "place": "2024 Parker Butte, Nevada Earthquake"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2020-03-18T13:09:31.530Z",
+            "place": "5 km NNE of Magna, Utah"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1999-08-01T16:06:22.000Z",
+            "place": "37 km SSE of Goldfield, Nevada"
+          },
+          {
+            "magnitude": 5.68,
+            "time": "2026-04-14T01:29:12.123Z",
+            "place": "20 km ESE of Silver Springs, Nevada"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2016-12-28T08:22:12.208Z",
+            "place": "28 km WSW of Hawthorne, Nevada"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2016-12-28T08:18:00.613Z",
+            "place": "29 km SW of Hawthorne, Nevada"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-12-28T09:13:47.243Z",
+            "place": "28 km SW of Hawthorne, Nevada"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2004-09-18T23:02:17.750Z",
+            "place": "27 km NW of Benton, California"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1997-11-02T08:51:54.230Z",
+            "place": "16 km NNW of Dyer, Nevada"
+          },
+          {
+            "magnitude": 5.35,
+            "time": "2004-09-18T23:43:41.490Z",
+            "place": "27 km NW of Benton, California"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2020-11-13T09:13:51.862Z",
+            "place": "33 km SE of Mina, Nevada"
+          },
+          {
+            "magnitude": 5.24,
+            "time": "2020-04-11T14:36:37.040Z",
+            "place": "30km SE of Bodie, CA"
+          },
+          {
+            "magnitude": 5.17,
+            "time": "2026-05-01T08:17:19.870Z",
+            "place": "19 km SE of Silver Springs, Nevada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-12-01T23:32:56.573Z",
+            "place": "25 km S of Mina, Nevada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-05-22T00:22:00.588Z",
+            "place": "32 km ESE of Mina, Nevada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-05-15T11:26:01.747Z",
+            "place": "31 km SE of Mina, Nevada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-02-13T00:10:14.393Z",
+            "place": "39 km N of Dyer, Nevada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-04-26T06:40:10.453Z",
+            "place": "1 km NW of Mogul, Nevada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-02-21T14:34:55.538Z",
+            "place": "10 km ENE of Wells, Nevada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-08-02T06:05:13.000Z",
+            "place": "39 km SSE of Goldfield, Nevada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1994-09-12T23:57:09.750Z",
+            "place": "8 km ESE of Mesa Vista, California"
+          },
+          {
+            "magnitude": 5.03,
+            "time": "2021-07-08T22:50:14.370Z",
+            "place": "32km SE of Markleeville, CA"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-06-30T09:24:23.549Z",
+            "place": "29 km SSE of Mina, Nevada"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-05-20T12:36:53.447Z",
+            "place": "38 km ESE of Mina, Nevada"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -817,9 +981,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:573da8c440ba8a0f3f0f89ae495f4482174c1a05f75d956d5507960e63539dce"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_430",
+    "geometryFingerprint": "ed2f864bdf3dd1c68ca0d86d60331c26b153b9ab0507eea9f7c534208d614736",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -120.67363128699998,
+      36.46117873038874,
+      -111.55181570999996,
+      42.347774038239095
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:573da8c440ba8a0f3f0f89ae495f4482174c1a05f75d956d5507960e63539dce"
 }

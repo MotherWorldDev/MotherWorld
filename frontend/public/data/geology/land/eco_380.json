@@ -3,7 +3,7 @@
   "regionId": "eco_380",
   "regionName": "Northern Cordillera forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.190137+00:00",
+  "generatedAt": "2026-09-09T06:27:41.574809+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,65 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2017-05-01T14:18:15.290Z",
+            "place": "48 km NW of Mosquito Lake, Alaska"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2017-05-01T12:31:55.590Z",
+            "place": "47 km NW of Mosquito Lake, Alaska"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2017-05-01T14:21:13.010Z",
+            "place": "42 km NW of Mosquito Lake, Alaska"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2017-05-01T14:20:24.380Z",
+            "place": "41 km NW of Mosquito Lake, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-09-16T23:38:02.210Z",
+            "place": "54 km NW of Mosquito Lake, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-05-01T14:59:22.450Z",
+            "place": "43 km NW of Mosquito Lake, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-05-01T12:49:18.980Z",
+            "place": "57 km NW of Mosquito Lake, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -521,9 +580,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:db3d2e353ecdc6d4383dd347d86c9355488e7c9616db29681d7a49ee87b88dd5"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_380",
+    "geometryFingerprint": "5a59ecbb8b2fb300d00311364fa6b26b3004d2dafa8816159e6f1d50b6eb8ceb",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -138.02784874999995,
+      56.457043230115744,
+      -122.80983638599996,
+      60.506568759533245
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:db3d2e353ecdc6d4383dd347d86c9355488e7c9616db29681d7a49ee87b88dd5"
 }

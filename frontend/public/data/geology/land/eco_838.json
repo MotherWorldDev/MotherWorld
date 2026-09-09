@@ -3,7 +3,7 @@
   "regionId": "eco_838",
   "regionName": "Registan-North Pakistan sandy desert",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.624574+00:00",
+  "generatedAt": "2026-09-09T06:27:42.897447+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -112,6 +112,115 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 17,
+        "m6Plus": 5,
+        "m7Plus": 2,
+        "maxMagnitude": 7.7,
+        "events": [
+          {
+            "magnitude": 7.7,
+            "time": "2013-04-16T10:44:20.180Z",
+            "place": "79 km ESE of Kh?sh, Iran"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2011-01-18T20:23:23.480Z",
+            "place": "46 km WSW of Dalbandin, Pakistan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1994-02-24T00:11:12.320Z",
+            "place": "99 km WSW of Z?bol, Iran"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1994-02-26T02:31:11.090Z",
+            "place": "91 km W of Z?bol, Iran"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1994-02-23T08:02:04.720Z",
+            "place": "88 km WSW of Z?bol, Iran"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2013-04-17T03:15:52.400Z",
+            "place": "112 km E of Kh?sh, Iran"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2009-10-25T17:47:49.390Z",
+            "place": "90 km NW of Dalbandin, Pakistan"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1994-02-28T11:13:54.250Z",
+            "place": "92 km WSW of Z?bol, Iran"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2024-03-19T00:35:18.851Z",
+            "place": "64 km WNW of Nushki, Pakistan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1994-02-23T11:54:33.170Z",
+            "place": "97 km WSW of Z?bol, Iran"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-01-14T14:13:57.190Z",
+            "place": "113 km ESE of Kh?sh, Iran"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1994-02-23T22:45:17.660Z",
+            "place": "101 km WSW of Z?bol, Iran"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2024-03-19T21:27:01.034Z",
+            "place": "68 km WNW of Nushki, Pakistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-01-05T16:58:35.290Z",
+            "place": "14 km NNW of Dalbandin, Pakistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-12-10T12:16:01.120Z",
+            "place": "85 km SSW of Kharan, Pakistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1997-12-04T10:17:01.330Z",
+            "place": "36 km NW of Dalbandin, Pakistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1994-09-08T13:33:36.850Z",
+            "place": "64 km ESE of Kh?sh, Iran"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -276,9 +385,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a3dd1a8587fa280223dca0f7d75d6c169cceda5cc0ccf81dd4eb7ada93002e0b"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_838",
+    "geometryFingerprint": "e6b7cd97a79d086379870b2a39efb583d535604076af465a2d6c4e303fce83f1",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      59.974876530000195,
+      27.181454927024827,
+      67.07854450700017,
+      33.12827660067252
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a3dd1a8587fa280223dca0f7d75d6c169cceda5cc0ccf81dd4eb7ada93002e0b"
 }

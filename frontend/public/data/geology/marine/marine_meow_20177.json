@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20177",
   "regionName": "Central Chile",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.677789+00:00",
+  "generatedAt": "2026-09-09T06:27:38.950007+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 109.9325180053711,
           "coveragePct": 73.09396162179854
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 3960.2801582538123,
+        "medianDepthM": 4149.0,
+        "p10DepthM": 2183.0,
+        "p90DepthM": 5322.0,
+        "shallowestM": 2.0,
+        "deepestM": 7613.0,
+        "coveragePct": 99.77857692814352,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 1.8402862494021897,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 4.010090549231745,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 8.921871885838119,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 80.64477081918851,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 4.58298049633943,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -85,6 +135,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 355,
+        "m6Plus": 44,
+        "m7Plus": 1,
+        "maxMagnitude": 8.3,
+        "events": [
+          {
+            "magnitude": 8.3,
+            "time": "2015-09-16T22:54:32.860Z",
+            "place": "48 km W of Illapel, Chile"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2017-04-24T21:38:30.820Z",
+            "place": "40 km W of Valparaíso, Chile"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2015-11-11T02:46:19.830Z",
+            "place": "85 km NW of Coquimbo, Chile"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2015-11-11T01:54:38.570Z",
+            "place": "81 km NW of Coquimbo, Chile"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2020-09-01T04:09:28.470Z",
+            "place": "86 km NW of Vallenar, Chile"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1997-07-06T09:54:00.760Z",
+            "place": "52 km WSW of Coquimbo, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2015-09-17T04:10:27.780Z",
+            "place": "61 km WNW of Illapel, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2006-04-30T19:17:14.980Z",
+            "place": "78 km WNW of Copiapó, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2001-04-09T09:00:57.170Z",
+            "place": "144 km WNW of Valparaíso, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1993-03-15T16:08:57.880Z",
+            "place": "93 km NW of Copiapó, Chile"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2023-10-31T12:33:43.732Z",
+            "place": "80 km WSW of Vallenar, Chile"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1998-09-03T17:37:58.240Z",
+            "place": "66 km NNW of Coquimbo, Chile"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2020-09-01T21:09:17.852Z",
+            "place": "94 km NW of Vallenar, Chile"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2015-09-17T03:55:15.430Z",
+            "place": "54 km WNW of Illapel, Chile"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2006-04-30T21:40:58.440Z",
+            "place": "73 km WNW of Copiapó, Chile"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2019-06-14T00:19:12.401Z",
+            "place": "72 km W of Coquimbo, Chile"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2015-09-16T22:59:15.000Z",
+            "place": "54 km W of Illapel, Chile"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2002-04-01T19:59:32.480Z",
+            "place": "29 km NNW of La Serena, Chile"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2020-09-01T04:30:02.173Z",
+            "place": "78 km NW of Vallenar, Chile"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1997-07-27T05:21:29.270Z",
+            "place": "64 km W of Ovalle, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2026-03-13T13:39:21.201Z",
+            "place": "71 km W of Vallenar, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2015-11-07T07:04:31.380Z",
+            "place": "107 km WNW of Coquimbo, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2015-09-19T12:52:20.920Z",
+            "place": "79 km W of La Ligua, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2015-09-18T09:10:44.730Z",
+            "place": "92 km NW of Valparaíso, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2008-12-18T21:19:28.380Z",
+            "place": "46 km W of La Ligua, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2006-07-16T11:42:41.410Z",
+            "place": "175 km W of Vallenar, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1997-07-25T06:47:02.670Z",
+            "place": "69 km WNW of Ovalle, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2015-09-21T05:39:34.910Z",
+            "place": "54 km W of Illapel, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2015-09-19T05:06:47.500Z",
+            "place": "79 km WNW of Coquimbo, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2015-09-16T23:16:09.440Z",
+            "place": "71 km W of Illapel, Chile"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -215,6 +439,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -225,9 +454,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:57a400192b242245076f217ba17a46ca4c65a59c64434019780c396082ee3e21"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20177",
+    "geometryFingerprint": "5f1f80068fb208a134790d2713b93aa6de1fd095f42b119e93abdf912bb1ecfd",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -75.1066045042868,
+      -33.12218941814474,
+      -70.43704252299987,
+      -25.022115303630706
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:57a400192b242245076f217ba17a46ca4c65a59c64434019780c396082ee3e21"
 }

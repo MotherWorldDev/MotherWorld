@@ -3,7 +3,7 @@
   "regionId": "eco_510",
   "regionName": "Trinidad and Tobago moist forest",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.888235+00:00",
+  "generatedAt": "2026-09-09T06:27:41.879611+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -28,6 +28,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2001-02-17T20:55:32.960Z",
+            "place": "17 km NNE of Sangre Grande, Trinidad and Tobago"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -86,6 +115,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e0ac94578674cd3f2feb3245b0abf5c70994a2b4fa7c29fe6ec20e8300a2c20c"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_510",
+    "geometryFingerprint": "6f688593715109326f90abedd0fc84324ba412639869481c43d069922503b5ab",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -61.883109493999946,
+      10.04819170497256,
+      -60.530208628999965,
+      11.32171108404423
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e0ac94578674cd3f2feb3245b0abf5c70994a2b4fa7c29fe6ec20e8300a2c20c"
 }

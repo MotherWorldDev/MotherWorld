@@ -3,7 +3,7 @@
   "regionId": "eco_686",
   "regionName": "Western European broadleaf forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.739300+00:00",
+  "generatedAt": "2026-09-09T06:27:42.369962+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -76,6 +76,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2003-02-22T20:41:03.420Z",
+            "place": "4 km W of Rambervillers, France"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -741,9 +770,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:db0b456b0ceaba86c7470225cbacbe0fa95f7b0af44e67bcc617e151cb67c007"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_686",
+    "geometryFingerprint": "af5577220bc54a58d27042fcdc4b6541016c4786226d7fa8be377f9f8e57724b",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      0.252881432000038,
+      42.89121333847308,
+      18.10652548200005,
+      52.41624299545284
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:db0b456b0ceaba86c7470225cbacbe0fa95f7b0af44e67bcc617e151cb67c007"
 }

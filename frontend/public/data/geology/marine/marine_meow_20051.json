@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20051",
   "regionName": "Central Kuroshio Current",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.941397+00:00",
+  "generatedAt": "2026-09-09T06:27:38.528578+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2920.1871897740357,
+        "medianDepthM": 2968.0,
+        "p10DepthM": 158.0,
+        "p90DepthM": 5420.0,
+        "shallowestM": 1.0,
+        "deepestM": 9536.0,
+        "coveragePct": 99.51806327693579,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 10.877156847397702,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 14.757787153726536,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 24.614382701557386,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 43.06170149420882,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 6.688971803109571,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -396,6 +446,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 715,
+        "m6Plus": 52,
+        "m7Plus": 4,
+        "maxMagnitude": 7.4,
+        "events": [
+          {
+            "magnitude": 7.4,
+            "time": "2004-09-05T14:57:18.610Z",
+            "place": "118 km ESE of Shing?, Japan"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2004-09-05T10:07:07.820Z",
+            "place": "94 km SE of Shing?, Japan"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2024-08-08T07:42:55.206Z",
+            "place": "2024 Hyuganada Sea, Japan Earthquake"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2009-08-09T10:55:55.110Z",
+            "place": "161 km S of ?yama, Japan"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1993-10-11T15:54:21.240Z",
+            "place": "256 km SE of Shing?, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2026-07-28T07:27:14.640Z",
+            "place": "The 2026 Kumamoto Region, Japan Earthquake"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2025-01-13T12:19:32.252Z",
+            "place": "15 km SE of Miyazaki, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2012-01-01T05:27:55.980Z",
+            "place": "Izu Islands, Japan region"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2009-10-30T07:03:39.120Z",
+            "place": "98 km NNE of Naze, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2001-03-24T06:27:53.580Z",
+            "place": "16 km SSW of Kure, Japan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1996-10-19T14:44:40.790Z",
+            "place": "5 km SE of Miyazaki, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2009-08-12T22:48:51.420Z",
+            "place": "244 km SSE of Tateyama, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2005-01-19T06:11:36.400Z",
+            "place": "161 km SE of Katsuura, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2004-09-06T23:29:35.090Z",
+            "place": "129 km ESE of Shing?, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1996-10-18T10:50:20.860Z",
+            "place": "20 km SSE of Nishinoomote, Japan"
+          },
+          {
+            "magnitude": 6.51,
+            "time": "2004-09-05T14:57:32.270Z",
+            "place": "119 km ESE of Shing?, Japan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2004-05-29T20:56:09.600Z",
+            "place": "140 km SE of Katsuura, Japan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2000-07-30T12:25:45.570Z",
+            "place": "94 km SSE of Shimoda, Japan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2003-11-12T08:26:43.740Z",
+            "place": "118 km ESE of Shing?, Japan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2000-06-06T14:57:02.220Z",
+            "place": "124 km SE of Koshima, Japan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1999-01-24T00:37:04.630Z",
+            "place": "15 km SSE of Nishinoomote, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2024-04-17T14:14:46.694Z",
+            "place": "18 km W of Uwajima, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2022-01-21T16:08:37.210Z",
+            "place": "27 km SSE of Saiki, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2019-07-27T18:31:07.540Z",
+            "place": "138 km ESE of Shing?, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2019-01-08T12:39:30.950Z",
+            "place": "16 km SSE of Nishinoomote, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2014-03-13T17:06:50.770Z",
+            "place": "32 km SSW of Hikari, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1997-01-17T15:53:13.430Z",
+            "place": "67 km NE of Naze, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2019-05-09T23:48:42.779Z",
+            "place": "43 km ESE of Miyazaki, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2016-09-23T00:14:34.700Z",
+            "place": "142 km ESE of Katsuura, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2011-04-11T23:08:16.870Z",
+            "place": "23 km SE of T?gane, Japan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -757,6 +981,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -772,9 +1001,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:49ade488d9a3bda0a571a5ec2f445a329b74fe3d1ca64b06852959f026b3614a"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20051",
+    "geometryFingerprint": "beae4e786389bb5fb557572f40f46d4ad140e05dccd221fc28f780711e3fa69f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      128.44318097552457,
+      28.34438889146677,
+      143.85005629680032,
+      35.765188163260504
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:49ade488d9a3bda0a571a5ec2f445a329b74fe3d1ca64b06852959f026b3614a"
 }

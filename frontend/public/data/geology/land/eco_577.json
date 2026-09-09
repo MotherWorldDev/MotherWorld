@@ -3,7 +3,7 @@
   "regionId": "eco_577",
   "regionName": "Low Monte",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.232619+00:00",
+  "generatedAt": "2026-09-09T06:27:42.066556+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -70,6 +70,130 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 20,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2016-11-20T20:57:44.000Z",
+            "place": "7 km NNW of Pocito, Argentina"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2010-02-12T12:03:38.830Z",
+            "place": "67 km SSW of San Martín, Argentina"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1993-10-30T17:59:02.770Z",
+            "place": "7 km SE of Caucete, Argentina"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2006-09-24T21:08:49.500Z",
+            "place": "85 km SE of Caucete, Argentina"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2006-08-05T14:03:44.230Z",
+            "place": "23 km WSW of San Martín, Argentina"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2019-06-20T01:23:26.346Z",
+            "place": "66 km SSW of San Martín, Argentina"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2012-06-18T08:29:04.440Z",
+            "place": "8 km NNW of San Martín, Argentina"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-02-10T10:52:09.960Z",
+            "place": "7 km ESE of Mendoza, Argentina"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-01-14T06:35:44.060Z",
+            "place": "18 km SSE of Caucete, Argentina"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-11-05T12:12:40.065Z",
+            "place": "34 km SSW of San Mart?n, Argentina"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-09-11T06:35:38.000Z",
+            "place": "23 km S of Nueve de Julio, Argentina"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-06-01T17:04:54.700Z",
+            "place": "52 km SSE of Caucete, Argentina"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-11-01T03:19:12.950Z",
+            "place": "96 km NW of Santa Isabel, Argentina"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2001-12-14T01:17:53.750Z",
+            "place": "54 km E of Caucete, Argentina"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-09-14T05:15:30.697Z",
+            "place": "9 km WNW of Albardón, Argentina"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-03-07T05:10:37.114Z",
+            "place": "19 km SSW of Añelo, Argentina"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-05-18T23:45:42.630Z",
+            "place": "79 km W of Villa General Roca, Argentina"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-04-27T02:16:51.190Z",
+            "place": "50 km E of Caucete, Argentina"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-09-12T08:13:49.130Z",
+            "place": "3 km ENE of Nueve de Julio, Argentina"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-01-18T11:35:50.500Z",
+            "place": "22 km SE of Caucete, Argentina"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -705,9 +829,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a9ec5882a47754d7bab8ae03fc33f58fa40c141a9b94d4476f49a927b0ef56db"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_577",
+    "geometryFingerprint": "a30a76cd91822458be96f7321cea2076f00807410c7f11f54b1860404a61966c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -70.17544550399992,
+      -44.22815330002119,
+      -62.89334860099996,
+      -31.370659814803652
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a9ec5882a47754d7bab8ae03fc33f58fa40c141a9b94d4476f49a927b0ef56db"
 }

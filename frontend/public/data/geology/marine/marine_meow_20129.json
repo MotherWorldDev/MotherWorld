@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20129",
   "regionName": "Halmahera",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.422702+00:00",
+  "generatedAt": "2026-09-09T06:27:38.781891+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 38.612545013427734,
           "p90MmYr": 47.203792572021484,
           "coveragePct": 2.9871768916451367
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2270.5617651151374,
+        "medianDepthM": 2134.0,
+        "p10DepthM": 361.0,
+        "p90DepthM": 4351.0,
+        "shallowestM": -0.0,
+        "deepestM": 7093.0,
+        "coveragePct": 99.07834103401844,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 6.093291118437058,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 16.510783916332368,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 49.3304366136863,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 27.27663819416819,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.7888501573761049,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -200,6 +250,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1149,
+        "m6Plus": 82,
+        "m7Plus": 8,
+        "maxMagnitude": 7.5,
+        "events": [
+          {
+            "magnitude": 7.5,
+            "time": "2007-01-21T11:27:45.060Z",
+            "place": "126 km WNW of Ternate, Indonesia"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2026-04-01T22:48:13.063Z",
+            "place": "129 km ESE of Bitung, Indonesia"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2019-11-14T16:17:40.578Z",
+            "place": "141 km NW of Ternate, Indonesia"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2014-11-15T02:31:41.720Z",
+            "place": "155 km NW of Ternate, Indonesia"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2001-02-24T07:23:48.730Z",
+            "place": "137 km WNW of Ternate, Indonesia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2023-01-18T06:06:11.454Z",
+            "place": "156 km NW of Tobelo, Indonesia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2003-05-26T19:23:27.940Z",
+            "place": "116 km NE of Tobelo, Indonesia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "1994-01-21T02:24:29.960Z",
+            "place": "36 km NNE of Sofifi, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2019-07-07T15:08:40.525Z",
+            "place": "136 km WSW of Ternate, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2007-07-26T05:40:16.100Z",
+            "place": "140 km NNW of Tobelo, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1993-12-09T04:32:19.520Z",
+            "place": "150 km SE of Tondano, Indonesia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2014-11-26T14:33:43.640Z",
+            "place": "157 km NW of Ternate, Indonesia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1994-10-08T21:44:07.210Z",
+            "place": "225 km SSE of Sofifi, Indonesia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1993-12-09T11:38:27.960Z",
+            "place": "Molucca Sea"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1993-04-19T21:01:48.940Z",
+            "place": "253 km N of Tobelo, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2007-02-20T08:04:25.280Z",
+            "place": "206 km SSW of Sofifi, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1995-02-13T15:04:24.080Z",
+            "place": "227 km S of Sofifi, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2019-01-06T17:27:18.980Z",
+            "place": "Molucca Sea"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2012-08-26T15:05:37.080Z",
+            "place": "140 km WNW of Tobelo, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2008-09-11T00:00:02.700Z",
+            "place": "73 km WNW of Tobelo, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1998-12-06T00:47:13.450Z",
+            "place": "138 km E of Laikit, Laikit II (Dimembe), Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1998-10-28T16:25:03.840Z",
+            "place": "128 km ESE of Tondano, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2014-11-21T10:10:19.630Z",
+            "place": "123 km WNW of Tobelo, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2024-04-09T09:47:59.810Z",
+            "place": "150 km NW of Tobelo, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2020-06-04T08:49:40.397Z",
+            "place": "133 km NNE of Tobelo, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2003-10-18T22:27:13.250Z",
+            "place": "147 km WSW of Ternate, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2003-05-05T15:50:08.470Z",
+            "place": "62 km SSW of Sofifi, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2003-03-10T02:09:37.080Z",
+            "place": "Halmahera, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1997-06-24T23:04:53.140Z",
+            "place": "193 km NW of Amahai, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1996-02-28T09:44:10.920Z",
+            "place": "123 km ENE of Laikit, Laikit II (Dimembe), Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -319,6 +543,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -329,9 +558,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:bf8ef3340d1a7a1d7659df0dd360e26efce3a0178e3ae30e7344e8df7ed0e1a7"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20129",
+    "geometryFingerprint": "0a7212603f5496fe9f295aac9123d72200372d32e582278a66ec7b670d2ea86a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      125.44477160737839,
+      -2.09603258170087,
+      130.89576339558596,
+      4.440595818148063
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:bf8ef3340d1a7a1d7659df0dd360e26efce3a0178e3ae30e7344e8df7ed0e1a7"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20027",
   "regionName": "South European Atlantic Shelf",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.845554+00:00",
+  "generatedAt": "2026-09-09T06:27:38.486539+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2899.7830324834,
+        "medianDepthM": 3498.0,
+        "p10DepthM": 106.0,
+        "p90DepthM": 4951.0,
+        "shallowestM": -0.0,
+        "deepestM": 5348.0,
+        "coveragePct": 99.89047728505099,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 20.50613055284761,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.0101680468794365,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 17.39671088903086,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 55.08699051124211,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -206,6 +256,60 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2007-02-12T10:35:22.750Z",
+            "place": "181 km SW of Sagres, Portugal"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2009-12-17T01:37:48.060Z",
+            "place": "104 km SW of Sagres, Portugal"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-07-29T05:31:26.740Z",
+            "place": "206 km SW of Sagres, Portugal"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-12-10T13:51:26.700Z",
+            "place": "98 km SSE of Olhão, Portugal"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-08-26T04:11:37.277Z",
+            "place": "56 km W of Sines, Portugal"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-12-13T14:16:08.590Z",
+            "place": "126 km SW of Sagres, Portugal"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -308,6 +412,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -318,9 +427,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:111b786d39b4a926f02f0ae61b3daef1d3652137b2a0ea8d2ebee83538db473c"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20027",
+    "geometryFingerprint": "da6868c76c83bcf1a45a0bc44a1b35dc914849018f4d4b38ae1bb459ad578080",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -12.824110881482056,
+      34.94560408999469,
+      -0.722442447272325,
+      48.02260223134742
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:111b786d39b4a926f02f0ae61b3daef1d3652137b2a0ea8d2ebee83538db473c"
 }

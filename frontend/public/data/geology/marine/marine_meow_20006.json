@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20006",
   "regionName": "Northern Labrador",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.764003+00:00",
+  "generatedAt": "2026-09-09T06:27:38.443774+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 584.9005302345638,
+        "medianDepthM": 318.0,
+        "p10DepthM": 105.0,
+        "p90DepthM": 1840.0,
+        "shallowestM": -0.0,
+        "deepestM": 3058.0,
+        "coveragePct": 98.20978354710897,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 30.766798999301283,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 53.39663825260901,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 15.714648712655872,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.12191403543383833,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -190,6 +240,11 @@
       "id": "earthbyte_seafloor_tectonics",
       "label": "EarthByte / GPlates seafloor tectonic features",
       "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "ihfc_heat_flow",

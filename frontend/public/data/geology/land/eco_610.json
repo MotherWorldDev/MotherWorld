@@ -3,7 +3,7 @@
   "regionId": "eco_610",
   "regionName": "Tehuacán Valley matorral",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.159201+00:00",
+  "generatedAt": "2026-09-09T06:27:45.772586+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.0,
@@ -54,6 +54,37 @@
         "license": "CC BY 3.0"
       }
     },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 1,
+        "m7Plus": 1,
+        "maxMagnitude": 7.0,
+        "events": [
+          {
+            "magnitude": 7.0,
+            "time": "1999-06-15T20:42:05.930Z",
+            "place": "1 km SE of Texcala, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 1,
       "commodityCount": 1,
@@ -87,9 +118,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e2b0bf566f15bcec21f67f7dc93986efde0a4b05a27335cbbd3b13d4d966d55a"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_610",
+    "geometryFingerprint": "6051fcad0f2b4ba116779298ec1adf7fbbacc38717eb694f3a021cf04d78b08c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -98.0792005149999,
+      17.971810304075372,
+      -97.14944460999999,
+      19.640849231843426
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e2b0bf566f15bcec21f67f7dc93986efde0a4b05a27335cbbd3b13d4d966d55a"
 }

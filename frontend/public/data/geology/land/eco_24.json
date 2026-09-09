@@ -3,7 +3,7 @@
   "regionId": "eco_24",
   "regionName": "Northeast Congolian lowland forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.593699+00:00",
+  "generatedAt": "2026-09-09T06:27:41.260360+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2000-03-02T02:44:51.710Z",
+            "place": "107 km W of Kabare, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-11-30T19:20:15.170Z",
+            "place": "232 km NNE of Kindu, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-09-05T18:50:05.851Z",
+            "place": "159 km NE of Kindu, Democratic Republic of the Congo"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -202,9 +241,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:8e7bf7215ea8dc67c42531951a8044f5411d2155822d686c22c1ba010a6c6853"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_24",
+    "geometryFingerprint": "243c5f1e3322e5084ae85b7883ba3a208fe2e28e1ec87f7c525d25662a3d18a9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      18.765079545000106,
+      -3.868097733746974,
+      30.152997575000082,
+      5.780348728775032
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:8e7bf7215ea8dc67c42531951a8044f5411d2155822d686c22c1ba010a6c6853"
 }

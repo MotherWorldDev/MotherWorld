@@ -3,7 +3,7 @@
   "regionId": "eco_622",
   "regionName": "Fiji tropical moist forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.161209+00:00",
+  "generatedAt": "2026-09-09T06:27:45.824651+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 46.14983784602924,
@@ -111,6 +111,37 @@
         "license": "CC BY 4.0"
       }
     },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "1993-03-12T21:53:45.850Z",
+            "place": "3 km W of Leava, Wallis and Futuna"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 2,
       "commodityCount": 5,
@@ -179,9 +210,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:fedc83fe6b8d677cac8e3212f1a54980f3559cef88b599aab3aeadcd48a884dd"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_622",
+    "geometryFingerprint": "267e67efb2b5b8c60b9c4606229c95bbfa9fd2cc36010f3fc4e277807b2f0b78",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.9992067369999,
+      -19.199939750885047,
+      179.99902367600018,
+      -12.479911652294968
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:fedc83fe6b8d677cac8e3212f1a54980f3559cef88b599aab3aeadcd48a884dd"
 }

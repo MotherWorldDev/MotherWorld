@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20213",
   "regionName": "Heard and Macdonald Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.921499+00:00",
+  "generatedAt": "2026-09-09T06:27:39.057504+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 61.00432205200195,
           "coveragePct": 96.24077076782544
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 1625.7204128471483,
+        "medianDepthM": 1441.0,
+        "p10DepthM": 334.0,
+        "p90DepthM": 3270.0,
+        "shallowestM": 7.0,
+        "deepestM": 4147.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 1.7281698128836624,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 36.22387216333914,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 46.82334871194947,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 15.224609311827738,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -123,6 +173,97 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 13,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "1993-01-25T05:59:31.860Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1993-02-18T19:35:36.810Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-03-02T17:26:59.060Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-02-20T01:57:09.140Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1993-03-10T21:24:04.360Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1993-02-19T04:01:01.970Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-03-02T05:00:26.450Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-02-21T23:39:22.660Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-02-20T20:32:19.640Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-01-24T03:03:07.350Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-01-21T20:13:23.340Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-01-21T18:30:47.500Z",
+            "place": "Kerguelen Islands region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-03-02T04:56:11.960Z",
+            "place": "Kerguelen Islands region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -132,9 +273,38 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f529343413d3f325f9105a48fb7c25770c71208947d97cda63ec066a4c964403"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20213",
+    "geometryFingerprint": "21bb91f2d0ccd70e359b710287042a882e5fb8f486d05328947a5621c26cda93",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      69.87594944601756,
+      -56.56496646663086,
+      77.17911401139318,
+      -49.73881107604229
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f529343413d3f325f9105a48fb7c25770c71208947d97cda63ec066a4c964403"
 }

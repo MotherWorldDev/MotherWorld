@@ -3,7 +3,7 @@
   "regionId": "eco_715",
   "regionName": "Okhotsk-Manchurian taiga",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.933604+00:00",
+  "generatedAt": "2026-09-09T06:27:42.464884+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -58,6 +58,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "1994-01-28T01:05:13.760Z",
+            "place": "36 km N of Chumikan, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -574,9 +603,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:fbcb9d3a5cb88882d86d83ea28ca1513db392f6bb4a6ca1230cd904ad9f06c56"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_715",
+    "geometryFingerprint": "e3d9ddb1010c81e13c13b15848e88d2c82602d28575880c3507c6ef3802422bf",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      130.79420466600016,
+      45.53015111851564,
+      141.60319570700028,
+      58.44352255634527
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:fbcb9d3a5cb88882d86d83ea28ca1513db392f6bb4a6ca1230cd904ad9f06c56"
 }

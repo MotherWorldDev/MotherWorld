@@ -3,7 +3,7 @@
   "regionId": "eco_837",
   "regionName": "Red Sea-Arabian Desert shrublands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.615643+00:00",
+  "generatedAt": "2026-09-09T06:27:42.892838+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -82,6 +82,70 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.1,
+        "events": [
+          {
+            "magnitude": 6.1,
+            "time": "1993-08-03T12:43:05.360Z",
+            "place": "27 km NNE of Dahab, Egypt"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2009-05-19T17:35:01.070Z",
+            "place": "56 km ENE of Umluj, Saudi Arabia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1995-11-23T18:07:17.290Z",
+            "place": "23 km WSW of Tala Bay, Jordan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-12-26T06:19:41.140Z",
+            "place": "39 km SE of Tala Bay, Jordan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-11-22T12:47:05.180Z",
+            "place": "50 km E of Dahab, Egypt"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-05-19T16:54:31.080Z",
+            "place": "50 km ENE of Umluj, Saudi Arabia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-02-26T07:17:28.310Z",
+            "place": "38 km SSE of Nuwaybi‘a, Egypt"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-08-03T13:33:43.950Z",
+            "place": "29 km ESE of Dahab, Egypt"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -503,9 +567,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:253210cabfabbd7dbedef0167e0572cbee7e429a71c0dd9c8f97371dda82967a"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_837",
+    "geometryFingerprint": "9b7ad6205808e4d1a692b97b527da654b3c09d67fdb60588182522ecc92cd0de",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      33.17392486400006,
+      13.932656469490276,
+      47.60580749200016,
+      32.68479056044921
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:253210cabfabbd7dbedef0167e0572cbee7e429a71c0dd9c8f97371dda82967a"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_617",
   "regionName": "Southern Mesoamerican Pacific mangroves",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.445658+00:00",
+  "generatedAt": "2026-09-09T06:27:42.202520+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -28,6 +28,90 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2002-02-14T23:23:13.430Z",
+            "place": "13 km SW of Francisco I. Madero, Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2023-12-14T17:55:01.836Z",
+            "place": "24 km SSW of Nueva Concepción, Guatemala"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-06-15T13:46:55.140Z",
+            "place": "35 km SE of Champerico, Guatemala"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-06-07T14:55:20.070Z",
+            "place": "13 km SE of La Esperanza (El Zapotal), Mexico"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-09-06T07:35:35.061Z",
+            "place": "21 km WNW of Puerto Morazán, Nicaragua"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-03-15T01:22:16.792Z",
+            "place": "14 km SSW of El Arenal, Mexico"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-05-10T20:49:27.560Z",
+            "place": "26 km SW of Nueva Concepción, Guatemala"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-01-06T16:55:17.760Z",
+            "place": "31 km WSW of Nueva Concepción, Guatemala"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-04-19T05:09:39.460Z",
+            "place": "16 km E of Champerico, Guatemala"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-02-26T21:35:38.435Z",
+            "place": "12 km WNW of Puerto Morazán, Nicaragua"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-03-24T17:08:28.460Z",
+            "place": "23 km SSW of Nueva Concepción, Guatemala"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-06-03T07:57:36.160Z",
+            "place": "11 km SW of La Gloria, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -340,9 +424,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:685abbc2a2b63831237b72934ff9556666132ac3d41b8bf9aae0477be3cf3632"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_617",
+    "geometryFingerprint": "8880a787f89c15a0404a24389d6a7ca806db9f9c4484756e07f233484951756f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -95.05661766299994,
+      7.316009949297525,
+      -80.99739060899991,
+      16.36261866849277
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:685abbc2a2b63831237b72934ff9556666132ac3d41b8bf9aae0477be3cf3632"
 }

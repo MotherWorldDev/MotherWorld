@@ -3,7 +3,7 @@
   "regionId": "eco_572",
   "regionName": "Llanos",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.207678+00:00",
+  "generatedAt": "2026-09-09T06:27:42.052969+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -94,6 +94,50 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2025-06-08T13:08:05.797Z",
+            "place": "15 km NE of Paratebueno, Colombia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-01-29T07:47:41.680Z",
+            "place": "17 km SSW of Ubalá, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2017-03-16T15:38:10.600Z",
+            "place": "17 km NNW of Ubalá, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-03-22T04:37:41.986Z",
+            "place": "91 km ESE of Puerto Gaitán, Colombia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -690,9 +734,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:84aa8e162e0ff926c13e2b6b9cc46ec98c4229e28c28e73d1f2d3ea765b9820a"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_572",
+    "geometryFingerprint": "22a5112d2195fa2b7556bb646c11cf3d37e783b145d3f7e45b0e970bc8a86a08",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -73.88813056099991,
+      2.586380267129824,
+      -61.8793185269999,
+      9.964383737037188
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:84aa8e162e0ff926c13e2b6b9cc46ec98c4229e28c28e73d1f2d3ea765b9820a"
 }

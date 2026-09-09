@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20165",
   "regionName": "Clipperton",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.595984+00:00",
+  "generatedAt": "2026-09-09T06:27:38.900109+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 160.93917846679688,
           "coveragePct": 100.0
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 3643.597019370373,
+        "medianDepthM": 3695.0,
+        "p10DepthM": 3281.0,
+        "p90DepthM": 3983.0,
+        "shallowestM": 234.0,
+        "deepestM": 5832.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.0,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.11205375711306237,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 5.206627761997193,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 94.68131848088974,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -123,6 +173,37 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "2010-01-21T08:03:23.050Z",
+            "place": "east central Pacific Ocean"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -132,9 +213,38 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1dac566a7df55ac68e95fe84acbef6fb333758f7af7098d6894b41023ee571fb"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20165",
+    "geometryFingerprint": "aba9b89ce0ca84c995772ca9eb9de0f0c718a3b663d1f976ed19db56f11980a8",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -112.54305545026807,
+      6.999568912594352,
+      -105.79299552561845,
+      13.741093332836881
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1dac566a7df55ac68e95fe84acbef6fb333758f7af7098d6894b41023ee571fb"
 }

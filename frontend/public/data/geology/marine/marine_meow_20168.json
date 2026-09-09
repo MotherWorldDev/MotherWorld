@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20168",
   "regionName": "Nicoya",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.616396+00:00",
+  "generatedAt": "2026-09-09T06:27:38.912982+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2341.5751915460532,
+        "medianDepthM": 2707.0,
+        "p10DepthM": 619.0,
+        "p90DepthM": 3380.0,
+        "shallowestM": -0.0,
+        "deepestM": 4916.0,
+        "coveragePct": 99.61277287501714,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 7.686275559288719,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 4.708371681070003,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 46.676092751172206,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 40.92926000846908,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -177,6 +227,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 187,
+        "m6Plus": 40,
+        "m7Plus": 0,
+        "maxMagnitude": 6.9,
+        "events": [
+          {
+            "magnitude": 6.9,
+            "time": "1999-08-20T10:02:21.100Z",
+            "place": "42 km S of Quepos, Costa Rica"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2022-10-20T11:57:12.575Z",
+            "place": "60 km SSW of Boca Chica, Panama"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2021-07-21T21:15:12.269Z",
+            "place": "71 km S of Burica, Panama"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2014-12-08T08:54:52.520Z",
+            "place": "22 km ESE of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2017-11-13T02:28:23.680Z",
+            "place": "18 km W of Parrita, Costa Rica"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2015-01-07T05:07:07.510Z",
+            "place": "236 km S of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2014-05-13T06:35:24.240Z",
+            "place": "110 km SE of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2005-05-05T19:12:21.410Z",
+            "place": "256 km S of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2002-07-31T00:16:44.610Z",
+            "place": "14 km SE of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2002-06-16T02:46:14.030Z",
+            "place": "55 km WSW of Ciudad Cortés, Costa Rica"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2000-07-21T01:53:35.810Z",
+            "place": "55 km SSE of Sámara, Costa Rica"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2023-04-04T22:18:12.640Z",
+            "place": "73 km S of Boca Chica, Panama"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2012-06-04T03:15:24.750Z",
+            "place": "278 km SW of Arenas, Panama"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2012-06-04T00:45:15.290Z",
+            "place": "south of Panama"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2009-03-12T23:23:34.820Z",
+            "place": "259 km S of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1999-03-31T05:54:42.130Z",
+            "place": "245 km S of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2025-07-14T17:16:49.051Z",
+            "place": "206 km S of Burica, Panama"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2025-03-21T14:50:51.364Z",
+            "place": "124 km SSE of Burica, Panama"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2003-04-11T06:12:54.580Z",
+            "place": "124 km SSE of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1999-12-28T12:46:58.320Z",
+            "place": "269 km S of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1996-09-04T19:06:49.810Z",
+            "place": "13 km WSW of Quepos, Costa Rica"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2021-07-17T20:56:10.107Z",
+            "place": "135 km S of Burica, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2021-05-13T09:42:12.044Z",
+            "place": "154 km SSE of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2011-04-30T08:19:16.710Z",
+            "place": "143 km SSE of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2006-01-06T03:39:58.550Z",
+            "place": "163 km SW of Río Grande, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2005-12-30T18:26:43.900Z",
+            "place": "76 km S of Boca Chica, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2005-08-27T18:38:20.940Z",
+            "place": "142 km SSE of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2001-08-25T02:02:02.500Z",
+            "place": "45 km SSE of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2000-12-12T05:26:45.940Z",
+            "place": "224 km S of Punta de Burica, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1997-04-01T15:11:49.000Z",
+            "place": "53 km SSW of Boca Chica, Panama"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -338,6 +562,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -353,9 +582,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:550fceea920dadca01b6b9af7aec2654474f2210b500e43ce541a227d8178d38"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20168",
+    "geometryFingerprint": "7df68d7d8de267cc818eae5ea52d166dc97c4cfe6358b8be3ac778e79d26b5e9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -89.37815977354597,
+      3.72568688579955,
+      -80.46298628815971,
+      10.507299656163253
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:550fceea920dadca01b6b9af7aec2654474f2210b500e43ce541a227d8178d38"
 }

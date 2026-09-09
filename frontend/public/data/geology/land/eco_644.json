@@ -3,7 +3,7 @@
   "regionId": "eco_644",
   "regionName": "Appenine deciduous montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.492664+00:00",
+  "generatedAt": "2026-09-09T06:27:42.230583+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -89,6 +89,90 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 4,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "2016-10-30T06:40:18.670Z",
+            "place": "5 km ESE of Preci, Italy"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2009-04-06T01:32:39.000Z",
+            "place": "3 km SE of Sassa, Italy"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2016-08-24T01:36:32.870Z",
+            "place": "5 km WNW of Accumoli, Italy"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1997-09-26T09:40:26.330Z",
+            "place": "3 km SSE of Nocera Umbra, Italy"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2016-08-24T02:33:29.450Z",
+            "place": "5 km S of Castelsantangelo sul Nera, Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-10-26T17:10:37.210Z",
+            "place": "2 km SSE of Preci, Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2009-04-07T17:47:37.000Z",
+            "place": "1 km SW of San Panfilo d'Ocre, Italy"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-04-09T00:52:59.000Z",
+            "place": "5 km SE of Capitignano, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-04-09T19:38:17.360Z",
+            "place": "2 km ESE of Capitignano, Italy"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-04-06T23:15:37.000Z",
+            "place": "5 km ENE of Pizzoli, Italy"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-01-27T14:53:13.000Z",
+            "place": "4 km SE of Berceto, Italy"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-04-13T21:14:24.000Z",
+            "place": "5 km ESE of Capitignano, Italy"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "surfaceGeology": {
@@ -146,6 +230,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:115d124460b4d02abee68694fd3f68efa67e16bc6c48d81bcc2328fc23410d6e"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_644",
+    "geometryFingerprint": "88d32ada8f2d5d223f35caa88f19ab1d7e0637413b53558414a49ea816d10ab7",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      9.128051571000068,
+      41.27206936475804,
+      14.678759586000185,
+      44.74559676522251
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:115d124460b4d02abee68694fd3f68efa67e16bc6c48d81bcc2328fc23410d6e"
 }

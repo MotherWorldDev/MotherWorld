@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20079",
   "regionName": "Cape Verde",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.107873+00:00",
+  "generatedAt": "2026-09-09T06:27:38.621527+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 46.84516525268555,
           "coveragePct": 100.0
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 4116.377524284911,
+        "medianDepthM": 4294.0,
+        "p10DepthM": 3243.0,
+        "p90DepthM": 5002.0,
+        "shallowestM": 6.0,
+        "deepestM": 5454.0,
+        "coveragePct": 99.90683240763188,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.48146328619063583,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.6988940687026406,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 4.3132080327475,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 94.50643461235924,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -123,6 +173,52 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "1993-05-29T06:50:13.420Z",
+            "place": "253 km NW of Ponta do Sol, Cabo Verde"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-01-26T04:16:05.416Z",
+            "place": "Cape Verde"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-06-04T01:32:11.100Z",
+            "place": "245 km NW of Ponta do Sol, Cabo Verde"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1998-09-18T13:47:13.590Z",
+            "place": "54 km SW of Nova Sintra, Cabo Verde"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -132,9 +228,38 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f2c54f9b2be8c48e494cc10d6515d42dfabe3ed4814e9e4449bdbb830a39fac4"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20079",
+    "geometryFingerprint": "138327e78f167884d8538cd20fb491b5379c254e7bf16966943b61531d63a54d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -28.689480839149063,
+      11.436013129348666,
+      -19.654225425184112,
+      20.487072017564085
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f2c54f9b2be8c48e494cc10d6515d42dfabe3ed4814e9e4449bdbb830a39fac4"
 }

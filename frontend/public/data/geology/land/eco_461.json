@@ -3,7 +3,7 @@
   "regionId": "eco_461",
   "regionName": "Eastern Panamanian montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.623546+00:00",
+  "generatedAt": "2026-09-09T06:27:41.769581+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "2015-07-29T00:10:24.660Z",
+            "place": "29 km NE of Unión Chocó, Panama"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -182,9 +211,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d76ae6ecea081498fe4149ab25e102d4113e26e4436a5d8cf211f481b1bcba2c"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_461",
+    "geometryFingerprint": "14f1a0a7d164a226fed72e418ee502cec5736889f78f19882379329a3ac8dcbc",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -79.64511151399994,
+      7.337024219278089,
+      -77.12373361499995,
+      9.495830823407372
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d76ae6ecea081498fe4149ab25e102d4113e26e4436a5d8cf211f481b1bcba2c"
 }

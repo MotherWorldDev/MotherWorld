@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20030",
   "regionName": "Adriatic Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:33.842210+00:00",
+  "generatedAt": "2026-09-09T06:27:39.828471+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 244.27556380646328,
+        "medianDepthM": 98.0,
+        "p10DepthM": 24.0,
+        "p90DepthM": 944.0,
+        "shallowestM": -0.0,
+        "deepestM": 1234.0,
+        "coveragePct": 99.18416268044717,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 75.92687220626918,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 15.499502355039311,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 8.573625438691518,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "tectonics": {
       "faults": {
         "count": 40,
@@ -197,6 +249,95 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 13,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "2022-11-09T06:07:26.657Z",
+            "place": "central Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2021-03-27T13:47:55.267Z",
+            "place": "55 km N of Peschici, Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2019-11-26T06:08:21.820Z",
+            "place": "22 km W of Mamurras, Albania"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2003-03-29T17:42:15.700Z",
+            "place": "51 km W of Komiža, Croatia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-07-21T01:32:24.000Z",
+            "place": "3 km ENE of Marcelli, Italy"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2019-11-27T14:45:23.989Z",
+            "place": "18 km W of Mamurras, Albania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2004-11-25T06:21:19.780Z",
+            "place": "60 km WNW of Komiža, Croatia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1996-09-09T15:57:05.140Z",
+            "place": "8 km SSE of Podgora, Croatia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-08-21T13:39:58.840Z",
+            "place": "9 km WSW of Ulcinj, Montenegro"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-03-14T19:37:15.436Z",
+            "place": "14 km NNE of Lesina, Italy"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-11-28T10:52:41.876Z",
+            "place": "22 km WSW of Mamurras, Albania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2014-12-29T20:34:11.570Z",
+            "place": "25 km S of Ulcinj, Montenegro"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-03-27T16:10:36.410Z",
+            "place": "62 km W of Komiža, Croatia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -258,6 +399,11 @@
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -266,6 +412,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5d04b75abac6368befe6e4c5a66c5a47e98a527db667d53ed0722e018055c24c"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20030",
+    "geometryFingerprint": "d5ab102f26fcffdf6eb35a0fe52472a61ae9c140fd384b40b0bfc8dc1ff348c9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      12.206236412852036,
+      40.195856397805294,
+      19.596413026401052,
+      45.77492884260388
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5d04b75abac6368befe6e4c5a66c5a47e98a527db667d53ed0722e018055c24c"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_369",
   "regionName": "Alaska Peninsula montane taiga",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.162620+00:00",
+  "generatedAt": "2026-09-09T06:27:41.561199+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -82,6 +82,125 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 19,
+        "m6Plus": 5,
+        "m7Plus": 1,
+        "maxMagnitude": 7.0,
+        "events": [
+          {
+            "magnitude": 7.0,
+            "time": "1999-12-06T23:12:33.537Z",
+            "place": "26 km SSE of Karluk, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2001-07-28T07:32:45.633Z",
+            "place": "74 km S of Kokhanok, Alaska"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2000-07-11T01:32:28.758Z",
+            "place": "24 km SSW of Larsen Bay, Alaska"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1999-12-07T00:19:51.303Z",
+            "place": "29 km N of Akhiok, Alaska"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2016-04-02T05:50:00.932Z",
+            "place": "42 km E of Port Heiden, Alaska"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2000-07-11T01:38:46.211Z",
+            "place": "23 km SSE of Karluk, Alaska"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1999-08-26T01:24:58.627Z",
+            "place": "68 km NNW of Karluk, Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2012-12-01T08:00:58.211Z",
+            "place": "81 km WNW of Aleneva, Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-03-08T14:20:57.427Z",
+            "place": "27 km SW of Larsen Bay, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1999-12-06T23:22:57.509Z",
+            "place": "33 km N of Akhiok, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2019-01-22T04:43:19.680Z",
+            "place": "87 km ESE of King Salmon, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-03-10T17:11:04.966Z",
+            "place": "31 km SSE of Pope-Vannoy Landing, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-01-16T14:18:18.230Z",
+            "place": "24 km SW of Larsen Bay, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2000-09-25T11:55:05.843Z",
+            "place": "32 km NNE of Larsen Bay, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-07-28T19:11:22.434Z",
+            "place": "66 km SE of Kokhanok, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-06-18T09:14:31.656Z",
+            "place": "59 km N of Karluk, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-11-12T21:52:36.711Z",
+            "place": "52 km SSW of Ugashik, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-09-19T20:19:58.286Z",
+            "place": "27 km NNW of Akhiok, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-05-08T20:41:40.192Z",
+            "place": "29 km SSE of Karluk, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -738,9 +857,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d741b46ec1a1bb072065c4aee560cb15c4a42d01b517ead3e4fabf88da02b1f8"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_369",
+    "geometryFingerprint": "4c0d49018881422f86531e3ebee008dfd1a256480613538cf74b1395b05e095f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -164.94880942299986,
+      54.37716881381144,
+      -152.16022989899992,
+      59.42229702644002
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d741b46ec1a1bb072065c4aee560cb15c4a42d01b517ead3e4fabf88da02b1f8"
 }

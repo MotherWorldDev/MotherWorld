@@ -3,7 +3,7 @@
   "regionId": "eco_422",
   "regionName": "California coastal sage and chaparral",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.334577+00:00",
+  "generatedAt": "2026-09-09T06:27:41.638360+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,110 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 16,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.7,
+        "events": [
+          {
+            "magnitude": 6.7,
+            "time": "1994-01-17T12:30:55.390Z",
+            "place": "Northridge, California, earthquake"
+          },
+          {
+            "magnitude": 5.89,
+            "time": "1994-01-17T12:31:58.120Z",
+            "place": "1km ENE of Granada Hills, California"
+          },
+          {
+            "magnitude": 5.58,
+            "time": "1994-01-17T23:33:30.690Z",
+            "place": "7km NNE of Simi Valley, California"
+          },
+          {
+            "magnitude": 5.44,
+            "time": "2008-07-29T18:42:15.670Z",
+            "place": "5km S of Chino Hills, CA"
+          },
+          {
+            "magnitude": 5.27,
+            "time": "1994-03-23T02:59:14.460Z",
+            "place": "35km E of Maneadero, B.C., MX"
+          },
+          {
+            "magnitude": 5.24,
+            "time": "1994-03-20T21:20:12.260Z",
+            "place": "3km WNW of Panorama City, California"
+          },
+          {
+            "magnitude": 5.24,
+            "time": "1994-01-18T00:43:08.890Z",
+            "place": "10km ESE of Piru, California"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-01-17T12:40:36.120Z",
+            "place": "9km N of Chatsworth, California"
+          },
+          {
+            "magnitude": 5.12,
+            "time": "2020-08-17T15:30:33.530Z",
+            "place": "88km ESE of Maneadero, B.C., MX"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2014-03-29T04:09:42.170Z",
+            "place": "2km NW of Brea, CA"
+          },
+          {
+            "magnitude": 5.08,
+            "time": "2023-08-20T21:41:00.970Z",
+            "place": "7 km SE of Ojai, CA"
+          },
+          {
+            "magnitude": 5.07,
+            "time": "1997-04-26T10:37:30.670Z",
+            "place": "12km ESE of Piru, California"
+          },
+          {
+            "magnitude": 5.07,
+            "time": "1994-01-19T21:11:44.900Z",
+            "place": "10km SSW of Valencia, California"
+          },
+          {
+            "magnitude": 5.06,
+            "time": "1994-01-29T11:20:35.970Z",
+            "place": "6km NNE of Chatsworth, California"
+          },
+          {
+            "magnitude": 5.06,
+            "time": "1994-01-19T21:09:28.610Z",
+            "place": "8km ESE of Piru, California"
+          },
+          {
+            "magnitude": 5.02,
+            "time": "1995-06-26T08:40:28.940Z",
+            "place": "11km SW of Valencia, California"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -829,9 +933,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:2a7e70ab3a1bd25c7a1cf664a94373be865be955826d4e6b05eaba489ca2a330"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_422",
+    "geometryFingerprint": "6abd028db0a3d72a3e18e4ed46ebe34c9bb442d91853acddfc19e10a56b7c1dd",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -120.45045400899988,
+      28.035483521341778,
+      -115.1498336559998,
+      34.51573769038247
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:2a7e70ab3a1bd25c7a1cf664a94373be865be955826d4e6b05eaba489ca2a330"
 }

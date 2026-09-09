@@ -3,7 +3,7 @@
   "regionId": "eco_448",
   "regionName": "Cauca Valley montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.519700+00:00",
+  "generatedAt": "2026-09-09T06:27:41.720664+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -148,6 +148,100 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 14,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "1995-08-19T21:43:31.920Z",
+            "place": "7 km WSW of Neira, Colombia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1999-01-25T18:19:16.870Z",
+            "place": "Near Armenia, Colombia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2001-09-22T03:23:38.220Z",
+            "place": "17 km NNE of La Cumbre, Colombia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2015-02-22T12:56:24.400Z",
+            "place": "7 km SSW of Caldono, Colombia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1999-01-25T22:40:16.460Z",
+            "place": "2 km SSE of Córdoba, Colombia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-04-23T15:42:09.790Z",
+            "place": "3 km NW of Neira, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-03-06T13:05:12.110Z",
+            "place": "23 km SE of Paispamba, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-08-03T22:09:36.236Z",
+            "place": "Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-12-18T14:30:03.390Z",
+            "place": "10 km NNE of Toribío, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-04-24T08:53:34.030Z",
+            "place": "3 km SSW of Andes, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-12-26T00:52:39.508Z",
+            "place": "10 km ENE of Valdivia, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-05-12T21:23:29.680Z",
+            "place": "10 km NNE of Darien, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-06-01T22:58:01.050Z",
+            "place": "8 km WSW of Pereira, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-03-08T15:59:43.870Z",
+            "place": "14 km ENE of Zarzal, Colombia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -637,9 +731,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:2c544eb90b85ab0183818203536edabdc374b61df1dbe77d582163675320d777"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_448",
+    "geometryFingerprint": "c21fe3279697303bdb71dc662cdfa5812c13e04ec0182c38c5063025651c1f79",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -76.9076005419999,
+      1.95248861382635,
+      -75.10614749299998,
+      7.729197877919293
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:2c544eb90b85ab0183818203536edabdc374b61df1dbe77d582163675320d777"
 }

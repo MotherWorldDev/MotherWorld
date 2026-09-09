@@ -2,7 +2,7 @@ export const APP_CONFIG = {
   data: {
     moonSelenologyUrl: "./data/moon/selenology.json?v=20260908-env8-selenology",
     geologyBaseUrl: "./data/geology/",
-    geologyIndexUrl: "./data/geology/geology.index.json?v=20260908-env8-selenology",
+    geologyIndexUrl: "./data/geology/geology.index.json?v=20260909-geology1",
     climateExtrasBaseUrl: "./data/climate-extras/",
     climateExtrasIndexUrl: "./data/climate-extras/climate-extras.index.json?v=20260908-env8-selenology",
     biodiversityBaseUrl: "./data/biodiversity/",

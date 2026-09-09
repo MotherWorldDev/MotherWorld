@@ -3,7 +3,7 @@
   "regionId": "eco_734",
   "regionName": "Mongolian-Manchurian grassland",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.014610+00:00",
+  "generatedAt": "2026-09-09T06:27:42.516569+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -88,6 +88,80 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 10,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "1996-05-03T03:32:47.110Z",
+            "place": "36 km NW of Baotou, China"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1998-01-10T03:50:41.560Z",
+            "place": "44 km NW of Zhangjiakou, China"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1998-09-24T18:53:40.180Z",
+            "place": "61 km N of Mandalgovi, Mongolia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2004-03-24T01:53:49.430Z",
+            "place": "236 km NE of Xilin Hot, China"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-08-16T10:58:42.780Z",
+            "place": "175 km NNE of Chifeng, China"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-11-22T22:04:25.400Z",
+            "place": "39 km NNE of Changling, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-10-31T03:03:34.120Z",
+            "place": "Jilin, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-03-11T13:18:09.320Z",
+            "place": "40 km NNW of Zhangjiakou, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-07-25T15:43:41.140Z",
+            "place": "25 km NE of Fendou, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1999-01-29T05:44:23.880Z",
+            "place": "81 km NNW of Xilin Hot, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -452,9 +526,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ef03b5b4c08cb5ff8a0b852eba9016668226dfa94c51ac615f646f0b7fc4077b"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_734",
+    "geometryFingerprint": "f0be84881742b6bd97c07e485d2ddc637122fabeddf72d44b77e4d285a9ee34e",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      101.94578552900003,
+      38.66748112751001,
+      127.22750855700005,
+      51.63502480828817
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ef03b5b4c08cb5ff8a0b852eba9016668226dfa94c51ac615f646f0b7fc4077b"
 }

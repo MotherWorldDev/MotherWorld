@@ -3,7 +3,7 @@
   "regionId": "eco_808",
   "regionName": "Alashan Plateau semi-desert",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.450621+00:00",
+  "generatedAt": "2026-09-09T06:27:42.808430+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,100 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 14,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "2002-12-14T13:27:29.100Z",
+            "place": "27 km WSW of Laojunmiao, China"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2000-06-06T10:59:09.750Z",
+            "place": "61 km NNW of Baiyin, China"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2015-04-15T07:39:27.210Z",
+            "place": "36 km WNW of Wuhai, China"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2012-02-04T04:09:33.990Z",
+            "place": "171 km SE of Dalandzadgad, Mongolia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-12-13T16:04:00.620Z",
+            "place": "140 km SSE of Hami, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-05-03T10:19:36.850Z",
+            "place": "80 km NNE of Jiayuguan, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-07-20T21:54:05.720Z",
+            "place": "220 km SSW of Saynshand, Mongolia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-07-16T04:44:30.630Z",
+            "place": "75 km E of Zhangye, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2005-07-26T12:16:08.930Z",
+            "place": "116 km S of Dalandzadgad, Mongolia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-10-10T03:29:14.690Z",
+            "place": "26 km SSW of Jiayuguan, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-01-02T03:12:54.750Z",
+            "place": "120 km S of Dalandzadgad, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-07-22T09:34:32.180Z",
+            "place": "82 km W of Jinchang, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-07-20T18:06:57.440Z",
+            "place": "215 km SSW of Saynshand, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-10-06T04:02:15.200Z",
+            "place": "39 km WSW of Zhangye, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -737,9 +831,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d2edb8c3ff2be4b524020a31c4a3fc773c59612104f3492a23edd0bef5e91584"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_808",
+    "geometryFingerprint": "94492540d2d628679e5d919b4d3cf99b951f917d683163b17ebe75075f9faf6f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      93.48630565200015,
+      36.13304237821931,
+      110.44335160000008,
+      45.711982425581304
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d2edb8c3ff2be4b524020a31c4a3fc773c59612104f3492a23edd0bef5e91584"
 }

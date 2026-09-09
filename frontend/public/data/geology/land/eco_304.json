@@ -3,7 +3,7 @@
   "regionId": "eco_304",
   "regionName": "Northeast India-Myanmar pine forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.888912+00:00",
+  "generatedAt": "2026-09-09T06:27:41.416814+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -28,6 +28,55 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "2012-07-01T04:13:52.090Z",
+            "place": "21 km ESE of Phek, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-07-14T19:55:17.950Z",
+            "place": "26 km S of Phek, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-04-04T07:45:30.378Z",
+            "place": "25 km SSW of Phek, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-08-18T06:28:34.730Z",
+            "place": "39 km SSE of Chur?ch?ndpur, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-02-24T12:02:50.650Z",
+            "place": "37 km SSW of Chur?ch?ndpur, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -118,9 +167,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3f852a98648d3b53b1e34352a2dc50537af8b7ace71e8f0a2b58a58630f97955"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_304",
+    "geometryFingerprint": "9f30d23918fa92161338dce5d184eb5a26b4fc594a73bc96a88780f66f87cd8f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      93.41695361800014,
+      23.832337098097852,
+      95.18109160700011,
+      26.64982232384241
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3f852a98648d3b53b1e34352a2dc50537af8b7ace71e8f0a2b58a58630f97955"
 }

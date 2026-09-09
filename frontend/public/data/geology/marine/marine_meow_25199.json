@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25199",
   "regionName": "Central New Zealand",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.254117+00:00",
+  "generatedAt": "2026-09-09T06:27:39.229554+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 209.6192169189453,
           "p90MmYr": 209.64102172851562,
           "coveragePct": 2.3378438244367374
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 1192.603621023184,
+        "medianDepthM": 996.0,
+        "p10DepthM": 94.0,
+        "p90DepthM": 2748.0,
+        "shallowestM": 1.0,
+        "deepestM": 4413.0,
+        "coveragePct": 99.50955876168943,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 19.345604988712555,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 30.844624595155906,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 44.74880963004618,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 5.060960786085363,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -259,6 +309,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 70,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.5,
+        "events": [
+          {
+            "magnitude": 6.5,
+            "time": "2013-07-21T05:09:31.450Z",
+            "place": "38 km ESE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2012-07-03T10:36:15.520Z",
+            "place": "63 km S of Opunake, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2016-11-22T00:19:43.020Z",
+            "place": "76 km ENE of Castlepoint, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2013-08-16T05:31:16.480Z",
+            "place": "30 km ESE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2013-07-20T19:17:10.140Z",
+            "place": "38 km ESE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2016-11-13T11:33:45.790Z",
+            "place": "66 km SSE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2016-02-14T00:13:44.040Z",
+            "place": "12 km ENE of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2011-12-23T00:58:38.310Z",
+            "place": "14 km ENE of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1995-09-19T22:52:23.140Z",
+            "place": "15 km SW of Hawera, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2023-02-15T06:38:08.606Z",
+            "place": "55 km NW of Raumati Beach, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2016-11-14T06:47:52.040Z",
+            "place": "90 km S of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2016-11-13T19:28:56.720Z",
+            "place": "95 km S of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2016-11-13T11:41:49.800Z",
+            "place": "28 km SE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2020-05-24T19:53:32.262Z",
+            "place": "29 km WNW of Foxton, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-11-15T01:34:44.050Z",
+            "place": "42 km SE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-11-14T07:21:04.690Z",
+            "place": "39 km SE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2013-07-18T21:06:39.000Z",
+            "place": "38 km E of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2011-12-23T01:06:25.650Z",
+            "place": "18 km ENE of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-07-15T09:38:22.920Z",
+            "place": "83 km SSW of Opunake, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-03-13T15:08:11.730Z",
+            "place": "83 km SSW of Opunake, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-12-29T02:34:33.410Z",
+            "place": "47 km SSW of Brooklyn, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-11-15T06:30:30.520Z",
+            "place": "93 km S of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-11-14T01:28:20.680Z",
+            "place": "62 km S of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-07-21T05:13:50.250Z",
+            "place": "34 km E of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-07-04T08:36:51.620Z",
+            "place": "68 km E of Castlepoint, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-09-22T09:07:05.023Z",
+            "place": "63 km N of Picton, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2021-11-07T03:16:45.385Z",
+            "place": "80 km NE of Takaka, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-11-14T06:43:00.180Z",
+            "place": "43 km SE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-11-14T01:30:12.830Z",
+            "place": "101 km S of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-11-13T18:59:07.730Z",
+            "place": "96 km S of Blenheim, New Zealand"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -550,6 +774,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -560,9 +789,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b71bbf32a71041f9934873beb331ecab6c690c1ea50fd8bbe083f7fbda5fccee"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25199",
+    "geometryFingerprint": "d0cef0e4c3da8541584cdc02f9e6b45108f89e34c4a655580b47e67c9245116f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.98907200195572,
+      -47.636399758149324,
+      179.9910779526601,
+      -34.505638720121915
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b71bbf32a71041f9934873beb331ecab6c690c1ea50fd8bbe083f7fbda5fccee"
 }

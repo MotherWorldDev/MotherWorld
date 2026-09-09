@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20161",
   "regionName": "Society Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.567547+00:00",
+  "generatedAt": "2026-09-09T06:27:38.882866+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 4065.3400350213706,
+        "medianDepthM": 4258.0,
+        "p10DepthM": 3194.0,
+        "p90DepthM": 4709.0,
+        "shallowestM": 1.0,
+        "deepestM": 5145.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.2220235706545727,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.5162265303848157,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 6.956176544161751,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 92.30557335479887,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -178,6 +228,11 @@
       "id": "earthbyte_seafloor_tectonics",
       "label": "EarthByte / GPlates seafloor tectonic features",
       "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "ihfc_heat_flow",

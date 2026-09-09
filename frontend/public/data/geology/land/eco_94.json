@@ -3,7 +3,7 @@
   "regionId": "eco_94",
   "regionName": "Gariep Karoo",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.223540+00:00",
+  "generatedAt": "2026-09-09T06:27:46.918724+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.99999999999993,
@@ -138,6 +138,37 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.2,
+        "events": [
+          {
+            "magnitude": 5.2,
+            "time": "2024-12-22T00:51:05.219Z",
+            "place": "89 km W of Brandvlei, South Africa"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -483,9 +514,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e9a65d5bcbf47c013fde8b9f9dd2b3f478de09cf42073a8917ffecab47687491"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_94",
+    "geometryFingerprint": "991cb91ef3b47b6ae854419fc07ac747218ec62ac9b74ce7fd1b5affe8762b3f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      16.15503194000007,
+      -31.294460285767197,
+      23.052730560000153,
+      -22.92524570494874
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e9a65d5bcbf47c013fde8b9f9dd2b3f478de09cf42073a8917ffecab47687491"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20124",
   "regionName": "East Caroline Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.387750+00:00",
+  "generatedAt": "2026-09-09T06:27:38.775837+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 4005.5052892519607,
+        "medianDepthM": 4160.0,
+        "p10DepthM": 2593.0,
+        "p90DepthM": 5301.0,
+        "shallowestM": -0.0,
+        "deepestM": 6006.0,
+        "coveragePct": 99.94509202297986,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.9265355146620589,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.7623143506770166,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 16.550923441092607,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 81.75481729169317,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.005409401875126844,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -188,6 +238,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 37,
+        "m6Plus": 4,
+        "m7Plus": 0,
+        "maxMagnitude": 6.9,
+        "events": [
+          {
+            "magnitude": 6.9,
+            "time": "2007-09-30T02:08:30.170Z",
+            "place": "south of the Mariana Islands"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2014-05-15T08:16:34.440Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1995-08-07T19:44:25.430Z",
+            "place": "Federated States of Micronesia region"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2014-05-14T20:56:13.210Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2025-10-13T11:11:00.607Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1996-07-04T15:50:38.700Z",
+            "place": "181 km SE of Fais, Micronesia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2011-11-09T21:52:20.480Z",
+            "place": "South of the Mariana Islands"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2007-11-12T00:25:44.010Z",
+            "place": "south of the Mariana Islands"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2015-11-11T00:26:57.760Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-09-03T21:29:58.937Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2007-09-30T15:02:18.280Z",
+            "place": "south of the Mariana Islands"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2003-08-31T09:01:32.120Z",
+            "place": "South of the Mariana Islands"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-10-15T10:22:09.350Z",
+            "place": "299 km SSE of Fais, Micronesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2021-10-22T07:27:53.884Z",
+            "place": "Federated States of Micronesia region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2001-05-02T09:57:14.650Z",
+            "place": "Federated States of Micronesia region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-04-09T15:30:35.192Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-04-23T18:22:21.540Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-10-01T23:16:46.180Z",
+            "place": "south of the Mariana Islands"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-09-30T08:35:08.200Z",
+            "place": "south of the Mariana Islands"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2020-04-14T06:31:49.859Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-11-12T15:11:24.430Z",
+            "place": "south of the Mariana Islands"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-03-01T03:54:46.330Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-06-11T20:28:18.640Z",
+            "place": "181 km ESE of Fais, Micronesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-01-30T00:08:50.680Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-04-28T13:32:40.070Z",
+            "place": "121 km SSW of Nema, Micronesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-11-30T23:43:17.640Z",
+            "place": "South of the Mariana Islands"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-10-20T05:21:49.940Z",
+            "place": "Palau region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-10-02T17:14:44.710Z",
+            "place": "south of the Mariana Islands"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-04-09T05:35:00.767Z",
+            "place": "State of Yap, Federated States of Micronesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-09-14T08:07:10.905Z",
+            "place": "south of the Mariana Islands"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -259,6 +483,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -267,6 +496,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3075857cf46e0061a8f926e14df3822531de8f157b6497a9437024e79acdc1b9"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20124",
+    "geometryFingerprint": "f4713277e294340d62bb808cdecb7dd4cc7e2f56b058e446b896d6fbc2338382",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      139.74543764720207,
+      0.94622785920761,
+      165.97424192584057,
+      12.289004161126968
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3075857cf46e0061a8f926e14df3822531de8f157b6497a9437024e79acdc1b9"
 }

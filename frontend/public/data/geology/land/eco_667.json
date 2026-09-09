@@ -3,7 +3,7 @@
   "regionId": "eco_667",
   "regionName": "Huang He Plain mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.653697+00:00",
+  "generatedAt": "2026-09-09T06:27:42.327809+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -58,6 +58,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2023-08-05T18:33:59.457Z",
+            "place": "24 km S of Dezhou, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-09-20T03:14:33.580Z",
+            "place": "9 km NNE of Bianzhuang, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-01-24T02:36:15.600Z",
+            "place": "28 km ENE of Hancheng, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -655,9 +694,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:740efb8013e4fc450bfd4efebd5fa7bab9c26b2d83d79b8193c29c558d65e87e"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_667",
+    "geometryFingerprint": "de5c7e75a03e2fd33ffde6cc9f4a6f4fc3734774d2df33d1183fb286d76ec3de",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      106.22128252800002,
+      32.06635886914212,
+      122.6863706060001,
+      40.2635663172875
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:740efb8013e4fc450bfd4efebd5fa7bab9c26b2d83d79b8193c29c558d65e87e"
 }

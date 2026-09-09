@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20151",
   "regionName": "Lord Howe and Norfolk Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.512520+00:00",
+  "generatedAt": "2026-09-09T06:27:38.844415+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -78,6 +78,56 @@
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 2707.9769108080313,
+        "medianDepthM": 2831.0,
+        "p10DepthM": 1328.0,
+        "p90DepthM": 4102.0,
+        "shallowestM": 32.0,
+        "deepestM": 5114.0,
+        "coveragePct": 100.00000000000001,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.604683973372213,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 3.5473699649814074,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 52.09118319154836,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 43.75676287009803,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -135,6 +185,42 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2010-02-24T11:57:58.080Z",
+            "place": "northwest of New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-04-16T10:13:41.850Z",
+            "place": "northwest of New Zealand"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -149,9 +235,38 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b4a633a31391ca0c36b2da07aec95999e9cf8deca1b01edb54d0f226d7f350e0"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20151",
+    "geometryFingerprint": "87b08e3ddc6e86ed954550da3777fc3525a24dcc669d1e38794b558d48364bfe",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      155.9819699295668,
+      -34.96625358298399,
+      171.33062370971345,
+      -25.830563723530855
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b4a633a31391ca0c36b2da07aec95999e9cf8deca1b01edb54d0f226d7f350e0"
 }

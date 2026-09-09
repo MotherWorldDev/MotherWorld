@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20173",
   "regionName": "Eastern Galapagos Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.650030+00:00",
+  "generatedAt": "2026-09-09T06:27:38.938944+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2554.110888486926,
+        "medianDepthM": 2668.0,
+        "p10DepthM": 1247.0,
+        "p90DepthM": 3562.0,
+        "shallowestM": 8.0,
+        "deepestM": 3986.0,
+        "coveragePct": 99.90618859441396,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 1.5337287923180902,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 5.94684749510532,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 53.51391710857768,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 39.00550660399891,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -162,6 +212,50 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "2006-02-04T09:17:04.090Z",
+            "place": "203 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-10-02T00:57:56.480Z",
+            "place": "151 km N of Puerto Baquerizo Moreno, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-04-07T12:20:51.500Z",
+            "place": "243 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-02-19T23:26:19.685Z",
+            "place": "142 km ENE of Puerto Baquerizo Moreno, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -233,6 +327,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -246,6 +345,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:8d2e99d42e405ba030480d29fafb41d2604cf1c2ee195b78f430cf75cc4e5048"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20173",
+    "geometryFingerprint": "aa5cc9b55e27e51574dffc16e3fe2e2322a674eb6b7dbdbb50323cee79c0fb60",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -91.4741352541919,
+      -4.773043599362093,
+      -85.91397807636733,
+      3.449522687637623
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:8d2e99d42e405ba030480d29fafb41d2604cf1c2ee195b78f430cf75cc4e5048"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_486",
   "regionName": "Northwest Andean montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.754699+00:00",
+  "generatedAt": "2026-09-09T06:27:41.827214+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,150 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 24,
+        "m6Plus": 6,
+        "m7Plus": 1,
+        "maxMagnitude": 7.4,
+        "events": [
+          {
+            "magnitude": 7.4,
+            "time": "2026-08-10T12:34:28.009Z",
+            "place": "2 km SE of San José del Palmar, Colombia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2013-02-09T14:16:07.880Z",
+            "place": "2 km NNE of Yacuanquer, Colombia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1995-02-08T18:40:25.380Z",
+            "place": "24 km NW of Darien, Colombia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2018-09-07T02:12:06.280Z",
+            "place": "8 km SE of Alausí, Ecuador"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2019-03-23T19:21:17.998Z",
+            "place": "3 km WSW of Versalles, Colombia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2016-09-14T01:58:31.570Z",
+            "place": "32 km ENE of Mutatá, Colombia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1997-02-19T18:25:12.570Z",
+            "place": "19 km ESE of Sipí, Colombia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-09-14T07:12:12.402Z",
+            "place": "5 km N of Frontino, Colombia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2015-10-15T10:07:28.140Z",
+            "place": "20 km ENE of Cañar, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-05-14T12:48:21.593Z",
+            "place": "30 km NW of Darien, Colombia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1996-09-11T06:28:45.640Z",
+            "place": "28 km W of Trujillo, Colombia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1994-05-11T11:53:27.950Z",
+            "place": "51 km WNW of Cotacachi, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-04-21T02:22:20.976Z",
+            "place": "4 km N of Cotacachi, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-04-21T03:39:24.120Z",
+            "place": "13 km NNW of San José del Palmar, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-06-27T07:10:29.550Z",
+            "place": "3 km ENE of El Peñol, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1993-10-12T19:51:25.360Z",
+            "place": "33 km NNW of Darien, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-03-01T22:57:40.994Z",
+            "place": "18 km SW of Urrao, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2014-08-12T19:58:00.130Z",
+            "place": "20 km WSW of Cayambe, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-08-18T07:06:52.430Z",
+            "place": "2 km ENE of Paispamba, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-03-17T20:22:09.630Z",
+            "place": "21 km SE of Baláo, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2000-10-08T20:12:32.350Z",
+            "place": "Colombia-Ecuador border region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-08-10T13:18:09.581Z",
+            "place": "10 km WSW of San José del Palmar, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-05-22T13:36:19.270Z",
+            "place": "28 km NW of Cotacachi, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-02-08T20:49:24.620Z",
+            "place": "6 km ENE of Cañar, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -824,9 +968,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:15ead853b9493d10d9ac79efcd2adebe46e844a82a3fd5a8de9bd7e61b899f63"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_486",
+    "geometryFingerprint": "a25998abc85b3767e5c438508c14ac926d441e0de95f8f1aa01d2b526559de1b",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -79.75656852999997,
+      -3.317852612335662,
+      -75.54504355699999,
+      8.309208311403587
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:15ead853b9493d10d9ac79efcd2adebe46e844a82a3fd5a8de9bd7e61b899f63"
 }

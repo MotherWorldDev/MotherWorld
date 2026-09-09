@@ -3,7 +3,7 @@
   "regionId": "eco_29",
   "regionName": "Western Congolian swamp forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.073283+00:00",
+  "generatedAt": "2026-09-09T06:27:44.348291+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 96.32638178540519,
@@ -48,6 +48,42 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.2,
+        "events": [
+          {
+            "magnitude": 5.2,
+            "time": "1998-04-26T14:16:52.200Z",
+            "place": "116 km SW of Impfondo, Republic of the Congo"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1998-03-05T02:59:43.360Z",
+            "place": "114 km SW of Impfondo, Republic of the Congo"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -55,6 +91,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:eb78eb243db57d535fa03f3f7233aa4f7d3646f0d6e6c06a9564a9024c9352ee"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_29",
+    "geometryFingerprint": "932ce79aa481ea3b745b2e5ff9a9206cacaf663936223cc32356b336e9cfe83a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      15.343480551000138,
+      -3.06143862761269,
+      24.554996515000028,
+      3.931078096680246
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:eb78eb243db57d535fa03f3f7233aa4f7d3646f0d6e6c06a9564a9024c9352ee"
 }

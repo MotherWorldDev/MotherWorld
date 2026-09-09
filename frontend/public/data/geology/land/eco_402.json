@@ -3,7 +3,7 @@
   "regionId": "eco_402",
   "regionName": "Western shortgrass prairie",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.246330+00:00",
+  "generatedAt": "2026-09-09T06:27:41.601908+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,50 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.2,
+        "events": [
+          {
+            "magnitude": 5.2,
+            "time": "2022-12-16T23:35:27.984Z",
+            "place": "Range Hill, Texas"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2024-09-17T00:49:42.183Z",
+            "place": "2024 North of Tarzan, Texas Earthquake"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2024-07-26T14:28:29.143Z",
+            "place": "17 km NNE of Hermleigh, Texas"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-07-23T10:21:43.909Z",
+            "place": "38 km SSE of Spearman, Texas"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -632,9 +676,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1b8bfbc40f0dc8fc86f12526a3c40bf7ed6716f29b58bea025a507715686ed34"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_402",
+    "geometryFingerprint": "9837b0835789b6ee57e085a402909087b31eb582bee5741b11da18f09d916aef",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -106.73168361599996,
+      31.24696264774473,
+      -98.29471612899987,
+      43.5213917637364
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1b8bfbc40f0dc8fc86f12526a3c40bf7ed6716f29b58bea025a507715686ed34"
 }

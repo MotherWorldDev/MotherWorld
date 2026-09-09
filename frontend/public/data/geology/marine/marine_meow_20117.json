@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20117",
   "regionName": "Sunda Shelf/Java Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:41.001266+00:00",
+  "generatedAt": "2026-09-09T06:27:40.242241+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 76.4240623132076,
+        "medianDepthM": 49.0,
+        "p10DepthM": 15.0,
+        "p90DepthM": 99.0,
+        "shallowestM": -0.0,
+        "deepestM": 1700.0,
+        "coveragePct": 99.4878832361121,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 97.02950040303604,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 1.6444977943210197,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 1.3260018026429314,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "geothermal": {
       "measurementCount": 640,
       "medianMwM2": 81.95,
@@ -59,6 +111,182 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 53,
+        "m6Plus": 14,
+        "m7Plus": 2,
+        "maxMagnitude": 7.5,
+        "events": [
+          {
+            "magnitude": 7.5,
+            "time": "2007-08-08T17:05:04.920Z",
+            "place": "35 km NNE of Rengasdengklok, Indonesia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2023-04-14T09:55:45.220Z",
+            "place": "Java, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2020-07-06T22:54:47.538Z",
+            "place": "Java Sea"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2016-10-19T00:26:01.090Z",
+            "place": "161 km NNE of Pamanukan, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1994-09-28T16:39:51.670Z",
+            "place": "86 km NNW of Batang, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1994-11-15T20:18:11.310Z",
+            "place": "114 km NNW of Batang, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2024-03-22T08:52:58.999Z",
+            "place": "110 km N of Paciran, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2020-02-05T18:12:37.734Z",
+            "place": "113 km NNE of Bangkalan, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2019-09-19T07:06:33.291Z",
+            "place": "81 km NNE of Lasem, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2007-08-08T17:04:57.840Z",
+            "place": "42 km NNW of Pamanukan, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2025-09-30T16:49:43.533Z",
+            "place": "31 km ESE of Kalianget, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2018-10-10T18:44:55.280Z",
+            "place": "49 km NE of Panji, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1997-07-11T09:55:12.580Z",
+            "place": "87 km N of Batang, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1994-09-28T17:33:58.210Z",
+            "place": "91 km NNW of Batang, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2019-09-19T07:32:01.582Z",
+            "place": "85 km NE of Lasem, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2004-06-06T09:38:07.280Z",
+            "place": "118 km NNE of Bangkalan, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1995-05-13T21:00:56.140Z",
+            "place": "130 km NNE of Indramayu, Indonesia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2017-09-20T23:59:24.900Z",
+            "place": "108 km NNE of Bangkalan, Indonesia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1998-04-27T23:51:35.720Z",
+            "place": "113 km NNE of Bangkalan, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2024-03-22T04:22:45.531Z",
+            "place": "117 km N of Paciran, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2019-09-19T07:32:58.793Z",
+            "place": "86 km NE of Lasem, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2002-08-26T17:36:44.700Z",
+            "place": "84 km N of Pamekasan, Indonesia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-08-04T00:31:44.377Z",
+            "place": "109 km NNE of Bangkalan, Indonesia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1997-01-19T02:27:13.680Z",
+            "place": "143 km N of Indramayu, Indonesia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1993-11-28T10:50:27.150Z",
+            "place": "109 km NNW of Batang, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2023-04-14T10:37:54.474Z",
+            "place": "113 km NNE of Bangkalan, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-09-21T14:33:15.520Z",
+            "place": "86 km N of Batang, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1996-05-19T18:18:21.000Z",
+            "place": "93 km N of Paciran, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-06-22T20:57:43.770Z",
+            "place": "148 km N of Indramayu, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-08-09T03:34:15.980Z",
+            "place": "110 km NNE of Bangkalan, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -126,14 +354,43 @@
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c050e6c95d4a6306dd0e69705c330907c8f793de5ccc05d8e76cf2bf35ef7bbe"
     },
     {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20117",
+    "geometryFingerprint": "40284352d51c3961d48eabe34713542e19cea921ce0690d053203657ac1a9292",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      102.07188434122449,
+      -7.962294662331027,
+      115.52163769119537,
+      9.416005646975911
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c050e6c95d4a6306dd0e69705c330907c8f793de5ccc05d8e76cf2bf35ef7bbe"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_409",
   "regionName": "Beringia lowland tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.106932+00:00",
+  "generatedAt": "2026-09-09T06:27:44.859463+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 88.577629222578,
@@ -139,6 +139,67 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "2016-07-23T09:59:01.409Z",
+            "place": "26 km SSE of King Salmon, Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-05-09T03:55:51.890Z",
+            "place": "35 km SE of Egegik, Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-05-09T00:30:12.990Z",
+            "place": "48 km SE of Egegik, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-02-27T15:35:31.943Z",
+            "place": "37 km S of King Salmon, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-05-09T00:59:22.660Z",
+            "place": "67 km ESE of Egegik, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-04-01T04:04:36.944Z",
+            "place": "59 km E of Egegik, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-03-04T12:26:55.040Z",
+            "place": "52 km W of False Pass, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -583,9 +644,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:63ae578659e7dc63b1bc7bfe768aabe79179d111713564a8e66ff17955475341"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_409",
+    "geometryFingerprint": "37bf3e59f091185e25b3613a32b366ab3d6d19994b31b02d2cc7197225751bca",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -173.1045586119999,
+      54.654971244856355,
+      -154.23131157599994,
+      67.0786022779268
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:63ae578659e7dc63b1bc7bfe768aabe79179d111713564a8e66ff17955475341"
 }

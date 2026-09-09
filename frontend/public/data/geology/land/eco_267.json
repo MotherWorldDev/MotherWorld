@@ -3,7 +3,7 @@
   "regionId": "eco_267",
   "regionName": "South China Sea Islands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.065842+00:00",
+  "generatedAt": "2026-09-09T06:27:44.249745+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 0.0,
@@ -13,8 +13,8 @@
         {
           "code": "nd",
           "label": "No data",
-          "areaKm2": 2.536629841811005,
-          "percentOfRegion": 100.0
+          "areaKm2": 30.536516997736065,
+          "percentOfRegion": 100.00000000000004
         }
       ],
       "source": {
@@ -30,7 +30,32 @@
     {
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
-      "version": "v1.0"
+      "version": "v1.0",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:59052449a2d061809dbad6bc9b307ab866ba141a953c7a1162d3a961246738fa"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_267",
+    "geometryFingerprint": "385c2188c79f2f0920443efda7f68c0eeaa32d765045411338feac9ff7239a74",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      111.19637256200014,
+      9.699008502000027,
+      115.85636858200019,
+      16.985183536000022
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_267",
+      "registryGeometryFingerprint": "385c2188c79f2f0920443efda7f68c0eeaa32d765045411338feac9ff7239a74",
+      "source": "ecoregions2017_original",
+      "sourceUrl": "https://ecoregions.appspot.com/",
+      "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:59052449a2d061809dbad6bc9b307ab866ba141a953c7a1162d3a961246738fa"
 }

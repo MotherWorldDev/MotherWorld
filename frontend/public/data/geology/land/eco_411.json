@@ -3,7 +3,7 @@
   "regionId": "eco_411",
   "regionName": "Brooks-British Range tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.107942+00:00",
+  "generatedAt": "2026-09-09T06:27:44.871401+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.22570510741218,
@@ -139,6 +139,92 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2018-08-12T14:58:53.503Z",
+            "place": "89 km SW of Kaktovik, Alaska"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2018-08-12T21:15:00.999Z",
+            "place": "73 km SSW of Kaktovik, Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-08-21T23:31:50.230Z",
+            "place": "119 km WNW of Arctic Village, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2019-07-03T04:38:22.607Z",
+            "place": "115 km NNE of Arctic Village, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-08-12T16:02:08.714Z",
+            "place": "81 km SW of Kaktovik, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-09-18T12:40:56.800Z",
+            "place": "66 km SSW of Kaktovik, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-08-12T18:36:43.191Z",
+            "place": "77 km SSW of Kaktovik, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-11-07T00:43:22.181Z",
+            "place": "121 km NNW of Arctic Village, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-10-14T23:53:14.769Z",
+            "place": "98 km NE of Ambler, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-08-12T21:31:03.882Z",
+            "place": "80 km SSW of Kaktovik, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-08-12T15:14:19.893Z",
+            "place": "77 km SW of Kaktovik, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-01-17T19:46:41.540Z",
+            "place": "106 km NW of Fort McPherson, Canada"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -624,9 +710,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c22e08dacf20e13661f3bdb1f1c861e502dec050051f50e70e26b3a4500f9a70"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_411",
+    "geometryFingerprint": "24e537e67395dd651cfacf7d19c7c7c219bf37b16652dda6c6e35e215415f295",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -163.87223042499994,
+      65.84936097486744,
+      -134.99511308799998,
+      69.69689935704447
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c22e08dacf20e13661f3bdb1f1c861e502dec050051f50e70e26b3a4500f9a70"
 }

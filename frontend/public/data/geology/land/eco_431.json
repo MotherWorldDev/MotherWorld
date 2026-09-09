@@ -3,7 +3,7 @@
   "regionId": "eco_431",
   "regionName": "Gulf of California xeric scrub",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.428472+00:00",
+  "generatedAt": "2026-09-09T06:27:41.683391+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -28,6 +28,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.2,
+        "events": [
+          {
+            "magnitude": 6.2,
+            "time": "2009-08-03T18:40:50.100Z",
+            "place": "97 km N of San Luis, Mexico"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2019-01-17T12:56:37.110Z",
+            "place": "138 km NNW of San Luis, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-09-13T07:06:22.390Z",
+            "place": "101 km WSW of La Libertad, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -547,9 +586,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f82a6b5ebba94df08cb9f24e8c7906c55c32777931233f8eade44a97aafb0bb3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_431",
+    "geometryFingerprint": "f4951ebdbe9680a0491d8149ee21a58a3e907c9b7e33e3be39e83b54a0e19ebd",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -114.53958852399994,
+      23.52199880904146,
+      -110.27548253099997,
+      29.970294160152847
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f82a6b5ebba94df08cb9f24e8c7906c55c32777931233f8eade44a97aafb0bb3"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20132",
   "regionName": "Lesser Sunda",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.443069+00:00",
+  "generatedAt": "2026-09-09T06:27:38.796826+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 45.24351501464844,
           "p90MmYr": 75.58849334716797,
           "coveragePct": 11.347656463382146
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2683.174516162849,
+        "medianDepthM": 2513.0,
+        "p10DepthM": 608.0,
+        "p90DepthM": 5146.0,
+        "shallowestM": 1.0,
+        "deepestM": 7143.0,
+        "coveragePct": 99.72775619035392,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 4.947763022945185,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 12.626487199418724,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 40.184371749949456,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 40.57772479837868,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 1.663653229307947,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -270,6 +320,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 561,
+        "m6Plus": 40,
+        "m7Plus": 3,
+        "maxMagnitude": 7.8,
+        "events": [
+          {
+            "magnitude": 7.8,
+            "time": "2026-08-14T21:58:21.505Z",
+            "place": "64 km NNW of Ende, Indonesia"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "2004-11-11T21:26:41.150Z",
+            "place": "63 km NW of Maubara, Timor Leste"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2021-12-29T18:25:51.962Z",
+            "place": "125 km NNE of Lospalos, Timor Leste"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1995-05-14T11:33:18.870Z",
+            "place": "27 km NNW of Maubara, Timor Leste"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2016-12-21T00:17:14.990Z",
+            "place": "151 km NE of Lospalos, Timor Leste"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2004-04-23T01:50:30.220Z",
+            "place": "105 km WNW of Naisano Dua, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2009-11-08T19:41:43.360Z",
+            "place": "29 km NNW of Bima, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2007-11-25T19:53:05.470Z",
+            "place": "34 km N of Dompu, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2007-11-25T16:02:15.750Z",
+            "place": "28 km NNW of Dompu, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2003-03-25T02:53:25.030Z",
+            "place": "46 km NE of Ruteng, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1994-07-13T11:45:23.360Z",
+            "place": "138 km NE of Lospalos, Timor Leste"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2018-07-28T22:47:38.740Z",
+            "place": "33 km NNW of Labuan Lombok, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2008-12-06T10:55:26.350Z",
+            "place": "144 km NNW of Maubara, Timor Leste"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1998-11-08T07:25:48.510Z",
+            "place": "41 km SW of Ende, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1995-12-05T06:32:06.100Z",
+            "place": "25 km WNW of Atambua, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2019-01-22T05:10:03.480Z",
+            "place": "160 km WSW of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2016-12-29T22:30:19.300Z",
+            "place": "58 km SSE of Dompu, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2006-12-01T14:01:44.260Z",
+            "place": "22 km N of Bima, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2002-10-06T15:46:33.010Z",
+            "place": "39 km NNW of Dompu, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2025-10-26T17:04:25.617Z",
+            "place": "57 km NW of Pante Makasar, Timor Leste"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2022-05-27T02:36:05.556Z",
+            "place": "37 km NE of Lospalos, Timor Leste"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2018-08-28T07:08:11.360Z",
+            "place": "92 km SE of Kupang, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2008-01-30T07:32:42.800Z",
+            "place": "154 km NNE of Lospalos, Timor Leste"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1997-01-17T11:20:22.060Z",
+            "place": "81 km NNW of Naisano Dua, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1993-09-04T21:39:33.840Z",
+            "place": "110 km SSE of Maumere, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2026-08-14T22:28:37.743Z",
+            "place": "62 km N of Ende, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2016-06-09T04:13:08.130Z",
+            "place": "279 km S of Lembar, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2008-04-19T03:12:25.180Z",
+            "place": "79 km N of Metinaro, Timor Leste"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2006-01-15T11:58:29.120Z",
+            "place": "97 km NNE of Maumere, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1996-02-12T09:08:07.990Z",
+            "place": "232 km SW of Waingapu, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -336,6 +560,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -349,6 +578,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1a1674d9c8e402139fb9594720358a8e397bf95d6f753b9a7e0576ecdbd1effc"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20132",
+    "geometryFingerprint": "ef96c3e681f41e4b2903f1ff01990c985cb9063a00b6a1e106efe397e668d086",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      114.35720686861426,
+      -13.897597794331812,
+      128.01379710969783,
+      -7.120439283932027
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1a1674d9c8e402139fb9594720358a8e397bf95d6f753b9a7e0576ecdbd1effc"
 }

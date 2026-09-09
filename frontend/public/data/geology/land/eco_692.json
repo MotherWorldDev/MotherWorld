@@ -3,7 +3,7 @@
   "regionId": "eco_692",
   "regionName": "Carpathian montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.180188+00:00",
+  "generatedAt": "2026-09-09T06:27:46.107087+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.99999999999983,
@@ -126,6 +126,117 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 17,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "2004-10-27T20:34:36.810Z",
+            "place": "7 km W of Paltin, Romania"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2016-12-27T23:20:56.100Z",
+            "place": "13 km W of Nereju Mic, Romania"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2016-09-23T23:11:20.810Z",
+            "place": "7 km WNW of Nereju Mic, Romania"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2018-10-28T00:38:11.610Z",
+            "place": "15 km SE of Comand?u, Romania"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1999-04-28T08:47:55.490Z",
+            "place": "5 km WSW of Lunca Jari?tei, Romania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-10-06T01:37:20.860Z",
+            "place": "9 km W of Nereju Mic, Romania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-07-20T05:09:39.670Z",
+            "place": "2 km W of Spulber, Romania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2024-09-16T14:40:21.768Z",
+            "place": "8 km N of Cașoca, Romania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-04-25T17:18:48.640Z",
+            "place": "9 km SW of Nereju Mic, Romania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-05-14T01:53:20.660Z",
+            "place": "16 km SE of Comand?u, Romania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-05-24T17:34:01.020Z",
+            "place": "14 km SE of Comand?u, Romania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-04-06T00:10:38.780Z",
+            "place": "9 km WNW of Nereju Mic, Romania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-03-13T13:14:37.570Z",
+            "place": "13 km N of Ca?oca, Romania"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-11-03T04:50:25.095Z",
+            "place": "6 km ENE of Gura Teghii, Romania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-06-18T15:16:42.410Z",
+            "place": "0 km N of Nereju Mic, Romania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2002-11-30T08:15:46.800Z",
+            "place": "10 km WNW of Nereju Mic, Romania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-08-26T21:32:33.310Z",
+            "place": "10 km WNW of Nereju Mic, Romania"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -472,9 +583,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:71c7d5f58bcea8d0bc79ff684ec74df73f23ffd48ad77fff1cbd42911b1c332c"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_692",
+    "geometryFingerprint": "c031964c64538a0e8209169f54d6d5e95706d1b33dbea6dca3706af8f5d2363c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      17.657974471000102,
+      45.119910769364246,
+      26.869756477000177,
+      50.19487050994953
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:71c7d5f58bcea8d0bc79ff684ec74df73f23ffd48ad77fff1cbd42911b1c332c"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_104",
   "regionName": "Namibian savanna woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.022331+00:00",
+  "generatedAt": "2026-09-09T06:27:43.523198+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 97.4849006226436,
@@ -83,6 +83,37 @@
         "version": "v1.0",
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2009-07-31T08:14:39.720Z",
+            "place": "67 km S of Khorixas, Namibia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -205,9 +236,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:81182e694663f609bb2379e825721cece5609454d41ef6da5c00b96db65f33d8"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_104",
+    "geometryFingerprint": "e9244200dc47bbd0731d54e3bbe140dae565a7d199386589d52104b197406ac8",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      12.113769472000056,
+      -28.043312675344644,
+      18.488837461000116,
+      -11.960567021619413
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:81182e694663f609bb2379e825721cece5609454d41ef6da5c00b96db65f33d8"
 }

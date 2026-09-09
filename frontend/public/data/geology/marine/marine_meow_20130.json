@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20130",
   "regionName": "Papua",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.428924+00:00",
+  "generatedAt": "2026-09-09T06:27:38.788291+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2618.680399785223,
+        "medianDepthM": 3256.0,
+        "p10DepthM": 75.0,
+        "p90DepthM": 4351.0,
+        "shallowestM": -0.0,
+        "deepestM": 5143.0,
+        "coveragePct": 99.19195058202868,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 14.683578688854052,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 12.200097299942712,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 16.14792288096748,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 56.96840113023576,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -272,6 +322,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 279,
+        "m6Plus": 32,
+        "m7Plus": 5,
+        "maxMagnitude": 8.09,
+        "events": [
+          {
+            "magnitude": 8.09,
+            "time": "1996-02-17T05:59:30.550Z",
+            "place": "1996 Biak, Indonesia Earthquake"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2009-01-03T19:43:50.650Z",
+            "place": "140 km WNW of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2002-10-10T10:50:20.570Z",
+            "place": "102 km SSE of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2010-09-29T17:11:25.940Z",
+            "place": "Near the south coast of Papua, Indonesia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2010-06-16T03:16:27.550Z",
+            "place": "121 km SSE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1995-01-27T20:16:52.170Z",
+            "place": "164 km SW of Nabire, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2012-04-21T01:16:52.740Z",
+            "place": "86 km SSE of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2015-09-24T15:53:27.740Z",
+            "place": "28 km N of Sorong, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2004-07-28T03:56:28.600Z",
+            "place": "117 km WNW of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1996-02-17T20:18:07.020Z",
+            "place": "32 km NNE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1996-02-17T14:21:22.350Z",
+            "place": "67 km NNW of Insrom, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2002-09-20T15:43:35.460Z",
+            "place": "92 km SSE of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1996-02-18T02:25:33.350Z",
+            "place": "46 km ESE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2003-03-14T07:06:13.310Z",
+            "place": "133 km WNW of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1994-11-20T16:59:05.630Z",
+            "place": "92 km S of Biak, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2019-11-23T12:11:15.564Z",
+            "place": "241 km SE of Tobi Village, Palau"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2010-09-29T17:10:51.080Z",
+            "place": "132 km NE of Tual, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2004-10-06T22:30:56.950Z",
+            "place": "45 km ENE of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1996-02-24T15:52:59.100Z",
+            "place": "144 km ENE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2012-09-08T10:51:44.200Z",
+            "place": "48 km WNW of Nabire, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2009-08-02T08:54:33.360Z",
+            "place": "136 km WNW of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2000-09-10T19:06:15.630Z",
+            "place": "216 km W of Sorong, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1999-10-10T07:03:04.860Z",
+            "place": "126 km S of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1995-04-18T03:49:37.070Z",
+            "place": "59 km NNW of Jayapura, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2021-11-10T17:46:40.379Z",
+            "place": "181 km SW of Nabire, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2021-08-02T05:01:19.974Z",
+            "place": "182 km NE of Tual, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2016-09-17T01:20:17.940Z",
+            "place": "52 km NNW of Jayapura, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2012-04-21T01:25:13.200Z",
+            "place": "86 km S of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2010-11-03T11:18:15.570Z",
+            "place": "184 km NE of Tual, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2009-01-06T22:48:27.250Z",
+            "place": "73 km WNW of Manokwari, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -440,6 +664,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -450,9 +679,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9c28e89457b2830c5e5eeecb59fe3701f876d94795d29324b71fddc36a35ead9"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20130",
+    "geometryFingerprint": "58f3342438b7af1fa48084e3f4188f6a7c5c16e052c317f77d29715eb4781195",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      129.05814600370022,
+      -5.084841887622389,
+      141.77955274039834,
+      2.663345575138468
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9c28e89457b2830c5e5eeecb59fe3701f876d94795d29324b71fddc36a35ead9"
 }

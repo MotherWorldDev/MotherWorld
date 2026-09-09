@@ -3,7 +3,7 @@
   "regionId": "eco_718",
   "regionName": "Trans-Baikal conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.947227+00:00",
+  "generatedAt": "2026-09-09T06:27:42.474064+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -88,6 +88,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2011-07-16T18:38:50.870Z",
+            "place": "16 km ESE of Turka, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2014-04-27T15:13:54.920Z",
+            "place": "86 km NE of Kurumkan, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -568,9 +602,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:aabf8d41eb664b761b55f4a15a59200b562ff379bdce3e6bd3238501d5f7cba8"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_718",
+    "geometryFingerprint": "4ee9bbd4678c3e225ee9bc92ac76fc22e4816248bb8cd0a1b1d06e225e3c9b15",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      103.65235157800014,
+      48.108025727373075,
+      114.56639854400008,
+      55.33717800496099
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:aabf8d41eb664b761b55f4a15a59200b562ff379bdce3e6bd3238501d5f7cba8"
 }

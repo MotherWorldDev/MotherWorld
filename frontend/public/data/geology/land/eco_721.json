@@ -3,7 +3,7 @@
   "regionId": "eco_721",
   "regionName": "Alai-Western Tian Shan steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.956283+00:00",
+  "generatedAt": "2026-09-09T06:27:42.479603+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -190,6 +190,80 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 10,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2013-05-26T06:08:15.960Z",
+            "place": "22 km N of Bulung’ur Shahri, Uzbekistan"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1995-10-08T08:55:45.820Z",
+            "place": "9 km SE of Uchq?rghon Shahri, Uzbekistan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-05-24T22:18:33.910Z",
+            "place": "11 km N of Bo‘ka, Uzbekistan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-01-18T08:41:43.180Z",
+            "place": "7 km ESE of G‘uzor, Uzbekistan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2000-04-20T08:41:29.590Z",
+            "place": "17 km E of G‘uzor, Uzbekistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-11-10T14:45:51.370Z",
+            "place": "25 km S of Chardara, Kazakhstan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-04-05T12:12:06.190Z",
+            "place": "Uzbekistan-Tajikistan border region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-12-31T18:23:36.490Z",
+            "place": "3 km NNE of Uychi, Uzbekistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1999-12-25T13:28:10.080Z",
+            "place": "12 km ENE of G‘uzor, Uzbekistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1999-10-31T17:09:10.730Z",
+            "place": "18 km NE of G‘uzor, Uzbekistan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -771,9 +845,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:72d646a770facac02e80ab36bcf185c1f86e07db6a16e3adaa23fa63ef715714"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_721",
+    "geometryFingerprint": "6a526a405e453f3fc1f78bb75a57d588de5826264b1cf469ee6bbc15da4c2968",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      65.05943254300017,
+      37.74265830704484,
+      72.64102959900008,
+      44.62071881317456
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:72d646a770facac02e80ab36bcf185c1f86e07db6a16e3adaa23fa63ef715714"
 }

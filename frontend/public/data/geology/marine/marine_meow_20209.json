@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20209",
   "regionName": "Leeuwin",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.885725+00:00",
+  "generatedAt": "2026-09-09T06:27:39.046655+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 5.833795547485352,
           "p90MmYr": 20.930204391479492,
           "coveragePct": 28.969601946466852
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3744.81395492351,
+        "medianDepthM": 4660.0,
+        "p10DepthM": 82.0,
+        "p90DepthM": 5420.0,
+        "shallowestM": 5.0,
+        "deepestM": 6137.0,
+        "coveragePct": 99.96201475829619,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 13.771574547643459,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 3.4386633026477234,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 11.34052526186812,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 71.26714509570917,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.1820917921315326,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -271,6 +321,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "gem_active_faults",

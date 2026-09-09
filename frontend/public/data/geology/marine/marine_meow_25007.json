@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25007",
   "regionName": "Baffin Bay - Davis Strait",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.067277+00:00",
+  "generatedAt": "2026-09-09T06:27:39.129430+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -78,6 +78,56 @@
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 1034.8441930120784,
+        "medianDepthM": 887.0,
+        "p10DepthM": 157.0,
+        "p90DepthM": 2135.0,
+        "shallowestM": -0.0,
+        "deepestM": 2396.0,
+        "coveragePct": 99.47264628786326,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 14.13045570041487,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 41.302775081151125,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 44.566769218434,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -135,6 +185,37 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2025-07-31T14:55:44.390Z",
+            "place": "206 km NE of Pond Inlet, Canada"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -149,9 +230,38 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:37504be709e5d561c81507600dfd1b8a5a972d71d13608ba7bb205dcd8ce1f32"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25007",
+    "geometryFingerprint": "5b6ef4ca3f8f3c06fff1d131831d5bb61de7ac04f9376c5304fc0cedbc4e8f5e",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -81.91488597006547,
+      66.65103578571902,
+      -58.04041526083306,
+      78.3835599594217
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:37504be709e5d561c81507600dfd1b8a5a972d71d13608ba7bb205dcd8ce1f32"
 }

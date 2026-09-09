@@ -3,7 +3,7 @@
   "regionId": "eco_228",
   "regionName": "East Deccan moist deciduous forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.055235+00:00",
+  "generatedAt": "2026-09-09T06:27:44.082265+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.37300668971861,
@@ -127,6 +127,42 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "1997-05-21T22:51:28.730Z",
+            "place": "1 km SSW of Barela, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-12-04T01:56:58.775Z",
+            "place": "49 km NE of Mulugu, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -543,9 +579,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3f09ee7839650b2f80cbf8b74986115715f98804ed4da1526a6fbffb6beae48f"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_228",
+    "geometryFingerprint": "76fc9b0114dca36a0865a68c771bc66008fd175f549676a5b3705f71cba52107",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      77.84118664100009,
+      16.34976535549699,
+      87.28918459400008,
+      23.507331819039024
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3f09ee7839650b2f80cbf8b74986115715f98804ed4da1526a6fbffb6beae48f"
 }

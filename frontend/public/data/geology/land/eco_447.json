@@ -3,7 +3,7 @@
   "regionId": "eco_447",
   "regionName": "Catatumbo moist forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.510546+00:00",
+  "generatedAt": "2026-09-09T06:27:41.716554+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -70,6 +70,60 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2025-09-25T03:51:39.565Z",
+            "place": "25 km ENE of Mene Grande, Venezuela"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-09-25T06:55:38.881Z",
+            "place": "19 km E of Mene Grande, Venezuela"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2015-02-05T04:21:50.900Z",
+            "place": "12 km ENE of La Fría, Venezuela"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2006-08-04T13:41:39.830Z",
+            "place": "66 km WSW of Carora, Venezuela"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-02-21T22:17:04.150Z",
+            "place": "17 km SW of Tibú, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-02-25T07:59:50.890Z",
+            "place": "39 km E of Lagunillas, Venezuela"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -179,9 +233,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:0db9fddd19ea9d8b262d4000754c1e5e98677ae50bf5c1957f1a09863acd0376"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_447",
+    "geometryFingerprint": "0066de17d9d904613d18523e5124b8fc2d2acbb515cc059aeeb9fce80c37f738",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -73.34725154599994,
+      7.758145786893167,
+      -70.4089586209999,
+      10.767855374434895
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:0db9fddd19ea9d8b262d4000754c1e5e98677ae50bf5c1957f1a09863acd0376"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_775",
   "regionName": "Northeast Siberian coastal tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.199280+00:00",
+  "generatedAt": "2026-09-09T06:27:46.527107+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 87.04548600796304,
@@ -122,6 +122,37 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2025-06-28T09:51:29.828Z",
+            "place": "288 km NW of Chokurdakh, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -134,6 +165,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:7c0520ba0261b74b9f4566eb6f8d8070e7295b3fc2d99638fde0e1a808e1478a"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_775",
+    "geometryFingerprint": "20c0d1c675571c7b8081b682cdd12547da4505417c590e93e5baa38fe5347c8a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      130.265853578,
+      68.58892435799541,
+      161.8524936330002,
+      72.91534913118448
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:7c0520ba0261b74b9f4566eb6f8d8070e7295b3fc2d99638fde0e1a808e1478a"
 }

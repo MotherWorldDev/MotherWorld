@@ -3,7 +3,7 @@
   "regionId": "eco_454",
   "regionName": "Chocó-Darién moist forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.558575+00:00",
+  "generatedAt": "2026-09-09T06:27:41.740070+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -154,6 +154,135 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 21,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "1996-11-04T17:24:57.430Z",
+            "place": "33 km WSW of Riosucio, Colombia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2000-02-26T18:24:39.220Z",
+            "place": "7 km SE of Narganá, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1994-09-13T10:01:32.090Z",
+            "place": "17 km ENE of Murindó, Colombia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2023-08-27T21:45:00.683Z",
+            "place": "5 km E of El Cantón de San Pablo, Colombia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2002-06-07T00:05:48.160Z",
+            "place": "22 km WNW of Puerto Obaldía, Panama"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2014-01-05T03:36:40.590Z",
+            "place": "10 km S of Sipí, Colombia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2004-12-19T08:23:48.250Z",
+            "place": "17 km ESE of Cartí Sugdup, Panama"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2018-09-07T01:47:23.170Z",
+            "place": "3 km NNW of Boca de Cupé, Panama"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1995-03-23T02:08:34.520Z",
+            "place": "27 km S of Chigorodó, Colombia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2006-01-24T02:15:44.830Z",
+            "place": "24 km SSE of Juradó, Colombia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1996-05-13T04:53:47.750Z",
+            "place": "30 km NNW of Murindó, Colombia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1995-03-19T17:04:07.710Z",
+            "place": "21 km SSW of Chigorodó, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-09-14T14:25:06.579Z",
+            "place": "9 km S of El Cantón de San Pablo, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2015-10-12T04:35:40.770Z",
+            "place": "40 km WNW of Riosucio, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-05-23T16:36:46.070Z",
+            "place": "31 km ENE of Salahonda, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-04-11T09:29:28.390Z",
+            "place": "23 km ENE of Murindó, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-05-03T02:12:28.269Z",
+            "place": "9 km SSE of Narganá, Panama"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-02-07T21:31:36.127Z",
+            "place": "northern Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-04-02T22:44:02.939Z",
+            "place": "19 km E of Riosucio, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-12-29T02:54:06.000Z",
+            "place": "18 km SE of Murindó, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-01-25T14:37:02.660Z",
+            "place": "33 km SW of Nuquí, Colombia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -727,9 +856,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4d4a0d7f26da1f3f579c9246a56b862398ec9328216d10e8ebd4a472246bfc70"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_454",
+    "geometryFingerprint": "0f128c3ddd9035a696b263d034b94eecdabc0dcbfbf6d7afb937454a412b1a40",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -79.1333006029999,
+      1.45881346037285,
+      -76.1986155849999,
+      9.56656486635073
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4d4a0d7f26da1f3f579c9246a56b862398ec9328216d10e8ebd4a472246bfc70"
 }

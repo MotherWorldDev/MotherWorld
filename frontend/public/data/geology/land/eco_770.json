@@ -3,7 +3,7 @@
   "regionId": "eco_770",
   "regionName": "Yarlung Zanbo arid steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.230467+00:00",
+  "generatedAt": "2026-09-09T06:27:42.656705+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -136,6 +136,120 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 18,
+        "m6Plus": 2,
+        "m7Plus": 1,
+        "maxMagnitude": 7.1,
+        "events": [
+          {
+            "magnitude": 7.1,
+            "time": "2025-01-07T01:05:16.734Z",
+            "place": "2025 Southern Tibetan Plateau Earthquake"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2008-10-06T08:30:45.570Z",
+            "place": "39 km WSW of Dêqên, China"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2020-03-20T01:33:15.443Z",
+            "place": "85 km NE of Lobujya, Nepal"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2025-05-11T21:11:22.060Z",
+            "place": "126 km W of Rikaze, China"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2009-11-07T20:08:46.290Z",
+            "place": "78 km ENE of Saga, China"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2008-10-08T14:07:16.290Z",
+            "place": "44 km WSW of Dêqên, China"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-01-07T01:09:13.529Z",
+            "place": "96 km NNE of Lobuche, Nepal"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-05-22T01:48:48.130Z",
+            "place": "89 km NE of Lobujya, Nepal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-11-30T08:39:56.920Z",
+            "place": "42 km WSW of Dêqên, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-01-07T01:13:27.197Z",
+            "place": "Southern Tibetan Plateau"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2014-08-03T05:57:30.560Z",
+            "place": "26 km ESE of Saga, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-05-22T02:05:54.680Z",
+            "place": "94 km NE of Lobujya, Nepal"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-10-06T10:17:11.030Z",
+            "place": "33 km WSW of Dêqên, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-03-08T08:50:17.952Z",
+            "place": "100 km NE of Lobuche, Nepal"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-01-20T21:03:11.864Z",
+            "place": "Southern Tibetan Plateau"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-01-07T01:37:13.647Z",
+            "place": "Southern Tibetan Plateau"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-01-07T01:24:25.911Z",
+            "place": "Southern Tibetan Plateau"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-10-06T08:45:10.770Z",
+            "place": "34 km SW of Dêqên, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -306,9 +420,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:bd1b1fe0f4b7736aa857ac6ad746483206bcde468f2b1a632a53e99df8b96934"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_770",
+    "geometryFingerprint": "72cb1e41e9c3df1924829c21188be21e36569aa86408ffbadecd38694be66556",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      83.22209154700005,
+      27.869356547277857,
+      92.94400758100005,
+      30.201691517257263
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:bd1b1fe0f4b7736aa857ac6ad746483206bcde468f2b1a632a53e99df8b96934"
 }

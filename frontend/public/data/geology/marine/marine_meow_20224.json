@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20224",
   "regionName": "East Antarctic Wilkes Land",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.007618+00:00",
+  "generatedAt": "2026-09-09T06:27:39.098326+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 62.49949645996094,
           "coveragePct": 26.13109508961257
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 2070.6266835952506,
+        "medianDepthM": 2382.0,
+        "p10DepthM": 401.0,
+        "p90DepthM": 3750.0,
+        "shallowestM": -0.0,
+        "deepestM": 4651.0,
+        "coveragePct": 99.84489941557987,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 1.8358632319516286,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 34.08126517911148,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 32.54573367865858,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 31.53713791027832,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -123,6 +173,42 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2022-02-21T23:24:13.721Z",
+            "place": "Balleny Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-02-22T23:14:17.820Z",
+            "place": "south of Australia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -132,9 +218,38 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a0ade031ebb2c50a840336d17b093eb8bf6eec0efdfaa59ff1436763e99b8171"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20224",
+    "geometryFingerprint": "afb2e97190dc24989e48d3ecc9b83c5444c3874146b2286b1b1e5e58a11ce25e",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      57.50023409979733,
+      -72.4257258721628,
+      169.9988059563864,
+      -61.62946152592818
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a0ade031ebb2c50a840336d17b093eb8bf6eec0efdfaa59ff1436763e99b8171"
 }

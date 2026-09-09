@@ -3,7 +3,7 @@
   "regionId": "eco_732",
   "regionName": "Kazakh steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.190234+00:00",
+  "generatedAt": "2026-09-09T06:27:46.323161+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000003,
@@ -144,6 +144,37 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2008-04-26T13:14:52.160Z",
+            "place": "62 km SE of Kr?gloozernoe, Kazakhstan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -612,9 +643,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:7e4cc3d38488ff9bbd29a1ceae021849c9006063f4d5ac5f866603f177efc839"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_732",
+    "geometryFingerprint": "2a6392ad01c5ad3afbf1208beb6b29a63a5f7635c034d40564e2f1c90fad1ac8",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      51.15110355100011,
+      47.80687936828131,
+      83.78375952700014,
+      55.4181699879728
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:7e4cc3d38488ff9bbd29a1ceae021849c9006063f4d5ac5f866603f177efc839"
 }

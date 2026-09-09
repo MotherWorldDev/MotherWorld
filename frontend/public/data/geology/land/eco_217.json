@@ -3,7 +3,7 @@
   "regionId": "eco_217",
   "regionName": "New Guinea mangroves",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.493788+00:00",
+  "generatedAt": "2026-09-09T06:27:41.203958+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -52,6 +52,95 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 13,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.1,
+        "events": [
+          {
+            "magnitude": 6.1,
+            "time": "1993-06-12T18:26:42.220Z",
+            "place": "120 km SSW of Nabire, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1994-01-04T19:31:59.880Z",
+            "place": "111 km SSW of Nabire, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2014-12-24T06:02:05.300Z",
+            "place": "99 km SW of Nabire, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-02-14T16:52:15.410Z",
+            "place": "118 km SSW of Nabire, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-06-26T12:21:21.360Z",
+            "place": "138 km SSE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-06-16T03:38:14.380Z",
+            "place": "137 km SSE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-03-28T08:27:44.740Z",
+            "place": "136 km S of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2000-07-27T21:29:46.080Z",
+            "place": "53 km SE of Sorong, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1994-10-03T16:22:56.440Z",
+            "place": "137 km S of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-08-11T17:06:18.407Z",
+            "place": "103 km WNW of Kerema, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-06-27T04:57:09.610Z",
+            "place": "141 km SSE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-06-26T12:51:42.790Z",
+            "place": "135 km SSE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-04-22T18:01:21.540Z",
+            "place": "152 km SSW of Manokwari, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -183,6 +272,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:59a9d1549bc4b2cb09d48e04c670d58071dce189b4c3c558ddab040b3bd3c7b5"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_217",
+    "geometryFingerprint": "dd79e0039dfa5bc6821327d17af0b5c3c0f20c923329ed9225496067122399a4",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      131.2248225950001,
+      -10.470384060652895,
+      150.140899695,
+      -0.916352863976332
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:59a9d1549bc4b2cb09d48e04c670d58071dce189b4c3c558ddab040b3bd3c7b5"
 }

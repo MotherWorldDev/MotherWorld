@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20087",
   "regionName": "Northern and Central Red Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.136446+00:00",
+  "generatedAt": "2026-09-09T06:27:38.640211+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 701.3823393978731,
+        "medianDepthM": 709.0,
+        "p10DepthM": 25.0,
+        "p90DepthM": 1222.0,
+        "shallowestM": 1.0,
+        "deepestM": 2492.0,
+        "coveragePct": 99.94996197190413,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 19.751148425149932,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 58.12077845275503,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 22.12807312209504,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -230,6 +280,80 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 10,
+        "m6Plus": 1,
+        "m7Plus": 1,
+        "maxMagnitude": 7.2,
+        "events": [
+          {
+            "magnitude": 7.2,
+            "time": "1995-11-22T04:15:11.940Z",
+            "place": "27 km SSE of Nuwaybi‘a, Egypt"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1993-08-03T16:33:20.780Z",
+            "place": "29 km S of Nuwaybi‘a, Egypt"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2020-06-16T14:30:26.687Z",
+            "place": "74 km SSE of Sharm el-Sheikh, Egypt"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1995-11-22T22:16:53.930Z",
+            "place": "20 km ENE of Dahab, Egypt"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1996-02-21T04:59:53.450Z",
+            "place": "Egypt"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-08-03T13:12:18.300Z",
+            "place": "17 km E of Dahab, Egypt"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-08-03T13:44:59.900Z",
+            "place": "19 km NE of Dahab, Egypt"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-08-03T12:54:06.360Z",
+            "place": "30 km ENE of Dahab, Egypt"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-05-16T01:45:59.740Z",
+            "place": "22 km NNE of Dahab, Egypt"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-12-11T01:32:06.520Z",
+            "place": "18 km S of Nuwaybi‘a, Egypt"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -431,6 +555,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -446,9 +575,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:217f140ec312bcd4ebd1d0cc6f2d59bd3a551b813f8fe9a7bffc58c04a3a357c"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20087",
+    "geometryFingerprint": "fd80a2fd948ba02a2dd9967307b180f6a0cad96f6a45157240df7563fbb4d335",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      32.35580503466329,
+      19.40691366075637,
+      39.82271768446438,
+      29.961285731508326
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:217f140ec312bcd4ebd1d0cc6f2d59bd3a551b813f8fe9a7bffc58c04a3a357c"
 }

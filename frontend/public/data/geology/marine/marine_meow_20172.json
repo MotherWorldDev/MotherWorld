@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20172",
   "regionName": "Northern Galapagos Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.640988+00:00",
+  "generatedAt": "2026-09-09T06:27:38.932580+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2579.9788916443144,
+        "medianDepthM": 2549.0,
+        "p10DepthM": 2041.0,
+        "p90DepthM": 3249.0,
+        "shallowestM": 396.0,
+        "deepestM": 4129.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.0,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.23056585027273174,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 80.1043952001831,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 19.665038949544183,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -255,6 +305,135 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 21,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "2000-10-21T15:52:47.120Z",
+            "place": "286 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2018-01-09T00:05:54.210Z",
+            "place": "273 km NNW of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2020-03-10T11:13:48.478Z",
+            "place": "214 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2010-01-29T20:47:53.200Z",
+            "place": "259 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2000-10-21T14:24:09.380Z",
+            "place": "274 km NNW of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1995-01-11T19:30:26.560Z",
+            "place": "210 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1995-01-09T17:57:18.030Z",
+            "place": "244 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2010-01-29T13:16:26.210Z",
+            "place": "262 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1997-07-29T17:40:06.160Z",
+            "place": "261 km NNW of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-05-31T10:55:17.932Z",
+            "place": "246 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-06-24T04:26:13.350Z",
+            "place": "259 km NNW of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2019-07-18T01:17:07.521Z",
+            "place": "253 km NNW of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-07-16T05:08:22.300Z",
+            "place": "222 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-06-16T21:08:38.750Z",
+            "place": "247 km NNW of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-01-29T20:38:08.450Z",
+            "place": "253 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-07-16T04:53:28.060Z",
+            "place": "220 km NNW of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-07-11T15:15:47.050Z",
+            "place": "263 km NNW of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-06-06T06:05:14.610Z",
+            "place": "283 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-01-10T04:28:02.600Z",
+            "place": "248 km N of Puerto Ayora, Ecuador"
+          },
+          {
+            "magnitude": 5.07,
+            "time": "2012-11-14T22:17:28.310Z",
+            "place": "Galapagos Islands, Ecuador region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-06-07T18:06:45.690Z",
+            "place": "263 km NNW of Puerto Ayora, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -326,6 +505,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -339,6 +523,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:fc89de8d029fecfc9b2a378d1e8e2b8f26eced09ff154d3572f69e851e796cac"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20172",
+    "geometryFingerprint": "102dadb1691caade106e62d036c4826f4a132bd24f18b5aa10e820e9f47d58ef",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -95.11298157475774,
+      0.182322053037247,
+      -89.02155283413053,
+      4.977334300077798
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:fc89de8d029fecfc9b2a378d1e8e2b8f26eced09ff154d3572f69e851e796cac"
 }

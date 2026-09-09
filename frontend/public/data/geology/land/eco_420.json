@@ -3,7 +3,7 @@
   "regionId": "eco_420",
   "regionName": "Pacific Coastal Mountain icefields and tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.323996+00:00",
+  "generatedAt": "2026-09-09T06:27:41.634102+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,130 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 20,
+        "m6Plus": 2,
+        "m7Plus": 1,
+        "maxMagnitude": 7.0,
+        "events": [
+          {
+            "magnitude": 7.0,
+            "time": "2025-12-06T20:41:49.288Z",
+            "place": "2025 Hubbard Glacier Earthquake"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2014-07-17T11:49:33.930Z",
+            "place": "90 km NNW of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2025-12-08T00:56:50.321Z",
+            "place": "89 km N of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2026-01-01T06:46:54.742Z",
+            "place": "111 km N of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-02-11T21:00:23.046Z",
+            "place": "65 km NNE of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-01-01T06:54:58.529Z",
+            "place": "113 km NNW of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1999-07-22T05:35:18.833Z",
+            "place": "13 km ESE of Eagle River, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-07-16T11:37:21.034Z",
+            "place": "122 km SE of McCarthy, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-12-07T04:20:37.162Z",
+            "place": "114 km N of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-01-08T08:16:42.950Z",
+            "place": "104 km NNW of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-10-08T09:53:01.370Z",
+            "place": "90 km SSW of McCarthy, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-12-30T10:17:19.055Z",
+            "place": "97 km N of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-12-07T23:50:34.471Z",
+            "place": "109 km N of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-08-25T02:22:18.026Z",
+            "place": "48 km SSE of Nelchina, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-05-13T10:24:42.340Z",
+            "place": "9 km ESE of Eureka Roadhouse, Alaska"
+          },
+          {
+            "magnitude": 5.0876669931811,
+            "time": "2025-12-06T20:51:52.900Z",
+            "place": "88 km NNE of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-09-29T23:08:10.228Z",
+            "place": "111 km NW of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-09-01T04:32:26.138Z",
+            "place": "64 km WSW of Covenant Life, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2014-07-20T02:15:44.154Z",
+            "place": "92 km NNW of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-02-11T21:29:33.711Z",
+            "place": "66 km NNE of Yakutat, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -905,9 +1029,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:85d5052a0f86147766d6219430816c81ce3a7fb6cda894cef7e152425b79f5e3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_420",
+    "geometryFingerprint": "c2d4975b049770702503b3ae0a7dd52c70e462df4eb42b0cba6bef40a3bb5dbc",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -151.4306358019999,
+      54.88775765489294,
+      -129.0401916849999,
+      61.963795454641776
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:85d5052a0f86147766d6219430816c81ce3a7fb6cda894cef7e152425b79f5e3"
 }

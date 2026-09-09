@@ -3,7 +3,7 @@
   "regionId": "eco_50",
   "regionName": "Masai xeric grasslands and shrublands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.824511+00:00",
+  "generatedAt": "2026-09-09T06:27:41.855452+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -161,6 +161,40 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2020-05-03T19:36:55.645Z",
+            "place": "59 km ESE of Lodwar, Kenya"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-10-23T11:08:21.760Z",
+            "place": "11 km SSE of Lobuni, Ethiopia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "surfaceGeology": {
@@ -291,6 +325,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:33ae42414bcdaa3a168a5d34465f02b4a5fe1635ca7069e408974eea01ee0b9b"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_50",
+    "geometryFingerprint": "03f074eed70a620a3773a38eb3a5012c6843a8115dbcabdb3df6ac460b623892",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      34.595,
+      1.363333331478915,
+      39.575,
+      5.601666660953682
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:33ae42414bcdaa3a168a5d34465f02b4a5fe1635ca7069e408974eea01ee0b9b"
 }

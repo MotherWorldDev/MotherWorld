@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20133",
   "regionName": "Northeast Sulawesi",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:34.353200+00:00",
+  "generatedAt": "2026-09-09T06:27:40.315307+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 1446.6804616531103,
+        "medianDepthM": 1395.0,
+        "p10DepthM": 79.0,
+        "p90DepthM": 3299.0,
+        "shallowestM": 1.0,
+        "deepestM": 3834.0,
+        "coveragePct": 97.6491870637124,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 16.481209704421047,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 19.443952772890206,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 52.4078922724175,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 11.666945250271235,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "tectonics": {
       "faults": {
         "count": 4,
@@ -41,14 +93,217 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 217,
+        "m6Plus": 16,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "1993-09-29T11:16:03.540Z",
+            "place": "170 km W of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2025-07-23T20:50:43.792Z",
+            "place": "109 km W of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2021-07-26T12:09:06.655Z",
+            "place": "99 km WNW of Luwuk, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2006-06-24T21:15:00.920Z",
+            "place": "76 km NE of Luwuk, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2021-01-06T20:59:34.315Z",
+            "place": "53 km SSW of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2020-01-19T16:58:20.002Z",
+            "place": "108 km SE of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2015-03-15T23:17:16.910Z",
+            "place": "70 km NW of Luwuk, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2012-12-17T09:16:30.900Z",
+            "place": "118 km ENE of Luwuk, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2001-12-09T18:15:02.600Z",
+            "place": "63 km SSW of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2024-09-23T19:51:02.568Z",
+            "place": "67 km SSW of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2023-01-18T00:34:45.151Z",
+            "place": "62 km SSE of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2021-11-06T14:37:36.731Z",
+            "place": "150 km ESE of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2020-06-23T07:43:29.219Z",
+            "place": "97 km SE of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2011-12-13T07:52:11.930Z",
+            "place": "55 km S of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2006-07-23T08:22:04.160Z",
+            "place": "87 km NE of Luwuk, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1998-09-21T06:52:41.190Z",
+            "place": "72 km WSW of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2025-11-04T23:32:22.984Z",
+            "place": "73 km S of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2025-05-03T12:51:43.462Z",
+            "place": "158 km W of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2017-07-15T12:12:21.490Z",
+            "place": "120 km W of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2015-03-28T22:28:50.780Z",
+            "place": "120 km W of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2014-11-15T03:08:04.590Z",
+            "place": "118 km SE of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2008-12-11T21:40:51.870Z",
+            "place": "66 km SE of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2008-10-20T04:54:19.240Z",
+            "place": "144 km NE of Palu, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1995-09-01T06:30:35.700Z",
+            "place": "58 km SSE of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2025-08-16T22:38:52.030Z",
+            "place": "13 km NNW of Poso, Indonesia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2021-07-26T03:52:02.270Z",
+            "place": "102 km WNW of Luwuk, Indonesia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1999-10-01T22:24:00.680Z",
+            "place": "74 km N of Luwuk, Indonesia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1999-03-18T01:59:00.960Z",
+            "place": "Molucca Sea"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1997-01-01T22:32:32.300Z",
+            "place": "112 km SE of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1996-09-14T02:53:24.540Z",
+            "place": "67 km SSW of Gorontalo, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     }
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a3265234ddc54ddc33ee677a5fe9c8f2fd000cc2f1d5e4a5abf36dd6fc3766d6"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20133",
+    "geometryFingerprint": "06abb868caa2343148c4fb19a71bdd5f32eb278f98a6ead22ad27d81dd8aea35",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      119.99760095781654,
+      -1.427893392623603,
+      124.48047733242839,
+      0.534589444402562
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a3265234ddc54ddc33ee677a5fe9c8f2fd000cc2f1d5e4a5abf36dd6fc3766d6"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20215",
   "regionName": "Crozet Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.936347+00:00",
+  "generatedAt": "2026-09-09T06:27:39.069751+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 45.873802185058594,
           "p90MmYr": 142.25030517578125,
           "coveragePct": 100.0
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3227.588792031359,
+        "medianDepthM": 3425.0,
+        "p10DepthM": 2077.0,
+        "p90DepthM": 4107.0,
+        "shallowestM": 2.0,
+        "deepestM": 4480.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.8783549483891208,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 4.323070889481466,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 24.94707251272881,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 69.8515016494006,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -130,6 +180,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "ihfc_heat_flow",

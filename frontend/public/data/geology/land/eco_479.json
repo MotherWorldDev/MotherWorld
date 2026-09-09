@@ -3,7 +3,7 @@
   "regionId": "eco_479",
   "regionName": "Marañón dry forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.729623+00:00",
+  "generatedAt": "2026-09-09T06:27:41.817562+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2005-04-11T14:54:07.030Z",
+            "place": "18 km ENE of Shirac, Peru"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-10-31T02:10:28.700Z",
+            "place": "5 km NNW of Choros, Peru"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -257,9 +291,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:aa5515953b14786d9975e181b37f5877ac61aa4052f06a9f9ba17048cd4677b6"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_479",
+    "geometryFingerprint": "a7160819eba45eb7d73f45849578e73ab1dce4cf575c19a86717c1f212ab91fc",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -79.32333360299998,
+      -8.339985905376583,
+      -77.39902465199998,
+      -5.084406767477623
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:aa5515953b14786d9975e181b37f5877ac61aa4052f06a9f9ba17048cd4677b6"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20076",
   "regionName": "Eastern Brazil",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.078216+00:00",
+  "generatedAt": "2026-09-09T06:27:38.601519+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 43.39016342163086,
           "p90MmYr": 47.19664764404297,
           "coveragePct": 66.48428443308772
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2773.3187916421507,
+        "medianDepthM": 3380.0,
+        "p10DepthM": 47.0,
+        "p90DepthM": 4267.0,
+        "shallowestM": 1.0,
+        "deepestM": 4913.0,
+        "coveragePct": 99.94326476393411,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 16.953674721258377,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 3.1215115982102506,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 21.41584272632686,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 58.508970954204514,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -257,6 +307,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "ihfc_heat_flow",

@@ -3,7 +3,7 @@
   "regionId": "eco_219",
   "regionName": "Borneo lowland rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.053235+00:00",
+  "generatedAt": "2026-09-09T06:27:44.039901+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 97.34360468727509,
@@ -139,6 +139,67 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "1994-11-02T01:43:55.540Z",
+            "place": "35 km ENE of Lahad Datu, Malaysia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1995-07-12T09:38:16.740Z",
+            "place": "114 km SW of Tarakan, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2006-01-31T16:40:50.520Z",
+            "place": "178 km NNE of Bontang, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-06-16T01:08:31.320Z",
+            "place": "145 km NE of Bontang, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1994-02-12T06:49:55.760Z",
+            "place": "57 km NNW of Kapit, Malaysia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2004-05-01T23:29:01.940Z",
+            "place": "78 km SSW of Marudi, Malaysia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-05-18T06:26:41.310Z",
+            "place": "50 km NE of Tawau, Malaysia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -425,9 +486,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c05710b52e77e0b7e49d8b1a2e6c4535b32763af1323f2c4c6be9e1ce5bc04f7"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_219",
+    "geometryFingerprint": "6f3a518dadf934cca8c01f6403fd641b56e93a3c421ae9e29cac7132f5174eec",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      107.4363025940001,
+      -5.585724875969492,
+      119.27110263000017,
+      7.362134557254886
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c05710b52e77e0b7e49d8b1a2e6c4535b32763af1323f2c4c6be9e1ce5bc04f7"
 }

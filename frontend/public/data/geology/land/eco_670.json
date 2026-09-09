@@ -3,7 +3,7 @@
   "regionId": "eco_670",
   "regionName": "Nihonkai evergreen forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.660762+00:00",
+  "generatedAt": "2026-09-09T06:27:42.332973+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,150 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 24,
+        "m6Plus": 4,
+        "m7Plus": 1,
+        "maxMagnitude": 7.5,
+        "events": [
+          {
+            "magnitude": 7.5,
+            "time": "2024-01-01T07:10:09.476Z",
+            "place": "2024 Noto Peninsula, Japan Earthquake"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2000-10-06T04:30:19.150Z",
+            "place": "8 km ESE of Matsue, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2024-01-01T07:18:41.584Z",
+            "place": "8 km SW of Anamizu, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2016-10-21T05:07:22.990Z",
+            "place": "6 km S of Kurayoshi, Japan"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2024-01-01T07:06:05.477Z",
+            "place": "42 km NE of Anamizu, Japan"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2026-01-06T01:18:48.586Z",
+            "place": "13 km WSW of Yasugichō, Japan"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2024-06-02T21:31:39.387Z",
+            "place": "40 km NE of Anamizu, Japan"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2004-10-24T21:04:57.060Z",
+            "place": "8 km W of Ojiya, Japan"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2004-10-23T10:45:57.000Z",
+            "place": "11 km SE of Kashiwazaki, Japan"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2023-05-05T12:58:03.876Z",
+            "place": "43 km NE of Anamizu, Japan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-09-24T20:56:54.670Z",
+            "place": "5 km WNW of Ayabe, Japan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-10-08T04:17:55.120Z",
+            "place": "32 km N of Sh?bara, Japan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1995-04-01T03:49:33.550Z",
+            "place": "8 km NE of Kameda-honch?, Japan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2004-11-03T23:57:28.180Z",
+            "place": "8 km WSW of Nagaoka, Japan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-01-11T23:00:07.170Z",
+            "place": "15 km E of Tottori, Japan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-09-03T20:15:42.830Z",
+            "place": "21 km S of Yasugich?, Japan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-10-08T11:51:17.820Z",
+            "place": "8 km SSW of Yonago, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-10-20T19:04:06.258Z",
+            "place": "7 km WSW of Takahama, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-06-19T06:08:06.557Z",
+            "place": "58 km NNE of Nanao, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-08-06T03:06:33.732Z",
+            "place": "12 km ENE of Kashiwazaki, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-03-16T07:43:36.930Z",
+            "place": "10 km WNW of Kitahama, Japan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-01-06T01:37:48.746Z",
+            "place": "17 km S of Matsue, Japan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-06-03T16:57:31.560Z",
+            "place": "9 km ENE of G?tsuch?, Japan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-04-16T02:32:02.810Z",
+            "place": "16 km ENE of Maizuru, Japan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -480,9 +624,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b39645694f108624f00a654e3f67aabf9d95f2f5055366bc217000ab73819f2c"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_670",
+    "geometryFingerprint": "07d915548d5d95e0929ec6e9d3c114b44b338b402e6669ceb88f282d3633860d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      132.15254169700017,
+      34.951144072607576,
+      140.02902265600017,
+      39.377660170860466
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b39645694f108624f00a654e3f67aabf9d95f2f5055366bc217000ab73819f2c"
 }

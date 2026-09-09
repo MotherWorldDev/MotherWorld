@@ -3,7 +3,7 @@
   "regionId": "eco_366",
   "regionName": "Sierra Nevada forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.133696+00:00",
+  "generatedAt": "2026-09-09T06:27:41.548511+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "1999-05-15T13:22:10.660Z",
+            "place": "9 km WSW of Aspen Springs, California"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-08-10T20:19:27.060Z",
+            "place": "3 km N of Blairsden, California"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -801,9 +835,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:fb3ad8521d19e877fd0069513d146983214e9011f2c87f15715b05c8b9654ee3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_366",
+    "geometryFingerprint": "e817f40dc23e2d75b502455314f06f081593515560e9567ed1601d4243fea498",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -121.63477157299991,
+      34.81712872153826,
+      -117.87328657499995,
+      40.422215633362626
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:fb3ad8521d19e877fd0069513d146983214e9011f2c87f15715b05c8b9654ee3"
 }

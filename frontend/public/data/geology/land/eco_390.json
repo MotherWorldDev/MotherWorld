@@ -3,7 +3,7 @@
   "regionId": "eco_390",
   "regionName": "Cross-Timbers savanna-woodland",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.102023+00:00",
+  "generatedAt": "2026-09-09T06:27:44.779901+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000003,
@@ -102,6 +102,42 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2011-11-06T03:53:10.000Z",
+            "place": "8 km NW of Prague, Oklahoma"
+          },
+          {
+            "magnitude": 5.06,
+            "time": "2024-02-03T05:24:28.269Z",
+            "place": "8 km NW of Prague, Oklahoma"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -592,9 +628,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e3b7fffafbb56e1f8c1532b6b142af5c52db80011df5d548b0f492d0601786cd"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_390",
+    "geometryFingerprint": "670ffebbab65e650b6a40b4f261bad8de2d4a5e8f112014d4dc93aff58c72b62",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -99.39909175399993,
+      30.667959834471684,
+      -95.28453763599988,
+      37.850211846099484
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e3b7fffafbb56e1f8c1532b6b142af5c52db80011df5d548b0f492d0601786cd"
 }

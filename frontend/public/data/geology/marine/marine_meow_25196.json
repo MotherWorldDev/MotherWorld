@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25196",
   "regionName": "Northeastern New Zealand",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.237774+00:00",
+  "generatedAt": "2026-09-09T06:27:39.219974+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2441.686058357302,
+        "medianDepthM": 2518.0,
+        "p10DepthM": 265.0,
+        "p90DepthM": 3782.0,
+        "shallowestM": 1.0,
+        "deepestM": 7512.0,
+        "coveragePct": 99.60336807234388,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 9.056341977027747,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 8.139806201507168,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 45.46997963508694,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 36.819026714921925,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.5148454714561967,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -397,6 +447,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 276,
+        "m6Plus": 14,
+        "m7Plus": 4,
+        "maxMagnitude": 7.3,
+        "events": [
+          {
+            "magnitude": 7.3,
+            "time": "2021-03-04T13:27:34.647Z",
+            "place": "182 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2001-08-21T06:52:06.250Z",
+            "place": "295 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1995-02-05T22:51:05.140Z",
+            "place": "118 km NNE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2016-09-01T16:37:57.300Z",
+            "place": "175 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2014-11-16T22:33:20.450Z",
+            "place": "183 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2001-10-21T00:29:21.490Z",
+            "place": "178 km ENE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2007-12-20T07:55:15.840Z",
+            "place": "46 km SSE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1995-02-10T01:45:03.910Z",
+            "place": "102 km NNE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1994-12-15T11:20:22.150Z",
+            "place": "83 km NNE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2021-03-06T00:16:22.227Z",
+            "place": "183 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1993-08-13T11:02:20.390Z",
+            "place": "249 km NNE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2021-04-05T07:37:52.938Z",
+            "place": "194 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2016-09-01T17:14:06.060Z",
+            "place": "179 km NE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1995-02-13T00:11:47.060Z",
+            "place": "125 km ENE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2016-09-05T15:19:03.640Z",
+            "place": "158 km NE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2002-12-01T02:27:55.180Z",
+            "place": "off the east coast of the North Island of New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1995-02-06T11:23:03.780Z",
+            "place": "100 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1995-02-06T10:43:57.170Z",
+            "place": "117 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2026-05-05T08:00:42.675Z",
+            "place": "126 km ENE of Pauanui, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2024-11-27T22:03:56.840Z",
+            "place": "119 km E of Hicks Bay, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2020-03-14T10:05:15.903Z",
+            "place": "211 km NE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2019-11-23T16:34:43.818Z",
+            "place": "69 km NNE of Whakatane, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2016-10-08T19:41:21.340Z",
+            "place": "154 km NE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2016-08-31T22:04:35.180Z",
+            "place": "174 km NE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2013-02-16T05:16:17.130Z",
+            "place": "175 km NNE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2011-11-18T07:51:24.660Z",
+            "place": "155 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2001-08-24T21:34:00.720Z",
+            "place": "267 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2021-04-29T03:58:48.360Z",
+            "place": "169 km NE of Gisborne, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2016-09-01T17:01:07.930Z",
+            "place": "179 km NE of Opotiki, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2014-10-14T04:12:27.040Z",
+            "place": "south of the Kermadec Islands"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -525,6 +749,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -540,9 +769,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:11eb4b87fa13ef2d68d660aaf2df3969db616bda93d51232d6ea3b8851466880"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25196",
+    "geometryFingerprint": "291fbbe972d54cd7c18b77f03bf348c0085bd65a2814ba59a87365f4773a3de4",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.98907200195572,
+      -40.3737267619561,
+      179.99471679898068,
+      -32.157841853694116
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:11eb4b87fa13ef2d68d660aaf2df3969db616bda93d51232d6ea3b8851466880"
 }

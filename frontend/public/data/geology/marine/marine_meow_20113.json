@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20113",
   "regionName": "Southern China",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:34.194299+00:00",
+  "generatedAt": "2026-09-09T06:27:40.218455+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 280.8125504011047,
+        "medianDepthM": 71.0,
+        "p10DepthM": 22.0,
+        "p90DepthM": 524.0,
+        "shallowestM": -0.0,
+        "deepestM": 3188.0,
+        "coveragePct": 99.38264175303617,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 80.97808171625114,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 10.551581958061163,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 8.010657404640707,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.45967892104699604,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "tectonics": {
       "faults": {
         "count": 1,
@@ -22,6 +74,65 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.8,
+        "events": [
+          {
+            "magnitude": 6.8,
+            "time": "1994-09-16T06:20:18.740Z",
+            "place": "145 km SW of Magong, Taiwan"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2018-11-25T23:57:25.700Z",
+            "place": "104 km W of Magong, Taiwan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-11-15T23:59:54.500Z",
+            "place": "154 km SSW of Magong, Taiwan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1994-12-21T11:22:11.560Z",
+            "place": "Taiwan region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1994-11-10T07:07:44.340Z",
+            "place": "156 km SSW of Magong, Taiwan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-05-26T22:27:34.560Z",
+            "place": "126 km WSW of Hengchun, Taiwan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-10-19T17:55:23.660Z",
+            "place": "153 km SW of Magong, Taiwan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -204,6 +315,11 @@
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -214,9 +330,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:13040bf0ded0cbf78f267b2e2787e6f42f0e2480207af4b5acc592328a9a7e4f"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20113",
+    "geometryFingerprint": "99b743d8ae41591a1bc18f34a85f538c64b3ed6a037073efbc0e5575c1007988",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      110.88605849300674,
+      18.678641943945106,
+      120.60146715470523,
+      24.943339231203865
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:13040bf0ded0cbf78f267b2e2787e6f42f0e2480207af4b5acc592328a9a7e4f"
 }

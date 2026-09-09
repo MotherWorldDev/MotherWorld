@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20054",
   "regionName": "Gulf of Alaska",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.953715+00:00",
+  "generatedAt": "2026-09-09T06:27:38.540035+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 52.3143196105957,
           "p90MmYr": 123.2626724243164,
           "coveragePct": 46.306926587197346
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2646.70939542266,
+        "medianDepthM": 3404.0,
+        "p10DepthM": 77.0,
+        "p90DepthM": 4845.0,
+        "shallowestM": -0.0,
+        "deepestM": 7026.0,
+        "coveragePct": 99.64158694929938,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 28.877179526650565,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.660660398190398,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 8.405472716169145,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 53.563813928146985,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 1.4928734308428946,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -259,6 +309,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 335,
+        "m6Plus": 28,
+        "m7Plus": 6,
+        "maxMagnitude": 8.2,
+        "events": [
+          {
+            "magnitude": 8.2,
+            "time": "2021-07-29T06:15:49.188Z",
+            "place": "2021 Chignik, Alaska Earthquake"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "2020-07-22T06:12:44.810Z",
+            "place": "2020 Perryville, Alaska Earthquake"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2020-10-19T20:54:38.950Z",
+            "place": "2020 Sand Point, Alaska Earthquake"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2025-07-16T20:37:41.667Z",
+            "place": "2025 Sand Point, Alaska Earthquake"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2023-07-16T06:48:21.158Z",
+            "place": "2023 Sand Point, Alaska Earthquake"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2016-01-24T10:30:29.557Z",
+            "place": "47 km ESE of Pedro Bay, Alaska"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2021-10-11T09:10:25.147Z",
+            "place": "112 km E of Chignik, Alaska"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2021-08-14T11:57:43.447Z",
+            "place": "125 km SE of Perryville, Alaska"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2001-01-10T16:02:42.638Z",
+            "place": "47 km S of Old Harbor, Alaska"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1993-05-13T11:59:49.250Z",
+            "place": "17 km S of Sand Point, Alaska"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2015-05-29T07:00:09.634Z",
+            "place": "117 km SSE of Ugashik, Alaska"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1993-11-19T01:43:23.780Z",
+            "place": "79 km SW of False Pass, Alaska"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2002-05-25T05:36:31.970Z",
+            "place": "159 km SSE of King Cove, Alaska"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1999-10-13T01:33:40.130Z",
+            "place": "85 km ESE of King Cove, Alaska"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2012-11-12T20:42:14.620Z",
+            "place": "266 km SW of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2007-10-02T18:00:06.870Z",
+            "place": "72 km SSE of King Cove, Alaska"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2025-07-20T22:28:00.041Z",
+            "place": "91 km SSE of Sand Point, Alaska"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2005-11-20T12:53:02.950Z",
+            "place": "115 km ESE of Akutan, Alaska"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1999-05-07T14:13:51.470Z",
+            "place": "129 km SSE of Old Harbor, Alaska"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1995-03-14T17:33:50.750Z",
+            "place": "70 km ESE of King Cove, Alaska"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1993-05-25T23:16:43.440Z",
+            "place": "35 km S of Sand Point, Alaska"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2020-07-28T08:03:43.215Z",
+            "place": "75 km SW of Sand Point, Alaska"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2020-07-22T06:16:18.627Z",
+            "place": "101 km ESE of Sand Point, Alaska"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2011-07-16T19:59:12.890Z",
+            "place": "72 km ESE of King Cove, Alaska"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2018-12-31T02:35:37.670Z",
+            "place": "87 km SE of King Cove, Alaska"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2014-07-25T10:54:50.417Z",
+            "place": "40 km WNW of Elfin Cove, Alaska"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2008-05-25T19:18:24.384Z",
+            "place": "122 km SSE of Akhiok, Alaska"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1995-07-08T17:15:25.760Z",
+            "place": "143 km S of False Pass, Alaska"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2021-07-29T06:23:27.003Z",
+            "place": "127 km SE of Chignik, Alaska"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2020-10-19T21:45:25.327Z",
+            "place": "118 km SSE of Sand Point, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -824,6 +1048,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -834,9 +1063,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9e722d9c28885e4aeef43fa6e40060290946428fc587e91ec5aaaa0bcec85df0"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20054",
+    "geometryFingerprint": "a305f8540b5e8c7fc80d295cf4704c3f4b22d3119b0d30fe4967e75e85438761",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -164.80416630623452,
+      50.93640203945961,
+      -136.8396323326861,
+      61.285292674396224
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9e722d9c28885e4aeef43fa6e40060290946428fc587e91ec5aaaa0bcec85df0"
 }

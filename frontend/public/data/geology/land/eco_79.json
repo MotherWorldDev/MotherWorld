@@ -3,7 +3,7 @@
   "regionId": "eco_79",
   "regionName": "Ethiopian montane grasslands and woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.295705+00:00",
+  "generatedAt": "2026-09-09T06:27:42.703027+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -197,6 +197,55 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2002-08-10T15:56:02.040Z",
+            "place": "40 km ENE of Mek'ele, Ethiopia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-12-19T12:14:24.510Z",
+            "place": "3 km SSW of Hosa’ina, Ethiopia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-12-01T11:18:32.480Z",
+            "place": "31 km NNE of Rob?t, Ethiopia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-03-19T20:08:10.360Z",
+            "place": "13 km ENE of Wendo, Ethiopia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-01-20T07:14:27.200Z",
+            "place": "11 km NNW of Hawassa, Ethiopia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "surfaceGeology": {
@@ -385,9 +434,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:fe2dcc7d76ae41479a948d4171122e588c76259b375b05206072783602ff009e"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_79",
+    "geometryFingerprint": "bd82a0389f404bcf68e6bec12dadd292e9ba9aa30f70f6ee4c40fed97b0214a7",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      35.30666666700017,
+      4.039166661565715,
+      43.188333333000166,
+      22.02162004984966
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:fe2dcc7d76ae41479a948d4171122e588c76259b375b05206072783602ff009e"
 }

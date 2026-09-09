@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20169",
   "regionName": "Cocos Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.622409+00:00",
+  "generatedAt": "2026-09-09T06:27:38.916857+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 214.5351104736328,
           "coveragePct": 100.0
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 2680.218802604806,
+        "medianDepthM": 2864.0,
+        "p10DepthM": 1607.0,
+        "p90DepthM": 3476.0,
+        "shallowestM": 69.0,
+        "deepestM": 3892.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.10962970697621685,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.6950283390246572,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 57.77234470630166,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 41.42299724769747,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -91,6 +141,50 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2022-10-16T12:48:21.665Z",
+            "place": "off the coast of Central America"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1996-02-29T16:58:44.010Z",
+            "place": "off the coast of Central America"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2005-02-22T18:19:31.340Z",
+            "place": "off the coast of Central America"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2004-05-21T08:11:35.430Z",
+            "place": "off the coast of Central America"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -158,6 +252,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -166,6 +265,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:67b1097117c05769270f494ae8bf1cc4856a2c72a7a12c747ed07138e3815087"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20169",
+    "geometryFingerprint": "d852223b0bde0daee6856e0fd98a4ba51c0a669ac9e2d97df839cacffbcec887",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -90.44434174547179,
+      2.153332660804377,
+      -83.83255798100366,
+      8.48506504327735
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:67b1097117c05769270f494ae8bf1cc4856a2c72a7a12c747ed07138e3815087"
 }

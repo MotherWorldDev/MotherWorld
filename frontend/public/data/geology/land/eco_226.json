@@ -3,7 +3,7 @@
   "regionId": "eco_226",
   "regionName": "Chin Hills-Arakan Yoma montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.513859+00:00",
+  "generatedAt": "2026-09-09T06:27:41.218801+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,125 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 19,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.2,
+        "events": [
+          {
+            "magnitude": 6.2,
+            "time": "2021-11-25T23:45:41.752Z",
+            "place": "20 km WSW of Falam, Myanmar"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2026-02-03T15:34:01.535Z",
+            "place": "96 km W of Yenangyaung, Burma (Myanmar)"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1994-08-03T14:59:57.570Z",
+            "place": "110 km NW of Chauk, Myanmar"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2014-11-20T18:14:37.790Z",
+            "place": "42 km ENE of Khawhai, India"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2002-12-04T11:30:53.780Z",
+            "place": "70 km W of Thayetmyo, Myanmar"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2022-01-21T10:12:31.865Z",
+            "place": "23 km NE of Falam, Myanmar"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2014-09-09T09:28:22.190Z",
+            "place": "42 km SE of Saiha, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-11-10T17:15:46.730Z",
+            "place": "47 km E of Darlawn, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-03-03T22:55:59.160Z",
+            "place": "48 km S of Chur?ch?ndpur, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2026-02-03T15:51:31.064Z",
+            "place": "86 km W of Yenangyaung, Burma (Myanmar)"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-09-20T01:59:05.610Z",
+            "place": "12 km NE of Falam, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2014-01-29T13:46:50.340Z",
+            "place": "50 km WNW of Mawlaik, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-03-25T20:13:30.720Z",
+            "place": "34 km NNE of Falam, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-10-16T01:31:15.130Z",
+            "place": "132 km NNE of Sittwe, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-05-10T19:36:36.401Z",
+            "place": "84 km W of Yenangyaung, Burma (Myanmar)"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-02-22T10:33:30.853Z",
+            "place": "119 km S of Hakha, Burma (Myanmar)"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-11-03T14:43:10.270Z",
+            "place": "57 km SE of Saiha, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2001-10-19T07:04:33.830Z",
+            "place": "122 km W of Chauk, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1999-02-22T11:37:49.440Z",
+            "place": "43 km N of Falam, Myanmar"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -91,6 +210,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c7917519157b30cd8ac810e97e741597efab662590602e027022602f78015810"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_226",
+    "geometryFingerprint": "49d56541b8c6f25316dd8f32398ff97164842a2b04a8e8ce08fe924c3eb0003f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      93.02306351200019,
+      18.487457276982163,
+      94.89658366200015,
+      24.09060231014898
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c7917519157b30cd8ac810e97e741597efab662590602e027022602f78015810"
 }

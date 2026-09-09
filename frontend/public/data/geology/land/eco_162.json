@@ -3,7 +3,7 @@
   "regionId": "eco_162",
   "regionName": "Yapen rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.037604+00:00",
+  "generatedAt": "2026-09-09T06:27:43.788853+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 95.08188258320209,
@@ -48,6 +48,47 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2010-06-16T06:10:44.550Z",
+            "place": "85 km SSE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-06-16T03:24:24.940Z",
+            "place": "69 km SSE of Biak, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-08-10T07:31:40.720Z",
+            "place": "73 km SW of Insrom, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -55,6 +96,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:830e98384dd0f913ed38ed9aab9fcf03092f5a5f263fc002a433a264385ec4c0"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_162",
+    "geometryFingerprint": "c77d30297c61b278c9ba9b06f9ff0d174f0f784990a815189ed11c317457635b",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      135.09985355000015,
+      -1.898332550885936,
+      137.04872164500011,
+      -1.47256422335735
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:830e98384dd0f913ed38ed9aab9fcf03092f5a5f263fc002a433a264385ec4c0"
 }

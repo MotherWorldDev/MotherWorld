@@ -3,7 +3,7 @@
   "regionId": "eco_410",
   "regionName": "Beringia upland tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.284395+00:00",
+  "generatedAt": "2026-09-09T06:27:41.620502+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2011-05-21T08:33:21.581Z",
+            "place": "12 km N of Port Clarence, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -831,9 +860,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:793f02b5b7b1bb1eccd8daa7323ec7539d8f2738bd2657845a5e5ee16ed8c246"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_410",
+    "geometryFingerprint": "2ae3adaed57187cd4a854eaa8952b3ba8b19cd42b83c7eb80cf57f39ec367cac",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -171.85299518199997,
+      63.14658022471884,
+      -159.11668047399988,
+      66.36616904189279
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:793f02b5b7b1bb1eccd8daa7323ec7539d8f2738bd2657845a5e5ee16ed8c246"
 }

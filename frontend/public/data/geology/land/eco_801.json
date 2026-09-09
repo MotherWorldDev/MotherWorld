@@ -3,7 +3,7 @@
   "regionId": "eco_801",
   "regionName": "Pindus Mountains mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.398248+00:00",
+  "generatedAt": "2026-09-09T06:27:42.772810+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,130 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 20,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "1995-05-13T08:47:12.730Z",
+            "place": "10 km W of Aianí, Greece"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2008-01-06T05:14:20.180Z",
+            "place": "15 km WNW of Leonídio, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2021-03-04T19:23:51.987Z",
+            "place": "7 km S of Kraniá Elassónas, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2009-09-06T21:49:42.170Z",
+            "place": "12 km WSW of Debar, North Macedonia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2004-11-23T02:26:16.350Z",
+            "place": "4 km WSW of Ersekë, Albania"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1997-05-16T07:00:48.370Z",
+            "place": "10 km SE of Elbasan, Albania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1998-09-30T23:42:54.210Z",
+            "place": "17 km S of Kukës, Albania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2019-06-01T04:26:19.636Z",
+            "place": "12 km SW of Mborje, Albania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1995-07-17T23:18:15.750Z",
+            "place": "7 km S of Siátista, Greece"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1995-05-17T04:14:25.250Z",
+            "place": "17 km WSW of Aianí, Greece"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1995-05-15T04:13:55.330Z",
+            "place": "18 km NW of Deskáti, Greece"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-08-31T07:12:25.340Z",
+            "place": "6 km WSW of Morfovoúni, Greece"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-08-11T15:38:33.550Z",
+            "place": "8 km ESE of Burrel, Albania"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-05-19T06:48:49.600Z",
+            "place": "11 km E of Grevená, Greece"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-05-17T09:45:07.350Z",
+            "place": "15 km SE of Grevená, Greece"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-12-21T16:29:52.454Z",
+            "place": "9 km ENE of Paravóla, Greece"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-06-01T07:00:28.533Z",
+            "place": "6 km SSW of Korçë, Albania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-09-11T16:20:15.920Z",
+            "place": "18 km SSE of Anthiró, Greece"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-04-07T01:32:30.470Z",
+            "place": "21 km NE of Çorovodë, Albania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-05-13T11:43:28.350Z",
+            "place": "13 km SW of Aianí, Greece"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -729,9 +853,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ae2a963e067b1100dfcf947c4f71621209acc622fc88a2c0df7d49803b9cfdbe"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_801",
+    "geometryFingerprint": "04b482e42a6708574089992d55436c726625b1aae81728a7598014370063c0f4",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      19.719123523000178,
+      36.86666862259748,
+      22.80182054700014,
+      42.45802300328709
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ae2a963e067b1100dfcf947c4f71621209acc622fc88a2c0df7d49803b9cfdbe"
 }

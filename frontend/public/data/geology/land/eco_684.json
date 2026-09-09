@@ -3,7 +3,7 @@
   "regionId": "eco_684",
   "regionName": "Tarim Basin deciduous forests and steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.178190+00:00",
+  "generatedAt": "2026-09-09T06:27:46.067894+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000004,
@@ -92,6 +92,42 @@
         "license": "CC BY 4.0"
       }
     },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2024-10-26T08:35:57.334Z",
+            "place": "122 km SE of Kuqa, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2024-08-21T23:38:00.857Z",
+            "place": "124 km SE of Kuqa, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 1,
       "commodityCount": 1,
@@ -130,9 +166,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:34063f29a6662ecb59498bcb7b271a5767b90ec0a288230e48c1c1ca2b9e94ba"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_684",
+    "geometryFingerprint": "c4d3b2b083410236896281cf55d69ac40f6823a00901e7348e17bd0627b53cb9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      79.541694586,
+      37.399116616870224,
+      87.7123186570002,
+      41.38109244480784
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:34063f29a6662ecb59498bcb7b271a5767b90ec0a288230e48c1c1ca2b9e94ba"
 }

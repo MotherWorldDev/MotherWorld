@@ -3,7 +3,7 @@
   "regionId": "eco_231",
   "regionName": "Greater Negros-Panay rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.528929+00:00",
+  "generatedAt": "2026-09-09T06:27:41.227856+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -130,6 +130,135 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 21,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.7,
+        "events": [
+          {
+            "magnitude": 6.7,
+            "time": "2012-02-06T03:49:12.520Z",
+            "place": "2 km NNE of Jimalalud, Philippines"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2012-02-06T10:10:19.850Z",
+            "place": "0 km NW of Amdos, Philippines"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2025-10-12T17:05:59.511Z",
+            "place": "4 km ESE of Tambongon, Philippines"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2012-02-06T11:33:36.980Z",
+            "place": "6 km WNW of Tiguib, Philippines"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2012-02-06T04:19:59.910Z",
+            "place": "3 km WNW of McKinley, Philippines"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2025-11-02T19:06:53.955Z",
+            "place": "13 km WSW of Mabinay, Philippines"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2014-10-03T08:05:44.270Z",
+            "place": "7 km E of San Francisco, Philippines"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-08-15T11:32:02.630Z",
+            "place": "21 km SE of Bugasong, Philippines"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2001-11-15T10:59:28.170Z",
+            "place": "10 km SSE of Candoni, Philippines"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2012-02-06T11:40:15.380Z",
+            "place": "2 km W of Tampocon, Philippines"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-04-06T07:22:41.895Z",
+            "place": "4 km ESE of Maravilla, Philippines"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-09-30T14:15:58.396Z",
+            "place": "1 km ENE of Anonang, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-09-30T14:08:05.552Z",
+            "place": "3 km SE of Maño, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2024-12-17T07:37:38.870Z",
+            "place": "15 km SSE of Candoni, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-10-15T00:20:27.710Z",
+            "place": "1 km ENE of Casay, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2005-07-14T22:53:49.530Z",
+            "place": "5 km NNW of Calaya, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1998-05-07T13:53:51.010Z",
+            "place": "3 km N of Potot, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-10-04T09:41:18.029Z",
+            "place": "3 km E of Maravilla, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-09-30T14:39:39.100Z",
+            "place": "1 km S of Guadalupe, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-02-07T04:05:35.020Z",
+            "place": "1 km SW of Guadalupe, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-04-26T12:04:38.700Z",
+            "place": "5 km WNW of Baleno, Philippines"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -605,9 +734,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1619b5ceeb4b1ceb6d6eacde79f0156d1e667584f2e247c33371281b01d196c9"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_231",
+    "geometryFingerprint": "b7453742d21549096b05490ba299affe9b28f39faf631c43297b555d180698fe",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      121.68250258300021,
+      9.040705215779797,
+      124.0744015350002,
+      12.9614923070116
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1619b5ceeb4b1ceb6d6eacde79f0156d1e667584f2e247c33371281b01d196c9"
 }

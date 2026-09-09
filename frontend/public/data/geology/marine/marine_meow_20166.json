@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20166",
   "regionName": "Mexican Tropical Pacific",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.602525+00:00",
+  "generatedAt": "2026-09-09T06:27:38.901855+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3263.1074222616057,
+        "medianDepthM": 3392.0,
+        "p10DepthM": 2527.0,
+        "p90DepthM": 4092.0,
+        "shallowestM": 1.0,
+        "deepestM": 5605.0,
+        "coveragePct": 99.94629234097097,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 1.7652711030362032,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 2.0161837073849234,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 18.05736390434693,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 78.16118128523193,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -366,6 +416,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 184,
+        "m6Plus": 27,
+        "m7Plus": 2,
+        "maxMagnitude": 7.6,
+        "events": [
+          {
+            "magnitude": 7.6,
+            "time": "2003-01-22T02:06:34.610Z",
+            "place": "16 km SSW of Cuyutlán, Mexico"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1996-02-25T03:08:15.870Z",
+            "place": "24 km SSW of Santa María Chico Ometepec, Mexico"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1997-05-01T11:37:36.150Z",
+            "place": "228 km WSW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2002-04-18T05:02:46.190Z",
+            "place": "27 km SSW of Nuxco, Mexico"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2016-01-21T18:06:57.650Z",
+            "place": "203 km SW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1994-07-04T21:36:41.960Z",
+            "place": "108 km SSW of La Barra de Colotepec, Mexico"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2009-09-24T07:16:20.260Z",
+            "place": "236 km WSW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2008-09-24T02:33:05.560Z",
+            "place": "196 km SSW of Barra de Navidad, Mexico"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1995-12-11T14:09:23.790Z",
+            "place": "73 km SW of Emiliano Zapata, Mexico"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1995-05-31T16:08:40.250Z",
+            "place": "236 km WSW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2016-06-07T10:51:37.720Z",
+            "place": "106 km SSW of Barra de Navidad, Mexico"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2001-05-20T04:21:43.820Z",
+            "place": "33 km SW of El Colomo, Mexico"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2015-02-22T14:23:12.720Z",
+            "place": "207 km WSW of José María Morelos, Mexico"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2014-09-06T19:22:59.040Z",
+            "place": "217 km SW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2014-05-31T11:53:46.470Z",
+            "place": "250 km WSW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2010-08-24T02:11:59.090Z",
+            "place": "226 km SW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2005-06-27T11:35:45.600Z",
+            "place": "236 km SW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2001-04-29T21:26:54.540Z",
+            "place": "45 km SSW of El Naranjo, Mexico"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1999-11-21T06:46:19.240Z",
+            "place": "242 km SW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2003-05-19T16:27:10.200Z",
+            "place": "201 km SSW of Barra de Navidad, Mexico"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1995-12-11T19:44:09.210Z",
+            "place": "106 km SSW of Emiliano Zapata, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2021-12-22T23:22:58.013Z",
+            "place": "213 km SW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2006-04-04T02:30:28.390Z",
+            "place": "215 km SW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2003-07-17T19:57:13.770Z",
+            "place": "241 km SW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1997-12-16T11:48:29.810Z",
+            "place": "46 km SSW of Barra de Tecoanapa, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1995-10-12T16:52:53.000Z",
+            "place": "13 km SSE of Cuyutlán, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1993-11-13T00:16:49.010Z",
+            "place": "18 km SW of Montecillos, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2025-05-13T20:43:04.081Z",
+            "place": "240 km SW of La Cruz de Loreto, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2024-10-16T19:40:58.409Z",
+            "place": "225 km SW of José María Morelos, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2019-08-14T21:35:18.451Z",
+            "place": "272 km SSE of Cabo San Lucas, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -468,6 +692,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -483,9 +712,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:7eca33d1278779890e21cb78c97767258a772352505f2c62a2311fc4079b5d2d"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20166",
+    "geometryFingerprint": "f3d9e3096ade0170fbbd97dadc46432584c2bb6c0e17da0ecd41fbb30088dc10",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -113.67473665596403,
+      12.2778685079703,
+      -94.97834426089679,
+      22.84560335775253
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:7eca33d1278779890e21cb78c97767258a772352505f2c62a2311fc4079b5d2d"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_387",
   "regionName": "Central US forest-grasslands transition",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.101004+00:00",
+  "generatedAt": "2026-09-09T06:27:44.767675+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 98.43949595610692,
@@ -109,6 +109,37 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.2,
+        "events": [
+          {
+            "magnitude": 5.2,
+            "time": "2008-04-18T09:36:59.110Z",
+            "place": "7 km NNE of Bellmont, Illinois"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -580,9 +611,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:7ffda91c0a364465e57c768e8e4485ff034a8ccd735803b8d9c18d2a996019d7"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_387",
+    "geometryFingerprint": "f3ce4d19e39dec1d3df51a1a04ae9c36a667528b80bdb6d3c9c9e44d381fbd21",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -93.28839660699997,
+      36.931496524630745,
+      -85.79288906899995,
+      44.74999368065609
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:7ffda91c0a364465e57c768e8e4485ff034a8ccd735803b8d9c18d2a996019d7"
 }

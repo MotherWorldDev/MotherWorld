@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20164",
   "regionName": "Revillagigedos",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.589269+00:00",
+  "generatedAt": "2026-09-09T06:27:38.896590+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3530.9728276271244,
+        "medianDepthM": 3592.0,
+        "p10DepthM": 3085.0,
+        "p90DepthM": 3916.0,
+        "shallowestM": 160.0,
+        "deepestM": 5823.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.018309526021220875,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.18265041902081153,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 7.581836854962238,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 92.21720319999572,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -152,6 +202,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 39,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2011-11-01T12:32:00.430Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2005-05-08T17:07:35.770Z",
+            "place": "290 km SSE of Cabo San Lucas, Mexico"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2025-05-28T01:30:37.701Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2025-05-27T21:59:11.398Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2005-01-06T00:02:21.110Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2012-08-09T02:34:41.120Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2009-09-18T18:46:08.340Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2009-06-03T21:37:37.320Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2005-04-26T04:05:47.300Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2025-03-17T09:50:24.150Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-11-24T19:26:03.401Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2021-09-05T08:42:13.442Z",
+            "place": "291 km SSE of Cabo San Lucas, Mexico"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2005-01-06T00:04:09.640Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2001-05-29T18:48:05.550Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-05-28T09:01:39.229Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2024-11-30T15:08:50.569Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-12-11T00:46:49.000Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2006-03-14T23:31:42.320Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2002-04-07T18:34:37.850Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1999-12-21T18:39:50.260Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-08-27T16:51:45.820Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-05-28T16:18:09.662Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-12-21T16:54:24.074Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-12-17T04:12:12.490Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-07-28T19:11:17.010Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-03-28T18:42:55.550Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1995-12-25T02:57:34.600Z",
+            "place": "east central Pacific Ocean"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-11-16T21:44:09.573Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2024-07-04T00:17:29.621Z",
+            "place": "Revilla Gigedo Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2020-02-05T10:43:06.434Z",
+            "place": "Revilla Gigedo Islands region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -223,6 +447,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -231,6 +460,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f8ef211e40b641145397774680078fa3040b644e93ad09f3a71dbeb47aa62cbe"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20164",
+    "geometryFingerprint": "0ca874c0706d47054826ac871e21de8202427d00fb862d969281add340530248",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -118.13596224497773,
+      14.952652396467533,
+      -107.80527754089135,
+      21.736492302548253
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f8ef211e40b641145397774680078fa3040b644e93ad09f3a71dbeb47aa62cbe"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20094",
   "regionName": "Northern Monsoon Current Coast",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.179984+00:00",
+  "generatedAt": "2026-09-09T06:27:38.671110+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 25.845022201538086,
           "p90MmYr": 31.537282943725586,
           "coveragePct": 92.43005122613117
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3280.643379305266,
+        "medianDepthM": 3578.0,
+        "p10DepthM": 1399.0,
+        "p90DepthM": 4482.0,
+        "shallowestM": 2.0,
+        "deepestM": 4837.0,
+        "coveragePct": 99.91983416850735,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 3.1690896778140294,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 4.7741510815222545,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 20.098268396873845,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 71.95849084378986,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -167,6 +217,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "ihfc_heat_flow",

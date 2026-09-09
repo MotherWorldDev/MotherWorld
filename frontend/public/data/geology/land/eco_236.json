@@ -3,7 +3,7 @@
   "regionId": "eco_236",
   "regionName": "Jian Nan subtropical evergreen forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.563249+00:00",
+  "generatedAt": "2026-09-09T06:27:41.245508+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2026-05-18T13:44:26.019Z",
+            "place": "20 km NW of Liuzhou, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-05-17T16:21:06.177Z",
+            "place": "20 km NW of Liuzhou, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -664,9 +698,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e3fe927ee86c9302b9dbd71344e5290a6de2365a47ed6e7ea4045b3ca2e4ebd3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_236",
+    "geometryFingerprint": "20b79f3f6f0ff675638d10870e6fc25b98922820f3d6624668f11915bdc8341a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      106.19729653900002,
+      21.935734192842872,
+      122.17442357300013,
+      30.114783754217914
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e3fe927ee86c9302b9dbd71344e5290a6de2365a47ed6e7ea4045b3ca2e4ebd3"
 }

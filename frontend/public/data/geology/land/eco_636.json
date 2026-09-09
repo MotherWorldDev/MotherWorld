@@ -3,7 +3,7 @@
   "regionId": "eco_636",
   "regionName": "Hawai'i tropical dry forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.463438+00:00",
+  "generatedAt": "2026-09-09T06:27:42.212762+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,75 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 9,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.88,
+        "events": [
+          {
+            "magnitude": 5.88,
+            "time": "2024-02-09T20:06:31.660Z",
+            "place": "2 km SW of Pāhala, Hawaii"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1999-04-17T00:56:25.120Z",
+            "place": "5 km N of P?hala, Hawaii"
+          },
+          {
+            "magnitude": 5.54,
+            "time": "2019-03-13T10:55:13.370Z",
+            "place": "13 km SSE of Volcano, Hawaii"
+          },
+          {
+            "magnitude": 5.34,
+            "time": "2019-04-14T03:09:02.680Z",
+            "place": "20 km E of Kalaoa, Hawaii"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2015-06-28T08:10:10.480Z",
+            "place": "12 km SSE of Volcano, Hawaii"
+          },
+          {
+            "magnitude": 5.06,
+            "time": "2023-12-05T03:53:46.010Z",
+            "place": "13 km SSE of Volcano, Hawaii"
+          },
+          {
+            "magnitude": 5.06,
+            "time": "2018-05-03T20:30:56.470Z",
+            "place": "15 km SSE of Fern Forest, Hawaii"
+          },
+          {
+            "magnitude": 5.02,
+            "time": "2022-10-14T19:07:29.020Z",
+            "place": "7 km SSW of P?hala, Hawaii"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-08-27T06:24:22.180Z",
+            "place": "13 km SSE of Volcano, Hawaii"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -488,9 +557,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:475cac79d202e6bedd2f979b7189e0076aa58a8d7c1bf296ec70ab8dc39850f2"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_636",
+    "geometryFingerprint": "e3b5a578ac7fd0cecd59266a838f4c712a0723beee623af6e966279864c247b8",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -160.21362268399994,
+      18.94781771891533,
+      -154.96844459599993,
+      22.19954403386529
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:475cac79d202e6bedd2f979b7189e0076aa58a8d7c1bf296ec70ab8dc39850f2"
 }

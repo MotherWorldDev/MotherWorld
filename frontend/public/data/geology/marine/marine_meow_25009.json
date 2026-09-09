@@ -3,8 +3,101 @@
   "regionId": "marine_meow_25009",
   "regionName": "Lancaster Sound",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:49.067282+00:00",
+  "generatedAt": "2026-09-09T06:27:40.750021+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 219.25577454575637,
+        "medianDepthM": 156.0,
+        "p10DepthM": 36.0,
+        "p90DepthM": 541.0,
+        "shallowestM": -0.0,
+        "deepestM": 954.0,
+        "coveragePct": 98.57410076969205,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 60.905554725724414,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 39.09444527427559,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 0.0,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2017-01-08T23:47:14.420Z",
+            "place": "Devon Island, Nunavut, Canada"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2017-02-10T15:01:49.600Z",
+            "place": "Devon Island, Nunavut, Canada"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2017-01-09T17:55:35.380Z",
+            "place": "Devon Island, Nunavut, Canada"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 3,
       "commodityCount": 4,
@@ -65,9 +158,38 @@
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9ac0249f435df1cde23a709458dab58f5bb910ef7238dd6064a591f567ed0071"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25009",
+    "geometryFingerprint": "fba783a2b14d33b6b20556ac60cdd1e29d0fbe43bc47da7f03a1a5f51cbed0a1",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -102.56533883927656,
+      67.18109287633168,
+      -78.24714012915612,
+      76.73325616049841
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9ac0249f435df1cde23a709458dab58f5bb910ef7238dd6064a591f567ed0071"
 }

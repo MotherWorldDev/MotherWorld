@@ -3,7 +3,7 @@
   "regionId": "eco_138",
   "regionName": "Buru rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.030474+00:00",
+  "generatedAt": "2026-09-09T06:27:43.678597+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 76.77657354470392,
@@ -42,6 +42,77 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 9,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.7,
+        "events": [
+          {
+            "magnitude": 6.7,
+            "time": "2006-03-14T06:57:33.860Z",
+            "place": "108 km W of Ambon, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2016-01-16T23:22:29.040Z",
+            "place": "107 km W of Ambon, Indonesia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2004-11-20T02:32:44.160Z",
+            "place": "224 km W of Ambon, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1995-01-13T05:06:09.550Z",
+            "place": "113 km WNW of Ambon, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-01-28T20:51:54.140Z",
+            "place": "183 km WNW of Ambon, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-04-04T09:29:48.000Z",
+            "place": "180 km WNW of Ambon, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-09-16T18:54:58.310Z",
+            "place": "212 km WNW of Ambon, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2001-10-07T03:44:11.560Z",
+            "place": "151 km W of Ambon, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-10-24T20:31:56.640Z",
+            "place": "196 km W of Ambon, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -49,6 +120,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9d48a5f50b272986fbe43c74fb90e376969c7a03fdf6dff4f717b46fa1d0583f"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_138",
+    "geometryFingerprint": "c1f4ba6287e56b501457d15255936cb640adb0babf4d1c33d944a2c3979bb666",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      125.99649766400034,
+      -3.911497551700916,
+      127.26550255100003,
+      -3.059471729614777
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9d48a5f50b272986fbe43c74fb90e376969c7a03fdf6dff4f717b46fa1d0583f"
 }

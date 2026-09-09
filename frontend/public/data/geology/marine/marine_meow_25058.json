@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25058",
   "regionName": "Northern California",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.153462+00:00",
+  "generatedAt": "2026-09-09T06:27:39.174555+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 78.80192565917969,
           "p90MmYr": 108.3935317993164,
           "coveragePct": 81.26475620340251
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3265.3673003574927,
+        "medianDepthM": 3879.0,
+        "p10DepthM": 672.0,
+        "p90DepthM": 4392.0,
+        "shallowestM": -0.0,
+        "deepestM": 4897.0,
+        "coveragePct": 99.85243394923835,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 5.4353591060457545,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.709356339511838,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 12.99564877075122,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 73.85963578369119,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -241,6 +291,75 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 9,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "2008-11-28T13:42:18.680Z",
+            "place": "231 km W of Ferndale, California"
+          },
+          {
+            "magnitude": 5.72,
+            "time": "2015-01-28T21:08:53.710Z",
+            "place": "40 km SW of Ferndale, California"
+          },
+          {
+            "magnitude": 5.65,
+            "time": "2021-12-20T20:10:20.310Z",
+            "place": "29km W of Petrolia, CA"
+          },
+          {
+            "magnitude": 5.64,
+            "time": "2016-09-03T03:27:57.250Z",
+            "place": "124 km WSW of Ferndale, California"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1997-01-22T07:17:16.810Z",
+            "place": "33 km SW of Scotia, California"
+          },
+          {
+            "magnitude": 5.21,
+            "time": "2020-03-18T22:08:20.920Z",
+            "place": "15km W of Petrolia, CA"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1997-01-26T06:23:19.440Z",
+            "place": "33 km SW of Scotia, California"
+          },
+          {
+            "magnitude": 5.12,
+            "time": "2021-07-18T06:46:12.650Z",
+            "place": "12km W of Petrolia, CA"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-07-19T11:41:43.460Z",
+            "place": "35 km SSW of Ferndale, California"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -686,6 +805,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -696,9 +820,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:09dc73433f0687f4b895c26ebd93966f2cf170ba43897f7b334728d677cafb51"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25058",
+    "geometryFingerprint": "086b367888d613270411758c7a536a28059841875d7a05c9f95a6076b151137f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -127.69885037542474,
+      31.640542229365487,
+      -119.19850537058298,
+      40.39736573635663
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:09dc73433f0687f4b895c26ebd93966f2cf170ba43897f7b334728d677cafb51"
 }

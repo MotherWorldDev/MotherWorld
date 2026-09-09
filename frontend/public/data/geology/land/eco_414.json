@@ -3,7 +3,7 @@
   "regionId": "eco_414",
   "regionName": "Canadian Middle Arctic Tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.107942+00:00",
+  "generatedAt": "2026-09-09T06:27:44.883500+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 91.73418298450841,
@@ -145,6 +145,37 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "1997-12-06T08:06:49.190Z",
+            "place": "Nunavut, Canada"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -325,9 +356,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:0fa19e97b9d7b8a18caf70cf313cf4cbb03550c4b4c4efc959ebcd425feb92bf"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_414",
+    "geometryFingerprint": "633687a003a8dfcb108ab5baa3a6239748a16aae8833e747780e5f930762a498",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -125.83995470699993,
+      60.200278633507985,
+      -63.18334306899982,
+      74.55560464325707
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:0fa19e97b9d7b8a18caf70cf313cf4cbb03550c4b4c4efc959ebcd425feb92bf"
 }

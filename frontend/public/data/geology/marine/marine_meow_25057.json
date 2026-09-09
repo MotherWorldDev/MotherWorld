@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25057",
   "regionName": "Oregon, Washington, Vancouver Coast and Shelf",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.146932+00:00",
+  "generatedAt": "2026-09-09T06:27:39.172547+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2074.5735557425637,
+        "medianDepthM": 2579.0,
+        "p10DepthM": 125.0,
+        "p90DepthM": 3060.0,
+        "shallowestM": -0.0,
+        "deepestM": 4274.0,
+        "coveragePct": 99.82341919513017,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 14.083510197082713,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 8.009270573029639,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 63.76163899715442,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 14.145580232733202,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -464,6 +514,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 175,
+        "m6Plus": 29,
+        "m7Plus": 3,
+        "maxMagnitude": 7.2,
+        "events": [
+          {
+            "magnitude": 7.2,
+            "time": "2005-06-15T02:50:54.190Z",
+            "place": "153 km W of Big Lagoon, California"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1994-09-01T15:15:53.080Z",
+            "place": "121 km W of Ferndale, California"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2024-12-05T18:44:21.110Z",
+            "place": "2024 Offshore Cape Mendocino, California Earthquake"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2018-10-22T06:16:26.450Z",
+            "place": "210 km SW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2014-03-10T05:18:13.430Z",
+            "place": "77 km WNW of Indianola, California"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2004-11-02T10:02:12.820Z",
+            "place": "189 km SW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2016-12-08T14:49:45.910Z",
+            "place": "164 km W of Ferndale, California"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2005-06-17T06:21:42.590Z",
+            "place": "196 km W of Ferndale, California"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1995-02-19T04:03:14.940Z",
+            "place": "126 km W of Ferndale, California"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2018-10-22T06:22:48.120Z",
+            "place": "237 km SW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2018-10-22T05:39:39.590Z",
+            "place": "223 km SW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2014-04-24T03:10:10.150Z",
+            "place": "107 km WSW of Vernon, Canada"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2010-01-10T00:27:39.320Z",
+            "place": "The 2010 Eureka, California Earthquake"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2024-07-11T15:08:47.169Z",
+            "place": "209 km WSW of Tofino, Canada"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2022-12-20T10:34:24.770Z",
+            "place": "15km WSW of Ferndale, CA"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2011-09-09T19:41:34.150Z",
+            "place": "66 km SW of Vernon, Canada"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2004-07-19T08:01:49.460Z",
+            "place": "62 km SW of Vernon, Canada"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2008-01-10T01:37:19.000Z",
+            "place": "242 km WNW of Bandon, Oregon"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1994-10-27T17:45:58.000Z",
+            "place": "248 km W of Bandon, Oregon"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2018-08-22T09:31:45.530Z",
+            "place": "272 km W of Bandon, Oregon"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1996-10-06T20:13:09.180Z",
+            "place": "144 km W of Tofino, Canada"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2012-11-08T02:01:50.630Z",
+            "place": "176 km WSW of Vernon, Canada"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2000-01-20T09:41:47.340Z",
+            "place": "238 km WNW of Bandon, Oregon"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2024-10-30T20:15:20.095Z",
+            "place": "267 km W of Bandon, Oregon"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2023-04-13T15:54:53.808Z",
+            "place": "237 km SW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2012-04-11T22:41:46.040Z",
+            "place": "266 km W of Bandon, Oregon"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2001-09-14T04:45:08.000Z",
+            "place": "211 km WSW of Tofino, Canada"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2001-01-11T00:04:03.000Z",
+            "place": "247 km SW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1999-07-02T11:45:31.290Z",
+            "place": "203 km SW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2025-09-26T06:45:28.067Z",
+            "place": "239 km W of Bandon, Oregon"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -984,6 +1208,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -999,9 +1228,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:809a8c3be32a57a92f67d852e4979f9ea2a77f4716a7d4c9819d66ec25d34880"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25057",
+    "geometryFingerprint": "68ee76f7402664235cce0478356efafbcc68f46ac2f6cb0fd18caf3008c50487",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -132.39296212895468,
+      40.350850138333904,
+      -123.6015094184676,
+      50.47315886774245
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:809a8c3be32a57a92f67d852e4979f9ea2a77f4716a7d4c9819d66ec25d34880"
 }

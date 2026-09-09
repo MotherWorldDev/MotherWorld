@@ -3,7 +3,7 @@
   "regionId": "eco_288",
   "regionName": "Western Java montane rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.830106+00:00",
+  "generatedAt": "2026-09-09T06:27:41.379986+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,120 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 18,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2022-12-08T00:50:55.572Z",
+            "place": "17 km NW of Ciranjang-hilir, Indonesia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2012-11-01T14:12:01.820Z",
+            "place": "10 km NE of Padalarang, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2022-12-03T09:49:40.213Z",
+            "place": "20 km ESE of Banjar, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2022-11-21T06:21:07.066Z",
+            "place": "11 km NE of Sukabumi, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-07-12T01:10:42.630Z",
+            "place": "4 km NE of Caringin, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-10-01T04:00:24.335Z",
+            "place": "16 km W of Sukabumi, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2000-10-25T17:42:22.640Z",
+            "place": "34 km WSW of Singaparna, Indonesia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1999-07-13T15:52:46.640Z",
+            "place": "26 km SE of Sukabumi, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-10-21T12:15:22.700Z",
+            "place": "21 km SSW of Banjar, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-05-28T02:42:27.150Z",
+            "place": "4 km NNE of Ciranjang-hilir, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-09-18T02:41:06.723Z",
+            "place": "15 km ESE of Banjar, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-03-10T10:18:04.505Z",
+            "place": "11 km W of Cicurug, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-12-12T02:23:10.090Z",
+            "place": "29 km SE of Sukabumi, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-07-17T10:59:09.690Z",
+            "place": "25 km WSW of Ciampea, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-02-26T06:29:35.440Z",
+            "place": "28 km W of Purwakarta, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2001-06-28T03:46:28.190Z",
+            "place": "17 km SSE of Majalengka, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2001-03-03T06:08:44.650Z",
+            "place": "32 km NW of Pelabuhanratu, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-03-16T00:02:36.190Z",
+            "place": "20 km SSE of Kuningan, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -192,9 +306,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c0e00340e08f6c9c199891c8585c46eee6bd98c8b5af2d8f754edeee123ed82b"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_288",
+    "geometryFingerprint": "00a10daeca90f2a4737a5bcc867a469559e19d1d1e5ec61cd6d5c73efc510e4d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      106.0642775790001,
+      -7.69476040995037,
+      110.60594157900005,
+      -6.512217035057374
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c0e00340e08f6c9c199891c8585c46eee6bd98c8b5af2d8f754edeee123ed82b"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_690",
   "regionName": "Altai montane forest and forest steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.768866+00:00",
+  "generatedAt": "2026-09-09T06:27:42.382370+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,80 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 10,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2006-06-15T06:49:48.830Z",
+            "place": "138 km SE of Altai, Mongolia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2020-03-20T03:03:13.676Z",
+            "place": "178 km WSW of Altai, Mongolia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-05-07T02:58:00.100Z",
+            "place": "56 km SSW of Ölgii, Mongolia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-11-21T16:59:47.950Z",
+            "place": "53 km S of Tashanta, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-10-31T09:06:24.500Z",
+            "place": "Western Mongolia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-11-01T14:02:48.210Z",
+            "place": "173 km WSW of Altai, Mongolia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2001-03-01T03:12:18.340Z",
+            "place": "171 km WSW of Altai, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-01-17T15:04:45.583Z",
+            "place": "197 km SSW of Altai, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-02-23T17:10:40.370Z",
+            "place": "185 km WSW of Altai, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-06-15T23:04:47.790Z",
+            "place": "144 km SE of Altai, Mongolia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -713,9 +787,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d4ffecb74805e9179978865a9dfe7765957448a0e59643f5687198cbf5329140"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_690",
+    "geometryFingerprint": "dd5592e964e3ff2f437e46f3d016c0db49772325880429b48478926ecc388eba",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      82.69912750800017,
+      44.50773612313088,
+      98.46974959400018,
+      51.69958993730225
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d4ffecb74805e9179978865a9dfe7765957448a0e59643f5687198cbf5329140"
 }

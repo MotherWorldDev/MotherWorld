@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20093",
   "regionName": "Central Somali Coast",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.171932+00:00",
+  "generatedAt": "2026-09-09T06:27:38.665186+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -78,6 +78,56 @@
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 3562.7482819327092,
+        "medianDepthM": 4217.0,
+        "p10DepthM": 622.0,
+        "p90DepthM": 5087.0,
+        "shallowestM": -0.0,
+        "deepestM": 5267.0,
+        "coveragePct": 99.97224098782925,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 6.345430139196932,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 6.403739537011369,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 15.94771649083928,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 71.30311383295242,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -147,6 +197,11 @@
       "id": "earthbyte_seafloor_tectonics",
       "label": "EarthByte / GPlates seafloor tectonic features",
       "version": "GPlates GeoData / staged release"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "ihfc_heat_flow",

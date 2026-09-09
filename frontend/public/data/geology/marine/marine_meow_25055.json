@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25055",
   "regionName": "North American Pacific Fijordland",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.139759+00:00",
+  "generatedAt": "2026-09-09T06:27:39.166740+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 1844.5771915366638,
+        "medianDepthM": 2441.0,
+        "p10DepthM": 90.0,
+        "p90DepthM": 3226.0,
+        "shallowestM": 1.0,
+        "deepestM": 3634.0,
+        "coveragePct": 99.15912662816802,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 22.284605587350626,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 12.570041575514988,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 45.06619257608569,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 20.0791602610487,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -281,6 +331,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 120,
+        "m6Plus": 21,
+        "m7Plus": 1,
+        "maxMagnitude": 7.5,
+        "events": [
+          {
+            "magnitude": 7.5,
+            "time": "2013-01-05T08:58:14.957Z",
+            "place": "110 km SW of Edna Bay, Alaska"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2004-06-28T09:49:51.366Z",
+            "place": "98 km WSW of Craig, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2009-11-17T15:30:47.440Z",
+            "place": "254 km SSW of Prince Rupert, Canada"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2008-01-05T11:01:06.110Z",
+            "place": "267 km WNW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2024-09-15T22:22:48.018Z",
+            "place": "271 km WNW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2008-01-05T11:44:48.170Z",
+            "place": "251 km WNW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2019-12-25T03:36:01.626Z",
+            "place": "203 km W of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2012-10-28T18:54:20.830Z",
+            "place": "237 km SW of Prince Rupert, Canada"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2019-07-04T04:30:44.424Z",
+            "place": "250 km WNW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2015-04-24T13:56:15.180Z",
+            "place": "282 km WNW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2012-10-30T02:49:02.270Z",
+            "place": "241 km SSW of Prince Rupert, Canada"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2001-02-17T20:11:30.000Z",
+            "place": "151 km SSW of Hydaburg, Alaska"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2013-09-03T20:19:06.340Z",
+            "place": "243 km WNW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2008-01-09T14:40:00.960Z",
+            "place": "Haida Gwaii Region, Canada"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2001-10-12T05:02:34.000Z",
+            "place": "225 km SSW of Prince Rupert, Canada"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2000-01-06T10:42:25.000Z",
+            "place": "35 km WSW of Elfin Cove, Alaska"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1998-08-30T11:33:33.000Z",
+            "place": "254 km W of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2019-12-23T20:56:23.555Z",
+            "place": "189 km W of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2019-12-23T19:49:43.086Z",
+            "place": "201 km W of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2013-09-04T00:23:11.290Z",
+            "place": "230 km WNW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1993-08-03T07:19:59.580Z",
+            "place": "269 km WNW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2024-01-12T07:46:21.171Z",
+            "place": "69 km WNW of Port Alexander, Alaska"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2013-01-31T09:53:40.320Z",
+            "place": "92 km SSW of Port Alexander, Alaska"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2008-08-28T12:37:35.070Z",
+            "place": "186 km WSW of Port McNeill, Canada"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2003-07-12T23:01:54.103Z",
+            "place": "47 km SSW of Port Alexander, Alaska"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2003-07-12T23:01:38.000Z",
+            "place": "122 km WSW of Hydaburg, Alaska"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2009-11-17T15:37:42.290Z",
+            "place": "260 km SSW of Prince Rupert, Canada"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2007-12-12T23:39:59.790Z",
+            "place": "259 km SSW of Prince Rupert, Canada"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2005-06-09T14:00:49.900Z",
+            "place": "Haida Gwaii Region, Canada"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1996-10-09T07:12:25.920Z",
+            "place": "203 km WSW of Port McNeill, Canada"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -830,6 +1054,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -845,9 +1074,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1ca820060e5af6d48ac2c8d489761945e3ac3250f4651ba82448cab175c7a6c6"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25055",
+    "geometryFingerprint": "4587d7c00c513bd904f27ca65e9bdccddc488ba484044989d7706b60fb8db2f0",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -139.11755012936032,
+      48.87407907302672,
+      -124.6375208332173,
+      59.19905668814588
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1ca820060e5af6d48ac2c8d489761945e3ac3250f4651ba82448cab175c7a6c6"
 }

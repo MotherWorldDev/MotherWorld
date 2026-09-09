@@ -3,7 +3,7 @@
   "regionId": "eco_294",
   "regionName": "Irrawaddy dry forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.855027+00:00",
+  "generatedAt": "2026-09-09T06:27:41.396627+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -34,6 +34,65 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "2003-09-21T18:16:13.410Z",
+            "place": "16 km SE of Taungdwingyi, Myanmar"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2009-09-21T19:38:42.330Z",
+            "place": "10 km SW of Yenangyaung, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-11-29T19:00:22.180Z",
+            "place": "39 km SE of Mawlaik, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-12-27T00:35:50.380Z",
+            "place": "32 km SSE of Mawlaik, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-12-07T06:56:33.610Z",
+            "place": "23 km SE of Mawlaik, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-07-17T01:04:44.150Z",
+            "place": "21 km NE of Chauk, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-01-17T02:53:03.930Z",
+            "place": "34 km WSW of Taungdwingyi, Myanmar"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -97,6 +156,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:967169bc32dfe332ede71fdbd7d484b8b1c6854c7ec61505b73304581fa8ae23"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_294",
+    "geometryFingerprint": "b9f394e52d1a9ece67ded445dee91d37777473fd01a7dd73e4e8e6b73a0c2416",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      94.52358260000015,
+      16.841601688348316,
+      97.86726359000015,
+      24.32994135319956
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:967169bc32dfe332ede71fdbd7d484b8b1c6854c7ec61505b73304581fa8ae23"
 }

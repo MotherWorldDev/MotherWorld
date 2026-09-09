@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20119",
   "regionName": "Southern Java",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.344799+00:00",
+  "generatedAt": "2026-09-09T06:27:38.754116+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 58.782108306884766,
           "p90MmYr": 105.69508361816406,
           "coveragePct": 30.727929343635243
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3252.2500473302734,
+        "medianDepthM": 3216.0,
+        "p10DepthM": 294.0,
+        "p90DepthM": 5640.0,
+        "shallowestM": -0.0,
+        "deepestM": 7167.0,
+        "coveragePct": 99.9389459574261,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 9.068076908978925,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 6.201319686858198,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 30.0260974487127,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 49.156545142160724,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 5.547960813289456,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -243,6 +293,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 937,
+        "m6Plus": 45,
+        "m7Plus": 4,
+        "maxMagnitude": 7.9,
+        "events": [
+          {
+            "magnitude": 7.9,
+            "time": "2000-06-04T16:28:26.170Z",
+            "place": "103 km S of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "1994-06-02T18:17:34.020Z",
+            "place": "249 km SSW of Kencong, Indonesia"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2001-02-13T19:28:30.260Z",
+            "place": "102 km SSE of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2009-09-02T07:55:01.050Z",
+            "place": "66 km SSW of Banjar, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2019-08-02T12:03:27.001Z",
+            "place": "152 km SW of Labuan, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2000-06-07T23:45:26.680Z",
+            "place": "98 km SSW of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2000-06-04T16:39:45.600Z",
+            "place": "95 km S of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2022-01-14T09:05:41.461Z",
+            "place": "80 km SW of Labuan, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1994-06-03T21:06:59.880Z",
+            "place": "235 km SSW of Kencong, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2002-06-27T05:50:35.110Z",
+            "place": "193 km WSW of Labuan, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1994-06-04T00:57:50.660Z",
+            "place": "275 km S of Kencong, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1999-08-14T00:16:52.290Z",
+            "place": "79 km SW of Bandar Lampung, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1997-03-17T08:05:48.410Z",
+            "place": "43 km SW of Labuan, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2021-02-10T12:52:27.224Z",
+            "place": "219 km SSW of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2005-05-10T01:09:05.100Z",
+            "place": "southwest of Sumatra, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1995-11-05T16:29:58.350Z",
+            "place": "99 km S of Pagar Alam, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2022-08-23T14:31:39.374Z",
+            "place": "119 km S of Pagar Alam, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2020-03-18T17:45:39.299Z",
+            "place": "249 km S of Nusa Dua, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2009-09-07T16:12:22.560Z",
+            "place": "250 km S of Pundong, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2000-09-22T18:22:03.150Z",
+            "place": "129 km S of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2000-06-06T09:58:06.770Z",
+            "place": "132 km SSW of Pagar Alam, Indonesia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1994-06-15T09:22:57.220Z",
+            "place": "221 km SSW of Gambiran Satu, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2024-04-27T16:29:50.643Z",
+            "place": "91 km S of Banjar, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2016-04-06T14:45:29.620Z",
+            "place": "111 km S of Banjar, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2014-01-25T05:14:18.510Z",
+            "place": "39 km S of Kroya, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2012-09-03T18:23:05.230Z",
+            "place": "251 km SSW of Jimbaran, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2011-10-13T03:16:30.160Z",
+            "place": "88 km SW of Jimbaran, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2011-08-22T20:12:20.950Z",
+            "place": "163 km SW of Bandar Lampung, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2009-10-16T09:52:50.830Z",
+            "place": "69 km WSW of Labuan, Indonesia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2006-07-19T10:57:36.880Z",
+            "place": "51 km WSW of Labuan, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -309,6 +533,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -322,6 +551,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:afb792cd46bedc44ccd0fce3717f2810f30ea9ab37613e2781fceff6b791b36a"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20119",
+    "geometryFingerprint": "2922edd39146aeba53ebb89815465b365f2e4c0d5952a55972ae7bf62404c4be",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      99.23780040666323,
+      -12.271792433360051,
+      115.89643886221361,
+      -3.962043298239421
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:afb792cd46bedc44ccd0fce3717f2810f30ea9ab37613e2781fceff6b791b36a"
 }

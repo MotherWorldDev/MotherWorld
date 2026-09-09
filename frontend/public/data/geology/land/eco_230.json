@@ -3,7 +3,7 @@
   "regionId": "eco_230",
   "regionName": "Eastern Java-Bali rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.520379+00:00",
+  "generatedAt": "2026-09-09T06:27:41.223814+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -28,6 +28,85 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 11,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "1998-09-28T13:34:30.490Z",
+            "place": "8 km WSW of Sumberpucung, Indonesia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2006-05-26T22:53:58.920Z",
+            "place": "10 km E of Pundong, Indonesia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2026-01-27T01:20:42.659Z",
+            "place": "5 km SW of Ponorogo, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2017-03-21T23:10:25.150Z",
+            "place": "6 km ENE of Ubud, Indonesia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2004-01-25T09:45:55.350Z",
+            "place": "14 km NNE of Ngunut, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-04-10T23:54:58.852Z",
+            "place": "22 km S of Sumberpucung, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-06-11T23:55:32.018Z",
+            "place": "36 km SW of Trenggalek, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-07-24T01:29:12.731Z",
+            "place": "17 km S of Muncar, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-12-31T13:12:49.520Z",
+            "place": "20 km S of Trenggalek, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-05-10T19:01:12.470Z",
+            "place": "22 km SE of Dampit, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-03-13T10:50:11.150Z",
+            "place": "11 km WSW of Madiun, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -159,6 +238,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6ee32dec53510897c1af9b5e11d508460b7deacac24f2ff637aaccaabcb99e7c"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_230",
+    "geometryFingerprint": "4796b7d05fdcd7c04f75d5f289e5f3186636e7e841c83578181272a302193384",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      110.26049753200009,
+      -8.862102700929034,
+      115.8716425890003,
+      -5.727855634827243
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6ee32dec53510897c1af9b5e11d508460b7deacac24f2ff637aaccaabcb99e7c"
 }

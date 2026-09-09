@@ -3,7 +3,7 @@
   "regionId": "lake_nicaragua",
   "regionName": "Lake Nicaragua",
   "kind": "lakes",
-  "generatedAt": "2026-09-08T09:35:33.722767+00:00",
+  "generatedAt": "2026-09-09T06:27:42.947678+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -23,6 +23,70 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2005-08-03T11:03:15.130Z",
+            "place": "6 km NNW of Cárdenas, Nicaragua"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2005-10-17T21:59:22.770Z",
+            "place": "19 km NNE of Belén, Nicaragua"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1997-11-06T17:29:07.920Z",
+            "place": "19 km NNW of Moyogalpa, Nicaragua"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-05-26T01:02:36.520Z",
+            "place": "5 km SSW of Moyogalpa, Nicaragua"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-04-06T06:39:05.997Z",
+            "place": "14 km NW of Moyogalpa, Nicaragua"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2014-10-07T04:28:55.660Z",
+            "place": "4 km SSW of Moyogalpa, Nicaragua"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-03-13T07:57:56.828Z",
+            "place": "8 km SE of San Jorge, Nicaragua"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-12-10T13:13:40.770Z",
+            "place": "15 km N of Potosí, Nicaragua"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     }
   },
@@ -31,6 +95,30 @@
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:0b2441151d4ac3bc1f9dc9413e36c1b95eb96a19bc708ed5c5375ce2c53af7b6"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "lake_nicaragua",
+    "geometryFingerprint": "740c8d51fe5f12bb0963239c4d3589515761f1e65535d459a1cffb3fcd7905e2",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -85.94471544053796,
+      11.02847221147034,
+      -84.76776367187462,
+      12.11954642949016
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:0b2441151d4ac3bc1f9dc9413e36c1b95eb96a19bc708ed5c5375ce2c53af7b6"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_557",
   "regionName": "Sierra Madre de Oaxaca pine-oak forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.144420+00:00",
+  "generatedAt": "2026-09-09T06:27:45.520607+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.99999999999983,
@@ -64,6 +64,62 @@
         "version": "v1.0",
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2025-08-02T17:58:45.419Z",
+            "place": "4 km S of Xagacía, Mexico"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2022-03-06T03:29:20.344Z",
+            "place": "3 km S of Zacatal, Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2015-06-28T15:54:41.990Z",
+            "place": "11 km NE of La Blanca, Mexico"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1996-04-01T03:43:03.160Z",
+            "place": "16 km ENE of Nejapa de Madero, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-11-22T08:11:15.760Z",
+            "place": "3 km WSW of Santiago Matatlán, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-11-06T20:14:02.560Z",
+            "place": "11 km ESE of Nejapa de Madero, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -155,9 +211,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:008778d35cb9048e38b3bb12cc09cf42168508223915da4fe4501054d4e8355a"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_557",
+    "geometryFingerprint": "1378308b137ff6bd3eb1c353288390308149f72509ee291fff9d49f276a241b2",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -97.38581059099994,
+      16.39943936348105,
+      -94.39696456499996,
+      18.902389647921165
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:008778d35cb9048e38b3bb12cc09cf42168508223915da4fe4501054d4e8355a"
 }

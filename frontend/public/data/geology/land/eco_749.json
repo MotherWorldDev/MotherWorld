@@ -3,7 +3,7 @@
   "regionId": "eco_749",
   "regionName": "Altai alpine meadow and tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.080913+00:00",
+  "generatedAt": "2026-09-09T06:27:42.558682+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -184,6 +184,145 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 23,
+        "m6Plus": 3,
+        "m7Plus": 1,
+        "maxMagnitude": 7.3,
+        "events": [
+          {
+            "magnitude": 7.3,
+            "time": "2003-09-27T11:33:25.080Z",
+            "place": "29 km S of Aktash, Russia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2003-10-01T01:03:25.240Z",
+            "place": "9 km S of Aktash, Russia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2003-09-27T18:52:46.980Z",
+            "place": "23 km S of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2025-02-15T01:48:11.119Z",
+            "place": "32 km W of Kosh-Agach, Russia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1996-03-12T18:43:42.810Z",
+            "place": "65 km N of Altay, China"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-09-27T13:16:43.310Z",
+            "place": "29 km SSE of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-01-24T07:35:39.410Z",
+            "place": "18 km ENE of Belyashi, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-09-27T20:30:23.950Z",
+            "place": "32 km SSE of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-09-27T11:58:06.670Z",
+            "place": "45 km SSE of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-11-17T01:35:47.510Z",
+            "place": "13 km SSW of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-10-17T05:30:20.530Z",
+            "place": "13 km S of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-10-13T05:26:37.720Z",
+            "place": "5 km SSW of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-04-04T15:07:31.850Z",
+            "place": "25 km SSE of Zaysan, Kazakhstan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-11-11T22:42:30.750Z",
+            "place": "20 km SSE of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-10-23T00:25:45.950Z",
+            "place": "25 km WSW of Kosh-Agach, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-09-29T15:27:01.090Z",
+            "place": "35 km SSE of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-09-27T13:38:37.140Z",
+            "place": "35 km SSE of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-05-25T02:35:14.181Z",
+            "place": "28 km ESE of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-01-24T16:40:31.940Z",
+            "place": "32 km WSW of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-10-09T16:06:02.410Z",
+            "place": "25 km SSE of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-10-01T05:44:04.270Z",
+            "place": "23 km SSW of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-10-01T03:58:44.700Z",
+            "place": "32 km SSE of Aktash, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-09-27T15:31:21.980Z",
+            "place": "26 km SSE of Aktash, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -422,9 +561,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:73f31f1e3029a12e5419309a4b85020ab39cce9755d44416e6a435a7c3899983"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_749",
+    "geometryFingerprint": "1cedd5a9671d738588f8ef0746131430a4080034a1f530e88358a5b5f4fc2eaf",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      81.24533065800011,
+      46.10706058272164,
+      93.44265756200008,
+      50.59199016304753
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:73f31f1e3029a12e5419309a4b85020ab39cce9755d44416e6a435a7c3899983"
 }

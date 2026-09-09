@@ -3,7 +3,7 @@
   "regionId": "eco_282",
   "regionName": "Sundarbans freshwater swamp forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.070421+00:00",
+  "generatedAt": "2026-09-09T06:27:44.320182+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 98.5634047396902,
@@ -42,6 +42,37 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2026-02-27T07:52:28.744Z",
+            "place": "24 km SSE of Sātkhira, Bangladesh"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -49,6 +80,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b0aa181eea5480dc0e384903769a29cd0295856c5581d748630098287e96d377"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_282",
+    "geometryFingerprint": "e206876d13ec9b9878ff85f0c824493bb5ee78911610c7a230e8274daaf926e5",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      88.14193763000009,
+      21.883656924839045,
+      90.5144346560001,
+      23.46538173503187
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b0aa181eea5480dc0e384903769a29cd0295856c5581d748630098287e96d377"
 }

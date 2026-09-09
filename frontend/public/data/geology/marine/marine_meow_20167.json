@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20167",
   "regionName": "Chiapas-Nicaragua",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.608554+00:00",
+  "generatedAt": "2026-09-09T06:27:38.906938+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 179.1009063720703,
           "coveragePct": 55.95264700347063
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 2744.552090270184,
+        "medianDepthM": 3621.0,
+        "p10DepthM": 66.0,
+        "p90DepthM": 4480.0,
+        "shallowestM": 1.0,
+        "deepestM": 6674.0,
+        "coveragePct": 99.81647848365381,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 21.013682661702887,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.455315596071564,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 9.526097588782697,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 61.018772282003845,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.9861318714390156,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -91,6 +141,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 737,
+        "m6Plus": 73,
+        "m7Plus": 8,
+        "maxMagnitude": 8.2,
+        "events": [
+          {
+            "magnitude": 8.2,
+            "time": "2017-09-08T04:49:19.180Z",
+            "place": "2017 Tehuantepec, Mexico Earthquake"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2001-01-13T17:33:32.380Z",
+            "place": "28 km SSW of Puerto El Triunfo, El Salvador"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2012-11-07T16:35:46.930Z",
+            "place": "33 km S of Champerico, Guatemala"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2026-07-17T14:48:39.881Z",
+            "place": "60 km WSW of Puerto Madero, Mexico"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2014-10-14T03:51:34.460Z",
+            "place": "74 km S of Intipucá, El Salvador"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2012-08-27T04:37:19.430Z",
+            "place": "126 km S of Puerto El Triunfo, El Salvador"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "1993-09-10T19:12:54.620Z",
+            "place": "24 km W of Puerto Madero, Mexico"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2004-10-09T21:26:53.690Z",
+            "place": "43 km SSW of Masachapa, Nicaragua"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2016-11-24T18:43:47.710Z",
+            "place": "156 km SSW of Puerto El Triunfo, El Salvador"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2014-07-07T11:23:54.780Z",
+            "place": "4 km W of Puerto Madero, Mexico"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2017-06-22T12:31:03.490Z",
+            "place": "28 km SW of Puerto San José, Guatemala"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1993-09-03T12:35:00.270Z",
+            "place": "38 km SW of Puerto Madero, Mexico"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2019-02-01T16:14:12.329Z",
+            "place": "5 km SW of Puerto Madero, Mexico"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2008-10-16T19:41:25.720Z",
+            "place": "19 km SW of Brisas Barra de Suchiate, Mexico"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2007-06-13T19:29:40.180Z",
+            "place": "43 km SSE of Iztapa, Guatemala"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1998-08-23T13:57:15.380Z",
+            "place": "130 km SW of Corinto, Nicaragua"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1996-03-03T16:37:31.520Z",
+            "place": "30 km WSW of Villa El Carmen, Nicaragua"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2022-04-21T07:42:46.508Z",
+            "place": "55 km WSW of Masachapa, Nicaragua"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2019-05-30T09:03:32.337Z",
+            "place": "32 km S of La Libertad, El Salvador"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2015-12-17T19:49:53.050Z",
+            "place": "4 km W of Manuel Ávila Camacho (Ponte Duro), Mexico"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2005-07-02T02:16:43.700Z",
+            "place": "32 km W of San Juan del Sur, Nicaragua"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1996-03-03T14:55:11.860Z",
+            "place": "39 km WSW of Masachapa, Nicaragua"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1995-06-14T11:11:47.400Z",
+            "place": "120 km SW of Jiquilillo, Nicaragua"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2023-07-19T00:22:07.656Z",
+            "place": "43 km S of Intipucá, El Salvador"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2021-09-22T09:57:07.023Z",
+            "place": "80 km SW of Jiquilillo, Nicaragua"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2013-06-15T17:34:27.810Z",
+            "place": "44 km W of Masachapa, Nicaragua"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2012-11-11T22:14:59.240Z",
+            "place": "32 km SW of Champerico, Guatemala"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2003-01-21T02:46:47.740Z",
+            "place": "33 km S of Puerto San José, Guatemala"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1993-09-30T18:27:50.810Z",
+            "place": "90 km S of San Francisco del Mar Viejo, Mexico"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2026-07-17T15:20:06.584Z",
+            "place": "96 km SW of Puerto Madero, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -158,6 +382,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -166,6 +395,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:cd2289e70077bb08ffe7300ada428c4c14cffb457f6c18e53ca3d231e93d2d25"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20167",
+    "geometryFingerprint": "08db1a080a29227b539ff5ed54e08eb7fad537990c6521ace3b2387ebf94dc9b",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -96.02489426212526,
+      9.937154214619333,
+      -85.63378690968375,
+      16.417534951025516
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:cd2289e70077bb08ffe7300ada428c4c14cffb457f6c18e53ca3d231e93d2d25"
 }

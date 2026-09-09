@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20126",
   "regionName": "Palawan/North Borneo",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.401334+00:00",
+  "generatedAt": "2026-09-09T06:27:38.778875+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 40.26618576049805,
           "coveragePct": 38.456820797726984
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 1317.453931214159,
+        "medianDepthM": 693.0,
+        "p10DepthM": 22.0,
+        "p90DepthM": 3841.0,
+        "shallowestM": -0.0,
+        "deepestM": 5145.0,
+        "coveragePct": 98.96893827809637,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 37.67570906285289,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 16.26892876651438,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 29.07694711821591,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 16.978415052416825,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -91,6 +141,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 51,
+        "m6Plus": 7,
+        "m7Plus": 1,
+        "maxMagnitude": 7.1,
+        "events": [
+          {
+            "magnitude": 7.1,
+            "time": "2026-02-22T16:57:46.738Z",
+            "place": "57 km NNW of Kota Belud, Malaysia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2011-07-11T20:47:04.300Z",
+            "place": "33 km WSW of Cayhagan, Philippines"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2014-05-15T10:16:42.020Z",
+            "place": "51 km WSW of Alim, Philippines"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2014-12-29T09:29:37.390Z",
+            "place": "122 km NNW of Siocon, Philippines"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1995-03-06T18:43:40.150Z",
+            "place": "98 km SE of Tarakan, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2016-04-13T18:21:52.730Z",
+            "place": "15 km NW of Siocon, Philippines"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1994-04-27T14:11:45.150Z",
+            "place": "99 km NNW of Buluang, Philippines"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2009-09-18T06:23:53.490Z",
+            "place": "41 km WSW of Batasan, Philippines"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2003-07-11T13:53:24.900Z",
+            "place": "54 km WSW of Alim, Philippines"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1997-05-12T13:45:26.390Z",
+            "place": "43 km SW of Magdalena, Philippines"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2019-05-04T01:05:09.527Z",
+            "place": "8 km SW of San Agustin, Philippines"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2015-02-25T01:31:41.500Z",
+            "place": "81 km WSW of Pandan Niog, Philippines"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2006-03-27T23:43:39.000Z",
+            "place": "0 km NNE of Semirara, Philippines"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-04-02T19:32:25.538Z",
+            "place": "56 km NNW of Kota Kinabalu, Malaysia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2019-01-07T03:11:54.280Z",
+            "place": "27 km NW of Siocon, Philippines"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2001-07-31T16:41:30.930Z",
+            "place": "46 km E of Balabac, Philippines"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1994-11-27T18:27:08.010Z",
+            "place": "92 km NNW of Sanga-Sanga, Philippines"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1993-10-13T00:52:33.630Z",
+            "place": "64 km NW of Malayal, Philippines"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2014-06-09T21:45:13.190Z",
+            "place": "30 km WNW of Linaon, Philippines"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2011-07-12T08:56:15.400Z",
+            "place": "13 km WSW of Sipalay, Philippines"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1996-11-09T06:11:14.550Z",
+            "place": "34 km WSW of Magdalena, Philippines"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-07-11T22:49:55.810Z",
+            "place": "22 km WSW of Cayhagan, Philippines"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-07-11T21:04:37.620Z",
+            "place": "28 km WSW of Alim, Philippines"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-07-11T20:54:41.170Z",
+            "place": "30 km WSW of Maricalom, Philippines"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2005-05-23T19:58:09.660Z",
+            "place": "54 km NW of Taman Rajawali, Malaysia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2002-11-27T00:17:20.120Z",
+            "place": "29 km SW of Adela, Philippines"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1998-12-29T21:34:28.270Z",
+            "place": "208 km NE of Bontang, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1998-11-23T04:58:54.680Z",
+            "place": "45 km SW of Tayaman, Philippines"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-02-28T00:45:28.700Z",
+            "place": "74 km NW of Siocon, Philippines"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2024-06-11T06:58:36.087Z",
+            "place": "97 km SE of Caramay, Philippines"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -310,6 +534,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -320,9 +549,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:bfd6085093109772699c455494b5948ab1531c681dbffe6954293c5b32dd4dce"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20126",
+    "geometryFingerprint": "bcf2922906f856283d4dce21c60d13e71944bd8ae1b8cc8530be7f59f5afc10c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      112.104760996184,
+      0.091135719220056,
+      122.38814069810307,
+      13.961579265364522
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:bfd6085093109772699c455494b5948ab1531c681dbffe6954293c5b32dd4dce"
 }

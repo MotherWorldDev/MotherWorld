@@ -3,8 +3,60 @@
   "regionId": "marine_meow_25010",
   "regionName": "High Arctic Archipelago",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:41.802196+00:00",
+  "generatedAt": "2026-09-09T06:27:40.754038+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 715.185405860063,
+        "medianDepthM": 399.0,
+        "p10DepthM": 99.0,
+        "p90DepthM": 1976.0,
+        "shallowestM": -0.0,
+        "deepestM": 3072.0,
+        "coveragePct": 98.92812019083263,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 22.39879009310762,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 51.3485522944698,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 26.227430359615596,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.02522725280698595,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "geothermal": {
       "measurementCount": 68,
       "medianMwM2": 57.5,
@@ -60,13 +112,123 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 11,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2008-11-17T12:55:22.790Z",
+            "place": "Arctic Ocean"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2008-10-07T10:00:48.120Z",
+            "place": "Arctic Ocean"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2008-11-18T03:59:48.660Z",
+            "place": "Arctic Ocean"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-11-17T13:40:11.510Z",
+            "place": "Arctic Ocean"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-10-08T07:57:34.940Z",
+            "place": "Arctic Ocean"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-11-18T04:52:51.330Z",
+            "place": "Arctic Ocean"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-08-14T19:35:37.940Z",
+            "place": "Melville Island region, Nunavut, Canada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-11-18T04:10:35.240Z",
+            "place": "Arctic Ocean"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-01-01T09:28:08.760Z",
+            "place": "Arctic Ocean"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-04-15T06:54:53.360Z",
+            "place": "Arctic Ocean"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-11-17T13:16:50.100Z",
+            "place": "Arctic Ocean"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:671437636c76f527cbb5f1cfc754c400982d1317416d1e356fa551c7ed37951f"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25010",
+    "geometryFingerprint": "89e0f73986634bf6643364adc8313eb499b3b0552cf0134208acb045036e4ad2",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -126.06864722381124,
+      75.05866598831831,
+      -55.14389358966266,
+      86.3990031069753
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:671437636c76f527cbb5f1cfc754c400982d1317416d1e356fa551c7ed37951f"
 }

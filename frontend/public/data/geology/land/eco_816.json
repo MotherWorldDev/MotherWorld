@@ -3,7 +3,7 @@
   "regionId": "eco_816",
   "regionName": "Central Afghan Mountains xeric woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.489863+00:00",
+  "generatedAt": "2026-09-09T06:27:42.829140+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -197,6 +197,90 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2023-10-15T03:36:00.454Z",
+            "place": "34 km NNW of Herāt, Afghanistan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2023-10-07T06:41:03.327Z",
+            "place": "32 km NNE of Zindah Jān, Afghanistan"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2023-10-07T07:40:30.084Z",
+            "place": "35 km NNW of Herāt, Afghanistan"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2026-02-20T13:09:53.523Z",
+            "place": "37 km NE of Bāzārak, Afghanistan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2023-10-15T03:56:28.685Z",
+            "place": "26 km NNW of Herāt, Afghanistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-03-02T09:58:27.468Z",
+            "place": "34 km NE of B?z?rak, Afghanistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-10-09T13:30:46.443Z",
+            "place": "33 km NNW of Herāt, Afghanistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-06-24T23:04:44.289Z",
+            "place": "10 km SW of Charikar, Afghanistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-10-28T19:27:39.308Z",
+            "place": "23 km NNW of Herāt, Afghanistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-10-11T00:52:45.437Z",
+            "place": "24 km NNW of Herāt, Afghanistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-10-21T08:03:59.150Z",
+            "place": "62 km ESE of Qal?t, Afghanistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2001-06-01T14:00:43.620Z",
+            "place": "14 km ENE of Jabal os Saraj, Afghanistan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "surfaceGeology": {
@@ -367,9 +451,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:39543f585e05e3e480c083c07557c3deb8ba1897e94b7e25b4d9cbe8862afcc9"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_816",
+    "geometryFingerprint": "ebe58e80643136a83526c3940f52e449688c5c0c407dd8f462db740c50ece4b6",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      60.88005853900006,
+      30.95243863660485,
+      70.20010355400014,
+      35.66279246397599
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:39543f585e05e3e480c083c07557c3deb8ba1897e94b7e25b4d9cbe8862afcc9"
 }

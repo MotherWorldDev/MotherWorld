@@ -3,7 +3,7 @@
   "regionId": "eco_453",
   "regionName": "Chimalapas montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.118578+00:00",
+  "generatedAt": "2026-09-09T06:27:45.049527+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000009,
@@ -35,6 +35,57 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "1994-03-12T23:46:00.200Z",
+            "place": "30 km NNE of Santo Domingo Zanatepec, Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2024-08-05T19:02:59.080Z",
+            "place": "17 km NW of Emiliano Zapata, Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-05-23T19:20:39.540Z",
+            "place": "9 km WSW of Emiliano Zapata, Mexico"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-10-01T21:43:03.070Z",
+            "place": "21 km WNW of Emiliano Zapata, Mexico"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-06-22T01:32:06.890Z",
+            "place": "14 km W of Emiliano Zapata, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -42,6 +93,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:64f35136b5956fd9ee9c9d48c2095df93be53f95b2caeb5ff28707336936d8db"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_453",
+    "geometryFingerprint": "d0acb06bdd8960feecef0cfedc4c1c6523b5d3eaab8b192a9e4ef0d23b245e8f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -94.54457054999993,
+      16.364271580492225,
+      -93.83906559199987,
+      16.935589644322032
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:64f35136b5956fd9ee9c9d48c2095df93be53f95b2caeb5ff28707336936d8db"
 }

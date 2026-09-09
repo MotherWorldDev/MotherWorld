@@ -3,7 +3,7 @@
   "regionId": "eco_709",
   "regionName": "Tian Shan montane conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.889678+00:00",
+  "generatedAt": "2026-09-09T06:27:42.440977+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -82,6 +82,50 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2016-12-08T05:15:04.600Z",
+            "place": "58 km SSE of Shihezi, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-03-06T21:44:46.840Z",
+            "place": "67 km SSE of Shihezi, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-02-08T07:57:22.640Z",
+            "place": "52 km SSE of Shihezi, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-09-24T07:57:14.480Z",
+            "place": "27 km ESE of Kadzhi-Say, Kyrgyzstan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -237,6 +281,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5b80d90e84edbee3ca9da988f550cbfc0a539ea63bab87d991395c3b7a1ba408"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_709",
+    "geometryFingerprint": "17938472f6ad4fff2c237cf04c4e944c73a4713e0646fc097cff4c403e3e00c2",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      71.90879056000011,
+      41.8572122060225,
+      94.29364755000006,
+      44.233070375023196
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5b80d90e84edbee3ca9da988f550cbfc0a539ea63bab87d991395c3b7a1ba408"
 }

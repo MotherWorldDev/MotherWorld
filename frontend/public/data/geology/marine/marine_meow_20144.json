@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20144",
   "regionName": "Exmouth to Broome",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:34.432386+00:00",
+  "generatedAt": "2026-09-09T06:27:40.358647+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 620.2535348005711,
+        "medianDepthM": 231.0,
+        "p10DepthM": 35.0,
+        "p90DepthM": 1786.0,
+        "shallowestM": 1.0,
+        "deepestM": 3649.0,
+        "coveragePct": 99.92073906687251,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 47.8194003607813,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 24.877260608516526,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 26.602721131760187,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.7006178989419805,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "tectonics": {
       "faults": {
         "count": 12,
@@ -89,6 +141,70 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "2019-07-14T05:39:23.420Z",
+            "place": "198 km W of Cable Beach, Australia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2021-01-29T19:47:55.783Z",
+            "place": "northwest of Australia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-04-17T18:41:18.460Z",
+            "place": "226 km N of Exmouth, Australia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2011-12-05T19:10:00.000Z",
+            "place": "55 km NNE of Exmouth, Australia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-06-24T06:57:03.114Z",
+            "place": "203 km W of Cable Beach, Australia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-07-14T23:01:36.511Z",
+            "place": "207 km W of Cable Beach, Australia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2002-02-08T09:01:47.700Z",
+            "place": "198 km SSE of Kupang, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-12-11T02:15:19.310Z",
+            "place": "144 km SSE of Kupang, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -150,6 +266,11 @@
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -158,6 +279,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3c25cdb0d41abb4a4c7b8ed252105296ca02e1184bdca9c3bdf9434a13143d50"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20144",
+    "geometryFingerprint": "c5eb1f42b90c4d9af855d4986ce9278adc3bb9a449f3893fe8b0b2a9fb73c84f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      112.63239371266607,
+      -22.51659334135359,
+      125.37927237360819,
+      -11.053551978069335
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3c25cdb0d41abb4a4c7b8ed252105296ca02e1184bdca9c3bdf9434a13143d50"
 }

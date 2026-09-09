@@ -3,7 +3,7 @@
   "regionId": "eco_246",
   "regionName": "Mindanao montane rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.630946+00:00",
+  "generatedAt": "2026-09-09T06:27:41.282446+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -64,6 +64,100 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 14,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "2019-06-05T20:41:49.574Z",
+            "place": "9 km E of Kulaman, Philippines"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2004-02-26T17:25:56.190Z",
+            "place": "9 km NNW of Josefina, Philippines"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2023-03-05T20:43:02.682Z",
+            "place": "10 km SSE of Bantacan, Philippines"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-12-20T22:08:28.990Z",
+            "place": "20 km WSW of Parang, Philippines"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-12-28T01:35:11.401Z",
+            "place": "12 km ENE of Suyan, Philippines"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2014-09-20T04:26:11.520Z",
+            "place": "7 km NE of Dolo, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-10-20T08:55:32.694Z",
+            "place": "7 km N of Lambayong, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-03-01T03:15:53.310Z",
+            "place": "4 km ENE of Limot, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-06-11T08:37:45.820Z",
+            "place": "15 km SE of Ragandang, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-07-31T19:34:27.440Z",
+            "place": "7 km ENE of Anticala, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-09-08T13:49:16.791Z",
+            "place": "15 km ENE of Suyan, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-03-15T07:20:01.010Z",
+            "place": "4 km NNW of San Miguel, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-04-26T15:09:49.570Z",
+            "place": "10 km SE of Suyan, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1998-12-14T15:39:39.410Z",
+            "place": "14 km WSW of Caburan, Philippines"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -296,9 +390,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4e3682df5ba762fa44f7d95edb2812345d66b3f207e32a5721d4db8524acca04"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_246",
+    "geometryFingerprint": "5b9443e89591b66e3960b545684e9dbdef6c5e8860cab66af7ba44b19f6943a8",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      123.50702665300011,
+      5.731016534824134,
+      126.44568653700013,
+      9.449748964444554
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4e3682df5ba762fa44f7d95edb2812345d66b3f207e32a5721d4db8524acca04"
 }

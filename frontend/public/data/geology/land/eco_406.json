@@ -3,7 +3,7 @@
   "regionId": "eco_406",
   "regionName": "Aleutian Islands tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.105577+00:00",
+  "generatedAt": "2026-09-09T06:27:44.847551+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 38.55437730685573,
@@ -97,6 +97,152 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 24,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.7,
+        "events": [
+          {
+            "magnitude": 6.7,
+            "time": "2010-07-18T05:56:44.930Z",
+            "place": "66 km W of Nikolski, Alaska"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2007-12-21T07:24:34.030Z",
+            "place": "171 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2010-07-18T19:48:04.540Z",
+            "place": "59 km WSW of Nikolski, Alaska"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2006-09-01T12:04:22.170Z",
+            "place": "13 km NE of Dutch Harbor, Alaska"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2010-07-14T11:01:27.240Z",
+            "place": "36 km E of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2024-02-28T15:50:21.854Z",
+            "place": "260 km W of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2015-01-18T04:47:38.080Z",
+            "place": "260 km W of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2006-01-07T02:23:43.590Z",
+            "place": "Near Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-11-12T09:46:16.510Z",
+            "place": "64 km WSW of Nikolski, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-07-26T00:58:42.420Z",
+            "place": "2 km SW of Atka, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2002-12-10T05:32:57.810Z",
+            "place": "34 km SW of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-02-16T00:00:15.450Z",
+            "place": "22 km SSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2014-10-22T10:16:19.980Z",
+            "place": "30 km SW of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2014-07-03T04:43:42.140Z",
+            "place": "Rat Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-03-26T23:02:26.260Z",
+            "place": "Rat Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-11-04T02:54:13.940Z",
+            "place": "41 km NE of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-03-26T20:16:50.760Z",
+            "place": "280 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1998-01-16T13:47:11.030Z",
+            "place": "10 km W of Akutan, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-08-12T18:49:05.420Z",
+            "place": "41 km ENE of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2014-06-23T21:05:55.550Z",
+            "place": "Rat Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-08-20T19:26:53.790Z",
+            "place": "32 km SW of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-02-20T15:10:48.320Z",
+            "place": "78 km SW of Unalaska, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-11-20T00:54:14.390Z",
+            "place": "183 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-12-05T02:36:10.260Z",
+            "place": "22 km ESE of Atka, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -540,9 +686,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:70a0decabf797fb629bd5320fb5206a95077ea33eed1a305c5e94218131c9c12"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_406",
+    "geometryFingerprint": "4b2b51d07d3ee03a3686dcb396215332b054243ce8873e322373a7068232f59d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.14735526999988,
+      51.22129708119552,
+      179.7739067420001,
+      57.24244438321298
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:70a0decabf797fb629bd5320fb5206a95077ea33eed1a305c5e94218131c9c12"
 }

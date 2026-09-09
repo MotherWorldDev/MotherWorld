@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20088",
   "regionName": "Southern Red Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.142662+00:00",
+  "generatedAt": "2026-09-09T06:27:38.646644+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -79,6 +79,56 @@
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
       },
+      "bathymetry": {
+        "meanDepthM": 295.71725244913097,
+        "medianDepthM": 68.0,
+        "p10DepthM": 9.0,
+        "p90DepthM": 895.0,
+        "shallowestM": 1.0,
+        "deepestM": 2753.0,
+        "coveragePct": 99.57809136412936,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 61.40349735851494,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 30.401012828550225,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 8.195489812934845,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      },
       "hydrothermal": {
         "ventFieldCount": 2,
         "confirmedOrInferredActive": 2,
@@ -143,6 +193,140 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 22,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "1993-03-13T17:12:26.200Z",
+            "place": "164 km ENE of Saw?kin, Sudan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2013-07-08T15:30:28.060Z",
+            "place": "137 km W of Faras?n, Saudi Arabia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-12-23T18:44:21.980Z",
+            "place": "179 km ENE of Tok?r, Sudan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-05-25T22:18:22.160Z",
+            "place": "236 km WSW of Al Maj?ridah, Saudi Arabia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1996-11-02T13:50:33.300Z",
+            "place": "183 km ENE of Tok?r, Sudan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-03-16T11:59:26.460Z",
+            "place": "157 km ENE of Saw?kin, Sudan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-03-12T04:24:19.320Z",
+            "place": "157 km ENE of Saw?kin, Sudan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-07-29T12:04:25.042Z",
+            "place": "110 km W of Farasān, Saudi Arabia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1993-03-23T00:59:32.780Z",
+            "place": "152 km ENE of Saw?kin, Sudan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-03-22T20:51:37.640Z",
+            "place": "153 km ENE of Saw?kin, Sudan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-03-13T13:59:59.160Z",
+            "place": "154 km NE of Tok?r, Sudan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-04-28T00:37:18.319Z",
+            "place": "30 km ENE of Massawa, Eritrea"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-09-11T19:06:57.597Z",
+            "place": "128 km NE of Massawa, Eritrea"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-03-06T19:54:12.082Z",
+            "place": "215 km W of Ad Darb, Saudi Arabia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-08-09T09:11:06.970Z",
+            "place": "171 km ENE of Tok?r, Sudan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-01-01T01:39:21.900Z",
+            "place": "179 km WNW of Faras?n, Saudi Arabia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-05-14T22:34:34.680Z",
+            "place": "106 km WNW of Al ?udaydah, Yemen"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-03-20T06:05:02.990Z",
+            "place": "163 km ENE of Saw?kin, Sudan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-03-15T01:38:13.330Z",
+            "place": "153 km ENE of Saw?kin, Sudan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-03-14T08:12:13.250Z",
+            "place": "161 km ENE of Saw?kin, Sudan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-03-12T23:32:46.490Z",
+            "place": "149 km ENE of Saw?kin, Sudan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-03-11T08:19:46.140Z",
+            "place": "149 km ENE of Saw?kin, Sudan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -215,6 +399,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -228,6 +417,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:2fd43df794ef459172b3f88826ca2fb05df8206003e5739d0bf6ed25d8a734d3"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20088",
+    "geometryFingerprint": "8ed3f96e0590eb0099ee4d26f2a25525905ef9b049b6a36a3433e47b88a86f5a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      37.30463603063283,
+      13.14644945421948,
+      43.291666667000015,
+      20.32226435074694
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:2fd43df794ef459172b3f88826ca2fb05df8206003e5739d0bf6ed25d8a734d3"
 }

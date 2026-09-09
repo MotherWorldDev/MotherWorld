@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20174",
   "regionName": "Western Galapagos Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.655678+00:00",
+  "generatedAt": "2026-09-09T06:27:38.939952+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -79,6 +79,56 @@
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
       },
+      "bathymetry": {
+        "meanDepthM": 3233.556307900972,
+        "medianDepthM": 3322.0,
+        "p10DepthM": 2775.0,
+        "p90DepthM": 3611.0,
+        "shallowestM": 15.0,
+        "deepestM": 4020.0,
+        "coveragePct": 99.89287554425593,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.3753350533406884,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.21448237637239762,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 18.976619906319442,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 80.43356266396748,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      },
       "hydrothermal": {
         "ventFieldCount": 1,
         "confirmedOrInferredActive": 0,
@@ -140,6 +190,60 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2009-03-15T03:14:31.910Z",
+            "place": "Galapagos Islands, Ecuador region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1999-12-22T22:08:07.260Z",
+            "place": "Galapagos Islands, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2007-08-29T22:10:10.430Z",
+            "place": "60 km NW of Puerto Villamil, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-10-07T08:34:10.250Z",
+            "place": "69 km NNW of Puerto Villamil, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-03-15T23:00:55.160Z",
+            "place": "Galapagos Islands, Ecuador region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-08-27T20:16:21.680Z",
+            "place": "74 km NW of Puerto Villamil, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -212,6 +316,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -225,6 +334,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6f9f254e6fe12d0d5ed20f9d7e89055422c09125f0b19959a9c89e3f91cb835d"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20174",
+    "geometryFingerprint": "44425df27170cc186c20288dfecc9e131f799817ac4b4ce36bae798f5d9e46de",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -95.34222889295337,
+      -4.552557666951493,
+      -91.08318785838453,
+      2.801427674216644
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6f9f254e6fe12d0d5ed20f9d7e89055422c09125f0b19959a9c89e3f91cb835d"
 }

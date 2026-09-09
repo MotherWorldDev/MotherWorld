@@ -3,7 +3,7 @@
   "regionId": "eco_169",
   "regionName": "Fiordland temperate forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.202979+00:00",
+  "generatedAt": "2026-09-09T06:27:41.016627+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -70,6 +70,140 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 22,
+        "m6Plus": 3,
+        "m7Plus": 1,
+        "maxMagnitude": 7.2,
+        "events": [
+          {
+            "magnitude": 7.2,
+            "time": "2003-08-21T12:12:49.790Z",
+            "place": "56 km NW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2007-10-15T12:29:34.860Z",
+            "place": "70 km N of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2007-10-15T21:28:23.680Z",
+            "place": "72 km NNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2026-07-16T09:14:53.504Z",
+            "place": "43 km NNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2003-08-21T12:45:40.420Z",
+            "place": "56 km NW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2003-09-30T19:37:50.220Z",
+            "place": "53 km W of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2003-09-04T08:40:44.370Z",
+            "place": "53 km WNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2003-08-26T23:56:29.560Z",
+            "place": "71 km W of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2019-08-12T10:35:28.468Z",
+            "place": "80 km NW of Queenstown, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-11-12T11:49:15.150Z",
+            "place": "59 km NW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-08-21T12:41:48.900Z",
+            "place": "63 km WNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-11-29T15:53:31.630Z",
+            "place": "52 km NNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-02-28T05:14:41.080Z",
+            "place": "48 km WSW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-07-12T00:08:56.600Z",
+            "place": "85 km WSW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-10-15T12:35:38.600Z",
+            "place": "69 km NNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-08-23T09:13:53.720Z",
+            "place": "64 km WNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-08-22T15:29:32.600Z",
+            "place": "66 km WNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-08-21T13:03:22.600Z",
+            "place": "64 km W of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-08-21T12:29:02.300Z",
+            "place": "25 km NNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1996-02-28T14:23:07.940Z",
+            "place": "48 km N of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-04-26T22:52:11.130Z",
+            "place": "56 km NNW of Te Anau, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-04-25T04:26:29.980Z",
+            "place": "35 km WNW of Te Anau, New Zealand"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -191,9 +325,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:61a31f8afef67cffa2f3f488d29fb308dbd05d5380b2e6570ef0a489b4ae5b72"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_169",
+    "geometryFingerprint": "1efa2f75a41d033f16fd967b57e3cf6c6513be7c7946bab0bd0e7e985718aff4",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      166.4563597360002,
+      -46.22952764876406,
+      168.13107271,
+      -44.357360169071995
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:61a31f8afef67cffa2f3f488d29fb308dbd05d5380b2e6570ef0a489b4ae5b72"
 }

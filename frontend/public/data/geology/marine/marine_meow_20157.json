@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20157",
   "regionName": "Samoa Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.540670+00:00",
+  "generatedAt": "2026-09-09T06:27:38.862745+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3792.897781012671,
+        "medianDepthM": 4151.0,
+        "p10DepthM": 1856.0,
+        "p90DepthM": 5285.0,
+        "shallowestM": 2.0,
+        "deepestM": 9078.0,
+        "coveragePct": 99.95278959127677,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.4890567560245796,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 1.2908625459965946,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 30.621544067479526,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 65.78518137617365,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 1.8133552543256473,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -608,6 +658,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 996,
+        "m6Plus": 91,
+        "m7Plus": 3,
+        "maxMagnitude": 8.1,
+        "events": [
+          {
+            "magnitude": 8.1,
+            "time": "2009-09-29T17:48:10.990Z",
+            "place": "2009 Samoa Earthquake"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2023-05-10T16:02:00.334Z",
+            "place": "82 km WNW of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "1995-04-07T22:06:56.890Z",
+            "place": "88 km NNE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2006-09-28T06:22:09.730Z",
+            "place": "201 km ESE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2022-12-04T19:24:15.394Z",
+            "place": "109 km NE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2017-11-04T09:00:19.420Z",
+            "place": "97 km NE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2014-06-29T17:15:09.340Z",
+            "place": "201 km SSE of Mata-Utu, Wallis and Futuna"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2004-01-25T11:43:11.870Z",
+            "place": "105 km SSW of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1996-08-05T02:08:58.250Z",
+            "place": "104 km NE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2025-07-24T23:37:56.601Z",
+            "place": "187 km SSE of Mata-Utu, Wallis and Futuna"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2009-08-30T14:51:32.890Z",
+            "place": "154 km ENE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1993-05-16T21:44:48.940Z",
+            "place": "89 km NE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2015-03-30T08:48:25.340Z",
+            "place": "96 km ENE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2013-11-23T07:48:32.130Z",
+            "place": "Fiji region"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1997-08-29T06:54:00.240Z",
+            "place": "206 km WNW of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2015-03-30T08:18:01.340Z",
+            "place": "110 km NE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2014-06-29T15:52:23.050Z",
+            "place": "193 km SSE of Mata-Utu, Wallis and Futuna"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2011-09-22T23:07:03.570Z",
+            "place": "172 km WNW of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2003-09-02T18:28:00.330Z",
+            "place": "101 km NE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1999-12-07T21:29:49.270Z",
+            "place": "20 km WNW of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1997-05-27T08:00:29.050Z",
+            "place": "96 km NNE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1993-03-12T14:01:35.400Z",
+            "place": "Fiji region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2026-03-22T15:30:36.570Z",
+            "place": "140 km ENE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2015-04-07T00:46:21.830Z",
+            "place": "106 km NE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2009-10-14T18:00:21.770Z",
+            "place": "159 km NW of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2004-02-23T16:04:49.440Z",
+            "place": "171 km SSE of Mata-Utu, Wallis and Futuna"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2000-09-11T17:17:53.400Z",
+            "place": "Tonga"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2026-03-22T15:27:55.084Z",
+            "place": "148 km ENE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2026-03-22T06:15:36.222Z",
+            "place": "121 km NE of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2020-11-07T09:27:05.498Z",
+            "place": "83 km NNE of Hihifo, Tonga"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -679,6 +903,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -692,6 +921,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f259aadf11b367db6d887b37940e47693eae5d17ee26447ed04b4cfa5338d979"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20157",
+    "geometryFingerprint": "cd93e604463dc2973c7fe0af6f5329978ff522cd40e253e8f8a8701339e97ced",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -179.70888083527214,
+      -17.23383948088335,
+      -166.19420560069068,
+      -9.917715356224084
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f259aadf11b367db6d887b37940e47693eae5d17ee26447ed04b4cfa5338d979"
 }

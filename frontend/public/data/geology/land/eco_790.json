@@ -3,7 +3,7 @@
   "regionId": "eco_790",
   "regionName": "Cyprus Mediterranean forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.302217+00:00",
+  "generatedAt": "2026-09-09T06:27:42.709581+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -52,6 +52,65 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "1995-02-23T21:03:01.340Z",
+            "place": "Cyprus region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1999-08-11T04:27:55.350Z",
+            "place": "10 km NNW of Páno Polemídia, Cyprus"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-11-12T14:23:31.181Z",
+            "place": "5 km NE of Polémi, Cyprus"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1995-02-23T21:40:31.240Z",
+            "place": "10 km W of Pólis, Cyprus"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-11-12T09:31:27.046Z",
+            "place": "2 km ENE of Polémi, Cyprus"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-08-17T15:06:27.070Z",
+            "place": "7 km ENE of Páchna, Cyprus"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-01-21T14:27:06.745Z",
+            "place": "1 km NE of Pérgamos, Cyprus"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -292,9 +351,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:fb4fe425d1daf3faf201a797f242f31022ae21a52fbee3799339e99e41187e00"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_790",
+    "geometryFingerprint": "81d5391a9e5425158666be18f911f9e1a94374655b6096c5d36cf60cd3bc50f0",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      32.27495146800003,
+      34.57064891841078,
+      34.597919492000074,
+      35.69747443199384
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:fb4fe425d1daf3faf201a797f242f31022ae21a52fbee3799339e99e41187e00"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20068",
   "regionName": "Western Caribbean",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.023224+00:00",
+  "generatedAt": "2026-09-09T06:27:38.577481+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 18.74288558959961,
           "coveragePct": 14.949892410336822
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 2852.9836545198946,
+        "medianDepthM": 3222.0,
+        "p10DepthM": 61.0,
+        "p90DepthM": 4837.0,
+        "shallowestM": 1.0,
+        "deepestM": 5883.0,
+        "coveragePct": 99.85646272842392,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 11.853278998357597,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 9.363949552377141,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 26.652538916190743,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 52.130232533074526,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -121,6 +171,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 36,
+        "m6Plus": 7,
+        "m7Plus": 3,
+        "maxMagnitude": 7.6,
+        "events": [
+          {
+            "magnitude": 7.6,
+            "time": "2025-02-08T23:23:14.697Z",
+            "place": "210 km SSW of George Town, Cayman Islands"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "2018-01-10T02:51:33.290Z",
+            "place": "203 km NNE of Barra Patuca, Honduras"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2009-05-28T08:24:46.560Z",
+            "place": "46 km NW of Guanaja, Honduras"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1999-12-01T19:23:06.010Z",
+            "place": "209 km SSW of George Town, Cayman Islands"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2020-04-16T08:04:37.829Z",
+            "place": "59 km NNE of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1997-07-06T20:13:37.030Z",
+            "place": "30 km NNW of Baja Mar, Honduras"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2002-12-23T13:46:11.360Z",
+            "place": "63 km NNE of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2005-09-23T13:48:30.460Z",
+            "place": "39 km N of Tela, Honduras"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2004-06-08T08:55:52.740Z",
+            "place": "208 km NNE of Barra Patuca, Honduras"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2011-04-07T20:41:51.470Z",
+            "place": "109 km NE of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2020-08-10T14:13:27.331Z",
+            "place": "45 km N of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1999-12-15T00:00:44.420Z",
+            "place": "111 km NE of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2008-03-27T09:42:57.620Z",
+            "place": "136 km NE of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1998-12-17T07:20:12.380Z",
+            "place": "56 km N of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1996-10-05T07:37:59.100Z",
+            "place": "42 km NNW of Guanaja, Honduras"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-02-08T15:16:16.982Z",
+            "place": "north of Honduras"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2001-02-22T08:02:55.080Z",
+            "place": "196 km NNE of Barra Patuca, Honduras"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1997-04-15T07:51:02.820Z",
+            "place": "32 km WNW of Sandy Bay, Honduras"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1994-06-08T20:53:26.170Z",
+            "place": "37 km N of Guanaja, Honduras"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-02-24T20:08:37.428Z",
+            "place": "237 km SW of George Town, Cayman Islands"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2022-08-02T15:17:01.396Z",
+            "place": "38 km N of Tela, Honduras"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2022-03-28T18:43:40.527Z",
+            "place": "152 km ENE of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-01-18T03:20:38.750Z",
+            "place": "150 km ENE of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-06-08T05:13:14.680Z",
+            "place": "8 km ENE of El Porvenir, Honduras"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1995-12-25T18:18:17.120Z",
+            "place": "240 km NE of Barra Patuca, Honduras"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-01-16T06:08:45.428Z",
+            "place": "13 km WNW of Omoa, Honduras"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-09-25T21:30:21.709Z",
+            "place": "24 km NE of Puerto Barrios, Guatemala"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-04-28T07:43:46.092Z",
+            "place": "42 km NNW of Guanaja, Honduras"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-07-26T06:35:42.400Z",
+            "place": "49 km NNE of Savannah Bight, Honduras"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-02-21T00:56:48.030Z",
+            "place": "67 km NNE of Savannah Bight, Honduras"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -188,6 +412,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -196,6 +425,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:75d31ccbc69b60c461638d78378528e444e1f22da5cd5d671862497189ba3acc"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20068",
+    "geometryFingerprint": "91187e4eab49c5fd4b082dd814466474e9f2796e0b6946386e9caebf0fe3dff0",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -88.9267388369766,
+      15.683151243709483,
+      -82.14777213458169,
+      22.279912176976076
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:75d31ccbc69b60c461638d78378528e444e1f22da5cd5d671862497189ba3acc"
 }

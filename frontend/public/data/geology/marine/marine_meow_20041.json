@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20041",
   "regionName": "Virginian",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.892097+00:00",
+  "generatedAt": "2026-09-09T06:27:38.501183+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 20.727426528930664,
           "p90MmYr": 22.880033493041992,
           "coveragePct": 56.55960195825339
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 1453.7504657504169,
+        "medianDepthM": 727.0,
+        "p10DepthM": 17.0,
+        "p90DepthM": 3471.0,
+        "shallowestM": -0.0,
+        "deepestM": 4279.0,
+        "coveragePct": 99.59078745481429,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 47.584024798197255,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 3.2275721716403813,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 27.1160697236765,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 22.07233330648584,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -464,6 +514,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "ihfc_heat_flow",

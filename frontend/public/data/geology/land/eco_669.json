@@ -3,7 +3,7 @@
   "regionId": "eco_669",
   "regionName": "Manchurian mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.174565+00:00",
+  "generatedAt": "2026-09-09T06:27:46.015465+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.15225089697287,
@@ -157,6 +157,92 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 5,
+        "m7Plus": 2,
+        "maxMagnitude": 7.3,
+        "events": [
+          {
+            "magnitude": 7.3,
+            "time": "2002-06-28T17:19:30.270Z",
+            "place": "50 km SW of Dongning, China"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1999-04-08T13:10:34.080Z",
+            "place": "57 km ENE of Wangqing, China"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2010-02-18T01:13:19.510Z",
+            "place": "15 km SSW of Kraskino, Russia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2002-09-15T08:39:32.700Z",
+            "place": "21 km ENE of Chaihe, China"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2013-04-05T13:00:02.130Z",
+            "place": "13 km NNW of Zarubino, Russia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2016-01-02T04:22:19.570Z",
+            "place": "21 km ENE of Chaihe, China"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2013-04-06T00:29:55.090Z",
+            "place": "13 km NW of Zarubino, Russia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2011-05-10T15:26:04.610Z",
+            "place": "46 km WNW of Barabash, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-10-25T11:45:23.099Z",
+            "place": "40 km NW of Slavyanka, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-10-29T20:17:50.710Z",
+            "place": "49 km W of Barabash, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2000-01-11T23:43:56.450Z",
+            "place": "Liaoning, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1999-11-29T04:10:40.900Z",
+            "place": "37 km WNW of Xiuyan, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -570,9 +656,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c113e8f13a2b2ef4730f5335ab07fc98555337a902fdee75ccdf4c39ae3e5ad2"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_669",
+    "geometryFingerprint": "8c60a9ba31b27136670d6c0a7549dbdb1943e60a85048a644cfcecff0aa00c14",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      120.13462054600008,
+      37.0613173686973,
+      135.08531161800022,
+      53.25232811461496
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c113e8f13a2b2ef4730f5335ab07fc98555337a902fdee75ccdf4c39ae3e5ad2"
 }

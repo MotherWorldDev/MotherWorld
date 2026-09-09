@@ -3,7 +3,7 @@
   "regionId": "eco_129",
   "regionName": "Scotia Sea Islands tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.028954+00:00",
+  "generatedAt": "2026-09-09T06:27:43.637580+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 72.60556138334309,
@@ -60,6 +60,37 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2011-06-15T07:05:43.540Z",
+            "place": "South Shetland Islands"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -67,6 +98,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:98124062034fd213aa3488e34980a0a03a0a38e2793160b64ee2b2e69c1d04f7"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_129",
+    "geometryFingerprint": "40d7df5d2ca94ebf01133dc106716af04206d17d3dcc590808b8787fb0c55944",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -62.64856060499995,
+      -63.33356602872998,
+      3.483611583000084,
+      -53.96824783974268
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:98124062034fd213aa3488e34980a0a03a0a38e2793160b64ee2b2e69c1d04f7"
 }

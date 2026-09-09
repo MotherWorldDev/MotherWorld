@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20148",
   "regionName": "Vanuatu",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.490871+00:00",
+  "generatedAt": "2026-09-09T06:27:38.831983+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3314.924177477305,
+        "medianDepthM": 3310.0,
+        "p10DepthM": 1729.0,
+        "p90DepthM": 4565.0,
+        "shallowestM": 1.0,
+        "deepestM": 9041.0,
+        "coveragePct": 99.83221352996283,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.5585069425353785,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 2.7825899593588903,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 31.16636550304554,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 64.06745884434,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 1.425078750720187,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -424,6 +474,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3343,
+        "m6Plus": 354,
+        "m7Plus": 45,
+        "maxMagnitude": 8.0,
+        "events": [
+          {
+            "magnitude": 8.0,
+            "time": "2013-02-06T01:12:25.830Z",
+            "place": "2013 Santa Cruz Islands Earthquake"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "2009-10-07T22:18:51.240Z",
+            "place": "196 km NW of Sola, Vanuatu"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2023-05-19T02:57:03.172Z",
+            "place": "southeast of the Loyalty Islands"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2021-02-10T13:19:55.530Z",
+            "place": "southeast of the Loyalty Islands"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2009-10-07T22:03:14.470Z",
+            "place": "148 km NW of Sola, Vanuatu"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "1997-04-21T12:02:26.430Z",
+            "place": "171 km NNW of Sola, Vanuatu"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "1999-11-26T13:21:15.570Z",
+            "place": "92 km ESE of Lakatoro, Vanuatu"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "1998-01-04T06:11:58.970Z",
+            "place": "southeast of the Loyalty Islands"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2009-10-07T23:13:48.160Z",
+            "place": "143 km NW of Sola, Vanuatu"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2026-03-30T08:44:13.780Z",
+            "place": "51 km ENE of Luganville, Vanuatu"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2024-12-17T01:47:25.741Z",
+            "place": "24 km WNW of Port-Vila, Vanuatu"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2021-10-02T06:29:17.897Z",
+            "place": "Vanuatu region"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2010-12-25T13:16:37.000Z",
+            "place": "141 km W of Isangel, Vanuatu"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2010-08-10T05:23:44.980Z",
+            "place": "33 km NW of Port-Vila, Vanuatu"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2008-04-09T12:46:12.720Z",
+            "place": "71 km SW of Isangel, Vanuatu"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "1999-02-06T21:47:59.470Z",
+            "place": "146 km NW of Sola, Vanuatu"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2016-08-12T01:26:36.280Z",
+            "place": "southeast of the Loyalty Islands"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2011-08-20T16:55:02.810Z",
+            "place": "71 km SSW of Port-Vila, Vanuatu"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2010-05-27T17:14:46.570Z",
+            "place": "100 km WNW of Sola, Vanuatu"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2007-09-02T01:05:18.150Z",
+            "place": "97 km S of Lata, Solomon Islands"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2007-08-01T17:08:51.400Z",
+            "place": "56 km E of Luganville, Vanuatu"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2002-01-02T17:22:48.760Z",
+            "place": "50 km WNW of Port-Vila, Vanuatu"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "1994-07-13T02:35:56.020Z",
+            "place": "58 km S of Lakatoro, Vanuatu"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2023-12-07T12:56:30.184Z",
+            "place": "118 km S of Isangel, Vanuatu"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2023-05-20T01:50:59.158Z",
+            "place": "southeast of the Loyalty Islands"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2018-08-29T03:51:56.100Z",
+            "place": "238 km ESE of Tadine, New Caledonia"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2015-10-20T21:52:02.560Z",
+            "place": "31 km NE of Port-Olry, Vanuatu"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2013-02-08T15:26:38.470Z",
+            "place": "32 km SE of Lata, Solomon Islands"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2013-02-06T01:23:19.760Z",
+            "place": "112 km WSW of Lata, Solomon Islands"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2012-02-02T13:34:40.650Z",
+            "place": "125 km W of Port-Vila, Vanuatu"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -495,6 +719,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -508,6 +737,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b7e31f2d9f39b8f7eccec12272ce2b12c0f8dea109893db73e00712ac63f621a"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20148",
+    "geometryFingerprint": "ce13b71837ae4a36f02672db3bf8a400051e5f7bb8a42ba725f3e707c8f1dc90",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      163.19052449060771,
+      -25.703617277428727,
+      177.8441586235263,
+      -6.543612450604836
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b7e31f2d9f39b8f7eccec12272ce2b12c0f8dea109893db73e00712ac63f621a"
 }

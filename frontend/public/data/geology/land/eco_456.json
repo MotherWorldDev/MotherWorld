@@ -3,7 +3,7 @@
   "regionId": "eco_456",
   "regionName": "Cordillera La Costa montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.566172+00:00",
+  "generatedAt": "2026-09-09T06:27:41.746708+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -124,6 +124,50 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2024-06-23T03:57:58.918Z",
+            "place": "20 km NE of Yaguaraparo, Venezuela"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-07-14T19:16:58.990Z",
+            "place": "37 km WNW of Güiria, Venezuela"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-07-09T19:26:22.000Z",
+            "place": "43 km W of Güiria, Venezuela"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-06-23T01:54:40.710Z",
+            "place": "44 km WNW of Güiria, Venezuela"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -409,9 +453,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c437b027be7118c21b29afa2e1562a0ae9b3715c014c714944c33c7dda965a90"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_456",
+    "geometryFingerprint": "ad85674f3832c7b01affdd44d09c7a05677425795a2f88025197d3ce7ecfc7ca",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -69.14317355799994,
+      9.81752793215176,
+      -61.93803057299994,
+      10.761917969439153
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c437b027be7118c21b29afa2e1562a0ae9b3715c014c714944c33c7dda965a90"
 }

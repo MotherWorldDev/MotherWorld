@@ -3,7 +3,7 @@
   "regionId": "eco_771",
   "regionName": "Cherskii-Kolyma mountain tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.236503+00:00",
+  "generatedAt": "2026-09-09T06:27:42.662744+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -94,6 +94,70 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "2013-02-14T13:13:53.130Z",
+            "place": "183 km SW of Belaya Gora, Russia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-05-10T08:38:28.060Z",
+            "place": "198 km E of Batagay, Russia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2001-01-07T06:26:57.690Z",
+            "place": "166 km W of Arman’, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-03-05T08:33:53.190Z",
+            "place": "186 km SW of Belaya Gora, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-02-14T13:28:06.390Z",
+            "place": "196 km SW of Belaya Gora, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-11-16T22:05:53.090Z",
+            "place": "144 km ENE of Ust-Nera, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2005-01-25T22:21:58.500Z",
+            "place": "59 km NW of Deputatsky, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-02-08T10:43:43.113Z",
+            "place": "146 km ENE of Ust-Nera, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -512,9 +576,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:dbd50f62eddab3f2e2d98b52fff6c0bb3d9109bd91b5e5bedb77bddd44cc2294"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_771",
+    "geometryFingerprint": "e2bfa399672d468db1bc119f1aff48af908dd22f3bec61407b62240b9e8bb766",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      126.3247985390001,
+      59.136627663413385,
+      170.18267863000005,
+      71.72561743413254
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:dbd50f62eddab3f2e2d98b52fff6c0bb3d9109bd91b5e5bedb77bddd44cc2294"
 }

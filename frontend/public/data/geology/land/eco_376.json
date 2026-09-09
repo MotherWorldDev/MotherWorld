@@ -3,7 +3,7 @@
   "regionId": "eco_376",
   "regionName": "Mid-Canada Boreal Plains forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.097437+00:00",
+  "generatedAt": "2026-09-09T06:27:44.722484+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.9999999999999,
@@ -120,6 +120,42 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2022-11-30T00:55:55.330Z",
+            "place": "45 km ESE of Peace River, Canada"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-04-14T02:20:13.000Z",
+            "place": "44 km NE of Dawson Creek, Canada"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -496,9 +532,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:2c981245e7b6e431359bc7da672eb301eb53b7dc6b811c0fe4669582ade233b9"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_376",
+    "geometryFingerprint": "71580a3c48fe41183af230f9d3423c82670d8867cfab6cd462eb7782eef8e466",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -122.16110867299989,
+      49.843052485859516,
+      -96.23722468099999,
+      59.016105669402
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:2c981245e7b6e431359bc7da672eb301eb53b7dc6b811c0fe4669582ade233b9"
 }

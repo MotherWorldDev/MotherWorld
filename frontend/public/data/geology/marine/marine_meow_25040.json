@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25040",
   "regionName": "Gulf of Maine/Bay of Fundy",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.117798+00:00",
+  "generatedAt": "2026-09-09T06:27:39.151316+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 19.06534194946289,
           "p90MmYr": 20.421960830688477,
           "coveragePct": 15.117045230370953
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 752.9201412463154,
+        "medianDepthM": 170.0,
+        "p10DepthM": 41.0,
+        "p90DepthM": 3115.0,
+        "shallowestM": 1.0,
+        "deepestM": 4607.0,
+        "coveragePct": 99.90437578472292,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 62.30744209350814,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 16.42300987759877,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 9.918728504430671,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 11.350819524462413,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -557,6 +607,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "ihfc_heat_flow",

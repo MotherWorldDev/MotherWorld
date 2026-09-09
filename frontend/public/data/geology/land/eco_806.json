@@ -3,7 +3,7 @@
   "regionId": "eco_806",
   "regionName": "Tyrrhenian-Adriatic sclerophyllous and mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.435044+00:00",
+  "generatedAt": "2026-09-09T06:27:42.799113+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -166,6 +166,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2024-08-01T19:43:20.688Z",
+            "place": "2 km S of Bocchigliero, Italy"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-12-26T02:19:14.000Z",
+            "place": "1 km SSW of Lavinaio-Monterosso, Italy"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -754,9 +788,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:099154bf8c4f060e117750e39a302188287114e96fdb682bfdd583f59aa13385"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_806",
+    "geometryFingerprint": "e9f372588c91b6bc477eec9ee0a6fd186d954186637429d0a0ac01dcf477213e",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      8.120919468000181,
+      35.78205672003769,
+      18.524442481,
+      45.22834275640453
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:099154bf8c4f060e117750e39a302188287114e96fdb682bfdd583f59aa13385"
 }

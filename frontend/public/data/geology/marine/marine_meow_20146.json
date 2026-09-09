@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20146",
   "regionName": "Tonga Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.483841+00:00",
+  "generatedAt": "2026-09-09T06:27:38.826863+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 4373.1738190490805,
+        "medianDepthM": 5150.0,
+        "p10DepthM": 1416.0,
+        "p90DepthM": 6044.0,
+        "shallowestM": 1.0,
+        "deepestM": 10537.0,
+        "coveragePct": 99.96990661625308,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 1.0584575004150412,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 4.988868241740681,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 24.65198875343845,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 58.867270776165455,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 10.43341472824038,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -658,6 +708,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1798,
+        "m6Plus": 119,
+        "m7Plus": 10,
+        "maxMagnitude": 8.0,
+        "events": [
+          {
+            "magnitude": 8.0,
+            "time": "2006-05-03T15:26:40.290Z",
+            "place": "2006 Tonga Earthquake"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "1997-10-14T09:53:18.150Z",
+            "place": "192 km WSW of Haveluloto, Tonga"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2009-03-19T18:17:40.470Z",
+            "place": "191 km S of ‘Ohonua, Tonga"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "2026-03-24T04:37:51.627Z",
+            "place": "158 km W of Neiafu, Tonga"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2013-05-23T17:19:04.750Z",
+            "place": "292 km SW of Vaini, Tonga"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2022-11-11T10:48:46.710Z",
+            "place": "205 km ESE of Neiafu, Tonga"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2023-06-15T18:06:28.572Z",
+            "place": "274 km SW of Houma, Tonga"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2000-01-08T16:47:20.580Z",
+            "place": "117 km SSW of Hihifo, Tonga"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "1996-04-16T00:30:54.670Z",
+            "place": "south of the Fiji Islands"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2025-03-30T12:18:50.362Z",
+            "place": "61 km SSE of Pangai, Tonga"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2024-08-25T23:29:07.544Z",
+            "place": "75 km W of Pangai, Tonga"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2023-07-02T10:27:43.732Z",
+            "place": "132 km NW of Neiafu, Tonga"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2008-10-19T05:10:33.910Z",
+            "place": "130 km ESE of ‘Ohonua, Tonga"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2009-11-24T12:47:15.660Z",
+            "place": "104 km SSE of Pangai, Tonga"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1999-04-13T10:38:48.400Z",
+            "place": "132 km WSW of Haveluloto, Tonga"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1998-12-27T00:38:26.760Z",
+            "place": "131 km WSW of Haveluloto, Tonga"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2024-10-01T20:05:34.967Z",
+            "place": "125 km SE of Neiafu, Tonga"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2024-05-26T20:47:12.057Z",
+            "place": "70 km NW of Fangale’ounga, Tonga"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2019-11-04T22:43:32.280Z",
+            "place": "136 km W of Neiafu, Tonga"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2012-04-28T10:08:08.090Z",
+            "place": "76 km W of Neiafu, Tonga"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2003-07-27T02:04:11.530Z",
+            "place": "142 km W of Haveluloto, Tonga"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2021-04-24T00:23:38.164Z",
+            "place": "225 km WNW of Pangai, Tonga"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2001-07-04T07:06:31.600Z",
+            "place": "167 km WSW of Haveluloto, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2025-05-14T04:15:40.513Z",
+            "place": "142 km W of Neiafu, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2024-01-18T22:12:21.755Z",
+            "place": "148 km NW of Fangale’ounga, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2020-10-01T01:13:36.524Z",
+            "place": "39 km NE of Pangai, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2018-12-23T23:08:43.440Z",
+            "place": "91 km SW of Pangai, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2017-09-26T04:20:00.260Z",
+            "place": "south of the Fiji Islands"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2016-09-24T21:07:15.790Z",
+            "place": "118 km WNW of Neiafu, Tonga"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2013-05-11T20:46:57.590Z",
+            "place": "140 km WNW of Neiafu, Tonga"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -729,6 +953,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -742,6 +971,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:dcfbb3b8f7318c0fb7b3db7bfc0a55c3644266cd1513c56a3f37b6bab63864a3"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20146",
+    "geometryFingerprint": "7cfb8e891872b7e252ba5a815ff911dc309d59dde69e83b650390ec8527a9bad",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -177.42004649963624,
+      -24.819446416002503,
+      -166.4525636894508,
+      -16.563473160621463
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:dcfbb3b8f7318c0fb7b3db7bfc0a55c3644266cd1513c56a3f37b6bab63864a3"
 }

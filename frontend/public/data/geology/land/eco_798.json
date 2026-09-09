@@ -3,7 +3,7 @@
   "regionId": "eco_798",
   "regionName": "Mediterranean woodlands and forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.359933+00:00",
+  "generatedAt": "2026-09-09T06:27:42.751544+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,125 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 19,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2004-02-24T02:27:46.230Z",
+            "place": "11 km SSW of Tirhanimîne, Morocco"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1994-08-18T01:13:05.780Z",
+            "place": "8 km E of Sig, Algeria"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1999-12-22T17:36:56.240Z",
+            "place": "9 km ENE of Beni Saf, Algeria"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-05-28T23:54:53.380Z",
+            "place": "16 km SSW of Lakhdaria, Algeria"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1995-09-22T11:20:10.350Z",
+            "place": "14 km SE of Tébessa, Algeria"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-05-23T13:28:16.590Z",
+            "place": "4 km WSW of Melouza, Algeria"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-06-24T01:20:36.670Z",
+            "place": "15 km SW of Sbikha, Tunisia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-08-18T18:15:06.490Z",
+            "place": "13 km SE of Bordj Zemoura, Algeria"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-09-17T04:56:26.130Z",
+            "place": "6 km W of Tabursuq, Tunisia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-02-10T22:48:41.585Z",
+            "place": "25 km N of Ouezzane, Morocco"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-11-22T03:53:08.474Z",
+            "place": "24 km WSW of Azzaba, Algeria"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2014-12-26T17:55:18.140Z",
+            "place": "2 km SSW of Bougara, Algeria"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-04-02T06:44:31.820Z",
+            "place": "29 km E of Dar Chioukh, Algeria"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-12-04T10:30:00.520Z",
+            "place": "12 km WNW of Al Aaroui, Morocco"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-03-07T06:37:52.270Z",
+            "place": "18 km WSW of Bni Bouayach, Morocco"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-12-16T00:09:46.958Z",
+            "place": "17 km ENE of Sidi Akkacha, Algeria"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-08-07T06:15:37.835Z",
+            "place": "3 km NNE of Sidi Mérouane, Algeria"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-03-26T07:09:25.834Z",
+            "place": "21 km WNW of Draa Klalouche, Algeria"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2002-04-05T15:27:31.270Z",
+            "place": "9 km SSW of Azzaba, Algeria"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -820,9 +939,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:54252a2989a8682e1516dd5e3ab8230ac7c743d213005c0aa3eb0c9bb5e19ce2"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_798",
+    "geometryFingerprint": "25aac7a63f96bfcfccea5feadfacb124cd3cc479ee35726280de33db44abe201",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -9.285875431999957,
+      30.138830764228807,
+      22.316785458000023,
+      37.34755466884389
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:54252a2989a8682e1516dd5e3ab8230ac7c743d213005c0aa3eb0c9bb5e19ce2"
 }

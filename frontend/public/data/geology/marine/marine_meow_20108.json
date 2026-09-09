@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20108",
   "regionName": "Northern Bay of Bengal",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.294933+00:00",
+  "generatedAt": "2026-09-09T06:27:38.735939+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -78,6 +78,56 @@
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 1017.5700510231086,
+        "medianDepthM": 627.0,
+        "p10DepthM": 14.0,
+        "p90DepthM": 2328.0,
+        "shallowestM": -0.0,
+        "deepestM": 2656.0,
+        "coveragePct": 99.246934667728,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 46.86951880797788,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 5.363768080293356,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 47.76671311172876,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -121,6 +171,105 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 15,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2014-05-21T16:21:54.350Z",
+            "place": "276 km SE of Kon?rka, India"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2004-09-17T11:25:48.200Z",
+            "place": "56 km SSE of Pyapon, Myanmar"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2023-06-19T01:40:24.074Z",
+            "place": "131 km SSE of Pyapon, Myanmar"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-05-18T02:05:24.601Z",
+            "place": "41 km SSE of Syriam, Burma (Myanmar)"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-06-01T16:43:15.623Z",
+            "place": "90 km NW of Pathein, Myanmar"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-04-28T18:01:21.250Z",
+            "place": "87 km SSE of Sittwe, Myanmar"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-09-22T13:30:38.180Z",
+            "place": "88 km SSE of Pyapon, Myanmar"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-10-13T20:54:49.340Z",
+            "place": "148 km SSW of Sittwe, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-02-25T00:40:20.779Z",
+            "place": "224 km ESE of Parādīp Garh, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-07-04T20:34:51.770Z",
+            "place": "192 km WNW of Dawei, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-03-05T15:49:52.780Z",
+            "place": "85 km SSE of Pyapon, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-07-24T23:09:49.190Z",
+            "place": "166 km SSE of Pyapon, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-01-21T01:42:24.650Z",
+            "place": "80 km SSE of Pyapon, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2002-11-10T21:54:01.490Z",
+            "place": "114 km WNW of Pathein, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-01-30T22:02:12.110Z",
+            "place": "155 km W of Pyay, Myanmar"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -230,14 +379,43 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6334f5ff7ca91653d93043dab67dda848308e821ac37119636a1661afd1152fd"
     },
     {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20108",
+    "geometryFingerprint": "d70dba514aea4958148bc5ef7755f9e7397b9668b09c6e06180f4e3d7aed9ad4",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      86.11612057470285,
+      13.917036652732365,
+      97.90427801588504,
+      23.411324043136666
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6334f5ff7ca91653d93043dab67dda848308e821ac37119636a1661afd1152fd"
 }

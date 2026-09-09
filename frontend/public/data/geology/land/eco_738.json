@@ -3,7 +3,7 @@
   "regionId": "eco_738",
   "regionName": "South Siberian forest steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.042059+00:00",
+  "generatedAt": "2026-09-09T06:27:42.534291+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -34,6 +34,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2013-12-21T17:51:54.040Z",
+            "place": "15 km NW of Shushenskoye, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -518,9 +547,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b3a4602c1af93e17c7eeab3a6111a01cf9fb43acf8cb80a7d4b2df0a72353551"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_738",
+    "geometryFingerprint": "5a30027fb55c6cc12272b5df5bcd59b13ee6ef48ede82a8f800017c2e0745631",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      83.86406654100016,
+      52.34134046443752,
+      105.42939753100018,
+      57.019095727186205
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b3a4602c1af93e17c7eeab3a6111a01cf9fb43acf8cb80a7d4b2df0a72353551"
 }

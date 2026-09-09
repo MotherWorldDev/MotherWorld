@@ -3,7 +3,7 @@
   "regionId": "eco_602",
   "regionName": "Guajira-Barranquilla xeric scrub",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.366142+00:00",
+  "generatedAt": "2026-09-09T06:27:42.149368+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -106,6 +106,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.2,
+        "events": [
+          {
+            "magnitude": 5.2,
+            "time": "1999-03-18T23:54:12.640Z",
+            "place": "31 km W of Agustín Codazzi, Colombia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -247,9 +276,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e610fe08c16d66a8f30404b5b8622690abd2a95c9ab11fa23d74313acd0ebe1a"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_602",
+    "geometryFingerprint": "d1981a9ef6a7d473d094f8478b96eb5883f514ed21bccac721337803fb628a9f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -75.78109756499987,
+      9.322226186547875,
+      -71.11371658399997,
+      12.46164404930621
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e610fe08c16d66a8f30404b5b8622690abd2a95c9ab11fa23d74313acd0ebe1a"
 }

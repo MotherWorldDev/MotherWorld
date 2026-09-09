@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20112",
   "regionName": "Gulf of Tonkin",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:40.962273+00:00",
+  "generatedAt": "2026-09-09T06:27:40.212182+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 246.23598083503168,
+        "medianDepthM": 66.0,
+        "p10DepthM": 17.0,
+        "p90DepthM": 911.0,
+        "shallowestM": -0.0,
+        "deepestM": 2746.0,
+        "coveragePct": 99.04699576027082,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 78.32610807421706,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 12.529540185698735,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 9.144351740084206,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "geothermal": {
       "measurementCount": 13,
       "medianMwM2": 83.0,
@@ -61,6 +113,42 @@
         "license": "CC BY 4.0"
       }
     },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "1995-01-10T10:09:51.040Z",
+            "place": "64 km WNW of Lincheng, China"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1994-12-31T02:57:20.850Z",
+            "place": "77 km NNW of Lincheng, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 3,
       "commodityCount": 3,
@@ -113,14 +201,43 @@
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f40d95f2bf187cd82110cd57bb0d251204795c743ec01ea4f67c8bb422977469"
     },
     {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20112",
+    "geometryFingerprint": "1baf0f05a307d3fc6b2b7ba1f284b89617ae8a095a5e63ed9ea3560fee7e5690",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      105.62039964700006,
+      13.805680121152694,
+      112.41042408711156,
+      21.902968490420317
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f40d95f2bf187cd82110cd57bb0d251204795c743ec01ea4f67c8bb422977469"
 }

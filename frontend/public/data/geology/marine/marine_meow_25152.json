@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25152",
   "regionName": "Hawaii",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.206370+00:00",
+  "generatedAt": "2026-09-09T06:27:39.203233+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 93.51497650146484,
           "p90MmYr": 124.37377166748047,
           "coveragePct": 100.00000000000001
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 4572.517984548302,
+        "medianDepthM": 4824.0,
+        "p10DepthM": 3453.0,
+        "p90DepthM": 5321.0,
+        "shallowestM": 1.0,
+        "deepestM": 6021.0,
+        "coveragePct": 99.97444555146255,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.7661583705241317,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 1.3117667954188892,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 5.538242918473124,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 92.37477324432663,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.009058671257223747,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -225,6 +275,95 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 13,
+        "m6Plus": 4,
+        "m7Plus": 0,
+        "maxMagnitude": 6.9,
+        "events": [
+          {
+            "magnitude": 6.9,
+            "time": "2018-05-04T22:32:54.650Z",
+            "place": "18 km SSW of Leilani Estates, Hawaii"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2006-10-15T17:07:49.200Z",
+            "place": "14 km SW of Puako, Hawaii"
+          },
+          {
+            "magnitude": 6.21,
+            "time": "2021-10-10T21:48:36.560Z",
+            "place": "27 km SSE of Naalehu, Hawaii"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2006-10-15T17:14:12.050Z",
+            "place": "20 km SW of Hawi, Hawaii"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-07-17T19:15:02.970Z",
+            "place": "35 km SSE of Naalehu, Hawaii"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-06-05T00:12:39.730Z",
+            "place": "54 km SE of P?hala, Hawaii"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2005-07-15T15:48:54.490Z",
+            "place": "50 km NNE of Pa‘auilo, Hawaii"
+          },
+          {
+            "magnitude": 5.26,
+            "time": "1994-02-01T10:01:54.600Z",
+            "place": "19 km ENE of P?hala, Hawaii"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-08-12T03:48:33.980Z",
+            "place": "42 km ESE of Naalehu, Hawaii"
+          },
+          {
+            "magnitude": 5.17,
+            "time": "2021-07-05T23:43:35.300Z",
+            "place": "12 km NNW of Kukuihaele, Hawaii"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2005-05-13T10:06:41.660Z",
+            "place": "45 km ESE of Naalehu, Hawaii"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1998-06-27T10:11:07.750Z",
+            "place": "51 km NW of Kalaoa, Hawaii"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-11-23T19:20:10.640Z",
+            "place": "17 km WSW of Puako, Hawaii"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -322,6 +461,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -337,9 +481,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:7ae863eca53f596eed1b76446b1a7d75c06b7f5d3ca9b08a67ea9ef4a59988b1"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25152",
+    "geometryFingerprint": "f25d32837aef104e44286b72ef4c37bdef0a03389a4c4c26fedd7e4027534df3",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.98907200195572,
+      13.364708256106047,
+      179.9910779526601,
+      31.515822913872725
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:7ae863eca53f596eed1b76446b1a7d75c06b7f5d3ca9b08a67ea9ef4a59988b1"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_653",
   "regionName": "Central China Loess Plateau mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.555741+00:00",
+  "generatedAt": "2026-09-09T06:27:42.271401+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -100,6 +100,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "1999-11-01T13:25:16.530Z",
+            "place": "62 km ESE of Datong, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-09-26T21:49:58.787Z",
+            "place": "18 km NW of Hualin, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -670,9 +704,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:69c6ce6df87cd81e88caad39a58b2d483bb88ae13e7ee5604eca5d6a7fa749a2"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_653",
+    "geometryFingerprint": "fd4c460ca530b77fbdfe79ca8f7d8c0ec2c6408ddeaafa94b0b6098b96bac044",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      104.15210763600008,
+      33.97272317210299,
+      122.44525862300017,
+      43.943856158908176
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:69c6ce6df87cd81e88caad39a58b2d483bb88ae13e7ee5604eca5d6a7fa749a2"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20098",
   "regionName": "Mascarene Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.210627+00:00",
+  "generatedAt": "2026-09-09T06:27:38.692155+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3852.837164211009,
+        "medianDepthM": 4060.0,
+        "p10DepthM": 2768.0,
+        "p90DepthM": 4796.0,
+        "shallowestM": 1.0,
+        "deepestM": 5698.0,
+        "coveragePct": 99.98845675504957,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.32383665613134893,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 1.4594347381438206,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 13.018396450973286,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 85.19833215475154,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -189,6 +239,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 46,
+        "m6Plus": 4,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2010-08-16T03:30:53.310Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2000-04-07T19:08:27.830Z",
+            "place": "286 km NE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2019-04-01T18:39:05.857Z",
+            "place": "262 km NE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2008-08-22T07:47:39.580Z",
+            "place": "297 km NE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2012-02-16T02:20:28.730Z",
+            "place": "292 km NE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2009-12-18T07:32:59.660Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2006-08-30T16:13:39.710Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2026-01-10T03:22:28.920Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2006-07-12T23:06:20.260Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2005-05-05T13:12:48.780Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-01-05T17:42:20.840Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2006-04-16T15:12:23.710Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2004-09-19T23:24:19.940Z",
+            "place": "258 km NNE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-06-09T22:52:33.450Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-06-11T16:10:53.620Z",
+            "place": "294 km NE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2006-06-28T16:06:37.000Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2021-04-12T20:43:18.727Z",
+            "place": "217 km ENE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-12-02T04:20:36.590Z",
+            "place": "148 km SE of Baie aux Huîtres, Mauritius"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-04-15T14:07:09.980Z",
+            "place": "297 km ENE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-04-10T06:51:47.480Z",
+            "place": "297 km ENE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-01-21T06:27:57.490Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-09-10T20:28:30.580Z",
+            "place": "232 km ENE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2026-01-06T10:09:26.063Z",
+            "place": "82 km NE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2024-10-31T22:24:42.056Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-07-06T01:21:37.190Z",
+            "place": "221 km ENE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-09-24T17:00:24.764Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-06-11T14:11:39.223Z",
+            "place": "Mauritius - Reunion region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-11-11T15:56:56.940Z",
+            "place": "299 km E of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-09-24T22:08:40.130Z",
+            "place": "246 km ENE of Port Mathurin, Mauritius"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-09-01T00:37:39.050Z",
+            "place": "254 km ENE of Port Mathurin, Mauritius"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -260,6 +484,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -273,6 +502,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1803411fad70d1a5531e8b55a3ceb27bddac9016e9b5725a2fd32f9befe3e792"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20098",
+    "geometryFingerprint": "e8679e190965ea78ae08536000b2bb7cee933b4614b4965ac2a26c1b72bf936d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      51.900048622422354,
+      -24.739269713205125,
+      66.83023507570397,
+      -16.37862131816314
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1803411fad70d1a5531e8b55a3ceb27bddac9016e9b5725a2fd32f9befe3e792"
 }

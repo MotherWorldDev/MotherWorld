@@ -3,7 +3,7 @@
   "regionId": "eco_20",
   "regionName": "Mascarene forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.047636+00:00",
+  "generatedAt": "2026-09-09T06:27:43.962147+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 54.54914439605264,
@@ -36,6 +36,37 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2007-04-05T20:48:53.400Z",
+            "place": "15 km WSW of Sainte-Rose, Reunion"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -43,6 +74,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6cdec653197ded9fdaa99a6e5ac48f26257c96bd4e43ab45f3ca218226d9b4ce"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_20",
+    "geometryFingerprint": "5b761a544a5432b0b91d5d237035107bcb8de59fa5351a96c9a66575c92665ba",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      55.210761514000126,
+      -21.41009356081184,
+      63.49714251700015,
+      -19.672108449840884
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6cdec653197ded9fdaa99a6e5ac48f26257c96bd4e43ab45f3ca218226d9b4ce"
 }

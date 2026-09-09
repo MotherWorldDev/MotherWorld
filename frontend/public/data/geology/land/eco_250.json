@@ -3,7 +3,7 @@
   "regionId": "eco_250",
   "regionName": "Myanmar coastal rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.674453+00:00",
+  "generatedAt": "2026-09-09T06:27:41.300795+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -124,6 +124,80 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 10,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.1,
+        "events": [
+          {
+            "magnitude": 6.1,
+            "time": "1995-05-16T21:48:05.830Z",
+            "place": "28 km WSW of Nyaunglebin, Myanmar"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1994-08-19T21:02:45.620Z",
+            "place": "32 km W of Nyaunglebin, Myanmar"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-01-11T18:42:59.510Z",
+            "place": "28 km W of Pyu, Myanmar"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1999-08-15T16:18:35.880Z",
+            "place": "24 km WSW of Pyu, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-04-24T12:23:34.070Z",
+            "place": "34 km WSW of Pyu, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-03-17T19:59:03.880Z",
+            "place": "32 km WSW of Pyu, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-03-13T14:19:06.670Z",
+            "place": "36 km SE of Tharyarwady, Myanmar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-09-18T09:01:50.720Z",
+            "place": "82 km ESE of Sittwe, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-04-20T22:29:24.470Z",
+            "place": "34 km WSW of Pyu, Myanmar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-07-21T01:27:07.530Z",
+            "place": "26 km NW of Taungoo, Myanmar"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -335,9 +409,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:0588fcb3674f708db022f9d3ebd555274d9238eb058fd0909bc786b6293145ab"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_250",
+    "geometryFingerprint": "5cec86376b476b3ec33312bfe6799323c9e8b67c22152c508bf68705754b3060",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      92.18969765000018,
+      11.211231733120409,
+      98.9857866600002,
+      21.476920043815017
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:0588fcb3674f708db022f9d3ebd555274d9238eb058fd0909bc786b6293145ab"
 }

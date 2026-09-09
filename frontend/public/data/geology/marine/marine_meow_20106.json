@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20106",
   "regionName": "Chagos",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.278715+00:00",
+  "generatedAt": "2026-09-09T06:27:38.726861+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3512.4410044205283,
+        "medianDepthM": 3701.0,
+        "p10DepthM": 1715.0,
+        "p90DepthM": 5094.0,
+        "shallowestM": -0.0,
+        "deepestM": 5628.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 3.510786074407627,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 2.7284177592883827,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 23.66223750203588,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 70.09855866426813,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -261,6 +311,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 48,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.1,
+        "events": [
+          {
+            "magnitude": 6.1,
+            "time": "2020-08-31T17:24:04.946Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2008-04-02T14:36:10.790Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2015-01-10T02:05:46.270Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2009-04-05T12:56:14.520Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2025-07-22T05:04:08.123Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2007-10-09T03:22:36.750Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2002-12-02T18:21:49.810Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-07-08T13:01:10.571Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2020-07-27T23:37:04.629Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2020-04-09T17:26:26.403Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2019-12-01T05:48:34.645Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-05-29T20:59:05.750Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2002-07-25T01:40:46.570Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1996-08-30T02:11:42.200Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2014-05-12T03:36:02.760Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-09-07T06:58:58.830Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-11-26T04:47:01.730Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-11-14T10:43:47.560Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-09-02T20:06:36.840Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1999-02-25T09:55:30.030Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-03-06T00:16:28.836Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-12-29T00:38:04.868Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-03-03T16:34:53.803Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-06-13T09:27:59.724Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-03-05T08:13:01.901Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-01-13T05:30:51.930Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-11-13T23:03:28.310Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-05-01T07:18:58.070Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-04-03T06:19:04.120Z",
+            "place": "Chagos Archipelago region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2005-07-11T15:06:28.240Z",
+            "place": "Chagos Archipelago region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -332,6 +556,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -345,6 +574,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:33d15c10b347a429e91d3e0985d5906c75b46f4272b87a07e0d633b9eae00132"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20106",
+    "geometryFingerprint": "0e1c20e95d54ce01ceb5f71d9c8e9a147177de0a06910a7fd6c9f81147da7eda",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      67.92916666451484,
+      -10.801886216751246,
+      75.82546318014269,
+      -2.325427036618894
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:33d15c10b347a429e91d3e0985d5906c75b46f4272b87a07e0d633b9eae00132"
 }

@@ -3,7 +3,7 @@
   "regionId": "lake_malawi",
   "regionName": "Lake Malawi",
   "kind": "lakes",
-  "generatedAt": "2026-09-08T09:35:33.717257+00:00",
+  "generatedAt": "2026-09-09T06:27:42.941517+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -197,6 +197,50 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "1995-07-22T13:31:53.570Z",
+            "place": "16 km NW of Monkey Bay, Malawi"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-11-24T07:58:36.433Z",
+            "place": "1 km NNE of Mbamba Bay, Tanzania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-08-24T07:03:49.166Z",
+            "place": "11 km SSW of Liuli, Tanzania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-05-21T06:22:44.920Z",
+            "place": "30 km ESE of Karonga, Malawi"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -266,6 +310,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:2c3d0c708dc8f172a0a73ab120b274d01b25979402089c8021564f5d14fe83b7"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "lake_malawi",
+    "geometryFingerprint": "d6793d11bbbd16f5f1ee8d259acf1d8ae36fe790bb33581e44bb59685dd2f845",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      33.88815646701476,
+      -14.41899195774112,
+      35.296386176216004,
+      -9.493609939361315
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:2c3d0c708dc8f172a0a73ab120b274d01b25979402089c8021564f5d14fe83b7"
 }

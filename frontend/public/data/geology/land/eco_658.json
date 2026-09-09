@@ -3,7 +3,7 @@
   "regionId": "eco_658",
   "regionName": "Crimean Submediterranean forest complex",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.171046+00:00",
+  "generatedAt": "2026-09-09T06:27:45.968652+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 90.88608885214757,
@@ -105,6 +105,37 @@
         "license": "CC BY 4.0"
       }
     },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "2002-11-09T02:18:11.540Z",
+            "place": "10 km WSW of Kiyevskoye, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 2,
       "commodityCount": 2,
@@ -155,9 +186,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:10f38ee6925151794a7ef7a52f2f3f95001fa3bef8fdef007cd81a6e1ebc3cfd"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_658",
+    "geometryFingerprint": "3633f304069c6329d39cb2e18531626057c4f50a33ca65729afac68f31f84962",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      33.394706510000105,
+      43.76350459183521,
+      42.00473458800013,
+      45.25636597341502
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:10f38ee6925151794a7ef7a52f2f3f95001fa3bef8fdef007cd81a6e1ebc3cfd"
 }

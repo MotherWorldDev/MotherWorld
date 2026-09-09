@@ -3,7 +3,7 @@
   "regionId": "eco_433",
   "regionName": "Mojave desert",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.449408+00:00",
+  "generatedAt": "2026-09-09T06:27:41.695439+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,150 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 24,
+        "m6Plus": 4,
+        "m7Plus": 2,
+        "maxMagnitude": 7.1,
+        "events": [
+          {
+            "magnitude": 7.1,
+            "time": "2019-07-06T03:19:53.040Z",
+            "place": "Ridgecrest Earthquake Sequence"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1999-10-16T09:46:44.460Z",
+            "place": "The 1999 Hector Mine, California Earthquake"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2019-07-04T17:33:49.000Z",
+            "place": "Ridgecrest Earthquake Sequence"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1993-05-17T23:20:50.250Z",
+            "place": "46km E of Big Pine, California"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2020-06-24T17:40:49.240Z",
+            "place": "18km SSE of Lone Pine, CA"
+          },
+          {
+            "magnitude": 5.77,
+            "time": "1999-10-16T09:59:35.390Z",
+            "place": "13km WSW of Ludlow, CA"
+          },
+          {
+            "magnitude": 5.75,
+            "time": "1995-09-20T23:27:36.270Z",
+            "place": "16km NNE of Ridgecrest, California"
+          },
+          {
+            "magnitude": 5.51,
+            "time": "2020-06-04T01:32:11.140Z",
+            "place": "17km S of Searles Valley, CA"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2019-07-06T03:47:53.420Z",
+            "place": "15km ESE of Little Lake, CA"
+          },
+          {
+            "magnitude": 5.44,
+            "time": "2019-07-06T04:18:55.790Z",
+            "place": "20km E of Little Lake, CA"
+          },
+          {
+            "magnitude": 5.37,
+            "time": "2019-07-05T11:07:53.040Z",
+            "place": "16km W of Searles Valley, CA"
+          },
+          {
+            "magnitude": 5.37,
+            "time": "1999-10-16T12:57:21.060Z",
+            "place": "32km SSW of Ludlow, California"
+          },
+          {
+            "magnitude": 5.36,
+            "time": "1995-08-17T22:39:58.100Z",
+            "place": "17km N of Ridgecrest, California"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2015-05-22T18:47:42.980Z",
+            "place": "37 km SSW of Caliente, Nevada"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1996-11-27T20:17:24.110Z",
+            "place": "27km E of Coso Junction, California"
+          },
+          {
+            "magnitude": 5.26,
+            "time": "1997-03-18T15:24:47.720Z",
+            "place": "20km ENE of Barstow, California"
+          },
+          {
+            "magnitude": 5.23,
+            "time": "1998-03-06T05:47:40.340Z",
+            "place": "28km E of Coso Junction, California"
+          },
+          {
+            "magnitude": 5.19,
+            "time": "2009-10-03T01:16:00.310Z",
+            "place": "18km NE of Olancha, CA"
+          },
+          {
+            "magnitude": 5.17,
+            "time": "2001-07-17T12:07:26.100Z",
+            "place": "7km ESE of Coso Junction, CA"
+          },
+          {
+            "magnitude": 5.17,
+            "time": "1996-01-07T14:32:53.020Z",
+            "place": "16km N of Ridgecrest, California"
+          },
+          {
+            "magnitude": 5.06,
+            "time": "2008-12-06T04:18:42.850Z",
+            "place": "26km WNW of Ludlow, CA"
+          },
+          {
+            "magnitude": 5.04,
+            "time": "1998-03-07T00:36:46.840Z",
+            "place": "30km E of Coso Junction, California"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-10-01T10:01:24.670Z",
+            "place": "18km NE of Olancha, CA"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-08-21T01:46:38.400Z",
+            "place": "12km S of Joshua Tree, California"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -848,9 +992,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d0c030e3fc967dcc410565962dfba79245215e4d74ddd196f79bfbcd3fe8f57d"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_433",
+    "geometryFingerprint": "64edf0e13b075497638b0a39a8908b33c288bc3e14b02197a2332cae87d2104a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -118.74442004599997,
+      33.680459820953295,
+      -113.04890910299996,
+      37.46522962390395
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d0c030e3fc967dcc410565962dfba79245215e4d74ddd196f79bfbcd3fe8f57d"
 }

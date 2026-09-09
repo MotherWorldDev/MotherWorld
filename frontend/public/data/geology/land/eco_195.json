@@ -3,7 +3,7 @@
   "regionId": "eco_195",
   "regionName": "Papuan Central Range sub-alpine grasslands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.347921+00:00",
+  "generatedAt": "2026-09-09T06:27:41.118741+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -28,6 +28,90 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "1993-10-16T03:05:30.300Z",
+            "place": "57 km NE of Kainantu, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-06-04T01:03:44.220Z",
+            "place": "77 km ENE of Kainantu, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-03-25T01:56:50.289Z",
+            "place": "56 km NNW of Lae, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1996-03-02T04:56:09.030Z",
+            "place": "81 km ENE of Kainantu, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2024-03-18T00:18:03.554Z",
+            "place": "56 km N of Lae, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-05-02T22:48:02.590Z",
+            "place": "59 km NE of Kainantu, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-10-13T03:15:02.590Z",
+            "place": "56 km NE of Kainantu, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-02-15T04:30:32.520Z",
+            "place": "44 km NNE of Lae, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-01-13T07:08:04.121Z",
+            "place": "53 km N of Lae, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-10-10T05:53:57.380Z",
+            "place": "58 km NNW of Lae, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-11-07T07:34:59.310Z",
+            "place": "65 km NE of Kainantu, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-11-01T07:44:51.520Z",
+            "place": "65 km NNE of Kainantu, Papua New Guinea"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -163,9 +247,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d893eabafa890a93166118a3fd048c82fe3cb86632206df35f37eeb6bcfa36de"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_195",
+    "geometryFingerprint": "779515bcd197c7b1aa6eee45d66c3fdfea8b768b88198439677474db848feee3",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      135.66694663200005,
+      -8.975355455834013,
+      147.60003672100027,
+      -3.421605989224129
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d893eabafa890a93166118a3fd048c82fe3cb86632206df35f37eeb6bcfa36de"
 }

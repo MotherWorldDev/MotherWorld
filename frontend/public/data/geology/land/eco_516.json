@@ -3,7 +3,7 @@
   "regionId": "eco_516",
   "regionName": "Western Ecuador moist forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.917391+00:00",
+  "generatedAt": "2026-09-09T06:27:41.896530+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,150 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 24,
+        "m6Plus": 5,
+        "m7Plus": 1,
+        "maxMagnitude": 7.8,
+        "events": [
+          {
+            "magnitude": 7.8,
+            "time": "2016-04-16T23:58:36.980Z",
+            "place": "27 km SSE of Muisne, Ecuador"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2016-05-18T16:46:43.860Z",
+            "place": "24 km NW of Rosa Zarate, Ecuador"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2016-05-18T07:57:02.650Z",
+            "place": "32 km SE of Muisne, Ecuador"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2016-07-11T02:11:04.800Z",
+            "place": "33 km NNW of Rosa Zarate, Ecuador"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2016-04-20T08:35:10.620Z",
+            "place": "10 km N of Muisne, Ecuador"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2016-07-11T02:01:09.950Z",
+            "place": "33 km NNW of Rosa Zarate, Ecuador"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2022-03-27T04:28:12.421Z",
+            "place": "7 km SE of Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2017-01-31T14:22:38.700Z",
+            "place": "28 km S of Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2017-07-11T12:09:15.560Z",
+            "place": "27 km S of Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-12-19T07:11:39.570Z",
+            "place": "11 km SSW of Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2010-11-25T04:19:41.390Z",
+            "place": "21 km SSE of Muisne, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2004-06-01T15:52:39.330Z",
+            "place": "29 km SSW of Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-03-27T20:17:07.324Z",
+            "place": "11 km E of Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-03-27T05:53:07.155Z",
+            "place": "12 km SSE of Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-12-12T15:54:00.240Z",
+            "place": "18 km SW of Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-02-08T10:54:42.290Z",
+            "place": "near the coast of Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-03-31T07:27:13.353Z",
+            "place": "32 km NNE of Santa Elena, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-10-21T21:08:56.040Z",
+            "place": "13 km NE of El Triunfo, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2005-11-05T09:11:03.070Z",
+            "place": "22 km SSW of Pedro Carbo, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-11-07T03:33:46.457Z",
+            "place": "5 km NNW of La Maná, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-03-16T03:53:28.778Z",
+            "place": "32 km ESE of San Lorenzo de Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-08-18T09:28:29.560Z",
+            "place": "13 km NNE of La Troncal, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-11-28T02:04:26.700Z",
+            "place": "13 km NNE of Santa Lucía, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1998-01-17T03:17:29.490Z",
+            "place": "5 km SSW of Santa Lucía, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -693,9 +837,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3ce380fbb985dcd5883d3f6e640861403091854f6f43e4bace7dbf125fd5d250"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_516",
+    "geometryFingerprint": "3d8c1bdadf834c98f908a28b1190f292bdbb528e04fe1a48bdfa51903c443a14",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -80.76713553699994,
+      -2.759708217940512,
+      -78.26383958299986,
+      1.704690219100182
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3ce380fbb985dcd5883d3f6e640861403091854f6f43e4bace7dbf125fd5d250"
 }

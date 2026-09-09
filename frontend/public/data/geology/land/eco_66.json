@@ -3,7 +3,7 @@
   "regionId": "eco_66",
   "regionName": "Zambezian-Limpopo mixed woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.589115+00:00",
+  "generatedAt": "2026-09-09T06:27:42.289557+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "2018-12-22T05:37:38.870Z",
+            "place": "53 km SSE of Chipinge, Zimbabwe"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -795,9 +824,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5c403259ee86a60a0b44ae0d474aebaba2e216a4eefe04e21465d649bc804d03"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_66",
+    "geometryFingerprint": "23fa2aed1b5cdcdfcaa530824e61dd557f4e5de6472e413db3592a315999d3fc",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      25.843333333000086,
+      -22.47137641289249,
+      35.54004658300005,
+      -13.254166653847095
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5c403259ee86a60a0b44ae0d474aebaba2e216a4eefe04e21465d649bc804d03"
 }

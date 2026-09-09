@@ -3,7 +3,7 @@
   "regionId": "eco_435",
   "regionName": "Sonoran desert",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.467632+00:00",
+  "generatedAt": "2026-09-09T06:27:41.698696+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,155 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 25,
+        "m6Plus": 1,
+        "m7Plus": 1,
+        "maxMagnitude": 7.2,
+        "events": [
+          {
+            "magnitude": 7.2,
+            "time": "2010-04-04T22:40:42.360Z",
+            "place": "The 2010 Sierra El Mayor, B.C., Mexico Earthquake"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2009-12-30T18:48:57.330Z",
+            "place": "12km N of Delta, B.C., MX"
+          },
+          {
+            "magnitude": 5.71,
+            "time": "2010-06-15T04:26:58.240Z",
+            "place": "8km ESE of Ocotillo, CA"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2010-04-04T22:50:17.120Z",
+            "place": "12km SSW of Estacion Coahuila, B.C., MX"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2002-02-22T19:32:41.750Z",
+            "place": "13km WSW of Delta, B.C., MX"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2001-12-08T23:36:10.110Z",
+            "place": "22km S of Estacion Coahuila, B.C., MX"
+          },
+          {
+            "magnitude": 5.43,
+            "time": "2010-04-04T23:15:14.240Z",
+            "place": "9km SW of Delta, B.C., MX"
+          },
+          {
+            "magnitude": 5.42,
+            "time": "2010-07-07T23:53:33.480Z",
+            "place": "20km NNW of Borrego Springs, CA"
+          },
+          {
+            "magnitude": 5.41,
+            "time": "2012-08-26T20:57:58.220Z",
+            "place": "4km NNW of Brawley, CA"
+          },
+          {
+            "magnitude": 5.38,
+            "time": "2010-04-04T23:25:07.190Z",
+            "place": "12km WNW of Alberto Oviedo Mota, B.C., MX"
+          },
+          {
+            "magnitude": 5.37,
+            "time": "2006-05-24T04:20:26.010Z",
+            "place": "6km SSW of Delta, B.C., MX"
+          },
+          {
+            "magnitude": 5.32,
+            "time": "2012-08-26T19:31:23.040Z",
+            "place": "5km NNW of Brawley, CA"
+          },
+          {
+            "magnitude": 5.29,
+            "time": "2010-04-08T16:44:25.010Z",
+            "place": "12km SW of Alberto Oviedo Mota, B.C., MX"
+          },
+          {
+            "magnitude": 5.26,
+            "time": "2010-04-04T22:43:00.430Z",
+            "place": "15km SSW of Progreso, B.C., MX"
+          },
+          {
+            "magnitude": 5.25,
+            "time": "2021-06-05T17:55:58.820Z",
+            "place": "11km W of Calipatria, CA"
+          },
+          {
+            "magnitude": 5.22,
+            "time": "2010-04-05T00:07:07.920Z",
+            "place": "27km SSW of Estacion Coahuila, B.C., MX"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-10-03T14:00:48.630Z",
+            "place": "5 km NE of Ejido Doctor Alberto Oviedo Mota (El Indiviso), Mexico"
+          },
+          {
+            "magnitude": 5.19,
+            "time": "2016-06-10T08:04:38.700Z",
+            "place": "20km NNW of Borrego Springs, CA"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-02-11T18:29:30.530Z",
+            "place": "7km WSW of Delta, B.C., MX"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-02-09T07:12:04.550Z",
+            "place": "8km W of Delta, B.C., MX"
+          },
+          {
+            "magnitude": 5.09,
+            "time": "2011-02-18T17:47:35.770Z",
+            "place": "17km SSW of Estacion Coahuila, B.C., MX"
+          },
+          {
+            "magnitude": 5.08,
+            "time": "2009-09-19T22:55:17.840Z",
+            "place": "7km WNW of Delta, B.C., MX"
+          },
+          {
+            "magnitude": 5.08,
+            "time": "2005-09-02T01:27:19.590Z",
+            "place": "13km WNW of Calipatria, CA"
+          },
+          {
+            "magnitude": 5.02,
+            "time": "2001-10-31T07:56:16.630Z",
+            "place": "16km ESE of Anza, CA"
+          },
+          {
+            "magnitude": 5.01,
+            "time": "2008-02-19T22:41:29.660Z",
+            "place": "14km NW of Delta, B.C., MX"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -891,9 +1040,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4355dd308c9d2407fe897cba280310a61a4caf10bcfcf780d4f83fc55ee5de09"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_435",
+    "geometryFingerprint": "771d4a7dc96e96507a4e7ade8d1bea71859ff7519e6e678f71cb8a2aa39862f2",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -116.76672166599995,
+      27.57149321316604,
+      -109.42755864399997,
+      35.148757461709856
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4355dd308c9d2407fe897cba280310a61a4caf10bcfcf780d4f83fc55ee5de09"
 }

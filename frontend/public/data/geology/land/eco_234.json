@@ -3,7 +3,7 @@
   "regionId": "eco_234",
   "regionName": "Irrawaddy freshwater swamp forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.545615+00:00",
+  "generatedAt": "2026-09-09T06:27:41.233875+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2025-03-04T22:06:43.695Z",
+            "place": "15 km S of Nyaungdon, Burma (Myanmar)"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -74,6 +103,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:863c794ec2e2be5e27de1cbefa67891036f232456aa59a924bfd2049f57e7958"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_234",
+    "geometryFingerprint": "ff65efa8fa94a0f2215e7fd08f23cc90a624d429f1df266473b99d681a2816c3",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      94.67611664200005,
+      16.2595671925261,
+      96.65380859300016,
+      17.502109908177243
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:863c794ec2e2be5e27de1cbefa67891036f232456aa59a924bfd2049f57e7958"
 }

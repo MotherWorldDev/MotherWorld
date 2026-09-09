@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20218",
   "regionName": "Peter the First Island",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.959870+00:00",
+  "generatedAt": "2026-09-09T06:27:39.079373+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 87.9005355834961,
           "coveragePct": 99.96639629142904
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 4053.02926013667,
+        "medianDepthM": 4236.0,
+        "p10DepthM": 3291.0,
+        "p90DepthM": 4614.0,
+        "shallowestM": 79.0,
+        "deepestM": 4802.0,
+        "coveragePct": 99.96355714066364,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.07307714799483962,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.4710527978925161,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 6.406937979478266,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 93.04893207463438,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     }
   },
@@ -74,6 +124,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     }
   ]
 }

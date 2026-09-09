@@ -1,8 +1,8 @@
 # Seven-region boundary issue and correction
 
-Last audited: **8 September 2026**, against published data at `fc565d78`, implementation commits `0b64991b`, `e1ee7442`, and `7d94246b`.
+Last audited: **9 September 2026**. The original comparisons use `fc565d78`; shared source fixes are in `0b64991b`, `e1ee7442`, and `7d94246b`. The geology replacement is recorded in [the September 9 release receipt](GEOLOGY_RELEASE_20260909.json).
 
-**Status: species is fixed and published. Shared boundary corrections, producer provenance, and stale-result guards are implemented across the audited root pipelines:** geology/biodiversity (`0b64991b`), climate/pollution (`e1ee7442`), and local regional diagnostics (`7d94246b`). **The regional diagnostics release includes rebuilt PHYLACINE records for all seven regions, with verified geometry provenance and explicit no-native-cell results. Affected geology, temperature, climate-extras, and pollution data releases remain pending.** Source implementation is complete for the audited paths; remaining components still require rebuild/release checks.
+**Status: species is fixed and published. Shared boundary corrections, producer provenance, and stale-result guards are implemented across the audited root pipelines:** geology/biodiversity (`0b64991b`), climate/pollution (`e1ee7442`), and local regional diagnostics (`7d94246b`). **The regional diagnostics release includes rebuilt PHYLACINE records for all seven regions, with verified geometry provenance and explicit no-native-cell results. The geology release includes all seven corrected GLiM summaries and verified whole-ocean provider identities. Affected temperature, climate-extras, and pollution data releases remain pending.** Source implementation is complete for the audited paths; remaining components still require rebuild/release checks.
 
 ## What happened
 
@@ -33,7 +33,7 @@ For the five unchanged-source regions, LOD0 retains only approximately 1.1–33.
 | Dataset or pipeline | Finding at audit time | Required follow-up |
 | --- | --- | --- |
 | Recorded species | Corrected footprints applied; all seven inventories rebuilt and published | Preserve the existing correction and quality filters |
-| Land geology / GLiM | [geology_common.py](../scripts/geology_common.py) now corrects the base LOD0 geometry. All seven published records still contain GLiM summaries from the older footprints | Source correction complete in `0b64991b`; rebuild the seven records and reassess point/line providers |
+| Land geology / GLiM | [geology_common.py](../scripts/geology_common.py) now corrects the base LOD0 geometry. The seven replacement records use the maintained footprints | Rebuilt GLiM records are included in the September 9 geology release; incompatible cached point/line providers remain withheld |
 | Land temperature | [temperature_common.py](../scripts/temperature_common.py) now applies the maintained overrides after loading the LOD0 geometry. None of the seven has a rebuilt temperature record | Rebuild only when suitable ERA5 input is available; the existing geometry-hashed `processing_fingerprint` invalidates incompatible reductions |
 | Regional precipitation, humidity, and wind | [climate_extras_common.py](../scripts/climate_extras_common.py) now applies the maintained overrides after loading LOD0. None of the seven has a rebuilt regional climate-extras record | Rebuild the regional reduction when inputs are available; output reuse checks the corrected geometry identity |
 | Regional biodiversity / PHYLACINE | Original and fallback loaders now apply all seven maintained overrides | Corrected seven-region fragments are included in the regional diagnostics release with verified producer provenance, `no_native_grid_cell`, and null retention; the UI withholds numeric mammal counts |
@@ -46,9 +46,9 @@ For the five unchanged-source regions, LOD0 retains only approximately 1.1–33.
 
 ## Measured GLiM effect
 
-The audit reproduced the current public GLiM results from the staged provider source, then recomputed them with the maintained corrected footprints. These are **audit comparisons**, not newly published replacement values.
+The audit reproduced the current public GLiM results from the staged provider source, then recomputed them with the maintained corrected footprints. The corrected values below are now included in the September 9 geology release; the older values remain here as the audit baseline.
 
-| Region | Current published result at `fc565d78` | Corrected-footprint comparison |
+| Region | Previous published result at `fc565d78` | Corrected-footprint comparison |
 | --- | --- | --- |
 | Adélie Land (`eco_117`) | 0% classified rock; all source no-data | 56.425% classified rock, including about 100.226 km² of metamorphic rocks |
 | Ellsworth Land (`eco_121`) | 100% basic volcanic rocks within the small retained footprint | 69.518% classified rock across the full footprint, with basic volcanic, metamorphic, intermediate volcanic, and mixed sedimentary classes |
@@ -75,8 +75,8 @@ No land-temperature value comparison was performed: the inspected cache had mari
 - [x] Add a shared analysis-geometry step that applies the maintained overrides after loading/repairing/unioning base land geometry. Preserve canonical IDs, WGS84 geometry, and source attribution (`0b64991b`, `e1ee7442`).
 - [x] Use that step in all audited regional builders, including original and fallback geometry paths and the local regional-diagnostics adapter (`0b64991b`, `e1ee7442`, `7d94246b`).
 - [ ] Replace or validate affected legacy cached results. Current root cache readers and mergers require the corrected identity; temperature retains its geometry-hashed `processing_fingerprint`. Legacy OSM count partials still need targeted recalculation. Reuse raw downloads only when their spatial/temporal coverage satisfies the corrected request.
-- [ ] Rebuild the seven affected geology summaries and any affected cached regional components; review geometry-derived whole-ocean exclusion masks.
-- [ ] Preserve explicit no-data/no-native-cell results where corrected geometry still lacks provider coverage.
+- [x] Rebuild all seven GLiM summaries and validate geometry-derived whole-ocean exclusion masks. Other affected regional climate/pollution components remain pending.
+- [x] Preserve explicit GLiM no-data and PHYLACINE no-native-cell results where corrected geometry still lacks provider coverage. Apply the same rule to remaining providers.
 - [x] Add regression checks for all seven overrides, the two official location replacements, source priority, missing reference geometry, and output/provenance consistency. Source fixing commits are recorded above; data-release status remains separate.
 
 The source correction in `0b64991b` passed 13 focused analysis-geometry, geology, and existing species-geometry tests, including rejection when a required reference footprint is unavailable. The `e1ee7442` climate/pollution changes passed 24 combined focused checks; the `7d94246b` adapter passed 7 checks. Late stale updates cannot erase a current verified result, and missing or uncorrected reference geometry cannot bypass validation. No affected seven-region climate/pollution outputs have been rebuilt. The existing OSM processing job saves regional counts rather than individual sites; those counts cannot be assigned corrected provenance without a targeted recalculation. Its affected records remain pending.
@@ -91,7 +91,7 @@ On 9 September 2026, review rejected the expanded geology candidate before publi
 
 The validated raw catalog contains 57,541 events; its earthquake-only derivative contains 57,468 earthquakes and excludes 73 other events. The candidate nevertheless retained non-earthquake events. It also contained two nested public trees: the selected outer index reported 469 ComCat regions while its manifest described 604 from the nested tree. Neither tree was accepted or published.
 
-Acceptance requires a clean isolated ComCat output directory, an event-level check against the earthquake-only derivative, explicit filter provenance on every emitted fragment, and one direct public tree whose index, manifest counts, and archive agree. Empty-result regions must not inherit old provider output. A repair is in progress; the previously published geology data remains in place. Local audit evidence is retained in `.cache/motherworld/v8-handoffs/geology-boundary-candidate-validation-20260909.md`.
+Acceptance requires a clean isolated ComCat output directory, an event-level check against the earthquake-only derivative, explicit filter provenance on every emitted fragment, and one direct public tree whose index, manifest counts, and archive agree. Empty-result regions must not inherit old provider output. The September 9 replacement was rebuilt in an empty provider directory and verified against the filtered catalog. It contains 601 ComCat summaries, 1,098 regions overall, and exactly 1,099 public JSON files in one direct tree. The reusable builder now enforces the normalized earthquake type filter, records filter counts, validates and serializes new output before replacing older fragments, and removes stale fragments even when a valid rebuild has no matching earthquakes. See [the release receipt](GEOLOGY_RELEASE_20260909.json) and [regression tests](../tests/test_usgs_seismicity.py). Local audit evidence is retained in `.cache/motherworld/v8-handoffs/geology-boundary-candidate-validation-20260909.md`.
 
 ## Maintainer references
 

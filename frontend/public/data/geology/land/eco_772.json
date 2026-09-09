@@ -3,7 +3,7 @@
   "regionId": "eco_772",
   "regionName": "Chukchi Peninsula tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.242517+00:00",
+  "generatedAt": "2026-09-09T06:27:42.666776+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,55 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2024-05-06T11:11:57.375Z",
+            "place": "201 km NNE of Egvekinot, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2012-03-26T09:30:18.740Z",
+            "place": "164 km NW of Lorino, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1995-10-02T01:35:48.300Z",
+            "place": "87 km WNW of Egvekinot, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1997-03-24T06:56:13.670Z",
+            "place": "191 km NNW of Lorino, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-10-24T21:57:37.240Z",
+            "place": "190 km NNW of Lorino, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -648,9 +697,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9e425d836712ddc014163ca6ee00a0be948ed6612d97a0f27ff609925bc4a19f"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_772",
+    "geometryFingerprint": "ac803e0da8a374782559a9681143164092710b1a28e965eb2418ce2b7320c08d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.99998860099996,
+      64.2339742927824,
+      179.99998860100004,
+      70.12858475506339
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9e425d836712ddc014163ca6ee00a0be948ed6612d97a0f27ff609925bc4a19f"
 }

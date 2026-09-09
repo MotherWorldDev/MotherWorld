@@ -3,7 +3,7 @@
   "regionId": "eco_697",
   "regionName": "Hengduan Mountains subalpine conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.807683+00:00",
+  "generatedAt": "2026-09-09T06:27:42.394286+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -124,6 +124,155 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 25,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "1996-02-03T11:14:20.120Z",
+            "place": "47 km N of Lijiang, China"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2013-08-31T00:04:17.750Z",
+            "place": "58 km NW of Shangri-La, China"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2001-02-23T00:09:23.690Z",
+            "place": "96 km SW of Kangding, China"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1998-11-19T11:38:14.830Z",
+            "place": "93 km ENE of Lijiang, China"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1996-02-04T16:58:05.970Z",
+            "place": "20 km NNE of Lijiang, China"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2012-06-24T07:59:34.860Z",
+            "place": "105 km E of Shangri-La, China"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2001-05-23T21:10:43.960Z",
+            "place": "119 km NE of Lijiang, China"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1996-02-06T07:36:13.720Z",
+            "place": "36 km N of Lijiang, China"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2022-01-02T07:02:13.733Z",
+            "place": "99 km E of Shangri-La, China"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-10-02T12:49:35.780Z",
+            "place": "90 km ENE of Lijiang, China"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1993-07-17T09:46:34.670Z",
+            "place": "21 km NNW of Shangri-La, China"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-09-22T17:23:15.960Z",
+            "place": "223 km W of Kangding, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-09-22T16:47:16.160Z",
+            "place": "219 km W of Kangding, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-08-27T20:44:53.360Z",
+            "place": "59 km NW of Shangri-La, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-04-26T04:21:49.088Z",
+            "place": "171 km E of Qamdo, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2024-05-27T03:07:11.247Z",
+            "place": "44 km N of Yongning, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-12-13T15:32:54.250Z",
+            "place": "217 km SE of Qamdo, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-10-31T08:29:58.930Z",
+            "place": "12 km SSW of Xichang, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1996-02-03T12:08:16.580Z",
+            "place": "25 km N of Lijiang, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-04-09T14:07:05.932Z",
+            "place": "48 km WNW of Yongning, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2013-08-31T00:27:01.770Z",
+            "place": "56 km NW of Shangri-La, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2001-02-14T07:27:33.050Z",
+            "place": "95 km WSW of Kangding, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-09-25T12:41:53.440Z",
+            "place": "124 km NNW of Shangri-La, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-07-02T07:05:06.000Z",
+            "place": "10 km N of Lijiang, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-02-03T11:39:42.350Z",
+            "place": "29 km NNW of Lijiang, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -354,9 +503,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ca00e0c95bade33ec89d74ca76ba19a05e0c23d6eed4bed6d4695fa047af5202"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_697",
+    "geometryFingerprint": "be529fbed4e74c3bbe6d5e78faa7dfe64260aacb61c8eacf6c2e9ab28bdde5df",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      97.85546153500017,
+      26.550106844809605,
+      102.4296265320001,
+      32.501186022357594
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ca00e0c95bade33ec89d74ca76ba19a05e0c23d6eed4bed6d4695fa047af5202"
 }

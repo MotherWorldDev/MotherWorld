@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20187",
   "regionName": "Channels and Fjords of Southern Chile",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.724302+00:00",
+  "generatedAt": "2026-09-09T06:27:38.982737+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2853.324783094455,
+        "medianDepthM": 3760.0,
+        "p10DepthM": 98.0,
+        "p90DepthM": 4199.0,
+        "shallowestM": -0.0,
+        "deepestM": 5065.0,
+        "coveragePct": 97.3254040430156,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 16.323532653293302,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 5.576653178773526,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 13.302640601353586,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 64.79717356657959,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -260,6 +310,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 54,
+        "m6Plus": 5,
+        "m7Plus": 1,
+        "maxMagnitude": 7.4,
+        "events": [
+          {
+            "magnitude": 7.4,
+            "time": "2025-05-02T12:58:26.014Z",
+            "place": "2025 Drake Passage Earthquake"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2025-05-02T17:59:07.662Z",
+            "place": "289 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2018-10-29T06:54:21.250Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2010-01-17T12:00:01.080Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2012-04-14T10:56:19.380Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1995-01-03T16:11:57.090Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2018-10-29T20:17:22.520Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2026-07-07T01:26:45.506Z",
+            "place": "297 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2025-05-02T13:09:40.634Z",
+            "place": "278 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2025-07-04T15:47:45.649Z",
+            "place": "256 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2025-05-02T13:10:08.321Z",
+            "place": "262 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2018-10-29T21:07:13.190Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2015-10-20T20:33:12.060Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2007-01-17T18:34:14.930Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2003-09-12T16:48:44.410Z",
+            "place": "213 km W of Puerto Natales, Chile"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2025-05-02T13:03:16.417Z",
+            "place": "256 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2021-06-23T00:47:05.330Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2026-07-24T23:10:30.109Z",
+            "place": "291 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-05-02T13:07:45.852Z",
+            "place": "228 km S of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2017-01-29T17:38:49.760Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1996-04-06T12:17:29.330Z",
+            "place": "Off the coast of Magallanes, Chile"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-06-07T11:06:04.640Z",
+            "place": "288 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-05-04T04:38:06.857Z",
+            "place": "Drake Passage"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-05-02T20:14:15.352Z",
+            "place": "266 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-05-02T16:48:33.458Z",
+            "place": "291 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-05-02T13:55:02.779Z",
+            "place": "279 km S of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1995-02-07T05:21:12.850Z",
+            "place": "237 km WSW of Cochrane, Chile"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-08-19T06:08:41.850Z",
+            "place": "267 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-05-21T00:38:12.308Z",
+            "place": "251 km SSE of Ushuaia, Argentina"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2019-12-21T20:34:49.129Z",
+            "place": "248 km SSE of Ushuaia, Argentina"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -387,6 +611,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -397,9 +626,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4b9391e2e2abac7dd0c6d87eafc14e8529bdfad9a5af526732a4c0a9c2383d05"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20187",
+    "geometryFingerprint": "15ae435fc44c8b06322214242a6c1a591688362d1ec18f9037aac90730cb0607",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -79.0474750694596,
+      -59.3466526272033,
+      -59.233956853978654,
+      -46.50947165762437
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4b9391e2e2abac7dd0c6d87eafc14e8529bdfad9a5af526732a4c0a9c2383d05"
 }

@@ -1,0 +1,102 @@
+{
+  "schemaVersion": 1,
+  "release": "20260909-geology1",
+  "snapshotId": "geology-boundary-rerun-20260909-clean-comcat",
+  "generatedAt": "2026-09-09T06:42:54.320535+00:00",
+  "publicIndex": {
+    "path": "frontend/public/data/geology/geology.index.json",
+    "sha256": "8cb3495c984fe2d49c8f023647e8f9af494c13ccef699f2dddabd6dfd93e4069",
+    "regionCount": 1098,
+    "staleFragments": [],
+    "providerCounts": {
+      "earthbyte_seafloor_age": 199,
+      "earthbyte_seafloor_tectonics": 103,
+      "gebco_2026": 233,
+      "gem_active_faults": 579,
+      "glim": 847,
+      "ihfc_heat_flow": 747,
+      "interridge_vents": 55,
+      "usgs_comcat": 601,
+      "usgs_mrds": 775
+    },
+    "mergedKindCounts": {
+      "lakes": 18,
+      "land": 847,
+      "marine": 233
+    }
+  },
+  "inventoryRegionCount": 1100,
+  "coveredInventoryRegionCount": 1097,
+  "wholeOceanScopeCount": 1,
+  "missingInventoryRegions": [
+    "lake_aral_sea",
+    "lake_ladoga",
+    "lake_vanern"
+  ],
+  "publicJsonFileCount": 1099,
+  "correctedLandRegionIds": [
+    "eco_117",
+    "eco_121",
+    "eco_130",
+    "eco_267",
+    "eco_509",
+    "eco_562",
+    "eco_609"
+  ],
+  "correctedGeometryIdentities": {
+    "eco_117": "analysis-geometry-v1:4c74890c36bfd51f7af1527afcccb305f57ce9a6721ea4f6d99666c7775b670a",
+    "eco_121": "analysis-geometry-v1:932cd3bec856b7966d433273a48f627321dc41d6ecda203a33646e6fee6a6669",
+    "eco_130": "analysis-geometry-v1:b01b3d112b726246c4347febbac291645750d4ec2fb9842e01a31395774b3d9b",
+    "eco_267": "analysis-geometry-v1:59052449a2d061809dbad6bc9b307ab866ba141a953c7a1162d3a961246738fa",
+    "eco_509": "analysis-geometry-v1:8e1f5e3b8c16a267f2920cc1cee8e0e636c25a826ca1e97ff4cfc5db642e8eba",
+    "eco_562": "analysis-geometry-v1:213c750f56894098ee7ec0616bb64aec0aef8241db6ac90dc42ff817ced74b99",
+    "eco_609": "analysis-geometry-v1:73f753b1ce6afe39581ebd977b64fc576e37233e5b106aa366f64ce9e174ae58",
+    "open_ocean": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
+  },
+  "comcat": {
+    "rawSha256": "339e2060a5f321b5cc9982903a845f45436e81361fd680d8441eec59424e42a2",
+    "rawRowCount": 57541,
+    "rawTypeCounts": {
+      "earthquake": 57468,
+      "landslide": 2,
+      "mine collapse": 1,
+      "nuclear explosion": 15,
+      "volcanic eruption": 55
+    },
+    "filteredSha256": "04e3906903133f0b6daf52ca4f7ac7ee997aaa5883f41894bce3e67d1a256e52",
+    "filteredRowCount": 57468,
+    "fragmentCount": 601,
+    "filterMetadata": {
+      "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+      "inputRowCount": 57541,
+      "includedRowCount": 57468,
+      "excludedRowCount": 73,
+      "excludedTypeCounts": {
+        "landslide": 2,
+        "mine collapse": 1,
+        "nuclear explosion": 15,
+        "volcanic eruption": 55
+      }
+    }
+  },
+  "comcatRequestedScope": {
+    "startTime": "1993-01-01T00:00:00Z",
+    "endTime": "2026-09-08T06:50:47Z",
+    "minMagnitude": 5.0
+  },
+  "notes": [
+    "Region counts overlap the separate whole-ocean scope; do not sum regional event counts into a global total.",
+    "Four corrected island regions retain explicit GLiM no-data. Correcting a footprint does not create missing provider coverage.",
+    "Geology is descriptive regional context and does not contribute Earth Health points."
+  ],
+  "validation": {
+    "strictFiniteJsonFiles": 1099,
+    "indexPathsResolved": 1098,
+    "comcatListedEventTuplesChecked": 8385,
+    "comcatSpatialEventRegionRecordsChecked": 96731,
+    "staleComcatFragments": 0,
+    "pythonTestsPassed": 6,
+    "pythonSubtestsPassed": 2,
+    "independentAuditSha256": "ca382f005e7f4de10722e42670383f2a0db6bd50547d9fcf6ddb6aea5d2abca4"
+  }
+}

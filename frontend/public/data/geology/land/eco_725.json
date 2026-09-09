@@ -3,7 +3,7 @@
   "regionId": "eco_725",
   "regionName": "Central Anatolian steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.971394+00:00",
+  "generatedAt": "2026-09-09T06:27:42.490223+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -100,6 +100,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2025-05-15T12:46:37.436Z",
+            "place": "14 km ENE of Kulu, Turkey"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -355,9 +384,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:76868730de862e9a86c1ebc363b3306bb8f350f0799d5e198995adeef0628866"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_725",
+    "geometryFingerprint": "1311b9b4d2bc4220df1b9a12824da61f29cf6a0ed54e311fc5177324ddb769af",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      31.01874356800004,
+      37.219944383778525,
+      34.81018448500003,
+      40.25351457128272
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:76868730de862e9a86c1ebc363b3306bb8f350f0799d5e198995adeef0628866"
 }

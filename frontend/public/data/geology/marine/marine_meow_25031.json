@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25031",
   "regionName": "Aegean Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.086377+00:00",
+  "generatedAt": "2026-09-09T06:27:39.132688+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 1125.689872736803,
+        "medianDepthM": 634.0,
+        "p10DepthM": 74.0,
+        "p90DepthM": 2809.0,
+        "shallowestM": 1.0,
+        "deepestM": 4635.0,
+        "coveragePct": 99.49728942270778,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 23.413907117959244,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 37.381982578411616,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 31.891838211431484,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 7.312272092197643,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -348,6 +398,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 225,
+        "m6Plus": 24,
+        "m7Plus": 1,
+        "maxMagnitude": 7.0,
+        "events": [
+          {
+            "magnitude": 7.0,
+            "time": "2020-10-30T11:51:27.348Z",
+            "place": "13 km NNE of Néon Karlovásion, Greece"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2014-05-24T09:25:02.440Z",
+            "place": "21 km SSW of Kamariótissa, Greece"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2006-01-08T11:34:55.640Z",
+            "place": "26 km NE of Kýthira, Greece"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2017-07-20T22:31:11.260Z",
+            "place": "11 km ENE of Kos, Greece"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2013-10-12T13:11:53.350Z",
+            "place": "36 km W of Kíssamos, Greece"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2020-05-02T12:51:05.561Z",
+            "place": "91 km S of Néa Anatolí, Greece"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2001-07-26T00:21:36.920Z",
+            "place": "32 km WNW of Skýros, Greece"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2009-07-01T09:30:10.410Z",
+            "place": "95 km S of Néa Anatolí, Greece"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2008-07-15T03:26:34.700Z",
+            "place": "35 km SSW of Lárdos, Greece"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2017-06-12T12:28:39.150Z",
+            "place": "5 km S of Plomári, Greece"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2025-05-22T03:19:35.518Z",
+            "place": "66 km SE of Emporeío, Greece"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2025-04-23T09:49:11.631Z",
+            "place": "24 km SE of Marmara Ereğlisi, Turkey"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2013-06-15T16:11:02.500Z",
+            "place": "68 km S of Pýrgos, Greece"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2002-01-22T04:53:52.650Z",
+            "place": "49 km NW of Fry, Greece"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1996-07-20T00:00:41.880Z",
+            "place": "Dodecanese Islands, Greece"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2004-03-17T05:21:00.800Z",
+            "place": "74 km WSW of Kastrí, Greece"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1994-05-23T06:46:16.120Z",
+            "place": "15 km NNE of Pánormos, Greece"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2025-05-13T22:51:15.880Z",
+            "place": "20 km SSE of Fry, Greece"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2019-11-27T07:23:42.383Z",
+            "place": "45 km WNW of Kíssamos, Greece"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2015-04-16T18:07:43.610Z",
+            "place": "26 km SSW of Fry, Greece"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2013-06-16T21:39:05.780Z",
+            "place": "73 km S of Pýrgos, Greece"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2012-06-10T12:44:16.590Z",
+            "place": "28 km SW of Ölüdeniz, Turkey"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2011-04-01T13:29:10.690Z",
+            "place": "42 km NW of Fry, Greece"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1997-11-14T21:38:51.600Z",
+            "place": "36 km SSW of Eresós, Greece"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2023-01-25T12:37:05.134Z",
+            "place": "60 km SE of Lárdos, Greece"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2021-10-19T05:32:32.741Z",
+            "place": "149 km SE of Karpathos, Greece"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2005-10-20T21:40:04.090Z",
+            "place": "9 km WSW of Seferihisar, Turkey"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2002-05-21T20:53:29.700Z",
+            "place": "18 km SW of Adámas, Greece"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2014-08-29T03:45:07.500Z",
+            "place": "59 km E of Géfyra, Greece"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2009-06-19T14:04:59.030Z",
+            "place": "90 km SSE of Lárdos, Greece"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -480,6 +704,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -495,9 +724,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b977ddb0d1c6cd147c1d43636568e0afe36ca12263172225bf96db43bf70d261"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25031",
+    "geometryFingerprint": "a244cac188994c361515adc375cb35478c5f9331eff42d54d02a6c0ff219bafe",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      22.53091996913553,
+      34.088158795954584,
+      30.106998008553596,
+      41.08129619052286
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b977ddb0d1c6cd147c1d43636568e0afe36ca12263172225bf96db43bf70d261"
 }

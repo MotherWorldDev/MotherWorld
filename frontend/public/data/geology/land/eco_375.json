@@ -3,7 +3,7 @@
   "regionId": "eco_375",
   "regionName": "Interior Alaska-Yukon lowland taiga",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.180580+00:00",
+  "generatedAt": "2026-09-09T06:27:41.570710+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,90 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "1995-10-06T05:23:18.540Z",
+            "place": "36 km E of Minto, Alaska"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2000-11-29T10:35:48.461Z",
+            "place": "52 km WSW of Ferry, Alaska"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2000-02-03T10:24:57.773Z",
+            "place": "northern Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2006-02-05T08:17:01.373Z",
+            "place": "61 km SE of Chalkyitsik, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2024-01-19T21:34:35.071Z",
+            "place": "4 km SW of Salcha, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-01-30T04:40:08.488Z",
+            "place": "13 km WSW of Takotna, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2014-08-31T03:06:57.111Z",
+            "place": "14 km E of Minto, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-10-27T16:57:28.350Z",
+            "place": "24 km ENE of Tanana, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-02-05T16:43:32.339Z",
+            "place": "64 km SE of Chalkyitsik, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2001-06-04T18:42:36.046Z",
+            "place": "54 km SSW of Tanana, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2014-10-23T16:30:23.968Z",
+            "place": "14 km E of Minto, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-12-06T18:40:26.044Z",
+            "place": "59 km WSW of Ferry, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -878,9 +962,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:090fa4200ecf83b73db86f323a593a1a428f305ad9c803e27e496765bcfe56f1"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_375",
+    "geometryFingerprint": "6f0e200eb73a60425f319790edf65bf801d74ba79d8af692613660b22eeb44b1",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -163.892879886,
+      59.72467791446725,
+      -136.7692279089999,
+      68.8138949850057
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:090fa4200ecf83b73db86f323a593a1a428f305ad9c803e27e496765bcfe56f1"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_233",
   "regionName": "Himalayan subtropical broadleaf forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.539003+00:00",
+  "generatedAt": "2026-09-09T06:27:41.233875+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -77,6 +77,70 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2006-02-23T20:04:53.550Z",
+            "place": "23 km ENE of Samdrup Jongkhar, Bhutan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2009-12-31T09:57:29.720Z",
+            "place": "4 km WSW of Trashigang, Bhutan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-10-22T01:54:21.100Z",
+            "place": "36 km NE of Bharatpur, Nepal"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2006-02-23T20:07:26.170Z",
+            "place": "14 km ENE of Samdrup Jongkhar, Bhutan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-02-21T18:10:00.970Z",
+            "place": "40 km NE of Bharatpur, Nepal"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-04-25T23:16:15.450Z",
+            "place": "42 km WNW of Kirtipur, Nepal"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-10-29T17:00:38.600Z",
+            "place": "15 km WSW of Trashigang, Bhutan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2001-07-16T16:12:46.750Z",
+            "place": "31 km NNW of Kathmandu, Nepal"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "surfaceGeology": {
@@ -139,6 +203,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:dc0654dd0a1fe065eb61df5acbb069db84e06b780913cd77cb5ef2d54352a35a"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_233",
+    "geometryFingerprint": "5947a4b7f4cfd9b58f8e504023718115b67ae816d43ad5431afe20baf48d6929",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      80.14580550600002,
+      26.65995604484571,
+      92.11680560200017,
+      29.76310474506068
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:dc0654dd0a1fe065eb61df5acbb069db84e06b780913cd77cb5ef2d54352a35a"
 }

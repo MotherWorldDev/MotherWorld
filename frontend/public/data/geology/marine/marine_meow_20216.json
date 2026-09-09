@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20216",
   "regionName": "Prince Edward Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.944965+00:00",
+  "generatedAt": "2026-09-09T06:27:39.069751+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3269.7065801918548,
+        "medianDepthM": 3349.0,
+        "p10DepthM": 1949.0,
+        "p90DepthM": 4482.0,
+        "shallowestM": 31.0,
+        "deepestM": 5200.0,
+        "coveragePct": 99.94809134306416,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.10416078587419583,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 1.286895063224342,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 41.085298724773416,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 57.523645426128056,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -194,6 +244,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 33,
+        "m6Plus": 6,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2003-01-27T17:56:25.830Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2013-07-22T07:01:42.500Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2015-10-23T04:04:18.140Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2009-06-04T17:25:25.500Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2008-03-13T13:28:44.850Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2002-03-17T19:33:33.780Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2000-09-25T04:00:39.670Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1993-01-19T09:05:01.880Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2023-09-20T19:22:32.866Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2019-12-28T15:36:35.773Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2007-02-26T23:49:53.730Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2002-01-20T13:07:11.440Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2019-10-13T12:21:07.609Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-04-29T16:27:35.614Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-04-29T16:41:44.936Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-02-07T11:03:18.249Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-11-20T17:56:13.970Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-11-20T09:08:02.890Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-02-22T11:37:45.910Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-10-22T06:38:48.170Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2026-04-29T16:31:04.728Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2026-04-29T16:11:26.267Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-05-21T17:23:20.311Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-11-21T13:00:24.330Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-11-20T03:19:56.190Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-11-19T12:47:05.100Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-01-27T23:19:49.880Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-02-27T03:47:12.110Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1997-08-08T17:16:23.250Z",
+            "place": "Prince Edward Islands region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-06-16T06:30:21.218Z",
+            "place": "Prince Edward Islands region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     }
   },
@@ -209,9 +433,38 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:80dda4648e7f9f37bf6ee3061f1d26a1a50ac709fc38bd4934cc280cec94458f"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20216",
+    "geometryFingerprint": "1a9815f2f0dd9fa1241cc4da9426f4506863ddbc65800ed7820042ffa8a35644",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      34.24436627503695,
+      -50.335682085763935,
+      41.3110058295758,
+      -43.30240354529097
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:80dda4648e7f9f37bf6ee3061f1d26a1a50ac709fc38bd4934cc280cec94458f"
 }

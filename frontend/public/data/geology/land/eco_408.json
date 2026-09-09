@@ -3,7 +3,7 @@
   "regionId": "eco_408",
   "regionName": "Arctic foothills tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.106932+00:00",
+  "generatedAt": "2026-09-09T06:27:44.854931+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 97.55693086275437,
@@ -121,6 +121,72 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2014-06-07T04:43:32.988Z",
+            "place": "northern Alaska"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2014-06-16T12:01:07.670Z",
+            "place": "29 km ENE of Noatak, Alaska"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2014-05-03T08:57:13.417Z",
+            "place": "25 km NE of Noatak, Alaska"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2014-04-18T18:56:46.594Z",
+            "place": "18 km NE of Noatak, Alaska"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2014-04-18T18:44:18.152Z",
+            "place": "22 km NE of Noatak, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-08-31T08:20:55.430Z",
+            "place": "109 km SSE of Prudhoe Bay, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2014-05-03T09:57:08.431Z",
+            "place": "23 km NE of Noatak, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2014-04-19T08:49:01.465Z",
+            "place": "23 km ENE of Noatak, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -574,9 +640,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:44c0c394438051e2fd42a7059e22b600ff6469ae5471580f585a8a7318f8a6a6"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_408",
+    "geometryFingerprint": "893d33b6dbd0b31468d081b719be38e4f56c6d1fd62adb7ab3ef93ef07cdd542",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -166.6293009409999,
+      66.98603541192239,
+      -135.72328568199993,
+      70.18088405306553
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:44c0c394438051e2fd42a7059e22b600ff6469ae5471580f585a8a7318f8a6a6"
 }

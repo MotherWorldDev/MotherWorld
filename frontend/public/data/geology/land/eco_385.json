@@ -3,7 +3,7 @@
   "regionId": "eco_385",
   "regionName": "California Central Valley grasslands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.210998+00:00",
+  "generatedAt": "2026-09-09T06:27:41.584292+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -148,6 +148,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.22,
+        "events": [
+          {
+            "magnitude": 5.22,
+            "time": "2024-08-07T04:09:56.760Z",
+            "place": "24 km SW of Lamont, CA"
+          },
+          {
+            "magnitude": 5.19,
+            "time": "1993-05-28T04:47:40.600Z",
+            "place": "21km SW of Lamont, California"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -731,9 +765,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:75ee7987af40b6f54ddf442994fbeb6c0a6de2592a1b174c1ae593b14e83c01e"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_385",
+    "geometryFingerprint": "98706763a98371c440c6168beaedd3762a3781e856885719f2079bf97d115880",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -122.36402432299994,
+      34.93258835159784,
+      -118.59331599499987,
+      40.21749025826554
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:75ee7987af40b6f54ddf442994fbeb6c0a6de2592a1b174c1ae593b14e83c01e"
 }

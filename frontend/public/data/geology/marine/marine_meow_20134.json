@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20134",
   "regionName": "Bismarck Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.449605+00:00",
+  "generatedAt": "2026-09-09T06:27:38.799829+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2439.6689017130934,
+        "medianDepthM": 2168.0,
+        "p10DepthM": 849.0,
+        "p90DepthM": 4402.0,
+        "shallowestM": -0.0,
+        "deepestM": 7206.0,
+        "coveragePct": 99.47915264243719,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 3.1905657206351132,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 9.530654042724183,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 52.71725069476971,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 34.14191159888483,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.419617942986156,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -429,6 +479,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 827,
+        "m6Plus": 101,
+        "m7Plus": 7,
+        "maxMagnitude": 8.0,
+        "events": [
+          {
+            "magnitude": 8.0,
+            "time": "2000-11-16T04:54:56.740Z",
+            "place": "2000 New Ireland Earthquake"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2019-05-14T12:58:25.939Z",
+            "place": "48 km NE of Kokopo, Papua New Guinea"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2002-09-08T18:44:23.710Z",
+            "place": "68 km ESE of Aitape, Papua New Guinea"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "2015-03-29T23:48:31.010Z",
+            "place": "53 km SE of Kokopo, Papua New Guinea"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1999-05-16T00:51:20.460Z",
+            "place": "51 km SSE of Kokopo, Papua New Guinea"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1999-05-10T20:33:02.090Z",
+            "place": "92 km ENE of Kimbe, Papua New Guinea"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "1998-07-17T08:49:13.280Z",
+            "place": "50 km WNW of Aitape, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2023-10-07T08:40:11.361Z",
+            "place": "48 km SE of Madang, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2014-08-03T00:22:03.680Z",
+            "place": "Federated States of Micronesia region"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1999-11-17T03:27:42.080Z",
+            "place": "84 km WNW of Kandrian, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2016-10-17T06:14:58.270Z",
+            "place": "76 km WNW of Kandrian, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2012-04-17T07:13:49.000Z",
+            "place": "140 km N of Lae, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2007-11-22T08:48:27.530Z",
+            "place": "107 km N of Lae, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1995-08-14T04:37:17.500Z",
+            "place": "99 km WSW of Kokopo, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2023-03-01T05:36:14.834Z",
+            "place": "106 km NW of Kimbe, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2014-11-07T03:33:55.280Z",
+            "place": "76 km NE of Finschhafen, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2011-07-31T23:38:56.610Z",
+            "place": "103 km NE of Angoram, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2005-04-11T12:20:05.960Z",
+            "place": "192 km N of Madang, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1997-08-29T08:14:09.970Z",
+            "place": "64 km NNE of Angoram, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2025-05-20T15:05:59.387Z",
+            "place": "89 km ENE of Angoram, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2023-11-27T21:46:42.183Z",
+            "place": "44 km E of Wewak, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2013-04-23T23:14:40.630Z",
+            "place": "33 km N of Rabaul, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2011-10-14T03:35:14.810Z",
+            "place": "4 km ESE of Finschhafen, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2010-08-04T07:15:33.510Z",
+            "place": "118 km ESE of Madang, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2003-07-15T18:46:38.120Z",
+            "place": "41 km N of Rabaul, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2026-07-13T08:53:27.219Z",
+            "place": "196 km SE of Lorengau, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2016-07-25T19:38:45.560Z",
+            "place": "133 km SE of Lorengau, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2009-04-01T03:54:58.770Z",
+            "place": "52 km E of Wewak, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2006-07-19T11:48:58.290Z",
+            "place": "61 km E of Kimbe, Papua New Guinea"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2005-11-05T10:48:21.220Z",
+            "place": "156 km SE of Lorengau, Papua New Guinea"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -500,6 +724,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -513,6 +742,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:363b6eaa13102b54bfa44ad0a0df065d02d8995a8ddd929b1a103de9141d93f6"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20134",
+    "geometryFingerprint": "46bd33ecd7c8f04cf524b15de92fa2679d4cbf9d61449599ed18a0d0da1e9aac",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      140.83345269705123,
+      -6.605564513381942,
+      152.79543543739152,
+      2.197875273409795
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:363b6eaa13102b54bfa44ad0a0df065d02d8995a8ddd929b1a103de9141d93f6"
 }

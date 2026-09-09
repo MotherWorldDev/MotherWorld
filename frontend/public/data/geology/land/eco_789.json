@@ -3,7 +3,7 @@
   "regionId": "eco_789",
   "regionName": "Crete Mediterranean forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.289108+00:00",
+  "generatedAt": "2026-09-09T06:27:42.703027+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -76,6 +76,70 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2021-10-12T09:24:05.099Z",
+            "place": "4 km SW of Palekastro, Greece"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2021-09-27T06:17:21.478Z",
+            "place": "6 km N of Thrapsanón, Greece"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2020-09-18T16:28:17.575Z",
+            "place": "12 km SSE of Arkalochóri, Greece"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2026-04-24T03:18:53.617Z",
+            "place": "9 km E of Kentrí, Greece"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-09-28T04:48:08.650Z",
+            "place": "9 km SW of Arkalochóri, Greece"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-08-13T07:49:31.309Z",
+            "place": "16 km ENE of Palaióchora, Greece"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-05-18T18:58:51.137Z",
+            "place": "6 km SSW of Moíres, Greece"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-06-12T00:20:45.600Z",
+            "place": "11 km SSW of Palekastro, Greece"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -189,6 +253,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:bb76d8f28e4491f75421d68a89474a1aab7192a0cd4d46acd80094160d70bfad"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_789",
+    "geometryFingerprint": "8187f5a00483a1efcded4c05e2204f908e0603ca11c4932378cdbe7efa604828",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      23.51727851200019,
+      34.923815715593456,
+      26.321910591000062,
+      35.643852882966165
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:bb76d8f28e4491f75421d68a89474a1aab7192a0cd4d46acd80094160d70bfad"
 }

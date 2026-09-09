@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20063",
   "regionName": "Bahamian",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.986910+00:00",
+  "generatedAt": "2026-09-09T06:27:38.558816+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 25.84185791015625,
           "p90MmYr": 46.64815902709961,
           "coveragePct": 54.54624273216655
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3324.9310261057294,
+        "medianDepthM": 4444.0,
+        "p10DepthM": 10.0,
+        "p90DepthM": 5508.0,
+        "shallowestM": -0.0,
+        "deepestM": 8385.0,
+        "coveragePct": 99.7957333743955,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 14.06905492932789,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 12.152310294038529,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 17.105619473417597,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 52.97731822061135,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 3.6956970826046196,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -194,6 +244,150 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 24,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2014-01-13T04:01:03.240Z",
+            "place": "61 km N of Hatillo, Puerto Rico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2019-09-24T03:23:40.000Z",
+            "place": "67 km NNW of San Antonio, Puerto Rico"
+          },
+          {
+            "magnitude": 5.85,
+            "time": "2025-02-25T05:48:55.100Z",
+            "place": "102 km NNE of Punta Cana, Dominican Republic"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2025-06-24T02:45:43.620Z",
+            "place": "77 km NNE of Punta Cana, Dominican Republic"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2024-05-15T00:30:11.410Z",
+            "place": "92 km NNW of San Antonio, Puerto Rico"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2008-02-04T07:43:56.130Z",
+            "place": "Puerto Rico region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2000-12-11T18:54:07.490Z",
+            "place": "65 km N of Isabela, Puerto Rico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2008-11-02T20:42:37.150Z",
+            "place": "106 km N of Brenas, Puerto Rico"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-12-26T07:24:25.190Z",
+            "place": "72 km NE of Samaná, Dominican Republic"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2026-02-19T14:18:06.650Z",
+            "place": "155 km N of Arecibo, Puerto Rico"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-02-26T17:07:34.800Z",
+            "place": "Mona Passage"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-11-28T10:35:57.460Z",
+            "place": "68 km N of Hatillo, Puerto Rico"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-08-14T09:50:24.140Z",
+            "place": "92 km N of Suárez, Puerto Rico"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-03-12T02:05:38.460Z",
+            "place": "66 km N of Brenas, Puerto Rico"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-09-06T20:43:02.900Z",
+            "place": "122 km NNE of Vieques, Puerto Rico"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-12-06T03:33:27.770Z",
+            "place": "105 km NNW of San Antonio, Puerto Rico"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1998-06-30T20:19:16.650Z",
+            "place": "284 km NNE of Cabarete, Dominican Republic"
+          },
+          {
+            "magnitude": 5.06,
+            "time": "2019-09-24T03:32:41.200Z",
+            "place": "59 km N of San Antonio, Puerto Rico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-11-17T11:48:26.500Z",
+            "place": "63 km NNW of San Antonio, Puerto Rico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-11-08T11:33:37.933Z",
+            "place": "57 km NNE of Puerto Padre, Cuba"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-11-28T04:56:22.030Z",
+            "place": "68 km N of Hatillo, Puerto Rico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-03-16T13:42:33.590Z",
+            "place": "71 km NE of Punta Cana, Dominican Republic"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-05-20T03:36:09.490Z",
+            "place": "73 km NNE of Vieques, Puerto Rico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-11-23T09:05:20.280Z",
+            "place": "113 km N of Brenas, Puerto Rico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -310,6 +504,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -320,9 +519,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:818a17d8c49009f71f2ba9d558b62cd964244f13802b102894983db4ad0bc977"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20063",
+    "geometryFingerprint": "8f62456ea95ce5dadf27605ec8fe0ec10a8c7294a7d19e8bb29d491a787c9a7f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -81.42728056310963,
+      18.63187220066493,
+      -65.09977712273076,
+      30.241904191357875
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:818a17d8c49009f71f2ba9d558b62cd964244f13802b102894983db4ad0bc977"
 }

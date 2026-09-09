@@ -1,4 +1,4 @@
-import { APP_CONFIG } from "./config.js?v=20260908-diagnostics1";
+import { APP_CONFIG } from "./config.js?v=20260909-geology1";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
 import { createUI } from "./ui.js?v=20260908-diagnostics1";
 import { createSelenologyPanel } from "./selenologyPanel.js?v=20260908-env8-selenology";

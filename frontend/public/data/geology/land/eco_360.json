@@ -3,7 +3,7 @@
   "regionId": "eco_360",
   "regionName": "Northern Pacific Alaskan coastal forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.106831+00:00",
+  "generatedAt": "2026-09-09T06:27:41.538493+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,60 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "1999-05-05T10:30:03.510Z",
+            "place": "30 km ESE of Port Graham, Alaska"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1999-05-27T08:09:11.060Z",
+            "place": "43 km ESE of Yakutat, Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-10-30T17:33:14.566Z",
+            "place": "48 km ESE of Fox River, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-10-28T03:44:10.734Z",
+            "place": "55 km SSW of Covenant Life, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2014-06-04T11:58:56.661Z",
+            "place": "63 km SW of Covenant Life, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-02-05T16:15:17.764Z",
+            "place": "5 km SSW of Seldovia, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -852,9 +906,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:210f76ad9c9c36c665ef0fe07248d0146084f65d9909d096f8c9127c6252812d"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_360",
+    "geometryFingerprint": "b2e1fe9b2d11f8e5cae1d67c482be7bb5ac23e866e0e7214125714ba680f8449",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -152.94373648999996,
+      54.67649539385982,
+      -130.15508464799984,
+      61.097905622579304
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:210f76ad9c9c36c665ef0fe07248d0146084f65d9909d096f8c9127c6252812d"
 }

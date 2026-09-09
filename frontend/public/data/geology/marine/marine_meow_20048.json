@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20048",
   "regionName": "Northeastern Honshu",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.926825+00:00",
+  "generatedAt": "2026-09-09T06:27:38.519225+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 139.68508911132812,
           "p90MmYr": 202.2079620361328,
           "coveragePct": 30.779801077937314
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3208.596691172978,
+        "medianDepthM": 2421.0,
+        "p10DepthM": 144.0,
+        "p90DepthM": 6550.0,
+        "shallowestM": 5.0,
+        "deepestM": 8295.0,
+        "coveragePct": 99.95922236176851,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 12.377225639642994,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 15.18806847616039,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 26.38371119553318,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 28.40967387947932,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 17.641320809184105,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -260,6 +310,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1576,
+        "m6Plus": 168,
+        "m7Plus": 19,
+        "maxMagnitude": 9.1,
+        "events": [
+          {
+            "magnitude": 9.1,
+            "time": "2011-03-11T05:46:24.120Z",
+            "place": "2011 Great Tohoku Earthquake, Japan"
+          },
+          {
+            "magnitude": 7.9,
+            "time": "2011-03-11T06:15:40.280Z",
+            "place": "47 km E of ?arai, Japan"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "1994-12-28T12:19:23.030Z",
+            "place": "off the east coast of Honshu, Japan"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2011-03-11T06:25:50.300Z",
+            "place": "272 km ESE of Kamaishi, Japan"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2025-12-08T14:15:09.896Z",
+            "place": "2025 Aomori Prefecture, Japan Earthquake"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2026-04-20T07:52:58.908Z",
+            "place": "102 km ENE of Miyako, Japan"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2022-03-16T14:36:30.997Z",
+            "place": "57 km ENE of Namie, Japan"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2012-12-07T08:18:23.130Z",
+            "place": "234 km SE of ?funato, Japan"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2011-03-09T02:45:20.330Z",
+            "place": "120 km SE of ?funato, Japan"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2005-08-16T02:46:28.400Z",
+            "place": "66 km ESE of Ishinomaki, Japan"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2021-02-13T14:07:49.797Z",
+            "place": "73 km ENE of Namie, Japan"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2013-10-25T17:10:19.710Z",
+            "place": "off the east coast of Honshu, Japan"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2011-04-07T14:32:43.290Z",
+            "place": "29 km ESE of Ishinomaki, Japan"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2021-03-20T09:09:43.966Z",
+            "place": "30 km E of Ishinomaki, Japan"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2011-07-10T00:57:10.800Z",
+            "place": "177 km ESE of Ishinomaki, Japan"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2008-07-19T02:39:28.700Z",
+            "place": "107 km E of Namie, Japan"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2005-11-14T21:38:51.420Z",
+            "place": "293 km ESE of Kamaishi, Japan"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2003-10-31T01:06:28.280Z",
+            "place": "133 km ESE of Ishinomaki, Japan"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "1995-01-06T22:37:34.320Z",
+            "place": "63 km ESE of Hachinohe, Japan"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2026-06-24T22:30:12.962Z",
+            "place": "35 km ENE of Noda, Japan"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2021-05-01T01:27:27.215Z",
+            "place": "30 km SSE of Onagawa Ch?, Japan"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2016-11-21T20:59:49.270Z",
+            "place": "35 km ESE of Namie, Japan"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2008-05-07T16:45:18.700Z",
+            "place": "78 km NE of Hasaki, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2025-11-09T08:03:39.367Z",
+            "place": "122 km E of Yamada, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2015-05-12T21:12:58.890Z",
+            "place": "32 km SE of ?funato, Japan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2026-05-15T11:22:01.646Z",
+            "place": "41 km ESE of Ōfunato, Japan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2025-12-12T02:44:12.841Z",
+            "place": "117 km NE of Kuji, Japan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2016-01-14T03:25:33.640Z",
+            "place": "52 km SE of Shizunai-furukawach?, Japan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2015-02-16T23:06:28.270Z",
+            "place": "83 km ENE of Miyako, Japan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2011-09-16T19:26:40.260Z",
+            "place": "99 km NE of Miyako, Japan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -399,6 +623,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -409,9 +638,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9b7cc1b1a05fcfc5180da56bf783b5d6878aab92f409ac7fe1c79d5be086f3fc"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20048",
+    "geometryFingerprint": "9fab6c9185275f3e67f6b5e033aae7508a2d656313d65a9bfa73cdd095fc0c9d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      140.2803480563252,
+      34.17947115194314,
+      145.4002048293614,
+      42.61313900635407
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9b7cc1b1a05fcfc5180da56bf783b5d6878aab92f409ac7fe1c79d5be086f3fc"
 }

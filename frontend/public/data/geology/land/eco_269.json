@@ -3,7 +3,7 @@
   "regionId": "eco_269",
   "regionName": "South Taiwan monsoon rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.757376+00:00",
+  "generatedAt": "2026-09-09T06:27:41.339966+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2012-10-25T10:31:19.180Z",
+            "place": "12 km ESE of Donggang, Taiwan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -153,6 +182,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a1c1da7d3cc85391b6ba609de6e8c64b79377558772fa45dd5ac94861773ad8c"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_269",
+    "geometryFingerprint": "f94c4def2fa6f9aa621d2e75cec546ec5942eb1114aaba1e87991422bd66ecbc",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      120.3200305910001,
+      21.913512425841205,
+      120.941772676,
+      22.849261559938668
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a1c1da7d3cc85391b6ba609de6e8c64b79377558772fa45dd5ac94861773ad8c"
 }

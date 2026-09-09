@@ -3,7 +3,7 @@
   "regionId": "eco_614",
   "regionName": "Northern Mesoamerican Pacific mangroves",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.160212+00:00",
+  "generatedAt": "2026-09-09T06:27:45.788911+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 65.00228702160217,
@@ -71,6 +71,52 @@
         "version": "v1.0",
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.1,
+        "events": [
+          {
+            "magnitude": 6.1,
+            "time": "2004-01-01T23:31:50.050Z",
+            "place": "6 km SW of Petatlán, Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-08-14T02:51:59.610Z",
+            "place": "6 km ESE of Corralero, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-04-13T13:06:28.400Z",
+            "place": "5 km SE of Corralero, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-01-08T09:20:17.460Z",
+            "place": "1 km WSW of Corralero, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -142,9 +188,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ab96cbe4334d14a051ca428c9f5985ac54658fcb2103b3e7b15d39c770c668f2"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_614",
+    "geometryFingerprint": "25d7f7d9b57a03643d578d805ac852b432bcf4fe0b3bf5687cf01223ea3ff1ee",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -113.36174052199993,
+      15.647801918740328,
+      -95.54069553799995,
+      29.366327073887287
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ab96cbe4334d14a051ca428c9f5985ac54658fcb2103b3e7b15d39c770c668f2"
 }

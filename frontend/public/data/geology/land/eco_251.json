@@ -3,7 +3,7 @@
   "regionId": "eco_251",
   "regionName": "Nansei Islands subtropical evergreen forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.682538+00:00",
+  "generatedAt": "2026-09-09T06:27:41.305818+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,60 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2014-10-22T00:15:17.440Z",
+            "place": "Ryukyu Islands, Japan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1994-07-02T12:08:47.250Z",
+            "place": "6 km E of Naze, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-03-29T20:55:42.225Z",
+            "place": "13 km S of Nishinoomote, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2001-05-12T03:32:55.910Z",
+            "place": "27 km ENE of Koseda, Japan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-04-12T09:00:17.560Z",
+            "place": "5 km ESE of Uken, Japan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-06-22T01:24:16.349Z",
+            "place": "2 km WSW of Gushikawa, Japan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -98,6 +152,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:2467c4c083c47f13c9cb6c1605ea7f13d07138173063543d46ecc5c207b872de"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_251",
+    "geometryFingerprint": "71f04621892e14dbd4cd0f8a2ba6cc94b4b8a004adea5dceadde8c9f64709cf2",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      122.94802864500012,
+      24.24922630818219,
+      131.08468656099998,
+      30.82922197754708
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:2467c4c083c47f13c9cb6c1605ea7f13d07138173063543d46ecc5c207b872de"
 }

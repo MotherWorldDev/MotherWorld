@@ -3,7 +3,7 @@
   "regionId": "eco_472",
   "regionName": "Jamaican moist forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.681975+00:00",
+  "generatedAt": "2026-09-09T06:27:41.794020+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -106,6 +106,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "1993-01-13T17:11:07.570Z",
+            "place": "3 km N of Easington, Jamaica"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2023-10-30T15:57:20.161Z",
+            "place": "4 km WSW of Hope Bay, Jamaica"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-06-13T03:58:01.290Z",
+            "place": "8 km E of Ulster Spring, Jamaica"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -641,9 +680,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c7fde06f806feb2681d1152f368c0e9bd42c5a16649f64d0ded00b286238e9e2"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_472",
+    "geometryFingerprint": "2cc48c83a2b1c9c370a40a426a0445e14fd3dcb65f0ce05dc2ab667e52e971b6",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -78.31360663099997,
+      17.89311596809115,
+      -76.24166855999992,
+      18.46964137398511
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c7fde06f806feb2681d1152f368c0e9bd42c5a16649f64d0ded00b286238e9e2"
 }

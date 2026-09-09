@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20121",
   "regionName": "South Kuroshio",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.359134+00:00",
+  "generatedAt": "2026-09-09T06:27:38.763217+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 4004.6788617767306,
+        "medianDepthM": 4596.0,
+        "p10DepthM": 1077.0,
+        "p90DepthM": 5808.0,
+        "shallowestM": 2.0,
+        "deepestM": 7432.0,
+        "coveragePct": 99.94463570382601,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 1.9095238948862425,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.510197800144053,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 18.895715900659667,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 66.78608257941946,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 4.89847982489057,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -388,6 +438,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 727,
+        "m6Plus": 50,
+        "m7Plus": 4,
+        "maxMagnitude": 7.5,
+        "events": [
+          {
+            "magnitude": 7.5,
+            "time": "1998-05-03T23:30:21.910Z",
+            "place": "254 km SSE of Ishigaki, Japan"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2006-12-26T12:26:21.140Z",
+            "place": "30 km SW of Hengchun, Taiwan"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1995-10-18T10:37:26.380Z",
+            "place": "83 km SE of Naze, Japan"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2010-02-26T20:31:26.970Z",
+            "place": "70 km SE of Katsuren-haebaru, Japan"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2006-12-26T12:34:13.800Z",
+            "place": "26 km W of Hengchun, Taiwan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2001-12-18T04:02:58.280Z",
+            "place": "62 km SSW of Yonakuni, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1996-09-05T23:42:06.150Z",
+            "place": "78 km E of Hengchun, Taiwan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1995-10-19T02:41:36.190Z",
+            "place": "71 km ESE of Naze, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1993-05-18T10:19:33.780Z",
+            "place": "77 km SE of Basco, Philippines"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2009-08-17T00:05:49.030Z",
+            "place": "114 km SW of Ishigaki, Japan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2004-10-15T04:08:50.240Z",
+            "place": "31 km WNW of Yonakuni, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2021-11-10T15:45:13.652Z",
+            "place": "177 km SE of Hirara, Japan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2014-03-02T20:11:23.430Z",
+            "place": "109 km NW of Nago, Japan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2010-05-26T08:53:08.030Z",
+            "place": "216 km ESE of Katsuren-haebaru, Japan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2010-04-26T02:59:52.150Z",
+            "place": "245 km SSW of Ishigaki, Japan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2002-03-26T03:45:48.700Z",
+            "place": "110 km S of Ishigaki, Japan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2000-07-16T03:21:45.530Z",
+            "place": "22 km SSE of Basco, Philippines"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2010-10-04T13:28:38.860Z",
+            "place": "61 km SSW of Hirara, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2010-02-07T06:10:00.230Z",
+            "place": "109 km SSW of Ishigaki, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2008-06-01T01:57:23.690Z",
+            "place": "74 km WSW of Basco, Philippines"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2006-10-09T10:01:47.400Z",
+            "place": "167 km SSW of Hengchun, Taiwan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2004-11-08T15:55:01.150Z",
+            "place": "61 km SW of Yonakuni, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1998-11-19T15:39:19.100Z",
+            "place": "248 km SSE of Hirara, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1995-10-19T00:32:06.440Z",
+            "place": "69 km ESE of Naze, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2023-09-12T11:03:17.243Z",
+            "place": "69 km N of Namuac, Philippines"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2015-02-13T20:06:32.330Z",
+            "place": "Taiwan region"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2008-07-13T14:58:33.010Z",
+            "place": "105 km NW of Basco, Philippines"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2006-11-17T18:03:12.260Z",
+            "place": "Ryukyu Islands, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2004-05-19T07:04:11.710Z",
+            "place": "107 km NE of Hengchun, Taiwan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2001-12-08T20:29:34.230Z",
+            "place": "15 km SE of Naze, Japan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -490,6 +714,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -505,9 +734,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:37c5d6324c310740c3fba88e916b1eca34038620221e606402746db779d461eb"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20121",
+    "geometryFingerprint": "ec20b60f2aa777e7be3140324da574597de949252e0f30a1167ca2e0afa64c94",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      119.02220785157968,
+      18.153039114710637,
+      134.658330491051,
+      28.941259901279807
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:37c5d6324c310740c3fba88e916b1eca34038620221e606402746db779d461eb"
 }

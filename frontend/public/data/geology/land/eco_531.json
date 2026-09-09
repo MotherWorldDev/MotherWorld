@@ -3,7 +3,7 @@
   "regionId": "eco_531",
   "regionName": "Ecuadorian dry forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.985130+00:00",
+  "generatedAt": "2026-09-09T06:27:41.938038+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -112,6 +112,115 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 17,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.1,
+        "events": [
+          {
+            "magnitude": 6.1,
+            "time": "2017-12-03T11:19:05.440Z",
+            "place": "18 km NE of Bahía de Caráquez, Ecuador"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2005-01-21T13:45:14.060Z",
+            "place": "21 km WSW of Montecristi, Ecuador"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2016-04-17T07:14:00.760Z",
+            "place": "34 km NE of Bahía de Caráquez, Ecuador"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2005-01-24T06:11:52.300Z",
+            "place": "26 km ESE of Santa Elena, Ecuador"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1995-03-26T15:12:31.760Z",
+            "place": "13 km NNW of Naranjito, Ecuador"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2000-09-20T08:37:16.300Z",
+            "place": "26 km WSW of Pedro Carbo, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-07-19T08:35:45.380Z",
+            "place": "16 km WNW of Pedro Carbo, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-01-21T04:30:29.010Z",
+            "place": "25 km SW of Montecristi, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2014-03-25T09:56:31.080Z",
+            "place": "17 km ESE of Coronel Marcelino Maridueña, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-02-28T10:26:51.770Z",
+            "place": "3 km NNW of Santa Ana, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-01-22T01:12:14.480Z",
+            "place": "22 km SW of Montecristi, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-03-06T00:54:41.400Z",
+            "place": "14 km NNE of Paján, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2005-03-27T08:03:36.150Z",
+            "place": "20 km SW of Montecristi, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-11-24T16:19:50.790Z",
+            "place": "6 km NNE of Rocafuerte, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-07-18T05:41:55.540Z",
+            "place": "18 km SSW of Pedro Carbo, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-01-23T10:06:07.740Z",
+            "place": "23 km SW of Montecristi, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1999-02-18T12:02:58.610Z",
+            "place": "5 km S of Milagro, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -404,9 +513,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:fd84b32ddd24aaa2bfdd95db79ec91b92245efaee4782d7248afd3478190e0b4"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_531",
+    "geometryFingerprint": "102923e75c51a0e970731f502c17a3049575981c3f2adc8eae58f8fe35452e6c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -81.00587460399998,
+      -3.052707366622195,
+      -79.26376358499988,
+      0.159180764822036
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:fd84b32ddd24aaa2bfdd95db79ec91b92245efaee4782d7248afd3478190e0b4"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_277",
   "regionName": "Sumatran freshwater swamp forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.069421+00:00",
+  "generatedAt": "2026-09-09T06:27:44.293823+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 94.73335247888109,
@@ -110,6 +110,37 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "2000-07-21T02:18:07.360Z",
+            "place": "61 km ESE of Bandar Lampung, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -122,6 +153,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d8671b0fa344dbb4315d9c314b197294ed57e62cdcae94974fb9be3a7cf86886"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_277",
+    "geometryFingerprint": "177ae8da55872cddc28e8a7bb93c727378540b1f905ce0a065a226e6082cecda",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      97.28510252800014,
+      -5.715865489839124,
+      105.91590163200016,
+      5.232090118326997
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d8671b0fa344dbb4315d9c314b197294ed57e62cdcae94974fb9be3a7cf86886"
 }

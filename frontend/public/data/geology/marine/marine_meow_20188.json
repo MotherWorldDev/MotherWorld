@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20188",
   "regionName": "Chiloense",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.736350+00:00",
+  "generatedAt": "2026-09-09T06:27:38.986955+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2281.435045098099,
+        "medianDepthM": 2993.0,
+        "p10DepthM": 94.0,
+        "p90DepthM": 3681.0,
+        "shallowestM": 1.0,
+        "deepestM": 4161.0,
+        "coveragePct": 97.48466341305274,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 22.436673859643594,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.268958706259013,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 20.65299153753963,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 49.641375896557754,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -204,6 +254,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 77,
+        "m6Plus": 4,
+        "m7Plus": 1,
+        "maxMagnitude": 7.6,
+        "events": [
+          {
+            "magnitude": 7.6,
+            "time": "2016-12-25T14:22:27.010Z",
+            "place": "41 km SW of Quellón, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2022-09-23T22:53:27.870Z",
+            "place": "156 km WNW of Ancud, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2012-11-13T04:31:26.760Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1996-02-19T07:10:06.480Z",
+            "place": "124 km WSW of Ancud, Chile"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2002-03-03T07:16:15.690Z",
+            "place": "260 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1993-06-01T15:53:47.110Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2011-12-16T12:54:25.370Z",
+            "place": "254 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2018-06-14T06:27:39.290Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2006-05-30T02:50:09.850Z",
+            "place": "213 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2016-12-25T14:32:13.310Z",
+            "place": "80 km WSW of Quellón, Chile"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2008-05-20T15:16:04.410Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1997-11-05T06:09:14.010Z",
+            "place": "Off the coast of Los Lagos, Chile"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2022-07-06T15:12:28.560Z",
+            "place": "131 km W of Castro, Chile"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2017-01-03T21:19:07.540Z",
+            "place": "76 km WSW of Quellón, Chile"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2007-09-22T08:01:03.460Z",
+            "place": "273 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1999-08-12T07:27:13.910Z",
+            "place": "294 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-02-22T22:20:25.318Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2017-05-06T14:51:40.790Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2014-03-02T17:03:41.700Z",
+            "place": "297 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-04-13T09:19:04.880Z",
+            "place": "228 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2011-12-16T12:02:56.980Z",
+            "place": "252 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-06-20T04:23:28.440Z",
+            "place": "244 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2002-03-03T11:57:10.960Z",
+            "place": "225 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1994-01-10T18:21:58.020Z",
+            "place": "293 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-03-15T08:28:36.747Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2024-09-03T01:21:40.316Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-12-30T05:19:18.616Z",
+            "place": "282 km W of Puerto Chacabuco, Chile"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-09-30T06:15:47.006Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-11-06T21:22:55.750Z",
+            "place": "Off the coast of Aisen, Chile"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2014-03-02T11:14:39.680Z",
+            "place": "296 km W of Puerto Chacabuco, Chile"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -275,6 +499,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -288,6 +517,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:74174dc0d77a22d59e126f38ad6299d1b5718072843fa0b19c107e0951c97ad1"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20188",
+    "geometryFingerprint": "debe0e53f1fd7ab3cdea380dd400065e5a797abfbbab5c7af0c2fd597aded411",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -79.02928083785677,
+      -46.92149082481595,
+      -72.52507914572274,
+      -41.10645274046372
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:74174dc0d77a22d59e126f38ad6299d1b5718072843fa0b19c107e0951c97ad1"
 }

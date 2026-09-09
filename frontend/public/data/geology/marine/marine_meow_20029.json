@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20029",
   "regionName": "Azores Canaries Madeira",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.867269+00:00",
+  "generatedAt": "2026-09-09T06:27:38.491791+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3369.7263220850177,
+        "medianDepthM": 3545.0,
+        "p10DepthM": 1776.0,
+        "p90DepthM": 4689.0,
+        "shallowestM": 6.0,
+        "deepestM": 5649.0,
+        "coveragePct": 99.9737755267052,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.4255173044943362,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 1.9149592092664833,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 31.84618119090614,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 65.81334229533306,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -406,6 +456,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 75,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2007-04-05T03:56:50.480Z",
+            "place": "74 km SE of Povoação, Portugal"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1998-07-09T05:19:07.300Z",
+            "place": "12 km N of Horta, Portugal"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2007-04-07T07:09:25.370Z",
+            "place": "82 km SE of Senhora do Rosário, Portugal"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2022-11-28T02:51:23.655Z",
+            "place": "275 km SSW of Lajes das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2013-04-30T06:25:23.160Z",
+            "place": "Azores Islands region"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1997-06-27T04:39:52.720Z",
+            "place": "50 km SE of Porto Martins, Portugal"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1996-03-09T22:35:38.470Z",
+            "place": "111 km SE of Povoação, Portugal"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2003-12-23T14:02:04.130Z",
+            "place": "144 km ENE of Santa Cruz das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2010-08-13T07:58:48.760Z",
+            "place": "Azores Islands region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2009-12-17T14:55:36.290Z",
+            "place": "Azores Islands region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2008-05-24T04:58:18.870Z",
+            "place": "Azores Islands region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2021-01-11T12:47:01.240Z",
+            "place": "69 km NW of Castelo Branco, Portugal"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2017-03-29T06:29:28.740Z",
+            "place": "142 km E of Santa Cruz das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-07-14T08:36:29.110Z",
+            "place": "272 km NE of Santa Cruz das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-12-27T17:46:03.420Z",
+            "place": "28 km W of Frontera, Spain"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2007-04-08T20:38:01.640Z",
+            "place": "90 km SE of Povoação, Portugal"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1993-01-20T14:49:12.310Z",
+            "place": "49 km W of Castelo Branco, Portugal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-07-21T13:13:11.293Z",
+            "place": "138 km ENE of Santa Cruz das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-01-02T07:20:26.985Z",
+            "place": "Azores Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2020-03-07T20:58:04.107Z",
+            "place": "27 km S of Caniço, Portugal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2019-02-16T06:45:55.530Z",
+            "place": "266 km NE of Santa Cruz das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2017-08-30T14:20:05.390Z",
+            "place": "139 km ENE of Santa Cruz das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2017-03-29T06:35:16.760Z",
+            "place": "134 km ENE of Santa Cruz das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-08-13T05:40:48.010Z",
+            "place": "Azores Islands region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-02-23T11:03:54.950Z",
+            "place": "200 km NE of Santa Cruz das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-04-26T19:37:33.950Z",
+            "place": "Azores Islands region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-09-23T06:25:26.886Z",
+            "place": "148 km SSE of Lajes das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-08-02T16:41:25.242Z",
+            "place": "125 km ESE of Senhora do Rosário, Portugal"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2024-04-23T15:40:05.052Z",
+            "place": "136 km SSE of Lajes das Flores, Portugal"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-10-01T13:17:16.980Z",
+            "place": "212 km NE of Santa Cruz das Flores, Portugal"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -477,6 +701,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -490,6 +719,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b17fe5db362a9a76deee25b8c6f67e815c9bb7f6f8c94523c274af231dc5cf83"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20029",
+    "geometryFingerprint": "13813bf6e5366d780ef2ee0e9127fb93e1a8dde1101a7aaa683206d1d6978683",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -34.617161495350814,
+      24.509269940696885,
+      -12.041758922560405,
+      43.023406898799784
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b17fe5db362a9a76deee25b8c6f67e815c9bb7f6f8c94523c274af231dc5cf83"
 }

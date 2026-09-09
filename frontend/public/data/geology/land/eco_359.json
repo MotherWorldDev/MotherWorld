@@ -3,7 +3,7 @@
   "regionId": "eco_359",
   "regionName": "Northern California coastal forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.098010+00:00",
+  "generatedAt": "2026-09-09T06:27:41.533472+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -160,6 +160,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.2,
+        "events": [
+          {
+            "magnitude": 6.2,
+            "time": "2021-12-20T20:10:31.310Z",
+            "place": "7km N of Petrolia, CA"
+          },
+          {
+            "magnitude": 5.58,
+            "time": "2019-06-23T03:53:02.890Z",
+            "place": "6km SSW of Petrolia, CA"
+          },
+          {
+            "magnitude": 5.35,
+            "time": "2023-01-01T18:35:04.510Z",
+            "place": "15km SE of Rio Dell, CA"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -737,9 +776,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:615f0264a4d1e76c3ecb3691877913fb894a14228dd089cdfe3ff7daba798723"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_359",
+    "geometryFingerprint": "98c76fd91bc5069b71777357c86858983eff2840cc0fb4e0e7b182ab50788990",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -124.40889564999992,
+      36.89160490961034,
+      -121.583131628,
+      42.19888362317377
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:615f0264a4d1e76c3ecb3691877913fb894a14228dd089cdfe3ff7daba798723"
 }

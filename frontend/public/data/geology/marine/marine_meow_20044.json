@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20044",
   "regionName": "Black Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:33.849592+00:00",
+  "generatedAt": "2026-09-09T06:27:39.868621+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 1191.0968676911384,
+        "medianDepthM": 1551.0,
+        "p10DepthM": 13.0,
+        "p90DepthM": 2161.0,
+        "shallowestM": -0.0,
+        "deepestM": 2380.0,
+        "coveragePct": 99.92505412511461,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 32.59289813177005,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 8.483561687455413,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 58.92354018077453,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "tectonics": {
       "faults": {
         "count": 14,
@@ -100,6 +152,50 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2012-12-23T13:31:40.760Z",
+            "place": "45 km SW of Och’amch’ire, Georgia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-12-25T22:44:33.510Z",
+            "place": "50 km SSW of Dranda, Georgia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-10-15T08:18:32.870Z",
+            "place": "117 km NNW of Ere?li, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-08-05T07:49:03.240Z",
+            "place": "16 km SE of Shabla, Bulgaria"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -199,6 +295,11 @@
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -209,9 +310,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9117128102f30ff385d7db705f3dd1b250f9f0d632322c565cb9ac450bdfc7e4"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20044",
+    "geometryFingerprint": "d2d420cb13e2feb31ddb8b49ce9a089a1f08ebe15502d45b4eb779d5f3c85bd9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      27.476453856389938,
+      40.91208705804294,
+      41.77594654319965,
+      47.26149382300956
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9117128102f30ff385d7db705f3dd1b250f9f0d632322c565cb9ac450bdfc7e4"
 }

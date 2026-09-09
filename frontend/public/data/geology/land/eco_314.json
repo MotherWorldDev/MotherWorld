@@ -3,7 +3,7 @@
   "regionId": "eco_314",
   "regionName": "Aravalli west thorn scrub forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.948600+00:00",
+  "generatedAt": "2026-09-09T06:27:41.451231+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,135 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 21,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "1994-06-03T22:40:21.230Z",
+            "place": "12 km ENE of Rojhan, Pakistan"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2001-01-28T01:02:10.700Z",
+            "place": "15 km WSW of R?par, India"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2015-10-23T00:27:39.560Z",
+            "place": "10 km NNW of Dajal, Pakistan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2006-04-06T17:59:16.440Z",
+            "place": "13 km E of Bhach?u, India"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2001-01-26T07:32:28.740Z",
+            "place": "22 km NNW of Anj?r, India"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2018-05-09T03:23:26.710Z",
+            "place": "18 km NNW of Bannu, Pakistan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-12-19T19:28:40.940Z",
+            "place": "34 km WNW of Warah, Pakistan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2001-01-28T11:10:43.610Z",
+            "place": "6 km SE of Bhach?u, India"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-01-26T03:33:29.170Z",
+            "place": "17 km E of Bhuj, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2021-07-20T23:54:26.196Z",
+            "place": "36 km NW of Rajanpur, Pakistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-01-26T04:23:41.970Z",
+            "place": "18 km NNW of Anj?r, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1996-04-01T08:08:02.640Z",
+            "place": "Pakistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2024-09-11T07:28:02.928Z",
+            "place": "35 km W of Karor, Pakistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-06-14T14:43:08.390Z",
+            "place": "9 km N of Bhach?u, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-03-05T07:41:04.530Z",
+            "place": "11 km SSE of Rohtak, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-12-23T12:02:02.330Z",
+            "place": "43 km NNW of Sohbatpur, Pakistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-10-20T17:18:34.170Z",
+            "place": "15 km SE of Mendarda, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2001-01-26T04:48:14.250Z",
+            "place": "5 km S of Bhach?u, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1996-06-21T00:32:52.470Z",
+            "place": "36 km N of Tangwani, Pakistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-05-06T10:29:06.380Z",
+            "place": "21 km E of Karak, Pakistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-04-06T12:02:54.590Z",
+            "place": "17 km NNE of R?par, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -699,9 +828,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b5fc404715373b00fcd0fb8bed3a5f7ffc48ad21d7cb071d756eed82c9204cfc"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_314",
+    "geometryFingerprint": "f0c416bc4da58c81838c24c8fb48cf06abe171a90e5b741dbf0f3ee5095463b8",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      66.21652963500013,
+      20.690275412799057,
+      77.80381056200008,
+      33.47556734884867
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b5fc404715373b00fcd0fb8bed3a5f7ffc48ad21d7cb071d756eed82c9204cfc"
 }

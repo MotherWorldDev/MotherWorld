@@ -3,7 +3,7 @@
   "regionId": "eco_53",
   "regionName": "Sahelian Acacia savanna",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.138301+00:00",
+  "generatedAt": "2026-09-09T06:27:45.389232+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.66646455088426,
@@ -145,6 +145,37 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "1993-08-01T00:20:40.570Z",
+            "place": "89 km WSW of Omdurman, Sudan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -501,9 +532,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:896cfd552c77b9a70d2bf8b99a8052f462e85dfca5fcf40894ac698cfcfad85f"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_53",
+    "geometryFingerprint": "997c581d0358aadf4b63708db72b18f2c535753512c1be6bd20eee6a3b8660dc",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -16.596147431999892,
+      8.45176291027958,
+      39.34666666600008,
+      21.01051934080043
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:896cfd552c77b9a70d2bf8b99a8052f462e85dfca5fcf40894ac698cfcfad85f"
 }

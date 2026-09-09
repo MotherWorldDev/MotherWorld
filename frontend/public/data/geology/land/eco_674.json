@@ -3,7 +3,7 @@
   "regionId": "eco_674",
   "regionName": "Pannonian mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.676747+00:00",
+  "generatedAt": "2026-09-09T06:27:42.339537+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,75 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 9,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2020-12-29T11:19:54.762Z",
+            "place": "2 km WSW of Petrinja, Croatia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2023-02-14T13:16:50.827Z",
+            "place": "0 km ESE of Lele?ti, Romania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2020-03-22T05:24:03.700Z",
+            "place": "5 km E of Gornja Bistra, Croatia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2000-07-11T02:49:47.600Z",
+            "place": "2 km W of Moosbrunn, Austria"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2001-07-01T01:48:59.080Z",
+            "place": "1 km NNW of Breitenau, Austria"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-05-29T08:43:11.680Z",
+            "place": "1 km SE of ?rnomelj, Slovenia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-10-09T18:23:09.039Z",
+            "place": "15 km SE of Stropkov, Slovakia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-02-13T14:58:05.817Z",
+            "place": "0 km ESE of Dobri?a, Romania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-07-11T10:56:03.900Z",
+            "place": "3 km ESE of Oberwaltersdorf, Austria"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -822,9 +891,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:106713a2481b10b857f696b30c2b370b307840e55c23da704e5ffedbde2888ea"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_674",
+    "geometryFingerprint": "96694b4d7f352005d928d64d66647fa8efeb7d4df714b0c192d298ea1e16bc15",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      14.032696570000043,
+      43.98052597892279,
+      26.365674519000038,
+      49.944001320885654
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:106713a2481b10b857f696b30c2b370b307840e55c23da704e5ffedbde2888ea"
 }

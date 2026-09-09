@@ -3,7 +3,7 @@
   "regionId": "eco_769",
   "regionName": "Western Himalayan alpine shrub and meadows",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.222193+00:00",
+  "generatedAt": "2026-09-09T06:27:42.653659+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -88,6 +88,70 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "1999-03-28T19:05:11.030Z",
+            "place": "9 km NNW of P?palkoti, India"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2004-10-26T02:11:33.440Z",
+            "place": "80 km N of Burang, China"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2002-06-04T14:36:05.800Z",
+            "place": "western Xizang"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2026-09-03T08:16:36.417Z",
+            "place": "115 km NE of Joshīmath, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-04-27T19:45:53.627Z",
+            "place": "72 km NE of Dipayal, Nepal"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-02-06T17:03:06.530Z",
+            "place": "36 km NW of P?palkoti, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-09-04T12:53:11.290Z",
+            "place": "50 km NNW of Dh?rchula, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-11-06T01:36:56.670Z",
+            "place": "59 km NNW of Jumla, Nepal"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -175,6 +239,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:8f9d1bcec76e228fb623c3b6aaf1ead180527d8a00103d5c49e167849c200f01"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_769",
+    "geometryFingerprint": "21411870c1a4bbefd70618444710bab10c0f6f41fd8c5838d5293fbdf3b6753e",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      77.9845424990001,
+      28.49992947152549,
+      84.05635058500002,
+      32.425299289319724
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:8f9d1bcec76e228fb623c3b6aaf1ead180527d8a00103d5c49e167849c200f01"
 }

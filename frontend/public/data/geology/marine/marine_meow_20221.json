@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20221",
   "regionName": "South Orkney Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.984900+00:00",
+  "generatedAt": "2026-09-09T06:27:39.089193+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -78,6 +78,56 @@
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 2688.9984595658984,
+        "medianDepthM": 3033.0,
+        "p10DepthM": 467.0,
+        "p90DepthM": 4103.0,
+        "shallowestM": -0.0,
+        "deepestM": 5794.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 1.663984812419895,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 16.322566401207176,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 30.721432774310173,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 51.29201601206276,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -139,6 +189,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 56,
+        "m6Plus": 6,
+        "m7Plus": 2,
+        "maxMagnitude": 7.7,
+        "events": [
+          {
+            "magnitude": 7.7,
+            "time": "2013-11-17T09:04:55.530Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2003-08-04T04:37:20.130Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2013-11-16T03:34:31.230Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2026-08-22T08:22:37.740Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2013-11-13T23:45:47.930Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2006-03-10T10:12:18.630Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2013-11-17T09:11:01.550Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2026-08-22T07:40:12.697Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2014-02-08T19:50:36.410Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2013-11-17T12:11:36.140Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2003-08-04T12:53:51.000Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2022-04-20T11:05:36.438Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-06-23T03:05:39.450Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2014-02-22T22:39:32.230Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2013-11-16T15:00:12.510Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2013-11-16T09:35:46.210Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1998-11-15T13:27:04.080Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-11-16T08:35:05.400Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-11-16T03:37:17.780Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-08-04T06:34:11.270Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1999-07-17T22:26:08.410Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-10-18T04:26:06.910Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2015-10-22T01:17:10.320Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-11-17T09:13:01.170Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-08-04T18:18:29.650Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-08-04T11:21:07.960Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2000-10-14T20:38:56.650Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2021-03-31T06:53:32.713Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-11-18T05:41:43.290Z",
+            "place": "Scotia Sea"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-11-17T12:45:24.850Z",
+            "place": "Scotia Sea"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -211,6 +435,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -219,6 +448,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:eca57650138140259b68c28d29179b727ff7c9195645c672bde93d7dc2ce3c8e"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20221",
+    "geometryFingerprint": "e34eb55a03b1453b67d615981981852eb571a6d0569670c0d6d5713508d63155",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -49.40907178845091,
+      -64.13943774916386,
+      -41.09066909963744,
+      -57.20638008893369
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:eca57650138140259b68c28d29179b727ff7c9195645c672bde93d7dc2ce3c8e"
 }

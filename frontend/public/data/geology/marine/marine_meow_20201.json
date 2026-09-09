@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20201",
   "regionName": "Snares Island",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.812307+00:00",
+  "generatedAt": "2026-09-09T06:27:39.016799+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 19.020950317382812,
           "p90MmYr": 30.381685256958008,
           "coveragePct": 34.405693780795275
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 1963.4239237011927,
+        "medianDepthM": 1425.0,
+        "p10DepthM": 150.0,
+        "p90DepthM": 4502.0,
+        "shallowestM": 113.0,
+        "deepestM": 6212.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 14.757202130483163,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 31.634499973157396,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 26.775603054865147,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 26.52673492579858,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.3059599156957149,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -212,6 +262,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 32,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.7,
+        "events": [
+          {
+            "magnitude": 6.7,
+            "time": "2025-03-25T01:43:11.796Z",
+            "place": "170 km WSW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2025-07-07T12:53:44.013Z",
+            "place": "213 km WSW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2025-04-29T13:16:32.562Z",
+            "place": "285 km SW of Bluff, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2016-02-15T19:28:04.590Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1998-01-26T23:06:01.710Z",
+            "place": "251 km WSW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2018-11-24T23:42:39.530Z",
+            "place": "261 km SW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2014-12-01T13:04:24.470Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2019-08-04T11:44:21.302Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2011-10-01T10:54:29.760Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2010-03-18T06:28:50.290Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2021-11-04T16:36:53.345Z",
+            "place": "297 km SW of Bluff, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-06-18T14:51:54.114Z",
+            "place": "232 km SW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-11-06T13:28:00.150Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-03-03T11:55:07.633Z",
+            "place": "299 km SSW of Bluff, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-01-18T16:45:11.450Z",
+            "place": "290 km SW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2015-01-06T00:14:21.590Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-03-18T06:42:08.840Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-03-18T06:24:16.730Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2024-09-06T14:24:59.611Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2014-12-12T08:02:06.510Z",
+            "place": "176 km WSW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-01-19T09:01:55.970Z",
+            "place": "190 km WSW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-10-03T18:03:03.920Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1997-05-26T10:50:11.240Z",
+            "place": "197 km SW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-02-23T04:07:28.958Z",
+            "place": "206 km WSW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-08-04T00:11:07.173Z",
+            "place": "252 km SW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-10-03T03:32:56.540Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-10-03T01:43:25.680Z",
+            "place": "off the west coast of the South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-10-02T06:51:33.390Z",
+            "place": "293 km SW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-04-15T07:14:44.460Z",
+            "place": "167 km WSW of Riverton, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-09-16T02:26:07.710Z",
+            "place": "Auckland Islands, New Zealand region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -278,6 +502,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -286,6 +515,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5d8d6633fb29d66e525cafd0ebb8c476740dffedf26775acdd7c07de1da501b7"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20201",
+    "geometryFingerprint": "330aaa60ebe43976f046a7cc4248389eb42c188576f3eb6464a2b1fde7c108a3",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      163.17233025900487,
+      -49.689814202109574,
+      170.91579522916896,
+      -46.678733585768434
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5d8d6633fb29d66e525cafd0ebb8c476740dffedf26775acdd7c07de1da501b7"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_309",
   "regionName": "Eastern Himalayan subalpine conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.078316+00:00",
+  "generatedAt": "2026-09-09T06:27:44.436481+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.99755035699994,
@@ -66,6 +66,87 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 11,
+        "m6Plus": 3,
+        "m7Plus": 1,
+        "maxMagnitude": 7.8,
+        "events": [
+          {
+            "magnitude": 7.8,
+            "time": "2015-04-25T06:11:25.950Z",
+            "place": "67 km NNE of Bharatpur, Nepal"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2015-04-26T07:09:10.670Z",
+            "place": "21 km SSE of Kod?ri??, Nepal"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2015-04-25T06:45:21.320Z",
+            "place": "71 km NNE of Bharatpur, Nepal"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-11-06T14:09:25.390Z",
+            "place": "33 km S of Tawang, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-01-25T16:43:22.950Z",
+            "place": "48 km NNE of Bomdila, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-08-18T04:10:20.690Z",
+            "place": "22 km E of Jakar, Bhutan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-07-08T03:44:59.330Z",
+            "place": "21 km WNW of Mongar, Bhutan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-03-26T19:02:07.885Z",
+            "place": "47 km NNE of Bomdila, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2013-11-29T01:54:49.070Z",
+            "place": "103 km NNE of P?sigh?t, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-01-02T10:23:58.980Z",
+            "place": "33 km NNE of Bomdila, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-05-24T05:02:28.720Z",
+            "place": "95 km NNW of Hayuliang, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -73,6 +154,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a9ddf7fbe061df3d81b974e57e509da06818474fe655e9ccb13849c17a5d2223"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_309",
+    "geometryFingerprint": "5d55c843b7b9e6905d0ddae5a4b830ad5557e2eb70448fc026925d8e4bc5ae22",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      83.668357651,
+      26.969239386950544,
+      97.21056360400007,
+      29.275391470848334
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a9ddf7fbe061df3d81b974e57e509da06818474fe655e9ccb13849c17a5d2223"
 }

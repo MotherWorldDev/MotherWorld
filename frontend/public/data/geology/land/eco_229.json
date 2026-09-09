@@ -3,7 +3,7 @@
   "regionId": "eco_229",
   "regionName": "Eastern Java-Bali montane rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.055235+00:00",
+  "generatedAt": "2026-09-09T06:27:44.082265+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 96.99061601365406,
@@ -110,6 +110,37 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2003-09-16T16:41:15.720Z",
+            "place": "12 km N of Trenggalek, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -122,6 +153,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6ed1776fce1c1c12b5f7d512bcf32a8dc17393c2a9d08565f03a71f96f11cbe6"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_229",
+    "geometryFingerprint": "c4b18d378e1ce029d735d4b957ef08146c01ba57cee3f5d5795cbc2a668eafc8",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      111.00231155400012,
+      -8.552634789192366,
+      115.71980256900007,
+      -7.495592644131972
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6ed1776fce1c1c12b5f7d512bcf32a8dc17393c2a9d08565f03a71f96f11cbe6"
 }

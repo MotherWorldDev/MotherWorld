@@ -3,7 +3,7 @@
   "regionId": "eco_418",
   "regionName": "Kalaallit Nunaat High Arctic tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.108943+00:00",
+  "generatedAt": "2026-09-09T06:27:44.902896+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 63.90218942035738,
@@ -134,6 +134,42 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2025-07-15T17:15:55.394Z",
+            "place": "near the north coast of Greenland"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-04-21T20:32:38.919Z",
+            "place": "near the north coast of Greenland"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -146,6 +182,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1dd3753dbd7f83d564bb34dfc88b6e478901a5729961c7e64c0142fb70ca64d5"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_418",
+    "geometryFingerprint": "84efcccc21f26cbbf144ad52a4921ac88072ca278629a30b2ac8a4cba2cb6f6d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -72.82166262999992,
+      75.59673286730384,
+      -12.165838524999856,
+      83.62255989568496
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1dd3753dbd7f83d564bb34dfc88b6e478901a5729961c7e64c0142fb70ca64d5"
 }

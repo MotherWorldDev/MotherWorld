@@ -3,7 +3,7 @@
   "regionId": "eco_562",
   "regionName": "San Félix-San Ambrosio Islands temperate forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.145924+00:00",
+  "generatedAt": "2026-09-09T06:27:45.546465+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 0.0,
@@ -13,7 +13,7 @@
         {
           "code": "nd",
           "label": "No data",
-          "areaKm2": 2.19879357785953,
+          "areaKm2": 6.4881928812058,
           "percentOfRegion": 100.0
         }
       ],
@@ -30,7 +30,32 @@
     {
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
-      "version": "v1.0"
+      "version": "v1.0",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:213c750f56894098ee7ec0616bb64aec0aef8241db6ac90dc42ff817ced74b99"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_562",
+    "geometryFingerprint": "568dce2c5823d8a99dd705b1393d25049b1610d18459cb05651b5b2663401693",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -80.09973152599997,
+      -26.367486896999935,
+      -79.88455952099997,
+      -26.249690310999938
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_562",
+      "registryGeometryFingerprint": "568dce2c5823d8a99dd705b1393d25049b1610d18459cb05651b5b2663401693",
+      "source": "ecoregions2017_original",
+      "sourceUrl": "https://ecoregions.appspot.com/",
+      "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:213c750f56894098ee7ec0616bb64aec0aef8241db6ac90dc42ff817ced74b99"
 }

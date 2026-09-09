@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20120",
   "regionName": "Cocos-Keeling/Christmas Island",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.352188+00:00",
+  "generatedAt": "2026-09-09T06:27:38.759722+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 48.668190002441406,
           "p90MmYr": 133.53546142578125,
           "coveragePct": 97.17762259827957
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 5095.932736836771,
+        "medianDepthM": 5226.0,
+        "p10DepthM": 4270.0,
+        "p90DepthM": 5789.0,
+        "shallowestM": 1.0,
+        "deepestM": 6831.0,
+        "coveragePct": 99.98536043056771,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.014554747452137053,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.11624738067766453,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 2.0954070197877273,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 92.66899883314015,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 5.104792018942325,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -139,6 +189,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 69,
+        "m6Plus": 5,
+        "m7Plus": 2,
+        "maxMagnitude": 7.9,
+        "events": [
+          {
+            "magnitude": 7.9,
+            "time": "2000-06-18T14:44:13.310Z",
+            "place": "South Indian Ocean"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2006-07-17T08:19:26.680Z",
+            "place": "226 km SSW of Singaparna, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2013-06-13T16:47:23.320Z",
+            "place": "south of Java, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2011-04-03T20:06:40.390Z",
+            "place": "278 km SSW of Kawalu, Indonesia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2007-06-26T22:23:03.040Z",
+            "place": "south of Java, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2006-09-19T13:58:56.860Z",
+            "place": "294 km SSW of Singaparna, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2006-07-17T11:07:36.450Z",
+            "place": "242 km SSW of Kawalu, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2001-09-07T02:45:59.000Z",
+            "place": "South Indian Ocean"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2025-02-07T04:31:58.218Z",
+            "place": "southwest of Sumatra, Indonesia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2000-06-20T11:34:00.040Z",
+            "place": "South Indian Ocean"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2006-07-19T07:25:06.360Z",
+            "place": "260 km S of Banjar, Indonesia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2006-07-17T09:05:17.360Z",
+            "place": "278 km S of Kawalu, Indonesia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1994-09-12T11:30:14.920Z",
+            "place": "212 km S of Pelabuhanratu, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2011-02-06T11:21:16.280Z",
+            "place": "286 km SW of Labuan, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2006-07-17T08:32:28.450Z",
+            "place": "229 km SSW of Singaparna, Indonesia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2006-07-17T15:42:02.600Z",
+            "place": "243 km SSW of Kawalu, Indonesia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2006-07-17T09:00:17.700Z",
+            "place": "265 km SSW of Kawalu, Indonesia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2001-04-25T21:02:42.310Z",
+            "place": "south of Java, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2020-07-19T02:15:13.337Z",
+            "place": "South Indian Ocean"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-07-14T18:28:04.880Z",
+            "place": "south of Java, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-06-13T17:23:51.470Z",
+            "place": "south of Java, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-07-19T11:39:48.560Z",
+            "place": "South Indian Ocean"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2006-09-30T05:50:24.310Z",
+            "place": "Christmas Island region, Australia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2006-02-26T14:42:59.610Z",
+            "place": "193 km SSW of Pelabuhanratu, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-06-18T15:05:31.960Z",
+            "place": "South Indian Ocean"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1994-11-23T20:42:20.840Z",
+            "place": "234 km SSW of Banjar, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2009-09-15T07:28:15.050Z",
+            "place": "South Indian Ocean"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-07-11T06:51:38.220Z",
+            "place": "244 km SSW of Kawalu, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2006-07-17T15:29:00.140Z",
+            "place": "224 km S of Banjar, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2006-07-17T08:38:16.580Z",
+            "place": "239 km SSW of Kawalu, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -231,6 +455,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -241,9 +470,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6687d66a2b91787a4b0facdacf87188f850f80a9c23ab33b1fadb164df7faff2"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20120",
+    "geometryFingerprint": "46918d09743cc788c4282ac76b41b6cdd45370668dfdf4c38395e8f77fee87c7",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      93.48842322016927,
+      -15.565718637503393,
+      108.7824943055074,
+      -8.131556590267603
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6687d66a2b91787a4b0facdacf87188f850f80a9c23ab33b1fadb164df7faff2"
 }

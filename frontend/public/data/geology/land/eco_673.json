@@ -3,7 +3,7 @@
   "regionId": "eco_673",
   "regionName": "Northeast China Plain deciduous forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.175674+00:00",
+  "generatedAt": "2026-09-09T06:27:46.034066+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 97.98018227044733,
@@ -145,6 +145,42 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2018-05-27T17:50:52.610Z",
+            "place": "14 km WNW of Fuyu, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2013-04-22T09:11:56.810Z",
+            "place": "83 km S of Tongliao, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -569,9 +605,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:12efe32a5177f670b167d6641b7de7f889cdf712f13bdd7bd5eb010c15cfad44"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_673",
+    "geometryFingerprint": "32ed5d99a44f5dc476396ea5c7d186d46e9eabef8775f4a0ddabbc32c6cf22e8",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      117.84214756200016,
+      38.71650738153448,
+      130.91383370200015,
+      48.39113523645742
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:12efe32a5177f670b167d6641b7de7f889cdf712f13bdd7bd5eb010c15cfad44"
 }

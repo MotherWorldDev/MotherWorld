@@ -3,7 +3,7 @@
   "regionId": "eco_764",
   "regionName": "Sayan alpine meadows and tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.188639+00:00",
+  "generatedAt": "2026-09-09T06:27:42.631804+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -112,6 +112,70 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "1995-06-29T23:02:28.280Z",
+            "place": "49 km WNW of Kultuk, Russia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2021-01-11T21:41:04.487Z",
+            "place": "10 km WSW of Turt, Mongolia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-09-06T07:47:20.425Z",
+            "place": "86 km NW of Orlik, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-01-11T21:44:04.453Z",
+            "place": "16 km SW of Turt, Mongolia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2009-08-04T16:20:38.220Z",
+            "place": "46 km W of Kungurtug, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2005-04-27T07:36:12.040Z",
+            "place": "77 km NE of Kungurtug, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-01-11T21:53:00.126Z",
+            "place": "19 km WSW of Turt, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-01-11T23:02:23.738Z",
+            "place": "25 km WSW of Turt, Mongolia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -391,9 +455,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:dad5e8919612088bef9f1667c08dd2313b1413416723ff65597d11b246080b23"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_764",
+    "geometryFingerprint": "d4c89767c0d81d20bc2bf6a686003afe6f20de9d3ff000feddf9fd0338558f00",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      86.63804650300006,
+      49.44015807975301,
+      103.5115966250001,
+      54.549476750839474
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:dad5e8919612088bef9f1667c08dd2313b1413416723ff65597d11b246080b23"
 }

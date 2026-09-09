@@ -3,7 +3,7 @@
   "regionId": "eco_238",
   "regionName": "Lower Gangetic Plains moist deciduous forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.578604+00:00",
+  "generatedAt": "2026-09-09T06:27:41.251271+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -58,6 +58,85 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 11,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "1997-05-08T02:53:14.730Z",
+            "place": "11 km WNW of Kar?mganj, India"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2017-01-03T09:09:02.080Z",
+            "place": "18 km ENE of ?mb?sa, India"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-12-02T03:35:33.040Z",
+            "place": "9 km ENE of Rāmganj, Bangladesh"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2007-11-07T07:10:21.970Z",
+            "place": "18 km ESE of B?ndarban, Bangladesh"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-11-21T04:38:28.942Z",
+            "place": "14 km ESE of Tungi, Bangladesh"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-08-14T14:49:48.667Z",
+            "place": "16 km NW of Karīmganj, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-03-02T01:30:38.630Z",
+            "place": "25 km SSW of Kar?mganj, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-09-10T17:24:16.610Z",
+            "place": "27 km S of Son?rgaon, Bangladesh"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-06-16T04:46:11.360Z",
+            "place": "India-Bangladesh border region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-03-27T23:40:12.600Z",
+            "place": "17 km W of Kishanganj, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-02-15T14:29:40.870Z",
+            "place": "6 km W of Kasba, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -351,9 +430,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e7fc8a16a61a499d4223dc97809fe850b69eaacb9b6e7e71f3261b35feb36310"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_238",
+    "geometryFingerprint": "4f567b795a21874efe4ea33d65863e8d8c28439bcfdcd454b6862698c8b76d6d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      82.73283365600014,
+      20.749968141798757,
+      92.61705753300002,
+      27.34080194708177
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e7fc8a16a61a499d4223dc97809fe850b69eaacb9b6e7e71f3261b35feb36310"
 }

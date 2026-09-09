@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20122",
   "regionName": "Ogasawara Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.367654+00:00",
+  "generatedAt": "2026-09-09T06:27:38.767754+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 4508.514300644359,
+        "medianDepthM": 4774.0,
+        "p10DepthM": 2368.0,
+        "p90DepthM": 5979.0,
+        "shallowestM": 16.0,
+        "deepestM": 9836.0,
+        "coveragePct": 99.9901903551977,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.2251826835664207,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.9737384662932426,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 18.345391185026404,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 71.32007524711354,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 9.135612418000385,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -322,6 +372,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 609,
+        "m6Plus": 49,
+        "m7Plus": 4,
+        "maxMagnitude": 7.8,
+        "events": [
+          {
+            "magnitude": 7.8,
+            "time": "2015-05-30T11:23:02.110Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2010-12-21T17:19:40.660Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2000-08-06T07:27:12.900Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1998-08-20T06:40:55.820Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2010-11-30T03:24:40.180Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1996-03-16T22:04:06.240Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2020-04-18T08:25:37.052Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1996-11-06T20:00:58.850Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2024-04-27T08:35:34.207Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2015-06-23T12:18:30.270Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2013-09-04T00:18:23.370Z",
+            "place": "Izu Islands, Japan region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2019-06-04T04:39:16.961Z",
+            "place": "Izu Islands, Japan region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2011-01-12T21:32:53.860Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2010-12-22T21:49:40.080Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2006-10-23T21:17:19.980Z",
+            "place": "Izu Islands, Japan region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1998-02-07T01:18:59.500Z",
+            "place": "Volcano Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2023-01-16T04:49:51.935Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2021-11-29T12:40:44.400Z",
+            "place": "Izu Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2018-08-16T18:22:53.360Z",
+            "place": "Volcano Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2016-08-04T16:24:33.530Z",
+            "place": "Volcano Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2005-02-09T18:46:09.970Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2002-08-20T10:59:32.020Z",
+            "place": "Izu Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2002-08-02T23:11:39.130Z",
+            "place": "Izu Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2000-06-09T23:31:45.290Z",
+            "place": "Izu Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1998-01-01T06:11:22.640Z",
+            "place": "Volcano Islands, Japan region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1996-06-26T03:22:03.140Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2024-07-07T20:01:12.295Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2015-05-30T18:49:07.340Z",
+            "place": "Izu Islands, Japan region"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2014-06-30T19:55:32.390Z",
+            "place": "Bonin Islands, Japan region"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2014-06-29T05:56:31.720Z",
+            "place": "Volcano Islands, Japan region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -393,6 +617,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -406,6 +635,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:862eca09bdf30cdb96921e35f30f6ffe25e63f6f5549976148246784026d0556"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20122",
+    "geometryFingerprint": "b574d596d226223daa8453213acb345611d816835d004061f3e479b4e2f35a0e",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      136.9726367509309,
+      20.925816752207986,
+      157.29559345129107,
+      31.829848333238928
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:862eca09bdf30cdb96921e35f30f6ffe25e63f6f5549976148246784026d0556"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20128",
   "regionName": "Sulawesi Sea/Makassar Strait",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.415830+00:00",
+  "generatedAt": "2026-09-09T06:27:38.781891+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2431.5178814079545,
+        "medianDepthM": 2164.0,
+        "p10DepthM": 43.0,
+        "p90DepthM": 4992.0,
+        "shallowestM": -0.0,
+        "deepestM": 5845.0,
+        "coveragePct": 99.63301119032916,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 20.60576499944204,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 14.877384420106301,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 23.47445360682005,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 41.04239697363161,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -282,6 +332,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 702,
+        "m6Plus": 67,
+        "m7Plus": 12,
+        "maxMagnitude": 7.9,
+        "events": [
+          {
+            "magnitude": 7.9,
+            "time": "1996-01-01T08:05:10.830Z",
+            "place": "181 km N of Palu, Indonesia"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "2026-06-07T23:37:41.970Z",
+            "place": "25 km SW of Kablalan, Philippines"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "2002-03-05T21:16:09.130Z",
+            "place": "Mindanao, Philippines"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2008-11-16T17:02:32.700Z",
+            "place": "135 km NW of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2017-01-10T06:13:48.140Z",
+            "place": "189 km SSE of Tabiauan, Philippines"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2009-02-11T17:34:50.490Z",
+            "place": "196 km SSE of Sarangani, Philippines"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2024-07-11T02:13:18.585Z",
+            "place": "106 km WSW of Sangay, Philippines"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2023-08-28T19:55:30.875Z",
+            "place": "180 km NNE of Gili Air, Indonesia"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2005-02-05T12:23:18.940Z",
+            "place": "138 km SW of Palimbang, Philippines"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1999-03-04T08:52:01.900Z",
+            "place": "69 km S of Tabiauan, Philippines"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "1997-11-25T12:14:33.630Z",
+            "place": "97 km NW of Gorontalo, Indonesia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "1996-07-22T14:19:35.770Z",
+            "place": "220 km NNE of Palu, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2017-04-28T20:23:17.260Z",
+            "place": "31 km SW of Burias, Philippines"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2009-10-07T21:41:13.270Z",
+            "place": "221 km SSE of Tabiauan, Philippines"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2024-01-08T20:48:42.361Z",
+            "place": "93 km SE of Sarangani, Philippines"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2023-11-17T08:14:10.513Z",
+            "place": "32 km SW of Kablalan, Philippines"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1998-05-21T05:34:25.500Z",
+            "place": "127 km NNW of Palu, Indonesia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2014-12-02T05:11:31.000Z",
+            "place": "106 km WSW of Sangay, Philippines"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2011-02-10T14:41:58.820Z",
+            "place": "250 km SSE of Tabiauan, Philippines"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2010-07-24T05:35:01.060Z",
+            "place": "63 km WSW of Sangay, Philippines"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1996-07-16T10:07:36.650Z",
+            "place": "217 km NNE of Palu, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2026-06-26T11:34:41.463Z",
+            "place": "44 km SW of Balangonan, Philippines"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2026-06-08T00:55:12.546Z",
+            "place": "18 km SW of Balangonan, Philippines"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2016-01-11T16:38:05.900Z",
+            "place": "227 km SE of Sarangani, Philippines"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2011-03-10T17:08:36.860Z",
+            "place": "178 km NNE of Gili Air, Indonesia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2011-02-10T14:39:27.710Z",
+            "place": "235 km SSE of Tabiauan, Philippines"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2005-02-15T14:42:25.850Z",
+            "place": "Pulau-Pulau Talaud, Indonesia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2026-01-10T14:58:23.726Z",
+            "place": "247 km SE of Sarangani, Philippines"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2023-10-04T11:21:47.730Z",
+            "place": "65 km E of Sarangani, Philippines"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2005-11-30T16:53:42.470Z",
+            "place": "18 km WNW of Palimbang, Philippines"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -378,6 +602,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -393,9 +622,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5fb38bbea23aeb4d7769dd3545fc00762d350daab97ecc919d320f155f896acf"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20128",
+    "geometryFingerprint": "04a0d8c1ad8309cdccf832f2b9617c6ff8ac283d084f141575e0e1be6dad8b0a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      114.48456648983407,
+      -7.801941256918884,
+      127.72632825037314,
+      6.487328867556926
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5fb38bbea23aeb4d7769dd3545fc00762d350daab97ecc919d320f155f896acf"
 }

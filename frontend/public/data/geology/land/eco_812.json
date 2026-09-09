@@ -3,7 +3,7 @@
   "regionId": "eco_812",
   "regionName": "Azerbaijan shrub desert and steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.466234+00:00",
+  "generatedAt": "2026-09-09T06:27:42.814467+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -172,6 +172,90 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2015-09-04T04:49:38.520Z",
+            "place": "16 km SSE of O?uz, Azerbaijan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2014-02-10T12:06:47.290Z",
+            "place": "21 km N of Mughan, Azerbaijan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2012-10-07T11:42:47.160Z",
+            "place": "3 km ESE of Basqal, Azerbaijan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1999-06-04T09:12:50.070Z",
+            "place": "17 km N of A?da?, Azerbaijan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2017-11-15T19:48:03.560Z",
+            "place": "Azerbaijan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-03-21T14:07:40.820Z",
+            "place": "12 km W of Saatl?, Azerbaijan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-05-11T03:24:21.370Z",
+            "place": "16 km ESE of ?hm?db?yli, Azerbaijan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-11-20T12:46:06.106Z",
+            "place": "12 km NNE of Shamakhi, Azerbaijan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-02-05T19:31:36.261Z",
+            "place": "23 km NE of Basqal, Azerbaijan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-08-01T04:46:34.530Z",
+            "place": "11 km NW of Imishli, Azerbaijan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-01-26T03:30:15.230Z",
+            "place": "13 km NW of Divichibazar, Azerbaijan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-04-22T14:42:32.380Z",
+            "place": "31 km S of Horadiz, Azerbaijan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -418,9 +502,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:63eb44f1d1d512a1c10d0fa7aa23ed28943e6442bb1ecf0bd7b1560aa6a58927"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_812",
+    "geometryFingerprint": "ed4428e2abb31945cdb3b8b19b3eba3e533a8da6f4714026b83ef030add4eb44",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      44.66450860400009,
+      38.80901593258044,
+      50.35171196831641,
+      41.82645850000883
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:63eb44f1d1d512a1c10d0fa7aa23ed28943e6442bb1ecf0bd7b1560aa6a58927"
 }

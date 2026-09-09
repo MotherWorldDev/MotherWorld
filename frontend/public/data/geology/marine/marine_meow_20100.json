@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20100",
   "regionName": "Western and Northern Madagascar",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.228343+00:00",
+  "generatedAt": "2026-09-09T06:27:38.701749+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 52.274986267089844,
           "coveragePct": 92.64459255583859
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 2956.170964548522,
+        "medianDepthM": 3299.0,
+        "p10DepthM": 543.0,
+        "p90DepthM": 4466.0,
+        "shallowestM": -0.0,
+        "deepestM": 4949.0,
+        "coveragePct": 99.8961713550008,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 8.869168273046224,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 2.6622412472488652,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 27.53707369533412,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 60.93151678437078,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -85,6 +135,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 33,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "2018-05-15T15:48:09.940Z",
+            "place": "32 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2006-09-24T22:56:21.070Z",
+            "place": "237 km W of Maintirano, Madagascar"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2018-05-21T00:47:14.050Z",
+            "place": "41 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2018-05-20T08:01:27.020Z",
+            "place": "42 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-06-12T17:17:16.410Z",
+            "place": "68 km ESE of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-01-25T23:37:01.100Z",
+            "place": "8 km NW of Anakao, Madagascar"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-06-25T17:41:29.010Z",
+            "place": "47 km ESE of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-05-25T09:32:46.240Z",
+            "place": "36 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-05-21T02:58:42.660Z",
+            "place": "5 km N of Hoani, Comoros"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1993-12-01T22:04:22.360Z",
+            "place": "32 km W of Acoua, Mayotte"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-04-05T10:28:04.509Z",
+            "place": "20 km ENE of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-03-13T04:27:51.636Z",
+            "place": "14 km ENE of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-01-13T05:15:35.410Z",
+            "place": "12 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-06-27T06:40:56.780Z",
+            "place": "46 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-05-22T12:37:08.130Z",
+            "place": "36 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-05-14T14:41:42.620Z",
+            "place": "36 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-09-21T01:08:44.160Z",
+            "place": "46 km WSW of Nioumachoua, Comoros"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-10-14T10:03:30.460Z",
+            "place": "129 km NNW of Mitsamiouli, Comoros"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-06-23T11:54:54.590Z",
+            "place": "146 km ENE of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-09-17T13:24:54.480Z",
+            "place": "238 km W of Maintirano, Madagascar"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-09-17T07:30:11.100Z",
+            "place": "236 km W of Maintirano, Madagascar"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-03-21T06:42:34.748Z",
+            "place": "38 km E of Mramani, Comoros"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-01-02T16:00:31.895Z",
+            "place": "30 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-05-14T00:20:38.406Z",
+            "place": "19 km ESE of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-11-27T05:11:05.630Z",
+            "place": "3 km SE of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-06-18T13:43:01.310Z",
+            "place": "52 km ESE of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-06-03T06:13:42.940Z",
+            "place": "34 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-05-30T05:54:03.190Z",
+            "place": "35 km ESE of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-05-26T00:32:40.880Z",
+            "place": "44 km E of Pamandzi, Mayotte"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-05-25T06:36:04.200Z",
+            "place": "33 km E of Pamandzi, Mayotte"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -152,6 +376,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -160,6 +389,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:cf81ee1cc3fd8ad95ba3710efb8e846e1b80b3d8fd6d20945ea02f4d770db931"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20100",
+    "geometryFingerprint": "3ceb5eea6b8d3fc5c0a619e6b671aeb2b2c838eef1acfe7e2553fb93e628a2fe",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      39.5425265177808,
+      -28.966363655534405,
+      53.69399985846132,
+      -9.612598459781651
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:cf81ee1cc3fd8ad95ba3710efb8e846e1b80b3d8fd6d20945ea02f4d770db931"
 }

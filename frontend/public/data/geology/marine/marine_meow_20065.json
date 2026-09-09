@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20065",
   "regionName": "Greater Antilles",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.001036+00:00",
+  "generatedAt": "2026-09-09T06:27:38.567024+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2841.282466695232,
+        "medianDepthM": 2993.0,
+        "p10DepthM": 475.0,
+        "p90DepthM": 4643.0,
+        "shallowestM": -0.0,
+        "deepestM": 7157.0,
+        "coveragePct": 99.80679268729544,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 8.226162067174021,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.066952096416522,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 34.76726902170566,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 49.12334261710695,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.8162741975968494,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -329,6 +379,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 77,
+        "m6Plus": 9,
+        "m7Plus": 1,
+        "maxMagnitude": 7.7,
+        "events": [
+          {
+            "magnitude": 7.7,
+            "time": "2020-01-28T19:10:24.918Z",
+            "place": "123 km NNW of Lucea, Jamaica"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2024-11-10T16:49:50.426Z",
+            "place": "42 km SSW of Bartolomé Masó, Cuba"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2004-12-14T23:20:13.360Z",
+            "place": "36 km S of George Town, Cayman Islands"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2020-01-07T08:24:27.370Z",
+            "place": "4 km SSE of Indios, Puerto Rico"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2007-02-04T20:56:59.130Z",
+            "place": "108 km NNW of Lucea, Jamaica"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2026-06-08T18:00:27.517Z",
+            "place": "99 km WNW of Mantua, Cuba"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2020-01-28T21:55:16.450Z",
+            "place": "55 km SE of East End, Cayman Islands"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2004-09-09T16:33:21.740Z",
+            "place": "170 km S of George Town, Cayman Islands"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1995-06-27T10:09:58.060Z",
+            "place": "61 km SW of George Town, Cayman Islands"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2024-12-23T06:00:56.943Z",
+            "place": "41 km SSW of Guisa, Cuba"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2024-11-10T15:50:03.006Z",
+            "place": "38 km S of Bartolomé Masó, Cuba"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2018-10-07T00:11:51.220Z",
+            "place": "21 km WNW of Port-de-Paix, Haiti"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2010-01-19T14:23:38.850Z",
+            "place": "46 km SE of East End, Cayman Islands"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2026-03-17T04:28:25.134Z",
+            "place": "51 km SSW of Maisí, Cuba"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2020-01-06T10:32:18.770Z",
+            "place": "14 km S of Indios, Puerto Rico"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2017-01-17T09:08:02.030Z",
+            "place": "44 km S of Guisa, Cuba"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2015-11-16T00:39:33.520Z",
+            "place": "166 km SSW of George Town, Cayman Islands"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2014-05-28T21:15:06.600Z",
+            "place": "45 km SE of Boca de Yuma, Dominican Republic"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2025-08-05T09:23:51.280Z",
+            "place": "38 km SE of Boca de Yuma, Dominican Republic"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2002-05-21T06:02:59.940Z",
+            "place": "176 km SSW of George Town, Cayman Islands"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2020-01-07T08:34:01.979Z",
+            "place": "11 km S of Tallaboa, Puerto Rico"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2010-03-20T18:08:08.720Z",
+            "place": "53 km SSW of Guantánamo, Cuba"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2003-09-22T05:30:17.800Z",
+            "place": "17 km N of Sosúa, Dominican Republic"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1998-12-28T07:23:31.660Z",
+            "place": "31 km ENE of Moa, Cuba"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2026-02-08T12:00:09.139Z",
+            "place": "42 km SSW of Maisí, Cuba"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1996-06-11T16:52:12.760Z",
+            "place": "129 km SSE of Boca de Yuma, Dominican Republic"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2023-02-16T06:50:44.801Z",
+            "place": "37 km WSW of Bombardopolis, Haiti"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2021-10-16T18:27:28.917Z",
+            "place": "73 km SSW of George Town, Cayman Islands"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2020-05-02T11:13:18.680Z",
+            "place": "6 km S of Tallaboa, Puerto Rico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2020-01-28T21:58:57.470Z",
+            "place": "40 km SSE of East End, Cayman Islands"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -806,6 +1030,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -821,9 +1050,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5a2341920a099c5bf412a6b1e6d62dfd906f7eba097429175727842803a5a1c9"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20065",
+    "geometryFingerprint": "6ba5f882b02d5743e9f87d5e597f920cef0153118faafd2b7a1bed7f2716f9dd",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -86.13594770192185,
+      14.694305243184202,
+      -64.57942209888985,
+      24.676304738189774
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5a2341920a099c5bf412a6b1e6d62dfd906f7eba097429175727842803a5a1c9"
 }

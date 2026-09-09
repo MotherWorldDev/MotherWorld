@@ -3,7 +3,7 @@
   "regionId": "eco_707",
   "regionName": "Sayan montane conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.882652+00:00",
+  "generatedAt": "2026-09-09T06:27:42.434184+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,100 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 14,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.7,
+        "events": [
+          {
+            "magnitude": 6.7,
+            "time": "2021-01-11T21:32:59.015Z",
+            "place": "29 km SSW of Turt, Mongolia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2012-02-26T06:17:19.760Z",
+            "place": "38 km NE of Saryg-Sep, Russia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2011-12-27T15:21:56.840Z",
+            "place": "45 km NNE of Saryg-Sep, Russia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2008-08-16T04:01:08.600Z",
+            "place": "113 km WSW of Orlik, Russia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2021-05-03T08:46:39.830Z",
+            "place": "28 km SW of Turt, Mongolia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2013-04-30T01:03:35.880Z",
+            "place": "48 km SW of Shagonar, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-02-10T05:35:16.510Z",
+            "place": "southwestern Siberia, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2021-03-31T00:01:27.334Z",
+            "place": "41 km SSW of Turt, Mongolia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-02-26T11:59:06.800Z",
+            "place": "36 km NE of Saryg-Sep, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-02-21T01:37:07.991Z",
+            "place": "87 km ESE of Toora-Khem, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-06-06T14:04:16.810Z",
+            "place": "40 km NE of Saryg-Sep, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-02-26T11:07:41.200Z",
+            "place": "42 km ENE of Saryg-Sep, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-01-11T22:02:56.759Z",
+            "place": "43 km SW of Turt, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-08-16T04:06:41.950Z",
+            "place": "109 km WSW of Orlik, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -752,9 +846,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:fed13a9682051f26a2620c42db1f9208e25ac5bc5442fbd5320246d0d263d4fa"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_707",
+    "geometryFingerprint": "ea1d04603e5fa3817d39a15e87624a6ccb92c9e3858e802da378870ebaea283e",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      84.24120356900005,
+      49.64511656780769,
+      106.66629768806953,
+      56.18639538708022
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:fed13a9682051f26a2620c42db1f9208e25ac5bc5442fbd5320246d0d263d4fa"
 }

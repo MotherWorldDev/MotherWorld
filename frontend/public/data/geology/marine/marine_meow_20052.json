@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20052",
   "regionName": "East China Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.409245+00:00",
+  "generatedAt": "2026-09-09T06:27:39.326870+00:00",
   "sections": {
     "seafloor": {
       "tectonics": {
@@ -16,6 +16,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 293.97413763034297,
+        "medianDepthM": 96.0,
+        "p10DepthM": 31.0,
+        "p90DepthM": 998.0,
+        "shallowestM": -0.0,
+        "deepestM": 4961.0,
+        "coveragePct": 98.78329376443425,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 79.84083328984772,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 10.228522725484257,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 9.226446787240654,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.7041971974273581,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -235,6 +285,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 418,
+        "m6Plus": 46,
+        "m7Plus": 2,
+        "maxMagnitude": 7.4,
+        "events": [
+          {
+            "magnitude": 7.4,
+            "time": "2024-04-02T23:58:12.173Z",
+            "place": "15 km S of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2002-03-31T06:52:50.490Z",
+            "place": "67 km ENE of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2011-11-08T02:59:08.510Z",
+            "place": "238 km WNW of Naha, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2003-12-10T04:38:11.590Z",
+            "place": "92 km E of Yujing, Taiwan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2022-03-22T17:41:38.584Z",
+            "place": "65 km S of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2015-11-13T20:51:31.030Z",
+            "place": "140 km WSW of Makurazaki, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2025-12-27T15:05:55.388Z",
+            "place": "29 km ESE of Yilan, Taiwan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2020-06-13T15:51:24.069Z",
+            "place": "130 km WNW of Naze, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2005-03-20T01:53:41.830Z",
+            "place": "28 km NNW of Maebaru-ch??, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1994-05-24T04:00:42.180Z",
+            "place": "79 km SW of Yonakuni, Japan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2022-09-17T13:41:17.890Z",
+            "place": "96 km SE of Lugu, Taiwan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2024-04-03T00:11:25.266Z",
+            "place": "15 km NNE of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2018-02-06T15:50:43.320Z",
+            "place": "18 km NNE of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2016-05-31T05:23:47.310Z",
+            "place": "Taiwan region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2015-04-20T01:42:58.380Z",
+            "place": "75 km WSW of Yonakuni, Japan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2009-12-19T13:02:15.570Z",
+            "place": "20 km S of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2005-10-15T15:51:08.130Z",
+            "place": "99 km NNE of Yonakuni, Japan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1994-06-05T01:09:30.150Z",
+            "place": "31 km SSE of Yilan, Taiwan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1993-08-07T00:00:37.070Z",
+            "place": "199 km N of Hirara, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2023-09-18T13:21:23.535Z",
+            "place": "191 km N of Hirara, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2009-07-13T18:05:01.420Z",
+            "place": "61 km E of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2007-04-20T01:45:56.110Z",
+            "place": "102 km N of Hirara, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1999-11-01T17:53:00.120Z",
+            "place": "66 km S of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1996-03-05T14:52:28.680Z",
+            "place": "63 km ENE of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2022-05-09T06:23:02.067Z",
+            "place": "70 km SW of Yonakuni, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2022-01-03T09:46:35.767Z",
+            "place": "66 km E of Hualien City, Taiwan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2007-09-06T17:51:26.190Z",
+            "place": "66 km SE of Yilan, Taiwan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2002-05-15T03:46:05.760Z",
+            "place": "21 km SE of Yilan, Taiwan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1998-10-03T11:15:42.690Z",
+            "place": "183 km W of Naze, Japan"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2026-07-03T04:04:48.166Z",
+            "place": "147 km NNE of Hirara, Japan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -478,6 +702,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -493,9 +722,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:bd9e0e1154d71a222d17fd58ae337fb8aa3be350e690337303f039b08124eef7"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20052",
+    "geometryFingerprint": "351a166eab538f77b5e1fe21745b9a03d8cec6a24fde5c3aedf46b23175db598",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      118.87440806498309,
+      22.760214870900022,
+      130.65196069210805,
+      35.29336140153064
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:bd9e0e1154d71a222d17fd58ae337fb8aa3be350e690337303f039b08124eef7"
 }

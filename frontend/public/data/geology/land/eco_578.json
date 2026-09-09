@@ -3,7 +3,7 @@
   "regionId": "eco_578",
   "regionName": "Patagonian steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.241174+00:00",
+  "generatedAt": "2026-09-09T06:27:42.072630+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -76,6 +76,60 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "2023-07-17T03:05:11.472Z",
+            "place": "19 km SE of Loncopué, Argentina"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2021-04-29T02:17:17.665Z",
+            "place": "17 km WSW of Andacollo, Argentina"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2024-11-03T04:04:04.506Z",
+            "place": "130 km NNE of Barrancas, Argentina"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2021-10-13T07:55:29.195Z",
+            "place": "2 km NE of El Calafate, Argentina"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-05-13T00:48:00.569Z",
+            "place": "35 km NE of 28 de Noviembre, Argentina"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-08-30T16:08:17.860Z",
+            "place": "40 km SSE of El Calafate, Argentina"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -761,9 +815,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:58fa847715e0482840a2fb893d2838d6e73f824d01472ab6f98278b80425ef3e"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_578",
+    "geometryFingerprint": "a286a622f953fcbfdc5794f75286dcd4ab155f6d722409bad5e15e23895c0952",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -73.63499457099994,
+      -54.080585291761835,
+      -57.75186555099998,
+      -33.370151085795094
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:58fa847715e0482840a2fb893d2838d6e73f824d01472ab6f98278b80425ef3e"
 }

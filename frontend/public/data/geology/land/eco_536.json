@@ -3,7 +3,7 @@
   "regionId": "eco_536",
   "regionName": "Lara-Falcón dry forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.014743+00:00",
+  "generatedAt": "2026-09-09T06:27:41.954589+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -100,6 +100,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "1997-04-15T20:27:58.200Z",
+            "place": "71 km NNW of Barquisimeto, Venezuela"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -278,9 +307,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:136fefc3fd15e2bb38c7e93db933783d1a2e1e32e4acab017938fbf87323abfb"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_536",
+    "geometryFingerprint": "51e94bd5169896a1589d56f525b1fd13a938c8d229cd1c7626e409b1a7087d8d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -70.15959951599997,
+      10.066135682958736,
+      -68.30319957099987,
+      11.532004652901437
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:136fefc3fd15e2bb38c7e93db933783d1a2e1e32e4acab017938fbf87323abfb"
 }

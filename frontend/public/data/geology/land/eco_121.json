@@ -3,25 +3,56 @@
   "regionId": "eco_121",
   "regionName": "Ellsworth Land tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.026360+00:00",
+  "generatedAt": "2026-09-09T06:27:43.606900+00:00",
   "sections": {
     "surfaceGeology": {
-      "rockCoveragePct": 100.0,
+      "rockCoveragePct": 69.51772786490834,
       "dominantClass": {
         "code": "vb",
         "label": "Basic volcanic rocks",
-        "areaKm2": 7.02651597336847,
-        "percent": 100.0
+        "areaKm2": 68.71699908521053,
+        "percent": 45.00786076940297
       },
       "classes": [
         {
           "code": "vb",
           "label": "Basic volcanic rocks",
-          "areaKm2": 7.02651597336847,
-          "percent": 100.0
+          "areaKm2": 68.71699908521053,
+          "percent": 45.00786076940297
+        },
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 57.518113839153166,
+          "percent": 37.67287998390543
+        },
+        {
+          "code": "vi",
+          "label": "Intermediate volcanic rocks",
+          "areaKm2": 13.9642692605726,
+          "percent": 9.146235938605958
+        },
+        {
+          "code": "sm",
+          "label": "Mixed sedimentary rocks",
+          "areaKm2": 12.478389898658047,
+          "percent": 8.173023308085646
         }
       ],
-      "excluded": [],
+      "excluded": [
+        {
+          "code": "ig",
+          "label": "Ice and glaciers",
+          "areaKm2": 47.580509475272976,
+          "percentOfRegion": 21.664508619923335
+        },
+        {
+          "code": "nd",
+          "label": "No data",
+          "areaKm2": 19.36594491223953,
+          "percentOfRegion": 8.817763515168133
+        }
+      ],
       "source": {
         "providerId": "glim",
         "label": "Global Lithological Map (GLiM)",
@@ -35,7 +66,32 @@
     {
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
-      "version": "v1.0"
+      "version": "v1.0",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:932cd3bec856b7966d433273a48f627321dc41d6ecda203a33646e6fee6a6669"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_121",
+    "geometryFingerprint": "07f89f333146c6296e82491bcf181b060421161d2b33b755cc90ec1186a67c4d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -105.25378753199999,
+      -74.93075807599996,
+      -93.30453092299985,
+      -71.81977895199998
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_121",
+      "registryGeometryFingerprint": "07f89f333146c6296e82491bcf181b060421161d2b33b755cc90ec1186a67c4d",
+      "source": "ecoregions2017_original",
+      "sourceUrl": "https://ecoregions.appspot.com/",
+      "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:932cd3bec856b7966d433273a48f627321dc41d6ecda203a33646e6fee6a6669"
 }

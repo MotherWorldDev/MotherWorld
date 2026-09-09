@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20016",
   "regionName": "Laptev Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.777948+00:00",
+  "generatedAt": "2026-09-09T06:27:38.453792+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -78,6 +78,56 @@
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 162.1067214250002,
+        "medianDepthM": 28.0,
+        "p10DepthM": 10.0,
+        "p90DepthM": 250.0,
+        "shallowestM": -0.0,
+        "deepestM": 3348.0,
+        "coveragePct": 98.14112412664831,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 88.89837314537652,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 6.073287552064566,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 4.70323183447991,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.3251074680790133,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -135,6 +185,62 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "1996-06-22T16:47:12.910Z",
+            "place": "Laptev Sea"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-07-13T13:06:25.941Z",
+            "place": "New Siberian Islands, Sakha, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-01-05T00:46:01.903Z",
+            "place": "Laptev Sea"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-12-07T09:16:12.640Z",
+            "place": "Laptev Sea"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-02-28T16:11:33.390Z",
+            "place": "209 km NE of Tiksi, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-07-04T04:55:05.310Z",
+            "place": "Laptev Sea"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -149,9 +255,38 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c2d678ca0b7437d20b452a0f1344be07aa9a00398d42c5d00aaaa60e10d8ad0d"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20016",
+    "geometryFingerprint": "b60676632191601a2c5b90324c5402ae1fa5654b30656f2bcda0dcf76c6f4656",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      104.85981797193746,
+      70.74629648609015,
+      142.25727260914866,
+      81.19642594868333
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c2d678ca0b7437d20b452a0f1344be07aa9a00398d42c5d00aaaa60e10d8ad0d"
 }

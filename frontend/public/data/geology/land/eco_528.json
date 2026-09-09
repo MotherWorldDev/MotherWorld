@@ -3,7 +3,7 @@
   "regionId": "eco_528",
   "regionName": "Chiapas Depression dry forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.969932+00:00",
+  "generatedAt": "2026-09-09T06:27:41.928199+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -46,6 +46,90 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.9,
+        "events": [
+          {
+            "magnitude": 6.9,
+            "time": "1994-03-14T20:51:24.960Z",
+            "place": "6 km ENE of Rizo de Oro, Mexico"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2003-02-01T16:30:57.000Z",
+            "place": "7 km NNW of Nuevo Vicente Guerrero (El Chichonal), Mexico"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2021-12-13T07:03:07.238Z",
+            "place": "3 km SSE of El Pacayal, Mexico"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2010-11-01T23:16:46.700Z",
+            "place": "2 km NE of Emiliano Zapata, Mexico"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2012-09-01T18:01:48.200Z",
+            "place": "11 km N of Plan de Agua Prieta, Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2021-06-19T18:57:16.196Z",
+            "place": "11 km NE of Rizo de Oro, Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-06-07T21:26:47.700Z",
+            "place": "5 km SW of Emiliano Zapata, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-05-06T04:56:24.543Z",
+            "place": "11 km WSW of Nueva América, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-07-25T05:21:32.129Z",
+            "place": "Mexico-Guatemala border region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-10-24T03:54:19.823Z",
+            "place": "8 km ESE of Potrerillo, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-01-20T10:01:54.920Z",
+            "place": "4 km NNW of Vicente Guerrero, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-01-14T10:59:45.270Z",
+            "place": "11 km S of San Francisco Pujiltic, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -211,9 +295,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f51277df27579bff1e8417ea936c5cfaff152bb26fc8126b8f9737a4390c1165"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_528",
+    "geometryFingerprint": "283c51ce3da7759371944b64ff4069c3f86baa96cd6c1e2cfb23b227a0c0ae22",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -94.05734258799997,
+      15.44663389581696,
+      -91.69702966499995,
+      17.120452352272093
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f51277df27579bff1e8417ea936c5cfaff152bb26fc8126b8f9737a4390c1165"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_677",
   "regionName": "Qin Ling Mountains deciduous forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.702442+00:00",
+  "generatedAt": "2026-09-09T06:27:42.351873+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -100,6 +100,140 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 22,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.1,
+        "events": [
+          {
+            "magnitude": 6.1,
+            "time": "2008-05-25T08:21:49.990Z",
+            "place": "39 km WNW of Guangyuan, China"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2008-08-05T09:49:17.260Z",
+            "place": "46 km NW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2013-07-21T23:45:56.660Z",
+            "place": "60 km W of Mawu, China"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2008-07-24T07:09:30.090Z",
+            "place": "42 km NW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2008-05-27T08:37:51.510Z",
+            "place": "39 km NW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2008-07-23T19:54:44.160Z",
+            "place": "45 km NW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2009-03-12T08:25:38.050Z",
+            "place": "68 km W of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-05-12T06:48:59.120Z",
+            "place": "55 km W of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-10-29T13:28:01.550Z",
+            "place": "55 km W of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-05-27T08:03:22.710Z",
+            "place": "39 km NW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-05-19T06:06:54.760Z",
+            "place": "51 km W of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-12-09T18:53:11.120Z",
+            "place": "41 km WNW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-09-11T17:39:01.050Z",
+            "place": "54 km NW of Zengjia, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-05-12T14:46:07.740Z",
+            "place": "37 km NNW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-05-12T06:53:30.090Z",
+            "place": "58 km W of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-09-12T11:06:34.230Z",
+            "place": "34 km NNW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2014-06-09T23:54:14.980Z",
+            "place": "60 km W of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-10-31T21:58:19.580Z",
+            "place": "48 km WNW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-05-15T07:05:32.140Z",
+            "place": "38 km W of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-05-27T17:35:09.810Z",
+            "place": "48 km WNW of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-05-19T04:08:58.690Z",
+            "place": "73 km W of Guangyuan, China"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-05-13T07:19:16.260Z",
+            "place": "51 km W of Guangyuan, China"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -392,9 +526,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5d8833f6de529faaadd310969d17b494753b65f6c517ce06b498dae16190c991"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_677",
+    "geometryFingerprint": "29c81804f6b5f2f8e2c2318853d7e10c6c8f24a7057ac7dee81d27a6a79cf981",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      103.86432655700007,
+      32.29009952525268,
+      113.31698568500018,
+      34.620849645436756
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5d8833f6de529faaadd310969d17b494753b65f6c517ce06b498dae16190c991"
 }

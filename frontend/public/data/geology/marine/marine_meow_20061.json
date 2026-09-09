@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20061",
   "regionName": "Magdalena Transition",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.968292+00:00",
+  "generatedAt": "2026-09-09T06:27:38.549562+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 135.8389434814453,
           "coveragePct": 68.33129938310923
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 2599.017789852558,
+        "medianDepthM": 3384.0,
+        "p10DepthM": 117.0,
+        "p90DepthM": 3869.0,
+        "shallowestM": 1.0,
+        "deepestM": 4369.0,
+        "coveragePct": 99.81214144642199,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 13.083631831493149,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 12.634094202641235,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 9.741015685537413,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 64.54125828032821,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -124,6 +174,47 @@
         "license": "CC BY 4.0"
       }
     },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "2004-02-09T01:24:40.630Z",
+            "place": "31 km WNW of Puerto San Carlos, Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2004-02-09T09:03:47.430Z",
+            "place": "41 km W of Puerto San Carlos, Mexico"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2009-01-19T23:50:47.950Z",
+            "place": "115 km SW of El Pescadero, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 2,
       "commodityCount": 2,
@@ -169,14 +260,43 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:81c1c431fd21fbafc8ee4fa05cf071d4cee3b9ceac9c7b5ce209aeabbf938f7d"
     },
     {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20061",
+    "geometryFingerprint": "d1cc470ad74931184363c74a4bba09e35291f73d256936d08f569b27e1a07899",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -115.79254521453333,
+      21.72535664938395,
+      -109.98494648691029,
+      26.803473504893926
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:81c1c431fd21fbafc8ee4fa05cf071d4cee3b9ceac9c7b5ce209aeabbf938f7d"
 }

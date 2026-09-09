@@ -3,7 +3,7 @@
   "regionId": "eco_313",
   "regionName": "Kinabalu montane alpine meadows",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.079824+00:00",
+  "generatedAt": "2026-09-09T06:27:44.457530+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000009,
@@ -34,6 +34,47 @@
         "version": "v1.0",
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2015-06-04T23:15:43.910Z",
+            "place": "14 km WNW of Ranau, Malaysia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2015-06-12T18:29:15.950Z",
+            "place": "27 km N of Ranau, Malaysia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-03-08T13:06:13.460Z",
+            "place": "16 km NNW of Ranau, Malaysia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -81,9 +122,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a39e66a195601831a9d6eff5001f4d54ffacd98816f6eded4eb4acd0508efb32"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_313",
+    "geometryFingerprint": "086cf2a0f2d794c9e30c206db2999faeb4fecb358f35fee17e321744620b6626",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      116.47540390626544,
+      5.925718568001601,
+      116.75452079306021,
+      6.285624857997878
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a39e66a195601831a9d6eff5001f4d54ffacd98816f6eded4eb4acd0508efb32"
 }

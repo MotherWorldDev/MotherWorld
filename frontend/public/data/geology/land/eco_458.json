@@ -3,7 +3,7 @@
   "regionId": "eco_458",
   "regionName": "Costa Rican seasonal moist forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.587806+00:00",
+  "generatedAt": "2026-09-09T06:27:41.756623+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -64,6 +64,120 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 18,
+        "m6Plus": 1,
+        "m7Plus": 1,
+        "maxMagnitude": 7.6,
+        "events": [
+          {
+            "magnitude": 7.6,
+            "time": "2012-09-05T14:42:07.800Z",
+            "place": "11 km ENE of Hojancha, Costa Rica"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2011-05-13T22:47:54.000Z",
+            "place": "7 km ESE of Atenas, Costa Rica"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1993-11-22T22:43:26.410Z",
+            "place": "6 km E of La Conquista, Nicaragua"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2012-09-08T20:29:31.210Z",
+            "place": "10 km ENE of Hojancha, Costa Rica"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1996-09-18T17:34:20.670Z",
+            "place": "18 km SE of Altagracia, Nicaragua"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2011-07-12T20:11:01.260Z",
+            "place": "2 km S of Fortuna, Costa Rica"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2020-07-12T22:38:43.832Z",
+            "place": "5 km WNW of El Crucero, Nicaragua"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2017-09-01T07:42:45.010Z",
+            "place": "7 km SW of Nicoya, Costa Rica"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-06-23T20:00:37.800Z",
+            "place": "3 km W of Nicoya, Costa Rica"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-12-01T00:25:21.380Z",
+            "place": "9 km NE of Cot, Costa Rica"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2012-10-10T12:19:44.930Z",
+            "place": "6 km SSW of Nicoya, Costa Rica"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-07-12T20:17:54.650Z",
+            "place": "7 km N of Fortuna, Costa Rica"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2005-12-28T15:27:54.670Z",
+            "place": "3 km SSW of San Rafael Abajo, Costa Rica"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-06-26T11:57:24.982Z",
+            "place": "9 km WSW of El Crucero, Nicaragua"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-09-16T05:51:09.450Z",
+            "place": "2 km NNW of Nicoya, Costa Rica"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-11-01T05:01:09.032Z",
+            "place": "2 km NNW of Ángeles, Costa Rica"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-04-28T03:49:47.959Z",
+            "place": "2 km NNE of Palmichal, Costa Rica"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-04-01T07:36:58.310Z",
+            "place": "10 km SW of El Crucero, Nicaragua"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -591,9 +705,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f0ab0bf4c55ff0f671ee92e1a90081567a03dd675388504db6b71f4fd4731387"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_458",
+    "geometryFingerprint": "1d88f35d7d9753f250d753af723b424e494634b84d6e14cf595b05f61815a670",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -86.41991451299992,
+      9.562231087354155,
+      -83.77861756399993,
+      12.161353315491928
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f0ab0bf4c55ff0f671ee92e1a90081567a03dd675388504db6b71f4fd4731387"
 }

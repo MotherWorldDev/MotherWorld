@@ -3,7 +3,7 @@
   "regionId": "eco_194",
   "regionName": "New Zealand South Island montane grasslands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.341856+00:00",
+  "generatedAt": "2026-09-09T06:27:41.112705+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -197,6 +197,150 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 24,
+        "m6Plus": 5,
+        "m7Plus": 0,
+        "maxMagnitude": 6.8,
+        "events": [
+          {
+            "magnitude": 6.8,
+            "time": "1994-06-18T03:25:15.830Z",
+            "place": "56 km NW of Oxford, New Zealand"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1995-11-24T06:18:56.470Z",
+            "place": "47 km NW of Oxford, New Zealand"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2016-11-13T11:52:45.010Z",
+            "place": "78 km SSW of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2015-04-24T03:36:42.400Z",
+            "place": "73 km S of Wakefield, New Zealand"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1994-06-19T13:43:51.190Z",
+            "place": "40 km N of Methven, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2001-12-07T19:27:34.140Z",
+            "place": "59 km NNW of Wanaka, New Zealand"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2015-05-04T02:29:11.420Z",
+            "place": "28 km NW of Wanaka, New Zealand"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2015-01-05T17:48:42.490Z",
+            "place": "43 km SSE of Hokitika, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-11-13T11:19:34.890Z",
+            "place": "88 km SSW of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1995-05-29T10:06:41.690Z",
+            "place": "South Island of New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2007-10-03T19:15:10.800Z",
+            "place": "85 km S of Wakefield, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-05-02T15:35:38.400Z",
+            "place": "83 km N of Wanaka, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-10-20T20:02:59.800Z",
+            "place": "104 km NNE of Wanaka, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1994-06-21T02:18:23.320Z",
+            "place": "47 km N of Methven, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-09-02T06:13:33.779Z",
+            "place": "66 km NNW of Arthurs Point, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-11-13T11:24:18.090Z",
+            "place": "51 km SSW of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-09-02T06:57:12.278Z",
+            "place": "70 km NNW of Arthurs Point, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-02-09T00:39:00.640Z",
+            "place": "79 km S of Wakefield, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1996-08-29T04:47:03.940Z",
+            "place": "74 km N of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-11-13T22:19:32.250Z",
+            "place": "93 km NNE of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-11-13T12:43:53.050Z",
+            "place": "101 km SSE of Wakefield, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-07-06T05:45:17.530Z",
+            "place": "56 km NE of Wanaka, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-11-13T15:58:36.760Z",
+            "place": "52 km SSW of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-05-02T15:40:04.100Z",
+            "place": "85 km N of Wanaka, New Zealand"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "surfaceGeology": {
@@ -355,9 +499,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:7078512f38d2496b1de0fadacd762de1fd4328ca94643e2557cfa49f7049fa31"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_194",
+    "geometryFingerprint": "7b34e408354af679b01dc30e28b0ea479a51c860e78fd0183410c452d552f24f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      167.6049196920002,
+      -45.652187353559626,
+      173.83474760800001,
+      -41.76939073098318
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:7078512f38d2496b1de0fadacd762de1fd4328ca94643e2557cfa49f7049fa31"
 }

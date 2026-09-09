@@ -3,7 +3,7 @@
   "regionId": "eco_675",
   "regionName": "Po Basin mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.686779+00:00",
+  "generatedAt": "2026-09-09T06:27:42.342805+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,75 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 9,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2012-05-20T02:03:52.000Z",
+            "place": "4 km NNE of Massa Finalese, Italy"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2012-05-29T07:00:03.000Z",
+            "place": "1 km ENE of Medolla, Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2012-05-29T10:55:57.000Z",
+            "place": "2 km NE of San Possidonio, Italy"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1996-10-15T09:55:59.630Z",
+            "place": "2 km N of Correggio, Italy"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-06-03T19:20:43.000Z",
+            "place": "3 km ENE of Novi di Modena, Italy"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-05-29T11:00:25.050Z",
+            "place": "2 km W of San Possidonio, Italy"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2000-05-10T16:52:09.810Z",
+            "place": "7 km SE of Granarolo, Italy"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-05-20T13:18:02.000Z",
+            "place": "1 km SSW of Vigarano Mainarda, Italy"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2002-11-02T10:57:43.170Z",
+            "place": "4 km N of Sant'Alberto, Italy"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -475,9 +544,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a1a45a2f1f327d9df7764d03e098af16aa89c861472c230cfc452f2240f30c15"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_675",
+    "geometryFingerprint": "afe1f6b35130af1b8e234bf4c073a5e016faa4ed9f094c1449545e1dc1d9e45f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      7.36228749300011,
+      44.04613884694916,
+      13.627727433000073,
+      46.402620570823956
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a1a45a2f1f327d9df7764d03e098af16aa89c861472c230cfc452f2240f30c15"
 }

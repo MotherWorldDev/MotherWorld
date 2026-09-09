@@ -3,7 +3,7 @@
   "regionId": "eco_303",
   "regionName": "Luzon tropical pine forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.880257+00:00",
+  "generatedAt": "2026-09-09T06:27:41.410788+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -58,6 +58,55 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2008-01-13T12:15:35.600Z",
+            "place": "4 km SSE of Bontoc, Philippines"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2001-01-12T19:18:25.800Z",
+            "place": "19 km SE of Bantay, Philippines"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1996-04-22T02:23:47.750Z",
+            "place": "17 km SSW of Lubuagan, Philippines"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-06-10T18:52:08.520Z",
+            "place": "14 km NW of Busilak, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-07-27T20:02:40.169Z",
+            "place": "17 km WSW of Pasil, Philippines"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -473,9 +522,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a27880d83dbc495071770343c5c6b7ecaca112a6fc3b6c9dcc13748a97d20582"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_303",
+    "geometryFingerprint": "083e8f1a295d924c6ae82982d06316505e27fbf65920d385c3a6aba5511955ca",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      120.54309868300011,
+      16.190700302548738,
+      121.34335368100002,
+      17.830584791104208
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a27880d83dbc495071770343c5c6b7ecaca112a6fc3b6c9dcc13748a97d20582"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_457",
   "regionName": "Cordillera Oriental montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.576237+00:00",
+  "generatedAt": "2026-09-09T06:27:41.750056+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,165 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 27,
+        "m6Plus": 4,
+        "m7Plus": 0,
+        "maxMagnitude": 6.5,
+        "events": [
+          {
+            "magnitude": 6.5,
+            "time": "1995-01-19T15:05:03.410Z",
+            "place": "16 km ESE of Páez, Colombia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2023-08-17T17:04:48.770Z",
+            "place": "10 km E of El Calvario, Colombia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2019-12-24T19:03:52.492Z",
+            "place": "1 km NE of Lejanías, Colombia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1994-05-31T17:41:55.580Z",
+            "place": "44 km SSE of San Cristóbal, Venezuela"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2008-05-24T19:20:42.490Z",
+            "place": "6 km WSW of El Calvario, Colombia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2019-12-24T19:19:03.273Z",
+            "place": "9 km NW of Mesetas, Colombia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1995-01-22T10:41:27.550Z",
+            "place": "9 km E of Páez, Colombia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2016-10-31T00:20:11.640Z",
+            "place": "34 km ENE of Colombia, Colombia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2000-01-17T12:20:05.250Z",
+            "place": "21 km W of Fortul, Colombia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1994-11-09T03:56:57.170Z",
+            "place": "49 km SE of San Cristóbal, Venezuela"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1994-05-31T20:45:55.490Z",
+            "place": "37 km NNE of Cubará, Colombia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1995-01-21T09:18:18.010Z",
+            "place": "13 km NNE of Sabanalarga, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-07-16T22:58:23.390Z",
+            "place": "19 km N of Cubará, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-06-20T19:04:06.990Z",
+            "place": "16 km NNW of Cubará, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1995-01-20T13:59:20.260Z",
+            "place": "6 km SW of Chámeza, Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-06-02T18:35:05.790Z",
+            "place": "43 km NNE of Cubará, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-07-22T03:16:36.285Z",
+            "place": "25 km SE of Albania, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-12-24T19:11:01.700Z",
+            "place": "11 km E of Lejanías, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-07-19T05:39:34.580Z",
+            "place": "23 km ENE of Colombia, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-10-14T08:35:43.800Z",
+            "place": "34 km NNE of Cubará, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-07-02T19:26:28.710Z",
+            "place": "8 km NNE of Lejanías, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-11-23T23:56:43.020Z",
+            "place": "37 km ESE of Colombia, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1994-06-02T18:33:28.300Z",
+            "place": "47 km SE of San Cristóbal, Venezuela"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-08-18T01:15:26.559Z",
+            "place": "10 km N of Cumaral, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-12-25T02:11:23.210Z",
+            "place": "7 km ENE of Mesetas, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-12-24T19:15:43.628Z",
+            "place": "11 km WSW of Lejanías, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-10-31T02:05:58.040Z",
+            "place": "33 km E of Colombia, Colombia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -746,9 +905,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:8cbdbde499ac11f06c37c267e0451765b291302f122659271f4629c67c7ddc85"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_457",
+    "geometryFingerprint": "cbbc10c7dd941ad744d1a3ae78effa96a7e2113a8089c56001084ee73e3a1aa6",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -76.07411951199997,
+      1.314183217533474,
+      -71.8111645219999,
+      11.198951574129032
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:8cbdbde499ac11f06c37c267e0451765b291302f122659271f4629c67c7ddc85"
 }

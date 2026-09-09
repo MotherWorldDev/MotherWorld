@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20053",
   "regionName": "Aleutian Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.948469+00:00",
+  "generatedAt": "2026-09-09T06:27:38.535509+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3889.7554123190657,
+        "medianDepthM": 3916.0,
+        "p10DepthM": 924.0,
+        "p90DepthM": 5613.0,
+        "shallowestM": 2.0,
+        "deepestM": 7331.0,
+        "coveragePct": 99.9555046214849,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 4.530500691279741,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 5.913310393151714,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 12.158298959335372,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 70.33867145092277,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 7.059218505310396,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -271,6 +321,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1160,
+        "m6Plus": 120,
+        "m7Plus": 8,
+        "maxMagnitude": 7.9,
+        "events": [
+          {
+            "magnitude": 7.9,
+            "time": "2014-06-23T20:53:09.700Z",
+            "place": "Rat Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 7.9,
+            "time": "1996-06-10T04:03:35.480Z",
+            "place": "77 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "2003-11-17T06:43:06.800Z",
+            "place": "Rat Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2011-06-24T03:09:39.470Z",
+            "place": "Fox Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "1996-06-10T15:24:56.000Z",
+            "place": "46 km SSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2007-12-19T09:30:27.930Z",
+            "place": "207 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2003-03-17T16:36:17.310Z",
+            "place": "Rat Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2013-08-30T16:25:02.300Z",
+            "place": "101 km SW of Atka, Alaska"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2015-07-27T04:49:46.400Z",
+            "place": "Fox Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2011-09-02T10:55:53.590Z",
+            "place": "170 km E of Atka, Alaska"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2003-06-23T12:12:34.470Z",
+            "place": "291 km SE of Attu Station, Alaska"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1999-03-20T10:47:45.930Z",
+            "place": "78 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1993-05-15T21:52:25.340Z",
+            "place": "151 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2022-01-11T11:35:43.674Z",
+            "place": "100 km SE of Nikolski, Alaska"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2017-06-02T22:24:47.440Z",
+            "place": "200 km NW of Attu Station, Alaska"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2005-06-14T17:10:12.280Z",
+            "place": "289 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1996-03-22T03:24:20.010Z",
+            "place": "Rat Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2007-08-02T03:21:42.820Z",
+            "place": "239 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1997-03-26T02:08:57.270Z",
+            "place": "273 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2022-01-11T12:39:32.454Z",
+            "place": "53 km SE of Nikolski, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2008-05-02T01:33:37.240Z",
+            "place": "61 km W of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2008-04-16T05:54:19.690Z",
+            "place": "174 km W of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2006-07-08T20:40:00.980Z",
+            "place": "199 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2003-02-19T03:32:36.360Z",
+            "place": "92 km SE of Akutan, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2002-11-07T15:14:06.760Z",
+            "place": "289 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1999-01-28T08:10:05.420Z",
+            "place": "18 km WSW of Nikolski, Alaska"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1997-12-17T04:38:51.460Z",
+            "place": "Rat Islands, Aleutian Islands, Alaska"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2018-08-15T21:56:56.310Z",
+            "place": "108 km WSW of Adak, Alaska"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2017-10-08T22:34:33.490Z",
+            "place": "247 km ESE of Attu Station, Alaska"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2015-11-09T16:03:46.070Z",
+            "place": "99 km SE of Atka, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -531,6 +755,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -541,9 +770,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1f77cbb09566fa1bd4d4b8d13f10cb14c5caadb3ca22b1bafd739cc14874b2f3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20053",
+    "geometryFingerprint": "b624a239f9895936a9a73ce698fda7d5320163b032708fa1dc77b1cfef655fd9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.98907200195572,
+      47.8451447204058,
+      179.9910779526601,
+      56.31046825718346
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1f77cbb09566fa1bd4d4b8d13f10cb14c5caadb3ca22b1bafd739cc14874b2f3"
 }

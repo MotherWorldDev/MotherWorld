@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20111",
   "regionName": "Western Sumatra",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.320790+00:00",
+  "generatedAt": "2026-09-09T06:27:38.742251+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3133.02031100181,
+        "medianDepthM": 4312.0,
+        "p10DepthM": 115.0,
+        "p90DepthM": 5152.0,
+        "shallowestM": -0.0,
+        "deepestM": 6085.0,
+        "coveragePct": 99.88140684035989,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 11.08731913638334,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 11.418346198152946,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 19.18463394999954,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 58.022284858580726,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.2874158568834515,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -254,6 +304,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1210,
+        "m6Plus": 104,
+        "m7Plus": 13,
+        "maxMagnitude": 9.1,
+        "events": [
+          {
+            "magnitude": 9.1,
+            "time": "2004-12-26T00:58:53.450Z",
+            "place": "2004 Sumatra - Andaman Islands Earthquake"
+          },
+          {
+            "magnitude": 8.6,
+            "time": "2012-04-11T08:38:36.720Z",
+            "place": "2012 Wharton Basin Earthquake"
+          },
+          {
+            "magnitude": 8.4,
+            "time": "2007-09-12T11:10:26.830Z",
+            "place": "122 km SW of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 7.9,
+            "time": "2007-09-12T23:49:03.720Z",
+            "place": "87 km SW of Sungai Penuh, Indonesia"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "2010-10-25T14:42:22.460Z",
+            "place": "215 km SW of Sungai Penuh, Indonesia"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "2010-04-06T22:15:01.580Z",
+            "place": "75 km E of Sinabang, Indonesia"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2009-09-30T10:16:09.250Z",
+            "place": "30 km WSW of Pariaman, Indonesia"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2002-11-02T01:26:10.700Z",
+            "place": "50 km NW of Sinabang, Indonesia"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2012-01-10T18:36:59.080Z",
+            "place": "off the west coast of northern Sumatra"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2010-05-09T05:59:41.620Z",
+            "place": "45 km SSW of Meulaboh, Indonesia"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2008-02-25T08:36:33.030Z",
+            "place": "164 km WSW of Sungai Penuh, Indonesia"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2023-04-24T20:00:57.265Z",
+            "place": "171 km SSE of Teluk Dalam, Indonesia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "1998-04-01T17:56:23.360Z",
+            "place": "95 km W of Pariaman, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2022-11-18T13:37:08.687Z",
+            "place": "204 km SW of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2020-08-18T22:29:24.731Z",
+            "place": "122 km WSW of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2005-05-19T01:54:52.850Z",
+            "place": "89 km WSW of Singkil, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2001-01-16T13:25:09.830Z",
+            "place": "59 km WSW of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1995-11-08T07:14:18.610Z",
+            "place": "164 km WSW of Sinabang, Indonesia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2020-08-18T22:23:59.497Z",
+            "place": "138 km WSW of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2010-03-05T16:07:00.680Z",
+            "place": "141 km W of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2007-10-24T21:02:50.610Z",
+            "place": "138 km W of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2006-05-16T15:28:25.920Z",
+            "place": "256 km SSW of Singkil, Indonesia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2005-02-26T12:56:52.620Z",
+            "place": "99 km WNW of Sinabang, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2022-03-13T21:09:22.258Z",
+            "place": "166 km W of Pariaman, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2021-05-14T06:33:07.879Z",
+            "place": "260 km S of Sinabang, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2009-08-16T07:38:21.700Z",
+            "place": "112 km WSW of Padang, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2008-02-25T21:02:18.420Z",
+            "place": "155 km SSW of Padang, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2007-09-20T08:31:14.490Z",
+            "place": "118 km SSW of Padang, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2005-07-05T01:52:02.950Z",
+            "place": "94 km WSW of Singkil, Indonesia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2005-05-14T05:05:18.480Z",
+            "place": "125 km SW of Padangsidempuan, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -325,6 +549,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -333,6 +562,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:64a05007a49a18c9012ad3f523a95869ab38a4e1150fd8e9e848f898cecd213e"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20111",
+    "geometryFingerprint": "a0ddbf95f5c2d561d9cbce6195e6e1099b51a0c577ecdf09c55d7b45aa302854",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      92.05471776986629,
+      -6.977902923571678,
+      102.30574596009996,
+      7.665480971162141
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:64a05007a49a18c9012ad3f523a95869ab38a4e1150fd8e9e848f898cecd213e"
 }

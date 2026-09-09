@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20181",
   "regionName": "Rio Grande",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.703660+00:00",
+  "generatedAt": "2026-09-09T06:27:38.968438+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 50.941192626953125,
           "coveragePct": 46.65614501724149
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 1312.625888204157,
+        "medianDepthM": 903.0,
+        "p10DepthM": 26.0,
+        "p90DepthM": 3147.0,
+        "shallowestM": 1.0,
+        "deepestM": 3806.0,
+        "coveragePct": 99.91922912958836,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 42.10459145940426,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 8.80939532043852,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 33.16589991869869,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 15.920113301458525,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "minerals": {
@@ -99,6 +149,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "usgs_mrds",

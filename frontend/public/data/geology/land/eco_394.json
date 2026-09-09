@@ -3,7 +3,7 @@
   "regionId": "eco_394",
   "regionName": "Montana Valley and Foothill grasslands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.230668+00:00",
+  "generatedAt": "2026-09-09T06:27:41.593861+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -94,6 +94,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "2005-07-26T04:08:37.160Z",
+            "place": "16 km N of Dillon, Montana"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-08-20T13:50:25.600Z",
+            "place": "22 km NW of Lima, Montana"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-01-03T17:44:03.530Z",
+            "place": "9 km E of Challis, Idaho"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -747,9 +786,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ce180d0cc30d1c2e6fe92071de1dce0a025408442ef14763ea4ee657544613f3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_394",
+    "geometryFingerprint": "475a1fe318789a8c0a14b293390ed66ed67a74ae8844f585a74bbf71e32e6335",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -114.59259431399992,
+      43.51212954873263,
+      -105.80020705599992,
+      51.72759454630833
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ce180d0cc30d1c2e6fe92071de1dce0a025408442ef14763ea4ee657544613f3"
 }

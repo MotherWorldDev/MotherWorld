@@ -3,7 +3,7 @@
   "regionId": "eco_240",
   "regionName": "Luzon montane rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.603769+00:00",
+  "generatedAt": "2026-09-09T06:27:41.266598+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -52,6 +52,60 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "1997-04-08T18:07:09.570Z",
+            "place": "29 km ENE of Piddig, Philippines"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2000-07-18T22:59:16.520Z",
+            "place": "15 km ESE of Espiritu, Philippines"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1993-01-08T19:26:38.880Z",
+            "place": "21 km NW of Kabugao, Philippines"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2017-05-25T14:27:04.790Z",
+            "place": "15 km ENE of Santa Fe, Philippines"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-04-20T19:12:40.770Z",
+            "place": "18 km WSW of Sula, Philippines"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-02-20T11:47:58.890Z",
+            "place": "18 km SE of Bangui, Philippines"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -230,9 +284,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1b85d5b8a8414a2d5336f7334a1b9f8676b68c0a609c13c02f9501f391ed6461"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_240",
+    "geometryFingerprint": "1a2ee322ee6cf662fee7bf69bbeb847b73671947aed34317883c510002ebb89a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      120.0440296070002,
+      14.649256238150347,
+      122.31478155900001,
+      18.461240694986376
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1b85d5b8a8414a2d5336f7334a1b9f8676b68c0a609c13c02f9501f391ed6461"
 }

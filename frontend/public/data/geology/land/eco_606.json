@@ -3,7 +3,7 @@
   "regionId": "eco_606",
   "regionName": "Paraguaná xeric scrub",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.386231+00:00",
+  "generatedAt": "2026-09-09T06:27:42.168770+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -142,6 +142,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2009-11-27T08:15:53.360Z",
+            "place": "49 km NE of Carora, Venezuela"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1995-12-31T15:12:33.000Z",
+            "place": "17 km SSE of Carora, Venezuela"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-06-03T17:17:32.180Z",
+            "place": "19 km S of Carora, Venezuela"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -422,9 +461,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:2c3411e1807c5e9f24907df4a007ada130e1c486545a2c5a9f2c3e2616849232"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_606",
+    "geometryFingerprint": "adbb29d1bc49f287ff18ce22c9b277359e93848861b513d2446dc2a76fa73f61",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -71.58327448899996,
+      9.616512124310818,
+      -69.25038949899994,
+      12.200264791467395
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:2c3411e1807c5e9f24907df4a007ada130e1c486545a2c5a9f2c3e2616849232"
 }

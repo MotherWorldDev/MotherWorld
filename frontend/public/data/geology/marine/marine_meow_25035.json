@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25035",
   "regionName": "Western Mediterranean",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.110720+00:00",
+  "generatedAt": "2026-09-09T06:27:39.147851+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 1754.301096704375,
+        "medianDepthM": 2064.0,
+        "p10DepthM": 113.0,
+        "p90DepthM": 2849.0,
+        "shallowestM": 2.0,
+        "deepestM": 3636.0,
+        "coveragePct": 99.86221418357691,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 14.246441150022882,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 17.0902595849006,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 64.2570197078757,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 4.406279557200826,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -410,6 +460,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 40,
+        "m6Plus": 5,
+        "m7Plus": 0,
+        "maxMagnitude": 6.8,
+        "events": [
+          {
+            "magnitude": 6.8,
+            "time": "2003-05-21T18:44:20.100Z",
+            "place": "25 km WNW of Dellys, Algeria"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2026-06-01T22:12:36.092Z",
+            "place": "23 km WSW of San Lucido, Italy"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2026-03-09T23:03:54.034Z",
+            "place": "16 km SSE of Sant'Angelo, Italy"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2021-03-18T00:04:06.698Z",
+            "place": "21 km NNE of Bejaïa, Algeria"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2002-09-06T01:21:28.600Z",
+            "place": "34 km NNE of Santa Flavia, Italy"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2016-10-28T20:02:49.760Z",
+            "place": "80 km NNE of Ustica, Italy"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2006-10-26T14:28:37.310Z",
+            "place": "40 km W of San Nicolò, Italy"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2003-05-27T17:11:28.820Z",
+            "place": "northern Algeria"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1994-01-05T13:24:09.950Z",
+            "place": "62 km NNE of Malfa, Italy"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2003-05-21T18:51:10.300Z",
+            "place": "10 km WNW of Dellys, Algeria"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2022-10-31T21:42:50.853Z",
+            "place": "12 km WSW of Tortora Marina, Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2014-08-01T04:11:16.520Z",
+            "place": "11 km NW of Aïn Taya, Algeria"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2004-05-05T13:39:43.860Z",
+            "place": "5 km S of Leni, Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1998-05-18T17:19:04.820Z",
+            "place": "74 km WSW of Cittadella del Capo, Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1996-09-04T04:14:03.210Z",
+            "place": "20 km NNW of ’Aïn Benian, Algeria"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-12-17T21:57:44.830Z",
+            "place": "53 km WSW of San Lucido, Italy"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2002-09-27T06:10:44.900Z",
+            "place": "39 km NNE of Santa Flavia, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-02-07T15:19:12.809Z",
+            "place": "39 km WSW of Leni, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-05-01T02:41:26.060Z",
+            "place": "33 km WSW of Cittadella del Capo, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-03-19T09:59:30.497Z",
+            "place": "13 km NE of Bejaïa, Algeria"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-11-03T18:13:11.110Z",
+            "place": "85 km S of Ventotene, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-07-04T23:55:32.000Z",
+            "place": "39 km NE of Santa Marina Salina, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-05-29T02:14:59.830Z",
+            "place": "7 km ENE of Aïn Taya, Algeria"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-05-22T13:57:20.630Z",
+            "place": "12 km N of Dellys, Algeria"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-05-17T11:43:57.860Z",
+            "place": "43 km NW of Santa Domenica, Italy"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-07-07T19:21:46.800Z",
+            "place": "77 km WSW of Cargèse, France"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2004-12-18T09:12:48.210Z",
+            "place": "42 km ENE of San Teodoro, Italy"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-05-22T03:14:03.850Z",
+            "place": "30 km NW of Dellys, Algeria"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2003-05-21T19:02:07.400Z",
+            "place": "22 km WNW of Dellys, Algeria"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2000-04-26T13:37:48.310Z",
+            "place": "39 km E of Golfo Aranci, Italy"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -617,6 +841,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -632,9 +861,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3b9402d266278aaabd627a56a58933e3d5232cbf89103f58a857b57c4894036e"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25035",
+    "geometryFingerprint": "78a325e526a5dc2e54bf3557302f4875864c96278135bddb06e410ec7afb4887",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -0.859584179461592,
+      35.86472336951433,
+      16.212551572544925,
+      44.426235687250866
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3b9402d266278aaabd627a56a58933e3d5232cbf89103f58a857b57c4894036e"
 }

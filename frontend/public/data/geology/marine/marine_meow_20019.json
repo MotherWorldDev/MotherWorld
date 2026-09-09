@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "regionId": "marine_meow_20019",
+  "regionName": "White Sea",
+  "kind": "marine",
+  "generatedAt": "2026-09-09T06:27:39.772929+00:00",
+  "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 57.14898831131157,
+        "medianDepthM": 38.0,
+        "p10DepthM": 8.0,
+        "p90DepthM": 142.0,
+        "shallowestM": -0.0,
+        "deepestM": 295.0,
+        "coveragePct": 97.78104758949917,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 94.37245121556332,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 5.62754878443669,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 0.0,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    }
+  },
+  "providers": [
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    }
+  ]
+}

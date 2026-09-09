@@ -3,7 +3,7 @@
   "regionId": "eco_570",
   "regionName": "Guianan savanna",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.147936+00:00",
+  "generatedAt": "2026-09-09T06:27:45.584928+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.94540187807465,
@@ -71,6 +71,37 @@
         "version": "v1.0",
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "2021-01-31T19:05:14.367Z",
+            "place": "82 km SSE of Lethem, Guyana"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -437,9 +468,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9a3bfbc7008009b254a18327f0c1896acd27c986483bfad7dd04de590cfe2c00"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_570",
+    "geometryFingerprint": "3dc24814c77a7b39e8c7069c6994f6e901ee311940cda8f6c10bdb2ba3737b65",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -62.089237591999904,
+      -0.091043519898105,
+      -50.58529658799995,
+      6.642784873932026
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9a3bfbc7008009b254a18327f0c1896acd27c986483bfad7dd04de590cfe2c00"
 }

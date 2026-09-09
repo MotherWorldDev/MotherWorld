@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25046",
   "regionName": "Kamchatka Shelf and Coast",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.133025+00:00",
+  "generatedAt": "2026-09-09T06:27:39.160993+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2972.3827444787566,
+        "medianDepthM": 3377.0,
+        "p10DepthM": 108.0,
+        "p90DepthM": 5386.0,
+        "shallowestM": -0.0,
+        "deepestM": 7914.0,
+        "coveragePct": 99.61202363969662,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 14.550899204362823,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 6.691700000990779,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 18.495883356416414,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 55.98615790111481,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 4.275359537115188,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -297,6 +347,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 952,
+        "m6Plus": 77,
+        "m7Plus": 9,
+        "maxMagnitude": 8.8,
+        "events": [
+          {
+            "magnitude": 8.8,
+            "time": "2025-07-29T23:24:52.483Z",
+            "place": "2025 Kamchatka Peninsula, Russia Earthquake"
+          },
+          {
+            "magnitude": 7.8,
+            "time": "2025-09-18T18:58:14.939Z",
+            "place": "140 km E of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2017-07-17T23:34:13.740Z",
+            "place": "Komandorskiye Ostrova, Russia region"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "1993-06-08T13:03:36.480Z",
+            "place": "97 km ESE of Ozernovskiy, Russia"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2025-09-13T02:37:56.761Z",
+            "place": "105 km E of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2025-07-20T06:49:04.327Z",
+            "place": "2025 Eastern Kamchatka, Russia Earthquake"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2018-12-20T17:01:55.150Z",
+            "place": "187 km SE of Ust’-Kamchatsk Staryy, Russia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2024-08-17T19:10:26.820Z",
+            "place": "102 km E of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "1993-11-13T01:18:04.180Z",
+            "place": "112 km S of Vilyuchinsk, Russia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2025-07-30T00:09:58.961Z",
+            "place": "125 km SE of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1999-03-08T12:25:48.990Z",
+            "place": "123 km SE of Vilyuchinsk, Russia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2003-12-05T21:26:09.480Z",
+            "place": "220 km ESE of Ust’-Kamchatsk Staryy, Russia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1996-06-21T13:57:10.020Z",
+            "place": "159 km SSE of Vilyuchinsk, Russia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2026-06-19T06:52:32.241Z",
+            "place": "141 km ESE of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2025-07-20T07:07:42.573Z",
+            "place": "153 km ESE of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2025-07-20T06:28:17.860Z",
+            "place": "134 km E of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2021-03-16T18:38:21.233Z",
+            "place": "171 km SSE of Ust’-Kamchatsk Staryy, Russia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2025-07-20T07:23:02.065Z",
+            "place": "143 km E of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2006-08-24T21:50:36.650Z",
+            "place": "81 km ESE of Ozernovskiy, Russia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2001-10-08T18:14:26.440Z",
+            "place": "123 km ESE of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1996-07-16T03:48:28.340Z",
+            "place": "157 km E of Ust’-Kamchatsk Staryy, Russia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2019-06-25T09:05:40.478Z",
+            "place": "108 km E of Ust’-Kamchatsk Staryy, Russia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2016-03-20T22:50:20.430Z",
+            "place": "216 km S of Ust’-Kamchatsk Staryy, Russia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2013-11-12T07:03:51.090Z",
+            "place": "172 km S of Ust’-Kamchatsk Staryy, Russia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2001-10-08T18:20:38.250Z",
+            "place": "114 km ESE of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1998-06-01T05:34:03.580Z",
+            "place": "96 km E of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1997-12-05T18:48:22.790Z",
+            "place": "220 km ENE of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2025-07-29T23:30:03.032Z",
+            "place": "94 km SE of Petropavlovsk-Kamchatsky, Russia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2019-06-26T02:18:07.841Z",
+            "place": "100 km E of Ust’-Kamchatsk Staryy, Russia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2017-07-17T11:05:09.060Z",
+            "place": "Komandorskiye Ostrova, Russia region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -368,6 +592,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -381,6 +610,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:eaed662eda57cd903d1a3287316a74a8e12c26a7bdce9a932263942b113846c2"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25046",
+    "geometryFingerprint": "b4691b862675d18e84c218611e7729ce7d5f8ffd169868ddf37d005851708cfa",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.98907200195572,
+      49.560035308093205,
+      179.9910779526601,
+      62.73079242056243
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:eaed662eda57cd903d1a3287316a74a8e12c26a7bdce9a932263942b113846c2"
 }

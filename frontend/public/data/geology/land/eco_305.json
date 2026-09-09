@@ -3,7 +3,7 @@
   "regionId": "eco_305",
   "regionName": "Sumatran tropical pine forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.077316+00:00",
+  "generatedAt": "2026-09-09T06:27:44.426863+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.99999999999994,
@@ -41,6 +41,47 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2017-07-11T01:24:32.110Z",
+            "place": "10 km NNE of Parapat, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-07-09T22:17:41.110Z",
+            "place": "37 km NW of Sungai Penuh, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-03-05T06:55:30.780Z",
+            "place": "104 km E of Meulaboh, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -48,6 +89,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f58aced173b3dc2c17dc97181742b7d6fe1712bf878729ec58c54533b4c3958f"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_305",
+    "geometryFingerprint": "530fada9b31d18a3e7b375a1cdb8427caab9bd9da183feb74dece701da482d59",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      96.02552761700012,
+      -2.323358576417837,
+      101.4066006640001,
+      5.137983976423073
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f58aced173b3dc2c17dc97181742b7d6fe1712bf878729ec58c54533b4c3958f"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_365",
   "regionName": "Queen Charlotte Islands conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.094439+00:00",
+  "generatedAt": "2026-09-09T06:27:44.668718+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 69.81829095672018,
@@ -105,6 +105,47 @@
         "license": "CC BY 4.0"
       }
     },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 1,
+        "m7Plus": 1,
+        "maxMagnitude": 7.8,
+        "events": [
+          {
+            "magnitude": 7.8,
+            "time": "2012-10-28T03:04:08.820Z",
+            "place": "206 km SW of Prince Rupert, Canada"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-10-28T06:16:52.140Z",
+            "place": "230 km SSW of Prince Rupert, Canada"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-11-13T04:55:45.000Z",
+            "place": "212 km SSW of Prince Rupert, Canada"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 3,
       "commodityCount": 6,
@@ -190,9 +231,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6a9f4b8440bb6d698a40c5a28baaa23ede437fb0c159295050acc6349f5e1e66"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_365",
+    "geometryFingerprint": "7c4b5c81f440b25a7da370bbcaf41900127a3f4d9036fb14dfcf8257eb1b7be2",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -133.14467838299996,
+      51.940333217354095,
+      -130.93593351999994,
+      54.25680810679148
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6a9f4b8440bb6d698a40c5a28baaa23ede437fb0c159295050acc6349f5e1e66"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20089",
   "regionName": "Gulf of Aden",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.149250+00:00",
+  "generatedAt": "2026-09-09T06:27:38.649672+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2335.061984804448,
+        "medianDepthM": 2275.0,
+        "p10DepthM": 379.0,
+        "p90DepthM": 4149.0,
+        "shallowestM": 1.0,
+        "deepestM": 4914.0,
+        "coveragePct": 99.91244984128133,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 7.3639602556257895,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 11.746421569235293,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 48.148624122597624,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 32.740994052541296,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -312,6 +362,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 142,
+        "m6Plus": 6,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "2006-12-30T08:30:49.790Z",
+            "place": "156 km NW of Kilmia, Yemen"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2019-04-29T14:19:52.499Z",
+            "place": "Carlsberg Ridge"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2026-08-27T21:07:38.352Z",
+            "place": "145 km N of Caluula, Somalia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2018-07-15T13:09:16.470Z",
+            "place": "192 km NNW of Kilmia, Yemen"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2014-07-19T14:14:01.850Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2001-06-15T16:19:07.610Z",
+            "place": "199 km NNW of Kilmia, Yemen"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2024-03-01T17:29:44.950Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1994-04-11T11:20:21.490Z",
+            "place": "6 km SSW of Tadjourah, Djibouti"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2023-06-03T07:17:46.330Z",
+            "place": "164 km N of Las Khorey, Somalia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2023-05-19T15:15:03.282Z",
+            "place": "163 km NNW of Qandala, Somalia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2015-08-17T16:16:59.190Z",
+            "place": "175 km NNW of Kilmia, Yemen"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2013-10-02T01:06:37.330Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2009-01-09T03:44:38.800Z",
+            "place": "Carlsberg Ridge"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2007-08-02T13:37:29.210Z",
+            "place": "169 km NNW of Las Khorey, Somalia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2003-08-27T21:18:44.070Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2023-12-05T07:31:33.611Z",
+            "place": "150 km NNW of Las Khorey, Somalia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2023-06-03T10:15:55.032Z",
+            "place": "145 km N of Las Khorey, Somalia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2021-07-03T17:04:27.320Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2021-04-24T18:00:32.526Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2009-11-05T07:12:32.440Z",
+            "place": "120 km SE of Aden, Yemen"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1994-04-24T02:57:10.730Z",
+            "place": "14 km W of Djibouti, Djibouti"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-06-03T13:58:03.320Z",
+            "place": "155 km N of Las Khorey, Somalia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-04-03T21:44:13.710Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-04-03T21:34:45.377Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2021-06-14T02:44:59.141Z",
+            "place": "181 km NNW of Bosaso, Somalia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-05-05T07:01:47.490Z",
+            "place": "182 km NNW of Kilmia, Yemen"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2012-02-04T21:50:50.570Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2010-11-14T17:02:47.690Z",
+            "place": "47 km ESE of Obock, Djibouti"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2010-11-14T06:32:27.980Z",
+            "place": "73 km E of Obock, Djibouti"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2004-02-13T00:41:39.180Z",
+            "place": "Owen Fracture Zone region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -438,6 +662,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -453,9 +682,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d1e93e32c212d9be56747ed6dc358318a33b4f8f3757990fa6313a45de4ae139"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20089",
+    "geometryFingerprint": "972ac066d118fcfe2df6768c082ed06457010ff93f6ccee9c1b0bad46c8838df",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      42.53365819328593,
+      8.952762475751191,
+      57.86411774182977,
+      14.516134792646877
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d1e93e32c212d9be56747ed6dc358318a33b4f8f3757990fa6313a45de4ae139"
 }

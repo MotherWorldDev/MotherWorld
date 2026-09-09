@@ -3,7 +3,7 @@
   "regionId": "eco_450",
   "regionName": "Central American Atlantic moist forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.528770+00:00",
+  "generatedAt": "2026-09-09T06:27:41.727191+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -124,6 +124,70 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.7,
+        "events": [
+          {
+            "magnitude": 6.7,
+            "time": "1999-07-11T14:14:16.530Z",
+            "place": "16 km N of Potrerillos, Honduras"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-04-10T19:14:01.540Z",
+            "place": "8 km S of San Antonio, Honduras"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1995-12-19T20:56:06.380Z",
+            "place": "3 km WNW of Tucurú, Guatemala"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2021-08-25T21:04:19.627Z",
+            "place": "11 km NNE of Pinalejo, Honduras"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-04-23T00:20:34.440Z",
+            "place": "28 km NNE of El Estor, Guatemala"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1999-02-16T14:56:40.900Z",
+            "place": "3 km NNW of La Masica, Honduras"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-01-11T23:30:44.470Z",
+            "place": "9 km ESE of Morales, Guatemala"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-06-30T16:22:33.130Z",
+            "place": "4 km SW of Armenia, Honduras"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -654,9 +718,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3d2d6f742d7b4e1962636807f5cceae72cbaa024a71e25a216e5b140c1eb4be8"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_450",
+    "geometryFingerprint": "5e91ef688da3917ff6e543113686272995d44cc1974eb810e51c55a426654722",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -90.19483956099991,
+      12.069501737549949,
+      -83.15772255399997,
+      16.500804904449375
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3d2d6f742d7b4e1962636807f5cceae72cbaa024a71e25a216e5b140c1eb4be8"
 }

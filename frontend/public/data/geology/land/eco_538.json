@@ -3,7 +3,7 @@
   "regionId": "eco_538",
   "regionName": "Magdalena Valley dry forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.035055+00:00",
+  "generatedAt": "2026-09-09T06:27:41.960224+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -154,6 +154,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2010-07-29T19:34:46.490Z",
+            "place": "1 km ESE of Saldaña, Colombia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -693,9 +722,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:381c0218d361a6828c8fba6913628ef2551bb4bee309adaa9491797fc05b8057"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_538",
+    "geometryFingerprint": "ec2c0f200c8653efcb85c6d070b5046825dbda61e943f600d2bc8bc96c62821d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -75.9728165009999,
+      1.994751342779726,
+      -74.30881459399995,
+      5.391780293165072
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:381c0218d361a6828c8fba6913628ef2551bb4bee309adaa9491797fc05b8057"
 }

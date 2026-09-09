@@ -3,7 +3,7 @@
   "regionId": "eco_829",
   "regionName": "Kopet Dag semi-desert",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.558182+00:00",
+  "generatedAt": "2026-09-09T06:27:42.868700+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.2,
+        "events": [
+          {
+            "magnitude": 5.2,
+            "time": "2017-02-05T13:46:25.700Z",
+            "place": "20 km ENE of Gumdag, Turkmenistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-10-19T15:57:13.880Z",
+            "place": "33 km ESE of Gumdag, Turkmenistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-02-05T15:59:09.040Z",
+            "place": "16 km NE of Gumdag, Turkmenistan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -158,6 +197,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:492ada6f195f48a2bebcad6d1a6f846895e9748f4eef2e99db590d59e251706b"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_829",
+    "geometryFingerprint": "11787ead314666410e7780dc2a5aa5025aa67ac55504977e57a5092e167ee4cd",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      54.039958502,
+      37.0062145696691,
+      58.541469497000044,
+      39.49277069091662
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:492ada6f195f48a2bebcad6d1a6f846895e9748f4eef2e99db590d59e251706b"
 }

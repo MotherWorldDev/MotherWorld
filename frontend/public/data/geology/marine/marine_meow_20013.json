@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20013",
   "regionName": "Chukchi Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:40.296062+00:00",
+  "generatedAt": "2026-09-09T06:27:39.739908+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 196.52462512345144,
+        "medianDepthM": 50.0,
+        "p10DepthM": 27.0,
+        "p90DepthM": 195.0,
+        "shallowestM": -0.0,
+        "deepestM": 3906.0,
+        "coveragePct": 99.50772758967055,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 90.42289872138598,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 5.087942725496573,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 2.1197236476025525,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 2.3694349055149178,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "geothermal": {
       "measurementCount": 2,
       "medianMwM2": 130.5,
@@ -60,13 +112,93 @@
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.1,
+        "events": [
+          {
+            "magnitude": 6.1,
+            "time": "1996-10-24T19:31:53.930Z",
+            "place": "179 km NNW of Lorino, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-04-13T13:41:31.935Z",
+            "place": "54 km SSW of Point Hope, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-02-21T13:50:42.625Z",
+            "place": "68 km S of Point Hope, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-09-25T09:45:31.469Z",
+            "place": "148 km NNW of Diomede, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-10-25T00:04:16.490Z",
+            "place": "181 km NNW of Lorino, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5f6589ebb84a4c26a4a8674c15449d9ecd2f70c27b669d41c2d8538b0a17f631"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20013",
+    "geometryFingerprint": "6a05a0c7bee2a7f55fbdfcfa50567b34b8544ea2d11067d4b3ad6a82d039714a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.9999885409174,
+      65.64214560904671,
+      179.9910779526601,
+      76.19429054735507
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5f6589ebb84a4c26a4a8674c15449d9ecd2f70c27b669d41c2d8538b0a17f631"
 }

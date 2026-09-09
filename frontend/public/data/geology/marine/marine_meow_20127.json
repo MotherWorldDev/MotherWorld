@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20127",
   "regionName": "Eastern Philippines",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.409214+00:00",
+  "generatedAt": "2026-09-09T06:27:38.781891+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3701.6450521278816,
+        "medianDepthM": 4382.0,
+        "p10DepthM": 107.0,
+        "p90DepthM": 5957.0,
+        "shallowestM": -0.0,
+        "deepestM": 10080.0,
+        "coveragePct": 99.65512988463614,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 12.317576429692757,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 9.318413072857181,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 15.32675920175423,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 53.62701979504699,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 9.410231500648848,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -302,6 +352,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1455,
+        "m6Plus": 108,
+        "m7Plus": 16,
+        "maxMagnitude": 7.6,
+        "events": [
+          {
+            "magnitude": 7.6,
+            "time": "2023-12-02T14:37:04.454Z",
+            "place": "19 km E of Gamut, Philippines"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2012-08-31T12:47:33.380Z",
+            "place": "89 km E of Sulangan, Philippines"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2010-07-23T22:51:11.840Z",
+            "place": "61 km W of Bantogon, Philippines"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "2010-07-23T23:15:10.190Z",
+            "place": "72 km S of Panubigan, Philippines"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "2001-01-01T06:57:04.170Z",
+            "place": "21 km SE of Lukatan, Philippines"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2025-10-10T01:43:59.585Z",
+            "place": "12 km E of Santiago, Philippines"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2010-07-23T22:08:11.250Z",
+            "place": "68 km W of Gadung, Philippines"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "1999-12-11T18:03:36.450Z",
+            "place": "14 km WNW of Bolitoc, Philippines"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "1995-04-21T00:34:46.090Z",
+            "place": "10 km E of Dapdap, Philippines"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2021-08-11T17:46:13.143Z",
+            "place": "60 km ENE of Pondaguitan, Philippines"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1996-06-11T18:22:55.730Z",
+            "place": "8 km NNE of Palapag, Philippines"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1995-05-05T03:53:45.050Z",
+            "place": "14 km NE of Cabatuan, Philippines"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "1994-11-14T19:15:30.660Z",
+            "place": "10 km E of Sabang, Philippines"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2021-01-21T12:23:04.255Z",
+            "place": "211 km SE of Pondaguitan, Philippines"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2018-12-29T03:39:09.740Z",
+            "place": "96 km ESE of Pondaguitan, Philippines"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "1993-05-11T18:26:51.320Z",
+            "place": "3 km E of Manay, Philippines"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2025-09-30T13:59:43.328Z",
+            "place": "8 km ESE of Calape, Philippines"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2023-12-03T19:49:35.739Z",
+            "place": "34 km ENE of Aras-asan, Philippines"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2008-03-03T14:11:14.620Z",
+            "place": "Philippine Islands region"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2003-05-26T23:13:29.720Z",
+            "place": "34 km W of Gadung, Philippines"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1997-03-11T19:22:00.130Z",
+            "place": "121 km E of Kinablangan, Philippines"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1995-04-21T00:09:54.360Z",
+            "place": "19 km E of Dolores, Philippines"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2024-08-02T22:23:02.111Z",
+            "place": "20 km E of Barcelona, Philippines"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2001-01-01T08:54:31.580Z",
+            "place": "Mindanao, Philippines"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1998-09-02T08:37:29.910Z",
+            "place": "123 km SSE of Pondaguitan, Philippines"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1995-04-23T05:08:01.970Z",
+            "place": "10 km E of Gamay, Philippines"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1995-04-21T05:17:01.330Z",
+            "place": "47 km E of Dapdap, Philippines"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1995-04-21T00:30:10.820Z",
+            "place": "14 km ESE of Can-Avid, Philippines"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2025-10-10T11:12:05.407Z",
+            "place": "12 km SE of Santiago, Philippines"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2021-07-23T20:48:57.357Z",
+            "place": "15 km S of Hukay, Philippines"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -807,6 +1031,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -822,9 +1051,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:822b9004db0bd472f493bcea71f50aa0bfca7fba8a8a8b4e48862cbf8f1d6d63"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20127",
+    "geometryFingerprint": "993a31fc67d3aa62deaa304edc4d46f044006945ccd3e4242c7f335f61e8bcd9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      119.1859559360051,
+      4.275788151499394,
+      129.92055258167431,
+      18.736547340387382
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:822b9004db0bd472f493bcea71f50aa0bfca7fba8a8a8b4e48862cbf8f1d6d63"
 }

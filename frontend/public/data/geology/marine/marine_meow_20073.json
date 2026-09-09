@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20073",
   "regionName": "Sao Pedro and Sao Paulo Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.054852+00:00",
+  "generatedAt": "2026-09-09T06:27:38.592200+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3841.8385316735985,
+        "medianDepthM": 3764.0,
+        "p10DepthM": 3009.0,
+        "p90DepthM": 4883.0,
+        "shallowestM": 1254.0,
+        "deepestM": 5176.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.0,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.0,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 9.717998543180682,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 90.28200145681932,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -152,6 +202,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 88,
+        "m6Plus": 8,
+        "m7Plus": 0,
+        "maxMagnitude": 6.9,
+        "events": [
+          {
+            "magnitude": 6.9,
+            "time": "2020-09-18T21:43:59.027Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1996-12-10T08:36:18.700Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2025-03-28T17:17:27.868Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2020-08-30T21:20:29.757Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2007-07-03T08:26:00.810Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1993-09-20T10:17:42.060Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2025-03-28T00:34:21.875Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2006-06-05T06:27:07.960Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2019-08-05T00:40:46.024Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2008-09-16T07:28:25.020Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1996-08-18T07:16:10.840Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2016-07-24T14:10:51.040Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2016-01-27T15:11:17.550Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2006-06-05T06:34:31.800Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2018-05-24T23:11:47.170Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2006-03-04T00:53:31.780Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2004-10-25T20:59:51.420Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1997-11-14T10:18:20.060Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-11-21T05:10:26.216Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-01-03T18:19:25.631Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2020-08-09T12:42:13.079Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2018-10-16T08:35:36.820Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2018-06-25T10:52:42.420Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2009-01-02T20:14:30.630Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2003-03-07T12:23:10.270Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2001-01-02T19:37:35.600Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1998-05-01T17:18:17.940Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1996-08-30T11:41:55.810Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1993-05-02T15:11:55.260Z",
+            "place": "central Mid-Atlantic Ridge"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1993-02-09T12:04:49.250Z",
+            "place": "central Mid-Atlantic Ridge"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -223,6 +447,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -231,6 +460,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:7d486c9cc7101941e63ca270d0568db9d9858b5f44a894818d70ab7f748f1653"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20073",
+    "geometryFingerprint": "32fd0ea011102d3e9bc0e283c6e7ce49e4dd4b2b65874ed77caa36b23605f639",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -33.37631490003786,
+      -3.158373892348931,
+      -26.626254975388264,
+      3.514109475917258
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:7d486c9cc7101941e63ca270d0568db9d9858b5f44a894818d70ab7f748f1653"
 }

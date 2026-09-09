@@ -3,7 +3,7 @@
   "regionId": "eco_695",
   "regionName": "Elburz Range forest steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.792582+00:00",
+  "generatedAt": "2026-09-09T06:27:42.391760+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,110 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 16,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2012-08-11T12:23:18.190Z",
+            "place": "26 km SW of Ahar, Iran"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2012-08-11T12:34:35.900Z",
+            "place": "30 km WSW of Ahar, Iran"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1997-02-28T12:57:18.640Z",
+            "place": "24 km SSW of Om?dcheh, Iran"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2019-11-07T22:47:07.041Z",
+            "place": "59 km NE of Hashtr?d, Iran"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2021-05-17T00:54:01.149Z",
+            "place": "57 km WSW of Bojn?rd, Iran"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-05-16T23:04:56.799Z",
+            "place": "55 km WSW of Bojn?rd, Iran"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1998-08-04T11:41:58.940Z",
+            "place": "15 km SSW of Bojn?rd, Iran"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-03-02T18:29:42.570Z",
+            "place": "52 km SSW of Om?dcheh, Iran"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-04-19T13:46:49.770Z",
+            "place": "37 km NNW of Qazvin, Iran"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-08-14T14:02:25.000Z",
+            "place": "24 km W of Ahar, Iran"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-08-11T22:24:02.000Z",
+            "place": "27 km W of Ahar, Iran"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-01-19T12:35:51.300Z",
+            "place": "9 km NNE of Neysh?b?r, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-08-11T15:43:19.200Z",
+            "place": "29 km W of Ahar, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-08-11T12:30:12.000Z",
+            "place": "25 km W of Ahar, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-08-11T22:32:18.800Z",
+            "place": "25 km WNW of Shahrud, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-07-26T04:04:10.700Z",
+            "place": "78 km WNW of Sabzevar, Iran"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -673,9 +777,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:294ea5b9f42d1bb154de250adca1e492dfbde5eee29dfbae642aa7e5d8958f00"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_695",
+    "geometryFingerprint": "74ebc51fe3c181384d174049b06a7a2ab52cec60b21db296edf7f4867998a26a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      45.76918762100018,
+      35.355224896816665,
+      59.132064598000056,
+      38.9347728116426
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:294ea5b9f42d1bb154de250adca1e492dfbde5eee29dfbae642aa7e5d8958f00"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20176",
   "regionName": "Humboldtian",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.670757+00:00",
+  "generatedAt": "2026-09-09T06:27:38.944474+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 132.8907928466797,
           "coveragePct": 67.97553648609683
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 3764.291316096458,
+        "medianDepthM": 4217.0,
+        "p10DepthM": 1000.0,
+        "p90DepthM": 5242.0,
+        "shallowestM": 2.0,
+        "deepestM": 7953.0,
+        "coveragePct": 99.8405377482499,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 4.101502559880531,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 5.81514834238523,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 13.718245547210614,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 71.03754143720465,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 5.327562113318992,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -97,6 +147,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 486,
+        "m6Plus": 46,
+        "m7Plus": 9,
+        "maxMagnitude": 8.4,
+        "events": [
+          {
+            "magnitude": 8.4,
+            "time": "2001-06-23T20:33:14.130Z",
+            "place": "6 km SSW of Atico, Peru"
+          },
+          {
+            "magnitude": 8.2,
+            "time": "2014-04-01T23:46:47.260Z",
+            "place": "93 km NW of Iquique, Chile"
+          },
+          {
+            "magnitude": 8.0,
+            "time": "2007-08-15T23:40:57.890Z",
+            "place": "41 km SW of San Vicente de Cañete, Peru"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2014-04-03T02:43:13.110Z",
+            "place": "53 km SW of Iquique, Chile"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "1996-11-12T16:59:44.030Z",
+            "place": "60 km SW of Changuillo, Peru"
+          },
+          {
+            "magnitude": 7.6,
+            "time": "2001-07-07T09:38:43.520Z",
+            "place": "51 km SW of Punta de Bombón, Peru"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2024-06-28T05:36:36.902Z",
+            "place": "10 km WSW of Atiquipa, Peru"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2018-01-14T09:18:45.540Z",
+            "place": "37 km W of Atiquipa, Peru"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2013-09-25T16:42:43.170Z",
+            "place": "16 km WSW of Atiquipa, Peru"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2014-04-01T23:57:58.790Z",
+            "place": "90 km WNW of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1999-04-03T06:17:18.360Z",
+            "place": "6 km SE of Camaná, Peru"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2014-03-16T21:16:29.600Z",
+            "place": "63 km WNW of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2006-10-20T10:48:56.010Z",
+            "place": "52 km SW of San Vicente de Cañete, Peru"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2001-06-26T04:18:31.380Z",
+            "place": "34 km WSW of Pacocha, Peru"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2001-07-05T13:53:48.360Z",
+            "place": "31 km S of Achanizo, Peru"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2014-04-03T01:58:30.530Z",
+            "place": "45 km WSW of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2009-11-13T03:05:57.220Z",
+            "place": "92 km N of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2017-07-18T02:05:19.750Z",
+            "place": "22 km S of Atico, Peru"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2014-04-03T05:26:15.700Z",
+            "place": "79 km SW of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2014-03-17T05:11:34.860Z",
+            "place": "79 km WNW of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1995-08-03T01:57:19.900Z",
+            "place": "68 km NNW of Antofagasta, Chile"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2014-04-04T01:37:50.570Z",
+            "place": "70 km SW of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2014-03-23T18:20:01.930Z",
+            "place": "93 km NW of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2007-11-15T15:03:08.750Z",
+            "place": "86 km N of Antofagasta, Chile"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2000-11-29T10:25:13.260Z",
+            "place": "72 km NW of Taltal, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2015-11-27T21:00:22.920Z",
+            "place": "65 km N of Taltal, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2014-04-11T00:01:45.210Z",
+            "place": "71 km SW of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2014-03-22T12:59:59.150Z",
+            "place": "90 km WNW of Iquique, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1995-07-30T21:05:47.720Z",
+            "place": "40 km NNW of Antofagasta, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2024-06-29T07:05:32.855Z",
+            "place": "34 km SW of Atiquipa, Peru"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -327,6 +551,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -337,9 +566,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:516f8b4ccceaa49f87b0c58e168d4857c43bd13e52e316b6e82ccec2df976db3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20176",
+    "geometryFingerprint": "5fb9360b2df5dbf2938562ca83dc5d02fcfae6afec0f2436e31172164b4e5a63",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -81.04156285312969,
+      -25.117753538077324,
+      -70.05627462199986,
+      -11.87536318098728
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:516f8b4ccceaa49f87b0c58e168d4857c43bd13e52e316b6e82ccec2df976db3"
 }

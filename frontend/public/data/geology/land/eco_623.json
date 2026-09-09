@@ -3,7 +3,7 @@
   "regionId": "eco_623",
   "regionName": "Hawai'i tropical moist forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.454925+00:00",
+  "generatedAt": "2026-09-09T06:27:42.208531+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,55 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.96,
+        "events": [
+          {
+            "magnitude": 5.96,
+            "time": "2026-05-23T07:46:01.480Z",
+            "place": "13 km S of Honaunau-Napoopoo, Hawaii"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2007-08-14T05:38:06.310Z",
+            "place": "15 km SSE of Fern Forest, Hawaii"
+          },
+          {
+            "magnitude": 5.28,
+            "time": "2017-06-08T17:01:19.350Z",
+            "place": "15 km S of Fern Forest, Hawaii"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1997-06-30T15:47:39.480Z",
+            "place": "14 km SSE of Fern Forest, Hawaii"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-04-02T06:18:19.720Z",
+            "place": "11 km SSE of Volcano, Hawaii"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -546,9 +595,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:af28fdf9efc8543f9902f3e99181de6396fe30866df214b95b14b838a4b5be85"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_623",
+    "geometryFingerprint": "931edd930fcf65f359373bb31dfb980245925c2815a71ef553ae217e4410ce4f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -159.7137906859999,
+      19.064610151900798,
+      -154.80993660399994,
+      22.232936027868337
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:af28fdf9efc8543f9902f3e99181de6396fe30866df214b95b14b838a4b5be85"
 }

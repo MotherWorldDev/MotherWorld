@@ -3,8 +3,60 @@
   "regionId": "marine_meow_20140",
   "regionName": "Arnhem Coast to Gulf of Carpenteria",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:34.403249+00:00",
+  "generatedAt": "2026-09-09T06:27:40.348932+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 54.36005559988139,
+        "medianDepthM": 54.0,
+        "p10DepthM": 14.0,
+        "p90DepthM": 75.0,
+        "shallowestM": 1.0,
+        "deepestM": 481.0,
+        "coveragePct": 99.89766396155943,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 97.5780927271574,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 2.421907272842592,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 0.0,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "tectonics": {
       "faults": {
         "count": 1,
@@ -132,6 +184,11 @@
     }
   },
   "providers": [
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
     {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",

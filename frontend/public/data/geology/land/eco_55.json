@@ -3,7 +3,7 @@
   "regionId": "eco_55",
   "regionName": "Somali Acacia-Commiphora bushlands and thickets",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.130738+00:00",
+  "generatedAt": "2026-09-09T06:27:42.003050+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -136,6 +136,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.2,
+        "events": [
+          {
+            "magnitude": 5.2,
+            "time": "1993-09-18T04:15:37.850Z",
+            "place": "13 km NE of Konso, Ethiopia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-12-03T02:14:42.330Z",
+            "place": "48 km SSE of Turmi, Ethiopia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -671,9 +705,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e6f83852361c54babf75065aefea319bdff61b1088e42fba2db3aaca07b66c3e"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_55",
+    "geometryFingerprint": "67faa40d9b0a38937c452d33b0b815c04131863fff09bc62ec90673e567d82f1",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      36.63666666600017,
+      0.198333333778345,
+      49.057737766000166,
+      9.871776251109392
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e6f83852361c54babf75065aefea319bdff61b1088e42fba2db3aaca07b66c3e"
 }

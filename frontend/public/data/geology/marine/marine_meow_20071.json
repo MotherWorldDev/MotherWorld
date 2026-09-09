@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20071",
   "regionName": "Guianan",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.042478+00:00",
+  "generatedAt": "2026-09-09T06:27:38.583075+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 46.96383285522461,
           "coveragePct": 35.73402879850285
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 1465.9285621693143,
+        "medianDepthM": 937.0,
+        "p10DepthM": 19.0,
+        "p90DepthM": 3791.0,
+        "shallowestM": 1.0,
+        "deepestM": 4760.0,
+        "coveragePct": 99.77961305804072,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 43.08719389755657,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.529030260948151,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 25.84461744587513,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 23.53915839562014,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -121,6 +171,95 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 13,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.2,
+        "events": [
+          {
+            "magnitude": 6.2,
+            "time": "1994-05-03T16:36:43.650Z",
+            "place": "46 km E of Rio Claro, Trinidad and Tobago"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2008-07-03T06:34:53.700Z",
+            "place": "80 km E of Rio Claro, Trinidad and Tobago"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2004-12-02T19:16:34.660Z",
+            "place": "7 km WSW of Chaguanas, Trinidad and Tobago"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-01-25T02:14:31.875Z",
+            "place": "146 km ESE of Rio Claro, Trinidad and Tobago"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-04-07T12:22:21.990Z",
+            "place": "31 km W of Güiria, Venezuela"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-11-22T23:34:16.340Z",
+            "place": "30 km SSE of Rio Claro, Trinidad and Tobago"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-11-22T22:51:00.100Z",
+            "place": "34 km SSE of Rio Claro, Trinidad and Tobago"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-12-07T19:43:48.426Z",
+            "place": "18 km SSW of Güiria, Venezuela"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-12-07T17:15:56.594Z",
+            "place": "18 km SSW of Güiria, Venezuela"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1994-05-03T16:56:19.070Z",
+            "place": "63 km E of Rio Claro, Trinidad and Tobago"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-12-27T01:00:14.330Z",
+            "place": "10 km WNW of Petit Valley, Trinidad and Tobago"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-07-06T13:47:49.640Z",
+            "place": "29 km SW of Güiria, Venezuela"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-06-08T16:29:13.280Z",
+            "place": "48 km E of Roura, French Guiana"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -238,6 +377,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -248,9 +392,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:61420a6aa34dcc0bdbf0f89a6013b2bf601146a9339b495942ae16947959b469"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20071",
+    "geometryFingerprint": "b89d392276e6f27c30f87390e7ce83aa939d0a3881e7d1236dd7463c03411660",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -62.82500393494387,
+      4.25106317903604,
+      -49.41998832741259,
+      10.816870813885386
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:61420a6aa34dcc0bdbf0f89a6013b2bf601146a9339b495942ae16947959b469"
 }

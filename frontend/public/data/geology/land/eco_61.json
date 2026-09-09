@@ -3,7 +3,7 @@
   "regionId": "eco_61",
   "regionName": "Victoria Basin forest-savanna",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.407050+00:00",
+  "generatedAt": "2026-09-09T06:27:42.178533+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -136,6 +136,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "2016-09-10T12:27:33.410Z",
+            "place": "27 km ENE of Nsunga, Tanzania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2017-07-30T07:02:29.170Z",
+            "place": "52 km SSW of Kilembe, Uganda"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-08-05T18:56:50.710Z",
+            "place": "46 km NNW of Ntungamo, Uganda"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -590,9 +629,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b02e6d0daf608aef3e69c1865b4068fd7d3e8e7232b6c1edc35de47deec701d1"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_61",
+    "geometryFingerprint": "7afc87d3c0966c493592f55c2b866f8b03bf80240236884dc543f6ba08e3fe64",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      29.096508049000075,
+      -3.523333329114928,
+      35.47916666600014,
+      3.179999996484603
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b02e6d0daf608aef3e69c1865b4068fd7d3e8e7232b6c1edc35de47deec701d1"
 }

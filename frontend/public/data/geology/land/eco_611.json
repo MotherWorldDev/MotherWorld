@@ -3,7 +3,7 @@
   "regionId": "eco_611",
   "regionName": "Amazon-Orinoco-Southern Caribbean mangroves",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.415107+00:00",
+  "generatedAt": "2026-09-09T06:27:42.178533+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -118,6 +118,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2004-12-03T03:46:46.300Z",
+            "place": "6 km NNW of Chaguanas, Trinidad and Tobago"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-06-12T06:18:28.328Z",
+            "place": "52 km W of Güiria, Venezuela"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -555,9 +589,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ae00343551151156fa80cb59409aded0072450bcfa3781156dca46fa792a3f1d"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_611",
+    "geometryFingerprint": "5e16748d31294d2ceb68bb41c100d092b836a97d94303d2105f6ebec7ec1baa0",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -77.35385155899995,
+      -3.037817586638339,
+      -41.81931649599994,
+      12.603806491220617
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ae00343551151156fa80cb59409aded0072450bcfa3781156dca46fa792a3f1d"
 }

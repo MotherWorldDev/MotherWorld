@@ -3,7 +3,7 @@
   "regionId": "eco_786",
   "regionName": "Anatolian conifer and deciduous mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.282078+00:00",
+  "generatedAt": "2026-09-09T06:27:42.696451+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,160 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 26,
+        "m6Plus": 4,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "1995-10-01T15:57:16.200Z",
+            "place": "2 km W of Dinar, Turkey"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2025-08-10T16:53:47.260Z",
+            "place": "10 km WSW of Bigadiç, Turkey"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2025-10-27T19:48:28.767Z",
+            "place": "7 km SE of Sındırgı, Turkey"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2002-02-03T09:26:43.350Z",
+            "place": "11 km WNW of Çay, Turkey"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2019-08-08T11:25:31.104Z",
+            "place": "9 km ESE of Baklan, Turkey"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2011-05-19T20:15:22.940Z",
+            "place": "12 km ENE of Simav, Turkey"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2019-03-20T06:34:27.835Z",
+            "place": "16 km E of Ac?payam, Turkey"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2020-01-22T19:22:16.298Z",
+            "place": "15 km ESE of K?rka?aç, Turkey"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2002-02-03T07:14:36.420Z",
+            "place": "11 km ENE of I??klar, Turkey"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2000-04-21T12:23:10.510Z",
+            "place": "10 km NNE of Honaz, Turkey"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1998-04-04T16:16:47.070Z",
+            "place": "4 km N of Dinar, Turkey"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-09-28T09:59:16.543Z",
+            "place": "16 km NNW of Simav, Turkey"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-05-03T15:20:25.670Z",
+            "place": "13 km NE of Simav, Turkey"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-02-17T05:28:19.000Z",
+            "place": "5 km ENE of Simav, Turkey"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1999-08-19T15:17:45.040Z",
+            "place": "3 km SSE of Ç?narc?k, Turkey"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1999-07-25T06:56:53.020Z",
+            "place": "14 km SW of Bigadiç, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-09-21T21:05:46.760Z",
+            "place": "8 km SW of Sındırgı, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-08-31T11:04:26.926Z",
+            "place": "19 km W of ?hsaniye, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-03-31T11:30:17.785Z",
+            "place": "9 km NNE of Ac?payam, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-02-20T18:23:29.480Z",
+            "place": "10 km N of Ayvac?k, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-09-10T23:02:56.060Z",
+            "place": "14 km SW of Kocaaliler, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-11-03T12:35:37.219Z",
+            "place": "21 km ESE of Sındırgı, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-01-28T11:26:15.000Z",
+            "place": "Western Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-04-25T04:48:54.000Z",
+            "place": "6 km N of Honaz, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-10-24T14:00:21.670Z",
+            "place": "4 km W of Gemlik, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-10-01T18:02:58.330Z",
+            "place": "3 km SE of Dinar, Turkey"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -771,9 +925,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:63bd3ee9bf3725e28031d30a9a500269d897ae66748a7da9d27fa3c57fb7cc5f"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_786",
+    "geometryFingerprint": "9a5943e506a67f782f414958d1a2264820a56d2e3edae144a370a3ebddc54d42",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      26.199371525000057,
+      36.83718913358234,
+      32.016639484000166,
+      40.74314797251357
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:63bd3ee9bf3725e28031d30a9a500269d897ae66748a7da9d27fa3c57fb7cc5f"
 }

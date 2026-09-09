@@ -3,7 +3,7 @@
   "regionId": "eco_502",
   "regionName": "Sierra Madre de Chiapas moist forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.836603+00:00",
+  "generatedAt": "2026-09-09T06:27:41.856466+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -64,6 +64,165 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 27,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.9,
+        "events": [
+          {
+            "magnitude": 6.9,
+            "time": "2017-06-14T07:29:04.390Z",
+            "place": "2 km SSW of San Pablo, Guatemala"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2001-01-19T01:12:52.080Z",
+            "place": "6 km NNE of Hidalgo, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1994-04-10T17:36:57.160Z",
+            "place": "3 km E of Pajapita, Guatemala"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2009-01-17T02:57:31.900Z",
+            "place": "5 km NNW of Nueva Colombia, Mexico"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1993-08-22T10:02:11.210Z",
+            "place": "Guatemala"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2025-07-29T21:25:23.916Z",
+            "place": "6 km SE of Comapa, Guatemala"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2018-06-18T02:32:55.870Z",
+            "place": "12 km SW of Guanagazapa, Guatemala"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2015-12-07T22:53:35.110Z",
+            "place": "4 km WNW of Masagua, Guatemala"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2001-01-09T01:46:13.340Z",
+            "place": "7 km NE of Nuevo Milenio Valdivia, Mexico"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2014-01-11T13:10:51.110Z",
+            "place": "8 km SSW of Pajapita, Guatemala"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2007-07-23T22:30:08.450Z",
+            "place": "9 km NE of Santa Lucía Cotzumalguapa, Guatemala"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2015-09-01T17:04:14.620Z",
+            "place": "4 km NNE of Hidalgo, Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-03-03T04:17:17.990Z",
+            "place": "21 km SW of San Lorenzo, Guatemala"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2020-09-27T09:40:56.522Z",
+            "place": "6 km E of Masagua, Guatemala"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2005-05-19T07:10:58.060Z",
+            "place": "3 km S of Génova, Guatemala"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-07-29T23:05:21.056Z",
+            "place": "9 km SE of Comapa, Guatemala"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-01-15T23:07:53.815Z",
+            "place": "7 km NW of Atiquizaya, El Salvador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2020-09-17T01:13:59.399Z",
+            "place": "7 km SW of Belisario Domínguez, Mexico"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2017-03-31T09:58:05.730Z",
+            "place": "7 km SE of Pijijiapan, Mexico"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1999-06-25T09:49:54.010Z",
+            "place": "21 km S of Retalhuleu, Guatemala"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-10-12T06:06:55.814Z",
+            "place": "3 km SSW of El Asintal, Guatemala"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-06-14T07:52:42.430Z",
+            "place": "8 km NNE of Pajapita, Guatemala"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-05-18T20:05:45.370Z",
+            "place": "14 km S of Génova, Guatemala"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-09-15T06:05:47.200Z",
+            "place": "12 km ENE of Pijijiapan, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-01-16T04:47:12.256Z",
+            "place": "6 km ESE of Comapa, Guatemala"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-11-18T17:00:25.964Z",
+            "place": "6 km SSE of Oratorio, Guatemala"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-02-10T11:04:13.530Z",
+            "place": "1 km SSE of Cantón Villaflor, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -146,6 +305,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f3718b29a6f7d1f60070fd4814b3b4dd839b68c1abdb65959e2ba86a02691f0e"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_502",
+    "geometryFingerprint": "22435f4d9089b943423af816d74bdbba88f4305cc8166fe3472fcb1ec6e44276",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -93.80374860999994,
+      13.91675752849844,
+      -89.76911951299995,
+      16.382367271486473
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f3718b29a6f7d1f60070fd4814b3b4dd839b68c1abdb65959e2ba86a02691f0e"
 }

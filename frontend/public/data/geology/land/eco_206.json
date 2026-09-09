@@ -3,7 +3,7 @@
   "regionId": "eco_206",
   "regionName": "Southwest Australia woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.412564+00:00",
+  "generatedAt": "2026-09-09T06:27:41.152547+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -58,6 +58,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2018-09-16T04:56:25.520Z",
+            "place": "57 km E of Manjimup, Australia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-11-08T21:07:01.300Z",
+            "place": "64 km SSW of Kojonup, Australia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -599,9 +633,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5159cb698f132670b0e0b6b82a443a84a4bf169fe938fa37fa6fe2fd008c911e"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_206",
+    "geometryFingerprint": "15e664863930d6050fb0270bae02a4ab9fe4677305ac3852b96084a13f7a03f5",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      114.99356936900018,
+      -35.061370783664316,
+      118.32922365400007,
+      -30.099390045210786
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5159cb698f132670b0e0b6b82a443a84a4bf169fe938fa37fa6fe2fd008c911e"
 }

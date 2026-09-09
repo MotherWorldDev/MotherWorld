@@ -3,7 +3,7 @@
   "regionId": "eco_34",
   "regionName": "Angolan mopane woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.086865+00:00",
+  "generatedAt": "2026-09-09T06:27:44.575299+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000003,
@@ -132,6 +132,47 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2021-04-04T01:41:02.137Z",
+            "place": "68 km NNW of Khorixas, Namibia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-04-12T20:36:16.102Z",
+            "place": "33 km N of Khorixas, Namibia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-05-24T07:08:13.560Z",
+            "place": "73 km NNW of Khorixas, Namibia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -427,9 +468,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b13dc76fab572c2ebd07210f5ac5fe421c3fdfec9addd381b6faec082296e679"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_34",
+    "geometryFingerprint": "9949c09354eddfce16bf9110d0c75ca35a64de22a8f12594f9bcf2cb5a96470b",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      12.434442893000039,
+      -23.458726922030497,
+      18.686454029000174,
+      -13.183073451886413
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b13dc76fab572c2ebd07210f5ac5fe421c3fdfec9addd381b6faec082296e679"
 }

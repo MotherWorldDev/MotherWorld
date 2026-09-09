@@ -3,7 +3,7 @@
   "regionId": "eco_77",
   "regionName": "Angolan montane forest-grassland",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.197280+00:00",
+  "generatedAt": "2026-09-09T06:27:46.504846+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.0,
@@ -35,6 +35,37 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2024-06-05T08:42:24.371Z",
+            "place": "87 km W of Caconda, Angola"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -42,6 +73,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:53f819b70ce3cc0382cd12023ab4274bca1fac1e05ba8f8b3950959564b2a0db"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_77",
+    "geometryFingerprint": "b096be72bf12df8816a1d821cb9caeff753d6a18c468c96e5a95a0e914793b29",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      14.085960000000114,
+      -14.097869987408544,
+      16.18968000000018,
+      -10.617559989544267
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:53f819b70ce3cc0382cd12023ab4274bca1fac1e05ba8f8b3950959564b2a0db"
 }

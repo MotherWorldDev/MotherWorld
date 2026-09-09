@@ -3,7 +3,7 @@
   "regionId": "eco_756",
   "regionName": "Kopet Dag woodlands and forest steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.135412+00:00",
+  "generatedAt": "2026-09-09T06:27:42.595599+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -64,6 +64,95 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 13,
+        "m6Plus": 2,
+        "m7Plus": 1,
+        "maxMagnitude": 7.0,
+        "events": [
+          {
+            "magnitude": 7.0,
+            "time": "2000-12-06T17:11:06.400Z",
+            "place": "37 km E of Balkanabat, Turkmenistan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1997-02-04T10:37:47.140Z",
+            "place": "Turkmenistan-Iran border region"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2000-08-22T16:55:13.700Z",
+            "place": "35 km S of Baharly, Turkmenistan"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2017-05-13T18:00:59.520Z",
+            "place": "34 km NNW of Bojn?rd, Iran"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2006-10-12T17:08:20.370Z",
+            "place": "45 km NE of Balkanabat, Turkmenistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2020-09-26T05:46:55.523Z",
+            "place": "88 km SSW of Serdar, Turkmenistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-12-09T11:33:52.080Z",
+            "place": "71 km S of Bereket, Turkmenistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-09-19T15:19:12.690Z",
+            "place": "15 km SSE of Baharly, Turkmenistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1997-02-05T07:53:45.620Z",
+            "place": "29 km NE of Bojn?rd, Iran"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2026-03-11T07:55:18.373Z",
+            "place": "60 km N of Balkanabat, Turkmenistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-09-13T04:02:32.524Z",
+            "place": "39 km ENE of Q?ch?n, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-05-31T04:04:53.381Z",
+            "place": "51 km ENE of Balkanabat, Turkmenistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-08-11T17:26:19.700Z",
+            "place": "45 km NW of Bojn?rd, Iran"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -182,6 +271,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:bf64fba17c0e397c9ba3a5486a2082d0204666f74820895cf61316c37847689a"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_756",
+    "geometryFingerprint": "4e201acbc0916030c43bca96f1d7ed489c84b27831acd5883d590b87f44c3cc2",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      54.17496162600014,
+      35.77160767203231,
+      61.531925520000186,
+      40.075286811197714
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:bf64fba17c0e397c9ba3a5486a2082d0204666f74820895cf61316c37847689a"
 }

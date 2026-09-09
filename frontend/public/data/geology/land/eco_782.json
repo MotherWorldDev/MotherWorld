@@ -3,7 +3,7 @@
   "regionId": "eco_782",
   "regionName": "Trans-Baikal Bald Mountain tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.268902+00:00",
+  "generatedAt": "2026-09-09T06:27:42.686473+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -136,6 +136,115 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 17,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "2005-11-10T19:29:54.140Z",
+            "place": "153 km ENE of Chara, Russia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1999-03-21T16:16:02.200Z",
+            "place": "8 km SE of Kichera, Russia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2014-05-23T19:42:26.790Z",
+            "place": "31 km ESE of Severomuysk, Russia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-01-26T21:30:38.770Z",
+            "place": "155 km ENE of Chara, Russia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2007-07-04T01:23:24.440Z",
+            "place": "53 km SSE of Kichera, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-09-22T17:01:27.856Z",
+            "place": "55 km SW of Novaya Chara, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2006-12-04T09:14:04.580Z",
+            "place": "19 km S of Kichera, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-08-31T05:24:33.072Z",
+            "place": "24 km S of Severomuysk, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-09-28T21:28:08.044Z",
+            "place": "129 km ESE of Novaya Chara, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-07-07T08:51:30.070Z",
+            "place": "165 km NW of Chumikan, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-11-08T08:45:58.300Z",
+            "place": "102 km W of Neryungri, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-09-08T02:38:48.540Z",
+            "place": "128 km ENE of Chara, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-08-15T23:26:54.918Z",
+            "place": "50 km SW of Novaya Chara, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-04-03T12:53:40.590Z",
+            "place": "73 km S of Novaya Chara, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-11-22T11:37:12.630Z",
+            "place": "57 km SE of Severomuysk, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-01-18T06:41:33.900Z",
+            "place": "14 km E of Severomuysk, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1999-05-31T19:34:50.520Z",
+            "place": "16 km SSE of Kichera, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -412,9 +521,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:84b9a2b2aaff0d0300e4518d043dc1860da3a16ddec8409e12f1f89daa083748"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_782",
+    "geometryFingerprint": "43517d5246eefef54ca2fb27e6cc0c51f6db04de28125e10f36d402cde43f80f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      109.0448986120001,
+      50.13147381793346,
+      140.66020159100003,
+      59.79842870747354
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:84b9a2b2aaff0d0300e4518d043dc1860da3a16ddec8409e12f1f89daa083748"
 }

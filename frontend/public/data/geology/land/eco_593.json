@@ -3,7 +3,7 @@
   "regionId": "eco_593",
   "regionName": "Northern Andean páramo",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.318072+00:00",
+  "generatedAt": "2026-09-09T06:27:42.120770+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,85 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 11,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.8,
+        "events": [
+          {
+            "magnitude": 6.8,
+            "time": "1994-06-06T20:47:40.530Z",
+            "place": "23 km E of Toribío, Colombia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1996-03-28T23:03:49.810Z",
+            "place": "9 km SSW of Pujilí, Ecuador"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2022-07-25T13:33:28.666Z",
+            "place": "9 km N of San Gabriel, Ecuador"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2008-09-13T09:32:01.490Z",
+            "place": "14 km SE of Santa Rosa de Cabal, Colombia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2014-10-20T19:33:21.830Z",
+            "place": "7 km NE of El Ángel, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2004-03-28T08:41:14.420Z",
+            "place": "27 km ENE of Píllaro, Ecuador"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-09-13T18:33:13.270Z",
+            "place": "29 km ENE of San Miguel de Salcedo, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-08-08T20:43:42.230Z",
+            "place": "36 km ENE of Güicán, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-02-21T22:26:45.600Z",
+            "place": "8 km SW of Argelia, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-06-17T02:46:26.793Z",
+            "place": "44 km ENE of San Miguel de Salcedo, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-04-15T19:06:31.110Z",
+            "place": "22 km E of San Miguel de Salcedo, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -789,9 +868,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e3572946d5b129c266802e8853fd35c5f0ddd10f0bea527b5ed59789abeab631"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_593",
+    "geometryFingerprint": "670c81599e9d403ecbd12265aee42fb8485ebd6c8c56bb0186a8a53170ced8fd",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -79.57408158999988,
+      -3.750607590871999,
+      -72.02184248499992,
+      10.377840557722054
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e3572946d5b129c266802e8853fd35c5f0ddd10f0bea527b5ed59789abeab631"
 }

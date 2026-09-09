@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20175",
   "regionName": "Central Peru",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.664224+00:00",
+  "generatedAt": "2026-09-09T06:27:38.939952+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 148.13267517089844,
           "coveragePct": 55.082131977588936
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 3200.1018278469232,
+        "medianDepthM": 4201.0,
+        "p10DepthM": 108.0,
+        "p90DepthM": 5151.0,
+        "shallowestM": 2.0,
+        "deepestM": 6340.0,
+        "coveragePct": 99.96156336721472,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 18.253256628172903,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 6.941521452609375,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 10.354056412908609,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 62.32117607506274,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 2.1299894312463903,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -91,6 +141,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 76,
+        "m6Plus": 5,
+        "m7Plus": 1,
+        "maxMagnitude": 7.5,
+        "events": [
+          {
+            "magnitude": 7.5,
+            "time": "1996-02-21T12:51:01.300Z",
+            "place": "123 km WSW of Puerto Santa, Peru"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1995-09-23T22:31:56.360Z",
+            "place": "81 km W of Paramonga, Peru"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2007-02-24T02:36:23.650Z",
+            "place": "63 km WSW of Pimentel, Peru"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2025-12-28T02:51:49.922Z",
+            "place": "43 km W of Puerto Santa, Peru"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2009-02-09T14:09:02.980Z",
+            "place": "117 km SSW of Sechura, Peru"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2021-07-29T00:32:13.932Z",
+            "place": "90 km WSW of Santiago de Cao, Peru"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2000-11-13T06:46:11.280Z",
+            "place": "79 km WSW of Santiago de Cao, Peru"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2010-07-04T06:57:44.810Z",
+            "place": "146 km WSW of Santiago de Cao, Peru"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2002-05-11T10:43:07.890Z",
+            "place": "55 km SW of Huarmey, Peru"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1995-07-31T08:48:30.750Z",
+            "place": "41 km SSW of Huarmey, Peru"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2015-04-26T23:35:29.730Z",
+            "place": "76 km WSW of Santiago de Cao, Peru"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1996-01-19T19:01:58.510Z",
+            "place": "72 km WSW of Huarmey, Peru"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1995-11-30T18:00:30.090Z",
+            "place": "107 km WSW of Sechura, Peru"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1995-06-21T16:33:06.090Z",
+            "place": "28 km W of Chancay, Peru"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1994-12-14T22:20:02.430Z",
+            "place": "119 km WSW of Santiago de Cao, Peru"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2019-03-31T15:27:57.880Z",
+            "place": "117 km WSW of Puerto Casma, Peru"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2012-11-29T07:09:12.130Z",
+            "place": "117 km W of Mórrope, Peru"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2005-11-30T05:41:43.030Z",
+            "place": "136 km WSW of Puerto Santa, Peru"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2005-10-29T06:38:58.250Z",
+            "place": "near the coast of northern Peru"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2020-01-15T09:45:18.483Z",
+            "place": "57 km WSW of Huarmey, Peru"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2018-11-20T06:38:06.930Z",
+            "place": "47 km SSW of Puerto Casma, Peru"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-03-30T17:30:47.180Z",
+            "place": "68 km SW of Chimbote, Peru"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-08-07T11:20:29.390Z",
+            "place": "84 km SW of Pacasmayo, Peru"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1996-06-02T00:50:37.070Z",
+            "place": "128 km SW of Puerto Santa, Peru"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-07-28T13:24:33.502Z",
+            "place": "152 km WSW of Puerto Santa, Peru"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2020-02-25T04:15:02.162Z",
+            "place": "86 km W of Santiago de Cao, Peru"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2017-04-02T01:38:53.820Z",
+            "place": "108 km W of Pimentel, Peru"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2017-01-28T06:42:31.910Z",
+            "place": "55 km WSW of Chimbote, Peru"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2015-04-01T16:45:21.200Z",
+            "place": "30 km WNW of Paramonga, Peru"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2014-08-04T03:20:09.480Z",
+            "place": "173 km SSW of Sechura, Peru"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -158,6 +382,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -166,6 +395,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6967a944b7d1ffbd4a83fabc8964682f764167fce0fed3e7fdb5616b512d48a3"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20175",
+    "geometryFingerprint": "89dce8c89d67c601f5f0bed3a4781d21cbb60393da4213063b5df5ace038546d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -84.52757762823173,
+      -12.158208771162217,
+      -77.04247074682785,
+      -5.875473261441613
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6967a944b7d1ffbd4a83fabc8964682f764167fce0fed3e7fdb5616b512d48a3"
 }

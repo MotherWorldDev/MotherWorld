@@ -14,6 +14,8 @@ frontend/public/data/geology/
   lakes/<region>.json
 ```
 
+The September 9 release adds GEBCO bathymetry and earthquake-only USGS ComCat summaries, with all seven maintained land-boundary corrections and the whole-ocean mask verified. See the [release receipt](GEOLOGY_RELEASE_20260909.json) and [boundary issue history](REGION_BOUNDARY_CORRECTIONS.md).
+
 Raw provider files stay under `geology_raw/` or provider caches and are not deployed. Provider fragments are written under `.cache/motherworld/geology/providers/` and merged by `scripts/merge_geology.py`.
 
 ## Marine / seafloor section

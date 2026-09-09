@@ -3,7 +3,7 @@
   "regionId": "lake_caspian_sea",
   "regionName": "Caspian Sea",
   "kind": "lakes",
-  "generatedAt": "2026-09-08T09:35:33.691333+00:00",
+  "generatedAt": "2026-09-09T06:27:42.929688+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,120 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 18,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.8,
+        "events": [
+          {
+            "magnitude": 6.8,
+            "time": "2000-11-25T18:09:11.420Z",
+            "place": "15 km SSE of Baku, Azerbaijan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2000-11-25T18:10:47.390Z",
+            "place": "23 km SSE of Badamdar, Azerbaijan"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2026-04-08T09:05:38.970Z",
+            "place": "63 km SSE of Sovetabad, Azerbaijan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2014-06-07T06:05:29.910Z",
+            "place": "106 km E of Pirallah?, Azerbaijan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1995-10-29T06:27:19.840Z",
+            "place": "104 km WSW of Türkmenba?y, Turkmenistan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-08-26T20:33:38.281Z",
+            "place": "21 km ENE of Novokayakent, Russia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2023-12-07T04:15:39.620Z",
+            "place": "44 km NNE of Şuraabad, Azerbaijan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-07-03T20:01:49.849Z",
+            "place": "49 km NE of Xaçmaz, Azerbaijan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-08-31T06:55:32.410Z",
+            "place": "70 km ENE of Xudat, Azerbaijan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-09-24T19:28:05.380Z",
+            "place": "98 km SW of Türkmenba?y, Turkmenistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-01-07T06:49:00.630Z",
+            "place": "22 km SSW of Türkan, Azerbaijan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1997-05-07T16:16:46.450Z",
+            "place": "112 km E of Pirallah?, Azerbaijan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-12-23T04:32:34.098Z",
+            "place": "122 km NW of Türkmenbaşy, Turkmenistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-03-22T22:45:23.800Z",
+            "place": "80 km WNW of Türkmenba?y, Turkmenistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-01-01T02:34:56.050Z",
+            "place": "117 km NW of Türkmenba?y, Turkmenistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2002-02-11T16:18:33.720Z",
+            "place": "29 km S of Türkan, Azerbaijan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2001-06-05T15:33:29.770Z",
+            "place": "53 km NNE of Derbent, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-11-29T10:44:59.080Z",
+            "place": "56 km S of Türkan, Azerbaijan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -110,6 +224,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4920d47ffa49ddf0f56c1d2135747f20001ad6a92a02d9fb18b89eeadd3331a9"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "lake_caspian_sea",
+    "geometryFingerprint": "653c3c276b9d81e35bcea936cd63c4969ad7735ec694ee1e9a87590aa2e37ac3",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      46.738613888886285,
+      36.571539704987224,
+      54.052219509549275,
+      47.13075283049727
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4920d47ffa49ddf0f56c1d2135747f20001ad6a92a02d9fb18b89eeadd3331a9"
 }

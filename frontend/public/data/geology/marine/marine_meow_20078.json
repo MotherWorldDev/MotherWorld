@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20078",
   "regionName": "St. Helena and Ascension Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.097175+00:00",
+  "generatedAt": "2026-09-09T06:27:38.615480+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3857.5662381985744,
+        "medianDepthM": 3893.0,
+        "p10DepthM": 2912.0,
+        "p90DepthM": 4781.0,
+        "shallowestM": 2.0,
+        "deepestM": 5827.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.07001454928238111,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 0.1396648759228511,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 12.059627690654148,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 87.73069288414062,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -222,6 +272,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 87,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2011-08-10T23:45:43.040Z",
+            "place": "221 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2001-03-07T18:10:58.650Z",
+            "place": "206 km NE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2022-10-19T15:03:02.176Z",
+            "place": "81 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2020-08-22T08:38:01.740Z",
+            "place": "178 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2001-07-12T06:12:16.790Z",
+            "place": "126 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2022-06-11T07:29:54.270Z",
+            "place": "87 km E of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2018-01-23T23:09:09.550Z",
+            "place": "Ascension Island region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2007-09-26T18:39:34.820Z",
+            "place": "Ascension Island region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1996-08-27T14:36:39.160Z",
+            "place": "216 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1995-12-14T02:09:15.580Z",
+            "place": "220 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2026-06-20T06:43:15.865Z",
+            "place": "147 km NE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2022-02-10T10:27:32.604Z",
+            "place": "Ascension Island region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2020-08-22T10:21:29.589Z",
+            "place": "Ascension Island region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-06-10T09:26:53.070Z",
+            "place": "103 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2008-08-19T08:33:55.250Z",
+            "place": "110 km ESE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2022-08-15T16:49:07.294Z",
+            "place": "192 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2015-02-18T02:20:37.640Z",
+            "place": "107 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2011-03-19T18:43:03.250Z",
+            "place": "287 km SSE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2009-03-26T18:43:47.580Z",
+            "place": "243 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2003-02-13T05:59:10.580Z",
+            "place": "Ascension Island region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-06-16T18:17:58.880Z",
+            "place": "103 km E of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-06-16T17:59:03.320Z",
+            "place": "112 km E of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-12-09T17:08:25.826Z",
+            "place": "157 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-02-11T06:24:13.915Z",
+            "place": "Ascension Island region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2020-06-06T05:03:05.872Z",
+            "place": "93 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2012-12-26T20:24:26.650Z",
+            "place": "Ascension Island region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-07-09T23:47:30.120Z",
+            "place": "103 km E of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2004-03-17T06:40:57.170Z",
+            "place": "182 km ENE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2000-05-18T09:50:25.730Z",
+            "place": "295 km SSE of Georgetown, Saint Helena"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1999-02-05T04:23:08.220Z",
+            "place": "Ascension Island region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -293,6 +517,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -306,6 +535,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6b6bf524506a26e6383e384eb5331c6472daa1de3fdcba16f593c8de8c243b24"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20078",
+    "geometryFingerprint": "48a763fe5f8a0d20781b4bf0865f316196d9c3dc7a585c0cbf3cc8a3eea5a781",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -17.743831106887058,
+      -19.389701932980444,
+      -2.318761554008518,
+      -4.585964626407543
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6b6bf524506a26e6383e384eb5331c6472daa1de3fdcba16f593c8de8c243b24"
 }

@@ -3,18 +3,36 @@
   "regionId": "eco_117",
   "regionName": "Adelie Land tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.025351+00:00",
+  "generatedAt": "2026-09-09T06:27:43.583391+00:00",
   "sections": {
     "surfaceGeology": {
-      "rockCoveragePct": 0.0,
-      "dominantClass": null,
-      "classes": [],
+      "rockCoveragePct": 56.425426852770556,
+      "dominantClass": {
+        "code": "mt",
+        "label": "Metamorphics",
+        "areaKm2": 100.22554685146548,
+        "percent": 100.0
+      },
+      "classes": [
+        {
+          "code": "mt",
+          "label": "Metamorphics",
+          "areaKm2": 100.22554685146548,
+          "percent": 100.0
+        }
+      ],
       "excluded": [
+        {
+          "code": "ig",
+          "label": "Ice and glaciers",
+          "areaKm2": 0.535755296617695,
+          "percentOfRegion": 0.3016219142718913
+        },
         {
           "code": "nd",
           "label": "No data",
-          "areaKm2": 13.501796484732932,
-          "percentOfRegion": 100.00000000000003
+          "areaKm2": 76.86348944273828,
+          "percentOfRegion": 43.27295123295718
         }
       ],
       "source": {
@@ -30,7 +48,32 @@
     {
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
-      "version": "v1.0"
+      "version": "v1.0",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4c74890c36bfd51f7af1527afcccb305f57ce9a6721ea4f6d99666c7775b670a"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_117",
+    "geometryFingerprint": "839eccbd4987b81c3b72d83f1f5a9ec7829158b9f02dc8295d84c48cd1c4fb16",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      136.71054259400012,
+      -69.6071670319999,
+      158.88587095600008,
+      -66.35633160799989
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_117",
+      "registryGeometryFingerprint": "839eccbd4987b81c3b72d83f1f5a9ec7829158b9f02dc8295d84c48cd1c4fb16",
+      "source": "ecoregions2017_original",
+      "sourceUrl": "https://ecoregions.appspot.com/",
+      "notes": "Records use the full original region boundary, including small land patches omitted from the simplified map."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4c74890c36bfd51f7af1527afcccb305f57ce9a6721ea4f6d99666c7775b670a"
 }

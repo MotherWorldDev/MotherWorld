@@ -3,7 +3,7 @@
   "regionId": "eco_582",
   "regionName": "Guayaquil flooded grasslands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.264795+00:00",
+  "generatedAt": "2026-09-09T06:27:42.087032+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2022-07-14T22:30:11.448Z",
+            "place": "11 km SW of Samborondón, Ecuador"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2019-02-22T10:40:40.250Z",
+            "place": "14 km ESE of Eloy Alfaro, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2015-04-28T11:19:50.500Z",
+            "place": "6 km NNW of Milagro, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -108,9 +147,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1ba4b85f68c16cf9958a4016887c90d38fef73f5962a4984c63353db3663c3bb"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_582",
+    "geometryFingerprint": "17f86968ce6b81b9a229e0116fd0d4a7b964c00a6ba3c26ab209d8250f4a5764",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -79.85866564299987,
+      -2.907894063779257,
+      -79.42161560899994,
+      -1.558141946262499
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1ba4b85f68c16cf9958a4016887c90d38fef73f5962a4984c63353db3663c3bb"
 }

@@ -3,7 +3,7 @@
   "regionId": "lake_victoria",
   "regionName": "Lake Victoria",
   "kind": "lakes",
-  "generatedAt": "2026-09-08T09:35:33.760846+00:00",
+  "generatedAt": "2026-09-09T06:27:42.963372+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -23,6 +23,35 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2010-06-13T12:13:24.650Z",
+            "place": "32 km WSW of Kisumu, Kenya"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     }
   },
@@ -31,6 +60,30 @@
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:59bd32b2bfae9799eb7c101162bc17d68cd40e083d1e7230d8ab6575707d6239"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "lake_victoria",
+    "geometryFingerprint": "b7702023e2da1266f3a938c51daba3bd5fe4e8a82325e3ad1dac71b092017425",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      31.603713921441113,
+      -3.008445092156188,
+      34.86444715711838,
+      0.489383443047334
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:59bd32b2bfae9799eb7c101162bc17d68cd40e083d1e7230d8ab6575707d6239"
 }

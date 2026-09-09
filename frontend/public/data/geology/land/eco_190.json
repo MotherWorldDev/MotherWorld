@@ -3,7 +3,7 @@
   "regionId": "eco_190",
   "regionName": "Canterbury-Otago tussock grasslands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.310919+00:00",
+  "generatedAt": "2026-09-09T06:27:41.091394+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,155 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 25,
+        "m6Plus": 4,
+        "m7Plus": 2,
+        "maxMagnitude": 7.8,
+        "events": [
+          {
+            "magnitude": 7.8,
+            "time": "2016-11-13T11:02:56.340Z",
+            "place": "53 km NNE of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2010-09-03T16:35:47.770Z",
+            "place": "19 km NE of Methven, New Zealand"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2016-11-14T00:34:22.610Z",
+            "place": "74 km NE of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2011-02-21T23:51:42.350Z",
+            "place": "6 km SE of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2011-12-23T02:18:03.730Z",
+            "place": "8 km E of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2011-06-13T02:20:49.330Z",
+            "place": "9 km ESE of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2011-02-22T01:50:29.710Z",
+            "place": "7 km S of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-09-19T21:14:49.156Z",
+            "place": "Canterbury, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-11-22T05:13:35.320Z",
+            "place": "33 km NE of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2011-02-22T00:04:19.360Z",
+            "place": "6 km SSE of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-11-18T14:22:57.140Z",
+            "place": "76 km NE of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-11-13T12:37:45.390Z",
+            "place": "99 km NNE of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-11-13T12:25:55.170Z",
+            "place": "47 km N of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2011-06-21T10:34:23.030Z",
+            "place": "1 km SSE of Prebbleton, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2011-06-13T01:01:00.280Z",
+            "place": "10 km ESE of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-01-14T13:47:53.180Z",
+            "place": "10 km E of Christchurch, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-01-19T17:03:20.550Z",
+            "place": "2 km S of Prebbleton, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-10-04T09:21:49.540Z",
+            "place": "5 km ESE of Prebbleton, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-09-03T16:59:19.920Z",
+            "place": "16 km NNW of Rakaia, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-10-22T04:10:58.890Z",
+            "place": "100 km NNE of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-11-13T14:04:22.940Z",
+            "place": "58 km NNE of Amberley, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-06-05T21:09:55.320Z",
+            "place": "0 km E of Rolleston, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-05-09T15:04:23.310Z",
+            "place": "2 km ESE of Rolleston, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-09-04T04:55:56.350Z",
+            "place": "15 km SW of Darfield, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-09-03T16:52:55.580Z",
+            "place": "6 km NNE of Rolleston, New Zealand"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -716,9 +865,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ed7bbaad736185fd3ecc99734cdfff5b2211834fac5b710b352e13c0983df773"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_190",
+    "geometryFingerprint": "b647dafa861f160dbab20020b12704d8329268da769493e70fb8c16327bf4133",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      168.2205506990001,
+      -46.45240664484086,
+      173.80432163400008,
+      -42.10241128813125
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ed7bbaad736185fd3ecc99734cdfff5b2211834fac5b710b352e13c0983df773"
 }

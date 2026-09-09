@@ -3,7 +3,7 @@
   "regionId": "eco_165",
   "regionName": "Sumba deciduous forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.039107+00:00",
+  "generatedAt": "2026-09-09T06:27:43.796820+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 71.40016128229266,
@@ -48,6 +48,122 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 18,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2016-02-12T10:02:24.050Z",
+            "place": "94 km W of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1997-02-10T19:25:26.940Z",
+            "place": "82 km W of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-08-12T18:20:12.230Z",
+            "place": "39 km W of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-05-23T21:27:21.970Z",
+            "place": "64 km S of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2026-07-12T13:20:26.624Z",
+            "place": "27 km SE of Tambolaka, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-02-10T15:15:06.035Z",
+            "place": "49 km ESE of Tambolaka, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-08-08T10:24:04.269Z",
+            "place": "119 km SSW of Komodo, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-08-08T10:17:49.530Z",
+            "place": "126 km SSW of Komodo, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-08-05T08:27:12.019Z",
+            "place": "125 km W of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-04-06T20:19:23.330Z",
+            "place": "39 km WNW of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-06-17T03:44:18.207Z",
+            "place": "24 km SE of Tambolaka, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-08-11T02:11:41.171Z",
+            "place": "31 km ESE of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-10-27T07:49:51.506Z",
+            "place": "18 km WNW of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-10-05T03:07:47.654Z",
+            "place": "100 km W of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-03-17T17:41:42.228Z",
+            "place": "128 km SSW of Komodo, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-01-09T18:56:31.060Z",
+            "place": "45 km NW of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-07-17T03:59:41.690Z",
+            "place": "67 km SSE of Waingapu, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-04-02T04:04:09.120Z",
+            "place": "29 km SW of Waingapu, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -55,6 +171,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6a030e8cdee5358b95c76375db7400def9bdca914f260deb470e73d74bd0400c"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_165",
+    "geometryFingerprint": "2ce1116c18180130d68be4d252ce8b05598e6055205faa584cf231b4abcac779",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      118.92960361100016,
+      -10.315224806768962,
+      120.82150259200023,
+      -9.287727194575996
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6a030e8cdee5358b95c76375db7400def9bdca914f260deb470e73d74bd0400c"
 }

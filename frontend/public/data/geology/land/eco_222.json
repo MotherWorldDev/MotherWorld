@@ -3,7 +3,7 @@
   "regionId": "eco_222",
   "regionName": "Brahmaputra Valley semi-evergreen forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.501307+00:00",
+  "generatedAt": "2026-09-09T06:27:41.209484+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -58,6 +58,90 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2021-04-28T02:21:26.212Z",
+            "place": "8 km NNW of Dhekiajuli, India"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2025-09-14T11:11:51.373Z",
+            "place": "11 km ESE of Udalguri, India"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-02-26T20:55:36.821Z",
+            "place": "5 km N of Morigaon, India"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-09-12T04:50:46.570Z",
+            "place": "5 km NE of Sapatgr?m, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2026-01-04T22:47:39.427Z",
+            "place": "13 km NNE of Morigaon, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2012-10-02T18:37:38.700Z",
+            "place": "15 km ENE of Rang?p?ra, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1999-10-05T17:04:44.890Z",
+            "place": "18 km NE of Dispur, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-06-28T01:05:28.560Z",
+            "place": "18 km N of B?sugaon, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-04-28T02:33:01.489Z",
+            "place": "6 km NE of Dhekiajuli, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-02-08T12:47:01.887Z",
+            "place": "10 km E of Abhay?puri, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-08-19T10:45:13.870Z",
+            "place": "9 km N of Dhing, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1997-07-18T19:39:23.420Z",
+            "place": "28 km E of Samdrup Jongkhar, Bhutan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -233,9 +317,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6ef3dc4ba9621ef90991c6516f97cd18e5d6a8ad0db7a0670735090447ca3a96"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_222",
+    "geometryFingerprint": "02602449b5341062a1883a28764200565b567d1c004ca1b53e2380c85614270c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      89.82130457200006,
+      25.65598291253483,
+      96.27528352100016,
+      28.207492580408914
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6ef3dc4ba9621ef90991c6516f97cd18e5d6a8ad0db7a0670735090447ca3a96"
 }

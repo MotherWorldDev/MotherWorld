@@ -3,7 +3,7 @@
   "regionId": "eco_254",
   "regionName": "North Western Ghats montane rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.063334+00:00",
+  "generatedAt": "2026-09-09T06:27:44.196774+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.99999999999977,
@@ -102,6 +102,37 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2000-03-12T18:03:56.270Z",
+            "place": "26 km SE of M?khjan, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -272,9 +303,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9c2ffc8be1f932f8da269bd7715373f72d32d3e710dd95419769d085e69329c4"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_254",
+    "geometryFingerprint": "15899ec2dad8a5abfb50adae5604efacdcf66c656783a19dda5f29ea8e04a7f9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      73.22338864200003,
+      12.484429414292475,
+      75.98544350300011,
+      20.297595653806667
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9c2ffc8be1f932f8da269bd7715373f72d32d3e710dd95419769d085e69329c4"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_42",
   "regionName": "Dry miombo woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.315939+00:00",
+  "generatedAt": "2026-09-09T06:27:41.629086+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,115 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 17,
+        "m6Plus": 1,
+        "m7Plus": 1,
+        "maxMagnitude": 7.0,
+        "events": [
+          {
+            "magnitude": 7.0,
+            "time": "2006-02-22T22:19:07.800Z",
+            "place": "160 km SE of Chipinge, Zimbabwe"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2007-12-08T19:55:19.370Z",
+            "place": "14 km SSW of Kisanga, Tanzania"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2006-03-15T14:19:48.000Z",
+            "place": "146 km SE of Chipinge, Zimbabwe"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-08-08T15:31:18.374Z",
+            "place": "39 km SSE of Ikungi, Tanzania"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2018-03-08T08:49:46.150Z",
+            "place": "24 km NE of Nsanje, Malawi"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2006-02-22T22:26:52.650Z",
+            "place": "134 km SSE of Chipinge, Zimbabwe"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-08-03T19:42:13.160Z",
+            "place": "56 km N of Mbekenyera, Tanzania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-11-29T02:59:10.440Z",
+            "place": "126 km SSE of Chipinge, Zimbabwe"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-09-05T15:42:20.864Z",
+            "place": "37 km SSE of Ikungi, Tanzania"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-02-10T16:43:38.030Z",
+            "place": "115 km SSE of Nsanje, Malawi"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-11-20T20:16:06.240Z",
+            "place": "116 km SSE of Chipinge, Zimbabwe"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-03-15T11:52:54.070Z",
+            "place": "Mozambique"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2006-02-23T21:32:05.620Z",
+            "place": "156 km SE of Chipinge, Zimbabwe"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-08-08T07:38:24.824Z",
+            "place": "24 km E of Mungaa, Tanzania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-07-21T13:55:53.420Z",
+            "place": "54 km WSW of Namwala, Zambia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-08-23T00:53:34.080Z",
+            "place": "144 km SE of Chipinge, Zimbabwe"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-06-30T01:07:28.060Z",
+            "place": "121 km SSE of Chipinge, Zimbabwe"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -844,9 +953,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6b41e62884e0f51dd19c21a2b9978c7c1724ea157cf9129841d67b424cc10333"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_42",
+    "geometryFingerprint": "ae35799502ddbe26e90ca6ce851eedd462f937316834a85eeec7220a72b5f622",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      17.286374328000136,
+      -24.75515052429693,
+      40.15518148500013,
+      -2.383337383947053
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6b41e62884e0f51dd19c21a2b9978c7c1724ea157cf9129841d67b424cc10333"
 }

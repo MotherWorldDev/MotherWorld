@@ -3,8 +3,60 @@
   "regionId": "marine_meow_25036",
   "regionName": "Alboran Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:34.893893+00:00",
+  "generatedAt": "2026-09-09T06:27:40.786815+00:00",
   "sections": {
+    "seafloor": {
+      "bathymetry": {
+        "meanDepthM": 1188.4045354948464,
+        "medianDepthM": 947.0,
+        "p10DepthM": 102.0,
+        "p90DepthM": 2630.0,
+        "shallowestM": 4.0,
+        "deepestM": 2721.0,
+        "coveragePct": 100.0,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 14.339247760354032,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 37.15821295133154,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 48.50253928831443,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
+      }
+    },
     "tectonics": {
       "faults": {
         "count": 10,
@@ -76,6 +128,120 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 18,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2016-01-25T04:22:02.730Z",
+            "place": "49 km NNE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1994-05-26T08:26:52.430Z",
+            "place": "15 km WNW of Tirhanimîne, Morocco"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2022-05-20T12:35:49.576Z",
+            "place": "Strait of Gibraltar"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2008-06-06T20:02:56.890Z",
+            "place": "17 km NNE of Mers el Kebir, Algeria"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1993-05-23T07:40:56.940Z",
+            "place": "39 km NW of Saidia, Morocco"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-08-28T11:20:49.968Z",
+            "place": "44 km NE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-01-25T04:34:19.170Z",
+            "place": "51 km NNE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2004-02-25T12:44:57.450Z",
+            "place": "15 km WNW of Tirhanimîne, Morocco"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-07-14T05:13:28.590Z",
+            "place": "23 km E of San Jos?, Spain"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-03-15T04:40:39.110Z",
+            "place": "55 km NNE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-01-25T06:10:41.960Z",
+            "place": "28 km N of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-02-22T03:46:02.460Z",
+            "place": "66 km NE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-01-25T05:54:05.460Z",
+            "place": "29 km NNE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-01-21T13:47:19.860Z",
+            "place": "48 km NNE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-03-11T04:16:47.910Z",
+            "place": "58 km NNE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-03-03T11:36:26.230Z",
+            "place": "29 km NNE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-01-25T04:30:55.190Z",
+            "place": "39 km NNE of Al Hoceïma, Morocco"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-02-26T12:07:04.260Z",
+            "place": "20 km W of Tirhanimîne, Morocco"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -193,6 +359,11 @@
   },
   "providers": [
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -203,9 +374,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:0e6cf4817dce4c6f135eb7a07496abbfb3e99a458c6a55e3775d95f29e708099"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25036",
+    "geometryFingerprint": "114992c2630d9bea0dd5abef84247df301923dc0917b474d88d88a5ffadec060",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -5.448169389695123,
+      35.075045202192356,
+      0.023295546618511,
+      37.59811667493282
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:0e6cf4817dce4c6f135eb7a07496abbfb3e99a458c6a55e3775d95f29e708099"
 }

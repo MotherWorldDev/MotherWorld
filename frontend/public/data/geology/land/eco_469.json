@@ -3,7 +3,7 @@
   "regionId": "eco_469",
   "regionName": "Iquitos várzea",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.646804+00:00",
+  "generatedAt": "2026-09-09T06:27:41.782178+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -82,6 +82,145 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 23,
+        "m6Plus": 4,
+        "m7Plus": 2,
+        "maxMagnitude": 8.0,
+        "events": [
+          {
+            "magnitude": 8.0,
+            "time": "2019-05-26T07:41:15.073Z",
+            "place": "78 km NE of Navarro, Peru"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "1997-10-28T06:15:17.330Z",
+            "place": "51 km N of Barranca, Peru"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2012-08-02T09:38:30.850Z",
+            "place": "30 km E of San Fernando, Peru"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2012-11-10T14:57:50.740Z",
+            "place": "16 km ESE of San Alejandro, Peru"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2017-01-02T13:13:48.710Z",
+            "place": "34 km ESE of Barranca, Peru"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2010-01-25T22:52:46.510Z",
+            "place": "13 km SE of San Fernando, Peru"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2014-10-26T10:45:31.840Z",
+            "place": "69 km NNE of Puerto Ocopa, Peru"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1999-12-25T18:19:30.410Z",
+            "place": "57 km ENE of Navarro, Peru"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2001-08-06T17:08:46.330Z",
+            "place": "23 km WSW of Campo Verde, Peru"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2017-05-04T02:28:58.360Z",
+            "place": "28 km SE of San Fernando, Peru"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-08-27T04:40:57.500Z",
+            "place": "19 km SW of Contamana, Peru"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1995-01-08T09:22:18.850Z",
+            "place": "27 km ESE of San Fernando, Peru"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2019-01-08T10:00:10.050Z",
+            "place": "48 km WSW of Nauta, Peru"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-11-11T14:53:04.400Z",
+            "place": "22 km S of San Fernando, Peru"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-09-17T10:57:43.120Z",
+            "place": "22 km ESE of Honoria, Peru"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-03-10T17:40:47.490Z",
+            "place": "30 km ESE of San Fernando, Peru"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-05-03T21:40:58.940Z",
+            "place": "9 km NW of Campo Verde, Peru"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-02-20T07:45:10.440Z",
+            "place": "85 km E of Lagunas, Peru"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-12-21T11:36:08.821Z",
+            "place": "11 km SSW of San Fernando, Peru"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-08-22T08:28:09.841Z",
+            "place": "18 km ENE of San Fernando, Peru"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-05-27T10:00:48.350Z",
+            "place": "21 km W of Campo Verde, Peru"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-02-16T09:35:17.940Z",
+            "place": "12 km N of Yurimaguas, Peru"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-03-25T06:48:45.770Z",
+            "place": "72 km SE of Tournavista, Peru"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -228,9 +367,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:038706b3e218c317a739795de03859655b06bfc537b0ca20f2492f6fbb76df67"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_469",
+    "geometryFingerprint": "e28cac4c358ccdb66636fdd70b03f0cd8c1a4a4a9e939e4fceab4b572b4d9210",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -77.74565859399992,
+      -11.105326805194268,
+      -66.7692566389998,
+      -0.672498993248433
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:038706b3e218c317a739795de03859655b06bfc537b0ca20f2492f6fbb76df67"
 }

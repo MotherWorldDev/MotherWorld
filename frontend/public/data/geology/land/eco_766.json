@@ -3,7 +3,7 @@
   "regionId": "eco_766",
   "regionName": "Sulaiman Range alpine meadows",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.201018+00:00",
+  "generatedAt": "2026-09-09T06:27:42.641371+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -112,6 +112,65 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "1995-06-11T21:55:48.500Z",
+            "place": "37 km NNE of Wana, Pakistan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2016-05-13T07:01:10.270Z",
+            "place": "29 km SSW of Chaman, Pakistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-05-13T06:59:32.030Z",
+            "place": "28 km S of Chaman, Pakistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-04-16T23:42:51.920Z",
+            "place": "38 km ESE of ?uk?mat? Azrah, Afghanistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-11-07T18:58:50.870Z",
+            "place": "43 km ESE of Nushki, Pakistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-12-25T17:36:32.800Z",
+            "place": "20 km E of Surab, Pakistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-12-12T12:08:57.960Z",
+            "place": "9 km ENE of Wana, Pakistan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -233,9 +292,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:57304078d87420782573d41946d6810b85c477c166b69df0e79ec44a443ebd27"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_766",
+    "geometryFingerprint": "560c9c241f45d06fab762e99c6bc94b35a35c1631f23513bd38522374d9f6f5e",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      65.94587747800016,
+      28.17444592139594,
+      71.28167751900017,
+      34.12559299318153
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:57304078d87420782573d41946d6810b85c477c166b69df0e79ec44a443ebd27"
 }

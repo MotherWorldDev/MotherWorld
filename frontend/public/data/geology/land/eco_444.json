@@ -3,7 +3,7 @@
   "regionId": "eco_444",
   "regionName": "Bolivian Yungas",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.490923+00:00",
+  "generatedAt": "2026-09-09T06:27:41.707891+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -58,6 +58,75 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 9,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.7,
+        "events": [
+          {
+            "magnitude": 6.7,
+            "time": "1997-11-28T22:53:41.530Z",
+            "place": "97 km NE of Sandia, Peru"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2001-07-04T12:09:03.840Z",
+            "place": "41 km NNE of Colomi, Bolivia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1994-06-09T01:15:17.880Z",
+            "place": "92 km E of Sina, Peru"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2009-11-13T07:27:13.360Z",
+            "place": "26 km NNW of Mairana, Bolivia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1994-08-08T07:55:39.230Z",
+            "place": "114 km NW of Rurrenabaque, Bolivia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2010-01-23T09:23:03.950Z",
+            "place": "16 km SSW of Villa Yapacaní, Bolivia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1994-04-03T09:01:04.190Z",
+            "place": "38 km NW of Comarapa, Bolivia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-06-11T13:18:26.370Z",
+            "place": "18 km SW of Villa Yapacaní, Bolivia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-01-23T09:40:30.790Z",
+            "place": "18 km SSW of Villa Yapacaní, Bolivia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -588,9 +657,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ef258a39f99166504798cf64232f6a3e4a1023a9c79ee9608e44c87502483cee"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_444",
+    "geometryFingerprint": "9723cefe813ad4af386a2cbde9e1990d627b5e3d5e106493657b885fd0e061e3",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -69.47296155099997,
+      -18.00816773206797,
+      -63.378326524999856,
+      -13.378322088779253
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ef258a39f99166504798cf64232f6a3e4a1023a9c79ee9608e44c87502483cee"
 }

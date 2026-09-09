@@ -3,7 +3,7 @@
   "regionId": "eco_664",
   "regionName": "European Atlantic mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.627174+00:00",
+  "generatedAt": "2026-09-09T06:27:42.311941+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -100,6 +100,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2001-06-08T13:26:52.820Z",
+            "place": "France"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -751,9 +780,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ba25f4385a2f9565c49ad7a96f347a7bd21027d3e536e1eff858770f6f75ec86"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_664",
+    "geometryFingerprint": "49e94a20b26d93a0f8b551de297f7cd8675e60b93796c89544c208ea6d7d29df",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -4.81087958199987,
+      43.13404813757558,
+      12.560067595000076,
+      57.74657384427083
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ba25f4385a2f9565c49ad7a96f347a7bd21027d3e536e1eff858770f6f75ec86"
 }

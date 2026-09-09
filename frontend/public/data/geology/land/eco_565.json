@@ -3,7 +3,7 @@
   "regionId": "eco_565",
   "regionName": "Beni savanna",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.145924+00:00",
+  "generatedAt": "2026-09-09T06:27:45.556486+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000016,
@@ -46,6 +46,42 @@
         "version": "v1.0",
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "2011-11-22T18:48:16.300Z",
+            "place": "62 km SSW of Trinidad, Bolivia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1995-03-14T12:56:30.610Z",
+            "place": "35 km SSE of Trinidad, Bolivia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -93,9 +129,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:65b22ed040a6a6f83add27a8a6140f8a59b7c44766a7c3a1b70c937346cdba03"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_565",
+    "geometryFingerprint": "732de43bb3e893d7905605e145160b23e4bd9439710514bf25616a8f08e88cd7",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -68.9401325149999,
+      -16.377156493487934,
+      -62.45038261999991,
+      -10.770509000432753
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:65b22ed040a6a6f83add27a8a6140f8a59b7c44766a7c3a1b70c937346cdba03"
 }

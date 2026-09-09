@@ -3,7 +3,7 @@
   "regionId": "eco_702",
   "regionName": "Northeast Himalayan subalpine conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.844435+00:00",
+  "generatedAt": "2026-09-09T06:27:42.413324+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -34,6 +34,105 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 15,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2017-11-17T22:34:19.450Z",
+            "place": "156 km NNE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1995-02-17T02:44:25.050Z",
+            "place": "41 km N of Bomdila, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2022-01-17T22:59:23.843Z",
+            "place": "86 km NNW of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-12-19T17:40:55.590Z",
+            "place": "173 km NNE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-11-18T00:32:01.910Z",
+            "place": "163 km NNE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-07-18T05:41:26.540Z",
+            "place": "212 km NNE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-09-04T17:25:10.110Z",
+            "place": "205 km NNE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-08-19T14:46:08.434Z",
+            "place": "205 km N of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-07-27T22:13:55.178Z",
+            "place": "206 km NNE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-10-01T03:49:28.961Z",
+            "place": "203 km NNE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-09-25T04:41:07.930Z",
+            "place": "206 km N of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-07-19T10:15:47.711Z",
+            "place": "213 km NNE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2010-08-09T02:54:50.810Z",
+            "place": "202 km NNE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-11-10T19:36:24.430Z",
+            "place": "143 km NE of Shi Yomi, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-09-27T17:05:37.970Z",
+            "place": "176 km NE of Shi Yomi, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -116,6 +215,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3fc20384e6fb8de8afe4b74c2f16e029a5e962815b7c97ec58d7f5b2da217416"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_702",
+    "geometryFingerprint": "18f79329d75374ba63dc2064d7b6a00be82cb11b71ea771a8f3cf4eed0d3230c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      91.6507335640001,
+      27.415808916108848,
+      97.58770767300012,
+      30.87358940256771
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3fc20384e6fb8de8afe4b74c2f16e029a5e962815b7c97ec58d7f5b2da217416"
 }

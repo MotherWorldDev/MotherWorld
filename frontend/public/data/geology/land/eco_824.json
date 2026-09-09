@@ -3,7 +3,7 @@
   "regionId": "eco_824",
   "regionName": "Eastern Gobi desert steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.521595+00:00",
+  "generatedAt": "2026-09-09T06:27:42.847553+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -34,6 +34,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2011-08-27T10:29:46.880Z",
+            "place": "41 km N of Dalandzadgad, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-03-21T09:33:45.914Z",
+            "place": "37 km SW of Dalandzadgad, Mongolia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -298,9 +332,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e0f42b259760b8218370350c48af15b53ccecf36f8df3a17398f3caeca25d7b8"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_824",
+    "geometryFingerprint": "521a0be3f97f74d545ae5a2560a45dfbc15f030b0ffd80b5131ab26b7f51dd0f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      102.92502567600016,
+      39.92890659512752,
+      114.115173538,
+      46.40923171282629
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e0f42b259760b8218370350c48af15b53ccecf36f8df3a17398f3caeca25d7b8"
 }

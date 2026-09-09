@@ -3,7 +3,7 @@
   "regionId": "eco_252",
   "regionName": "Nicobar Islands rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.062307+00:00",
+  "generatedAt": "2026-09-09T06:27:44.189767+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 7.785656929714745,
@@ -36,6 +36,37 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2004-12-26T09:30:55.800Z",
+            "place": "223 km NW of Sabang, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -43,6 +74,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4f0ad0d2e9db8adada6e457bc317db20f14448d87e0afd71cc655c15c207fabf"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_252",
+    "geometryFingerprint": "23c740988ecbdc1bd004337f5bee9574c5c11cfd548cd23a0da26c3a19661ef3",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      92.71385963000016,
+      6.747699144831576,
+      93.92511756200015,
+      9.242831793612893
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4f0ad0d2e9db8adada6e457bc317db20f14448d87e0afd71cc655c15c207fabf"
 }

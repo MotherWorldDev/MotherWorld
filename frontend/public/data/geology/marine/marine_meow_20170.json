@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20170",
   "regionName": "Panama Bight",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.628542+00:00",
+  "generatedAt": "2026-09-09T06:27:38.922991+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2510.836707665122,
+        "medianDepthM": 2991.0,
+        "p10DepthM": 173.0,
+        "p90DepthM": 3567.0,
+        "shallowestM": -0.0,
+        "deepestM": 4877.0,
+        "coveragePct": 99.52095840149636,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 10.24331940186827,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 5.043735162027367,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 35.219023869631656,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 49.49392156647271,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -235,6 +285,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 149,
+        "m6Plus": 15,
+        "m7Plus": 1,
+        "maxMagnitude": 7.2,
+        "events": [
+          {
+            "magnitude": 7.2,
+            "time": "2004-11-15T09:06:56.560Z",
+            "place": "32 km SSW of Pizarro, Colombia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2007-09-10T01:49:11.780Z",
+            "place": "39 km WNW of Timbiquí, Colombia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2013-08-13T15:43:15.200Z",
+            "place": "101 km WSW of Bahía Solano, Colombia"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2000-11-08T06:59:58.860Z",
+            "place": "10 km SW of Juradó, Colombia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2000-09-28T23:23:43.350Z",
+            "place": "45 km NNW of Bahía de Caráquez, Ecuador"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2025-04-25T11:44:52.634Z",
+            "place": "19 km NE of Esmeraldas, Ecuador"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2016-04-20T08:33:47.330Z",
+            "place": "21 km W of Muisne, Ecuador"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2007-03-18T02:11:05.300Z",
+            "place": "130 km WNW of Santa Genoveva de Docordó, Colombia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2006-01-23T20:50:44.980Z",
+            "place": "26 km S of Juradó, Colombia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1996-04-27T08:40:41.850Z",
+            "place": "84 km WNW of Salahonda, Colombia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1994-09-27T23:04:51.620Z",
+            "place": "206 km WSW of Bahía Solano, Colombia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2017-06-30T22:29:45.140Z",
+            "place": "35 km NNW of Bahía de Caráquez, Ecuador"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2016-04-22T03:03:41.720Z",
+            "place": "34 km NNW of Bahía de Caráquez, Ecuador"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2007-03-17T22:43:09.620Z",
+            "place": "133 km WNW of Santa Genoveva de Docordó, Colombia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2003-11-05T00:58:51.110Z",
+            "place": "44 km W of Pizarro, Colombia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2016-04-22T03:20:13.380Z",
+            "place": "36 km NNW of Bahía de Caráquez, Ecuador"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2008-06-17T17:42:09.670Z",
+            "place": "south of Panama"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2005-05-05T23:41:53.170Z",
+            "place": "south of Panama"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2002-08-08T13:39:58.260Z",
+            "place": "50 km W of Pizarro, Colombia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1997-06-26T06:12:10.380Z",
+            "place": "south of Panama"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1994-06-03T11:25:06.660Z",
+            "place": "118 km NNW of Mosquera, Colombia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2018-01-27T21:45:12.340Z",
+            "place": "47 km SE of Pedasí, Panama"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2016-04-23T01:24:33.900Z",
+            "place": "26 km W of Muisne, Ecuador"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2014-06-16T06:39:32.260Z",
+            "place": "51 km NW of Pampanal de Bolívar, Ecuador"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2011-09-13T04:49:35.000Z",
+            "place": "near the west coast of Colombia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2006-10-18T21:15:49.320Z",
+            "place": "south of Panama"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2003-01-08T14:29:10.310Z",
+            "place": "21 km S of Bahía Solano, Colombia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1996-05-23T01:57:22.980Z",
+            "place": "40 km WNW of Nuquí, Colombia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2025-01-10T08:14:32.949Z",
+            "place": "31 km SSW of Bahía Solano, Colombia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2018-01-31T16:37:05.510Z",
+            "place": "53 km SE of Pedasí, Panama"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -468,6 +692,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -478,9 +707,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:62347ceb9f70c965d5fe5b61e3ab0a380a8319bbe0165acb3ceccb31c0064a77"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20170",
+    "geometryFingerprint": "5e26a26db43fb738bba05630512ac6e161bf516be2d77f90a0fb75e824929543",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -84.76410263906853,
+      -0.370006343260207,
+      -77.10069228795685,
+      9.015122133415318
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:62347ceb9f70c965d5fe5b61e3ab0a380a8319bbe0165acb3ceccb31c0064a77"
 }

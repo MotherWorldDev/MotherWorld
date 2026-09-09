@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25014",
   "regionName": "Eastern Bering Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.077325+00:00",
+  "generatedAt": "2026-09-09T06:27:39.132688+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 141.19528198242188,
           "coveragePct": 8.693975595472125
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 225.6304999559725,
+        "medianDepthM": 65.0,
+        "p10DepthM": 19.0,
+        "p90DepthM": 155.0,
+        "shallowestM": -0.0,
+        "deepestM": 3511.0,
+        "coveragePct": 99.58739978590548,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 91.23760925797689,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 2.3470975707998996,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 4.55186184081649,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 1.8634313304067178,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -91,6 +141,125 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 19,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.5,
+        "events": [
+          {
+            "magnitude": 6.5,
+            "time": "2010-04-30T23:11:43.100Z",
+            "place": "Bering Sea"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2010-04-30T23:16:28.640Z",
+            "place": "Bering Sea"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2000-01-20T06:13:02.660Z",
+            "place": "80 km NNW of Nelson Lagoon, Alaska"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1994-07-14T18:38:09.830Z",
+            "place": "66 km NNW of False Pass, Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2022-07-04T09:17:43.277Z",
+            "place": "28 km E of Saint George, Alaska"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2015-01-31T17:39:11.460Z",
+            "place": "26 km E of Saint George, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-06-29T08:37:22.940Z",
+            "place": "50 km NW of Nelson Lagoon, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2015-02-01T17:40:31.740Z",
+            "place": "25 km ENE of Saint George, Alaska"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2015-01-31T12:38:31.390Z",
+            "place": "38 km E of Saint George, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-07-04T09:19:07.442Z",
+            "place": "22 km E of Saint George, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-04-22T05:27:35.049Z",
+            "place": "37 km NW of Nelson Lagoon, Alaska"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-07-24T17:13:24.850Z",
+            "place": "Bering Sea"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1996-11-03T23:24:30.560Z",
+            "place": "89 km SSE of Lavrentiya, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1996-08-09T18:45:44.920Z",
+            "place": "73 km SE of Lavrentiya, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-02-01T11:20:25.640Z",
+            "place": "28 km E of Saint George, Alaska"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2015-01-31T20:47:11.500Z",
+            "place": "25 km E of Saint George, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-03-06T13:19:09.410Z",
+            "place": "59 km WNW of Nelson Lagoon, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-10-16T10:18:02.770Z",
+            "place": "60 km WNW of Nelson Lagoon, Alaska"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-07-15T17:01:48.030Z",
+            "place": "38 km WNW of Nelson Lagoon, Alaska"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -540,6 +709,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -550,9 +724,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:66ca68359b1e1c9baafa603a164fa301538b6b71c8353929920c6a5b9de5ad53"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25014",
+    "geometryFingerprint": "04ba731f09c1f91c5850003bdf5bfa746813e64c582ae55e9645db526205318f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -179.9999885409174,
+      54.0098423132355,
+      179.9910779526601,
+      66.33032897459172
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:66ca68359b1e1c9baafa603a164fa301538b6b71c8353929920c6a5b9de5ad53"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20092",
   "regionName": "Western Arabian Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.164864+00:00",
+  "generatedAt": "2026-09-09T06:27:38.660426+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2643.8101801736334,
+        "medianDepthM": 3044.0,
+        "p10DepthM": 279.0,
+        "p90DepthM": 3792.0,
+        "shallowestM": -0.0,
+        "deepestM": 5221.0,
+        "coveragePct": 99.93424387191735,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 9.165532591004933,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 4.917962992419111,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 34.52697365961645,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 51.389530756959516,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -272,6 +322,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 63,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.2,
+        "events": [
+          {
+            "magnitude": 6.2,
+            "time": "2005-08-26T18:16:33.620Z",
+            "place": "199 km S of Al Ghayz?ah, Yemen"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2018-07-15T01:57:19.410Z",
+            "place": "214 km NNW of Kilmia, Yemen"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2002-09-01T17:14:59.890Z",
+            "place": "214 km S of Al Ghayz?ah, Yemen"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2013-05-27T03:36:30.140Z",
+            "place": "210 km NNE of Qalans?yah, Yemen"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2003-05-24T01:46:06.260Z",
+            "place": "195 km N of Qalans?yah, Yemen"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2002-08-13T08:37:22.770Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2001-08-26T14:11:08.250Z",
+            "place": "226 km NNW of Kilmia, Yemen"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1998-10-01T19:17:16.050Z",
+            "place": "188 km N of Qalans?yah, Yemen"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1993-11-09T02:14:03.700Z",
+            "place": "186 km N of Qalans?yah, Yemen"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2018-07-15T01:59:08.940Z",
+            "place": "226 km NNW of Kilmia, Yemen"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-11-28T11:26:15.430Z",
+            "place": "209 km N of Qalans?yah, Yemen"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-10-31T16:02:43.470Z",
+            "place": "292 km SE of Sur, Oman"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1997-06-07T11:22:03.120Z",
+            "place": "215 km NNW of Kilmia, Yemen"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-07-17T12:01:15.015Z",
+            "place": "215 km N of Hadibu, Yemen"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2026-01-21T01:05:49.009Z",
+            "place": "192 km N of Qalansīyah, Yemen"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-07-23T10:02:21.981Z",
+            "place": "210 km N of Qalansīyah, Yemen"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-04-03T22:00:22.173Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2022-01-31T11:56:36.019Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-12-24T10:57:42.603Z",
+            "place": "149 km S of Al Ghayz?ah, Yemen"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2019-02-20T12:33:17.430Z",
+            "place": "220 km N of Qalans?yah, Yemen"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-10-26T20:31:43.800Z",
+            "place": "173 km NNE of Qalans?yah, Yemen"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2006-06-24T16:52:18.990Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-08-21T04:53:02.050Z",
+            "place": "170 km S of Al Ghayz?ah, Yemen"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1995-12-07T17:48:16.530Z",
+            "place": "285 km NE of Hadibu, Yemen"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-07-18T11:15:16.671Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-04-13T03:24:08.723Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2006-10-06T07:18:19.560Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2004-05-27T03:52:07.430Z",
+            "place": "237 km NNE of Hadibu, Yemen"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-08-14T16:29:30.860Z",
+            "place": "Owen Fracture Zone region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-08-13T07:47:42.590Z",
+            "place": "Owen Fracture Zone region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -343,6 +567,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -351,6 +580,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1d10efb54cfda9ccd3216a2b1460ae8dcfef20d7f1b65fcad5f80bab582d9a1f"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20092",
+    "geometryFingerprint": "da7cc543bf367218093b1f41dad532bd32f2c9991e6938d9a7f3fde70a696449",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      49.054470799739875,
+      13.652008107574202,
+      63.13680606032966,
+      22.660751515213178
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1d10efb54cfda9ccd3216a2b1460ae8dcfef20d7f1b65fcad5f80bab582d9a1f"
 }

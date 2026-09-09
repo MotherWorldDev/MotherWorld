@@ -3,7 +3,7 @@
   "regionId": "eco_555",
   "regionName": "Hispaniolan pine forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.154852+00:00",
+  "generatedAt": "2026-09-09T06:27:42.021730+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,55 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2010-01-13T05:02:57.500Z",
+            "place": "Haiti region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-01-13T05:18:02.440Z",
+            "place": "12 km S of Tigwav, Haiti"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-01-13T00:59:05.050Z",
+            "place": "8 km SSW of Grangwav, Haiti"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-08-10T21:02:57.260Z",
+            "place": "11 km NNW of San José de Ocoa, Dominican Republic"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-01-13T01:55:16.000Z",
+            "place": "10 km SSE of Tigwav, Haiti"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -255,9 +304,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:626ee7340afd81131bf01820f30eb9c9ea2b32674714f234a8147d533dccd023"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_555",
+    "geometryFingerprint": "7102df0003f0a701d04dec9141f3832509f9da1f51a4f77fc7bd29dbb38623b1",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -73.56419363999998,
+      18.005724323068645,
+      -70.43157953399998,
+      19.557527246850285
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:626ee7340afd81131bf01820f30eb9c9ea2b32674714f234a8147d533dccd023"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_307",
   "regionName": "Northern Triangle temperate forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.904729+00:00",
+  "generatedAt": "2026-09-09T06:27:41.424850+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -34,6 +34,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "1995-12-12T05:42:32.260Z",
+            "place": "52 km ESE of Khonsa, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-05-24T22:01:02.400Z",
+            "place": "106 km NNE of Sarupathar, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -103,6 +137,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:573055999a974fb57ff44c0641905aa0bcef909fb30f11825d14c1357f938915"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_307",
+    "geometryFingerprint": "853f948b765c35a63457aed391309cdb03d455e28699ca1a265c3fcece6491b3",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      95.28373756700013,
+      26.530807679803107,
+      98.37255053000013,
+      28.134208427380166
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:573055999a974fb57ff44c0641905aa0bcef909fb30f11825d14c1357f938915"
 }

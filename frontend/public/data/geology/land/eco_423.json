@@ -3,7 +3,7 @@
   "regionId": "eco_423",
   "regionName": "California interior chaparral and woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.342706+00:00",
+  "generatedAt": "2026-09-09T06:27:41.642617+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,85 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 11,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.02,
+        "events": [
+          {
+            "magnitude": 6.02,
+            "time": "2014-08-24T10:20:44.070Z",
+            "place": "The 2014 South Napa, California Earthquake"
+          },
+          {
+            "magnitude": 5.97,
+            "time": "2004-09-28T17:15:24.250Z",
+            "place": "2004 Parkfield, California Earthquake"
+          },
+          {
+            "magnitude": 5.45,
+            "time": "2007-10-31T03:04:54.810Z",
+            "place": "6 km NNE of East Foothills, California"
+          },
+          {
+            "magnitude": 5.29,
+            "time": "2012-10-21T06:55:09.510Z",
+            "place": "24 km NE of San Lucas, California"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1998-11-26T19:49:53.600Z",
+            "place": "7km NW of Redding, CA"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1998-08-12T14:10:25.140Z",
+            "place": "10 km SW of Ridgemark, California"
+          },
+          {
+            "magnitude": 5.09,
+            "time": "2016-08-10T02:57:17.510Z",
+            "place": "20 km NNE of Upper Lake, California"
+          },
+          {
+            "magnitude": 5.06,
+            "time": "2022-10-25T18:42:02.710Z",
+            "place": "15km ESE of Alum Rock, CA"
+          },
+          {
+            "magnitude": 5.03,
+            "time": "2004-09-29T22:54:54.240Z",
+            "place": "25km SSW of Bodfish, California"
+          },
+          {
+            "magnitude": 5.01,
+            "time": "2016-12-14T16:41:05.530Z",
+            "place": "10 km W of Cobb, California"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-09-29T17:10:04.030Z",
+            "place": "8 km NW of Parkfield, California"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -810,9 +889,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5ab51f27bb672bdd9f6fa278cb50a6c8e60136dd7379f20115ee0ad4e2086861"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_423",
+    "geometryFingerprint": "beb10939b607cef9bf11510e13732e04430a7257f95062a438388557cd9b9ca1",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -123.533888677,
+      34.44809203534754,
+      -118.30949835599986,
+      40.7469169325152
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5ab51f27bb672bdd9f6fa278cb50a6c8e60136dd7379f20115ee0ad4e2086861"
 }

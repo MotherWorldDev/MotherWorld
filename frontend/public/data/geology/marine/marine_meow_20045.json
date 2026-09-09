@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20045",
   "regionName": "Sea of Okhotsk",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.909383+00:00",
+  "generatedAt": "2026-09-09T06:27:38.512944+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -78,6 +78,56 @@
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 468.38452992918354,
+        "medianDepthM": 157.0,
+        "p10DepthM": 45.0,
+        "p90DepthM": 1359.0,
+        "shallowestM": -0.0,
+        "deepestM": 3490.0,
+        "coveragePct": 99.59501515719177,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 57.70033968029956,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 27.83316184022335,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 11.35903338755099,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 3.1074650919260955,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -103,6 +153,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 79,
+        "m6Plus": 13,
+        "m7Plus": 5,
+        "maxMagnitude": 8.3,
+        "events": [
+          {
+            "magnitude": 8.3,
+            "time": "2013-05-24T05:44:48.980Z",
+            "place": "2013 Sea of Okhotsk Earthquake"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2012-08-14T02:59:38.460Z",
+            "place": "156 km ENE of Poronaysk, Russia"
+          },
+          {
+            "magnitude": 7.7,
+            "time": "2008-07-05T02:12:04.480Z",
+            "place": "Sea of Okhotsk"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2008-11-24T09:02:58.760Z",
+            "place": "284 km WSW of Mil’kovo, Russia"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2002-11-17T04:53:53.540Z",
+            "place": "262 km E of Dolinsk, Russia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2018-10-13T11:10:22.400Z",
+            "place": "269 km WNW of Ozernovskiy, Russia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2013-10-01T03:38:21.710Z",
+            "place": "Sea of Okhotsk"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2024-08-10T03:28:32.681Z",
+            "place": "151 km E of Dolinsk, Russia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2019-11-20T08:26:08.017Z",
+            "place": "264 km NW of Ozernovskiy, Russia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2009-12-10T02:30:52.690Z",
+            "place": "Sea of Okhotsk"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2004-11-07T02:02:26.170Z",
+            "place": "144 km ENE of Dolinsk, Russia"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2001-02-26T05:58:22.430Z",
+            "place": "135 km E of Korsakov, Russia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2018-11-02T11:01:15.880Z",
+            "place": "298 km E of Dolinsk, Russia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2024-06-06T11:07:53.351Z",
+            "place": "Sea of Okhotsk"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1997-12-20T13:26:31.570Z",
+            "place": "Sea of Okhotsk"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2021-09-03T10:14:26.456Z",
+            "place": "286 km E of Poronaysk, Russia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2016-07-23T01:00:20.940Z",
+            "place": "284 km NNW of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2013-08-04T15:56:35.010Z",
+            "place": "190 km ESE of Dolinsk, Russia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2006-12-09T14:48:54.180Z",
+            "place": "253 km NNW of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2002-11-17T04:53:48.460Z",
+            "place": "280 km ESE of Makarov, Russia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2000-07-10T09:58:18.990Z",
+            "place": "203 km E of Korsakov, Russia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1999-02-05T14:37:53.000Z",
+            "place": "259 km NNW of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2011-12-09T19:42:57.340Z",
+            "place": "137 km ESE of Dolinsk, Russia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2001-02-07T15:16:15.220Z",
+            "place": "229 km NW of Ozernovskiy, Russia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1996-07-07T10:49:59.660Z",
+            "place": "110 km NNW of Tigil’, Russia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2026-02-11T06:29:50.205Z",
+            "place": "254 km SE of Okhotsk, Russia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2023-06-23T17:39:13.135Z",
+            "place": "94 km NE of Hamatonbetsu, Japan"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2023-06-17T11:36:00.958Z",
+            "place": "northwest of the Kuril Islands"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2021-01-20T16:00:41.672Z",
+            "place": "Sea of Okhotsk"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2020-09-01T00:51:17.028Z",
+            "place": "69 km SW of Palana, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -175,6 +399,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -183,6 +412,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e31c350cebcd9ca0a0214c1d366652b6f8aa9699dea8e0722e7d458262009e26"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20045",
+    "geometryFingerprint": "5d69031b79f24119577f95821946fc2c7941a97aef27acc15f8eb18c54ba9c12",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      135.1997066590001,
+      43.91425915225551,
+      165.03541957513457,
+      62.6993254366907
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e31c350cebcd9ca0a0214c1d366652b6f8aa9699dea8e0722e7d458262009e26"
 }

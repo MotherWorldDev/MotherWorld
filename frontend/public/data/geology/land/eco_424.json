@@ -3,7 +3,7 @@
   "regionId": "eco_424",
   "regionName": "California montane chaparral and woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.352800+00:00",
+  "generatedAt": "2026-09-09T06:27:41.647659+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,45 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "1999-10-16T09:59:38.000Z",
+            "place": "7km ENE of Running Springs, CA"
+          },
+          {
+            "magnitude": 5.21,
+            "time": "2025-04-14T17:08:28.110Z",
+            "place": "5 km S of Julian, CA"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-06-12T15:41:46.520Z",
+            "place": "10km ESE of Anza, CA"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -823,9 +862,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ff1bdf11841eccec2da7fcb8bff9d4c325752c1a24807c73978dbb69bac8e7f4"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_424",
+    "geometryFingerprint": "aa1f5feabeab867626dedef00c085980dc8da1446025b2f4c130ad2bddc1a7b9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -120.22070518699992,
+      30.307747570305622,
+      -115.05541956299993,
+      35.0891148566789
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ff1bdf11841eccec2da7fcb8bff9d4c325752c1a24807c73978dbb69bac8e7f4"
 }

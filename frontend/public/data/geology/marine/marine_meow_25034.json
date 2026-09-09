@@ -3,7 +3,7 @@
   "regionId": "marine_meow_25034",
   "regionName": "Ionian Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.102104+00:00",
+  "generatedAt": "2026-09-09T06:27:39.144799+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2262.812649975038,
+        "medianDepthM": 2757.0,
+        "p10DepthM": 175.0,
+        "p90DepthM": 3774.0,
+        "shallowestM": 2.0,
+        "deepestM": 5037.0,
+        "coveragePct": 99.841008992511,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 10.759184104621005,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 15.781911957511392,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 31.394972578712036,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 42.06393135915558,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -272,6 +322,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 101,
+        "m6Plus": 6,
+        "m7Plus": 0,
+        "maxMagnitude": 6.9,
+        "events": [
+          {
+            "magnitude": 6.9,
+            "time": "2008-02-14T10:09:22.720Z",
+            "place": "35 km S of Methóni, Greece"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2018-10-25T22:54:52.630Z",
+            "place": "32 km SW of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1997-11-18T13:07:41.730Z",
+            "place": "22 km SW of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2008-02-14T12:08:55.790Z",
+            "place": "50 km S of Koróni, Greece"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1997-10-13T13:39:37.490Z",
+            "place": "47 km SSE of Koróni, Greece"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2008-02-20T18:27:06.000Z",
+            "place": "58 km SSW of Koróni, Greece"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2024-03-29T07:12:48.063Z",
+            "place": "34 km WNW of Filiatrá, Greece"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2012-04-16T11:23:43.380Z",
+            "place": "29 km SW of Methóni, Greece"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2009-11-03T05:25:08.130Z",
+            "place": "38 km SW of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1997-07-27T10:07:52.550Z",
+            "place": "148 km SSW of Methóni, Greece"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1993-03-18T15:47:00.420Z",
+            "place": "11 km NNE of Témeni, Greece"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2020-05-20T23:43:16.920Z",
+            "place": "224 km SW of Methóni, Greece"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2018-10-30T15:12:00.610Z",
+            "place": "36 km SW of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2006-04-12T16:52:01.200Z",
+            "place": "16 km SE of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2005-10-18T15:26:00.260Z",
+            "place": "13 km SE of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2005-01-31T01:05:33.560Z",
+            "place": "62 km WSW of Katastárion, Greece"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2002-12-02T04:58:55.190Z",
+            "place": "11 km S of Arkoúdi, Greece"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2000-05-24T05:40:37.740Z",
+            "place": "83 km S of Koróni, Greece"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2008-06-21T11:36:23.900Z",
+            "place": "82 km S of Koróni, Greece"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2000-05-26T01:28:22.540Z",
+            "place": "10 km WSW of Préveza, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2022-09-08T07:36:23.175Z",
+            "place": "45 km SW of Lixoúri, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2018-06-25T05:14:44.990Z",
+            "place": "37 km WSW of Methóni, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2010-08-22T10:22:58.000Z",
+            "place": "94 km SW of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2010-01-18T15:56:09.000Z",
+            "place": "11 km E of Náfpaktos, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2009-02-16T23:16:38.500Z",
+            "place": "65 km S of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2006-04-11T17:29:28.400Z",
+            "place": "8 km ESE of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2006-04-11T00:02:41.500Z",
+            "place": "11 km SE of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2006-04-04T22:05:05.080Z",
+            "place": "14 km SE of Lithakiá, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2003-08-14T16:18:02.450Z",
+            "place": "11 km W of Lefkáda, Greece"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1998-04-29T03:30:39.340Z",
+            "place": "72 km S of Koróni, Greece"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -380,6 +604,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -390,9 +619,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:77e3744b552f42d4fc761e0b60e939e285a69969bf838a65d88ee1b9bf249f7a"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_25034",
+    "geometryFingerprint": "f255d69aec99064062e10084708c5b4dff738b54bf3c3f82829c57d62f6451e2",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      11.450632923012593,
+      34.26410211603008,
+      23.21087475470025,
+      40.59138024678131
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:77e3744b552f42d4fc761e0b60e939e285a69969bf838a65d88ee1b9bf249f7a"
 }

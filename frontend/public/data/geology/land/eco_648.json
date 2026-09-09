@@ -3,7 +3,7 @@
   "regionId": "eco_648",
   "regionName": "Cantabrian mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.515748+00:00",
+  "generatedAt": "2026-09-09T06:27:42.243449+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,60 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 6,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "1997-05-21T23:50:43.500Z",
+            "place": "3 km NW of Becerreá, Spain"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-05-21T23:49:43.760Z",
+            "place": "5 km NE of Becerreá, Spain"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-04-18T06:42:50.700Z",
+            "place": "1 km SSW of Saint-Pierre-d'Oléron, France"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1997-05-22T00:17:17.850Z",
+            "place": "0 km E of Becerreá, Spain"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-12-24T14:29:18.850Z",
+            "place": "5 km NE of Baralla, Spain"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-11-29T23:56:27.570Z",
+            "place": "5 km NE of Baralla, Spain"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -656,9 +710,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5799c86905988c9a35b024413759db9f0966bd5ec32860e2615a3b41e6fc5e90"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_648",
+    "geometryFingerprint": "2fb5aa47de606263e05b05a9795b5087436030e39f09c4f992fb56eca56e797e",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -9.290210551999964,
+      40.24061364927657,
+      -0.008823545999917,
+      46.24841785977078
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5799c86905988c9a35b024413759db9f0966bd5ec32860e2615a3b41e6fc5e90"
 }

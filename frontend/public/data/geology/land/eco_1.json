@@ -3,7 +3,7 @@
   "regionId": "eco_1",
   "regionName": "Albertine Rift montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.067324+00:00",
+  "generatedAt": "2026-09-09T06:27:40.930386+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,130 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 20,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.8,
+        "events": [
+          {
+            "magnitude": 6.8,
+            "time": "2005-12-05T12:19:56.620Z",
+            "place": "76 km ESE of Kalemie, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1994-02-05T23:34:09.970Z",
+            "place": "13 km SSW of Bundibugyo, Uganda"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2008-02-03T07:34:12.180Z",
+            "place": "20 km N of Cyangugu, Rwanda"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2002-10-24T07:12:18.400Z",
+            "place": "28 km SSW of Sake, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1996-03-24T08:24:24.370Z",
+            "place": "15 km SW of Fort Portal, Uganda"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-10-05T00:02:12.630Z",
+            "place": "50 km N of Sake, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-06-29T23:40:00.850Z",
+            "place": "11 km NNW of Kilembe, Uganda"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-12-14T09:43:10.730Z",
+            "place": "52 km W of Kirando, Tanzania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2006-04-27T04:18:28.140Z",
+            "place": "17 km NNE of Kilembe, Uganda"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2003-03-20T06:15:20.580Z",
+            "place": "Rwanda - Burundi region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-01-22T15:32:05.590Z",
+            "place": "8 km NW of Sake, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2019-10-30T20:55:27.193Z",
+            "place": "47 km SW of Kabare, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-02-04T12:43:59.710Z",
+            "place": "69 km W of Sake, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-01-20T00:14:44.390Z",
+            "place": "13 km SSW of Sake, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-04-29T11:50:52.560Z",
+            "place": "56 km WNW of Sake, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-06-10T08:54:17.373Z",
+            "place": "88 km SW of Kabare, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-11-30T21:48:35.640Z",
+            "place": "16 km SW of Kabare, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-09-15T17:45:46.800Z",
+            "place": "24 km S of Kabare, Democratic Republic of the Congo"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-02-03T10:56:09.740Z",
+            "place": "11 km NE of Cyangugu, Rwanda"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-03-02T04:29:48.560Z",
+            "place": "86 km W of Kabare, Democratic Republic of the Congo"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -623,9 +747,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:35f3afa84ab02d90bda78e952387a86ab1a5989f1a52b7d3c52e1681829e65b5"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_1",
+    "geometryFingerprint": "8bb8a06bdf17d57b969ea061356dfeed81e942ef32caf47a675427f757037f6b",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      27.172431367000172,
+      -8.05069273163108,
+      32.14234583600006,
+      2.894166663794396
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:35f3afa84ab02d90bda78e952387a86ab1a5989f1a52b7d3c52e1681829e65b5"
 }

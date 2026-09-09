@@ -3,7 +3,7 @@
   "regionId": "eco_367",
   "regionName": "South Central Rockies forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.144414+00:00",
+  "generatedAt": "2026-09-09T06:27:41.554022+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -136,6 +136,65 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.5,
+        "events": [
+          {
+            "magnitude": 6.5,
+            "time": "2020-03-31T23:52:30.781Z",
+            "place": "Stanley, Idaho"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2017-07-06T06:30:17.000Z",
+            "place": "11 km SE of Lincoln, Montana"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1994-02-03T09:05:04.200Z",
+            "place": "4 km SSE of Auburn, Wyoming"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2017-09-02T23:56:52.630Z",
+            "place": "12 km E of Soda Springs, Idaho"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-04-21T17:18:56.950Z",
+            "place": "29 km WSW of Freedom, Idaho"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-07-06T06:35:35.960Z",
+            "place": "15 km S of Lincoln, Montana"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-01-07T07:51:37.320Z",
+            "place": "20 km ESE of Kelly, Wyoming"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -761,9 +820,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1d55ae97c5b4e06425ccaa4cb9c0fd3fc5967d927457048335a984500a39678c"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_367",
+    "geometryFingerprint": "1c8a0b1d6c4b92050e56e6f239e0cfb40af5076056254dc1ab97745ca1aeaf40",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -116.40422743699988,
+      41.94786931006287,
+      -103.2169352429999,
+      47.57630409120965
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1d55ae97c5b4e06425ccaa4cb9c0fd3fc5967d927457048335a984500a39678c"
 }

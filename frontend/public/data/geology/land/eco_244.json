@@ -3,7 +3,7 @@
   "regionId": "eco_244",
   "regionName": "Meghalaya subtropical forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.620398+00:00",
+  "generatedAt": "2026-09-09T06:27:41.276832+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -65,6 +65,55 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2013-11-06T04:16:16.060Z",
+            "place": "24 km SSW of Num?ligarh, India"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2012-05-11T12:41:35.300Z",
+            "place": "19 km N of Hoj?i, India"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-07-07T03:15:24.246Z",
+            "place": "8 km SSE of Lakhipur, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-04-05T07:42:24.390Z",
+            "place": "38 km SE of Lakhipur, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1998-12-02T13:25:04.240Z",
+            "place": "34 km SSW of Bok?kh?t, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "surfaceGeology": {
@@ -121,6 +170,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:7d780e5c48de22129c8bd7764d5a4ebd4358448f48d78873d8cb73b1e78e59b1"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_244",
+    "geometryFingerprint": "c5d5da63f687513563196ce475e60094b15fcc6dbc191210347f0ac0598ca282",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      89.81900055400006,
+      24.93429182834112,
+      93.91502357200005,
+      26.63897999683883
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:7d780e5c48de22129c8bd7764d5a4ebd4358448f48d78873d8cb73b1e78e59b1"
 }

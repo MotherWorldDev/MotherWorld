@@ -3,7 +3,7 @@
   "regionId": "eco_253",
   "regionName": "North Western Ghats moist deciduous forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.063334+00:00",
+  "generatedAt": "2026-09-09T06:27:44.193756+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.64962427698424,
@@ -109,6 +109,47 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.2,
+        "events": [
+          {
+            "magnitude": 5.2,
+            "time": "2000-09-05T00:32:42.900Z",
+            "place": "5 km W of P?tan, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1993-12-08T01:42:18.450Z",
+            "place": "25 km NNE of L?nja, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-02-01T09:30:55.180Z",
+            "place": "5 km SSE of M?khjan, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -377,9 +418,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:09ab8da08af3796f41e100e6fa792c814a96f420c412a08497d2270c6fb063c5"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_253",
+    "geometryFingerprint": "467bb0bd1f6fda1856bd7bad3c02b91c8b887c96cb3d98fb756b93feb4abb75d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      72.70674858200016,
+      12.466341770303456,
+      76.40363358400009,
+      21.87451729783843
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:09ab8da08af3796f41e100e6fa792c814a96f420c412a08497d2270c6fb063c5"
 }

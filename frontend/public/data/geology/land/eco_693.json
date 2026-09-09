@@ -3,7 +3,7 @@
   "regionId": "eco_693",
   "regionName": "Da Hinggan-Dzhagdy Mountains conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.777493+00:00",
+  "generatedAt": "2026-09-09T06:27:42.386720+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2011-10-14T06:10:14.600Z",
+            "place": "8 km ESE of Takhtamygda, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -408,9 +437,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:51c0b8e745e185ab36660b4c25ed4f254e1d5d013bd3b044e2d65dda24253060"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_693",
+    "geometryFingerprint": "07951bd66efba0de278493a4b296b7776a0b72d26caea610451125c6a3ba7256",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      119.65881359700003,
+      46.709425719927935,
+      131.9833985790001,
+      54.525458239835615
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:51c0b8e745e185ab36660b4c25ed4f254e1d5d013bd3b044e2d65dda24253060"
 }

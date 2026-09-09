@@ -3,7 +3,7 @@
   "regionId": "eco_425",
   "regionName": "Santa Lucia Montane Chaparral & Woodlands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.359954+00:00",
+  "generatedAt": "2026-09-09T06:27:41.652360+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -46,6 +46,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.5,
+        "events": [
+          {
+            "magnitude": 6.5,
+            "time": "2003-12-22T19:15:56.240Z",
+            "place": "10 km NE of San Simeon, California"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -611,9 +640,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3d929abdd53dcfeedd520189ddb47db75668445ab5f1af76d3d6d8d8bf8647ff"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_425",
+    "geometryFingerprint": "d0910ac290a7ca4a2f54f3601e4d6d372384e785c27fe227083259bf25dd83ac",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -121.96946755999993,
+      35.53253852590858,
+      -120.76777660399996,
+      36.63753214547954
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3d929abdd53dcfeedd520189ddb47db75668445ab5f1af76d3d6d8d8bf8647ff"
 }

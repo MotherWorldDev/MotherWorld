@@ -3,7 +3,7 @@
   "regionId": "eco_218",
   "regionName": "Andaman Islands rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.053235+00:00",
+  "generatedAt": "2026-09-09T06:27:44.033164+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 40.792437803327594,
@@ -35,6 +35,57 @@
         "version": "v1.0",
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2002-11-02T04:47:42.200Z",
+            "place": "111 km N of Bamboo Flat, India"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2004-12-26T07:38:27.000Z",
+            "place": "161 km NNE of Bamboo Flat, India"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2014-11-28T01:18:45.610Z",
+            "place": "90 km N of Bamboo Flat, India"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-01-29T05:44:13.890Z",
+            "place": "158 km N of Bamboo Flat, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2005-01-30T07:02:26.670Z",
+            "place": "162 km N of Bamboo Flat, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -83,9 +134,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:75832a166a4c6945260ec4ba8bd2a7cb1c98b195c9f94bc482f62a415e53ef78"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_218",
+    "geometryFingerprint": "01860197741f15750a1dd918578ac14ba4a79aa2d7cb44cc377833ec2144e5d0",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      92.22271765400005,
+      10.504589685627646,
+      93.09871655900014,
+      13.674534607622117
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:75832a166a4c6945260ec4ba8bd2a7cb1c98b195c9f94bc482f62a415e53ef78"
 }

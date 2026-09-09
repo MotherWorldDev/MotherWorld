@@ -3,7 +3,7 @@
   "regionId": "eco_51",
   "regionName": "Northern Acacia-Commiphora bushlands and thickets",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.880034+00:00",
+  "generatedAt": "2026-09-09T06:27:41.876533+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -184,6 +184,80 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 10,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.9,
+        "events": [
+          {
+            "magnitude": 5.9,
+            "time": "2007-07-17T14:10:42.460Z",
+            "place": "37 km W of Longido, Tanzania"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2007-08-20T02:56:48.010Z",
+            "place": "45 km W of Longido, Tanzania"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2007-07-15T20:42:11.520Z",
+            "place": "56 km NW of Monduli, Tanzania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-12-23T13:45:27.390Z",
+            "place": "55 km W of Longido, Tanzania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-07-17T18:27:51.390Z",
+            "place": "56 km W of Longido, Tanzania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-07-15T11:24:21.440Z",
+            "place": "46 km NNW of Monduli, Tanzania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-08-18T07:44:02.030Z",
+            "place": "55 km W of Longido, Tanzania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-07-26T18:54:37.190Z",
+            "place": "76 km W of Longido, Tanzania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-07-18T17:25:52.290Z",
+            "place": "67 km W of Longido, Tanzania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1995-12-08T23:40:49.490Z",
+            "place": "53 km NNW of Mlalo, Tanzania"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -502,9 +576,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9046381c2258162cf0af6c9e2d07569d3e5565741de97cf58ce74ef33e23b092"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_51",
+    "geometryFingerprint": "4806e3d8b9af4d0b63e904ee4bb39cdf2f3ebdf305cc42fc9158d76793ad3cec",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      33.15344305800004,
+      -5.126666661434423,
+      42.187938722000126,
+      5.906632660649636
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9046381c2258162cf0af6c9e2d07569d3e5565741de97cf58ce74ef33e23b092"
 }

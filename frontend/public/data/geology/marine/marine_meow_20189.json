@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20189",
   "regionName": "Tristan Gough",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.744883+00:00",
+  "generatedAt": "2026-09-09T06:27:38.992274+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -78,6 +78,56 @@
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 3597.0391997304177,
+        "medianDepthM": 3660.0,
+        "p10DepthM": 2980.0,
+        "p90DepthM": 4398.0,
+        "shallowestM": 38.0,
+        "deepestM": 5157.0,
+        "coveragePct": 99.97998015198036,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.049979289048299236,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 1.5840499349512136,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 8.78624116343979,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 89.57972961256068,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -103,6 +153,75 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 9,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "2026-02-10T13:46:27.453Z",
+            "place": "Tristan da Cunha region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2012-04-01T13:14:32.670Z",
+            "place": "Tristan da Cunha region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-11-01T08:27:14.560Z",
+            "place": "Tristan da Cunha region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-06-07T08:49:16.940Z",
+            "place": "Tristan da Cunha region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-11-14T00:51:33.210Z",
+            "place": "Tristan da Cunha region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-11-13T20:40:32.000Z",
+            "place": "Tristan da Cunha region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-01-19T08:59:28.000Z",
+            "place": "Tristan da Cunha region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-12-07T14:54:03.300Z",
+            "place": "Tristan da Cunha region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-11-09T14:24:24.000Z",
+            "place": "Tristan da Cunha region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -175,6 +294,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -183,6 +307,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d06e01872e6b4c41fbc2b3d801c8d574742356109ec1b349860ecfbb3453cc72"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20189",
+    "geometryFingerprint": "3ebef00d9df7339de98310e39e11b20d3c7ce098836f095035fd90cec0dbf5cd",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -16.011740258297717,
+      -44.45383008287183,
+      1.876828253603889,
+      -33.75692164879338
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d06e01872e6b4c41fbc2b3d801c8d574742356109ec1b349860ecfbb3453cc72"
 }

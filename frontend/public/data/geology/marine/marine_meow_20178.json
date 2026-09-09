@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20178",
   "regionName": "Araucanian",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.683368+00:00",
+  "generatedAt": "2026-09-09T06:27:38.953260+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 131.12478637695312,
           "coveragePct": 61.08001396133205
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 3226.1821375488557,
+        "medianDepthM": 3993.0,
+        "p10DepthM": 220.0,
+        "p90DepthM": 4576.0,
+        "shallowestM": 2.0,
+        "deepestM": 5578.0,
+        "coveragePct": 99.96731040909813,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 9.397546211687075,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.069448215212359,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 13.353421291434099,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 70.17958428166646,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "tectonics": {
@@ -85,6 +135,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 448,
+        "m6Plus": 39,
+        "m7Plus": 2,
+        "maxMagnitude": 8.8,
+        "events": [
+          {
+            "magnitude": 8.8,
+            "time": "2010-02-27T06:34:11.530Z",
+            "place": "2010 Maule, Chile Earthquake"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2010-02-27T08:01:23.010Z",
+            "place": "124 km W of Lebu, Chile"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2011-02-11T20:05:30.910Z",
+            "place": "21 km N of Tomé, Chile"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2019-08-01T18:28:07.270Z",
+            "place": "96 km SW of San Antonio, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2020-12-27T21:39:14.770Z",
+            "place": "146 km WNW of Corral, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2019-09-29T15:57:53.236Z",
+            "place": "70 km WSW of Constitución, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2011-02-14T03:40:09.920Z",
+            "place": "38 km W of Constitución, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2010-03-16T02:21:57.940Z",
+            "place": "52 km NNW of Tomé, Chile"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1998-04-01T22:42:56.900Z",
+            "place": "131 km WSW of Corral, Chile"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2010-03-05T11:47:06.820Z",
+            "place": "23 km WNW of Talcahuano, Chile"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2000-12-20T11:23:54.100Z",
+            "place": "134 km WSW of Carahue, Chile"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2021-09-21T13:14:32.025Z",
+            "place": "73 km W of Talcahuano, Chile"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2015-06-20T02:10:07.100Z",
+            "place": "74 km WNW of Talcahuano, Chile"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1999-08-22T09:35:39.470Z",
+            "place": "132 km WSW of Corral, Chile"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2023-03-30T17:33:08.544Z",
+            "place": "105 km WSW of Constitución, Chile"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2011-06-01T12:55:22.380Z",
+            "place": "4 km NW of Lebu, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2022-11-13T02:24:57.830Z",
+            "place": "Near the coast of Bio-Bio, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2015-03-18T18:27:29.500Z",
+            "place": "75 km NW of Tomé, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2013-10-30T02:51:47.000Z",
+            "place": "89 km W of Constitución, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2010-09-09T07:28:01.720Z",
+            "place": "23 km WNW of Lota, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2010-03-15T11:08:28.960Z",
+            "place": "76 km NW of Quirihue, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2010-02-27T19:00:06.860Z",
+            "place": "25 km NW of Cartagena, Chile"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2010-02-27T06:52:34.020Z",
+            "place": "54 km NNW of Constitución, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2020-11-22T00:54:56.794Z",
+            "place": "100 km NW of Constitución, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2012-01-23T16:04:52.980Z",
+            "place": "24 km NNW of Tomé, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2010-03-05T09:19:36.380Z",
+            "place": "14 km NW of Talcahuano, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2010-03-03T17:44:25.040Z",
+            "place": "25 km WNW of Talcahuano, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2010-02-27T17:24:30.590Z",
+            "place": "36 km NW of Tomé, Chile"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2010-02-27T08:25:29.620Z",
+            "place": "64 km N of Constitución, Chile"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2016-11-08T04:55:45.900Z",
+            "place": "42 km WNW of Talcahuano, Chile"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -152,6 +376,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -160,6 +389,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:08bac4d6f6f67dfaadc19f233a35f155792882bffb019a8b6d5c536f0d43201e"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20178",
+    "geometryFingerprint": "ffb4ab59d107872a90ee32fe224567e6ce6a8a7ffece7c03b4c109c3ff25fc5c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -77.32630075983197,
+      -41.55410599784505,
+      -71.62422857550531,
+      -32.948473228704756
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:08bac4d6f6f67dfaadc19f233a35f155792882bffb019a8b6d5c536f0d43201e"
 }

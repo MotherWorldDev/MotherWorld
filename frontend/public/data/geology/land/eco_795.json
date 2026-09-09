@@ -3,7 +3,7 @@
   "regionId": "eco_795",
   "regionName": "Italian sclerophyllous and semi-deciduous forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.337752+00:00",
+  "generatedAt": "2026-09-09T06:27:42.734163+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,145 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 23,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.1,
+        "events": [
+          {
+            "magnitude": 6.1,
+            "time": "2016-10-26T19:18:08.430Z",
+            "place": "2 km NNW of Visso, Italy"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2002-10-31T10:32:58.770Z",
+            "place": "4 km WSW of Larino, Italy"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2002-11-01T15:09:00.810Z",
+            "place": "2 km ESE of Casacalenda, Italy"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2017-01-18T10:14:10.980Z",
+            "place": "5 km ESE of Cittareale, Italy"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1997-09-26T00:33:12.250Z",
+            "place": "6 km WSW of Serravalle di Chienti, Italy"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2017-01-18T10:25:25.490Z",
+            "place": "4 km SE of Cittareale, Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1997-10-14T15:23:10.210Z",
+            "place": "8 km NNW of Sellano, Italy"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1997-10-06T23:24:52.580Z",
+            "place": "6 km E of Valtopina, Italy"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2008-12-23T15:24:22.470Z",
+            "place": "4 km S of Ciano d'Enza, Italy"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-03-26T16:26:11.510Z",
+            "place": "1 km E of Esanatoglia, Italy"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-08-16T18:19:05.400Z",
+            "place": "2 km SE of Palata, Italy"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2017-01-18T09:25:41.610Z",
+            "place": "4 km SW of Accumoli, Italy"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2003-09-14T21:42:51.860Z",
+            "place": "3 km E of Monterenzio, Italy"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-10-12T11:08:36.340Z",
+            "place": "2 km NW of Sellano, Italy"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-10-03T08:55:21.580Z",
+            "place": "3 km ENE of Valtopina, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2017-01-18T13:33:38.000Z",
+            "place": "3 km N of Montereale, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-06-21T10:33:57.000Z",
+            "place": "6 km WSW of Minucciano, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-04-03T07:26:36.630Z",
+            "place": "8 km E of Valfabbrica, Italy"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1995-09-30T10:14:32.580Z",
+            "place": "3 km S of Ischitella, Italy"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-09-18T03:10:14.744Z",
+            "place": "7 km SE of Marradi, Italy"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-12-29T17:08:43.000Z",
+            "place": "5 km E of Castello del Matese, Italy"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-12-23T21:58:25.000Z",
+            "place": "5 km NE of Vetto, Italy"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-04-11T09:26:58.250Z",
+            "place": "1 km SSW of Carezzano Maggiore, Italy"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -807,9 +946,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:fd293b627f315b5ce941ad99f710cfa1a098f61dc1308ef10eb8f205124fef4e"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_795",
+    "geometryFingerprint": "90f26c91ee6b9dc49464e647da861d6cf465d628682a1ac6011372106cdb8050",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      6.891795509000133,
+      40.07772359819897,
+      16.848131581000068,
+      45.112742900361525
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:fd293b627f315b5ce941ad99f710cfa1a098f61dc1308ef10eb8f205124fef4e"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_239",
   "regionName": "Luang Prabang montane rain forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.585147+00:00",
+  "generatedAt": "2026-09-09T06:27:41.256801+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -124,6 +124,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.2,
+        "events": [
+          {
+            "magnitude": 6.2,
+            "time": "2019-11-20T23:50:43.955Z",
+            "place": "43 km WNW of Sainyabuli, Laos"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2019-11-20T21:03:57.835Z",
+            "place": "44 km ENE of Chiang Klang, Thailand"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -646,9 +680,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4049171116ff4878b1d83233ce6568f65d08df2fd1b7cafbe838f5108135481b"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_239",
+    "geometryFingerprint": "6a76cfb9562164c9589ec69fd947c5988ea97821062fecaaf314b554e152efc9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      100.55770866700004,
+      15.977131924621586,
+      104.44575453800007,
+      20.148596092812454
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4049171116ff4878b1d83233ce6568f65d08df2fd1b7cafbe838f5108135481b"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20005",
   "regionName": "Northern Grand Banks - Southern Labrador",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.757443+00:00",
+  "generatedAt": "2026-09-09T06:27:38.438753+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 14.947559356689453,
           "p90MmYr": 15.546669960021973,
           "coveragePct": 6.88885680918748
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 581.1260518114435,
+        "medianDepthM": 265.0,
+        "p10DepthM": 106.0,
+        "p90DepthM": 2279.0,
+        "shallowestM": -0.0,
+        "deepestM": 3307.0,
+        "coveragePct": 99.68221633229695,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 33.357799223398295,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 51.774936970638386,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 12.23505815024513,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 2.6322056557181837,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -191,6 +241,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "ihfc_heat_flow",

@@ -3,7 +3,7 @@
   "regionId": "eco_312",
   "regionName": "Rann of Kutch seasonal salt marsh",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.941559+00:00",
+  "generatedAt": "2026-09-09T06:27:41.446708+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -28,6 +28,65 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 1,
+        "m7Plus": 1,
+        "maxMagnitude": 7.7,
+        "events": [
+          {
+            "magnitude": 7.7,
+            "time": "2001-01-26T03:16:40.500Z",
+            "place": "17 km NW of Bhach?u, India"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2006-03-07T18:20:46.110Z",
+            "place": "34 km NE of R?par, India"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2001-02-19T08:24:20.160Z",
+            "place": "40 km NW of Bhach?u, India"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2001-02-03T03:04:32.890Z",
+            "place": "23 km WNW of R?par, India"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2001-02-08T16:54:41.020Z",
+            "place": "24 km WNW of R?par, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-06-19T20:14:05.720Z",
+            "place": "39 km NNW of Bhach?u, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2003-08-05T11:08:01.910Z",
+            "place": "25 km WNW of R?par, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -92,6 +151,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:eec78033497f4c98be32ff3ca8d7502cac15ecb7227467fad4b7974f32c6c683"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_312",
+    "geometryFingerprint": "0d338cdd2ca48b59e2d210376ed0ecf32f380e9331622de6e3a356084729d6f9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      67.40820358600007,
+      22.589048224906215,
+      71.79097754700005,
+      24.708132825285766
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:eec78033497f4c98be32ff3ca8d7502cac15ecb7227467fad4b7974f32c6c683"
 }

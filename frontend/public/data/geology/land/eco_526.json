@@ -3,7 +3,7 @@
   "regionId": "eco_526",
   "regionName": "Cauca Valley dry forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.952214+00:00",
+  "generatedAt": "2026-09-09T06:27:41.917708+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -58,6 +58,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "2024-01-19T11:26:03.598Z",
+            "place": "7 km E of Cartago, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-11-02T12:18:50.540Z",
+            "place": "5 km ESE of Toro, Colombia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -285,9 +319,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:0c993cdf0caea60efb74f9306e60987d79996413d9c6279ec38b45029ebc9722"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_526",
+    "geometryFingerprint": "622dc702401cd79a8fa487140ab2777b280c4a43d7e3da5b98ece4b78404247d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -76.65718062299992,
+      3.028033306649012,
+      -75.3591005899999,
+      7.254163406354891
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:0c993cdf0caea60efb74f9306e60987d79996413d9c6279ec38b45029ebc9722"
 }

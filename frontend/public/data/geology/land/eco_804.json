@@ -3,7 +3,7 @@
   "regionId": "eco_804",
   "regionName": "Southern Anatolian montane conifer and deciduous forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.420373+00:00",
+  "generatedAt": "2026-09-09T06:27:42.783569+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,155 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 25,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2023-02-06T12:02:11.275Z",
+            "place": "4 km NNE of Göksun, Turkey"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1997-01-22T17:57:18.700Z",
+            "place": "11 km WNW of Toygarl?, Turkey"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-07-25T05:44:51.283Z",
+            "place": "18 km NE of Kozan, Turkey"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2003-05-03T11:22:40.630Z",
+            "place": "13 km NE of Manavgat, Turkey"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-03-23T09:19:53.459Z",
+            "place": "6 km W of Göksun, Turkey"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-02-07T18:09:59.860Z",
+            "place": "Central Turkey"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2007-10-29T09:23:14.000Z",
+            "place": "27 km WSW of Gölhisar, Turkey"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-01-22T18:27:29.660Z",
+            "place": "9 km NW of Toygarl?, Turkey"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-02-06T18:03:53.807Z",
+            "place": "6 km SW of G?ksun, Turkey"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2017-11-24T21:49:15.170Z",
+            "place": "18 km E of Ula, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-02-06T11:05:35.084Z",
+            "place": "23 km SW of Af?in, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2023-02-06T01:58:23.118Z",
+            "place": "12 km SSE of Hasanbeyli, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-08-19T15:22:14.240Z",
+            "place": "21 km WNW of Bahçe, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-11-22T20:22:53.540Z",
+            "place": "20 km ESE of Ula, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2014-08-24T19:43:30.750Z",
+            "place": "9 km ENE of A?lasun, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-11-16T09:08:23.000Z",
+            "place": "25 km W of Alt?nyayla, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-04-10T22:00:34.240Z",
+            "place": "15 km SSW of Gelendost, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1997-01-22T18:24:50.200Z",
+            "place": "13 km WNW of Toygarl?, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-03-03T02:53:43.065Z",
+            "place": "26 km SE of Göksun, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-02-18T19:31:31.742Z",
+            "place": "10 km ENE of Göksun, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-02-08T07:48:31.978Z",
+            "place": "1 km S of Göksun, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-02-07T15:48:54.123Z",
+            "place": "3 km SSW of Göksun, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-02-06T16:43:28.541Z",
+            "place": "2 km SSE of Göksun, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-04-13T16:22:16.250Z",
+            "place": "24 km E of Ula, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-07-22T09:26:02.990Z",
+            "place": "4 km SE of And?r?n, Turkey"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -496,9 +645,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:cb436d28209db9a91f95eaf713fa5fcabf9eab806e59e418caa7c3ebeee604ab"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_804",
+    "geometryFingerprint": "3a5f364c994f4b10d992aefc04f9161f8b04594c3ea29813be307b2da810c680",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      28.529365596000098,
+      33.10279125665969,
+      37.2765045110001,
+      38.54017225544653
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:cb436d28209db9a91f95eaf713fa5fcabf9eab806e59e418caa7c3ebeee604ab"
 }

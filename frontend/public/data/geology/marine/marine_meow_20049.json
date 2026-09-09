@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20049",
   "regionName": "Sea of Japan/East Sea",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.932845+00:00",
+  "generatedAt": "2026-09-09T06:27:38.526832+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 1676.3205588560973,
+        "medianDepthM": 1569.0,
+        "p10DepthM": 93.0,
+        "p90DepthM": 3482.0,
+        "shallowestM": -0.0,
+        "deepestM": 3812.0,
+        "coveragePct": 99.63342567030864,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 20.03596256659727,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 17.700964226295696,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 40.075037959619664,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 22.188035247487363,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -271,6 +321,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 138,
+        "m6Plus": 24,
+        "m7Plus": 2,
+        "maxMagnitude": 7.7,
+        "events": [
+          {
+            "magnitude": 7.7,
+            "time": "1993-07-12T13:17:11.960Z",
+            "place": "107 km W of Iwanai, Japan"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "1994-07-21T18:36:31.740Z",
+            "place": "46 km SSW of Vrangel’, Russia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2007-07-16T14:17:37.340Z",
+            "place": "133 km WNW of Mikuni, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2003-07-27T06:25:31.950Z",
+            "place": "97 km NE of Svetlaya, Russia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2007-03-25T00:41:57.820Z",
+            "place": "46 km NW of Nanao, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2007-07-16T01:13:22.370Z",
+            "place": "20 km NNW of Kashiwazaki, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1993-02-07T13:27:42.010Z",
+            "place": "69 km NNE of Nanao, Japan"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1993-01-19T14:39:26.170Z",
+            "place": "Sea of Japan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1996-12-22T14:53:27.620Z",
+            "place": "131 km W of Iwanai, Japan"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1993-08-07T19:42:41.910Z",
+            "place": "69 km WNW of Kamiiso, Japan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2020-11-30T22:54:34.601Z",
+            "place": "88 km SSE of Sovetskaya Gavan’, Russia"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2019-06-18T13:22:19.010Z",
+            "place": "31 km WSW of Tsuruoka, Japan"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2009-12-24T00:23:31.700Z",
+            "place": "98 km SE of Preobrazheniye, Russia"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1993-07-12T14:45:05.570Z",
+            "place": "109 km W of Iwanai, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2023-05-05T05:42:04.365Z",
+            "place": "49 km NE of Anamizu, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2016-01-11T17:08:03.920Z",
+            "place": "74 km NW of Rumoi, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2011-03-11T19:46:50.880Z",
+            "place": "88 km WNW of Noshiro, Japan"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2007-08-02T02:37:42.380Z",
+            "place": "20 km WSW of Yablochnyy, Russia"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1995-03-31T14:01:40.080Z",
+            "place": "215 km NW of Hakui, Japan"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2024-11-26T13:47:03.411Z",
+            "place": "38 km WNW of Hakui, Japan"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2021-09-29T08:37:05.619Z",
+            "place": "243 km NNW of Nanao, Japan"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2008-06-29T20:53:04.890Z",
+            "place": "66 km E of Terney, Russia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2000-02-13T02:57:08.720Z",
+            "place": "15 km E of Slavyanka, Russia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "1993-07-12T16:01:07.170Z",
+            "place": "101 km W of Iwanai, Japan"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2024-01-09T08:59:10.141Z",
+            "place": "53 km WSW of Sado, Japan"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2022-07-02T01:59:45.250Z",
+            "place": "58 km SSE of Shebunino, Russia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2021-01-12T02:39:43.421Z",
+            "place": "84 km NW of Yoichi, Japan"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2017-07-12T19:48:07.810Z",
+            "place": "179 km ESE of Hoemul-li, North Korea"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2006-09-16T02:22:50.620Z",
+            "place": "226 km SE of Preobrazheniye, Russia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2005-10-23T10:08:14.740Z",
+            "place": "191 km NW of Mikuni, Japan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -491,6 +715,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -501,9 +730,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:ec4dc55b417dc193f408075169275de85a7e12fede580ffc009dc392a5d060f4"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20049",
+    "geometryFingerprint": "7c864fdc369a6972ae30ec5b84be61e42feda415bf116c55a9e77186b36272b7",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      127.3769990035988,
+      33.881709783545354,
+      142.26351930103365,
+      53.283147998488474
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:ec4dc55b417dc193f408075169275de85a7e12fede580ffc009dc392a5d060f4"
 }

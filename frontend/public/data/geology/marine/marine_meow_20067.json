@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20067",
   "regionName": "Southwestern Caribbean",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.015175+00:00",
+  "generatedAt": "2026-09-09T06:27:38.571397+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2017.2268448863836,
+        "medianDepthM": 2093.0,
+        "p10DepthM": 26.0,
+        "p90DepthM": 3895.0,
+        "shallowestM": 1.0,
+        "deepestM": 4176.0,
+        "coveragePct": 99.89466634510539,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 18.903392446460852,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 10.760493525927329,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 35.90488727280393,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 34.431226754807874,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -157,6 +207,180 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 31,
+        "m6Plus": 4,
+        "m7Plus": 0,
+        "maxMagnitude": 6.5,
+        "events": [
+          {
+            "magnitude": 6.5,
+            "time": "2023-05-25T03:05:32.956Z",
+            "place": "45 km NE of Puerto Obaldía, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2009-07-04T06:49:35.510Z",
+            "place": "4 km NNW of El Porvenir, Panama"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2001-11-09T00:47:55.020Z",
+            "place": "33 km NE of Changuinola, Panama"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2018-11-25T03:40:50.810Z",
+            "place": "36 km SE of Mountain, Colombia"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2002-11-21T02:53:14.970Z",
+            "place": "60 km WSW of San Andrés, Colombia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2018-11-25T20:56:36.490Z",
+            "place": "41 km ESE of Mountain, Colombia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1998-06-23T01:36:31.800Z",
+            "place": "92 km W of Cartagena, Colombia"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "1995-02-11T22:45:33.030Z",
+            "place": "14 km E of San Andrés, Colombia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2018-08-18T19:39:07.170Z",
+            "place": "23 km NE of Puerto Obaldía, Panama"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-08-29T04:59:23.377Z",
+            "place": "56 km NNE of Narganá, Panama"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2000-08-13T07:04:06.950Z",
+            "place": "18 km SE of Corn Island, Nicaragua"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-03-11T08:32:13.466Z",
+            "place": "Western Caribbean Sea"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-10-01T20:44:06.720Z",
+            "place": "25 km NE of Sixaola, Costa Rica"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-09-29T20:23:14.390Z",
+            "place": "40 km NE of Cusuna, Honduras"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2014-06-16T13:26:46.720Z",
+            "place": "103 km SSE of San Andrés, Colombia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2009-07-06T04:10:38.300Z",
+            "place": "4 km NW of El Porvenir, Panama"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1997-06-23T01:03:45.560Z",
+            "place": "52 km NNE of Pocora, Costa Rica"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-07-30T02:27:04.683Z",
+            "place": "near the north coast of Colombia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-11-20T17:22:28.600Z",
+            "place": "64 km NNE of Matina, Costa Rica"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-10-03T14:06:19.990Z",
+            "place": "29 km NNE of Ailigandí, Panama"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2000-08-13T06:28:02.710Z",
+            "place": "36 km ESE of Corn Island, Nicaragua"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-06-07T02:08:31.447Z",
+            "place": "33 km SE of Mountain, Colombia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-05-01T06:13:41.669Z",
+            "place": "17 km NNE of Santa Isabel, Panama"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2014-11-28T04:36:24.670Z",
+            "place": "11 km NW of Puerto Obaldía, Panama"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-02-28T17:11:55.916Z",
+            "place": "33 km N of Kusapín, Panama"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-05-25T03:14:56.885Z",
+            "place": "40 km ENE of Puerto Obaldía, Panama"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-03-03T07:37:00.697Z",
+            "place": "61 km N of Narganá, Panama"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-11-25T22:09:53.650Z",
+            "place": "38 km SSE of Mountain, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-10-29T21:31:16.790Z",
+            "place": "20 km NNE of Acandí, Colombia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-06-10T15:03:40.260Z",
+            "place": "29 km SE of Limón, Costa Rica"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -268,6 +492,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -278,9 +507,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9e185e26beb2fff1f9d1655e910f36bd43e5365a54bf1bbea6e4689f3b9e0e5b"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20067",
+    "geometryFingerprint": "66aec2daaa5f8ba47387e6134f91b3c78841319c229a4b02d31c30d878dc95c0",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -85.67745306553054,
+      7.919509678815718,
+      -73.26170941975992,
+      17.669751767508743
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9e185e26beb2fff1f9d1655e910f36bd43e5365a54bf1bbea6e4689f3b9e0e5b"
 }

@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20232",
   "regionName": "Auckland Island",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.060095+00:00",
+  "generatedAt": "2026-09-09T06:27:39.126895+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2266.835651332848,
+        "medianDepthM": 2084.0,
+        "p10DepthM": 344.0,
+        "p90DepthM": 4287.0,
+        "shallowestM": 2.0,
+        "deepestM": 5858.0,
+        "coveragePct": 99.90606923169243,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 8.744475682693125,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 19.719922408265038,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 31.476234090906836,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 40.059367818135,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -176,6 +226,175 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 29,
+        "m6Plus": 10,
+        "m7Plus": 1,
+        "maxMagnitude": 7.4,
+        "events": [
+          {
+            "magnitude": 7.4,
+            "time": "2007-09-30T05:23:34.070Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1998-03-20T21:08:08.530Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2017-07-11T07:00:01.190Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2007-09-30T09:47:51.970Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2023-05-31T02:21:23.997Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2004-07-01T04:39:37.510Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2017-09-20T01:43:25.980Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2008-04-26T23:34:49.390Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "1994-01-03T13:24:13.840Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2026-06-10T00:44:20.778Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2011-09-09T19:26:01.040Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2010-01-06T09:48:46.450Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2005-10-17T07:12:43.110Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2007-10-11T16:25:05.850Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2000-03-07T05:48:19.170Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2002-10-17T01:53:03.470Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-03-04T15:46:12.590Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2004-08-05T07:00:45.610Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-02-02T04:24:30.416Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-12-05T18:07:11.790Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2006-12-28T15:26:59.770Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-03-04T12:32:24.510Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-03-14T10:50:49.990Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-12-27T06:59:57.560Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-08-05T06:44:22.772Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-09-30T10:18:27.810Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-01-14T06:48:58.790Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-10-01T16:19:57.760Z",
+            "place": "Auckland Islands, New Zealand region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-10-01T13:35:26.690Z",
+            "place": "Auckland Islands, New Zealand region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     }
   },
@@ -191,9 +410,38 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b2c1b007631712db44405fdca679dfb2cd208851f21a4dcbfe8eeff8019d55ea"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20232",
+    "geometryFingerprint": "e4dffe1012ab70dadff6a17a6eb8f63b4a3733f38f228fb012cfc38c4bef97da",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      162.56100407714982,
+      -54.29329322092295,
+      168.73612628315004,
+      -48.736602291043035
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b2c1b007631712db44405fdca679dfb2cd208851f21a4dcbfe8eeff8019d55ea"
 }

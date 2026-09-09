@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20183",
   "regionName": "Uruguay-Buenos Aires Shelf",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.710182+00:00",
+  "generatedAt": "2026-09-09T06:27:38.973496+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 45.688880920410156,
           "coveragePct": 7.473468566118499
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 618.9153515590815,
+        "medianDepthM": 85.0,
+        "p10DepthM": 23.0,
+        "p90DepthM": 2475.0,
+        "shallowestM": -0.0,
+        "deepestM": 3936.0,
+        "coveragePct": 99.76703035310746,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 68.89864317363771,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.901192915734219,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 16.514907486414447,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 6.685256424213617,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "minerals": {
@@ -123,6 +173,11 @@
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
       "version": "2020 / Zenodo v1.1"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
     },
     {
       "id": "usgs_mrds",

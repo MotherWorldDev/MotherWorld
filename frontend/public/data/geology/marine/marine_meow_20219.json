@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20219",
   "regionName": "South Sandwich Islands",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.967830+00:00",
+  "generatedAt": "2026-09-09T06:27:39.082420+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 4032.014947490702,
+        "medianDepthM": 3954.0,
+        "p10DepthM": 2139.0,
+        "p90DepthM": 6169.0,
+        "shallowestM": 38.0,
+        "deepestM": 8203.0,
+        "coveragePct": 99.93543120757138,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 0.08052169342879406,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 1.6968169054240532,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 23.05346054515438,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 63.868031550839056,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 11.30116930515372,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -352,6 +402,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1627,
+        "m6Plus": 88,
+        "m7Plus": 6,
+        "maxMagnitude": 8.1,
+        "events": [
+          {
+            "magnitude": 8.1,
+            "time": "2021-08-12T18:35:17.231Z",
+            "place": "2021 South Sandwich Islands Earthquake"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "2021-08-12T18:32:52.464Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "2013-07-15T14:03:39.880Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2016-05-28T09:46:59.780Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2021-08-22T21:33:18.983Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 7.1,
+            "time": "2018-12-11T02:26:29.420Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2021-08-16T11:10:36.583Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2014-06-29T07:52:55.170Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2004-09-06T12:42:59.390Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2008-02-23T15:57:20.490Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2000-11-07T00:18:04.910Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2021-08-12T18:36:59.727Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2009-04-16T14:57:06.200Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1993-01-10T14:39:00.390Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2021-08-22T00:45:07.917Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2019-08-27T23:55:19.187Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2008-02-10T12:22:02.650Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1994-07-25T22:00:22.980Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2019-04-09T17:53:58.423Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2017-05-10T23:23:36.830Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2011-03-06T14:32:36.080Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "1993-03-10T12:39:23.900Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2026-07-11T10:26:42.630Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2020-07-26T00:53:59.061Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2019-04-05T16:14:16.716Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2018-11-15T20:02:22.920Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2011-09-03T04:48:57.310Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2004-10-26T22:53:07.860Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "1993-05-02T11:26:54.870Z",
+            "place": "South Sandwich Islands region"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2022-10-25T00:13:01.678Z",
+            "place": "South Sandwich Islands region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -423,6 +647,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -436,6 +665,30 @@
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
       "version": "3.4 (2020)"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:40673608f09e77dd3e1ca0e1d9be5a7b037fe510eec57d3c90f381ec3a1a5538"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20219",
+    "geometryFingerprint": "beab42dae43d2d0f1f94c43526f02800bd02ef1f68c2dc277072cd1358088428",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -30.93828786525876,
+      -62.841020590210036,
+      -22.91463172841111,
+      -52.974831886117
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:40673608f09e77dd3e1ca0e1d9be5a7b037fe510eec57d3c90f381ec3a1a5538"
 }

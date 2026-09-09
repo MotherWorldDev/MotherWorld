@@ -3,7 +3,7 @@
   "regionId": "eco_191",
   "regionName": "Eastern Australia mulga shrublands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.318413+00:00",
+  "generatedAt": "2026-09-09T06:27:41.096671+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "1996-08-13T04:30:11.560Z",
+            "place": "229 km W of Bourke, Australia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -79,6 +108,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:32751b3b4a3aa6ca68bbfeb103d0e31217fe262153b644a68f218081466a5972"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_191",
+    "geometryFingerprint": "19fd1a7270677ae747eb737a83064cb54489aecda6a504bb74819dd046d36178",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      142.15846934900011,
+      -31.85247450203704,
+      148.81423211900014,
+      -24.33192857719987
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:32751b3b4a3aa6ca68bbfeb103d0e31217fe262153b644a68f218081466a5972"
 }

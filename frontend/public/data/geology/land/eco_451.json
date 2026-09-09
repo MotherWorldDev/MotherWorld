@@ -3,7 +3,7 @@
   "regionId": "eco_451",
   "regionName": "Central American montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.537873+00:00",
+  "generatedAt": "2026-09-09T06:27:41.730184+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -76,6 +76,65 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2004-05-03T05:12:40.100Z",
+            "place": "4 km SSW of Santa María de Jesús, Guatemala"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2001-09-11T09:13:26.100Z",
+            "place": "2 km WNW of San Carlos Sija, Guatemala"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1994-05-01T20:23:13.740Z",
+            "place": "2 km NNW of Nahualá, Guatemala"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2012-12-31T01:15:18.770Z",
+            "place": "5 km SE of Unión Juárez, Mexico"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-01-22T14:03:13.800Z",
+            "place": "2 km N of Ixchiguán, Guatemala"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-03-29T01:27:09.330Z",
+            "place": "23 km NW of Yamaranguila, Honduras"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-03-18T17:35:31.067Z",
+            "place": "12 km N of Los Amates, Guatemala"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -491,9 +550,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:9dbf01bce47acf9aeb24150b039f1d354b629c81ba8f44f6de206af561bada9b"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_451",
+    "geometryFingerprint": "cdb80c907c1b13ca7aeee404311757395a79bec29832f5d4949cc3e290adb011",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -92.13545952799988,
+      12.96294204101056,
+      -85.00112149599988,
+      15.671165468731695
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:9dbf01bce47acf9aeb24150b039f1d354b629c81ba8f44f6de206af561bada9b"
 }

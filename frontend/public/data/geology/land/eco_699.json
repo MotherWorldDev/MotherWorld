@@ -3,7 +3,7 @@
   "regionId": "eco_699",
   "regionName": "Honshu alpine conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.822240+00:00",
+  "generatedAt": "2026-09-09T06:27:42.402744+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -154,6 +154,85 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 11,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.2,
+        "events": [
+          {
+            "magnitude": 6.2,
+            "time": "2014-11-22T13:08:18.420Z",
+            "place": "6 km SSE of Hakuba, Japan"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2026-03-09T15:45:43.620Z",
+            "place": "19 km NE of Otobe, Japan"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2011-03-11T06:41:01.450Z",
+            "place": "31 km N of T?no, Japan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2008-06-14T00:20:11.950Z",
+            "place": "35 km SSE of Yuzawa, Japan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2020-04-23T04:44:23.106Z",
+            "place": "18 km WNW of Shiojiri, Japan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2014-09-03T07:24:21.920Z",
+            "place": "20 km NW of Nikk?, Japan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-07-24T02:27:53.960Z",
+            "place": "33 km ESE of Morioka, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-05-29T10:05:17.538Z",
+            "place": "15 km WSW of Toyoshina, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-05-12T01:29:29.810Z",
+            "place": "7 km SSE of Hakuba, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-12-05T15:13:49.710Z",
+            "place": "7 km NE of Hotaka, Japan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-06-16T14:14:38.410Z",
+            "place": "26 km WNW of Ichinoseki, Japan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -456,9 +535,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:e73ba660bd09f0f1445b8434dcf49d76f4f83d880761c36b712e14ee00656c79"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_699",
+    "geometryFingerprint": "1773c482d9fb0b1a381b37635f6765af4ba2a398223dd8870749f6c1eb45cc14",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      136.76679968400003,
+      35.2839336247798,
+      141.61238059600007,
+      42.67297959237981
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:e73ba660bd09f0f1445b8434dcf49d76f4f83d880761c36b712e14ee00656c79"
 }

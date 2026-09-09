@@ -3,7 +3,7 @@
   "regionId": "eco_296",
   "regionName": "Narmada Valley dry deciduous forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.074792+00:00",
+  "generatedAt": "2026-09-09T06:27:44.379958+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 99.99999999999997,
@@ -114,6 +114,42 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.0,
+        "events": [
+          {
+            "magnitude": 5.0,
+            "time": "2012-10-18T02:33:27.970Z",
+            "place": "12 km NW of Jaisinghnagar, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-09-16T21:47:14.540Z",
+            "place": "7 km NNE of P?tan, India"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -335,9 +371,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:0beb9acf9c318f666dc1f1f865873606bdb74fc03bcdb1c4049a7b190df4e18c"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_296",
+    "geometryFingerprint": "e447e928b7f1659f02c879cfd667728360014aa3ca7f0af848e8d54d4ef87d42",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      73.54802662500015,
+      15.812566330679875,
+      82.95850365799997,
+      25.28574921943215
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:0beb9acf9c318f666dc1f1f865873606bdb74fc03bcdb1c4049a7b190df4e18c"
 }

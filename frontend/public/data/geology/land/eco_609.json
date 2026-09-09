@@ -3,7 +3,7 @@
   "regionId": "eco_609",
   "regionName": "St. Peter and St. Paul Rocks",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.159201+00:00",
+  "generatedAt": "2026-09-09T06:27:45.763501+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 0.0,
@@ -13,8 +13,8 @@
         {
           "code": "nd",
           "label": "No data",
-          "areaKm2": 2.2708508396229523,
-          "percentOfRegion": 100.0
+          "areaKm2": 0.04454834803389421,
+          "percentOfRegion": 100.00000000000003
         }
       ],
       "source": {
@@ -30,7 +30,32 @@
     {
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
-      "version": "v1.0"
+      "version": "v1.0",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:73f753b1ce6afe39581ebd977b64fc576e37233e5b106aa366f64ce9e174ae58"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_609",
+    "geometryFingerprint": "561ff227ca85078ecfb08ae7e8578a73c76a501d4918c98d9b902976e4f350dd",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -29.346555555555558,
+      0.9155833333333333,
+      -29.34436111111111,
+      0.9183055555555556
+    ],
+    "geometrySource": "maintained_query_override",
+    "overrideApplied": true,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": {
+      "regionId": "eco_609",
+      "registryGeometryFingerprint": "561ff227ca85078ecfb08ae7e8578a73c76a501d4918c98d9b902976e4f350dd",
+      "source": "brazil_official_island_baselines_2015",
+      "sourceUrl": "https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/decreto/d8400.htm",
+      "notes": "Records use the official island-group perimeter, including small waters between islets. The older map outline has a location error."
+    }
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:73f753b1ce6afe39581ebd977b64fc576e37233e5b106aa366f64ce9e174ae58"
 }

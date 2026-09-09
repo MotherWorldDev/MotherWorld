@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20047",
   "regionName": "Oyashio Current",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.916961+00:00",
+  "generatedAt": "2026-09-09T06:27:38.516702+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3523.112788763183,
+        "medianDepthM": 3337.0,
+        "p10DepthM": 486.0,
+        "p90DepthM": 6340.0,
+        "shallowestM": -0.0,
+        "deepestM": 9623.0,
+        "coveragePct": 99.87223899639244,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 5.5343469031454395,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 13.28098446033577,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 22.163792785892156,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 46.565145689787926,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 12.455730160838707,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -279,6 +329,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1723,
+        "m6Plus": 151,
+        "m7Plus": 13,
+        "maxMagnitude": 8.3,
+        "events": [
+          {
+            "magnitude": 8.3,
+            "time": "2006-11-15T11:14:13.570Z",
+            "place": "2006 Kuril Islands Earthquake"
+          },
+          {
+            "magnitude": 8.3,
+            "time": "1994-10-04T13:22:55.840Z",
+            "place": "48 km E of Shikotan, Russia"
+          },
+          {
+            "magnitude": 8.16,
+            "time": "2003-09-25T19:50:06.360Z",
+            "place": "2003 Tokachi-Oki Earthquake"
+          },
+          {
+            "magnitude": 8.1,
+            "time": "2007-01-13T04:23:21.160Z",
+            "place": "2007 Kuril Islands Earthquake"
+          },
+          {
+            "magnitude": 7.9,
+            "time": "1995-12-03T18:01:08.990Z",
+            "place": "128 km ESE of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 7.5,
+            "time": "2020-03-25T02:49:21.160Z",
+            "place": "221 km SSE of Severo-Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2009-01-15T17:49:39.070Z",
+            "place": "east of the Kuril Islands"
+          },
+          {
+            "magnitude": 7.4,
+            "time": "2003-09-25T21:08:00.030Z",
+            "place": "119 km ESE of Shizunai-furukawach?, Japan"
+          },
+          {
+            "magnitude": 7.3,
+            "time": "1994-10-09T07:55:39.580Z",
+            "place": "96 km E of Shikotan, Russia"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "2013-04-19T03:05:52.650Z",
+            "place": "252 km ENE of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 7.2,
+            "time": "1996-02-07T21:36:46.300Z",
+            "place": "158 km E of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2020-02-13T10:33:44.406Z",
+            "place": "95 km ENE of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 7.0,
+            "time": "2004-11-28T18:32:14.130Z",
+            "place": "51 km SW of Nemuro, Japan"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2013-02-28T14:05:50.250Z",
+            "place": "81 km SE of Ozernovskiy, Russia"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2012-03-14T09:08:35.140Z",
+            "place": "236 km SSE of Kushiro, Japan"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2009-04-07T04:23:33.150Z",
+            "place": "Kuril Islands"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "1995-04-28T16:30:00.700Z",
+            "place": "107 km ENE of Shikotan, Russia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2025-08-03T05:37:55.148Z",
+            "place": "123 km E of Severo-Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2024-12-27T12:47:37.696Z",
+            "place": "Kuril Islands"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2008-09-11T00:20:50.920Z",
+            "place": "122 km SSE of Obihiro, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2004-12-06T14:15:11.890Z",
+            "place": "54 km SSW of Nemuro, Japan"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "2000-01-28T14:21:07.340Z",
+            "place": "84 km S of Shikotan, Russia"
+          },
+          {
+            "magnitude": 6.8,
+            "time": "1995-04-17T23:28:06.890Z",
+            "place": "276 km ENE of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2006-11-15T11:40:55.050Z",
+            "place": "east of the Kuril Islands"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2003-10-08T09:06:55.340Z",
+            "place": "39 km SSE of Kushiro, Japan"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2001-05-25T00:40:50.600Z",
+            "place": "114 km SSE of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "1994-10-16T05:10:00.930Z",
+            "place": "Kuril Islands"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2009-04-18T19:17:58.930Z",
+            "place": "290 km ENE of Kuril’sk, Russia"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2006-09-30T17:50:23.050Z",
+            "place": "Kuril Islands"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1995-12-02T17:13:18.630Z",
+            "place": "134 km SE of Kuril’sk, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -375,6 +599,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -390,9 +619,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:1213c46c2098e7bb83c7870ba24a76b5f3a2f2438b24fd221cd425cc37ee4f40"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20047",
+    "geometryFingerprint": "64462e6a3693fe94e174ac6985966add86915cdc34778509841e59395dcc6680",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      143.19533779637072,
+      39.39986535770416,
+      160.64697091253223,
+      52.976453699465836
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:1213c46c2098e7bb83c7870ba24a76b5f3a2f2438b24fd221cd425cc37ee4f40"
 }

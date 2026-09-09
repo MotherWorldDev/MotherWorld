@@ -3,7 +3,7 @@
   "regionId": "eco_310",
   "regionName": "Western Himalayan subalpine conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.920813+00:00",
+  "generatedAt": "2026-09-09T06:27:41.433474+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -130,6 +130,120 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 18,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2023-10-03T09:21:03.018Z",
+            "place": "39 km NE of Dipayal, Nepal"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2023-01-24T08:58:33.123Z",
+            "place": "60 km NW of Jumla, Nepal"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2019-09-24T11:01:54.990Z",
+            "place": "8 km SSE of New Mirpur, Pakistan"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2015-12-18T22:16:56.550Z",
+            "place": "53 km WNW of Jumla, Nepal"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2001-11-27T08:53:54.080Z",
+            "place": "52 km NW of Jumla, Nepal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-11-06T10:46:39.805Z",
+            "place": "34 km E of Dailekh, Nepal"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-04-04T11:31:43.050Z",
+            "place": "24 km SE of D?rchul?, Nepal"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2017-12-06T15:19:49.970Z",
+            "place": "34 km NW of P?palkoti, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-12-20T22:29:02.221Z",
+            "place": "60 km WNW of Jumla, Nepal"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-02-26T15:04:08.953Z",
+            "place": "47 km NNE of Chamba, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-11-19T13:30:55.900Z",
+            "place": "20 km ENE of Dipayal, Nepal"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2015-04-21T14:02:15.550Z",
+            "place": "46 km SSE of Jumla, Nepal"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2013-01-09T07:44:17.110Z",
+            "place": "65 km NW of Jumla, Nepal"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-08-23T16:30:21.790Z",
+            "place": "37 km NE of Besisahar, Nepal"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-05-26T00:41:41.660Z",
+            "place": "47 km ESE of Kishtw?r, India"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2004-10-31T06:02:58.970Z",
+            "place": "61 km S of Gilgit, Pakistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-11-08T00:54:13.290Z",
+            "place": "53 km W of Jumla, Nepal"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1993-10-20T07:23:38.640Z",
+            "place": "53 km E of Dailekh, Nepal"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -260,9 +374,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:32bce7b7c31e0af2a1d4f8a3bbeae2004d4e54da59ed9040c01317b3c6a3a1eb"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_310",
+    "geometryFingerprint": "3a370b9044a5dee56802e126ba2dc2054de04baf2fb7c9aa9b35f3cbb09cc331",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      71.44080359200005,
+      28.148332940385746,
+      83.56002758800017,
+      35.825283536060134
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:32bce7b7c31e0af2a1d4f8a3bbeae2004d4e54da59ed9040c01317b3c6a3a1eb"
 }

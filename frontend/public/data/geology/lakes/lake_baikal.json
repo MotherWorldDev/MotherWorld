@@ -3,7 +3,7 @@
   "regionId": "lake_baikal",
   "regionName": "Lake Baikal",
   "kind": "lakes",
-  "generatedAt": "2026-09-08T09:35:33.683790+00:00",
+  "generatedAt": "2026-09-09T06:27:42.924091+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -64,6 +64,75 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 9,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2008-08-27T01:35:32.150Z",
+            "place": "10 km N of Baykal’sk, Russia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "1999-02-25T18:58:29.400Z",
+            "place": "13 km N of Rechka-Vydrino, Russia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2020-12-09T21:44:33.981Z",
+            "place": "41 km N of Kabansk, Russia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-05-20T20:42:43.700Z",
+            "place": "41 km WSW of Ust’-Barguzin, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-06-08T12:24:19.332Z",
+            "place": "Lake Baykal region, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2001-10-10T01:49:57.220Z",
+            "place": "41 km SSE of Yelantsy, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1999-02-25T19:11:07.000Z",
+            "place": "17 km NNW of Rechka-Vydrino, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2000-05-31T16:28:07.850Z",
+            "place": "18 km SSE of Listvyanka, Russia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1999-02-26T00:12:26.610Z",
+            "place": "17 km NW of Tankhoy, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -191,9 +260,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:f8b290c035e1d878bc9150da376c8eea3c16a97b7129cc38fa480b77b0eea527"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "lake_baikal",
+    "geometryFingerprint": "7f06a1012ee598d5dfcc462f605ac1d405f3e122e951bc6c31aba088ab7a33ac",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      103.70236388888185,
+      51.45725667042559,
+      109.96125271266968,
+      55.86831373919114
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:f8b290c035e1d878bc9150da376c8eea3c16a97b7129cc38fa480b77b0eea527"
 }

@@ -3,7 +3,7 @@
   "regionId": "eco_830",
   "regionName": "Mesopotamian shrub desert",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.568762+00:00",
+  "generatedAt": "2026-09-09T06:27:42.871890+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -52,6 +52,110 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 16,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.3,
+        "events": [
+          {
+            "magnitude": 6.3,
+            "time": "2018-11-25T16:37:32.830Z",
+            "place": "15 km SW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "2013-11-22T18:30:58.010Z",
+            "place": "28 km SW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2019-01-06T13:41:59.060Z",
+            "place": "40 km SSW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2013-11-22T06:51:25.060Z",
+            "place": "34 km W of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1996-12-24T22:16:26.170Z",
+            "place": "49 km SE of Tadmur, Syria"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-11-24T18:05:41.670Z",
+            "place": "38 km SW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1993-02-17T07:22:44.360Z",
+            "place": "99 km SSW of Al Maw?il al Jad?dah, Iraq"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-01-11T08:00:39.860Z",
+            "place": "14 km ESE of Mandal?, Iraq"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2002-06-18T03:19:24.250Z",
+            "place": "32 km NW of Mehr?n, Iran"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-11-25T17:09:36.010Z",
+            "place": "13 km WSW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-11-23T23:26:20.600Z",
+            "place": "31 km SW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-08-09T09:16:19.840Z",
+            "place": "36 km SW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-11-25T23:00:46.470Z",
+            "place": "31 km SW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-04-01T08:35:26.410Z",
+            "place": "12 km WSW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2013-11-24T18:03:13.030Z",
+            "place": "41 km SSW of Sarpol-e Z?ah?b, Iran"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-01-25T11:39:20.910Z",
+            "place": "40 km NW of Mehr?n, Iran"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -424,9 +528,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3b8155b579edf15023e93f2a8fea9dc9f1d6a88ce662a64524e7fa4e81885a98"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_830",
+    "geometryFingerprint": "eb5a2e9e634f8f37272c0c06ac98ec951d2e5a8b6597cafdf27c811080a45f0f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      34.319904504000135,
+      30.360626818329838,
+      46.13566555,
+      36.618947676469965
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3b8155b579edf15023e93f2a8fea9dc9f1d6a88ce662a64524e7fa4e81885a98"
 }

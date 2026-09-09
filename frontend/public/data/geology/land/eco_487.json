@@ -3,7 +3,7 @@
   "regionId": "eco_487",
   "regionName": "Oaxacan montane forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.127741+00:00",
+  "generatedAt": "2026-09-09T06:27:45.185615+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000003,
@@ -59,6 +59,42 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.6,
+        "events": [
+          {
+            "magnitude": 5.6,
+            "time": "1994-08-28T15:02:19.070Z",
+            "place": "6 km N of San Pedro Ocotepec, Mexico"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-09-24T01:14:03.310Z",
+            "place": "0 km N of Santa Cruz de Juárez, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -66,6 +102,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c522cd401137c7f76681912e8af6170fce81152f027eebc3bd7cae2d06ee367b"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_487",
+    "geometryFingerprint": "0053a0a2cab3b05bf457a7a6000ab7075759cedd7856bc0b88a32dfd3f6d9986",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -97.42057051099987,
+      16.75137821137413,
+      -95.22599061299996,
+      19.95837718182199
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c522cd401137c7f76681912e8af6170fce81152f027eebc3bd7cae2d06ee367b"
 }

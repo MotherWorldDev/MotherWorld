@@ -3,7 +3,7 @@
   "regionId": "eco_322",
   "regionName": "Sunda Shelf mangroves",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.082341+00:00",
+  "generatedAt": "2026-09-09T06:27:44.497678+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 73.73813497796279,
@@ -123,6 +123,37 @@
         "license": "CC BY 4.0"
       }
     },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "2003-05-12T03:03:05.210Z",
+            "place": "47 km WSW of Padangsidempuan, Indonesia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
+    },
     "minerals": {
       "occurrenceCount": 2,
       "commodityCount": 5,
@@ -191,9 +222,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:c7850448ce33e2d61ccc705e2dd4b984035d5c06a7143947ba59c191a9327e63"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_322",
+    "geometryFingerprint": "39a5628faffc2c44a6deac3a4074875c452cd6ee824af6dbedd3865d18cb09d1",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      97.43048865000013,
+      -4.415963233169293,
+      119.26490069300019,
+      7.351056531265103
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:c7850448ce33e2d61ccc705e2dd4b984035d5c06a7143947ba59c191a9327e63"
 }

@@ -3,7 +3,7 @@
   "regionId": "open_ocean",
   "regionName": "Global Ocean",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:29.268951+00:00",
+  "generatedAt": "2026-09-09T06:27:39.242331+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -12,7 +12,7 @@
         "p10AgeMa": 9.806302070617676,
         "p90AgeMa": 132.5860137939453,
         "oldestAgeMa": 299.9045715332031,
-        "coveragePct": 80.57524070179191,
+        "coveragePct": 80.57525062924121,
         "ageBands": [
           {
             "label": "0–20 Ma",
@@ -64,7 +64,7 @@
           "medianMmYr": 63.90896987915039,
           "p10MmYr": 25.74376678466797,
           "p90MmYr": 155.56341552734375,
-          "coveragePct": 80.61431517874543
+          "coveragePct": 80.61432511100898
         }
       },
       "tectonics": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 3695.305621562807,
+        "medianDepthM": 4105.0,
+        "p10DepthM": 594.0,
+        "p90DepthM": 5383.0,
+        "shallowestM": -0.0,
+        "deepestM": 10547.0,
+        "coveragePct": 99.83238946221428,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 7.041479851765355,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 4.609114459381047,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 13.044292443908683,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 74.2717553988607,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 1.0333578460841568,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -485,7 +535,7 @@
     "tectonics": {
       "faults": {
         "count": 5530,
-        "intersectionLengthKm": 288147.9776213844,
+        "intersectionLengthKm": 288147.53188809473,
         "medianSlipRateMmYr": null,
         "items": [
           {
@@ -564,7 +614,7 @@
             "name": null,
             "kinematics": "Dextral",
             "slipRateMmYr": null,
-            "intersectionLengthKm": 821.3183163740188
+            "intersectionLengthKm": 821.3182450783364
           },
           {
             "name": null,
@@ -582,7 +632,7 @@
             "name": null,
             "kinematics": "Dextral",
             "slipRateMmYr": null,
-            "intersectionLengthKm": 800.7630063911879
+            "intersectionLengthKm": 800.7622017705355
           },
           {
             "name": null,
@@ -666,13 +716,188 @@
             "name": null,
             "kinematics": "Dextral",
             "slipRateMmYr": null,
-            "intersectionLengthKm": 552.2726691625039
+            "intersectionLengthKm": 552.271998186322
           }
         ],
         "source": {
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
-          "license": "CC BY-SA 4.0"
+          "license": "CC BY-SA 4.0",
+          "geometryRepair": "WGS84 overlay; project each non-empty intersection to EPSG:6933"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 46277,
+        "m6Plus": 3957,
+        "m7Plus": 370,
+        "maxMagnitude": 9.1,
+        "events": [
+          {
+            "magnitude": 9.1,
+            "time": "2011-03-11T05:46:24.120Z",
+            "place": "2011 Great Tohoku Earthquake, Japan"
+          },
+          {
+            "magnitude": 9.1,
+            "time": "2004-12-26T00:58:53.450Z",
+            "place": "2004 Sumatra - Andaman Islands Earthquake"
+          },
+          {
+            "magnitude": 8.8,
+            "time": "2025-07-29T23:24:52.483Z",
+            "place": "2025 Kamchatka Peninsula, Russia Earthquake"
+          },
+          {
+            "magnitude": 8.8,
+            "time": "2010-02-27T06:34:11.530Z",
+            "place": "2010 Maule, Chile Earthquake"
+          },
+          {
+            "magnitude": 8.6,
+            "time": "2012-04-11T08:38:36.720Z",
+            "place": "2012 Wharton Basin Earthquake"
+          },
+          {
+            "magnitude": 8.4,
+            "time": "2007-09-12T11:10:26.830Z",
+            "place": "122 km SW of Bengkulu, Indonesia"
+          },
+          {
+            "magnitude": 8.4,
+            "time": "2001-06-23T20:33:14.130Z",
+            "place": "6 km SSW of Atico, Peru"
+          },
+          {
+            "magnitude": 8.3,
+            "time": "2015-09-16T22:54:32.860Z",
+            "place": "48 km W of Illapel, Chile"
+          },
+          {
+            "magnitude": 8.3,
+            "time": "2013-05-24T05:44:48.980Z",
+            "place": "2013 Sea of Okhotsk Earthquake"
+          },
+          {
+            "magnitude": 8.3,
+            "time": "2006-11-15T11:14:13.570Z",
+            "place": "2006 Kuril Islands Earthquake"
+          },
+          {
+            "magnitude": 8.3,
+            "time": "1994-10-04T13:22:55.840Z",
+            "place": "48 km E of Shikotan, Russia"
+          },
+          {
+            "magnitude": 8.2,
+            "time": "2021-07-29T06:15:49.188Z",
+            "place": "2021 Chignik, Alaska Earthquake"
+          },
+          {
+            "magnitude": 8.2,
+            "time": "2018-08-19T00:19:40.670Z",
+            "place": "2018 Fiji Earthquake"
+          },
+          {
+            "magnitude": 8.2,
+            "time": "2017-09-08T04:49:19.180Z",
+            "place": "2017 Tehuantepec, Mexico Earthquake"
+          },
+          {
+            "magnitude": 8.2,
+            "time": "2014-04-01T23:46:47.260Z",
+            "place": "93 km NW of Iquique, Chile"
+          },
+          {
+            "magnitude": 8.2,
+            "time": "2012-04-11T10:43:10.850Z",
+            "place": "2012 Wharton Basin Aftershock"
+          },
+          {
+            "magnitude": 8.16,
+            "time": "2003-09-25T19:50:06.360Z",
+            "place": "2003 Tokachi-Oki Earthquake"
+          },
+          {
+            "magnitude": 8.1,
+            "time": "2021-08-12T18:35:17.231Z",
+            "place": "2021 South Sandwich Islands Earthquake"
+          },
+          {
+            "magnitude": 8.1,
+            "time": "2021-03-04T19:28:33.178Z",
+            "place": "2021 Kermadec Islands, New Zealand Earthquake"
+          },
+          {
+            "magnitude": 8.1,
+            "time": "2009-09-29T17:48:10.990Z",
+            "place": "2009 Samoa Earthquake"
+          },
+          {
+            "magnitude": 8.1,
+            "time": "2007-04-01T20:39:58.710Z",
+            "place": "2007 Solomon Islands Earthquake"
+          },
+          {
+            "magnitude": 8.1,
+            "time": "2007-01-13T04:23:21.160Z",
+            "place": "2007 Kuril Islands Earthquake"
+          },
+          {
+            "magnitude": 8.1,
+            "time": "2004-12-23T14:59:04.410Z",
+            "place": "2004 Tasman Sea Earthquake"
+          },
+          {
+            "magnitude": 8.1,
+            "time": "1998-03-25T03:12:25.070Z",
+            "place": "1998 Balleny Islands Earthquake"
+          },
+          {
+            "magnitude": 8.09,
+            "time": "1996-02-17T05:59:30.550Z",
+            "place": "1996 Biak, Indonesia Earthquake"
+          },
+          {
+            "magnitude": 8.0,
+            "time": "2013-02-06T01:12:25.830Z",
+            "place": "2013 Santa Cruz Islands Earthquake"
+          },
+          {
+            "magnitude": 8.0,
+            "time": "2007-08-15T23:40:57.890Z",
+            "place": "41 km SW of San Vicente de Cañete, Peru"
+          },
+          {
+            "magnitude": 8.0,
+            "time": "2006-05-03T15:26:40.290Z",
+            "place": "2006 Tonga Earthquake"
+          },
+          {
+            "magnitude": 8.0,
+            "time": "2000-11-16T04:54:56.740Z",
+            "place": "2000 New Ireland Earthquake"
+          },
+          {
+            "magnitude": 7.9,
+            "time": "2018-09-06T15:49:18.710Z",
+            "place": "45 km S of Levuka, Fiji"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -1223,32 +1448,68 @@
     {
       "id": "earthbyte_seafloor_age",
       "label": "Seton et al. present-day oceanic crustal age & spreading parameters",
-      "version": "2020 / Zenodo v1.1"
+      "version": "2020 / Zenodo v1.1",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
     },
     {
       "id": "earthbyte_seafloor_tectonics",
       "label": "EarthByte / GPlates seafloor tectonic features",
-      "version": "GPlates GeoData / staged release"
+      "version": "GPlates GeoData / staged release",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
+    },
+    {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
     },
     {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
-      "version": null
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
     },
     {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
-      "version": "Release 2024 / quality update 2026.03"
+      "version": "Release 2024 / quality update 2026.03",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
     },
     {
       "id": "interridge_vents",
       "label": "InterRidge Global Database of Active Submarine Hydrothermal Vent Fields",
-      "version": "3.4 (2020)"
+      "version": "3.4 (2020)",
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
     },
     {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
-      "version": null
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "open_ocean",
+    "geometryFingerprint": "41c40127ac9ad6daa7c3d3c61ed87c196cf83f2b6aca722412a5e61b0bfbd027",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -180.0,
+      -89.999,
+      180.0,
+      89.999
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:27bfe5efd4b8d20b7261083933c50bf0cefd4ad949c4e3364e00bed894cd63e9"
 }

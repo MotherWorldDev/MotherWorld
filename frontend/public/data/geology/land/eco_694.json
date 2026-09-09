@@ -3,7 +3,7 @@
   "regionId": "eco_694",
   "regionName": "East Afghan montane conifer forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.784785+00:00",
+  "generatedAt": "2026-09-09T06:27:42.386720+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -76,6 +76,110 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 16,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.4,
+        "events": [
+          {
+            "magnitude": 6.4,
+            "time": "2008-10-29T11:32:43.130Z",
+            "place": "13 km NNW of Alik Ghund, Pakistan"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2008-10-28T23:09:57.650Z",
+            "place": "23 km NW of Alik Ghund, Pakistan"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2008-10-05T22:56:28.930Z",
+            "place": "35 km SSW of ?uk?mat? Azrah, Afghanistan"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2008-12-09T22:52:37.620Z",
+            "place": "12 km WSW of Alik Ghund, Pakistan"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "1995-05-31T13:51:19.400Z",
+            "place": "14 km N of Harnai, Pakistan"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2020-11-14T02:56:55.620Z",
+            "place": "16 km SSW of Alik Ghund, Pakistan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2012-11-19T17:54:07.460Z",
+            "place": "8 km NE of Alik Ghund, Pakistan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-12-09T05:53:43.050Z",
+            "place": "12 km SSW of Alik Ghund, Pakistan"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2008-10-28T22:33:08.530Z",
+            "place": "11 km NW of Alik Ghund, Pakistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-12-09T12:57:18.010Z",
+            "place": "11 km SW of Ziarat, Pakistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-12-09T02:46:32.720Z",
+            "place": "16 km S of Alik Ghund, Pakistan"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2005-05-23T04:13:45.270Z",
+            "place": "14 km SSE of Ziarat, Pakistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-10-30T06:43:03.830Z",
+            "place": "34 km E of ?uk?mat? Azrah, Afghanistan"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-10-31T23:59:52.920Z",
+            "place": "9 km NW of Alik Ghund, Pakistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2019-03-16T06:00:04.750Z",
+            "place": "18 km SSE of Mach, Pakistan"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-03-02T15:05:02.690Z",
+            "place": "15 km NNE of Ziarat, Pakistan"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -184,9 +288,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5f0cda118d3983bdc2913cdfc6902abff37999a3f86b312be578d373277ec9b8"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_694",
+    "geometryFingerprint": "4a95fc5a15c6b2c3edb6b5bdc5413e2c3d95e34ba84e22799868d927ccee0f20",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      66.77787759400015,
+      29.550481844967287,
+      70.93858359000018,
+      35.64508083196685
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5f0cda118d3983bdc2913cdfc6902abff37999a3f86b312be578d373277ec9b8"
 }

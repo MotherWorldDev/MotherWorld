@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20060",
   "regionName": "Cortezian",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.962248+00:00",
+  "generatedAt": "2026-09-09T06:27:38.544545+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 1100.2270781810703,
+        "medianDepthM": 746.0,
+        "p10DepthM": 25.0,
+        "p90DepthM": 2847.0,
+        "shallowestM": -0.0,
+        "deepestM": 4443.0,
+        "coveragePct": 99.61855202639535,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 31.659903023394566,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 24.058881175227825,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 39.173882787633964,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 5.1073330137436335,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -442,6 +492,180 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 174,
+        "m6Plus": 23,
+        "m7Plus": 1,
+        "maxMagnitude": 7.0,
+        "events": [
+          {
+            "magnitude": 7.0,
+            "time": "2012-04-12T07:15:48.500Z",
+            "place": "69 km ENE of San Luis, Mexico"
+          },
+          {
+            "magnitude": 6.9,
+            "time": "2009-08-03T17:59:56.170Z",
+            "place": "96 km WNW of Bahía de Kino, Mexico"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2015-09-13T08:14:08.560Z",
+            "place": "95 km SW of Topolobampo, Mexico"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2010-10-21T17:53:13.570Z",
+            "place": "97 km SSW of El Huitusi, Mexico"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2013-10-19T17:54:54.700Z",
+            "place": "98 km SW of Etchoropo, Mexico"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "2006-01-04T08:32:32.400Z",
+            "place": "75 km SSW of Bahía de Kino, Mexico"
+          },
+          {
+            "magnitude": 6.6,
+            "time": "1995-08-28T10:46:12.060Z",
+            "place": "95 km SW of Etchoropo, Mexico"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2002-10-03T16:08:29.620Z",
+            "place": "111 km ESE of La Rivera, Mexico"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2023-06-18T20:30:21.227Z",
+            "place": "Gulf of California"
+          },
+          {
+            "magnitude": 6.4,
+            "time": "2003-03-12T23:41:32.920Z",
+            "place": "87 km SW of Paredón Colorado, Mexico"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2018-01-19T16:17:44.720Z",
+            "place": "79 km NNE of Loreto, Mexico"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2012-09-25T23:45:24.940Z",
+            "place": "59 km NNE of La Paz, Mexico"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "1995-06-30T11:58:56.880Z",
+            "place": "60 km N of La Paz, Mexico"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2022-11-04T10:02:46.346Z",
+            "place": "82 km SSW of Bahía de Kino, Mexico"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2020-05-22T08:46:06.973Z",
+            "place": "173 km ESE of La Playa, Mexico"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2014-10-08T02:40:53.110Z",
+            "place": "96 km SSW of Altata, Mexico"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2007-09-01T19:14:22.640Z",
+            "place": "100 km SW of Topolobampo, Mexico"
+          },
+          {
+            "magnitude": 6.1,
+            "time": "2001-11-13T09:47:36.540Z",
+            "place": "109 km SW of Barrón, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2026-06-30T19:45:39.422Z",
+            "place": "75 km SSW of El Progreso, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2012-04-12T07:06:00.570Z",
+            "place": "83 km ENE of San Luis, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2011-07-26T17:44:20.380Z",
+            "place": "73 km SW of Topolobampo, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2009-07-03T11:00:14.630Z",
+            "place": "82 km SSW of Campo Pesquero el Colorado, Mexico"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2007-03-13T02:59:04.400Z",
+            "place": "85 km ENE of Loreto, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2012-10-08T06:26:23.020Z",
+            "place": "74 km SW of Topolobampo, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2010-10-20T04:15:34.820Z",
+            "place": "103 km NNE of Los Barriles, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2010-10-20T04:09:42.820Z",
+            "place": "111 km SSW of El Progreso, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2007-02-25T15:00:41.150Z",
+            "place": "94 km E of Loreto, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2006-07-30T01:20:59.250Z",
+            "place": "76 km E of Mulegé, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2004-09-24T14:43:11.370Z",
+            "place": "81 km WSW of Bahía de Kino, Mexico"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2004-02-18T10:59:19.380Z",
+            "place": "78 km E of La Rivera, Mexico"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -658,6 +882,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -673,9 +902,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:63638bcde24f0f3d5c3bf4ec91365f07aa42fdf2349380f64c653164ce6a1160"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20060",
+    "geometryFingerprint": "d003229a06d0c7aa5e8c728cd99a46942c1c6b536555a2b4788203ce13cb6311",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -114.87919478807132,
+      20.409569626823373,
+      -105.20011861599993,
+      31.80089563499943
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:63638bcde24f0f3d5c3bf4ec91365f07aa42fdf2349380f64c653164ce6a1160"
 }

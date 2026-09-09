@@ -3,7 +3,7 @@
   "regionId": "eco_154",
   "regionName": "Southern New Guinea freshwater swamp forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.146449+00:00",
+  "generatedAt": "2026-09-09T06:27:40.981636+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -40,6 +40,70 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "1999-02-17T02:27:12.330Z",
+            "place": "142 km SSW of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2005-02-02T06:28:36.670Z",
+            "place": "96 km WNW of Kerema, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2012-03-02T05:09:59.400Z",
+            "place": "55 km E of Kerema, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2025-04-10T07:53:23.652Z",
+            "place": "73 km SE of Agats, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2018-11-13T07:34:03.150Z",
+            "place": "228 km SE of Nabire, Indonesia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1993-08-19T13:35:51.040Z",
+            "place": "70 km SSW of Wau, Papua New Guinea"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-03-19T04:26:26.157Z",
+            "place": "139 km SW of Manokwari, Indonesia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-03-02T05:13:32.160Z",
+            "place": "73 km SSW of Wau, Papua New Guinea"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -229,9 +293,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a766486252070b4e43f7851579cc6177f685fbc52f63237d99db9a6d8e453f13"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_154",
+    "geometryFingerprint": "af921c7c3aae7be9a40395c19e808169851c841b26e6cf940b4898acf72c710f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      131.16595464500017,
+      -9.128965566706432,
+      146.6688996460001,
+      -1.097696176774212
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a766486252070b4e43f7851579cc6177f685fbc52f63237d99db9a6d8e453f13"
 }

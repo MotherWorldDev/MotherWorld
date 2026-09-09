@@ -3,7 +3,7 @@
   "regionId": "eco_833",
   "regionName": "North Saharan Xeric Steppe and Woodland",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.576796+00:00",
+  "generatedAt": "2026-09-09T06:27:42.877935+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -166,6 +166,50 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 4,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2025-08-17T19:11:01.981Z",
+            "place": "47 km W of Chebika, Tunisia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-05-21T00:18:36.130Z",
+            "place": "23 km SSW of Mezzouna, Tunisia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2026-08-03T00:00:33.289Z",
+            "place": "41 km NNE of Suez, Egypt"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-04-04T16:27:07.259Z",
+            "place": "7 km ESE of Chebika, Tunisia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -781,9 +825,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5dd76c4d3155704fe049a1f1cfd780816632c6a3b11fea8254c845ab9c4195d3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_833",
+    "geometryFingerprint": "c9b057792f8988249e1d1c0b603654d31ebab326cf93eec3e94d3754d352e005",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -16.464809919999936,
+      21.094024465801958,
+      34.35093664200018,
+      34.80317179753102
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5dd76c4d3155704fe049a1f1cfd780816632c6a3b11fea8254c845ab9c4195d3"
 }

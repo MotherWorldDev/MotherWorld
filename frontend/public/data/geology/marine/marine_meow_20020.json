@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20020",
   "regionName": "South and West Iceland",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:27.801441+00:00",
+  "generatedAt": "2026-09-09T06:27:38.466817+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 1135.6305484224922,
+        "medianDepthM": 1146.0,
+        "p10DepthM": 107.0,
+        "p90DepthM": 2402.0,
+        "shallowestM": -0.0,
+        "deepestM": 2783.0,
+        "coveragePct": 99.78484677486406,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 22.224473218832475,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 24.953861360221698,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 52.821665420945834,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 0.0,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       },
       "hydrothermal": {
@@ -265,6 +315,90 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 12,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2020-06-20T19:26:21.398Z",
+            "place": "15 km N of Siglufjörður, Iceland"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2012-10-21T01:25:22.590Z",
+            "place": "20 km NNE of Siglufjörður, Iceland"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2020-06-20T15:05:11.383Z",
+            "place": "15 km NE of Siglufjörður, Iceland"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2000-08-08T17:57:41.880Z",
+            "place": "233 km SW of Grindavík, Iceland"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-03-14T14:15:26.689Z",
+            "place": "9 km SW of Álftanes, Iceland"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-07-09T22:22:59.149Z",
+            "place": "9 km SW of Álftanes, Iceland"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2021-08-01T10:40:27.217Z",
+            "place": "190 km SW of Grindavík, Iceland"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2021-02-27T08:07:46.777Z",
+            "place": "8 km SW of Álftanes, Iceland"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2010-10-23T21:58:58.930Z",
+            "place": "93 km SW of Grindavík, Iceland"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-03-10T03:14:40.216Z",
+            "place": "9 km SW of Álftanes, Iceland"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2010-10-23T20:38:29.050Z",
+            "place": "77 km WSW of Grindavík, Iceland"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-02-27T05:51:50.460Z",
+            "place": "95 km SW of Grindavík, Iceland"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -367,6 +501,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -382,9 +521,33 @@
       "version": "3.4 (2020)"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:a3bcb39b7e6af3139fcf459ace2004ce613980b1c5b5d7876b79448234f794aa"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20020",
+    "geometryFingerprint": "7b06fb1ff29cdc0236ff6b09d4be0edc16704736ca1880de7edaf689061d0ba9",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -27.819796568533828,
+      59.93623692764296,
+      -10.25144653284201,
+      67.0096038176042
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:a3bcb39b7e6af3139fcf459ace2004ce613980b1c5b5d7876b79448234f794aa"
 }

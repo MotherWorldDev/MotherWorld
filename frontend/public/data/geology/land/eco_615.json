@@ -3,7 +3,7 @@
   "regionId": "eco_615",
   "regionName": "South American Pacific mangroves",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.437071+00:00",
+  "generatedAt": "2026-09-09T06:27:42.196935+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -82,6 +82,85 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 11,
+        "m6Plus": 1,
+        "m7Plus": 1,
+        "maxMagnitude": 7.2,
+        "events": [
+          {
+            "magnitude": 7.2,
+            "time": "1998-08-04T18:59:20.100Z",
+            "place": "3 km E of Bahía de Caráquez, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2017-11-17T13:40:41.310Z",
+            "place": "28 km SSE of Guayaquil, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-08-04T17:35:04.730Z",
+            "place": "3 km ESE of Bahía de Caráquez, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-06-21T19:18:48.533Z",
+            "place": "8 km NW of Naranjal, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-07-20T01:20:23.640Z",
+            "place": "2 km ESE of Rocafuerte, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2007-12-10T18:19:07.370Z",
+            "place": "2 km SSE of Muisne, Ecuador"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2002-11-11T23:53:11.240Z",
+            "place": "28 km SSW of Santa Lucía, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-01-13T02:20:54.549Z",
+            "place": "16 km SE of Eloy Alfaro, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2023-06-27T14:07:27.441Z",
+            "place": "3 km ESE of Muisne, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2013-11-25T19:43:01.120Z",
+            "place": "12 km NE of Machala, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-01-10T18:07:12.990Z",
+            "place": "7 km NW of Tosagua, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -288,9 +367,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:258e1ba212a2db541eacadb9c3c4509df9eb581402273e782e67070e49b464b0"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_615",
+    "geometryFingerprint": "e83be3ca962a64f118be0b3044d9d547a51df0b9a6e10a621a5923479ee3ea9f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -80.92247751699995,
+      -5.702075247852935,
+      -77.1526716329999,
+      9.118407469715295
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:258e1ba212a2db541eacadb9c3c4509df9eb581402273e782e67070e49b464b0"
 }

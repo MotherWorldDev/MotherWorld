@@ -3,7 +3,7 @@
   "regionId": "eco_175",
   "regionName": "Richmond temperate forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:30.241088+00:00",
+  "generatedAt": "2026-09-09T06:27:41.043110+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -130,6 +130,145 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 23,
+        "m6Plus": 3,
+        "m7Plus": 0,
+        "maxMagnitude": 6.5,
+        "events": [
+          {
+            "magnitude": 6.5,
+            "time": "2016-11-13T11:32:06.540Z",
+            "place": "92 km SSW of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 6.5,
+            "time": "2013-08-16T02:31:05.750Z",
+            "place": "29 km SE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 6.2,
+            "time": "2016-11-13T13:31:25.660Z",
+            "place": "90 km SSW of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2013-08-16T03:09:08.080Z",
+            "place": "26 km SSE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.8,
+            "time": "1995-03-22T19:43:30.010Z",
+            "place": "27 km N of Picton, New Zealand"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2016-11-13T11:12:39.170Z",
+            "place": "101 km SSW of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2013-08-16T02:45:27.140Z",
+            "place": "30 km SSE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2017-01-05T11:17:34.790Z",
+            "place": "36 km SSE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-08-16T02:37:27.880Z",
+            "place": "25 km SSE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-12-04T03:15:47.450Z",
+            "place": "29 km SE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2016-11-13T13:21:12.440Z",
+            "place": "39 km SE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2022-02-21T03:06:45.036Z",
+            "place": "36 km SW of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2013-08-17T08:58:39.680Z",
+            "place": "29 km SSE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2006-08-13T04:29:25.200Z",
+            "place": "53 km SW of Wakefield, New Zealand"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1997-11-29T21:03:31.830Z",
+            "place": "22 km ENE of Nelson, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2016-11-13T12:36:35.820Z",
+            "place": "9 km N of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-08-16T03:51:35.750Z",
+            "place": "27 km SE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2013-08-16T03:21:31.350Z",
+            "place": "30 km SSE of Blenheim, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-09-26T07:23:03.480Z",
+            "place": "74 km SSE of Wairau Valley, New Zealand"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-01-06T15:46:32.550Z",
+            "place": "8 km SE of Picton, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2011-05-03T06:55:19.990Z",
+            "place": "4 km ESE of Richmond, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-05-13T13:25:10.800Z",
+            "place": "22 km E of Nelson, New Zealand"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2001-04-04T21:25:29.400Z",
+            "place": "25 km SE of Blenheim, New Zealand"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -362,9 +501,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:5c3930ce39cdee60270e9e4f4fc8a6f290173f93fc7d03518b661b508b54f74c"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_175",
+    "geometryFingerprint": "6df2e5e50d7ecf2a28a3fdf3a0dec91fb5e0574251b0a360cadab619a885c48d",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      172.13356072800016,
+      -42.45836272128697,
+      174.393585689,
+      -40.74899543951603
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:5c3930ce39cdee60270e9e4f4fc8a6f290173f93fc7d03518b661b508b54f74c"
 }

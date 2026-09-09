@@ -3,7 +3,7 @@
   "regionId": "eco_428",
   "regionName": "Chihuahuan desert",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:31.389205+00:00",
+  "generatedAt": "2026-09-09T06:27:41.663707+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,70 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 8,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "1995-04-14T00:32:56.170Z",
+            "place": "13 km NW of Marathon, Texas"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2025-05-04T01:47:05.553Z",
+            "place": "59 km S of Whites City, New Mexico"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2022-11-16T21:32:44.481Z",
+            "place": "Coalson Draw, Texas"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2013-09-21T12:16:12.170Z",
+            "place": "19 km WSW of Naica, Mexico"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2014-06-29T04:59:35.390Z",
+            "place": "13 km SW of Franklin, Arizona"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2023-11-08T10:27:49.034Z",
+            "place": "Coalson Draw, Texas"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-02-15T05:23:21.429Z",
+            "place": "53 km NW of Toyah, Texas"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-03-26T15:16:27.940Z",
+            "place": "41 km W of Mentone, Texas"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -882,9 +946,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:965f85d5447f3fd7c41feed804bc3fd55774d1187436c917ca1ba981801e9668"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_428",
+    "geometryFingerprint": "e55b73a5c7ace39cc14f3634a1d85336a2bb1599b1eabb098136940462afec1a",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -111.72089470899992,
+      24.17635990916663,
+      -100.34917462699995,
+      34.329639277286546
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:965f85d5447f3fd7c41feed804bc3fd55774d1187436c917ca1ba981801e9668"
 }

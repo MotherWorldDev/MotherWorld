@@ -3,7 +3,7 @@
   "regionId": "eco_739",
   "regionName": "Syrian xeric grasslands and shrublands",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.048082+00:00",
+  "generatedAt": "2026-09-09T06:27:42.539546+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -70,6 +70,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.4,
+        "events": [
+          {
+            "magnitude": 5.4,
+            "time": "1994-11-20T14:31:02.270Z",
+            "place": "Syria"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2009-07-18T20:32:29.990Z",
+            "place": "42 km S of Al-Hamdaniya, Iraq"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -406,9 +440,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:b82fcbbef5a81fb78854047f11db45e9c73b68479638f5587518df7a3731ff53"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_739",
+    "geometryFingerprint": "341208137f9db58e13b024b5d9d70b7524ecb0604e73a9b84efe09cea33484b4",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      35.07896572200008,
+      29.547685464966122,
+      45.771652571,
+      37.007943421670106
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:b82fcbbef5a81fb78854047f11db45e9c73b68479638f5587518df7a3731ff53"
 }

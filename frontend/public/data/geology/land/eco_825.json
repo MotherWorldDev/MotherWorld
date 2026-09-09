@@ -3,7 +3,7 @@
   "regionId": "eco_825",
   "regionName": "Gobi Lakes Valley desert steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.527664+00:00",
+  "generatedAt": "2026-09-09T06:27:42.852047+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -142,6 +142,55 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2006-04-30T00:43:10.160Z",
+            "place": "24 km SE of Hovd, Mongolia"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2011-04-13T19:54:18.020Z",
+            "place": "central Mongolia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1996-08-01T03:36:06.060Z",
+            "place": "119 km SE of Altai, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-11-09T20:37:50.966Z",
+            "place": "174 km WSW of Bayanhongor, Mongolia"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2006-07-07T14:12:07.140Z",
+            "place": "19 km SE of Hovd, Mongolia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -290,6 +339,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4256c4a425c2cbd737b34d87cc99b0cee804c4a2d599154abe449c6f9ce8ef90"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_825",
+    "geometryFingerprint": "cc7f12af538f78ccf7615fa7f8003e7281181eb27bd91416facfc9b27580c2d0",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      96.19020854500016,
+      43.991570142927266,
+      104.32239555400008,
+      47.05477270404236
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4256c4a425c2cbd737b34d87cc99b0cee804c4a2d599154abe449c6f9ce8ef90"
 }

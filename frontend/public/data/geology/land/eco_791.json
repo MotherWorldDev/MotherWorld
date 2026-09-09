@@ -3,7 +3,7 @@
   "regionId": "eco_791",
   "regionName": "Eastern Mediterranean conifer-broadleaf forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.308554+00:00",
+  "generatedAt": "2026-09-09T06:27:42.714107+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -196,6 +196,155 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 25,
+        "m6Plus": 4,
+        "m7Plus": 1,
+        "maxMagnitude": 7.8,
+        "events": [
+          {
+            "magnitude": 7.8,
+            "time": "2023-02-06T01:17:34.342Z",
+            "place": "Pazarcik earthquake, Kahramanmaras earthquake sequence"
+          },
+          {
+            "magnitude": 6.7,
+            "time": "2023-02-06T01:28:15.784Z",
+            "place": "14 km E of Nurda??, Turkey"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "2023-02-20T17:04:29.747Z",
+            "place": "2 km NNW of Uzunba?, Turkey"
+          },
+          {
+            "magnitude": 6.3,
+            "time": "1998-06-27T13:55:52.080Z",
+            "place": "12 km S of Adana, Turkey"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2023-02-06T01:26:50.869Z",
+            "place": "24 km ENE of Nurda??, Turkey"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2023-02-06T01:36:27.357Z",
+            "place": "Turkey-Syria border region"
+          },
+          {
+            "magnitude": 5.6,
+            "time": "2017-03-02T11:07:26.880Z",
+            "place": "5 km NW of Samsat, Turkey"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2023-02-20T17:07:35.934Z",
+            "place": "9 km WNW of Uzunba?, Turkey"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "2001-06-25T13:28:46.510Z",
+            "place": "17 km SSE of Kadirli, Turkey"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "1998-07-04T02:15:46.910Z",
+            "place": "12 km S of Adana, Turkey"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2023-02-06T02:03:37.341Z",
+            "place": "Central Turkey"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2012-06-14T05:52:53.610Z",
+            "place": "1 km NNW of P?narönü, Turkey"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2024-08-12T20:55:59.916Z",
+            "place": "12 km NNW of As Salamīyah, Syria"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2018-04-24T00:34:31.180Z",
+            "place": "3 km ENE of Samsat, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2025-12-08T10:21:33.892Z",
+            "place": "23 km NNE of Antalya, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-02-15T10:36:19.090Z",
+            "place": "11 km ENE of Tyre, Lebanon"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2001-10-31T12:33:52.810Z",
+            "place": "14 km SSE of Kadirli, Turkey"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1994-09-17T02:24:37.890Z",
+            "place": "5 km NNW of Be?p?nar, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2024-09-07T06:31:10.994Z",
+            "place": "28 km SW of Pazarcık, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2022-10-11T15:48:46.359Z",
+            "place": "17 km SE of Kadirli, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-12-03T05:45:19.821Z",
+            "place": "2 km NNE of Kurtalan, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2009-06-17T04:29:12.000Z",
+            "place": "9 km SW of Büyükçat, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2008-09-03T02:22:47.000Z",
+            "place": "8 km SSE of Samsat, Turkey"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1997-03-26T04:22:51.630Z",
+            "place": "3 km WNW of Nabatîyé et Tahta, Lebanon"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1994-01-03T21:00:31.380Z",
+            "place": "3 km SE of Ceyhan, Turkey"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -622,9 +771,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:7ac430641770d51c748b56c87edc6d6b1429945e364aa1d0f5986d0134d23e50"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_791",
+    "geometryFingerprint": "6ef95da12d2625725ca31406261965c64aed5a9bb9d3c85cd293c43422068e33",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      30.413646601000092,
+      23.55001680604632,
+      42.681945594000126,
+      38.42753305539026
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:7ac430641770d51c748b56c87edc6d6b1429945e364aa1d0f5986d0134d23e50"
 }

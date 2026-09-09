@@ -3,7 +3,7 @@
   "regionId": "eco_701",
   "regionName": "Mediterranean conifer and mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:32.837286+00:00",
+  "generatedAt": "2026-09-09T06:27:42.408791+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -34,6 +34,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.7,
+        "events": [
+          {
+            "magnitude": 5.7,
+            "time": "2000-11-10T20:10:53.370Z",
+            "place": "5 km S of el hed, Algeria"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2006-03-20T19:44:25.190Z",
+            "place": "23 km NW of BABOR - VILLE, Algeria"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -454,9 +488,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:654f5ec850dd2bef67d1b4885596105033103e68be9eeb81726d46d3240336c5"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_701",
+    "geometryFingerprint": "b4ab46845baa70dd87409a3ac444cf6eed6bb0576fb3a7b58cbfeebb00db7377",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -5.944474486999979,
+      31.916730666068627,
+      9.332273457000042,
+      37.08846987371122
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:654f5ec850dd2bef67d1b4885596105033103e68be9eeb81726d46d3240336c5"
 }

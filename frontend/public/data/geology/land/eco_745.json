@@ -3,7 +3,7 @@
   "regionId": "eco_745",
   "regionName": "Saharan halophytics",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.068866+00:00",
+  "generatedAt": "2026-09-09T06:27:42.550092+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -34,6 +34,35 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.2,
+        "events": [
+          {
+            "magnitude": 5.2,
+            "time": "1997-03-20T18:02:17.300Z",
+            "place": "7 km ESE of Degache, Tunisia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -274,9 +303,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:416bc15f4719397b262dcf5291187aac61d5924f12649e27231caca3c0eeb542"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_745",
+    "geometryFingerprint": "26e49a5e90d9fe8e8be2903b2df917321220a82db9b142e95e080a5cf85285c4",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -16.09277992699998,
+      18.28404006101657,
+      29.125529738000182,
+      35.96212447613092
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:416bc15f4719397b262dcf5291187aac61d5924f12649e27231caca3c0eeb542"
 }

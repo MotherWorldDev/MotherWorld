@@ -3,7 +3,7 @@
   "regionId": "eco_601",
   "regionName": "Galápagos Islands xeric scrub",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.156689+00:00",
+  "generatedAt": "2026-09-09T06:27:45.730900+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 71.54194256912409,
@@ -35,6 +35,57 @@
         "version": "v1.0",
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 5,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "2018-06-26T09:15:36.610Z",
+            "place": "35 km NNE of Puerto Villamil, Ecuador"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2005-10-22T20:34:41.910Z",
+            "place": "10 km N of Puerto Villamil, Ecuador"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2007-08-28T22:46:39.630Z",
+            "place": "61 km NNW of Puerto Villamil, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-05-11T22:55:48.560Z",
+            "place": "86 km NNW of Puerto Villamil, Ecuador"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1998-01-11T23:09:11.280Z",
+            "place": "18 km NW of Puerto Villamil, Ecuador"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -109,9 +160,33 @@
       "version": "v1.0"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:3bce5f95436ec44fb256e6ecefc0a19a8c0364eef5cb0bb7419d9fd86d3fd386"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_601",
+    "geometryFingerprint": "81c5dd5b2e67c944706981f62aab63ec9dfcf6e857437a0cde14190962bbaeab",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -91.66187260999999,
+      -1.409946042426944,
+      -89.24066163999993,
+      0.643155542281241
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:3bce5f95436ec44fb256e6ecefc0a19a8c0364eef5cb0bb7419d9fd86d3fd386"
 }

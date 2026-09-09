@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20202",
   "regionName": "Tweed-Moreton",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.819886+00:00",
+  "generatedAt": "2026-09-09T06:27:39.021833+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -66,6 +66,56 @@
           "p90MmYr": 33.265621185302734,
           "coveragePct": 72.27290831521748
         }
+      },
+      "bathymetry": {
+        "meanDepthM": 3330.8737459192666,
+        "medianDepthM": 4460.0,
+        "p10DepthM": 58.0,
+        "p90DepthM": 4779.0,
+        "shallowestM": 1.0,
+        "deepestM": 5037.0,
+        "coveragePct": 99.95506689097276,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 16.20234582883188,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 4.642587656469725,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 10.06833698916379,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 69.08672952553461,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
+        }
       }
     },
     "geothermal": {
@@ -122,6 +172,47 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 3,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.5,
+        "events": [
+          {
+            "magnitude": 5.5,
+            "time": "2015-07-29T23:41:40.420Z",
+            "place": "128 km ENE of Rainbow Beach, Australia"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2015-08-01T03:38:44.590Z",
+            "place": "139 km ENE of Rainbow Beach, Australia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2015-08-01T04:46:24.830Z",
+            "place": "123 km ENE of Rainbow Beach, Australia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -228,14 +319,43 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6a0cdeca1aefc11cea8394e5db1fc42cf4cc0bf7ce4e86be3ec28aa60081a922"
     },
     {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20202",
+    "geometryFingerprint": "234b031fb087b66d7db1cb75381e3cda4ef5876540664a69654a9d9f7759f84c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      151.9683224379827,
+      -30.39618152237032,
+      156.9535418971579,
+      -23.966455383481357
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6a0cdeca1aefc11cea8394e5db1fc42cf4cc0bf7ce4e86be3ec28aa60081a922"
 }

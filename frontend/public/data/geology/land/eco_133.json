@@ -3,7 +3,7 @@
   "regionId": "eco_133",
   "regionName": "Southern Indian Ocean Islands tundra",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.029463+00:00",
+  "generatedAt": "2026-09-09T06:27:43.658808+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 0.0,
@@ -24,6 +24,37 @@
         "doi": "10.1594/PANGAEA.788537",
         "license": "CC BY 3.0"
       }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.3,
+        "events": [
+          {
+            "magnitude": 5.3,
+            "time": "2007-07-28T15:32:50.850Z",
+            "place": "93 km WNW of Port-aux-Français, French Southern Territories"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
+      }
     }
   },
   "providers": [
@@ -31,6 +62,30 @@
       "id": "glim",
       "label": "Global Lithological Map (GLiM)",
       "version": "v1.0"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:50e7d9210e40113965b09cf1c33b982c627aec42535c47d922a728dfae1ce449"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_133",
+    "geometryFingerprint": "9a70b8ea2da1f538b9ae47344d9045249245096f0cfc8c76996cf4be34b6d33c",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      37.57582847600002,
+      -53.19378563360382,
+      73.74665862000006,
+      -46.048695127700945
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:50e7d9210e40113965b09cf1c33b982c627aec42535c47d922a728dfae1ce449"
 }

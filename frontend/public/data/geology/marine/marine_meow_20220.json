@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20220",
   "regionName": "South Georgia",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.976355+00:00",
+  "generatedAt": "2026-09-09T06:27:39.089193+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -65,6 +65,56 @@
           "p10MmYr": 8.781842231750488,
           "p90MmYr": 54.93598556518555,
           "coveragePct": 75.86716503953147
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2942.789799578182,
+        "medianDepthM": 3259.0,
+        "p10DepthM": 337.0,
+        "p90DepthM": 4236.0,
+        "shallowestM": 2.0,
+        "deepestM": 6467.0,
+        "coveragePct": 99.92801136099672,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 5.024677036091449,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 7.7321538864693915,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 24.609058454264563,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 62.527552079394304,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.10655854378029635,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -152,6 +202,110 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 16,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.6,
+        "events": [
+          {
+            "magnitude": 6.6,
+            "time": "2002-11-15T19:58:31.780Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2002-11-15T13:05:36.960Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.4,
+            "time": "2016-03-09T15:50:25.830Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2021-09-16T01:20:39.069Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "2002-11-14T15:30:29.070Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2025-01-29T01:32:59.462Z",
+            "place": "South Atlantic Ocean"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2024-07-27T13:59:00.474Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-11-17T09:24:31.880Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-11-16T10:16:26.550Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2025-03-18T02:27:34.578Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2021-12-21T04:24:35.760Z",
+            "place": "South Atlantic Ocean"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-08-12T07:39:42.434Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2020-06-02T00:30:35.717Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2016-08-22T11:11:15.810Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-12-12T22:09:58.840Z",
+            "place": "South Georgia Island region"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2002-12-07T08:24:14.550Z",
+            "place": "South Georgia Island region"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -218,6 +372,11 @@
       "version": "2020 / Zenodo v1.1"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -226,6 +385,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d1bf16fd31ea746e39bb399069c8943eba0b53e438c0b2b448723fd458bc586e"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20220",
+    "geometryFingerprint": "ca51d3f70db59aa7304199c9e039635f8aae2d1fa9cb45dbdd82f98d2994427f",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -42.589873783710544,
+      -58.255358617062534,
+      -32.426576010370184,
+      -50.67420594202032
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d1bf16fd31ea746e39bb399069c8943eba0b53e438c0b2b448723fd458bc586e"
 }

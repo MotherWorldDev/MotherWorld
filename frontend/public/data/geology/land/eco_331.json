@@ -3,7 +3,7 @@
   "regionId": "eco_331",
   "regionName": "Appalachian-Blue Ridge forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.084867+00:00",
+  "generatedAt": "2026-09-09T06:27:44.535206+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000004,
@@ -120,6 +120,37 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.1,
+        "events": [
+          {
+            "magnitude": 5.1,
+            "time": "2020-08-09T12:07:37.650Z",
+            "place": "4 km SE of Sparta, North Carolina"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -620,9 +651,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:43edf8462f3c413e1590c33ebd0c92e427f51b9b21adcd5fe689108b28b9b6f1"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_331",
+    "geometryFingerprint": "d7314b55b97a132e923667e1a3d5ff7e7edef7d0330d53bbf8784d63567450b1",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      -87.290872446,
+      32.972615872593906,
+      -74.03312020599996,
+      41.947034617062464
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:43edf8462f3c413e1590c33ebd0c92e427f51b9b21adcd5fe689108b28b9b6f1"
 }

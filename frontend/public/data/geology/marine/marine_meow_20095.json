@@ -3,7 +3,7 @@
   "regionId": "marine_meow_20095",
   "regionName": "East African Coral Coast",
   "kind": "marine",
-  "generatedAt": "2026-09-08T09:35:28.187580+00:00",
+  "generatedAt": "2026-09-09T06:27:38.676650+00:00",
   "sections": {
     "seafloor": {
       "age": {
@@ -77,6 +77,56 @@
           "label": "EarthByte / GPlates seafloor tectonic features",
           "version": "GPlates GeoData / staged release",
           "license": "CC BY 3.0 for EarthByte GeoData; cite original feature sources"
+        }
+      },
+      "bathymetry": {
+        "meanDepthM": 2306.376415101975,
+        "medianDepthM": 2552.0,
+        "p10DepthM": 478.0,
+        "p90DepthM": 3584.0,
+        "shallowestM": 1.0,
+        "deepestM": 4221.0,
+        "coveragePct": 99.89620195008791,
+        "depthZones": [
+          {
+            "label": "Shelf / epipelagic (0–200 m)",
+            "percent": 6.907820066935534,
+            "min": 0,
+            "max": 200
+          },
+          {
+            "label": "Upper slope (200–1,000 m)",
+            "percent": 9.461957431269724,
+            "min": 200,
+            "max": 1000
+          },
+          {
+            "label": "Bathyal (1,000–3,000 m)",
+            "percent": 52.530836468863775,
+            "min": 1000,
+            "max": 3000
+          },
+          {
+            "label": "Abyssal (3,000–6,000 m)",
+            "percent": 31.099386032930965,
+            "min": 3000,
+            "max": 6000
+          },
+          {
+            "label": "Hadal (>6,000 m)",
+            "percent": 0.0,
+            "min": 6000,
+            "max": null
+          }
+        ],
+        "sourceResolutionDeg": 0.004166666666662877,
+        "statisticsResolutionDeg": 0.09999999999999432,
+        "source": {
+          "providerId": "gebco_2026",
+          "label": "GEBCO_2026 Grid",
+          "version": "2026",
+          "doi": "10.5285/4f68d5c7-45eb-f999-e063-7086abc036fa",
+          "license": "Public domain; attribution requested"
         }
       }
     },
@@ -200,6 +250,130 @@
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
         }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 20,
+        "m6Plus": 1,
+        "m7Plus": 0,
+        "maxMagnitude": 6.0,
+        "events": [
+          {
+            "magnitude": 6.0,
+            "time": "2020-08-12T17:13:16.180Z",
+            "place": "66 km NNE of Kilindoni, Tanzania"
+          },
+          {
+            "magnitude": 5.7,
+            "time": "2008-08-27T06:46:19.480Z",
+            "place": "130 km ESE of Madimba, Tanzania"
+          },
+          {
+            "magnitude": 5.3,
+            "time": "1995-08-10T00:41:04.450Z",
+            "place": "105 km ESE of Mozambique, Mozambique"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2016-04-12T15:16:46.610Z",
+            "place": "127 km ESE of Madimba, Tanzania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2015-07-15T14:10:04.210Z",
+            "place": "72 km SSE of Mozambique, Mozambique"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2008-01-21T02:49:11.980Z",
+            "place": "134 km E of Madimba, Tanzania"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2002-07-16T14:50:14.460Z",
+            "place": "86 km ESE of Mocímboa, Mozambique"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2020-08-13T14:54:54.766Z",
+            "place": "64 km NNE of Kilindoni, Tanzania"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2018-06-05T22:55:28.800Z",
+            "place": "96 km SE of Mocímboa, Mozambique"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2011-09-18T06:26:59.880Z",
+            "place": "197 km SE of Mozambique, Mozambique"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2008-01-21T15:28:35.390Z",
+            "place": "136 km E of Madimba, Tanzania"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "1995-07-20T05:08:25.800Z",
+            "place": "115 km ENE of Pemba, Mozambique"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2018-08-21T05:47:57.440Z",
+            "place": "117 km ESE of Madimba, Tanzania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2017-03-29T20:37:03.800Z",
+            "place": "86 km ENE of Mocímboa, Mozambique"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2012-02-13T00:49:31.320Z",
+            "place": "73 km NNE of Nacala, Mozambique"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-09-16T14:01:47.680Z",
+            "place": "128 km W of Mavingouni, Comoros"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2007-06-18T23:51:10.290Z",
+            "place": "153 km ENE of Pemba, Mozambique"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-01-04T19:58:06.890Z",
+            "place": "127 km E of Madimba, Tanzania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "2005-01-04T19:44:12.020Z",
+            "place": "74 km E of Madimba, Tanzania"
+          },
+          {
+            "magnitude": 5.0,
+            "time": "1996-06-15T10:02:41.310Z",
+            "place": "185 km SSE of Mozambique, Mozambique"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "geothermal": {
@@ -271,6 +445,11 @@
       "version": "GPlates GeoData / staged release"
     },
     {
+      "id": "gebco_2026",
+      "label": "GEBCO_2026 Grid",
+      "version": "2026"
+    },
+    {
       "id": "gem_active_faults",
       "label": "GEM Global Active Faults Database",
       "version": null
@@ -279,6 +458,30 @@
       "id": "ihfc_heat_flow",
       "label": "IHFC Global Heat Flow Database",
       "version": "Release 2024 / quality update 2026.03"
+    },
+    {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:d07b04dd873324da996f35ff900f4564ee5c77478c451822a1c8422b65ddc234"
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "marine_meow_20095",
+    "geometryFingerprint": "e1f5e1384d7157ae37f8e1809eae93bfd2467c9ca7eb346a1bcd5c201d58112b",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      38.77916666699997,
+      -16.757233525610637,
+      43.628950935776224,
+      -2.471290928295084
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:d07b04dd873324da996f35ff900f4564ee5c77478c451822a1c8422b65ddc234"
 }

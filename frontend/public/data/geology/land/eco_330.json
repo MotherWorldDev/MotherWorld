@@ -3,7 +3,7 @@
   "regionId": "eco_330",
   "regionName": "Appalachian Piedmont forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.084867+00:00",
+  "generatedAt": "2026-09-09T06:27:44.531897+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 100.00000000000004,
@@ -120,6 +120,37 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 1,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2011-08-23T17:51:04.250Z",
+            "place": "11 km SSW of Mineral, Virginia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -624,9 +655,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:6051f8f46a3102da90d9a19bd1fca47e410ed30dc3aa0b2ba5d5a4c38e378214"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_330",
+    "geometryFingerprint": "bbe8ae98c11f1fc922cb5b59e8b080ec307c0ef6dbf26b02b27310fdc19f2183",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "Polygon",
+    "geometryBounds": [
+      -86.84559521599994,
+      32.503526984358665,
+      -77.08165235399991,
+      38.977358579663616
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:6051f8f46a3102da90d9a19bd1fca47e410ed30dc3aa0b2ba5d5a4c38e378214"
 }

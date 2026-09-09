@@ -3,7 +3,7 @@
   "regionId": "eco_735",
   "regionName": "Pontic steppe",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:33.020820+00:00",
+  "generatedAt": "2026-09-09T06:27:42.519645+00:00",
   "sections": {
     "tectonics": {
       "faults": {
@@ -22,6 +22,40 @@
           "providerId": "gem_active_faults",
           "label": "GEM Global Active Faults Database",
           "license": "CC BY-SA 4.0"
+        }
+      },
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 2,
+        "m6Plus": 0,
+        "m7Plus": 0,
+        "maxMagnitude": 5.8,
+        "events": [
+          {
+            "magnitude": 5.8,
+            "time": "2008-10-11T09:06:10.770Z",
+            "place": "10 km WNW of Engel’-Yurt, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2021-01-02T01:05:51.643Z",
+            "place": "5 km SW of Gedzhukh, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
         }
       }
     },
@@ -640,9 +674,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:4e61afb233c89f5bb1b6d20c7abb35799494508cfed55b6dc6ea88707e1b87c3"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_735",
+    "geometryFingerprint": "756d0495f8e50878082dd02079b3b0b03ca656df9ad1102e14bb5139f4704567",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      26.745248502000038,
+      41.867901144027265,
+      58.6017915400002,
+      54.86668082388971
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:4e61afb233c89f5bb1b6d20c7abb35799494508cfed55b6dc6ea88707e1b87c3"
 }

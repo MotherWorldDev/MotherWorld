@@ -3,7 +3,7 @@
   "regionId": "eco_685",
   "regionName": "Ussuri broadleaf and mixed forests",
   "kind": "land",
-  "generatedAt": "2026-09-08T09:35:35.178190+00:00",
+  "generatedAt": "2026-09-09T06:27:46.074106+00:00",
   "sections": {
     "surfaceGeology": {
       "rockCoveragePct": 98.25880314977111,
@@ -133,6 +133,67 @@
         "version": "Release 2024 / quality update 2026.03",
         "doi": "10.5880/fidgeo.2024.014",
         "license": "CC BY 4.0"
+      }
+    },
+    "tectonics": {
+      "seismicity": {
+        "minMagnitude": 5.0,
+        "eventCount": 7,
+        "m6Plus": 2,
+        "m7Plus": 0,
+        "maxMagnitude": 6.2,
+        "events": [
+          {
+            "magnitude": 6.2,
+            "time": "2003-08-31T23:08:00.260Z",
+            "place": "6 km E of Knevichi, Russia"
+          },
+          {
+            "magnitude": 6.0,
+            "time": "2007-03-09T03:22:42.760Z",
+            "place": "19 km SE of Sergeyevka, Russia"
+          },
+          {
+            "magnitude": 5.9,
+            "time": "2002-02-01T21:55:20.990Z",
+            "place": "46 km N of Terney, Russia"
+          },
+          {
+            "magnitude": 5.5,
+            "time": "1997-10-01T06:05:48.330Z",
+            "place": "33 km SE of Vostok, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "2009-03-13T09:07:02.340Z",
+            "place": "17 km SE of Lazo, Russia"
+          },
+          {
+            "magnitude": 5.2,
+            "time": "1998-08-20T09:36:34.740Z",
+            "place": "61 km NNE of Terney, Russia"
+          },
+          {
+            "magnitude": 5.1,
+            "time": "2024-11-20T15:09:04.939Z",
+            "place": "21 km ESE of Vostok, Russia"
+          }
+        ],
+        "source": {
+          "providerId": "usgs_comcat",
+          "label": "USGS Earthquake Catalog (ComCat)",
+          "license": "U.S. federal public data",
+          "eventTypeFilter": "type == 'earthquake' (trimmed, case-insensitive)",
+          "inputRowCount": 57541,
+          "includedRowCount": 57468,
+          "excludedRowCount": 73,
+          "excludedTypeCounts": {
+            "landslide": 2,
+            "mine collapse": 1,
+            "nuclear explosion": 15,
+            "volcanic eruption": 55
+          }
+        }
       }
     },
     "minerals": {
@@ -458,9 +519,33 @@
       "version": "Release 2024 / quality update 2026.03"
     },
     {
+      "id": "usgs_comcat",
+      "label": "USGS Earthquake Catalog (ComCat)",
+      "version": null,
+      "analysisGeometryCacheIdentity": "analysis-geometry-v1:792c15d643e9eb92682680af23c75da792d436f441a25748a19d8ef194cf592d"
+    },
+    {
       "id": "usgs_mrds",
       "label": "USGS Mineral Resources Data System (MRDS)",
       "version": null
     }
-  ]
+  ],
+  "analysisGeometry": {
+    "schemaVersion": 1,
+    "regionId": "eco_685",
+    "geometryFingerprint": "914495e77fb7d833398aa1dc67024bc4babbe8ac591b2cc8e6abd7d7654acd19",
+    "geometryFingerprintAlgorithm": "sha256-wkb",
+    "geometryType": "MultiPolygon",
+    "geometryBounds": [
+      131.37930257900007,
+      42.69001547538725,
+      139.61560070500002,
+      50.51154786502789
+    ],
+    "geometrySource": "base_analysis_geometry",
+    "overrideApplied": false,
+    "registryPath": "scripts/data/species-query-geometries.geojson",
+    "geometryOverride": null
+  },
+  "analysisGeometryCacheIdentity": "analysis-geometry-v1:792c15d643e9eb92682680af23c75da792d436f441a25748a19d8ef194cf592d"
 }
