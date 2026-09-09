@@ -85,6 +85,14 @@ The corrected registry belongs to offline data analysis. Its propagation must no
 
 The direct regional CDS acquisition script added in `83b8d26b` also applies the maintained seven land footprints before constructing request bounds and cache fingerprints. Its validated pilot is an acquisition check, not a completed seven-region climate release.
 
+## Additional geology release check: stale ComCat output
+
+On 9 September 2026, review rejected the expanded geology candidate before publication. The corrected seven GLiM footprints, all eight geometry-derived whole-ocean provider identities, and GEBCO depth distributions passed. A separate output-reuse bug remained: a filtered earthquake rebuild left older provider files behind for regions with no matching earthquakes. Geometry guards for the seven corrected regions do not detect stale event content in other regions.
+
+The validated raw catalog contains 57,541 events; its earthquake-only derivative contains 57,468 earthquakes and excludes 73 other events. The candidate nevertheless retained non-earthquake events. It also contained two nested public trees: the selected outer index reported 469 ComCat regions while its manifest described 604 from the nested tree. Neither tree was accepted or published.
+
+Acceptance requires a clean isolated ComCat output directory, an event-level check against the earthquake-only derivative, explicit filter provenance on every emitted fragment, and one direct public tree whose index, manifest counts, and archive agree. Empty-result regions must not inherit old provider output. A repair is in progress; the previously published geology data remains in place. Local audit evidence is retained in `.cache/motherworld/v8-handoffs/geology-boundary-candidate-validation-20260909.md`.
+
 ## Maintainer references
 
 - [Corrected footprints and attribution](../scripts/data/species-query-geometries.geojson)
