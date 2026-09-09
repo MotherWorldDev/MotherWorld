@@ -9,7 +9,7 @@ The requested historical floor is **1993**. The right edge is discovered at buil
 | Biodiversity | BirdLife/IUCN Red List Index | 1993 → available | NHM BII, IUCN spatial rarity/ranges, PHYLACINE, GBIF/OBIS context |
 | Habitat | Copernicus C3S annual land cover direct-conversion retention | 1993 → available | Hansen loss, Dynamic World, plantations, mining/waste |
 | Vegetation | NOAA AVHRR + VIIRS NDVI Climate Data Record | 1993 → available (record begins 1981) | MODIS VCF tree/non-tree/bare cover |
-| Pollution | NASA MERRA-2 reconstructed surface PM2.5 | 1993 → available (record begins 1980) | CAMS, TROPOMI, land/water pollution, contaminants |
+| Pollution | NASA MERRA-2 reconstructed surface PM2.5 | 1993–2025 (396 source months; record begins 1980) | CAMS, TROPOMI, land/water pollution, contaminants |
 | Climate forcing | NOAA AGGI | 1993 → available (record begins 1979) | CO2/CH4/N2O concentrations |
 | Cryosphere | NOAA/NSIDC Arctic + Antarctic annual-minimum sea ice | 1993 → available | Greenland/Antarctic land ice, glaciers |
 | Global Ocean | NOAA global 0–700 m Ocean Heat Content | 1993 → available (record begins 1955) | pH, sea level, water quality, marine heatwaves/oxygen later |
@@ -18,7 +18,19 @@ The requested historical floor is **1993**. The right edge is discovered at buil
 
 Freshwater's published series has one continuous annual row for every year from 1993 through 2025. The 35 source years from 1991 through 2025 support that series; only 1991–2020 define the fixed per-grid-cell monthly P10–P90 envelope. Its annual coverage is the fraction of the 12 calendar months with finite eligible land-area observations after the ice exclusion mask, so 1.0 means all twelve months had eligible observations rather than 100% of global land or complete source sampling. The mask excludes land south of 60°S and the broad rectangle from 75°W to 10°W and 58°N to 85°N; it intentionally also removes Iceland, Baffin, and nearby Canadian land and is not a pixel-level glacier mask.
 
-The combined Earth Health score remains withheld while habitat, vegetation, and pollution are pending; publishing freshwater does not publish a nine-family score.
+Pollution now has 33 annual rows from 1993 through 2025, each based on all 12
+validated NASA MERRA-2 monthly granules. Its annual coverage measures observed
+land-area-days within the selected −60° to 85° latitude band, weighted by
+`FRLAND` and native cell areas; 1.0 does not mean every part of Earth is covered.
+This latitude band is an explicit aggregation choice, not a claim that the
+provider lacks data outside it. PM2.5 is reconstructed from the five documented
+aerosol fields, includes natural aerosol, and omits nitrate. The 5/50 µg/m³
+normalization endpoints are MotherWorld reference choices. See the
+[direct-source runbook](DIRECT_HISTORICAL_BACKBONES.md) and
+[release receipt](POLLUTION_RELEASE_20260909.json).
+
+The combined Earth Health score remains withheld while habitat and vegetation
+are pending; publishing the seventh family does not publish a nine-family score.
 
 ## Present-day diagnostics
 

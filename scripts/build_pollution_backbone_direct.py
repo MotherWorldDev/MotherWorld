@@ -1062,7 +1062,7 @@ def build(args: argparse.Namespace) -> Path:
         context={
             "providerPath": "NASA GES DISC Cloud OPeNDAP DAP4 variable subsets; Earthdata token required",
             "aerosolCollectionId": MERRA_AER_COLLECTION,
-            "landMask": "M2C0NXASM.5.12.4 FRLAND; AREA derived from native coordinates because the current NASA mask removed AREA",
+            "landMask": "M2C0NXASM.5.12.4 FRLAND; AREA derived from native coordinates because the current NASA mask does not provide AREA",
             "historyScope": f"{args.start_year}-{args.end_year}",
             "cachePolicy": "Per-month request identity plus NetCDF structure/size/checksum validation; annual checkpoints require 12 complete months.",
             "storagePolicy": "Raw subsets and checkpoints remain on the operator staging volume; staging paths are intentionally omitted from this published payload.",

@@ -1,0 +1,35 @@
+{
+  "releaseDate": "2026-09-09",
+  "familyId": "pollution",
+  "sourceImplementationCommit": "a8e94fdb",
+  "artifact": "frontend/public/data/indices/families/pollution.index.json",
+  "sha256": "45ac1364803d24a1a45e8ccc7ac53f4a39acdab78ed7b5818bfda8cf2418da54",
+  "years": {
+    "start": 1993,
+    "end": 2025,
+    "count": 33
+  },
+  "validatedSourceMonths": 396,
+  "sourceCollection": "M2TMNXAER.5.12.4",
+  "maskCollection": "M2C0NXASM.5.12.4",
+  "maskVariable": "FRLAND",
+  "areaMethod": "Spherical native cell areas derived from latitude/longitude bounds; source mask does not provide AREA.",
+  "selectedLatitudeBand": [
+    -60,
+    85
+  ],
+  "latest": {
+    "year": 2025,
+    "rawUgM3": 18.841962559956084,
+    "score": 69.2401,
+    "coverage": 1.0
+  },
+  "verification": [
+    "Independent audit of396native NetCDF files,request sidecars and SHA256 hashes",
+    "Annual1993/2025 values independently recomputed from monthly checkpoints",
+    "33continuous years,12months peryear,finite scores and coverage",
+    "Public artifact contains no credential or staging paths",
+    "27combined direct-source tests and5EarthHealth contract tests passed"
+  ],
+  "combinedEarthHealth": "Unavailable until habitat and vegetation histories are complete."
+}
