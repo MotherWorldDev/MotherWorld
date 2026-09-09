@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>Biome Summary Explorer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -14,7 +14,7 @@
       href="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Widgets/widgets.css"
       rel="stylesheet"
     />
-    <link href="./styles.css?v=20260908-diagnostics1" rel="stylesheet" />
+    <link href="./styles.css?v=20260909-mobile1" rel="stylesheet" />
   </head>
   <body>
     <div class="app-shell">
@@ -29,7 +29,8 @@
               <div class="brand-subtitle" id="dataset-summary">Loading dataset...</div>
             </div>
           </div>
-          <div class="topbar-actions">
+          <button id="map-controls-toggle-btn" class="ghost-btn mobile-controls-toggle" type="button" aria-expanded="false" aria-controls="map-controls">Controls</button>
+          <div id="map-controls" class="topbar-actions">
             <button id="region-dataset-toggle-btn" class="ghost-btn" type="button" aria-pressed="false">
               Dataset: Land
             </button>
@@ -43,6 +44,7 @@
             <button id="sky-controls-toggle-btn" class="ghost-btn" type="button" aria-expanded="false">
               Sky
             </button>
+            <button id="perf-toggle-btn" class="ghost-btn" type="button" aria-expanded="false" aria-controls="perf-hud">Performance</button>
             <button id="night-debug-toggle-btn" class="ghost-btn" type="button" aria-pressed="false">
               Night Debug
             </button>
@@ -62,7 +64,7 @@
         </div>
 
         <section id="sky-controls-panel" class="sky-controls chrome-panel" hidden aria-label="Sky controls">
-          <div class="sky-controls-title">Sky Overlays</div>
+          <div class="perf-hud-heading"><div class="sky-controls-title">Sky Overlays</div><button id="sky-close-btn" class="ghost-btn" type="button" aria-label="Close sky controls">×</button></div>
 
           <label class="sky-toggle-row">
             <input id="sky-figures-toggle" type="checkbox" />
@@ -105,10 +107,10 @@
 
         <div id="error-banner" class="error-banner" hidden></div>
 
-        <div id="perf-hud" class="perf-hud" aria-live="polite">
-          <div class="perf-hud-title">Perf</div>
-          <pre id="perf-hud-text">Booting...</pre>
-        </div>
+        <section id="perf-hud" class="perf-hud" hidden aria-label="Performance statistics">
+          <div class="perf-hud-heading"><div class="perf-hud-title">Performance</div><button id="perf-close-btn" class="ghost-btn" type="button" aria-label="Close performance statistics">×</button></div>
+          <pre id="perf-hud-text">Waiting for statistics…</pre>
+        </section>
 
         <section id="debug-panel" class="debug-panel chrome-panel" hidden aria-label="Geometry debug controls">
           <div class="debug-title">Geometry Debug</div>
@@ -423,6 +425,6 @@
     </div>
 
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Cesium.js"></script>
-    <script type="module" src="./js/main.js?v=20260909-selected-region1"></script>
+    <script type="module" src="./js/main.js?v=20260909-mobile1"></script>
   </body>
 </html>

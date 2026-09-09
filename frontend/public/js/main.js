@@ -1,3 +1,4 @@
+import { createChromeControls } from "./chromeControls.js?v=20260909-mobile1";
 import { APP_CONFIG } from "./config.js?v=20260909-geology1";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
 import { createUI } from "./ui.js?v=20260909-selected-region1";
@@ -38,9 +39,12 @@ function createPerfHud() {
   const g = APP_CONFIG.globe || {};
   const detailInKm = Number.isFinite(g.realmDetailEnterHeight) ? (g.realmDetailEnterHeight / 1000).toFixed(0) : "-";
   const detailOutKm = Number.isFinite(g.realmDetailExitHeight) ? (g.realmDetailExitHeight / 1000).toFixed(0) : "-";
-  return {
+  let latestReport = null;
+  const hud = {
+    refresh() { if (latestReport) hud.set(latestReport); },
     set(report) {
-      if (!root || !text || !report) return;
+      latestReport = report;
+      if (!root || root.hidden || !text || !report) return;
       const km = Number.isFinite(report.cameraHeightMeters) ? (report.cameraHeightMeters / 1000).toFixed(0) : "-";
       const res = Number.isFinite(report.resolutionScale) ? report.resolutionScale.toFixed(2) : "-";
       const bmTiles = report.blueMarbleDetailTilesVisible ? "on" : "off";
@@ -112,6 +116,7 @@ function createPerfHud() {
         `move factor: ${g.movingResolutionScaleFactor ?? 0.75}`;
     },
   };
+  return hud;
 }
 
 function createDebugPanelController(globe, initialOptions) {
@@ -246,6 +251,7 @@ async function bootstrap() {
   const debugOptions = getDebugBootstrapOptions();
   let debugPanelController = { enabled: false, setStatus: () => {} };
   const perfHud = createPerfHud();
+  createChromeControls({ onPerfOpen: () => perfHud.refresh() });
 
   ui.showSidebarEmpty();
   ui.setLoading("Loading ecoregion metadata...", true);
