@@ -92,6 +92,7 @@ magick ./Starmap/constellation_figures_8k.tif -colorspace sRGB ./frontend/public
 
 - The app reads `frontend/public/assets/sky/*` at runtime (WebP for the star map, PNG for constellation overlays). See [sky texture quality](docs/SKY_TEXTURE_QUALITY.md) for the compression fix and verification.
 - Source `.exr` / `.tif` files can stay in `./Starmap` for future reconversion.
+- Build visible sky/Moon tile detail with `python scripts/build_celestial_tiles.py --set all`. See [celestial LOD](docs/CELESTIAL_LOD.md) for cache limits, source fidelity, and the Moon close-up shadow fade.
 
 6. Start a local static server:
 

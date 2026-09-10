@@ -1,0 +1,45 @@
+{
+  "name": "sky",
+  "source": "frontend/public/assets/sky/starmap_2020_8k.lossless.webp",
+  "source_sha256": "11b229923ce7b73ac1f30e7b0d831d5483221f1f1bfde55ba27f0f6427f6ad04",
+  "tile_size": 512,
+  "gutter": 2,
+  "levels": [
+    {
+      "z": 0,
+      "width": 1024,
+      "height": 512,
+      "cols": 2,
+      "rows": 1,
+      "tiles": 2,
+      "path": "frontend/public/assets/sky/tiles/0/{x}/{y}.webp"
+    },
+    {
+      "z": 1,
+      "width": 2048,
+      "height": 1024,
+      "cols": 4,
+      "rows": 2,
+      "tiles": 8,
+      "path": "frontend/public/assets/sky/tiles/1/{x}/{y}.webp"
+    },
+    {
+      "z": 2,
+      "width": 4096,
+      "height": 2048,
+      "cols": 8,
+      "rows": 4,
+      "tiles": 32,
+      "path": "frontend/public/assets/sky/tiles/2/{x}/{y}.webp"
+    },
+    {
+      "z": 3,
+      "width": 8192,
+      "height": 4096,
+      "cols": 16,
+      "rows": 8,
+      "tiles": 128,
+      "path": "frontend/public/assets/sky/tiles/3/{x}/{y}.webp"
+    }
+  ]
+}

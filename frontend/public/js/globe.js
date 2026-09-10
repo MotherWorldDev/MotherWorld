@@ -1,5 +1,7 @@
 /* global Cesium */
-import { createSkyDomeController } from "./skyDome.js";
+import { createSkyDomeController } from "./skyDome.js?v=20260910-celestial1";
+import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-celestial1";
+import { chooseMoonSource, getMoonShadowPolicy } from "./moonLodPolicy.js?v=20260910-celestial1";
 
 function colorFromCss(css) {
   return Cesium.Color.fromCssColorString(css);
@@ -681,7 +683,6 @@ export function createGlobeExplorer({
   let sunDotEntity = null;
   let sunGlowEntity = null;
   let moonProxyPrimitive = null;
-  let moonProxyMaterial = null;
   let moonAnchorEntity = null;
   let moonDebugMarkerEntity = null;
   let skyDome = null;
@@ -1504,85 +1505,20 @@ export function createGlobeExplorer({
   ensureMoonAnchorEntity();
 
   function attachMoonProxyBody() {
-    if (appConfig.globe.moonEnabled === false) return;
-    if (appConfig.globe.moonUseProxyBody !== true) return;
-    if (!Cesium.SphereGeometry || !Cesium.Material || !Cesium.MaterialAppearance || !Cesium.Primitive) return;
-
-    moonProxyMaterial = new Cesium.Material({
-      translucent: false,
-      fabric: {
-        type: "MoonLitImage",
-        uniforms: {
-          image: appConfig.globe.moonTextureUrl,
-          sunDirectionEC: new Cesium.Cartesian3(0.0, 0.0, 1.0),
-          ambient: appConfig.globe.moonOnlySunLighting !== false ? 0.025 : 1.0,
-          terminatorSoftness: 0.16,
-        },
-        source: `
-          uniform sampler2D image;
-          uniform vec3 sunDirectionEC;
-          uniform float ambient;
-          uniform float terminatorSoftness;
-
-          czm_material czm_getMaterial(czm_materialInput materialInput)
-          {
-            czm_material material = czm_getDefaultMaterial(materialInput);
-            vec4 texel = texture(image, materialInput.st);
-            vec3 normalEC = normalize(materialInput.normalEC);
-            vec3 lightDir = normalize(sunDirectionEC);
-            float nDotL = max(dot(normalEC, lightDir), 0.0);
-            float lambert = smoothstep(0.0, terminatorSoftness, nDotL);
-            float lightAmount = mix(ambient, 1.0, lambert);
-            vec3 litColor = texel.rgb * lightAmount;
-            material.diffuse = vec3(0.0);
-            material.emission = litColor;
-            material.specular = 0.0;
-            material.alpha = 1.0;
-            return material;
-          }
-        `,
-      },
+    if (appConfig.globe.moonEnabled === false || appConfig.globe.moonUseProxyBody !== true) return;
+    if (typeof createSphericalTileLod !== "function") return;
+    const initialSource = chooseMoonSource({ config: appConfig.globe });
+    moonProxyPrimitive = createSphericalTileLod({
+      viewer,
+      inside: false,
+      baseTextureUrl: initialSource.baseTextureUrl,
+      urlTemplate: initialSource.urlTemplate,
+      maxLevel: initialSource.maxLevel,
+      cacheLimit: appConfig.globe.moonTileCacheLimit ?? 48,
+      maxConcurrent: appConfig.globe.celestialTileMaxConcurrent ?? 4,
+      lit: true,
+      requestRender,
     });
-
-    const geometry = new Cesium.SphereGeometry({
-      radius: 1.0,
-      vertexFormat: Cesium.MaterialAppearance.MaterialSupport.TEXTURED.vertexFormat,
-      slicePartitions: 96,
-      stackPartitions: 64,
-    });
-
-    const geometryInstance = new Cesium.GeometryInstance({
-      geometry,
-    });
-
-    const appearance = new Cesium.MaterialAppearance({
-      material: moonProxyMaterial,
-      translucent: false,
-      closed: true,
-      flat: false,
-      faceForward: false,
-      renderState: {
-        cull: {
-          enabled: true,
-          face: Cesium.CullFace.BACK,
-        },
-        depthTest: {
-          enabled: true,
-        },
-        depthMask: true,
-      },
-    });
-
-    moonProxyPrimitive = new Cesium.Primitive({
-      geometryInstances: geometryInstance,
-      appearance,
-      asynchronous: false,
-      allowPicking: false,
-      releaseGeometryInstances: true,
-      compressVertices: true,
-    });
-    moonProxyPrimitive.show = true;
-    viewer.scene.primitives.add(moonProxyPrimitive);
     requestRender();
   }
   attachMoonProxyBody();
@@ -1596,6 +1532,7 @@ export function createGlobeExplorer({
   let moonSurfaceMode = "natural";
   let moonGeologyTextureUrl = appConfig.globe.moonGeologyTextureUrl || null;
   let moonGeologyTextureHiResUrl = appConfig.globe.moonGeologyTextureHiResUrl || moonGeologyTextureUrl;
+  let moonProxySourceKey = null;
   function setMoonSurfaceMode(mode = "natural") {
     moonSurfaceMode = mode === "geology" ? "geology" : "natural";
     requestRender();
@@ -1699,38 +1636,48 @@ export function createGlobeExplorer({
       }
     }
     if (viewer.scene.moon && appConfig.globe.moonUseProxyBody !== true) {
-      if (viewer.scene.moon.textureUrl !== targetMoonTextureUrl) {
-        viewer.scene.moon.textureUrl = targetMoonTextureUrl;
-      }
-      viewer.scene.moon.onlySunLighting = appConfig.globe.moonOnlySunLighting !== false;
+      if (viewer.scene.moon.textureUrl !== targetMoonTextureUrl) viewer.scene.moon.textureUrl = targetMoonTextureUrl;
+      const builtinShadow = getMoonShadowPolicy({ cameraMoonDistance: moonDistance, displayRadius: Cesium.Ellipsoid.MOON.maximumRadius * moonDisplayScale, config: appConfig.globe });
+      viewer.scene.moon.onlySunLighting = appConfig.globe.moonOnlySunLighting !== false && builtinShadow.shadowFade >= 0.999;
       viewer.scene.moon.show = appConfig.globe.moonEnabled !== false;
     }
-    if (!moonProxyPrimitive) return;
-    if (moonProxyMaterial?.uniforms?.image !== targetMoonTextureUrl) {
-      moonProxyMaterial.uniforms.image = targetMoonTextureUrl;
-    }
-    if (moonProxyMaterial?.uniforms?.ambient !== undefined) {
-      moonProxyMaterial.uniforms.ambient = appConfig.globe.moonOnlySunLighting !== false ? 0.025 : 1.0;
-    }
-    if (moonProxyMaterial?.uniforms?.sunDirectionEC) {
+    if (moonProxyPrimitive?.update) {
+      const source = chooseMoonSource({
+        mode: moonSurfaceMode,
+        eclipse: eclipseActive,
+        anchorMode: cameraAnchorMode,
+        config: appConfig.globe,
+        custom: { base: moonGeologyTextureUrl, hiRes: moonGeologyTextureHiResUrl },
+      });
+      if (source.key !== moonProxySourceKey) {
+        moonProxySourceKey = source.key;
+        moonProxyPrimitive.setSource?.(source);
+      }
       const sunDirectionFixed = getSunDirectionFixedForTime(time, moonSunDirScratch);
-      Cesium.Matrix4.multiplyByPointAsVector(
-        viewer.camera.viewMatrix,
-        sunDirectionFixed,
-        moonSunDirectionEyeScratch
-      );
+      Cesium.Matrix4.multiplyByPointAsVector(viewer.camera.viewMatrix, sunDirectionFixed, moonSunDirectionEyeScratch);
       Cesium.Cartesian3.normalize(moonSunDirectionEyeScratch, moonSunDirectionEyeScratch);
-      Cesium.Cartesian3.clone(moonSunDirectionEyeScratch, moonProxyMaterial.uniforms.sunDirectionEC);
+      const moonRadius = Cesium.Ellipsoid.MOON.maximumRadius * moonDisplayScale;
+      const shadow = getMoonShadowPolicy({ cameraMoonDistance: moonDistance, displayRadius: moonRadius, config: appConfig.globe });
+      moonScaleVectorScratch.x = moonRadius;
+      moonScaleVectorScratch.y = moonRadius;
+      moonScaleVectorScratch.z = moonRadius;
+      Cesium.Matrix4.fromScale(moonScaleVectorScratch, moonScaleMatrixScratch);
+      Cesium.Matrix4.multiply(computeMoonModelMatrix(time, moonModelMatrixScratch), moonScaleMatrixScratch, moonScaledModelMatrixScratch);
+      const cameraToMoon = Cesium.Cartesian3.subtract(moonPosition, viewer.camera.positionWC, moonCameraDirectionScratch);
+      const cameraToEarth = Cesium.Cartesian3.negate(viewer.camera.positionWC, moonCameraRightScratch);
+      const cameraMoonDistance = Cesium.Cartesian3.magnitude(cameraToMoon);
+      const cameraEarthDistance = Cesium.Cartesian3.magnitude(cameraToEarth);
+      const angularSeparation = Cesium.Cartesian3.angleBetween(cameraToMoon, cameraToEarth);
+      const earthAngularRadius = Math.asin(Math.min(1, earthRadius / Math.max(earthRadius, cameraEarthDistance)));
+      const moonAngularRadius = Math.asin(Math.min(1, moonRadius / Math.max(moonRadius, cameraMoonDistance)));
+      const wholeMoonOccluded = cameraEarthDistance < cameraMoonDistance && earthAngularRadius >= angularSeparation + moonAngularRadius;
+      moonProxyPrimitive.update({
+        modelMatrix: moonScaledModelMatrixScratch,
+        show: appConfig.globe.moonEnabled !== false && appConfig.globe.moonUseProxyBody === true && !wholeMoonOccluded,
+        sunDirectionEC: moonSunDirectionEyeScratch,
+        ambient: shadow.ambient,
+      });
     }
-    const moonRadius = Cesium.Ellipsoid.MOON.maximumRadius * moonDisplayScale;
-    moonScaleVectorScratch.x = moonRadius;
-    moonScaleVectorScratch.y = moonRadius;
-    moonScaleVectorScratch.z = moonRadius;
-    Cesium.Matrix4.fromScale(moonScaleVectorScratch, moonScaleMatrixScratch);
-    Cesium.Matrix4.multiply(computeMoonModelMatrix(time, moonModelMatrixScratch), moonScaleMatrixScratch, moonScaledModelMatrixScratch);
-    Cesium.Matrix4.clone(moonScaledModelMatrixScratch, moonProxyPrimitive.modelMatrix);
-    moonProxyPrimitive.show = appConfig.globe.moonEnabled !== false && appConfig.globe.moonUseProxyBody === true;
-
     if (cameraAnchorMode === "moon" && moonAnchorLockActive) {
       const localPosition = Cesium.Cartesian3.clone(viewer.camera.position, moonAnchorLocalPositionScratch);
       const localRange = Cesium.Cartesian3.magnitude(localPosition);
@@ -2835,7 +2782,8 @@ export function createGlobeExplorer({
       moonDistanceKm,
       moonTotalEclipseNow,
       moonEclipseTextureActive: moonTotalEclipseNow && Boolean(appConfig.globe.moonEclipseTextureHiResUrl),
-      moonProxyEnabled: moonProxyPrimitive?.show === true,
+      moonProxyEnabled: moonProxyPrimitive?.getStateForDebug?.()?.show === true,
+      moonLod: moonProxyPrimitive?.getStateForDebug?.() ?? null,
       moonDebugMarkerEnabled: lastMoonTagVisible,
       cameraAnchorMode,
       ecoregionsVisible: shouldRenderEcoregions(),

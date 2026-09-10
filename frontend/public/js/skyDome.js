@@ -1,4 +1,5 @@
 /* global Cesium */
+import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-celestial1";
 
 function clamp01(value, fallback = 1) {
   const n = Number(value);
@@ -131,8 +132,14 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
   const useIcrfOrientation = globeCfg.skyDomeUseIcrfOrientation !== false;
   const gmstOffsetRad = Cesium.Math.toRadians(Number(globeCfg.skyDomeGmstOffsetDeg) || 0);
 
+  const tiledBase = globeCfg.skyDomeTilesEnabled === false ? null : createSphericalTileLod({
+    viewer, inside: true, baseTextureUrl: globeCfg.skyDomeOverviewTextureUrl || "./assets/sky/tiles/overview.webp",
+    urlTemplate: globeCfg.skyDomeTilesUrlTemplate || "./assets/sky/tiles/{z}/{x}/{y}.webp",
+    maxLevel: globeCfg.skyDomeTilesMaxLevel ?? 3, cacheLimit: globeCfg.skyDomeTileCacheLimit ?? 40,
+    maxConcurrent: globeCfg.celestialTileMaxConcurrent ?? 4, requestRender,
+  });
   const layers = {
-    base: createLayerPrimitive(viewer, { textureUrl: baseTextureUrl, additiveBlend: false }),
+    base: tiledBase ? null : createLayerPrimitive(viewer, { textureUrl: baseTextureUrl, additiveBlend: false }),
     figures: createLayerPrimitive(viewer, { textureUrl: figuresTextureUrl, additiveBlend: true }),
     boundaries: createLayerPrimitive(viewer, { textureUrl: boundariesTextureUrl, additiveBlend: true }),
   };
@@ -145,6 +152,7 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
   const scratchScale = new Cesium.Matrix4();
   const scratchModel = new Cesium.Matrix4();
   const scratchModelFinal = new Cesium.Matrix4();
+  const scratchOverlayModel = new Cesium.Matrix4();
   const scaleVec = new Cesium.Cartesian3(configuredRadiusMeters, configuredRadiusMeters, configuredRadiusMeters);
   let lastResolvedRadiusMeters = configuredRadiusMeters;
   let lastOrientationMode = "gmst";
@@ -214,14 +222,20 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
     const model = Cesium.Matrix4.multiply(translation, rotation4, scratchModel);
     const modelFinal = Cesium.Matrix4.multiply(model, scale, scratchModelFinal);
 
+    if (tiledBase) {
+      const opacity = clamp01(globeCfg.skyDomeBaseOpacity ?? 1);
+      tiledBase.update({ modelMatrix: modelFinal, show: opacity > 0.001, opacity,
+        occluders: [{center: Cesium.Cartesian3.ZERO, radius: ellipsoidMaxRadius}] });
+    }
     if (layers.base?.primitive) {
       Cesium.Matrix4.clone(modelFinal, layers.base.primitive.modelMatrix);
     }
+    Cesium.Matrix4.multiplyByUniformScale(modelFinal, tiledBase ? 0.990 : 1, scratchOverlayModel);
     if (layers.figures?.primitive) {
-      Cesium.Matrix4.clone(modelFinal, layers.figures.primitive.modelMatrix);
+      Cesium.Matrix4.clone(scratchOverlayModel, layers.figures.primitive.modelMatrix);
     }
     if (layers.boundaries?.primitive) {
-      Cesium.Matrix4.clone(modelFinal, layers.boundaries.primitive.modelMatrix);
+      Cesium.Matrix4.clone(scratchOverlayModel, layers.boundaries.primitive.modelMatrix);
     }
   }
 
@@ -263,11 +277,20 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
   return {
     getSettings,
     setSettings,
+    destroy: () => {
+      viewer.scene.preRender.removeEventListener(onPreRender);
+      tiledBase?.destroy();
+      for (const layer of Object.values(layers)) if (layer) {
+        viewer.scene.primitives.remove(layer.primitive);
+        if (!layer.material.isDestroyed()) layer.material.destroy();
+      }
+    },
     getStateForDebug: () => ({
       enabled: true,
       showFigures: state.showFigures,
       showBoundaries: state.showBoundaries,
-      hasBaseLayer: Boolean(layers.base),
+      hasBaseLayer: Boolean(tiledBase || layers.base),
+      tiles: tiledBase?.getStateForDebug() || null,
       hasFiguresLayer: Boolean(layers.figures),
       hasBoundariesLayer: Boolean(layers.boundaries),
       figuresOpacity: state.figuresOpacity,
