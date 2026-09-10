@@ -174,4 +174,6 @@ Mobile controls: on phones and tablets, use **Controls** to change map settings.
 
 Rendering quality: the high-density display scaling regression and its fix are documented in [rendering quality notes](docs/RENDERING_QUALITY.md).
 
+Mobile stability: GPU eviction, compressed image reuse, and phone soak-test results are documented in [mobile GPU memory](docs/MOBILE_GPU_MEMORY.md).
+
 PFAS observations are available in **Contaminants** for 88 land regions served by sampled U.S. public water systems. [PFAS coverage and release notes](docs/PFAS_RELEASE.md) explain the location proxies, incomplete coverage and collection dates.

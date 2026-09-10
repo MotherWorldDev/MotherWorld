@@ -1,5 +1,6 @@
 /* global Cesium */
-import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-celestial2";
+import { getGpuMemoryPolicy } from "./gpuMemoryPolicy.js?v=20260910-memory1";
+import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-memory1";
 
 function clamp01(value, fallback = 1) {
   const n = Number(value);
@@ -83,7 +84,7 @@ function createLayerPrimitive(viewer, { textureUrl, additiveBlend = false }) {
   return { primitive, material, textureUrl };
 }
 
-export function createSkyDomeController({ viewer, appConfig, requestRender, getMinimumRadiusForTime }) {
+export function createSkyDomeController({ viewer, appConfig, requestRender, getMinimumRadiusForTime, getOccludersForTime, memoryPolicy = getGpuMemoryPolicy() }) {
   const globeCfg = appConfig?.globe || {};
   const enabled = globeCfg.skyDomeEnabled !== false;
   if (!enabled) {
@@ -136,12 +137,12 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
     viewer, inside: true, baseTextureUrl: globeCfg.skyDomeOverviewTextureUrl || "./assets/sky/tiles/overview-4k.webp",
     urlTemplate: globeCfg.skyDomeTilesUrlTemplate || "./assets/sky/tiles/{z}/{x}/{y}.webp",
     maxLevel: globeCfg.skyDomeTilesMaxLevel ?? 3, cacheLimit: globeCfg.skyDomeTileCacheLimit ?? 40,
-    maxConcurrent: globeCfg.celestialTileMaxConcurrent ?? 4, requestRender,
+    maxConcurrent: globeCfg.celestialTileMaxConcurrent ?? 4, requestRender, memoryPolicy,
   });
   const layers = {
     base: tiledBase ? null : createLayerPrimitive(viewer, { textureUrl: baseTextureUrl, additiveBlend: false }),
-    figures: createLayerPrimitive(viewer, { textureUrl: figuresTextureUrl, additiveBlend: true }),
-    boundaries: createLayerPrimitive(viewer, { textureUrl: boundariesTextureUrl, additiveBlend: true }),
+    figures: memoryPolicy.mobile ? null : createLayerPrimitive(viewer, { textureUrl: figuresTextureUrl, additiveBlend: true }),
+    boundaries: memoryPolicy.mobile ? null : createLayerPrimitive(viewer, { textureUrl: boundariesTextureUrl, additiveBlend: true }),
   };
 
   const scratchTranslation = new Cesium.Matrix4();
@@ -175,7 +176,21 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
     return Cesium.Matrix3.fromRotationZ(gmst, outMatrix3);
   }
 
+  function dropLayer(key) {
+    const layer=layers[key];if(!layer)return;
+    viewer.scene.primitives.remove(layer.primitive);
+    if(!layer.material.isDestroyed())layer.material.destroy();layers[key]=null;
+  }
+  function syncMobileOverlays() {
+    if (!memoryPolicy.mobile) return;
+    if (!tiledBase && baseTextureUrl && !layers.base && !document.hidden) layers.base=createLayerPrimitive(viewer,{textureUrl:baseTextureUrl,additiveBlend:false});
+    for (const [key, enabled, url] of [['figures',state.showFigures&&state.figuresOpacity>.001,figuresTextureUrl],['boundaries',state.showBoundaries&&state.boundariesOpacity>.001,boundariesTextureUrl]]) {
+      if (!enabled || document.hidden) dropLayer(key);
+      else if (!layers[key]) layers[key]=createLayerPrimitive(viewer,{textureUrl:url,additiveBlend:true});
+    }
+  }
   function applyLayerVisuals() {
+    syncMobileOverlays();
     if (layers.base) {
       const baseOpacity = clamp01(globeCfg.skyDomeBaseOpacity ?? 1.0);
       layers.base.primitive.show = baseOpacity > 0.001;
@@ -225,7 +240,7 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
     if (tiledBase) {
       const opacity = clamp01(globeCfg.skyDomeBaseOpacity ?? 1);
       tiledBase.update({ modelMatrix: modelFinal, show: opacity > 0.001, opacity,
-        occluders: [{center: Cesium.Cartesian3.ZERO, radius: ellipsoidMaxRadius}] });
+        occluders: [{center: Cesium.Cartesian3.ZERO, radius: ellipsoidMaxRadius}, ...(getOccludersForTime?.(time) || [])] });
     }
     if (layers.base?.primitive) {
       Cesium.Matrix4.clone(modelFinal, layers.base.primitive.modelMatrix);
@@ -240,6 +255,7 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
   }
 
   function onPreRender(scene, time) {
+    if (memoryPolicy.mobile && !document.hidden && ((!tiledBase && baseTextureUrl && !layers.base) || (state.showFigures && figuresTextureUrl && !layers.figures) || (state.showBoundaries && boundariesTextureUrl && !layers.boundaries))) applyLayerVisuals();
     updateModelMatrixForTime(time);
   }
 
@@ -269,14 +285,15 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
       boundariesOpacity: state.boundariesOpacity,
       figuresBrightness: state.figuresBrightness,
       boundariesBrightness: state.boundariesBrightness,
-      hasFiguresLayer: Boolean(layers.figures),
-      hasBoundariesLayer: Boolean(layers.boundaries),
+      hasFiguresLayer: Boolean(figuresTextureUrl),
+      hasBoundariesLayer: Boolean(boundariesTextureUrl),
     };
   }
 
   return {
     getSettings,
     setSettings,
+    releaseGpu: () => {tiledBase?.releaseGpu();for(const key of Object.keys(layers))dropLayer(key);},
     destroy: () => {
       viewer.scene.preRender.removeEventListener(onPreRender);
       tiledBase?.destroy();
@@ -291,8 +308,8 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
       showBoundaries: state.showBoundaries,
       hasBaseLayer: Boolean(tiledBase || layers.base),
       tiles: tiledBase?.getStateForDebug() || null,
-      hasFiguresLayer: Boolean(layers.figures),
-      hasBoundariesLayer: Boolean(layers.boundaries),
+      hasFiguresLayer: Boolean(figuresTextureUrl),
+      hasBoundariesLayer: Boolean(boundariesTextureUrl),
       figuresOpacity: state.figuresOpacity,
       boundariesOpacity: state.boundariesOpacity,
       figuresBrightness: state.figuresBrightness,

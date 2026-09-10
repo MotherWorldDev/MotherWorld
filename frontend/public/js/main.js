@@ -1,5 +1,5 @@
 import { createChromeControls } from "./chromeControls.js?v=20260909-mobile1";
-import { APP_CONFIG } from "./config.js?v=20260910-celestial2";
+import { APP_CONFIG } from "./config.js?v=20260910-memory1";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
 import { createUI } from "./ui.js?v=20260909-selected-region1";
 import { createSelenologyPanel } from "./selenologyPanel.js?v=20260908-env8-selenology";
@@ -12,7 +12,7 @@ import { createEarthHealth } from "./earthHealth.js?v=20260908-env8-selenology";
 import { createTemperaturePanel } from "./temperaturePanel.js?v=20260907-temperature1";
 import { createSpeciesPanel } from "./speciesPanel.js?v=20260908-species-geometry1";
 import { getBiomeColor, paletteMapFromIndex } from "./biomePalette.js";
-import { createGlobeExplorer } from "./globe.js?v=20260910-celestial2";
+import { createGlobeExplorer } from "./globe.js?v=20260910-memory1";
 
 function toPublicDataUrl(relPath, fallback) {
   if (!relPath) return fallback;
@@ -85,6 +85,8 @@ function createPerfHud() {
       const moonEclipseNow = report.moonTotalEclipseNow ? "yes" : "no";
       const moonEclipseTex = report.moonEclipseTextureActive ? "on" : "off";
       const skyState = report.skyDome || {};
+      const memory = report.gpuMemory || {};
+      const celestialMiB = ((memory.sky?.gpuTextureBytes || 0) + (memory.moon?.gpuTextureBytes || 0)) / 1048576;
       text.textContent =
         `zoom(km): ${km}\n` +
         `render: ${report.renderWidth ?? "-"}×${report.renderHeight ?? "-"} (${density}x)\n` +
@@ -105,6 +107,8 @@ function createPerfHud() {
         `moon: ${report.moonVisible ? "in-view" : "off-view"} | ${moonDistanceKm} km\n` +
         `moon eclipse/tex: ${moonEclipseNow}/${moonEclipseTex}\n` +
         `moon body: ${report.moonProxyEnabled ? "proxy" : "builtin"}\n` +
+        `memory: ${memory.mobile ? "mobile" : "desktop"} | Earth tiles: ${memory.earthResidentTiles ?? "-"}\n` +
+        `sky/Moon textures est: ${celestialMiB.toFixed(1)} MiB | context losses: ${memory.contextLosses ?? 0}\n` +
         `moon marker: ${report.moonDebugMarkerEnabled ? "on" : "off"}\n` +
         `anchor: ${report.cameraAnchorMode ?? "earth"}\n` +
         `ecoregions: ${report.ecoregionsVisible ? "on" : "hidden"}\n` +

@@ -7,7 +7,7 @@ const root = path.resolve('frontend/public');
   const requests = [];
   const server = http.createServer((req, res) => {
     const url = req.url.split('?')[0]; requests.push(url);
-    if (url === '/') { res.setHeader('Content-Type', 'text/html'); return res.end('<style>html,body{margin:0}#globe{width:100vw;height:100vh}.cesium-widget,.cesium-widget canvas{width:100%;height:100%}</style><div id="globe"></div>'); }
+    if (url === '/') { res.setHeader('Content-Type', 'text/html'); return res.end('<meta name="viewport" content="width=device-width,initial-scale=1"><style>html,body{margin:0}#globe{width:100vw;height:100vh}.cesium-widget,.cesium-widget canvas{width:100%;height:100%}</style><div id="globe"></div>'); }
     const file = url === '/Cesium.js' ? path.resolve('.cache/render-quality-check/Cesium.js')
       : url.startsWith('/js/sphericalTileLod.js') && process.env.MOTHERWORLD_LOD_BASELINE ? path.resolve(process.env.MOTHERWORLD_LOD_BASELINE)
       : path.join(root, decodeURIComponent(url));
@@ -19,7 +19,7 @@ const root = path.resolve('frontend/public');
   await new Promise(resolve => server.listen(0, '127.0.0.1', resolve));
   const browser = await chromium.launch({ executablePath: process.env.MOTHERWORLD_BROWSER, headless: true, args: ['--enable-unsafe-swiftshader'] });
   try {
-    const page = await browser.newPage({ viewport: process.env.MOTHERWORLD_TEST_MOBILE ? { width: 390, height: 650 } : { width: 800, height: 600 }, deviceScaleFactor: Number(process.env.MOTHERWORLD_TEST_DPR || 1) });
+    const page = await browser.newPage({ viewport: process.env.MOTHERWORLD_TEST_MOBILE ? { width: 390, height: 650 } : { width: 800, height: 600 }, deviceScaleFactor: Number(process.env.MOTHERWORLD_TEST_DPR || 1), ...(process.env.MOTHERWORLD_TEST_MOBILE ? { isMobile: true, hasTouch: true, userAgent: 'Mozilla/5.0 (Linux; Android 14) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/128.0.0.0 Mobile Safari/537.36' } : {}) });
     const errors = []; page.on('pageerror', e => errors.push(e.message));
     page.on('console', m => { if (m.type() === 'error' && !m.text().includes('404')) errors.push(m.text()); });
     await page.goto(`http://127.0.0.1:${server.address().port}/`);
@@ -66,9 +66,23 @@ const root = path.resolve('frontend/public');
     console.log(JSON.stringify(result));
     assert.ok(result.frames > 20); assert.equal(result.placeholderFrames, 0, 'Visible materials must never use Cesium white placeholders');
     assert.equal(result.whiteFrames, 0, 'No broad white flashes while loading or turning');
-    assert.ok(result.maxCached <= 40); assert.ok(result.maxInFlight <= 4); assert.deepEqual(errors, []);
+    assert.equal(result.final.mobile, Boolean(process.env.MOTHERWORLD_TEST_MOBILE));
+    assert.ok(result.maxCached <= (result.final.mobile ? 24 : 40)); assert.ok(result.maxInFlight <= (result.final.mobile ? 2 : 4)); assert.deepEqual(errors, []);
     assert.ok(requests.includes('/assets/sky/tiles/overview-4k.webp'));
     assert.ok(!requests.some(url => url.includes('starmap_2020_8k')));
+    if (result.final.mobile) {
+      const before = await page.evaluate(() => sky.getStateForDebug().tiles);
+      await page.evaluate(() => sky.releaseGpu());
+      const released = await page.evaluate(() => sky.getStateForDebug().tiles);
+      assert.equal(released.gpuTextureBytes, 0); assert.equal(released.cachedTiles, 0);
+      assert.ok(released.encodedCacheBytes > 0);
+      await page.waitForFunction(() => {const s=sky.getStateForDebug().tiles;return s.overviewReady&&s.visibleTiles>0&&s.inFlight===0&&s.queued===0;}, null, {timeout:45000});
+      const restored = await page.evaluate(() => sky.getStateForDebug().tiles);
+      assert.equal(restored.requests, before.requests, 'Returning to the same view must reuse compressed images');
+      assert.ok(restored.cacheHits > before.cacheHits);
+      assert.equal(restored.cachedTiles, restored.visibleTiles, 'No inactive mobile GPU detail cache');
+      console.log('mobile-release-restore', JSON.stringify({releasedBytes:before.gpuTextureBytes, cacheHits:restored.cacheHits, networkRequestsAdded:restored.requests-before.requests}));
+    }
     await page.evaluate(() => { sky.destroy(); v.destroy(); });
   } finally { await browser.close(); server.close(); }
 })().catch(error => { console.error(error); process.exitCode = 1; });

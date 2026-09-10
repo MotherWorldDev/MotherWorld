@@ -10,6 +10,10 @@ Each tile has a 512×512 interior and two-pixel gutters (516×516 texture). Long
 
 The renderer limits each body to four concurrent requests. Sky caches at most 40 detail textures and Moon at most 48; changing the Moon view aborts stale requests. Sky requests already in flight finish into the bounded cache for quick turn reversals; queued requests track the current view. Hiding either body or changing its source still cancels pending work. Hidden detail is released after 15 seconds, with materials/GPU textures explicitly destroyed. Errors retry after a 10-second backoff on a subsequent render. Source generations prevent old natural/geology/eclipse responses from overwriting the current mode. Resident parents remain fallback until child branches are ready; the overview covers missing/evicted regions. Sky tiles render opaque with depth writes to prevent translucent overview stars ghosting through detail. Detail sits at 0.995 of the dome radius, safely inside the coarser overview facets; this prevents the overview mesh from obscuring patches. Optional constellation overlays sit closer than the tiled dome and retain their existing on-demand visibility.
 
+## Mobile memory policy
+
+Phones and tablets now use immediate eviction of unused detail, a 24-tile GPU cap per celestial body, and a bounded compressed-image cache for upload reuse. Hidden or offscreen Moon textures are released; backgrounding clears both celestial GPU caches. Desktop retains its 15-second warm GPU cache. See [mobile GPU memory](MOBILE_GPU_MEMORY.md) for Earth eviction, test evidence, and limitations.
+
 ## Moon illumination
 
 The phase is unchanged at lunar surface altitudes of six display radii or greater (about 10,424 km at natural scale). Between six radii and 1.5 radii (about 2,606 km), a smoothstep increases ambient illumination from 0.025 to 1. Close inspection is fully lit, matching Earth's close-up inspection behavior. Both surface-altitude thresholds are three times the original values. The thresholds scale with the displayed Moon radius and are configurable in `config.js`. Natural, eclipse and geology tiles share the same policy. The optional legacy Cesium Moon path uses the same near/far cutoff as a boolean lighting switch; smooth fading is provided by the default proxy renderer.
@@ -43,4 +47,4 @@ The controller now performs both material updates while hidden and verifies the 
 
 The sky's 4K fallback costs approximately 32 MiB of GPU RGBA texture memory, versus 128 MiB for a resident 8K texture. Its detail cache remains bounded at 40 tiles. This deliberate baseline keeps rapid turns sharp without loading the full-resolution sky everywhere.
 
-Cache markers: `20260910-celestial2`.
+Cache markers: `20260910-memory1`.

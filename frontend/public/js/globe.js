@@ -1,7 +1,9 @@
 /* global Cesium */
-import { createSkyDomeController } from "./skyDome.js?v=20260910-celestial2";
-import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-celestial2";
-import { chooseMoonSource, getMoonShadowPolicy } from "./moonLodPolicy.js?v=20260910-celestial2";
+import { getGpuMemoryPolicy, BoundedBlobCache } from "./gpuMemoryPolicy.js?v=20260910-memory1";
+import { cacheEarthImageryProvider } from "./earthImageCache.js?v=20260910-memory1";
+import { createSkyDomeController } from "./skyDome.js?v=20260910-memory1";
+import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-memory1";
+import { chooseMoonSource, getMoonShadowPolicy } from "./moonLodPolicy.js?v=20260910-memory1";
 
 function colorFromCss(css) {
   return Cesium.Color.fromCssColorString(css);
@@ -598,6 +600,10 @@ export function createGlobeExplorer({
   onSelect,
   onDebugReport,
 }) {
+  const memoryPolicy = getGpuMemoryPolicy();
+  const earthImageCache = new BoundedBlobCache(memoryPolicy.encodedBlobBudget);
+  let memorySuspended = memoryPolicy.mobile && typeof document !== 'undefined' && document.hidden;
+  let earthInView = true, contextLosses = 0, realtimeClockTimer = 0;
   const viewer = new Cesium.Viewer(containerId, {
     animation: false,
     timeline: false,
@@ -662,8 +668,12 @@ export function createGlobeExplorer({
   if (typeof appConfig.globe.imageryPreloadAncestors === "boolean") {
     viewer.scene.globe.preloadAncestors = appConfig.globe.imageryPreloadAncestors;
   }
-  if (Number.isFinite(appConfig.globe.globeTileCacheSize)) {
-    viewer.scene.globe.tileCacheSize = Math.max(100, Math.round(appConfig.globe.globeTileCacheSize));
+  viewer.scene.globe.tileCacheSize = memoryPolicy.mobile
+    ? memoryPolicy.globeTileCacheSize
+    : Math.max(100, Math.round(appConfig.globe.globeTileCacheSize ?? 1200));
+  if (memoryPolicy.mobile) {
+    viewer.scene.globe.preloadSiblings = false;
+    viewer.scene.globe.preloadAncestors = false;
   }
   viewer.scene.globe.baseColor = colorFromCss("#08111c");
   viewer.scene.globe.depthTestAgainstTerrain = false;
@@ -750,6 +760,7 @@ export function createGlobeExplorer({
         } else {
           provider = new Cesium.SingleTileImageryProvider({ url, rectangle });
         }
+        if (viewer.isDestroyed()) return;
         const layer = viewer.imageryLayers.addImageryProvider(provider, 0);
         layer.alpha = appConfig.globe.baseImageryAlpha ?? 1.0;
         baseImageryLayer = layer;
@@ -785,6 +796,7 @@ export function createGlobeExplorer({
         provider = new Cesium.SingleTileImageryProvider({ url, rectangle });
       }
 
+      if (viewer.isDestroyed()) return;
       const layer = viewer.imageryLayers.addImageryProvider(provider, 6);
       layer.alpha = 0.0;
       layer.show = false;
@@ -959,6 +971,7 @@ export function createGlobeExplorer({
 
   function applyImageryLayerAlpha(layer, targetAlpha, threshold = 0.01) {
     if (!layer) return false;
+    if (memoryPolicy.mobile && (memorySuspended || !earthInView)) targetAlpha = 0;
     const shouldShow = targetAlpha > threshold;
     const alphaChanged = Math.abs((layer.alpha ?? 0) - targetAlpha) > 0.003;
     const showChanged = layer.show !== shouldShow;
@@ -1095,7 +1108,7 @@ export function createGlobeExplorer({
     changed = applyImageryLayerAlpha(blueMarbleUltraImageryLayer, ultraTargetAlpha) || changed;
     changed = applyImageryLayerAlpha(blackMarbleNightBaseImageryLayer, nightBaseTargetAlpha) || changed;
     changed = applyImageryLayerAlpha(blackMarbleNightDetailImageryLayer, nightDetailTargetAlpha) || changed;
-    if (!nightUltraFrozenVisible) {
+    if (!nightUltraFrozenVisible || (memoryPolicy.mobile && (memorySuspended || !earthInView))) {
       changed = applyImageryLayerGroupAlpha(blackMarbleNightUltraImageryLayers, nightUltraTargetAlpha) || changed;
     }
     const shouldEnableLighting = !openOceanMode && !nightDiagnosticsEnabled && nightOverviewBlend > 0.001;
@@ -1153,6 +1166,7 @@ export function createGlobeExplorer({
         tileHeight: tileSize,
         hasAlphaChannel: false,
       });
+      if (memoryPolicy.mobile) cacheEarthImageryProvider(provider, {cache: earthImageCache, urlTemplate: url});
       provider.errorEvent?.addEventListener?.((err) => {
         console.warn("Blue Marble detail tile imagery error:", err);
       });
@@ -1188,6 +1202,7 @@ export function createGlobeExplorer({
         tileHeight: tileSize,
         hasAlphaChannel: false,
       });
+      if (memoryPolicy.mobile) cacheEarthImageryProvider(provider, {cache: earthImageCache, urlTemplate: url});
       provider.errorEvent?.addEventListener?.((err) => {
         console.warn("Blue Marble ultra tile imagery error:", err);
       });
@@ -1246,7 +1261,7 @@ export function createGlobeExplorer({
   }
 
   function instrumentImageryProvider(provider, counterName) {
-    if (!provider || provider._debugInstrumentedRequestImage) return;
+    if (memoryPolicy.mobile || !provider || provider._debugInstrumentedRequestImage) return;
     const originalRequestImage = provider.requestImage?.bind(provider);
     if (typeof originalRequestImage !== "function") return;
     const inflight = new Map();
@@ -1327,6 +1342,7 @@ export function createGlobeExplorer({
         provider = new Cesium.SingleTileImageryProvider({ url, rectangle });
       }
 
+      if (viewer.isDestroyed()) return;
       blackMarbleNightBaseImageryLayer = viewer.imageryLayers.addImageryProvider(provider, 3);
       blackMarbleNightBaseImageryLayer.alpha = appConfig.globe.nightBaseImageryAlpha ?? 1.0;
       blackMarbleNightBaseImageryLayer.show = true;
@@ -1360,6 +1376,7 @@ export function createGlobeExplorer({
         tileHeight: tileSize,
         hasAlphaChannel: false,
       });
+      if (memoryPolicy.mobile) cacheEarthImageryProvider(provider, {cache: earthImageCache, urlTemplate: url});
       provider.errorEvent?.addEventListener?.((err) => {
         console.warn("Black Marble night detail tile imagery error:", err);
       });
@@ -1408,6 +1425,7 @@ export function createGlobeExplorer({
           tileHeight: tileSize,
           hasAlphaChannel: false,
         });
+        if (memoryPolicy.mobile) cacheEarthImageryProvider(provider, {cache: earthImageCache, urlTemplate: url});
         provider.errorEvent?.addEventListener?.((err) => {
           console.warn(`Black Marble night ultra tile imagery error (${region.code}):`, err);
         });
@@ -1515,6 +1533,7 @@ export function createGlobeExplorer({
       urlTemplate: initialSource.urlTemplate,
       maxLevel: initialSource.maxLevel,
       cacheLimit: appConfig.globe.moonTileCacheLimit ?? 48,
+      memoryPolicy,
       maxConcurrent: appConfig.globe.celestialTileMaxConcurrent ?? 4,
       lit: true,
       requestRender,
@@ -1708,7 +1727,7 @@ export function createGlobeExplorer({
       requestRender();
     };
     syncClock();
-    window.setInterval(syncClock, intervalMs);
+    realtimeClockTimer = window.setInterval(syncClock, intervalMs);
   }
   startRealtimeClock();
 
@@ -1850,6 +1869,11 @@ export function createGlobeExplorer({
     viewer,
     appConfig,
     requestRender,
+    memoryPolicy,
+    getOccludersForTime: (time) => appConfig.globe.moonEnabled === false ? [] : [{
+      center: Cesium.Cartesian3.clone(getMoonWorldPositionForTime(time, moonSkyDomePositionScratch)),
+      radius: Cesium.Ellipsoid.MOON.maximumRadius * (cameraAnchorMode === 'moon' ? (appConfig.globe.moonMoonViewScale ?? 1) : (appConfig.globe.moonEarthViewScale ?? 1)),
+    }],
     getMinimumRadiusForTime: (time) => {
       if (appConfig.globe.skyDomeEnabled === false || appConfig.globe.moonEnabled === false) {
         return 0;
@@ -1865,6 +1889,61 @@ export function createGlobeExplorer({
       return moonDistance + moonRadius + 5_000_000;
     },
   });
+
+  // Cesium 1.118's replacement queue protects this frame's visible/loading
+  // tiles. Trim cold tiles after drawing, even when there are no new requests.
+  function trimMobileEarthGpu() {
+    if (!memoryPolicy.mobile || viewer.isDestroyed()) return;
+    viewer.scene.globe._surface?._tileReplacementQueue?.trimTiles(0);
+  }
+  function updateMobileEarthVisibility() {
+    if (!memoryPolicy.mobile) return;
+    const camera = viewer.camera;
+    const next = camera.frustum.computeCullingVolume(camera.positionWC, camera.directionWC, camera.upWC)
+      .computeVisibility(new Cesium.BoundingSphere(Cesium.Cartesian3.ZERO, viewer.scene.globe.ellipsoid.maximumRadius)) !== Cesium.Intersect.OUTSIDE;
+    if (next !== earthInView) {earthInView=next;syncImageryLayerVisibility();}
+  }
+  let resumeRenderLoop = viewer.useDefaultRenderLoop;
+  function syncMobilePageVisibility() {
+    if (!memoryPolicy.mobile || viewer.isDestroyed()) return;
+    memorySuspended = document.hidden;
+    if (memorySuspended) {
+      resumeRenderLoop = viewer.useDefaultRenderLoop;
+      viewer.useDefaultRenderLoop = false;
+      skyDome?.releaseGpu?.();moonProxyPrimitive?.releaseGpu?.();
+      syncImageryLayerVisibility();
+      // Flush show changes now: hidden tabs may not get another Cesium frame.
+      viewer.imageryLayers._update?.();
+      const queue = viewer.scene.globe._surface?._tileReplacementQueue;
+      queue?.markStartOfRenderFrame();queue?.trimTiles(0);
+    } else {
+      updateMobileEarthVisibility();syncImageryLayerVisibility();
+      viewer.useDefaultRenderLoop = resumeRenderLoop;requestRender();
+    }
+  }
+  function recordContextLoss() {contextLosses++;}
+  viewer.scene.preRender.addEventListener(updateMobileEarthVisibility);
+  viewer.scene.postRender.addEventListener(trimMobileEarthGpu);
+  document.addEventListener('visibilitychange', syncMobilePageVisibility);
+  viewer.scene.canvas.addEventListener('webglcontextlost', recordContextLoss);
+  const destroyViewer = viewer.destroy.bind(viewer);
+  viewer.destroy = () => {
+    document.removeEventListener('visibilitychange', syncMobilePageVisibility);
+    viewer.scene.canvas.removeEventListener('webglcontextlost', recordContextLoss);
+    viewer.scene.preRender.removeEventListener(updateMobileEarthVisibility);
+    viewer.scene.postRender.removeEventListener(trimMobileEarthGpu);
+    clearInterval(realtimeClockTimer);clearTimeout(imageryBlendTimer);clearNightUltraIdleTimer();
+    skyDome?.destroy?.();moonProxyPrimitive?.destroy?.();earthImageCache.clear();
+    return destroyViewer();
+  };
+  if (memorySuspended) syncMobilePageVisibility();
+  function getGpuMemoryState() {
+    return {mobile:memoryPolicy.mobile, suspended:memorySuspended, contextLosses,
+      earthTileCacheTarget:viewer.scene.globe.tileCacheSize,
+      earthResidentTiles:viewer.scene.globe._surface?._tileReplacementQueue?.count ?? null,
+      earthEncodedCacheBytes:earthImageCache.byteLength,
+      sky:skyDome?.getStateForDebug?.()?.tiles ?? null, moon:moonProxyPrimitive?.getStateForDebug?.() ?? null};
+  }
 
   function loadedDataSources() {
     const out = [];
@@ -2745,6 +2824,7 @@ export function createGlobeExplorer({
     const report = {
       reason,
       debugOptions: { ...debugOptions },
+      gpuMemory: getGpuMemoryState(),
       activeRealmSlug,
       activeRealmLodLevel,
       preferredRealmLodLevel: getPreferredRealmLodLevel(),
@@ -3550,6 +3630,7 @@ export function createGlobeExplorer({
 
   return {
     viewer,
+    getGpuMemoryState,
     loadGeometryLods,
     ensureRealmDetailForRegion,
     getSkySettings: () => skyDome.getSettings?.(),

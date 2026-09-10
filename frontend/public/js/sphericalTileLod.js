@@ -1,4 +1,5 @@
 /* global Cesium */
+import { getGpuMemoryPolicy, BoundedBlobCache } from "./gpuMemoryPolicy.js?v=20260910-memory1";
 // Equirectangular tiles: 512 pixels + two-pixel gutters; y=0 is the north pole.
 export function tileDescriptor(z, x, y) {
   const columns = 2 ** (z + 1), rows = 2 ** z;
@@ -56,15 +57,20 @@ function patchGeometry(tile, inside) {
 }
 
 export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, urlTemplate, maxLevel = 3,
-  cacheLimit = 48, maxConcurrent = 4, lit = false, requestRender}) {
+  cacheLimit = 48, maxConcurrent = 4, lit = false, requestRender, memoryPolicy = getGpuMemoryPolicy()}) {
   const scene = viewer.scene;
+  const mobile = memoryPolicy.mobile;
+  cacheLimit = mobile ? Math.min(cacheLimit, memoryPolicy.celestialTileLimit) : cacheLimit;
+  maxConcurrent = mobile ? Math.min(maxConcurrent, memoryPolicy.maxConcurrent) : maxConcurrent;
+  const blobCache = new BoundedBlobCache(memoryPolicy.encodedBlobBudget);
+  let bodyVisible = true;
   let source = {baseTextureUrl, urlTemplate, maxLevel}, generation = 0, destroyed = false;
   let frame = null, lastSelection = -Infinity, serial = 0, queue = [], active = 0;
   let selected = [], base = null, wanted = new Set(), visible = new Set();
   const entries = new Map(), descriptors = new Map(), failures = new Map(), pending = new Map();
   const collection = scene.primitives.add(new Cesium.PrimitiveCollection());
   const inverse = new Cesium.Matrix4();
-  const stats = {requests: 0, completed: 0, aborted: 0, failed: 0};
+  const stats = {requests: 0, completed: 0, aborted: 0, failed: 0, cacheHits: 0, gpuReleases: 0};
   const render = () => { requestRender?.(); scene.requestRender(); };
   const descriptor = (z, x, y) => {
     const key = `${z}/${x}/${y}`;
@@ -103,7 +109,7 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
       asynchronous: false, allowPicking: false, compressVertices: false, show: false}));
     return {primitive, material, used: ++serial, lastVisibleAt: performance.now(), image};
   }
-  function dispose(entry) { if (entry) { collection.remove(entry.primitive); if (!entry.material.isDestroyed()) entry.material.destroy(); entry.image = null; } }
+  function dispose(entry) { if (entry) { stats.gpuReleases++; collection.remove(entry.primitive); if (!entry.material.isDestroyed()) entry.material.destroy(); entry.image.src = ''; entry.image = null; } }
   function visual(entry, show) {
     if (!entry) return;
     entry.primitive.show = show;
@@ -115,9 +121,9 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
   }
   function refresh() {
     if (!frame || destroyed) return;
-    collection.show = frame.show !== false;
+    collection.show = bodyVisible;
     visible = new Set();
-    if (frame.show !== false) for (const tile of selected) {
+    if (bodyVisible) for (const tile of selected) {
       let z = tile.z, x = tile.x, y = tile.y;
       while (z >= 0) {
         const key = `${z}/${x}/${y}`;
@@ -130,24 +136,32 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
       let [z,x,y] = key.split('/').map(Number);
       while (z > 0) {z--;x=Math.floor(x/2);y=Math.floor(y/2);if(visible.has(`${z}/${x}/${y}`)){visible.delete(key);break;}}
     }
-    visual(base, frame.show !== false);
+    visual(base, bodyVisible);
     for (const [key, entry] of entries) {const show=visible.has(key);visual(entry, show);if(show){entry.used=++serial;entry.lastVisibleAt=performance.now();}}
-    for (const [key,entry] of entries) if(!visible.has(key) && performance.now()-entry.lastVisibleAt>15000) {
+    for (const [key,entry] of entries) if(!visible.has(key) && (mobile || performance.now()-entry.lastVisibleAt>15000)) {
       entries.delete(key);dispose(entry);
     }
+    if (mobile && !bodyVisible) {dispose(base);base=null;}
     const cold = [...entries].filter(([key]) => !visible.has(key)).sort((a,b)=>a[1].used-b[1].used);
     while (entries.size > cacheLimit && cold.length) {const [key,entry]=cold.shift();entries.delete(key);dispose(entry);}
   }
   async function load(item) {
-    const token = generation, abort = new AbortController(); active++; pending.set(item.key, abort); stats.requests++;
+    const token = generation, abort = new AbortController(); active++; pending.set(item.key, abort);
     try {
-      const response = await fetch(item.url, {signal: abort.signal});
-      if (!response.ok) throw new Error(`Tile HTTP ${response.status}`);
-      const blob = await response.blob();
-      if (blob.size > 8 * 1024 * 1024) throw new Error('Unexpectedly large celestial tile');
+      let blob = blobCache.get(item.url);
+      if (blob) stats.cacheHits++;
+      else {
+        stats.requests++;
+        const response = await fetch(item.url, {signal: abort.signal});
+        if (!response.ok) throw new Error(`Tile HTTP ${response.status}`);
+        blob = await response.blob();
+        if (blob.size > 8 * 1024 * 1024) throw new Error('Unexpectedly large celestial tile');
+        if (destroyed || abort.signal.aborted) return;
+      }
       const objectUrl = URL.createObjectURL(blob), image = new Image();
-      try {image.src=objectUrl;await image.decode();} finally {URL.revokeObjectURL(objectUrl);}
-      if (destroyed || token !== generation || abort.signal.aborted || (item.key !== 'base' && !inside && !wanted.has(item.key))) return;
+      try {image.src=objectUrl;await image.decode();} catch(error) {image.src='';throw error;} finally {URL.revokeObjectURL(objectUrl);}
+      if (!destroyed && !abort.signal.aborted) blobCache.set(item.url, blob);
+      if (destroyed || token !== generation || abort.signal.aborted || !bodyVisible || (item.key !== 'base' && (mobile || !inside) && !wanted.has(item.key))) {image.src='';return;}
       const entry = createEntry(image, item.tile);
       if (item.key === 'base') {dispose(base);base=entry;} else {dispose(entries.get(item.key));entries.set(item.key,entry);}
       failures.delete(item.key);stats.completed++;refresh();render();
@@ -157,7 +171,7 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
     } finally {if(pending.get(item.key)===abort)pending.delete(item.key);active--;pump();}
   }
   function pump() {
-    if(destroyed||frame?.show===false)return;
+    if(destroyed||!bodyVisible)return;
     while(active<maxConcurrent&&queue.length) {
       const item=queue.shift();if(pending.has(item.key)||(item.key==='base'?base:entries.has(item.key)))continue;
       if((failures.get(item.key)||0)>performance.now())continue;
@@ -203,21 +217,34 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
     selected.sort((a,b)=>dot(b.center,inside?[dir.x,dir.y,dir.z]:localCamera)-dot(a.center,inside?[dir.x,dir.y,dir.z]:localCamera));
     selected=selected.slice(0,Math.max(1,cacheLimit));
     wanted=new Set(selected.map(t=>t.key));
+    if (mobile && inside && source.urlTemplate) bodyVisible = selected.length > 0;
     queue=[];
-    if(!base)queue.push({key:'base',url:source.baseTextureUrl});
+    if(bodyVisible&&!base)queue.push({key:'base',url:source.baseTextureUrl});
     for(const tile of selected) {
       // Include an immediately available parent during refinement, but don't download unseen ancestors.
       queue.push({key:tile.key,tile,url:source.urlTemplate.replace('{z}',tile.z).replace('{x}',tile.x).replace('{y}',tile.y)});
     }
     // Finish already-started sky requests into the bounded LRU for quick reversals.
-    for(const [key,abort] of pending)if(!inside&&key!=='base'&&!wanted.has(key))abort.abort();
+    for(const [key,abort] of pending)if(!inside&&!mobile&&key!=='base'&&!wanted.has(key))abort.abort();
   }
   return {
     update(next) {
       if(destroyed)return;frame=next;
-      if(next.show===false){selected=[];wanted.clear();queue=[];for(const abort of pending.values())abort.abort();refresh();return;}
+      bodyVisible = next.show !== false && !(mobile && typeof document !== 'undefined' && document.hidden);
+      if (mobile && bodyVisible && !inside) {
+        const bounds = Cesium.BoundingSphere.transform(new Cesium.BoundingSphere(Cesium.Cartesian3.ZERO, 1.001), next.modelMatrix, new Cesium.BoundingSphere());
+        const camera = viewer.camera;
+        bodyVisible = camera.frustum.computeCullingVolume(camera.positionWC, camera.directionWC, camera.upWC).computeVisibility(bounds) !== Cesium.Intersect.OUTSIDE;
+      }
+      if(!bodyVisible){selected=[];wanted.clear();queue=[];lastSelection=-Infinity;for(const abort of pending.values())abort.abort();refresh();return;}
       const now=performance.now();if(now-lastSelection>=160){lastSelection=now;selectTiles();}
+      if (mobile && inside && source.urlTemplate && !selected.length) bodyVisible=false;
       refresh();pump();
+    },
+    releaseGpu() {
+      bodyVisible=false;selected=[];wanted.clear();queue=[];lastSelection=-Infinity;
+      for(const abort of pending.values())abort.abort();
+      for(const entry of entries.values())dispose(entry);entries.clear();dispose(base);base=null;visible.clear();
     },
     setSource(next) {
       const target={...source,...next};
@@ -225,8 +252,8 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
       source=target;generation++;for(const abort of pending.values())abort.abort();queue=[];selected=[];wanted.clear();failures.clear();
       for(const entry of entries.values())dispose(entry);entries.clear();dispose(base);base=null;lastSelection=-Infinity;render();
     },
-    getStateForDebug:()=>({...stats,show:frame?.show!==false,ambient:frame?.ambient??null,visibleTiles:visible.size,cachedTiles:entries.size,inFlight:active,queued:queue.length,
+    getStateForDebug:()=>({...stats,show:bodyVisible,mobile,encodedCacheBytes:blobCache.byteLength,encodedCacheEntries:blobCache.size,gpuTextureBytes:(base?base.image.naturalWidth*base.image.naturalHeight*4:0)+entries.size*516*516*4,ambient:frame?.ambient??null,visibleTiles:visible.size,cachedTiles:entries.size,inFlight:active,queued:queue.length,
       selectedTiles:selected.length,level:selected.length?Math.max(...selected.map(t=>t.z)):null,overviewReady:Boolean(base),maxLevel:source.maxLevel}),
-    destroy(){if(destroyed)return;destroyed=true;generation++;for(const abort of pending.values())abort.abort();queue=[];for(const entry of entries.values())dispose(entry);entries.clear();dispose(base);base=null;scene.primitives.remove(collection);}
+    destroy(){if(destroyed)return;destroyed=true;generation++;for(const abort of pending.values())abort.abort();queue=[];blobCache.clear();for(const entry of entries.values())dispose(entry);entries.clear();dispose(base);base=null;scene.primitives.remove(collection);}
   };
 }
