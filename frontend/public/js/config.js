@@ -103,7 +103,7 @@ export const APP_CONFIG = {
     skyDomeUseIcrfOrientation: true,
     skyDomeGmstOffsetDeg: 0,
     // Browser runtime uses web-friendly textures converted from the source EXR/TIFF files in ./Starmap.
-    skyDomeBaseTextureUrl: "./assets/sky/starmap_2020_8k.jpg",
+    skyDomeBaseTextureUrl: "./assets/sky/starmap_2020_8k.lossless.webp",
     skyDomeBaseOpacity: 1.0,
     skyDomeFiguresEnabled: false,
     skyDomeFiguresTextureUrl: "./assets/sky/constellation_figures_8k.png",

@@ -86,11 +86,11 @@ python scripts/build_black_marble_ultra_tiles.py --levels 6,7 --tile-format jpg 
 5. Stage sky textures (if `./Starmap` source files changed):
 
 ```bash
-magick ./Starmap/starmap_2020_8k.exr -auto-level -colorspace sRGB ./frontend/public/assets/sky/starmap_2020_8k.jpg
+magick ./Starmap/starmap_2020_8k.exr -auto-level -colorspace sRGB -depth 8 -define webp:lossless=true -define webp:method=4 ./frontend/public/assets/sky/starmap_2020_8k.lossless.webp
 magick ./Starmap/constellation_figures_8k.tif -colorspace sRGB ./frontend/public/assets/sky/constellation_figures_8k.png
 ```
 
-- The app reads `frontend/public/assets/sky/*` at runtime (web-friendly JPG/PNG).
+- The app reads `frontend/public/assets/sky/*` at runtime (WebP for the star map, PNG for constellation overlays). See [sky texture quality](docs/SKY_TEXTURE_QUALITY.md) for the compression fix and verification.
 - Source `.exr` / `.tif` files can stay in `./Starmap` for future reconversion.
 
 6. Start a local static server:
