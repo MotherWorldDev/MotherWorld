@@ -1,7 +1,7 @@
 /* global Cesium */
-import { createSkyDomeController } from "./skyDome.js?v=20260910-celestial1";
-import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-celestial1";
-import { chooseMoonSource, getMoonShadowPolicy } from "./moonLodPolicy.js?v=20260910-celestial1";
+import { createSkyDomeController } from "./skyDome.js?v=20260910-celestial2";
+import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-celestial2";
+import { chooseMoonSource, getMoonShadowPolicy } from "./moonLodPolicy.js?v=20260910-celestial2";
 
 function colorFromCss(css) {
   return Cesium.Color.fromCssColorString(css);

@@ -1,5 +1,5 @@
 /* global Cesium */
-import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-celestial1";
+import { createSphericalTileLod } from "./sphericalTileLod.js?v=20260910-celestial2";
 
 function clamp01(value, fallback = 1) {
   const n = Number(value);
@@ -133,7 +133,7 @@ export function createSkyDomeController({ viewer, appConfig, requestRender, getM
   const gmstOffsetRad = Cesium.Math.toRadians(Number(globeCfg.skyDomeGmstOffsetDeg) || 0);
 
   const tiledBase = globeCfg.skyDomeTilesEnabled === false ? null : createSphericalTileLod({
-    viewer, inside: true, baseTextureUrl: globeCfg.skyDomeOverviewTextureUrl || "./assets/sky/tiles/overview.webp",
+    viewer, inside: true, baseTextureUrl: globeCfg.skyDomeOverviewTextureUrl || "./assets/sky/tiles/overview-4k.webp",
     urlTemplate: globeCfg.skyDomeTilesUrlTemplate || "./assets/sky/tiles/{z}/{x}/{y}.webp",
     maxLevel: globeCfg.skyDomeTilesMaxLevel ?? 3, cacheLimit: globeCfg.skyDomeTileCacheLimit ?? 40,
     maxConcurrent: globeCfg.celestialTileMaxConcurrent ?? 4, requestRender,

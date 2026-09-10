@@ -83,6 +83,17 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
         }`
     }}) : Cesium.Material.fromType('Image', {image, color: new Cesium.Color(1, 1, 1, 1)});
     material.translucent = false;
+    // Cesium 1.118 queues a decoded image on the first update and uploads it on
+    // the second. Do both while hidden: exposing it earlier draws a white tile.
+    try {
+      material.update(scene.context);
+      material.update(scene.context);
+      const texture = material._textures.image;
+      if (!texture || texture === scene.context.defaultTexture ||
+          texture.width !== image.naturalWidth || texture.height !== image.naturalHeight) {
+        throw new Error('Celestial image texture is not ready');
+      }
+    } catch (error) { material.destroy(); throw error; }
     const geometry = tile ? patchGeometry(tile, inside) : new Cesium.SphereGeometry({radius: 1,
       slicePartitions: 128, stackPartitions: 64, vertexFormat: Cesium.MaterialAppearance.MaterialSupport.TEXTURED.vertexFormat});
     const primitive = collection.add(new Cesium.Primitive({geometryInstances: new Cesium.GeometryInstance({geometry}),
@@ -136,7 +147,7 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
       if (blob.size > 8 * 1024 * 1024) throw new Error('Unexpectedly large celestial tile');
       const objectUrl = URL.createObjectURL(blob), image = new Image();
       try {image.src=objectUrl;await image.decode();} finally {URL.revokeObjectURL(objectUrl);}
-      if (destroyed || token !== generation || abort.signal.aborted || (item.key !== 'base' && !wanted.has(item.key))) return;
+      if (destroyed || token !== generation || abort.signal.aborted || (item.key !== 'base' && !inside && !wanted.has(item.key))) return;
       const entry = createEntry(image, item.tile);
       if (item.key === 'base') {dispose(base);base=entry;} else {dispose(entries.get(item.key));entries.set(item.key,entry);}
       failures.delete(item.key);stats.completed++;refresh();render();
@@ -181,7 +192,8 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
       const distance=Cesium.Cartesian3.distance(camera.positionWC,surface);
       const pixels=inside?2*tile.angle*focal:2*scale*Math.sin(a)*focal/Math.max(scale*.025,distance-worldBound.radius);
       if(!inside && tile.z===0 && pixels<=512)return;
-      if(tile.z<source.maxLevel&&pixels>600) {
+      // Sky has a permanent half-resolution base; only add full-detail patches.
+      if(tile.z<source.maxLevel&&(inside||pixels>600)) {
         for(let dy=0;dy<2;dy++)for(let dx=0;dx<2;dx++)visit(descriptor(tile.z+1,tile.x*2+dx,tile.y*2+dy));
       } else selected.push(tile);
     }
@@ -197,7 +209,8 @@ export function createSphericalTileLod({viewer, inside = false, baseTextureUrl, 
       // Include an immediately available parent during refinement, but don't download unseen ancestors.
       queue.push({key:tile.key,tile,url:source.urlTemplate.replace('{z}',tile.z).replace('{x}',tile.x).replace('{y}',tile.y)});
     }
-    for(const [key,abort] of pending)if(key!=='base'&&!wanted.has(key))abort.abort();
+    // Finish already-started sky requests into the bounded LRU for quick reversals.
+    for(const [key,abort] of pending)if(!inside&&key!=='base'&&!wanted.has(key))abort.abort();
   }
   return {
     update(next) {

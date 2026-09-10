@@ -3,16 +3,17 @@ import assert from "node:assert/strict";
 import { getMoonShadowPolicy, chooseMoonSource } from "../frontend/public/js/moonLodPolicy.js";
 
 test("Moon shadow policy endpoints and midpoint", () => {
-  assert.equal(getMoonShadowPolicy({ cameraMoonDistance: 1.5, displayRadius: 1 }).ambient, 1);
-  assert.ok(Math.abs(getMoonShadowPolicy({ cameraMoonDistance: 3, displayRadius: 1 }).ambient - 0.025) < 1e-9);
-  const mid = getMoonShadowPolicy({ cameraMoonDistance: 2.25, displayRadius: 1 });
-  assert(mid.ambient < 1 && mid.ambient > 0.025);
+  assert.equal(getMoonShadowPolicy({ cameraMoonDistance: 2.5, displayRadius: 1 }).ambient, 1);
+  assert.ok(Math.abs(getMoonShadowPolicy({ cameraMoonDistance: 7, displayRadius: 1 }).ambient - 0.025) < 1e-9);
+  const mid = getMoonShadowPolicy({ cameraMoonDistance: 4.75, displayRadius: 1 });
+  assert.ok(Math.abs(mid.ambient - 0.5125) < 1e-9);
+  assert.ok(getMoonShadowPolicy({ cameraMoonDistance: 6, displayRadius: 1 }).ambient > 0.025);
 });
 
 test("invalid thresholds fall back safely", () => {
   const policy = getMoonShadowPolicy({ cameraMoonDistance: 2, displayRadius: 1, config: { moonLightingDayOnlyAltitudeRadii: -1, moonLightingFullShadowAltitudeRadii: "bad" } });
-  assert.equal(policy.dayOnlyAltitudeRadii, 0.5);
-  assert.equal(policy.fullShadowAltitudeRadii, 2);
+  assert.equal(policy.dayOnlyAltitudeRadii, 1.5);
+  assert.equal(policy.fullShadowAltitudeRadii, 6);
 });
 
 test("source choice selects built in tiled pyramids", () => {

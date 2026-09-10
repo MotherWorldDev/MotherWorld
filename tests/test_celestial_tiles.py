@@ -1,4 +1,5 @@
 import importlib.util
+import json
 from pathlib import Path
 import unittest
 from PIL import Image
@@ -19,6 +20,19 @@ class CelestialTileTests(unittest.TestCase):
                 for ty in [0, 1, 2, 257, 513, 514, 515]:
                     expected = source.getpixel(((left + tx - 2) % 1024, min(511, max(0, ty - 2))))
                     self.assertEqual(tile.getpixel((tx, ty)), expected)
+
+    def test_sky_overview_is_half_resolution_and_lossless(self):
+        name, size = module.overview_spec("sky")
+        self.assertEqual((name, size), ("overview-4k.webp", (4096, 2048)))
+        for moon_mode in ("natural", "eclipse", "geology"):
+            self.assertEqual(module.overview_spec(moon_mode), ("overview.webp", (1024, 512)))
+        root = ROOT / module.SETS["sky"][2]
+        manifest = json.loads((root / "manifest.json").read_text(encoding="utf-8"))
+        self.assertEqual(manifest["overview"], {"path": name, "width": size[0], "height": size[1]})
+        with Image.open(ROOT / module.SETS["sky"][0]) as source, Image.open(root / name) as overview:
+            self.assertEqual(overview.size, (source.width // 2, source.height // 2))
+            with source.resize(size, Image.Resampling.LANCZOS) as expected:
+                self.assertEqual(overview.tobytes(), expected.tobytes())
 
     def test_highest_level_tiles_preserve_source_pixels(self):
         for name, (source_path, max_level, tile_path, *_) in module.SETS.items():

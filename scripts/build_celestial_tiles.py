@@ -34,10 +34,15 @@ def gutter_tile(im: Image.Image, left: int, top: int) -> Image.Image:
             out.paste(im.crop((sx, h-1, sx+1, h)).resize((1,n)), (ox+GUTTER, 516-n))
     return out
 
+def overview_spec(name: str):
+    return ("overview-4k.webp", (4096, 2048)) if name == "sky" else ("overview.webp", (1024, 512))
+
+
 def build(root: Path, name: str):
     rel, maxz, tile_rel, overview_rel = SETS[name]
     src = root / rel
     categorical = name == "geology"
+    overview_name, overview_size = overview_spec(name)
     with Image.open(src) as original:
         original.load()
         expected = (1024 * (2**maxz), 512 * (2**maxz))
@@ -53,9 +58,11 @@ def build(root: Path, name: str):
                     tile = gutter_tile(im, x*TILE, y*TILE)
                     tile.save(d / f"{y}.webp", "WEBP", lossless=True, method=6)
                     tile.close()
-            im.save(root / overview_rel / "overview.webp", "WEBP", lossless=True, method=6) if z == 0 else None
+            if size == overview_size:
+                im.save(root / overview_rel / overview_name, "WEBP", lossless=True, method=6)
             if z != maxz: im.close()
         manifest = {"name": name, "source": rel.replace('\\','/'), "source_sha256": sha256(src), "tile_size": 512, "gutter": 2,
+                    "overview": {"path": overview_name, "width": overview_size[0], "height": overview_size[1]},
                     "levels": [{"z": z, "width": 1024*2**z, "height": 512*2**z, "cols": 2**(z+1), "rows": 2**z,
                                 "tiles": 2**(2*z+1), "path": f"{tile_rel}/{z}/{{x}}/{{y}}.webp"} for z in range(maxz+1)]}
         (root / tile_rel).mkdir(parents=True, exist_ok=True)
