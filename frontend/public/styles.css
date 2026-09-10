@@ -129,11 +129,11 @@ body {
 }
 
 .brand-mark {
-  width: 14px;
-  height: 36px;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #80ed99, #38bdf8);
-  box-shadow: 0 0 30px rgba(56, 189, 248, 0.35);
+  display: block;
+  flex: 0 0 auto;
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
 }
 
 .brand-title {
@@ -2312,7 +2312,7 @@ button:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); 
   .mobile-controls-toggle { display: inline-flex; align-items: center; }
   .topbar { top: max(8px, env(safe-area-inset-top)); left: var(--mobile-gutter); right: max(10px, env(safe-area-inset-right)); z-index: 12; align-items: center; gap: 8px; padding: 8px 10px; max-height: calc(100dvh - 16px - env(safe-area-inset-top)); overflow-y: auto; }
   .brand { min-width: 0; gap: 8px; }
-  .brand-mark { width: 10px; height: 30px; }
+  .brand-mark { width: 36px; height: 36px; }
   .brand-title { font-size: 14px; white-space: nowrap; }
   .topbar-actions { min-width: 0; }
   #map-controls { display: none; width: 100%; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding-top: 7px; }
