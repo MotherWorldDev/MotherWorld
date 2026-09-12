@@ -1,5 +1,7 @@
 # MotherWorld unified environment stack v8
 
+> **OSM interruption recovery:** see [the checkpoint incident and recovery runbook](OSM_CHECKPOINT_RECOVERY.md).
+
 > **Boundary-correction status:** seven land-region summaries require the shared analysis-footprint correction. Species, PHYLACINE coverage, and geology now include the corrected footprints; affected climate and pollution data releases remain pending. See [the tracked issue and acceptance checklist](REGION_BOUNDARY_CORRECTIONS.md).
 
 This checkout contains the v8 environmental integration: fixed-composition Earth Health, lazy regional climate extras, descriptive geology/seafloor diagnostics, and Moon-only Selenology. The runtime keeps raw/provider downloads outside `frontend/public/data`; each index stays unavailable until its source-backed builder produces verified output.
