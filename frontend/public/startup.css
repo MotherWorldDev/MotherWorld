@@ -1,0 +1,11 @@
+/* The first view stays covered until its visible imagery settles. */
+.loading-overlay { position: fixed; z-index: 1000; background: #04070d; opacity: 1; transition: opacity 550ms ease; }
+.loading-card { display: flex; flex-direction: column; gap: 24px; padding: 24px; border: 0; border-radius: 0; background: none; box-shadow: none; backdrop-filter: none; }
+.startup-logo { width: clamp(140px,25vmin,240px); height: auto; }
+#startup-progress { display: block; appearance: none; border: 0; width: min(220px,60vw); height: 3px; border-radius: 3px; overflow: hidden; background: rgba(255,255,255,.12); color: #9bc8ce; }
+#startup-progress::-webkit-progress-bar { background: rgba(255,255,255,.12); }
+#startup-progress::-webkit-progress-value { background: #9bc8ce; transition: width 250ms ease; }
+#startup-progress::-moz-progress-bar { background: #9bc8ce; }
+#loading-text { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+#startup-continue { font-size: 12px; }
+@media (prefers-reduced-motion: reduce) { .loading-overlay, #startup-progress::-webkit-progress-value { transition: none; } }

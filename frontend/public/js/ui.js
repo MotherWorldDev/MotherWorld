@@ -391,14 +391,22 @@ export function createUI(appConfig = null) {
     }
   });
 
+  let loadingHideTimer;
   function setLoading(message, visible = true) {
+    clearTimeout(loadingHideTimer);
     els.loadingText.textContent = message;
-    els.loadingOverlay.classList.toggle("hidden", !visible);
-    els.loadingOverlay.hidden = !visible;
+    if (visible) {
+      els.loadingOverlay.hidden = false;
+      els.loadingOverlay.classList.remove("hidden");
+    } else {
+      els.loadingOverlay.classList.add("hidden");
+      const delay = window.matchMedia("(prefers-reduced-motion: reduce)").matches ? 0 : 550;
+      loadingHideTimer = setTimeout(() => { els.loadingOverlay.hidden = true; }, delay);
+    }
   }
 
   function hideLoading() {
-    setLoading("", false);
+    setLoading("Ready", false);
   }
 
   function showError(message) {

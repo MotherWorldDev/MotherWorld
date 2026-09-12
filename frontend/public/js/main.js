@@ -1,7 +1,8 @@
+import { waitForInitialView } from "./startupLoading.js?v=20260912-startup1";
 import { createChromeControls } from "./chromeControls.js?v=20260912-layout1";
 import { APP_CONFIG } from "./config.js?v=20260910-memory1";
 import { createRegionDataService } from "./regionDataService.js?v=20260906-content1";
-import { createUI } from "./ui.js?v=20260909-selected-region1";
+import { createUI } from "./ui.js?v=20260912-startup1";
 import { createSelenologyPanel } from "./selenologyPanel.js?v=20260908-env8-selenology";
 import { createGeologyPanel } from "./geologyPanel.js?v=20260908-diagnostics1";
 import { createClimateExtrasPanel } from "./climateExtrasPanel.js?v=20260908-env8-selenology";
@@ -12,7 +13,7 @@ import { createEarthHealth } from "./earthHealth.js?v=20260908-env8-selenology";
 import { createTemperaturePanel } from "./temperaturePanel.js?v=20260907-temperature1";
 import { createSpeciesPanel } from "./speciesPanel.js?v=20260908-species-geometry1";
 import { getBiomeColor, paletteMapFromIndex } from "./biomePalette.js";
-import { createGlobeExplorer } from "./globe.js?v=20260910-memory1";
+import { createGlobeExplorer } from "./globe.js?v=20260912-startup1";
 
 function toPublicDataUrl(relPath, fallback) {
   if (!relPath) return fallback;
@@ -266,6 +267,7 @@ async function bootstrap() {
       dataService.getMarineIndex(),
       dataService.getLakesIndex(),
     ]);
+    document.getElementById("startup-progress").value = 25;
     biomePalette = {
       ...biomePalette,
       ...paletteMapFromIndex(index),
@@ -436,6 +438,7 @@ async function bootstrap() {
       lakesRegionIndex: lakesIndex?.regions || {},
     });
     ui.setRegionDatasetMode(globe.getRegionDatasetMode?.() ?? "combined");
+    await waitForInitialView(globe);
     ui.hideLoading();
   } catch (err) {
     console.error(err);

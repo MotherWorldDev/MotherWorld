@@ -16,6 +16,7 @@
     />
     <link href="./styles.css?v=20260910-logo1" rel="stylesheet" />
     <link href="./map-chrome.css?v=20260912-layout1" rel="stylesheet" />
+    <link href="./startup.css?v=20260912-startup1" rel="stylesheet" />
   </head>
   <body>
     <div class="app-shell">
@@ -110,7 +111,9 @@
 
         <div id="loading-overlay" class="loading-overlay" role="status" aria-live="polite">
           <div class="loading-card">
-            <div class="loading-spinner" aria-hidden="true"></div>
+            <img class="startup-logo" src="./assets/brand/Logo.svg?v=20260912-logo2" width="220" height="220" alt="MotherWorld" />
+            <progress id="startup-progress" max="100" value="5" aria-label="Loading MotherWorld"></progress>
+            <button id="startup-continue" class="ghost-btn" type="button" hidden>Continue while loading</button>
             <div id="loading-text">Preparing globe...</div>
           </div>
         </div>
@@ -435,6 +438,6 @@
     </div>
 
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Cesium.js"></script>
-    <script type="module" src="./js/main.js?v=20260912-layout1"></script>
+    <script type="module" src="./js/main.js?v=20260912-startup1"></script>
   </body>
 </html>

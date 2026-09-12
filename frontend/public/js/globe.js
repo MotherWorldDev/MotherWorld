@@ -3631,6 +3631,14 @@ export function createGlobeExplorer({
   return {
     viewer,
     getGpuMemoryState,
+    getInitialViewState: () => {
+      const sky = skyDome?.getStateForDebug?.()?.tiles;
+      const earthReady = Boolean(baseImageryLayer) &&
+        (getNightOverviewBlendFactor() <= 0.001 || Boolean(blackMarbleNightBaseImageryLayer)) &&
+        viewer.scene.globe.tilesLoaded;
+      const skyReady = !sky || (sky.overviewReady && sky.inFlight === 0 && sky.queued === 0 && sky.cachedTiles >= sky.selectedTiles);
+      return { earthReady, skyReady };
+    },
     loadGeometryLods,
     ensureRealmDetailForRegion,
     getSkySettings: () => skyDome.getSettings?.(),
