@@ -1,0 +1,32 @@
+/* Floating brand and compact map controls. */
+.topbar { right: auto; width: max-content; max-width: calc(100vw - 28px); overflow: visible; background: none; border: 0; box-shadow: none; backdrop-filter: none; }
+.brand { position: relative; isolation: isolate; pointer-events: none; }
+.brand::before { content: ""; position: absolute; z-index: -1; inset: -22px -40px; pointer-events: none; background: radial-gradient(ellipse, rgba(0,0,0,.62) 0%, rgba(0,0,0,.32) 42%, transparent 73%); }
+.brand-title { text-shadow: 0 2px 6px rgba(0,0,0,.65); }
+.earth-health-root { top: 20px; }
+.map-controls-dock { position: relative; justify-self: stretch; margin-top: 5px; pointer-events: auto; }
+#map-controls-toggle-btn { display: flex; align-items: center; justify-content: space-between; gap: 18px; width: 100%; min-height: 36px; margin: 0; padding: 6px 12px; font-size: 12px; border-radius: 10px; background: rgba(8,12,20,.72); }
+#map-controls-toggle-btn[aria-expanded="true"] span { transform: rotate(180deg); }
+#map-controls { position: absolute; top: calc(100% + 6px); left: 0; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 6px; width: min(310px,calc(100vw - 28px)); max-height: calc(100dvh - 180px); overflow: auto; overscroll-behavior: contain; padding: 8px; border: 1px solid var(--border); border-radius: 12px; background: rgba(8,12,20,.96); box-shadow: var(--shadow); }
+#map-controls > * { min-width: 0; }
+#map-controls .ghost-btn { font-size: 12px; white-space: normal; }
+#orientation-status { grid-column: 1 / -1; color: var(--soft); font-size: 12px; padding: 6px; }
+.earth-health-panel { top: 100px; max-height: min(650px,calc(100dvh - 140px)); }
+@media (max-width: 980px) {
+  .topbar { right: auto; overflow: visible; }
+  .earth-health-root { top: calc(max(8px,env(safe-area-inset-top)) + 70px); }
+  #map-controls-toggle-btn { min-height: 44px; }
+  #map-controls { max-height: calc(100dvh - 200px - env(safe-area-inset-top)); }
+  .earth-health-panel { top: 108px; max-height: calc(100dvh - 204px - env(safe-area-inset-top)); }
+}
+@media (max-width: 980px) and (orientation: landscape) {
+  .earth-health-root { top: max(8px,env(safe-area-inset-top)); left: auto; right: max(10px,env(safe-area-inset-right)); justify-items: end; }
+  #map-controls { left: auto; right: 0; max-height: calc(100dvh - 130px - env(safe-area-inset-top)); }
+  .earth-health-panel { right: 0; max-height: calc(100dvh - 130px - env(safe-area-inset-top)); }
+  .earth-health-root:has(.earth-health-panel:not([hidden])), .earth-health-root:has(.controls-open) { z-index: 15; }
+}
+
+.portrait-tip { position: absolute; z-index: 16; left: max(12px,env(safe-area-inset-left)); right: max(12px,env(safe-area-inset-right)); bottom: max(20px,env(safe-area-inset-bottom)); padding: 12px 48px 12px 14px; border: 1px solid var(--border); border-radius: 14px; background: rgba(0,0,0,.82); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
+.portrait-tip p { margin: 0 0 10px; font-size: 13px; line-height: 1.5; }
+#portrait-tip-close { position: absolute; top: 4px; right: 4px; width: 44px; height: 44px; }
+#portrait-landscape-btn { font-size: 12px; min-height: 44px; }

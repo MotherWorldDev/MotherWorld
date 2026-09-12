@@ -15,13 +15,14 @@
       rel="stylesheet"
     />
     <link href="./styles.css?v=20260910-logo1" rel="stylesheet" />
+    <link href="./map-chrome.css?v=20260912-layout1" rel="stylesheet" />
   </head>
   <body>
     <div class="app-shell">
       <main class="globe-stage" aria-label="3D ecoregion globe">
         <div id="globe" class="globe-canvas"></div>
 
-        <header class="chrome-panel topbar" aria-label="Application controls">
+        <header class="topbar" aria-label="MotherWorld">
           <div class="brand">
             <img class="brand-mark" src="./assets/brand/Logo.svg?v=20260912-logo2" width="44" height="44" alt="" aria-hidden="true" />
             <div>
@@ -29,8 +30,17 @@
               <div class="brand-subtitle" id="dataset-summary">Loading dataset...</div>
             </div>
           </div>
-          <button id="map-controls-toggle-btn" class="ghost-btn mobile-controls-toggle" type="button" aria-expanded="false" aria-controls="map-controls">Controls</button>
-          <div id="map-controls" class="topbar-actions">
+        </header>
+
+        <div id="earth-health-root" class="earth-health-root">
+          <button id="earth-health-button" class="earth-health-button" type="button" aria-expanded="false" aria-controls="earth-health-panel">
+            <span class="earth-health-score-wrap"><span id="earth-health-score" class="earth-health-score">—</span></span>
+            <span class="earth-health-label">Earth Health</span>
+            <span class="earth-health-subline"><span id="earth-health-status">Earth Health</span><span id="earth-health-coverage">Loading index…</span></span>
+          </button>
+          <div class="map-controls-dock">
+          <button id="map-controls-toggle-btn" class="ghost-btn mobile-controls-toggle" type="button" aria-expanded="false" aria-controls="map-controls">Controls <span aria-hidden="true">&#8964;</span></button>
+          <div id="map-controls" class="topbar-actions" hidden>
             <button id="region-dataset-toggle-btn" class="ghost-btn" type="button" aria-pressed="false">
               Dataset: Land
             </button>
@@ -48,15 +58,10 @@
             <button id="night-debug-toggle-btn" class="ghost-btn" type="button" aria-pressed="false">
               Night Debug
             </button>
+            <button id="landscape-btn" class="ghost-btn" type="button" hidden>Landscape</button>
+            <span id="orientation-status" role="status" hidden></span>
           </div>
-        </header>
-
-        <div id="earth-health-root" class="earth-health-root">
-          <button id="earth-health-button" class="earth-health-button" type="button" aria-expanded="false" aria-controls="earth-health-panel">
-            <span class="earth-health-score-wrap"><span id="earth-health-score" class="earth-health-score">—</span></span>
-            <span class="earth-health-label">Earth Health</span>
-            <span class="earth-health-subline"><span id="earth-health-status">Earth Health</span><span id="earth-health-coverage">Loading index…</span></span>
-          </button>
+          </div>
           <section id="earth-health-panel" class="earth-health-panel" hidden aria-label="Earth Health index breakdown">
             <div class="earth-health-panel-head"><div><div class="earth-health-panel-kicker">Global condition index</div><div id="earth-health-panel-score" class="earth-health-panel-score">— / 100</div><div id="earth-health-panel-status" class="earth-health-panel-status">Loading…</div></div><button id="earth-health-close" class="earth-health-close" type="button" aria-label="Close">×</button></div>
             <div id="earth-health-families" class="earth-health-families"></div><p id="earth-health-trend" class="earth-health-trend"></p><p id="earth-health-method" class="earth-health-method"></p>
@@ -93,6 +98,11 @@
           </label>
         </section>
 
+        <aside id="portrait-tip" class="portrait-tip" hidden aria-label="Viewing tip">
+          <button id="portrait-tip-close" class="ghost-btn" type="button" aria-label="Dismiss viewing tip">&#215;</button>
+          <p>For the best experience, turn your phone sideways and use fullscreen.</p>
+          <button id="portrait-landscape-btn" class="ghost-btn" type="button">Landscape &amp; fullscreen</button>
+        </aside>
         <div id="hover-pill" class="hover-pill" hidden></div>
         <div id="earth-tag" class="body-tag" hidden>Terra</div>
         <div id="moon-tag" class="body-tag" hidden>Luna</div>
@@ -425,6 +435,6 @@
     </div>
 
     <script src="https://cesium.com/downloads/cesiumjs/releases/1.118/Build/Cesium/Cesium.js"></script>
-    <script type="module" src="./js/main.js?v=20260910-memory1"></script>
+    <script type="module" src="./js/main.js?v=20260912-layout1"></script>
   </body>
 </html>
